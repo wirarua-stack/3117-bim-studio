@@ -19,9 +19,11 @@ jobs:
     defaults:
       run:
         shell: pwsh
-    env:
-      BIM3117_RUNNER_PREFLIGHT: ${{ runner.temp }}/3117-runner-preflight-${{ github.run_id }}-${{ github.run_attempt }}.json
     steps:
+      - name: Initialize evidence path on the assigned runner
+        run: |
+          $preflight = Join-Path $env:RUNNER_TEMP "3117-runner-preflight-$env:GITHUB_RUN_ID-$env:GITHUB_RUN_ATTEMPT.json"
+          "BIM3117_RUNNER_PREFLIGHT=$preflight" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
       - name: Check out readiness code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
