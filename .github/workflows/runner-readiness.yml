@@ -1,0 +1,42 @@
+name: 3117 Windows runner readiness only
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - acceptance/windows-history-fix
+    paths:
+      - 'scripts/Prepare-WindowsRunner.ps1'
+      - '.github/workflows/runner-readiness.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  readiness:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      BIM3117_RUNNER_PREFLIGHT: ${{ runner.temp }}/3117-runner-preflight-${{ github.run_id }}-${{ github.run_attempt }}.json
+    steps:
+      - name: Check out readiness code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Measure capacity and observe native Windows desktop
+        run: |
+          ./scripts/Prepare-WindowsRunner.ps1 -EvidencePath $env:BIM3117_RUNNER_PREFLIGHT
+      - name: Preserve readiness observation on success or failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: 3117-windows-runner-readiness-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ env.BIM3117_RUNNER_PREFLIGHT }}
+          if-no-files-found: warn
+          retention-days: 7
+
+# A successful job records available capacity and native Windows observations.
+# It does not build FreeCAD, execute the acceptance suites, or claim a Qt GUI pass.

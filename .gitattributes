@@ -1,0 +1,3 @@
+# Evidence and reviewed patches are pinned by byte-level SHA-256.
+# Avoid Git for Windows autocrlf changing the frozen test inputs on checkout.
+* -text
