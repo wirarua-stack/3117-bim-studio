@@ -104,8 +104,8 @@ class IsolatedWheelTests(unittest.TestCase):
                                           Path("C:/profile folder"), Path("C:/REPORT.json"))
         tree = ast.parse(source)
         bindings = {node.targets[0].id: ast.literal_eval(node.value) for node in tree.body[:4]}
-        self.assertEqual(bindings["RUNTIME"], "C:/RUNTIME PROFILE")
-        self.assertEqual(bindings["SCRIPTS"], "C:/SCRIPTS ไทย")
+        self.assertEqual(bindings["RUNTIME"].replace("\\", "/"), "C:/RUNTIME PROFILE")
+        self.assertEqual(bindings["SCRIPTS"].replace("\\", "/"), "C:/SCRIPTS ไทย")
 
     def test_lock_targets_embedded_python_and_excludes_qt_numpy(self):
         lock = prepare_ifc.load_lock()
