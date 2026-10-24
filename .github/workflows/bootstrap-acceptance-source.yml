@@ -1,0 +1,85 @@
+name: Bootstrap verified 3117 acceptance source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bim3117-source-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      TARGET_BRANCH: acceptance/upload-resume-20261024
+      PAYLOAD: bootstrap/acceptance-text.tar.xz
+      BINARY_MAP: bootstrap/binary-sha-map.json
+    steps:
+      - name: Check out the exact staging head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 1
+
+      - name: Assert bootstrap payload exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f "$PAYLOAD"
+          test -f "$BINARY_MAP"
+          test -f bootstrap/reconstruct_acceptance_source.py
+          echo "BOOTSTRAP_START_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Reconstruct all sealed files and verify frozen inputs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python bootstrap/reconstruct_acceptance_source.py \
+            --payload "$PAYLOAD" \
+            --binary-map "$BINARY_MAP" \
+            --checkout "$GITHUB_WORKSPACE" \
+            --repo "$GITHUB_REPOSITORY"
+
+      - name: Re-run seal verification after checkout replacement
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          root=Path(".")
+          seal=json.loads((root/"SHA256.json").read_text(encoding="utf-8"))
+          assert len(seal["files"]) == 947
+          assert sum(1 for x in seal["files"] if x["path"].startswith("inputs/")) == 898
+          for entry in seal["files"]:
+              p=root/entry["path"]
+              assert p.is_file(), entry["path"]
+              assert p.stat().st_size == entry["bytes"], entry["path"]
+              assert hashlib.sha256(p.read_bytes()).hexdigest() == entry["sha256"], entry["path"]
+          print("verified sealed=947 frozen_inputs=898 release_ready=false")
+          PY
+
+      - name: Commit exact verified source tree with lease
+        shell: bash
+        run: |
+          set -euo pipefail
+          current_remote="$(git ls-remote origin "refs/heads/$TARGET_BRANCH" | cut -f1)"
+          if [ "$current_remote" != "$BOOTSTRAP_START_SHA" ]; then
+            echo "Branch changed during bootstrap: expected $BOOTSTRAP_START_SHA got $current_remote" >&2
+            exit 1
+          fi
+          git config user.name "3117 acceptance bootstrap"
+          git config user.email "3117-bim-studio@users.noreply.github.com"
+          git add -A
+          git status --short
+          git commit -m "Restore full verified acceptance source"
+          git push --force-with-lease="refs/heads/$TARGET_BRANCH:$BOOTSTRAP_START_SHA" origin "HEAD:refs/heads/$TARGET_BRANCH"
+
+# This workflow only restores the already-authorized acceptance source.
+# It does not merge upstream, publish a release, or set release_ready=true.
