@@ -28,3 +28,22 @@ Artifact upload completed and contains the report, controller logs and partial s
 3. Investigate public GUI access violation independently; do not infer export fix resolves graphics crash.
 4. Execute targeted native and public GUI tests on Windows; if fixed, run complete A/B Windows acceptance and require all original frozen gates.
 5. Seal the **same tested** patched binary only after verified automated acceptance; desktop checklist stays pending; release_ready=false until explicitly authorized.
+
+
+## Follow-up: direct GUI log diagnosis (2026-10-24)
+
+We inspected the downloaded original artifact rather than relying on the exit code alone.
+
+- `results/public-gui-patched/publicsmoke/gui.log` **begins** with: `This system is running OpenGL 1.1. FreeCAD requires OpenGL 2.0 or above.`
+- The same warning appears at the start of the **installer** GUI log (whose package assertions passed). It is therefore a *host capability problem present before publicsmoke*, not proof that an authored BIM operation triggered the graphics failure.
+- The smoke log also includes `QOpenGLWidget: Failed to create wrapper texture`, Coin GL-context setup warnings, **380** `Access violation` messages, active-frame errors, and exhausted resource-update batches. The smoke PID was terminated after the 900-second timeout, and only `package-publicsmoke-host-start.json` is present; there is no valid end attest or complete smoke checks.
+- `package-publicsmoke-host-start.json` reports a HyperVMonitor screen of 1024x768, a visible station and running GUI. A visible session does **not** prove working OpenGL.
+- The underlying GPU / virtual display driver, Qt rendering backend and possible interactions remain to be isolated. The OpenGL 1.1 result is a confirmed **environment incompatibility**, not a complete causal stack trace of every access violation.
+
+### Required next actions, without weakening acceptance
+
+1. Do **not** mark `publicsmoke` as passed or suppress exceptions. FreeCAD requires a functioning graphics stack supporting at least OpenGL 2.0.
+2. Add an **independent, fast pre-build GPU/OpenGL capability probe** that records the actual OpenGL version and renderer on the proposed GUI runner. It must fail closed if unavailable, and must not count as acceptance.
+3. Run the *unchanged* smoke macro with the patched FreeCAD host on a proper interactive Windows GUI/GPU runner. Keep the exact original macro, host identity and evidence.
+4. If the proper graphics runner still crashes, investigate a true application defect using a first-chance dump/stack, Qt/Coin renderer diagnostics, and comparison with host-only/blank-document tests.
+5. Repair the separately identified evidence-copy step, and validate isolated candidate export fixes in the host before rerunning full A/B acceptance. Frozen inputs remain unchanged and `release_ready=false`.
