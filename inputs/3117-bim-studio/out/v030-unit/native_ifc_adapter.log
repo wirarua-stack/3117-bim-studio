@@ -1,0 +1,22 @@
+test_all_root_ids_stable_after_rename_and_new_revision (test_native_ifc.NativeIfcTests.test_all_root_ids_stable_after_rename_and_new_revision) ... ok
+test_building_full_express_validation (test_native_ifc.NativeIfcTests.test_building_full_express_validation) ... ok
+test_building_roundtrip_join_quantities_and_four_bar_window (test_native_ifc.NativeIfcTests.test_building_roundtrip_join_quantities_and_four_bar_window) ... ok
+test_concave_slab_rejects_equal_volume_mirrored_profile (test_native_ifc.NativeIfcTests.test_concave_slab_rejects_equal_volume_mirrored_profile) ... ok
+test_diagonal_reversed_axis_signed_elevation_and_offsets (test_native_ifc.NativeIfcTests.test_diagonal_reversed_axis_signed_elevation_and_offsets) ... ok
+test_diagonal_reversed_member_axes_and_signed_level_offsets (test_native_ifc.NativeIfcTests.test_diagonal_reversed_member_axes_and_signed_level_offsets) ... ok
+test_empty_building_remains_valid_and_readonly (test_native_ifc.NativeIfcTests.test_empty_building_remains_valid_and_readonly) ... ok
+test_full_express_validation (test_native_ifc.NativeIfcTests.test_full_express_validation) ... ok
+test_invalid_reference_duplicate_id_nonfinite_and_overlap_rejected (test_native_ifc.NativeIfcTests.test_invalid_reference_duplicate_id_nonfinite_and_overlap_rejected) ... ok
+test_misplaced_join_cutter_rejected_even_when_volume_and_bounds_match (test_native_ifc.NativeIfcTests.test_misplaced_join_cutter_rejected_even_when_volume_and_bounds_match) ... ok
+test_missing_join_and_mixed_door_window_overlap_are_rejected (test_native_ifc.NativeIfcTests.test_missing_join_and_mixed_door_window_overlap_are_rejected) ... ok
+test_multiple_openings_and_shared_type_have_single_wall_row (test_native_ifc.NativeIfcTests.test_multiple_openings_and_shared_type_have_single_wall_row) ... ok
+test_multistorey_square_openings_have_empty_voids_and_solid_material (test_native_ifc.NativeIfcTests.test_multistorey_square_openings_have_empty_voids_and_solid_material) ... ok
+test_overlapping_slab_cutters_deduct_union_and_keep_ids_on_rename (test_native_ifc.NativeIfcTests.test_overlapping_slab_cutters_deduct_union_and_keep_ids_on_rename) ... ok
+test_roundtrip_schema_geometry_relationships_and_quantities (test_native_ifc.NativeIfcTests.test_roundtrip_schema_geometry_relationships_and_quantities) ... ok
+test_validator_rejects_equal_volume_opening_in_wrong_location (test_native_ifc.NativeIfcTests.test_validator_rejects_equal_volume_opening_in_wrong_location) ... ok
+test_validator_rejects_stale_native_solid_volume (test_native_ifc.NativeIfcTests.test_validator_rejects_stale_native_solid_volume) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 6.869s
+
+OK

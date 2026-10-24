@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "checks": [
+    {
+      "name": "installed at host-provided user addon directory",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 1,
+  "installation": {
+    "project_id": "org.3117.bimstudio.workbench",
+    "version": "0.2.1",
+    "baseline": "1.1.4",
+    "target": "/tmp/bim3117-freecad/v021-native-profile/data/FreeCAD/v1-1/Mod/BIM3117",
+    "backup": null,
+    "restart_required": true
+  }
+}

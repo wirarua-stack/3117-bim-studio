@@ -1,0 +1,1698 @@
+{
+  "export_schema": 1,
+  "format": "svg",
+  "source": "FreeCAD native drawing definitions / FCStd",
+  "editable_master": false,
+  "model_revision": "633734e836cffd40d82e2260048510b5cdd5e066643054c1af66619b70b86f1c",
+  "drawing_revision": "43d1812e1862ed5c1cf5117cdae0f04631a90965d0961ba71f2d52518f0351f7",
+  "capture": {
+    "schema": 1,
+    "sheet": {
+      "id": "19a91f5b-74cc-4a16-935d-1dcc38bb75fd",
+      "name": "แปลนและรูปตัด",
+      "number": "T101",
+      "issue": "P01",
+      "author": "3117 BIM",
+      "paper": "A3",
+      "orientation": "Landscape",
+      "view_ids": [
+        "87387a62-ac38-4e20-9abe-adf4b4466719",
+        "40063d24-3b2e-4cf5-bec0-da0ccc2047ba"
+      ]
+    },
+    "project": {
+      "id": "c829eabb-a832-4059-b658-8411d029ae93",
+      "name": "3117 ไทย & <native>",
+      "number": "DRAW-TEST",
+      "author": "3117 BIM"
+    },
+    "model_revision": "633734e836cffd40d82e2260048510b5cdd5e066643054c1af66619b70b86f1c",
+    "drawing_revision": "43d1812e1862ed5c1cf5117cdae0f04631a90965d0961ba71f2d52518f0351f7",
+    "captured_at_utc": "2026-10-23T04:54:46.830018+00:00",
+    "views": [
+      {
+        "id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+        "name": "แปลน & <A>",
+        "view_type": "Plan",
+        "scale_denominator": 50,
+        "definition": {
+          "view_type": "Plan",
+          "bottom_offset_mm": -200.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2700.0,
+          "origin_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "depth_mm": 10000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+          "name": "แปลน & <A>",
+          "level_id": "0d30b9cb-db31-4dfd-8245-c68429ce0c26",
+          "level_elevation_mm": 0.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        },
+        "geometry": {
+          "rule": "3117.occt-cut-techdraw-hlr.polyhedral-orthographic.v1",
+          "units": "mm",
+          "coordinate_convention": "X right, Y up",
+          "frame": {
+            "origin_mm": [
+              0.0,
+              0.0,
+              1200.0
+            ],
+            "right": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "up": [
+              0.0,
+              1.0,
+              0.0
+            ],
+            "direction": [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          },
+          "bounds_mm": [
+            -100.0,
+            -100.0,
+            6100.0,
+            4100.0
+          ],
+          "visible_paths": [
+            [
+              [
+                -100.0,
+                -100.0
+              ],
+              [
+                -100.0,
+                4100.0
+              ]
+            ],
+            [
+              [
+                -100.0,
+                -100.0
+              ],
+              [
+                6100.0,
+                -100.0
+              ]
+            ],
+            [
+              [
+                -100.0,
+                4100.0
+              ],
+              [
+                6100.0,
+                4100.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                2000.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                200.0
+              ],
+              [
+                2000.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                0.0
+              ],
+              [
+                2000.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                0.0
+              ],
+              [
+                2050.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                200.0
+              ],
+              [
+                2050.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                0.0
+              ],
+              [
+                2050.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                0.0
+              ],
+              [
+                3150.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                200.0
+              ],
+              [
+                3150.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                0.0
+              ],
+              [
+                3150.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                0.0
+              ],
+              [
+                3200.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                200.0
+              ],
+              [
+                3200.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                3200.0,
+                0.0
+              ],
+              [
+                3200.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                3200.0,
+                0.0
+              ],
+              [
+                6000.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                3200.0,
+                200.0
+              ],
+              [
+                6000.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                6000.0,
+                0.0
+              ],
+              [
+                6000.0,
+                200.0
+              ]
+            ],
+            [
+              [
+                6100.0,
+                -100.0
+              ],
+              [
+                6100.0,
+                4100.0
+              ]
+            ]
+          ],
+          "hidden_paths": [],
+          "overhead_paths": [],
+          "cut_faces": [
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    2000.0,
+                    0.0
+                  ],
+                  [
+                    2000.0,
+                    200.0
+                  ],
+                  [
+                    2050.0,
+                    200.0
+                  ],
+                  [
+                    2050.0,
+                    0.0
+                  ],
+                  [
+                    2000.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "area_mm2": 10000.0
+            },
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    3150.0,
+                    0.0
+                  ],
+                  [
+                    3150.0,
+                    200.0
+                  ],
+                  [
+                    3200.0,
+                    200.0
+                  ],
+                  [
+                    3200.0,
+                    0.0
+                  ],
+                  [
+                    3150.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "area_mm2": 10000.0
+            },
+            {
+              "source_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+              "category": "Wall",
+              "loops": [
+                [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    200.0
+                  ],
+                  [
+                    2000.0,
+                    200.0
+                  ],
+                  [
+                    2000.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "area_mm2": 400000.0
+            },
+            {
+              "source_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+              "category": "Wall",
+              "loops": [
+                [
+                  [
+                    3200.0,
+                    0.0
+                  ],
+                  [
+                    3200.0,
+                    200.0
+                  ],
+                  [
+                    6000.0,
+                    200.0
+                  ],
+                  [
+                    6000.0,
+                    0.0
+                  ],
+                  [
+                    3200.0,
+                    0.0
+                  ]
+                ]
+              ],
+              "area_mm2": 560000.0
+            }
+          ],
+          "sources": [
+            {
+              "id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "name": "S00",
+              "category": "Slab",
+              "bounds_mm": [
+                -100.0,
+                -100.0,
+                6100.0,
+                4100.0
+              ],
+              "anchor_mm": [
+                3000.0,
+                -100.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": false,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            },
+            {
+              "id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "name": "WIN01",
+              "category": "Window",
+              "bounds_mm": [
+                2000.0,
+                0.0,
+                3200.0,
+                200.0
+              ],
+              "anchor_mm": [
+                2600.0,
+                0.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": true,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            },
+            {
+              "id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+              "name": "ผนัง & <W01>",
+              "category": "Wall",
+              "bounds_mm": [
+                0.0,
+                0.0,
+                6000.0,
+                200.0
+              ],
+              "anchor_mm": [
+                3200.0,
+                100.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": true,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            }
+          ],
+          "exclusions": [],
+          "notes": [
+            "Global OCCT/TechDraw hidden-line removal; no display-mesh projection.",
+            "Overhead layer contains only whole products above the plan cut and inside its top range.",
+            "Unsupported native edge curves are rejected; current authored products are polyhedral."
+          ]
+        },
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "model_revision": "633734e836cffd40d82e2260048510b5cdd5e066643054c1af66619b70b86f1c",
+        "levels": [
+          {
+            "id": "0d30b9cb-db31-4dfd-8245-c68429ce0c26",
+            "name": "L00",
+            "elevation_mm": 0.0
+          },
+          {
+            "id": "23a5f4dc-a27b-4d33-8ce7-2dc1d7bbb00c",
+            "name": "L01",
+            "elevation_mm": 3000.0
+          }
+        ],
+        "grids": []
+      },
+      {
+        "id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+        "name": "รูปตัด A-A",
+        "view_type": "Section",
+        "scale_denominator": 50,
+        "definition": {
+          "view_type": "Section",
+          "bottom_offset_mm": -200.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2700.0,
+          "origin_mm": [
+            0.0,
+            100.0,
+            0.0
+          ],
+          "depth_mm": 5000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+          "name": "รูปตัด A-A",
+          "level_id": "",
+          "level_elevation_mm": 0.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        },
+        "geometry": {
+          "rule": "3117.occt-cut-techdraw-hlr.polyhedral-orthographic.v1",
+          "units": "mm",
+          "coordinate_convention": "X right, Y up",
+          "frame": {
+            "origin_mm": [
+              0.0,
+              100.0,
+              0.0
+            ],
+            "right": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "up": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "direction": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "bounds_mm": [
+            -100.0,
+            -150.0,
+            6100.0,
+            3000.0
+          ],
+          "visible_paths": [
+            [
+              [
+                -100.0,
+                -150.0
+              ],
+              [
+                -100.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                -100.0,
+                -150.0
+              ],
+              [
+                6100.0,
+                -150.0
+              ]
+            ],
+            [
+              [
+                -100.0,
+                0.0
+              ],
+              [
+                6100.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                3000.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                6000.0,
+                0.0
+              ]
+            ],
+            [
+              [
+                0.0,
+                3000.0
+              ],
+              [
+                6000.0,
+                3000.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                900.0
+              ],
+              [
+                2000.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                900.0
+              ],
+              [
+                2050.0,
+                900.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                900.0
+              ],
+              [
+                3200.0,
+                900.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                2100.0
+              ],
+              [
+                2050.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                2000.0,
+                2100.0
+              ],
+              [
+                3200.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                900.0
+              ],
+              [
+                2050.0,
+                950.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                900.0
+              ],
+              [
+                3150.0,
+                900.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                950.0
+              ],
+              [
+                2050.0,
+                2050.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                950.0
+              ],
+              [
+                3150.0,
+                950.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                2050.0
+              ],
+              [
+                2050.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                2050.0
+              ],
+              [
+                3150.0,
+                2050.0
+              ]
+            ],
+            [
+              [
+                2050.0,
+                2100.0
+              ],
+              [
+                3150.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                900.0
+              ],
+              [
+                3150.0,
+                950.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                900.0
+              ],
+              [
+                3200.0,
+                900.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                950.0
+              ],
+              [
+                3150.0,
+                2050.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                2050.0
+              ],
+              [
+                3150.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                3150.0,
+                2100.0
+              ],
+              [
+                3200.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                3200.0,
+                900.0
+              ],
+              [
+                3200.0,
+                2100.0
+              ]
+            ],
+            [
+              [
+                6000.0,
+                0.0
+              ],
+              [
+                6000.0,
+                3000.0
+              ]
+            ],
+            [
+              [
+                6100.0,
+                -150.0
+              ],
+              [
+                6100.0,
+                0.0
+              ]
+            ]
+          ],
+          "hidden_paths": [],
+          "overhead_paths": [],
+          "cut_faces": [
+            {
+              "source_id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "category": "Slab",
+              "loops": [
+                [
+                  [
+                    -100.0,
+                    -150.0
+                  ],
+                  [
+                    -100.0,
+                    0.0
+                  ],
+                  [
+                    6100.0,
+                    0.0
+                  ],
+                  [
+                    6100.0,
+                    -150.0
+                  ],
+                  [
+                    -100.0,
+                    -150.0
+                  ]
+                ]
+              ],
+              "area_mm2": 930000.0
+            },
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    2000.0,
+                    900.0
+                  ],
+                  [
+                    2000.0,
+                    2100.0
+                  ],
+                  [
+                    2050.0,
+                    2100.0
+                  ],
+                  [
+                    2050.0,
+                    2050.0
+                  ],
+                  [
+                    2050.0,
+                    950.0
+                  ],
+                  [
+                    2050.0,
+                    900.0
+                  ],
+                  [
+                    2000.0,
+                    900.0
+                  ]
+                ]
+              ],
+              "area_mm2": 60000.0
+            },
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    2050.0,
+                    900.0
+                  ],
+                  [
+                    2050.0,
+                    950.0
+                  ],
+                  [
+                    3150.0,
+                    950.0
+                  ],
+                  [
+                    3150.0,
+                    900.0
+                  ],
+                  [
+                    2050.0,
+                    900.0
+                  ]
+                ]
+              ],
+              "area_mm2": 55000.0
+            },
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    2050.0,
+                    2050.0
+                  ],
+                  [
+                    2050.0,
+                    2100.0
+                  ],
+                  [
+                    3150.0,
+                    2100.0
+                  ],
+                  [
+                    3150.0,
+                    2050.0
+                  ],
+                  [
+                    2050.0,
+                    2050.0
+                  ]
+                ]
+              ],
+              "area_mm2": 55000.0
+            },
+            {
+              "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "category": "Window",
+              "loops": [
+                [
+                  [
+                    3150.0,
+                    900.0
+                  ],
+                  [
+                    3150.0,
+                    950.0
+                  ],
+                  [
+                    3150.0,
+                    2050.0
+                  ],
+                  [
+                    3150.0,
+                    2100.0
+                  ],
+                  [
+                    3200.0,
+                    2100.0
+                  ],
+                  [
+                    3200.0,
+                    900.0
+                  ],
+                  [
+                    3150.0,
+                    900.0
+                  ]
+                ]
+              ],
+              "area_mm2": 60000.0
+            },
+            {
+              "source_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+              "category": "Wall",
+              "loops": [
+                [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    3000.0
+                  ],
+                  [
+                    6000.0,
+                    3000.0
+                  ],
+                  [
+                    6000.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    2000.0,
+                    900.0
+                  ],
+                  [
+                    2000.0,
+                    2100.0
+                  ],
+                  [
+                    3200.0,
+                    2100.0
+                  ],
+                  [
+                    3200.0,
+                    900.0
+                  ],
+                  [
+                    2000.0,
+                    900.0
+                  ]
+                ]
+              ],
+              "area_mm2": 16560000.0
+            }
+          ],
+          "sources": [
+            {
+              "id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "name": "S00",
+              "category": "Slab",
+              "bounds_mm": [
+                -100.0,
+                -150.0,
+                6100.0,
+                0.0
+              ],
+              "anchor_mm": [
+                3000.0,
+                -150.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": true,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            },
+            {
+              "id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "name": "WIN01",
+              "category": "Window",
+              "bounds_mm": [
+                2000.0,
+                900.0,
+                3200.0,
+                2100.0
+              ],
+              "anchor_mm": [
+                2050.0,
+                1500.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": true,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            },
+            {
+              "id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+              "name": "ผนัง & <W01>",
+              "category": "Wall",
+              "bounds_mm": [
+                0.0,
+                0.0,
+                6000.0,
+                3000.0
+              ],
+              "anchor_mm": [
+                3200.0,
+                1500.0
+              ],
+              "visible": true,
+              "taggable": true,
+              "cut": true,
+              "overhead": false,
+              "visibility_reason": "Native first-hit ownership of global visible HLR edge"
+            }
+          ],
+          "exclusions": [],
+          "notes": [
+            "Global OCCT/TechDraw hidden-line removal; no display-mesh projection.",
+            "Overhead layer contains only whole products above the plan cut and inside its top range.",
+            "Unsupported native edge curves are rejected; current authored products are polyhedral."
+          ]
+        },
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "model_revision": "633734e836cffd40d82e2260048510b5cdd5e066643054c1af66619b70b86f1c",
+        "levels": [
+          {
+            "id": "0d30b9cb-db31-4dfd-8245-c68429ce0c26",
+            "name": "L00",
+            "elevation_mm": 0.0
+          },
+          {
+            "id": "23a5f4dc-a27b-4d33-8ce7-2dc1d7bbb00c",
+            "name": "L01",
+            "elevation_mm": 3000.0
+          }
+        ],
+        "grids": []
+      }
+    ],
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "0d30b9cb-db31-4dfd-8245-c68429ce0c26",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_DrawingSheet",
+          "object_id": "19a91f5b-74cc-4a16-935d-1dcc38bb75fd",
+          "label": "แปลนและรูปตัด",
+          "kind": "DrawingSheet",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "219dd4aa-a71d-4f8f-82bd-7b5329dc9069",
+          "label": "ผนัง & <W01> · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "23a5f4dc-a27b-4d33-8ce7-2dc1d7bbb00c",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_DrawingView001",
+          "object_id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+          "label": "รูปตัด A-A",
+          "kind": "DrawingView",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Drawings",
+          "object_id": "5a8ed8df-5ca9-4152-ac5a-b1c637c7c1ee",
+          "label": "3117 Drawings",
+          "kind": "DrawingSet",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Slab",
+          "object_id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+          "label": "S00",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Window",
+          "object_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+          "label": "WIN01",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_DrawingView",
+          "object_id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+          "label": "แปลน & <A>",
+          "kind": "DrawingView",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "c829eabb-a832-4059-b658-8411d029ae93",
+          "label": "3117 ไทย & <native>",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+          "label": "ผนัง & <W01>",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "fb3ec183-9f8d-4961-9a44-e88e8e386952",
+          "label": "W200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 7,
+        "derived": 1,
+        "reference": 4,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+        "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+        "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+        "4 native drawing definition(s) are references with a separate drawing revision and omitted from IFC."
+      ],
+      "complete": false,
+      "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+    },
+    "source": {
+      "document": "BIM3117",
+      "label": "3117 ไทย & <native>",
+      "path": "",
+      "editable_master": "FreeCAD Document / FCStd",
+      "native_length_unit": "mm",
+      "paper_length_unit": "mm"
+    }
+  },
+  "layout": {
+    "paper_mm": [
+      420.0,
+      297.0
+    ],
+    "orientation": "Landscape",
+    "views": [
+      {
+        "view_id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+        "name": "แปลน & <A>",
+        "view_type": "Plan",
+        "scale_denominator": 50.0,
+        "cell_mm": [
+          12,
+          28,
+          196,
+          220
+        ],
+        "plot_mm": [
+          28.0,
+          52.0,
+          144.0,
+          170.0
+        ],
+        "geometry_bounds_mm": [
+          -100.0,
+          -100.0,
+          6100.0,
+          4100.0
+        ],
+        "geometry_paper_bounds_mm": [
+          38.0,
+          95.0,
+          162.0,
+          179.0
+        ],
+        "dimensions": [
+          {
+            "axis": "view_x",
+            "value_mm": 6200.0,
+            "definition": "projected geometry bounding-box extent",
+            "paper_endpoints_mm": [
+              [
+                38.0,
+                189.0
+              ],
+              [
+                162.0,
+                189.0
+              ]
+            ],
+            "view_id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+            "source_ids": [
+              "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "e1ef4019-410d-4034-baf0-69c2bda7d461"
+            ],
+            "measured_bounds_mm": [
+              -100.0,
+              -100.0,
+              6100.0,
+              4100.0
+            ]
+          },
+          {
+            "axis": "view_y",
+            "value_mm": 4200.0,
+            "definition": "projected geometry bounding-box extent",
+            "paper_endpoints_mm": [
+              [
+                29.0,
+                95.0
+              ],
+              [
+                29.0,
+                179.0
+              ]
+            ],
+            "view_id": "87387a62-ac38-4e20-9abe-adf4b4466719",
+            "source_ids": [
+              "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "e1ef4019-410d-4034-baf0-69c2bda7d461"
+            ],
+            "measured_bounds_mm": [
+              -100.0,
+              -100.0,
+              6100.0,
+              4100.0
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "source_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+            "category": "Wall",
+            "source_name": "ผนัง & <W01>",
+            "display_text": "ผนัง & <W01>",
+            "truncated": false,
+            "model_anchor_mm": [
+              3200.0,
+              100.0
+            ],
+            "paper_anchor_mm": [
+              104.0,
+              175.0
+            ],
+            "paper_text_mm": [
+              177.0,
+              175.7
+            ]
+          },
+          {
+            "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+            "category": "Window",
+            "source_name": "WIN01",
+            "display_text": "WIN01",
+            "truncated": false,
+            "model_anchor_mm": [
+              2600.0,
+              0.0
+            ],
+            "paper_anchor_mm": [
+              92.0,
+              177.0
+            ],
+            "paper_text_mm": [
+              177.0,
+              179.79999999999998
+            ]
+          },
+          {
+            "source_id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+            "category": "Slab",
+            "source_name": "S00",
+            "display_text": "S00",
+            "truncated": false,
+            "model_anchor_mm": [
+              3000.0,
+              -100.0
+            ],
+            "paper_anchor_mm": [
+              100.0,
+              179.0
+            ],
+            "paper_text_mm": [
+              177.0,
+              183.89999999999998
+            ]
+          }
+        ],
+        "datums": [],
+        "scale_bar": {
+          "model_length_mm": 2000,
+          "paper_length_mm": 40.0,
+          "scale_denominator": 50.0
+        },
+        "visible_paths": 20,
+        "cut_faces": 4,
+        "overhead_paths": 0,
+        "exclusions": []
+      },
+      {
+        "view_id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+        "name": "รูปตัด A-A",
+        "view_type": "Section",
+        "scale_denominator": 50.0,
+        "cell_mm": [
+          212,
+          28,
+          196,
+          220
+        ],
+        "plot_mm": [
+          240.0,
+          52.0,
+          132.0,
+          170.0
+        ],
+        "geometry_bounds_mm": [
+          -100.0,
+          -150.0,
+          6100.0,
+          3000.0
+        ],
+        "geometry_paper_bounds_mm": [
+          244.0,
+          105.5,
+          368.0,
+          168.5
+        ],
+        "dimensions": [
+          {
+            "axis": "view_x",
+            "value_mm": 6200.0,
+            "definition": "projected geometry bounding-box extent",
+            "paper_endpoints_mm": [
+              [
+                244.0,
+                178.5
+              ],
+              [
+                368.0,
+                178.5
+              ]
+            ],
+            "view_id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+            "source_ids": [
+              "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "e1ef4019-410d-4034-baf0-69c2bda7d461"
+            ],
+            "measured_bounds_mm": [
+              -100.0,
+              -150.0,
+              6100.0,
+              3000.0
+            ]
+          },
+          {
+            "axis": "view_y",
+            "value_mm": 3150.0,
+            "definition": "projected geometry bounding-box extent",
+            "paper_endpoints_mm": [
+              [
+                220.0,
+                105.5
+              ],
+              [
+                220.0,
+                168.5
+              ]
+            ],
+            "view_id": "40063d24-3b2e-4cf5-bec0-da0ccc2047ba",
+            "source_ids": [
+              "6539b9ac-d724-4250-ac4d-7578e6241e17",
+              "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+              "e1ef4019-410d-4034-baf0-69c2bda7d461"
+            ],
+            "measured_bounds_mm": [
+              -100.0,
+              -150.0,
+              6100.0,
+              3000.0
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "source_id": "69bc5fa9-df88-4bf6-be1b-7557af452cae",
+            "category": "Window",
+            "source_name": "WIN01",
+            "display_text": "WIN01",
+            "truncated": false,
+            "model_anchor_mm": [
+              2050.0,
+              1500.0
+            ],
+            "paper_anchor_mm": [
+              287.0,
+              135.5
+            ],
+            "paper_text_mm": [
+              377.0,
+              136.2
+            ]
+          },
+          {
+            "source_id": "e1ef4019-410d-4034-baf0-69c2bda7d461",
+            "category": "Wall",
+            "source_name": "ผนัง & <W01>",
+            "display_text": "ผนัง & <W01>",
+            "truncated": false,
+            "model_anchor_mm": [
+              3200.0,
+              1500.0
+            ],
+            "paper_anchor_mm": [
+              310.0,
+              135.5
+            ],
+            "paper_text_mm": [
+              377.0,
+              140.29999999999998
+            ]
+          },
+          {
+            "source_id": "6539b9ac-d724-4250-ac4d-7578e6241e17",
+            "category": "Slab",
+            "source_name": "S00",
+            "display_text": "S00",
+            "truncated": false,
+            "model_anchor_mm": [
+              3000.0,
+              -150.0
+            ],
+            "paper_anchor_mm": [
+              306.0,
+              168.5
+            ],
+            "paper_text_mm": [
+              377.0,
+              169.2
+            ]
+          }
+        ],
+        "datums": [
+          {
+            "kind": "level",
+            "source_id": "0d30b9cb-db31-4dfd-8245-c68429ce0c26",
+            "name": "L00",
+            "elevation_mm": 0.0,
+            "text": "L00 +0.000",
+            "paper_anchor_mm": [
+              240.5,
+              165.5
+            ]
+          },
+          {
+            "kind": "level",
+            "source_id": "23a5f4dc-a27b-4d33-8ce7-2dc1d7bbb00c",
+            "name": "L01",
+            "elevation_mm": 3000.0,
+            "text": "L01 +3.000",
+            "paper_anchor_mm": [
+              240.5,
+              105.5
+            ]
+          }
+        ],
+        "scale_bar": {
+          "model_length_mm": 2000,
+          "paper_length_mm": 40.0,
+          "scale_denominator": 50.0
+        },
+        "visible_paths": 26,
+        "cut_faces": 6,
+        "overhead_paths": 0,
+        "exclusions": []
+      }
+    ],
+    "render_rule": "3117-a3-landscape-two-view-vector-v1",
+    "font_family": "Sarabun",
+    "annotation_policy": "Overall dimensions follow projected geometry bounds; tags follow visible source labels/UUIDs; datum extents are view-clipped."
+  },
+  "validation": {
+    "status": "passed",
+    "paper": "A3",
+    "orientation": "Landscape",
+    "units": "mm",
+    "view_count": 2,
+    "explicit_scales_preserved": true,
+    "no_fit_rescaling": true,
+    "model_revision": "633734e836cffd40d82e2260048510b5cdd5e066643054c1af66619b70b86f1c",
+    "drawing_revision": "43d1812e1862ed5c1cf5117cdae0f04631a90965d0961ba71f2d52518f0351f7",
+    "visible_path_count": 46,
+    "cut_face_count": 10,
+    "dimension_count": 4,
+    "tag_count": 6,
+    "datum_count": 2,
+    "truncated_tag_count": 0,
+    "full_source_names_retained_in_metadata": true,
+    "svg": {
+      "status": "passed",
+      "page_count": 1,
+      "paper_mm": [
+        420.0,
+        297.0
+      ],
+      "view_count": 2,
+      "vector_geometry": true,
+      "embedded_sarabun_fonts": true,
+      "source_revisions_match": true
+    }
+  },
+  "files": [
+    {
+      "name": "drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "dece1f3fd5cc0695029e59d1d292639085f0344e590692f3b0d039d13395f5ff"
+    }
+  ],
+  "publication": "Payload replaced atomically per file; this metadata is the final completion marker. Verify its payload hash. Caught failures roll back; the bundle is not crash-atomic.",
+  "freshness": "Compare both model_revision and drawing_revision with a fresh native sheet capture; exports do not update when the model changes.",
+  "annotation_policy": "Overall dimensions follow projected geometry bounds; tags follow visible source labels/UUIDs; datum extents are view-clipped.",
+  "fonts": {
+    "family": "Sarabun",
+    "upstream": "https://github.com/google/fonts/tree/main/ofl/sarabun",
+    "downloaded_date": "2026-10-23",
+    "modified": false,
+    "license": "SIL Open Font License 1.1",
+    "files": [
+      {
+        "name": "Sarabun-Regular.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/Sarabun-Regular.ttf",
+        "bytes": 90220,
+        "sha256": "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1"
+      },
+      {
+        "name": "Sarabun-Bold.ttf",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/Sarabun-Bold.ttf",
+        "bytes": 89804,
+        "sha256": "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9"
+      },
+      {
+        "name": "OFL.txt",
+        "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/OFL.txt",
+        "bytes": 4387,
+        "sha256": "b26cae1321380296ba8311b632a397d5eac11b47197f9d0aa0b9310f1531ad60"
+      }
+    ]
+  }
+}

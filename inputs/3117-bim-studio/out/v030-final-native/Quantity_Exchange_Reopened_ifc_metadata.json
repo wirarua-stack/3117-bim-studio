@@ -1,0 +1,1078 @@
+{
+  "export_schema": 1,
+  "format": "ifc",
+  "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9",
+  "source": "FreeCAD native document / FCStd",
+  "editable_master": false,
+  "snapshot": {
+    "snapshot_schema": 1,
+    "workbench_version": "0.3.0",
+    "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9",
+    "revision_rule": "3117.native-authored-and-coverage.sha256.v1",
+    "revision_scope": "3117 authored properties and coverage inventory; excludes display settings and unsupported object geometry",
+    "captured_at_utc": "2026-10-23T04:02:28.307837+00:00",
+    "source_document": {
+      "name": "Quantity_Exchange_Workbench",
+      "label": "Quantity_Exchange_Workbench",
+      "file": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-final-native/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd"
+    },
+    "units": {
+      "length": "m",
+      "area": "m2",
+      "volume": "m3"
+    },
+    "coordinates": {
+      "origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": "right-handed X/Y, Z up",
+      "wall": "X follows start to end; material is on local +Y"
+    },
+    "project": {
+      "id": "19487351-bc67-45b6-a16e-a3b966696978",
+      "label": "3117 ปริมาณและ IFC",
+      "object_name": "BIM3117_Project",
+      "schema": 1,
+      "creation_version": "0.3.0",
+      "number": "QTY-003",
+      "author": "3117 BIM"
+    },
+    "levels": [
+      {
+        "id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "label": "L01",
+        "object_name": "BIM3117_Level001",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "elevation_m": 3.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      },
+      {
+        "id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+        "label": "B01",
+        "object_name": "BIM3117_Level002",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "elevation_m": -3.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      },
+      {
+        "id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "label": "L00",
+        "object_name": "BIM3117_Level",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "elevation_m": 0.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      }
+    ],
+    "grids": [
+      {
+        "id": "28903421-0dcc-4371-bf1a-b3699ab77e46",
+        "label": "Grid A",
+        "object_name": "BIM3117_Grid",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "axis": "X",
+        "position_m": 0.0,
+        "length_m": 10.0,
+        "bubble_label": "Grid A",
+        "bubble_radius_m": 0.25,
+        "level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "offset_m": 0.0,
+        "elevation_m": 0.0
+      }
+    ],
+    "wall_types": [
+      {
+        "id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "label": "W200",
+        "object_name": "BIM3117_WallType",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "thickness_m": 0.2,
+        "material": "Concrete"
+      }
+    ],
+    "walls": [
+      {
+        "id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "label": "Diagonal basement",
+        "object_name": "BIM3117_Wall001",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "base_level_id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+        "top_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "start_m": [
+          0.0,
+          6.0
+        ],
+        "end_m": [
+          3.0,
+          10.0
+        ],
+        "base_offset_m": 0.1,
+        "top_offset_m": -0.2,
+        "base_z_m": -2.9,
+        "height_m": 2.7,
+        "length_m": 5.0,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 13.5,
+          "opening_side_area_m2": 1.6,
+          "net_side_area_m2": 11.899999999999995,
+          "gross_volume_m3": 2.7,
+          "opening_volume_m3": 0.3200000000000012,
+          "net_volume_m3": 2.379999999999999
+        }
+      },
+      {
+        "id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "label": "Reversed wall",
+        "object_name": "BIM3117_Wall002",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "top_level_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "start_m": [
+          6.0,
+          4.0
+        ],
+        "end_m": [
+          2.0,
+          4.0
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "length_m": 4.0,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 12.0,
+          "opening_side_area_m2": 1.6800000000000002,
+          "net_side_area_m2": 10.32,
+          "gross_volume_m3": 2.4000000000000004,
+          "opening_volume_m3": 0.3360000000000003,
+          "net_volume_m3": 2.064
+        }
+      },
+      {
+        "id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "label": "W201",
+        "object_name": "BIM3117_Wall",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "top_level_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "start_m": [
+          0.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          0.0
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "length_m": 6.0,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 18.0,
+          "opening_side_area_m2": 1.8900000000000001,
+          "net_side_area_m2": 16.11,
+          "gross_volume_m3": 3.6,
+          "opening_volume_m3": 0.3780000000000001,
+          "net_volume_m3": 3.222
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "label": "ประตู D01",
+        "object_name": "BIM3117_Door",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "host_id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "offset_m": 1.2,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "frame_volume_m3": 0.05000000000000003
+      },
+      {
+        "id": "892f5614-3284-4994-9087-a248d59239a3",
+        "label": "Basement door",
+        "object_name": "BIM3117_Door001",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "host_id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "offset_m": 0.5,
+        "width_m": 0.8,
+        "height_m": 2.0,
+        "sill_m": 0.1,
+        "frame_volume_m3": 0.047
+      },
+      {
+        "id": "9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "label": "Reversed door",
+        "object_name": "BIM3117_Door002",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "host_id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "offset_m": 0.7,
+        "width_m": 0.8,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "frame_volume_m3": 0.048999999999999995
+      }
+    ],
+    "wall_rows": [
+      {
+        "element_id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "object_name": "BIM3117_Wall001",
+        "name": "Diagonal basement",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "type_name": "W200",
+        "base_level_id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+        "base_level": "B01",
+        "top_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "top_level": "L00",
+        "length_m": 5.0,
+        "height_m": 2.7,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 13.5,
+        "opening_side_area_m2": 1.6,
+        "net_side_area_m2": 11.899999999999995,
+        "gross_volume_m3": 2.7,
+        "opening_volume_m3": 0.3200000000000012,
+        "net_volume_m3": 2.379999999999999,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      },
+      {
+        "element_id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "object_name": "BIM3117_Wall002",
+        "name": "Reversed wall",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "type_name": "W200",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "base_level": "L00",
+        "top_level_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "top_level": "L01",
+        "length_m": 4.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 12.0,
+        "opening_side_area_m2": 1.6800000000000002,
+        "net_side_area_m2": 10.32,
+        "gross_volume_m3": 2.4000000000000004,
+        "opening_volume_m3": 0.3360000000000003,
+        "net_volume_m3": 2.064,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      },
+      {
+        "element_id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "object_name": "BIM3117_Wall",
+        "name": "W201",
+        "type_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "type_name": "W200",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "base_level": "L00",
+        "top_level_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "top_level": "L01",
+        "length_m": 6.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 18.0,
+        "opening_side_area_m2": 1.8900000000000001,
+        "net_side_area_m2": 16.11,
+        "gross_volume_m3": 3.6,
+        "opening_volume_m3": 0.3780000000000001,
+        "net_volume_m3": 3.222,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      }
+    ],
+    "door_rows": [
+      {
+        "element_id": "6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "object_name": "BIM3117_Door",
+        "name": "ประตู D01",
+        "host_id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "host_name": "W201",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "base_level": "L00",
+        "offset_m": 1.2,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "opening_area_m2": 1.8900000000000001,
+        "opening_volume_m3": 0.37800000000000006,
+        "frame_volume_m3": 0.05000000000000003,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      },
+      {
+        "element_id": "892f5614-3284-4994-9087-a248d59239a3",
+        "object_name": "BIM3117_Door001",
+        "name": "Basement door",
+        "host_id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "host_name": "Diagonal basement",
+        "base_level_id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+        "base_level": "B01",
+        "offset_m": 0.5,
+        "width_m": 0.8,
+        "height_m": 2.0,
+        "sill_m": 0.1,
+        "opening_area_m2": 1.6,
+        "opening_volume_m3": 0.32000000000000006,
+        "frame_volume_m3": 0.047,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      },
+      {
+        "element_id": "9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "object_name": "BIM3117_Door002",
+        "name": "Reversed door",
+        "host_id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "host_name": "Reversed wall",
+        "base_level_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "base_level": "L00",
+        "offset_m": 0.7,
+        "width_m": 0.8,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "opening_area_m2": 1.6800000000000002,
+        "opening_volume_m3": 0.3360000000000001,
+        "frame_volume_m3": 0.048999999999999995,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9"
+      }
+    ],
+    "window_rows": [],
+    "slab_rows": [],
+    "column_rows": [],
+    "beam_rows": [],
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "19487351-bc67-45b6-a16e-a3b966696978",
+          "label": "3117 ปริมาณและ IFC",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid",
+          "object_id": "28903421-0dcc-4371-bf1a-b3699ab77e46",
+          "label": "Grid A",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall001",
+          "object_id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+          "label": "Diagonal basement",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Wall002",
+          "object_id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+          "label": "Reversed wall",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_WallBody001",
+          "object_id": "3c07da10-ab36-4965-bef1-058710270c66",
+          "label": "Diagonal basement · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Door",
+          "object_id": "6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+          "label": "ประตู D01",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+          "label": "W201",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Level002",
+          "object_id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+          "label": "B01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+          "label": "W200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Door001",
+          "object_id": "892f5614-3284-4994-9087-a248d59239a3",
+          "label": "Basement door",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_Door002",
+          "object_id": "9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+          "label": "Reversed door",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallBody002",
+          "object_id": "b01661f9-d9f4-41cf-a829-db41de3d543f",
+          "label": "Reversed wall · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "c3405767-0480-42e2-9b7f-ed70d0a4e180",
+          "label": "W200 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 11,
+        "derived": 3,
+        "reference": 1,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+        "1 native datum object(s) are listed as reference and omitted from IFC."
+      ],
+      "complete": false,
+      "scope": "3117 Project, Levels, Wall Types, straight Walls and hosted rectangular Doors"
+    },
+    "totals": {
+      "walls_count": 3,
+      "doors_count": 3,
+      "windows_count": 0,
+      "slabs_count": 0,
+      "columns_count": 0,
+      "beams_count": 0,
+      "slab_net_volume_m3": 0.0,
+      "column_net_volume_m3": 0.0,
+      "beam_net_volume_m3": 0.0,
+      "structural_net_volume_m3": 0.0,
+      "join_deduction_m3": 0.0,
+      "gross_side_area_m2": 43.5,
+      "net_side_area_m2": 38.33,
+      "gross_volume_m3": 8.700000000000001,
+      "net_volume_m3": 7.665999999999999,
+      "rule": "Sum of individual walls; no wall-join overlap deductions"
+    }
+  },
+  "coverage": {
+    "items": [
+      {
+        "object_name": "BIM3117_Project",
+        "object_id": "19487351-bc67-45b6-a16e-a3b966696978",
+        "label": "3117 ปริมาณและ IFC",
+        "kind": "Project",
+        "status": "mapped",
+        "ifc_class": "IfcProject",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Grid",
+        "object_id": "28903421-0dcc-4371-bf1a-b3699ab77e46",
+        "label": "Grid A",
+        "kind": "Grid",
+        "status": "reference",
+        "ifc_class": "",
+        "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Wall001",
+        "object_id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "label": "Diagonal basement",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Wall002",
+        "object_id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "label": "Reversed wall",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_WallBody001",
+        "object_id": "3c07da10-ab36-4965-bef1-058710270c66",
+        "label": "Diagonal basement · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level001",
+        "object_id": "52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "label": "L01",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Door",
+        "object_id": "6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "label": "ประตู D01",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_Wall",
+        "object_id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "label": "W201",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Level002",
+        "object_id": "83475456-943d-40cd-85ab-432d89ee1b8d",
+        "label": "B01",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallType",
+        "object_id": "84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "label": "W200",
+        "kind": "WallType",
+        "status": "mapped",
+        "ifc_class": "IfcWallType",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Door001",
+        "object_id": "892f5614-3284-4994-9087-a248d59239a3",
+        "label": "Basement door",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_Door002",
+        "object_id": "9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "label": "Reversed door",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_WallBody002",
+        "object_id": "b01661f9-d9f4-41cf-a829-db41de3d543f",
+        "label": "Reversed wall · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallBody",
+        "object_id": "c3405767-0480-42e2-9b7f-ed70d0a4e180",
+        "label": "W200 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level",
+        "object_id": "e424bb78-630d-4461-8583-e6ca518258ef",
+        "label": "L00",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      }
+    ],
+    "counts": {
+      "mapped": 11,
+      "derived": 3,
+      "reference": 1,
+      "unsupported": 0
+    },
+    "warnings": [
+      "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+      "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+      "1 native datum object(s) are listed as reference and omitted from IFC."
+    ],
+    "complete": false,
+    "scope": "3117 Project, Levels, Wall Types, straight Walls and hosted rectangular Doors"
+  },
+  "validation": {
+    "status": "passed",
+    "schema": "IFC4",
+    "ifcopenshell_version": "0.8.4",
+    "source_content_revision": "b3c3082bce42354cf3a04dcfe3381f668e1c5164f9b93ae271a299cdf29300b9",
+    "checks_passed": 37,
+    "checks": [
+      {
+        "name": "ifc4-schema",
+        "status": "passed",
+        "details": []
+      },
+      {
+        "name": "unique-global-ids",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "mapped-counts",
+        "status": "passed",
+        "details": {
+          "IfcProject": 1,
+          "IfcSite": 1,
+          "IfcBuilding": 1,
+          "IfcBuildingStorey": 3,
+          "IfcWallType": 1,
+          "IfcWall": 3,
+          "IfcDoor": 3,
+          "IfcWindow": 0,
+          "IfcSlab": 0,
+          "IfcColumn": 0,
+          "IfcBeam": 0,
+          "IfcOpeningElement": 3,
+          "IfcRelVoidsElement": 3,
+          "IfcRelFillsElement": 3
+        }
+      },
+      {
+        "name": "si-units",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "project-hierarchy",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "project-source",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "level:52563c41-d2a3-498c-898c-0166b4bdacc1",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "level:83475456-943d-40cd-85ab-432d89ee1b8d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "level:e424bb78-630d-4461-8583-e6ca518258ef",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-type:84545bb8-d039-4374-ad7f-cd2f61a86533",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-semantics:2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-placement:2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-quantities:2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "status": "passed",
+        "details": {
+          "volume_m3": 2.38,
+          "expected_volume_m3": 2.379999999999999
+        }
+      },
+      {
+        "name": "wall-semantics:31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-placement:31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-quantities:31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "status": "passed",
+        "details": {
+          "volume_m3": 2.0640000000000005,
+          "expected_volume_m3": 2.064
+        }
+      },
+      {
+        "name": "wall-semantics:7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-placement:7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-quantities:7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "status": "passed",
+        "details": {
+          "volume_m3": 3.2220000000000004,
+          "expected_volume_m3": 3.222
+        }
+      },
+      {
+        "name": "door-relations:6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-source-size:6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-placement:6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.05000000000000001,
+          "expected_volume_m3": 0.05000000000000003
+        }
+      },
+      {
+        "name": "opening-empty:6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-relations:892f5614-3284-4994-9087-a248d59239a3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-source-size:892f5614-3284-4994-9087-a248d59239a3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-placement:892f5614-3284-4994-9087-a248d59239a3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:892f5614-3284-4994-9087-a248d59239a3",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.04700000000000003,
+          "expected_volume_m3": 0.047
+        }
+      },
+      {
+        "name": "opening-empty:892f5614-3284-4994-9087-a248d59239a3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-relations:9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-source-size:9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-placement:9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.04900000000000001,
+          "expected_volume_m3": 0.048999999999999995
+        }
+      },
+      {
+        "name": "opening-empty:9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "status": "passed",
+        "details": ""
+      }
+    ],
+    "geometry": [
+      {
+        "id": "2ae13c01-462a-401c-b8c8-99e34c4a0aca",
+        "ifc_class": "IfcWall",
+        "volume_m3": 2.38,
+        "expected_volume_m3": 2.379999999999999,
+        "world_bounds_m": [
+          [
+            -0.16000000000000003,
+            6.0,
+            -2.9
+          ],
+          [
+            3.0,
+            10.120000000000001,
+            -0.19999999999999973
+          ]
+        ]
+      },
+      {
+        "id": "31d00419-64a5-4d49-ad2a-ed8bc95af4dd",
+        "ifc_class": "IfcWall",
+        "volume_m3": 2.0640000000000005,
+        "expected_volume_m3": 2.064,
+        "world_bounds_m": [
+          [
+            2.0,
+            3.8,
+            0.0
+          ],
+          [
+            6.0,
+            4.0,
+            3.0
+          ]
+        ]
+      },
+      {
+        "id": "7d785278-ee18-47c5-be54-0a7242c28e0c",
+        "ifc_class": "IfcWall",
+        "volume_m3": 3.2220000000000004,
+        "expected_volume_m3": 3.222,
+        "world_bounds_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            6.0,
+            0.2,
+            3.0
+          ]
+        ]
+      },
+      {
+        "id": "6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45",
+        "ifc_class": "IfcDoor",
+        "volume_m3": 0.05000000000000001,
+        "expected_volume_m3": 0.05000000000000003,
+        "world_bounds_m": [
+          [
+            1.2,
+            0.0,
+            0.0
+          ],
+          [
+            2.1,
+            0.2,
+            2.0999999999999996
+          ]
+        ]
+      },
+      {
+        "id": "892f5614-3284-4994-9087-a248d59239a3",
+        "ifc_class": "IfcDoor",
+        "volume_m3": 0.04700000000000003,
+        "expected_volume_m3": 0.047,
+        "world_bounds_m": [
+          [
+            0.13999999999999996,
+            6.4,
+            -2.8
+          ],
+          [
+            0.78,
+            7.16,
+            -0.7999999999999998
+          ]
+        ]
+      },
+      {
+        "id": "9dd33b68-612c-40b9-9c5a-f8914c63ed9f",
+        "ifc_class": "IfcDoor",
+        "volume_m3": 0.04900000000000001,
+        "expected_volume_m3": 0.048999999999999995,
+        "world_bounds_m": [
+          [
+            4.5,
+            3.8,
+            0.0
+          ],
+          [
+            5.3,
+            4.0,
+            2.0999999999999996
+          ]
+        ]
+      }
+    ],
+    "express_rules": {
+      "requested": false,
+      "status": "not_requested",
+      "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+    },
+    "external_application_review": "not established by this validator"
+  },
+  "files": [
+    {
+      "name": "Quantity_Exchange_Reopened.ifc",
+      "bytes": 30297,
+      "sha256": "07e03ffd6bccc6469550bf4f4cf7f3deb282bcbaea514cfbfe2519972e75fea6"
+    }
+  ],
+  "csv": null,
+  "publication": "Payloads replaced individually; this metadata is the final completion marker. Verify hashes before use.",
+  "freshness": "Compare content_revision with a new native snapshot; this file does not update when the model changes."
+}

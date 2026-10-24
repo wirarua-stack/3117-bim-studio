@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "source drawing lifecycle suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "source FCStd matches its recorded file hash",
+      "status": "passed"
+    },
+    {
+      "name": "drawing proxies are not preregistered in this fresh process",
+      "status": "passed"
+    },
+    {
+      "name": "restored drawing and model modules load from the installed add-on",
+      "status": "passed"
+    },
+    {
+      "name": "all native drawing proxies restore without placeholders",
+      "status": "passed"
+    },
+    {
+      "name": "all authored derived and drawing UUIDs survive fresh restore",
+      "status": "passed"
+    },
+    {
+      "name": "four views and two sheets restore in their separate native drawing set",
+      "status": "passed"
+    },
+    {
+      "name": "view parameters and annotation flags survive fresh restore exactly",
+      "status": "passed"
+    },
+    {
+      "name": "Plan Levels restore with matching persistent reference identities",
+      "status": "passed"
+    },
+    {
+      "name": "sheet view order and expected UUIDs restore together",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process recompute preserves the exact v0.3.0 model revision",
+      "status": "passed"
+    },
+    {
+      "name": "all seven documentation objects remain explicit coverage references",
+      "status": "passed"
+    },
+    {
+      "name": "both sheet identities survive fresh-process restoration",
+      "status": "passed"
+    },
+    {
+      "name": "all four cut and HLR results are deterministic across native save and reopen",
+      "status": "passed"
+    },
+    {
+      "name": "fresh capture changes no native definition BRep object count or history",
+      "status": "passed"
+    },
+    {
+      "name": "restored view can be edited in one native transaction with stable UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Undo after fresh restore returns the exact saved drawing state",
+      "status": "passed"
+    },
+    {
+      "name": "Redo after fresh restore returns the edited drawing state",
+      "status": "passed"
+    },
+    {
+      "name": "restored Plan remains associated with native Level elevation edits",
+      "status": "passed"
+    },
+    {
+      "name": "Level Undo after restore returns both saved content identities",
+      "status": "passed"
+    },
+    {
+      "name": "fresh SVG publication preserves the exact pre-save vector payload",
+      "status": "passed"
+    },
+    {
+      "name": "fresh SVG sidecar validates native identities and the actual published bytes",
+      "status": "passed"
+    },
+    {
+      "name": "fresh publication preserves the valid native Redo branch and all source objects",
+      "status": "passed"
+    },
+    {
+      "name": "restore edit Undo and export never overwrite the source sample",
+      "status": "passed"
+    },
+    {
+      "name": "frozen v0.3.0 input remains unchanged after both installed-host stages",
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh-process installed drawing proxy restore, content identities, native edit/Undo/Redo and SVG publication",
+  "checks_passed": 25,
+  "sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Drawings_Workbench.FCStd",
+  "sample_sha256": "6ca93196b59ad03d69456a59fbe1de6a818aaabd28b25bb47d142dddfe6acfd0",
+  "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "sheet_states": {
+    "A101": {
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "624cc3378e9e8c1ce664025993368e428df39cfc7067bc75cf18414024db9e5b"
+    },
+    "A201": {
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "ac8cfef3cbd8c022e4e2363e65166dee66a2ccf0b827e39533ee8dfdd44beda6"
+    }
+  },
+  "geometry_hashes": {
+    "83d83999-5b51-4ff0-9950-ca2d26501803": "2e544d655d784d868d5583baad84b5e732ef852f2c2466273196f21fbeddcd40",
+    "7e7e26e4-bdd8-4edb-92cc-e3c59d141767": "5535452681d074ff95f07a0160d9f8ccd5b56822bbf850a7ec59d8af0b6f7f8d",
+    "5964c623-326b-4179-a1c4-35d9149d7dca": "d8320784e4b958c9c20962a2a9b19e3277a788e83678857147bd3ae9e5ef966c",
+    "6aa30537-96f4-41b0-b3d0-fa10ed6db7b9": "316932d67d14eee7702f3332bca1e8c26660c0bcd40893ce673bed018522fee5"
+  },
+  "svg_result": {
+    "format": "svg",
+    "files": [
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/A101_Reopened.svg",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/A101_Reopened_svg_metadata.json"
+    ],
+    "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/A101_Reopened_svg_metadata.json",
+    "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+    "drawing_revision": "624cc3378e9e8c1ce664025993368e428df39cfc7067bc75cf18414024db9e5b",
+    "validation": {
+      "status": "passed",
+      "paper": "A3",
+      "orientation": "Landscape",
+      "units": "mm",
+      "view_count": 2,
+      "explicit_scales_preserved": true,
+      "no_fit_rescaling": true,
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "624cc3378e9e8c1ce664025993368e428df39cfc7067bc75cf18414024db9e5b",
+      "visible_path_count": 140,
+      "cut_face_count": 34,
+      "dimension_count": 4,
+      "tag_count": 32,
+      "datum_count": 8,
+      "truncated_tag_count": 0,
+      "full_source_names_retained_in_metadata": true,
+      "svg": {
+        "status": "passed",
+        "page_count": 1,
+        "paper_mm": [
+          420.0,
+          297.0
+        ],
+        "view_count": 2,
+        "vector_geometry": true,
+        "embedded_sarabun_fonts": true,
+        "source_revisions_match": true
+      }
+    }
+  },
+  "installed_modules": {
+    "bim3117_freecad.drawings": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawings.py",
+      "sha256": "8718714f12c01ee07bafd41fd51890e4a1da5cf8e63c1fa3e56879a6db6c3af5"
+    },
+    "bim3117_freecad.drawing_geometry": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_geometry.py",
+      "sha256": "98c8251d5c4ce1e6529475a97ed5f764ed29e8642a4ea284127bebb2de4c30ec"
+    },
+    "bim3117_freecad.drawing_render": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_render.py",
+      "sha256": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388"
+    },
+    "bim3117_freecad.drawing_export": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_export.py",
+      "sha256": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75"
+    },
+    "bim3117_freecad.services": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+      "sha256": "d06ff6c4c55bcd57280d37130758493cb5d1dd107684682ac4907f8e43da9884"
+    },
+    "bim3117_freecad.snapshot": {
+      "path": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+      "sha256": "65b5a96d7501c61bf0f0c779ae261d330124ca3ab65159df9533cbedd60c08b5"
+    }
+  }
+}

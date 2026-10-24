@@ -1,0 +1,13 @@
+test_concurrent_install_lock_blocks_changes (test_install_support.InstallSupportTests.test_concurrent_install_lock_blocks_changes) ... ok
+test_failed_promotion_restores_previous_installation (test_install_support.InstallSupportTests.test_failed_promotion_restores_previous_installation) ... ok
+test_first_install_in_unicode_path_has_identity_and_licenses (test_install_support.InstallSupportTests.test_first_install_in_unicode_path_has_identity_and_licenses) ... ok
+test_linked_payload_is_rejected_without_touching_target (test_install_support.InstallSupportTests.test_linked_payload_is_rejected_without_touching_target) ... ok
+test_restore_rejects_path_traversal (test_install_support.InstallSupportTests.test_restore_rejects_path_traversal) ... ok
+test_uninstall_and_restore_preserve_files (test_install_support.InstallSupportTests.test_uninstall_and_restore_preserve_files) ... ok
+test_unowned_existing_directory_is_not_modified (test_install_support.InstallSupportTests.test_unowned_existing_directory_is_not_modified) ... ok
+test_upgrade_preserves_old_files_outside_mod (test_install_support.InstallSupportTests.test_upgrade_preserves_old_files_outside_mod) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.015s
+
+OK

@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "saved architecture fixture comes from a passing native test",
+      "status": "passed"
+    },
+    {
+      "name": "building model proxies not preregistered before FCStd open",
+      "status": "passed"
+    },
+    {
+      "name": "FCStd restore imports building proxies from installed addon",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process restores one type two walls one door and two levels",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves every saved native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process restores type level host and derived-body references",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process recomputes valid boolean wall solids",
+      "status": "passed"
+    },
+    {
+      "name": "restored level dependency updates wall height and opening solid",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process native undo restores the complete cut model",
+      "status": "passed"
+    },
+    {
+      "name": "restored type propagation updates both wall instances",
+      "status": "passed"
+    },
+    {
+      "name": "restored hosted door edit cuts its new opening",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process edits retain IDs and undo restores original valid geometry",
+      "status": "passed"
+    }
+  ],
+  "sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v020-native/Architecture_Reopened.FCStd",
+  "checks_passed": 12,
+  "element_ids": {
+    "BIM3117_Project": "26f153ab-b81d-46be-ac80-e4d0c94dfb8b",
+    "BIM3117_Level": "6834578e-4d30-4da4-97f2-c656a817349b",
+    "BIM3117_WallBody": "352e20f8-fa96-41d5-ae5f-07bde86807b0",
+    "BIM3117_WallBody001": "322f1801-4c78-45bf-8c35-804f117d5402",
+    "BIM3117_Wall001": "5546acfd-f9fd-470e-a77d-3291481d93d3",
+    "BIM3117_WallType": "93a63407-9b56-4286-b4e1-e78383ca2929",
+    "BIM3117_Level001": "61c59bb3-ba54-43f2-887a-10f190d3a309",
+    "BIM3117_Wall": "e3e5ba1a-602e-4000-bff8-daf01134fd8b",
+    "BIM3117_Door": "4d4e9dec-ef33-4540-8c88-686a382694ce"
+  }
+}

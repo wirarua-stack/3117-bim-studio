@@ -1,0 +1,4 @@
+﻿element_id,name,level_id,level,offset_m,top_z_m,thickness_m,gross_area_m2,net_area_m2,perimeter_m,gross_volume_m3,net_volume_m3,material,count,quantity_rule,content_revision
+a40139a9-a4fa-47a8-9986-ce329040ea3f,S02,bdabc21f-bf74-4993-8c33-88d9cec76da0,L02,0.0,6.0,0.15,29.25,29.250000000000004,22.0,4.3875,4.3875,Concrete,1,3117.horizontal-polygon-slab.top-level.uniform.v1,827910f06043efc70b4b635e08ca1458179dd3b2a617710cd6bba095ed01a63f
+c5c6abf6-af21-43fa-97c4-94fbfd1248ca,S00,0cc50f88-d6d2-446b-bdd5-2c4441c6a90c,L00,0.0,0.0,0.15,29.25,29.250000000000004,22.0,4.3875,4.3875,Concrete,1,3117.horizontal-polygon-slab.top-level.uniform.v1,827910f06043efc70b4b635e08ca1458179dd3b2a617710cd6bba095ed01a63f
+c94b7ea5-e339-4e06-a055-e7d4a53e61d9,S01,d0b12385-3bcc-42bf-9869-9e1c2aed71f8,L01,0.0,3.0,0.15,29.25,29.250000000000004,22.0,4.3875,4.3875,Concrete,1,3117.horizontal-polygon-slab.top-level.uniform.v1,827910f06043efc70b4b635e08ca1458179dd3b2a617710cd6bba095ed01a63f

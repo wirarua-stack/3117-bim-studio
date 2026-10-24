@@ -1,0 +1,2 @@
+﻿element_id,name,host_id,host_name,base_level_id,base_level,offset_m,width_m,height_m,sill_m,opening_area_m2,opening_volume_m3,frame_volume_m3,count,quantity_rule,content_revision
+86a2fc3e-ca5c-45e9-beca-9d801aad3dce,ประตู D01,8ed897e2-c62f-47dc-bb5b-228f16d76437,W201,94285941-d9d0-4a87-b315-799f3fd31610,L00,1.2,0.9,2.1,0.0,1.8900000000000001,0.37800000000000006,0.05000000000000003,1,3117.overall-opening.generic-three-bar-frame.v1,fe6408025e3c448182443ee79733b39cad46c8cfdffdcfb860661b2794f2f779

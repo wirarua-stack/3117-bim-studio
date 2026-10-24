@@ -1,0 +1,2 @@
+﻿element_id,name,host_id,host_name,base_level_id,base_level,offset_m,width_m,height_m,sill_m,opening_area_m2,opening_volume_m3,frame_volume_m3,count,quantity_rule,content_revision
+6da8fed5-3ab5-40dd-95a1-9b8a6a33bd45,'@door,7d785278-ee18-47c5-be54-0a7242c28e0c,'=2+3,e424bb78-630d-4461-8583-e6ca518258ef,L00,1.2,0.9,2.1,0.0,1.8900000000000001,0.37800000000000006,0.05000000000000003,1,3117.overall-opening.generic-three-bar-frame.v1,1dc4740f238806de5323dcb54b2d4b3cd468a854bae0e063b8af760381dd4c4f

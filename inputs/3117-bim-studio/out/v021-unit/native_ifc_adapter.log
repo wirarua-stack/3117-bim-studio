@@ -1,0 +1,14 @@
+test_all_root_ids_stable_after_rename_and_new_revision (test_native_ifc.NativeIfcTests.test_all_root_ids_stable_after_rename_and_new_revision) ... ok
+test_diagonal_reversed_axis_signed_elevation_and_offsets (test_native_ifc.NativeIfcTests.test_diagonal_reversed_axis_signed_elevation_and_offsets) ... ok
+test_empty_building_remains_valid_and_readonly (test_native_ifc.NativeIfcTests.test_empty_building_remains_valid_and_readonly) ... ok
+test_full_express_validation (test_native_ifc.NativeIfcTests.test_full_express_validation) ... ok
+test_invalid_reference_duplicate_id_nonfinite_and_overlap_rejected (test_native_ifc.NativeIfcTests.test_invalid_reference_duplicate_id_nonfinite_and_overlap_rejected) ... ok
+test_multiple_openings_and_shared_type_have_single_wall_row (test_native_ifc.NativeIfcTests.test_multiple_openings_and_shared_type_have_single_wall_row) ... ok
+test_roundtrip_schema_geometry_relationships_and_quantities (test_native_ifc.NativeIfcTests.test_roundtrip_schema_geometry_relationships_and_quantities) ... ok
+test_validator_rejects_equal_volume_opening_in_wrong_location (test_native_ifc.NativeIfcTests.test_validator_rejects_equal_volume_opening_in_wrong_location) ... ok
+test_validator_rejects_stale_native_solid_volume (test_native_ifc.NativeIfcTests.test_validator_rejects_stale_native_solid_volume) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.985s
+
+OK

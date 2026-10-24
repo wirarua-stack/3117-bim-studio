@@ -1,0 +1,2130 @@
+{
+  "status": "failed",
+  "schema": "IFC4",
+  "ifcopenshell_version": "0.8.4",
+  "source_content_revision": "495f5dd2674fdbf68ec62bfdbb1018c7a99c00b4d3d23d4efbce9b15b1449c81",
+  "checks_passed": 182,
+  "checks": [
+    {
+      "name": "ifc4-schema",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "unique-global-ids",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "mapped-counts",
+      "status": "passed",
+      "details": {
+        "IfcProject": 1,
+        "IfcSite": 1,
+        "IfcBuilding": 1,
+        "IfcBuildingStorey": 3,
+        "IfcWallType": 1,
+        "IfcWall": 8,
+        "IfcDoor": 2,
+        "IfcWindow": 4,
+        "IfcSlab": 3,
+        "IfcColumn": 8,
+        "IfcBeam": 8,
+        "IfcOpeningElement": 6,
+        "IfcRelVoidsElement": 6,
+        "IfcRelFillsElement": 6
+      }
+    },
+    {
+      "name": "si-units",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-hierarchy",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-source",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:4ccf5406-82fe-4f06-9c68-16bdc6213af6",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:6e8855d9-a8f8-4a85-bc62-fa7dfa9c1a61",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:c153f79d-2c60-4581-8b82-1a916ccb2d40",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-type:18fa3118-d5e2-4298-8b71-d1dfc2f2272c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-semantics:3df5c964-a668-43d1-8515-a84c5dc28c71",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:3df5c964-a668-43d1-8515-a84c5dc28c71",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:3df5c964-a668-43d1-8515-a84c5dc28c71",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:3df5c964-a668-43d1-8515-a84c5dc28c71",
+      "status": "passed",
+      "details": {
+        "volume_m3": 2.907,
+        "expected_volume_m3": 2.907
+      }
+    },
+    {
+      "name": "wall-semantics:405f4a74-e4ad-44cd-bcff-c7ff5b4a0d32",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:405f4a74-e4ad-44cd-bcff-c7ff5b4a0d32",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:405f4a74-e4ad-44cd-bcff-c7ff5b4a0d32",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:405f4a74-e4ad-44cd-bcff-c7ff5b4a0d32",
+      "status": "passed",
+      "details": {
+        "volume_m3": 1.8870000000000005,
+        "expected_volume_m3": 1.887
+      }
+    },
+    {
+      "name": "wall-semantics:406c6510-feb7-4739-96a8-01786f7aba7c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:406c6510-feb7-4739-96a8-01786f7aba7c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:406c6510-feb7-4739-96a8-01786f7aba7c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:406c6510-feb7-4739-96a8-01786f7aba7c",
+      "status": "passed",
+      "details": {
+        "volume_m3": 2.241,
+        "expected_volume_m3": 2.241
+      }
+    },
+    {
+      "name": "wall-semantics:49a8f5d6-e9b4-4b77-9d89-5428ab568adc",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:49a8f5d6-e9b4-4b77-9d89-5428ab568adc",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:49a8f5d6-e9b4-4b77-9d89-5428ab568adc",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:49a8f5d6-e9b4-4b77-9d89-5428ab568adc",
+      "status": "passed",
+      "details": {
+        "volume_m3": 2.907,
+        "expected_volume_m3": 2.907
+      }
+    },
+    {
+      "name": "wall-semantics:640cbbb1-d914-442b-b487-3cf51f9bf8cb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:640cbbb1-d914-442b-b487-3cf51f9bf8cb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:640cbbb1-d914-442b-b487-3cf51f9bf8cb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:640cbbb1-d914-442b-b487-3cf51f9bf8cb",
+      "status": "passed",
+      "details": {
+        "volume_m3": 1.8870000000000005,
+        "expected_volume_m3": 1.887
+      }
+    },
+    {
+      "name": "wall-semantics:e44b2da9-8962-4d90-8bbb-2d3abb66c72f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:e44b2da9-8962-4d90-8bbb-2d3abb66c72f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:e44b2da9-8962-4d90-8bbb-2d3abb66c72f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:e44b2da9-8962-4d90-8bbb-2d3abb66c72f",
+      "status": "passed",
+      "details": {
+        "volume_m3": 2.241,
+        "expected_volume_m3": 2.241
+      }
+    },
+    {
+      "name": "wall-semantics:ec3a622b-5ae3-4f4b-98da-ea5097c8640a",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:ec3a622b-5ae3-4f4b-98da-ea5097c8640a",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:ec3a622b-5ae3-4f4b-98da-ea5097c8640a",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:ec3a622b-5ae3-4f4b-98da-ea5097c8640a",
+      "status": "passed",
+      "details": {
+        "volume_m3": 1.5990000000000004,
+        "expected_volume_m3": 1.599
+      }
+    },
+    {
+      "name": "wall-semantics:ff2fc511-df70-466e-8bd3-826129053acb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:ff2fc511-df70-466e-8bd3-826129053acb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:ff2fc511-df70-466e-8bd3-826129053acb",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:ff2fc511-df70-466e-8bd3-826129053acb",
+      "status": "passed",
+      "details": {
+        "volume_m3": 1.5990000000000004,
+        "expected_volume_m3": 1.599
+      }
+    },
+    {
+      "name": "door-relations:2a068519-4deb-433d-b273-5ca5c0257137",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-source-size:2a068519-4deb-433d-b273-5ca5c0257137",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-placement:2a068519-4deb-433d-b273-5ca5c0257137",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:2a068519-4deb-433d-b273-5ca5c0257137",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04999999999999999,
+        "expected_volume_m3": 0.05000000000000003
+      }
+    },
+    {
+      "name": "opening-empty:2a068519-4deb-433d-b273-5ca5c0257137",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-relations:a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-source-size:a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-placement:a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04999999999999999,
+        "expected_volume_m3": 0.05000000000000003
+      }
+    },
+    {
+      "name": "opening-empty:a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-relations:58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-source-size:58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-placement:58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04600000000000002,
+        "expected_volume_m3": 0.045999999999999985
+      }
+    },
+    {
+      "name": "opening-empty:58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "status": "failed",
+      "details": ""
+    },
+    {
+      "name": "window-relations:a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-source-size:a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-placement:a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04600000000000002,
+        "expected_volume_m3": 0.045999999999999985
+      }
+    },
+    {
+      "name": "opening-empty:a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "status": "failed",
+      "details": ""
+    },
+    {
+      "name": "window-relations:c3c783da-7d1e-436f-a25e-571a797406f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-source-size:c3c783da-7d1e-436f-a25e-571a797406f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-placement:c3c783da-7d1e-436f-a25e-571a797406f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:c3c783da-7d1e-436f-a25e-571a797406f7",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04600000000000002,
+        "expected_volume_m3": 0.046
+      }
+    },
+    {
+      "name": "opening-empty:c3c783da-7d1e-436f-a25e-571a797406f7",
+      "status": "failed",
+      "details": ""
+    },
+    {
+      "name": "window-relations:db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-source-size:db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-placement:db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04600000000000002,
+        "expected_volume_m3": 0.046
+      }
+    },
+    {
+      "name": "opening-empty:db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "status": "failed",
+      "details": ""
+    },
+    {
+      "name": "slab-semantics:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-placement:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-quantities:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": {
+        "volume_m3": 4.3875,
+        "expected_volume_m3": 4.3875
+      }
+    },
+    {
+      "name": "geometry-bounds:32c55215-6b4a-4388-9e36-6551956a37ac",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            5.85
+          ],
+          [
+            6.25,
+            4.25,
+            6.0
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            5.85
+          ],
+          [
+            6.25,
+            4.25,
+            6.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "slab-semantics:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-placement:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-quantities:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": {
+        "volume_m3": 4.3875,
+        "expected_volume_m3": 4.3875
+      }
+    },
+    {
+      "name": "geometry-bounds:4f83a704-afe9-4dee-891a-632db5006d0f",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            -0.15
+          ],
+          [
+            6.25,
+            4.25,
+            0.0
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            -0.15
+          ],
+          [
+            6.25,
+            4.25,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "slab-semantics:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-placement:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-quantities:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": {
+        "volume_m3": 4.3875,
+        "expected_volume_m3": 4.3875
+      }
+    },
+    {
+      "name": "geometry-bounds:9f636b7f-e795-46a8-98cf-1000bc928047",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            2.85
+          ],
+          [
+            6.25,
+            4.25,
+            3.0
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            2.85
+          ],
+          [
+            6.25,
+            4.25,
+            3.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565000000000001,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:11449840-5237-4095-8e5f-3138d2b83cc9",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            3.8499999999999996,
+            3.0
+          ],
+          [
+            6.15,
+            4.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            3.85,
+            3.0
+          ],
+          [
+            6.15,
+            4.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.25649999999999995,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            3.0
+          ],
+          [
+            0.15000000000000002,
+            0.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            3.0
+          ],
+          [
+            0.15,
+            0.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565000000000002,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            3.8499999999999996,
+            0.0
+          ],
+          [
+            6.15,
+            4.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            3.85,
+            0.0
+          ],
+          [
+            6.15,
+            4.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            3.8499999999999996,
+            0.0
+          ],
+          [
+            0.15000000000000002,
+            4.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            3.85,
+            0.0
+          ],
+          [
+            0.15,
+            4.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            3.8499999999999996,
+            3.0
+          ],
+          [
+            0.15000000000000002,
+            4.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            3.85,
+            3.0
+          ],
+          [
+            0.15,
+            4.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            0.0
+          ],
+          [
+            0.15000000000000002,
+            0.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            0.0
+          ],
+          [
+            0.15,
+            0.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565000000000001,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            0.0
+          ],
+          [
+            6.15,
+            0.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            0.0
+          ],
+          [
+            6.15,
+            0.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.2565000000000001,
+        "expected_volume_m3": 0.2565
+      }
+    },
+    {
+      "name": "geometry-bounds:eda0f428-6dcf-4a07-8059-53600aac107c",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            3.0
+          ],
+          [
+            6.15,
+            0.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            3.0
+          ],
+          [
+            6.15,
+            0.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.35999999999999976,
+        "expected_volume_m3": 0.36
+      }
+    },
+    {
+      "name": "geometry-bounds:0531c515-c693-41bc-8bf0-817f23800873",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            5.55
+          ],
+          [
+            0.15,
+            4.0,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            5.55
+          ],
+          [
+            0.15,
+            4.0,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.5399999999999996,
+        "expected_volume_m3": 0.54
+      }
+    },
+    {
+      "name": "geometry-bounds:088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.0,
+            3.85,
+            5.55
+          ],
+          [
+            6.0,
+            4.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.0,
+            3.85,
+            5.55
+          ],
+          [
+            6.0,
+            4.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.5400000000000005,
+        "expected_volume_m3": 0.54
+      }
+    },
+    {
+      "name": "geometry-bounds:278728b3-5cf2-4205-b946-bc250b02273f",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            2.55
+          ],
+          [
+            6.0,
+            0.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            2.55
+          ],
+          [
+            6.0,
+            0.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.3600000000000003,
+        "expected_volume_m3": 0.36
+      }
+    },
+    {
+      "name": "geometry-bounds:46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            2.55
+          ],
+          [
+            0.15,
+            4.0,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            2.55
+          ],
+          [
+            0.15,
+            4.0,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.5400000000000005,
+        "expected_volume_m3": 0.54
+      }
+    },
+    {
+      "name": "geometry-bounds:6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.0,
+            3.85,
+            2.55
+          ],
+          [
+            6.0,
+            4.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.0,
+            3.85,
+            2.55
+          ],
+          [
+            6.0,
+            4.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.35999999999999976,
+        "expected_volume_m3": 0.36
+      }
+    },
+    {
+      "name": "geometry-bounds:80c371da-4d77-4c23-8505-55fe05a43077",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            0.0,
+            5.55
+          ],
+          [
+            6.15,
+            4.0,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            0.0,
+            5.55
+          ],
+          [
+            6.15,
+            4.0,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.5399999999999996,
+        "expected_volume_m3": 0.54
+      }
+    },
+    {
+      "name": "geometry-bounds:c954db1d-039e-424b-9b94-18483ddd5338",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            5.55
+          ],
+          [
+            6.0,
+            0.15,
+            5.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            5.55
+          ],
+          [
+            6.0,
+            0.15,
+            5.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.3600000000000003,
+        "expected_volume_m3": 0.36
+      }
+    },
+    {
+      "name": "geometry-bounds:e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            5.85,
+            0.0,
+            2.55
+          ],
+          [
+            6.15,
+            4.0,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            5.85,
+            0.0,
+            2.55
+          ],
+          [
+            6.15,
+            4.0,
+            2.85
+          ]
+        ]
+      }
+    }
+  ],
+  "geometry": [
+    {
+      "id": "3df5c964-a668-43d1-8515-a84c5dc28c71",
+      "ifc_class": "IfcWall",
+      "volume_m3": 2.907,
+      "expected_volume_m3": 2.907,
+      "world_bounds_m": [
+        [
+          0.14999999999999947,
+          3.65,
+          3.0
+        ],
+        [
+          5.85,
+          3.85,
+          5.55
+        ]
+      ]
+    },
+    {
+      "id": "405f4a74-e4ad-44cd-bcff-c7ff5b4a0d32",
+      "ifc_class": "IfcWall",
+      "volume_m3": 1.8870000000000005,
+      "expected_volume_m3": 1.887,
+      "world_bounds_m": [
+        [
+          0.15,
+          0.1499999999999999,
+          0.0
+        ],
+        [
+          0.35,
+          3.85,
+          2.55
+        ]
+      ]
+    },
+    {
+      "id": "406c6510-feb7-4739-96a8-01786f7aba7c",
+      "ifc_class": "IfcWall",
+      "volume_m3": 2.241,
+      "expected_volume_m3": 2.241,
+      "world_bounds_m": [
+        [
+          0.15,
+          0.15,
+          3.0
+        ],
+        [
+          5.8500000000000005,
+          0.35,
+          5.55
+        ]
+      ]
+    },
+    {
+      "id": "49a8f5d6-e9b4-4b77-9d89-5428ab568adc",
+      "ifc_class": "IfcWall",
+      "volume_m3": 2.907,
+      "expected_volume_m3": 2.907,
+      "world_bounds_m": [
+        [
+          0.14999999999999947,
+          3.65,
+          0.0
+        ],
+        [
+          5.85,
+          3.85,
+          2.55
+        ]
+      ]
+    },
+    {
+      "id": "640cbbb1-d914-442b-b487-3cf51f9bf8cb",
+      "ifc_class": "IfcWall",
+      "volume_m3": 1.8870000000000005,
+      "expected_volume_m3": 1.887,
+      "world_bounds_m": [
+        [
+          0.15,
+          0.1499999999999999,
+          3.0
+        ],
+        [
+          0.35,
+          3.85,
+          5.55
+        ]
+      ]
+    },
+    {
+      "id": "e44b2da9-8962-4d90-8bbb-2d3abb66c72f",
+      "ifc_class": "IfcWall",
+      "volume_m3": 2.241,
+      "expected_volume_m3": 2.241,
+      "world_bounds_m": [
+        [
+          0.15,
+          0.15,
+          0.0
+        ],
+        [
+          5.8500000000000005,
+          0.35,
+          2.55
+        ]
+      ]
+    },
+    {
+      "id": "ec3a622b-5ae3-4f4b-98da-ea5097c8640a",
+      "ifc_class": "IfcWall",
+      "volume_m3": 1.5990000000000004,
+      "expected_volume_m3": 1.599,
+      "world_bounds_m": [
+        [
+          5.6499999999999995,
+          0.15,
+          3.0
+        ],
+        [
+          5.85,
+          3.85,
+          5.55
+        ]
+      ]
+    },
+    {
+      "id": "ff2fc511-df70-466e-8bd3-826129053acb",
+      "ifc_class": "IfcWall",
+      "volume_m3": 1.5990000000000004,
+      "expected_volume_m3": 1.599,
+      "world_bounds_m": [
+        [
+          5.6499999999999995,
+          0.15,
+          0.0
+        ],
+        [
+          5.85,
+          3.85,
+          2.55
+        ]
+      ]
+    },
+    {
+      "id": "2a068519-4deb-433d-b273-5ca5c0257137",
+      "ifc_class": "IfcDoor",
+      "volume_m3": 0.04999999999999999,
+      "expected_volume_m3": 0.05000000000000003,
+      "world_bounds_m": [
+        [
+          0.9500000000000001,
+          0.15,
+          0.0
+        ],
+        [
+          1.85,
+          0.35,
+          2.1
+        ]
+      ]
+    },
+    {
+      "id": "a9fe0cea-e6ba-44b0-bde3-23ab91662b03",
+      "ifc_class": "IfcDoor",
+      "volume_m3": 0.04999999999999999,
+      "expected_volume_m3": 0.05000000000000003,
+      "world_bounds_m": [
+        [
+          0.9500000000000001,
+          0.15,
+          3.0
+        ],
+        [
+          1.85,
+          0.35,
+          5.1
+        ]
+      ]
+    },
+    {
+      "id": "58c19e27-eaca-4f6e-a27a-226bbfe726d9",
+      "ifc_class": "IfcWindow",
+      "volume_m3": 0.04600000000000002,
+      "expected_volume_m3": 0.045999999999999985,
+      "world_bounds_m": [
+        [
+          5.6499999999999995,
+          1.3499999999999999,
+          0.9
+        ],
+        [
+          5.85,
+          2.55,
+          2.1
+        ]
+      ]
+    },
+    {
+      "id": "a94851b9-5d4e-444c-9ad1-a4088fe438e2",
+      "ifc_class": "IfcWindow",
+      "volume_m3": 0.04600000000000002,
+      "expected_volume_m3": 0.045999999999999985,
+      "world_bounds_m": [
+        [
+          5.6499999999999995,
+          1.3499999999999999,
+          3.9
+        ],
+        [
+          5.85,
+          2.55,
+          5.1
+        ]
+      ]
+    },
+    {
+      "id": "c3c783da-7d1e-436f-a25e-571a797406f7",
+      "ifc_class": "IfcWindow",
+      "volume_m3": 0.04600000000000002,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          3.15,
+          0.15,
+          0.9
+        ],
+        [
+          4.35,
+          0.35,
+          2.1
+        ]
+      ]
+    },
+    {
+      "id": "db70a6ed-3a07-41bf-9bb2-22da85962d2e",
+      "ifc_class": "IfcWindow",
+      "volume_m3": 0.04600000000000002,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          3.15,
+          0.15,
+          3.9
+        ],
+        [
+          4.35,
+          0.35,
+          5.1
+        ]
+      ]
+    },
+    {
+      "id": "32c55215-6b4a-4388-9e36-6551956a37ac",
+      "ifc_class": "IfcSlab",
+      "volume_m3": 4.3875,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          5.85
+        ],
+        [
+          6.25,
+          4.25,
+          6.0
+        ]
+      ]
+    },
+    {
+      "id": "4f83a704-afe9-4dee-891a-632db5006d0f",
+      "ifc_class": "IfcSlab",
+      "volume_m3": 4.3875,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          -0.15
+        ],
+        [
+          6.25,
+          4.25,
+          0.0
+        ]
+      ]
+    },
+    {
+      "id": "9f636b7f-e795-46a8-98cf-1000bc928047",
+      "ifc_class": "IfcSlab",
+      "volume_m3": 4.3875,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          2.85
+        ],
+        [
+          6.25,
+          4.25,
+          3.0
+        ]
+      ]
+    },
+    {
+      "id": "11449840-5237-4095-8e5f-3138d2b83cc9",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565000000000001,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.85,
+          3.8499999999999996,
+          3.0
+        ],
+        [
+          6.15,
+          4.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "2c00b74b-09ae-4e3a-8684-f620c834b39b",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.25649999999999995,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15,
+          -0.15,
+          3.0
+        ],
+        [
+          0.15000000000000002,
+          0.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "4402c844-1d6b-4e9e-a5d9-8ed3716ee694",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565000000000002,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.85,
+          3.8499999999999996,
+          0.0
+        ],
+        [
+          6.15,
+          4.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "5e09491b-1b76-4778-8b8e-898ce9e9054f",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15,
+          3.8499999999999996,
+          0.0
+        ],
+        [
+          0.15000000000000002,
+          4.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "5ec0e0f2-a9f9-4229-9378-46a8f4ebced7",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15,
+          3.8499999999999996,
+          3.0
+        ],
+        [
+          0.15000000000000002,
+          4.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "9650b01c-f0d8-4391-ad89-b8a926824d93",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15,
+          -0.15,
+          0.0
+        ],
+        [
+          0.15000000000000002,
+          0.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "9de39dff-ea36-45c5-9d3e-07177d812b79",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565000000000001,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.85,
+          -0.15,
+          0.0
+        ],
+        [
+          6.15,
+          0.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "eda0f428-6dcf-4a07-8059-53600aac107c",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.2565000000000001,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.85,
+          -0.15,
+          3.0
+        ],
+        [
+          6.15,
+          0.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "0531c515-c693-41bc-8bf0-817f23800873",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.35999999999999976,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          -0.15,
+          0.0,
+          5.55
+        ],
+        [
+          0.15,
+          4.0,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "088d6358-ffc5-4188-b6c6-c0282ae2fbbe",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.5399999999999996,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          3.85,
+          5.55
+        ],
+        [
+          6.0,
+          4.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "278728b3-5cf2-4205-b946-bc250b02273f",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.5400000000000005,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15,
+          2.55
+        ],
+        [
+          6.0,
+          0.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "46c7d453-f8f1-4f07-870c-e939a72c2087",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.3600000000000003,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          -0.15,
+          0.0,
+          2.55
+        ],
+        [
+          0.15,
+          4.0,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "6b19b7b9-3af6-4b86-b2f4-2d1d9e6608c9",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.5400000000000005,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          3.85,
+          2.55
+        ],
+        [
+          6.0,
+          4.15,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "80c371da-4d77-4c23-8505-55fe05a43077",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.35999999999999976,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          5.85,
+          0.0,
+          5.55
+        ],
+        [
+          6.15,
+          4.0,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "c954db1d-039e-424b-9b94-18483ddd5338",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.5399999999999996,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15,
+          5.55
+        ],
+        [
+          6.0,
+          0.15,
+          5.85
+        ]
+      ]
+    },
+    {
+      "id": "e394f48c-bc2a-4b4b-a232-73a2c79da1ca",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.3600000000000003,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          5.85,
+          0.0,
+          2.55
+        ],
+        [
+          6.15,
+          4.0,
+          2.85
+        ]
+      ]
+    }
+  ],
+  "express_rules": {
+    "requested": false,
+    "status": "not_requested",
+    "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+  },
+  "external_application_review": "not established by this validator"
+}

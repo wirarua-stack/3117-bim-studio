@@ -1,0 +1,22 @@
+test_bad_numbers_rejected (test_model.ModelTests.test_bad_numbers_rejected) ... ok
+test_derived_overflow_rolls_back (test_model.ModelTests.test_derived_overflow_rolls_back) ... ok
+test_door_rejects_missing_host_and_outside_dimensions (test_model.ModelTests.test_door_rejects_missing_host_and_outside_dimensions) ... ok
+test_duplicate_uuid_input_rejected (test_model.ModelTests.test_duplicate_uuid_input_rejected) ... ok
+test_failed_save_preserves_old_file (test_model.ModelTests.test_failed_save_preserves_old_file) ... ok
+test_failed_transaction_rolls_back_every_edit (test_model.ModelTests.test_failed_transaction_rolls_back_every_edit) ... ok
+test_host_deletion_has_no_orphan (test_model.ModelTests.test_host_deletion_has_no_orphan) ... ok
+test_immutable_records_and_transaction_requirement (test_model.ModelTests.test_immutable_records_and_transaction_requirement) ... ok
+test_json_bad_shape_and_unknown_fields_rejected (test_model.ModelTests.test_json_bad_shape_and_unknown_fields_rejected) ... ok
+test_json_roundtrip_preserves_identity_and_rejects_schema (test_model.ModelTests.test_json_roundtrip_preserves_identity_and_rejects_schema) ... ok
+test_json_types_cannot_regenerate_identity_or_accept_boolean_version (test_model.ModelTests.test_json_types_cannot_regenerate_identity_or_accept_boolean_version) ... ok
+test_level_height_constraint_updates_quantities (test_model.ModelTests.test_level_height_constraint_updates_quantities) ... ok
+test_new_edit_clears_redo (test_model.ModelTests.test_new_edit_clears_redo) ... ok
+test_overlap_rejected (test_model.ModelTests.test_overlap_rejected) ... ok
+test_quantities_deduct_once (test_model.ModelTests.test_quantities_deduct_once) ... ok
+test_shared_type_update_undo_redo (test_model.ModelTests.test_shared_type_update_undo_redo) ... ok
+test_wrong_level_causes_atomic_rollback (test_model.ModelTests.test_wrong_level_causes_atomic_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.013s
+
+OK

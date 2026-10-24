@@ -1,0 +1,11 @@
+{
+  "scope": "Stopped disposable v030-native QA export only",
+  "locks": {
+    "Building_Authoring_Workbench.ifc.3117-export.lock": "3117 export process 8\n",
+    "Building_Authoring_Workbench_ifc_metadata.json.3117-export.lock": "3117 export process 8\n"
+  },
+  "removed": [
+    "Building_Authoring_Workbench.ifc.3117-export.lock",
+    "Building_Authoring_Workbench_ifc_metadata.json.3117-export.lock"
+  ]
+}

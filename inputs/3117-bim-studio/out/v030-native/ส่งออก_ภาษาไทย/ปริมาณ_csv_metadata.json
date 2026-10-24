@@ -1,0 +1,436 @@
+{
+  "export_schema": 1,
+  "format": "csv",
+  "content_revision": "050d009fea49a562f788b1fa14b3226b042554f1cf97aeae2f91b9d7e967c4fc",
+  "source": "FreeCAD native document / FCStd",
+  "editable_master": false,
+  "snapshot": {
+    "snapshot_schema": 1,
+    "workbench_version": "0.3.0",
+    "content_revision": "050d009fea49a562f788b1fa14b3226b042554f1cf97aeae2f91b9d7e967c4fc",
+    "revision_rule": "3117.native-authored-and-coverage.sha256.v1",
+    "revision_scope": "3117 authored properties and coverage inventory; excludes display settings and unsupported object geometry",
+    "captured_at_utc": "2026-10-23T03:54:58.580752+00:00",
+    "source_document": {
+      "name": "BIM3117",
+      "label": "3117 ปริมาณและ IFC",
+      "file": ""
+    },
+    "units": {
+      "length": "m",
+      "area": "m2",
+      "volume": "m3"
+    },
+    "coordinates": {
+      "origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": "right-handed X/Y, Z up",
+      "wall": "X follows start to end; material is on local +Y"
+    },
+    "project": {
+      "id": "02649304-fbf5-4aa4-863d-27b8999b3d3e",
+      "label": "3117 ปริมาณและ IFC",
+      "object_name": "BIM3117_Project",
+      "schema": 1,
+      "creation_version": "0.3.0",
+      "number": "QTY-003",
+      "author": "3117 BIM"
+    },
+    "levels": [
+      {
+        "id": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+        "label": "L01",
+        "object_name": "BIM3117_Level001",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "elevation_m": 3.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      },
+      {
+        "id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+        "label": "L00",
+        "object_name": "BIM3117_Level",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "elevation_m": 0.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      }
+    ],
+    "grids": [],
+    "wall_types": [
+      {
+        "id": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+        "label": "W200",
+        "object_name": "BIM3117_WallType",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "thickness_m": 0.2,
+        "material": "Concrete"
+      }
+    ],
+    "walls": [
+      {
+        "id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+        "label": "W201",
+        "object_name": "BIM3117_Wall",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "type_id": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+        "base_level_id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+        "top_level_id": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+        "start_m": [
+          0.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          0.0
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "length_m": 6.0,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 18.0,
+          "opening_side_area_m2": 1.8900000000000001,
+          "net_side_area_m2": 16.11,
+          "gross_volume_m3": 3.6,
+          "opening_volume_m3": 0.3780000000000001,
+          "net_volume_m3": 3.222
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "1477fc99-4951-4ef5-8066-99e114c65e7e",
+        "label": "ประตู D01",
+        "object_name": "BIM3117_Door",
+        "schema": 1,
+        "creation_version": "0.3.0",
+        "host_id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+        "offset_m": 1.2,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "frame_volume_m3": 0.05000000000000003
+      }
+    ],
+    "wall_rows": [
+      {
+        "element_id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+        "object_name": "BIM3117_Wall",
+        "name": "W201",
+        "type_id": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+        "type_name": "W200",
+        "base_level_id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+        "base_level": "L00",
+        "top_level_id": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+        "top_level": "L01",
+        "length_m": 6.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 18.0,
+        "opening_side_area_m2": 1.8900000000000001,
+        "net_side_area_m2": 16.11,
+        "gross_volume_m3": 3.6,
+        "opening_volume_m3": 0.3780000000000001,
+        "net_volume_m3": 3.222,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "050d009fea49a562f788b1fa14b3226b042554f1cf97aeae2f91b9d7e967c4fc"
+      }
+    ],
+    "door_rows": [
+      {
+        "element_id": "1477fc99-4951-4ef5-8066-99e114c65e7e",
+        "object_name": "BIM3117_Door",
+        "name": "ประตู D01",
+        "host_id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+        "host_name": "W201",
+        "base_level_id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+        "base_level": "L00",
+        "offset_m": 1.2,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "opening_area_m2": 1.8900000000000001,
+        "opening_volume_m3": 0.37800000000000006,
+        "frame_volume_m3": 0.05000000000000003,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "050d009fea49a562f788b1fa14b3226b042554f1cf97aeae2f91b9d7e967c4fc"
+      }
+    ],
+    "window_rows": [],
+    "slab_rows": [],
+    "column_rows": [],
+    "beam_rows": [],
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "02649304-fbf5-4aa4-863d-27b8999b3d3e",
+          "label": "3117 ปริมาณและ IFC",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+          "label": "W201",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Door",
+          "object_id": "1477fc99-4951-4ef5-8066-99e114c65e7e",
+          "label": "ประตู D01",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+          "label": "W200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "e9c9d9e2-3175-4b0d-990e-599d4dbb36f6",
+          "label": "W200 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 6,
+        "derived": 1,
+        "reference": 0,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame."
+      ],
+      "complete": true,
+      "scope": "3117 Project, Levels, Wall Types, straight Walls and hosted rectangular Doors"
+    },
+    "totals": {
+      "walls_count": 1,
+      "doors_count": 1,
+      "windows_count": 0,
+      "slabs_count": 0,
+      "columns_count": 0,
+      "beams_count": 0,
+      "slab_net_volume_m3": 0.0,
+      "column_net_volume_m3": 0.0,
+      "beam_net_volume_m3": 0.0,
+      "structural_net_volume_m3": 0.0,
+      "join_deduction_m3": 0.0,
+      "gross_side_area_m2": 18.0,
+      "net_side_area_m2": 16.11,
+      "gross_volume_m3": 3.6,
+      "net_volume_m3": 3.222,
+      "rule": "Sum of individual walls; no wall-join overlap deductions"
+    }
+  },
+  "coverage": {
+    "items": [
+      {
+        "object_name": "BIM3117_Project",
+        "object_id": "02649304-fbf5-4aa4-863d-27b8999b3d3e",
+        "label": "3117 ปริมาณและ IFC",
+        "kind": "Project",
+        "status": "mapped",
+        "ifc_class": "IfcProject",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level001",
+        "object_id": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+        "label": "L01",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Wall",
+        "object_id": "124be9ee-81c6-47b8-817a-802913d31f3a",
+        "label": "W201",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Door",
+        "object_id": "1477fc99-4951-4ef5-8066-99e114c65e7e",
+        "label": "ประตู D01",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_WallType",
+        "object_id": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+        "label": "W200",
+        "kind": "WallType",
+        "status": "mapped",
+        "ifc_class": "IfcWallType",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level",
+        "object_id": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+        "label": "L00",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; quantity rows are limited to authored Walls and Doors.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallBody",
+        "object_id": "e9c9d9e2-3175-4b0d-990e-599d4dbb36f6",
+        "label": "W200 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      }
+    ],
+    "counts": {
+      "mapped": 6,
+      "derived": 1,
+      "reference": 0,
+      "unsupported": 0
+    },
+    "warnings": [
+      "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+      "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame."
+    ],
+    "complete": true,
+    "scope": "3117 Project, Levels, Wall Types, straight Walls and hosted rectangular Doors"
+  },
+  "validation": {
+    "status": "passed",
+    "native_geometry": "validated",
+    "units": "m / m2 / m3",
+    "wall_rows": 1,
+    "door_rows": 1,
+    "slab_rows": 0,
+    "column_rows": 0,
+    "beam_rows": 0,
+    "window_rows": 0
+  },
+  "files": [
+    {
+      "name": "ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "f79eca79dde110dc2a73899978a56bc11fdad5e405dc260960fd4c388ef8133a"
+    },
+    {
+      "name": "ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "d412283df903d9523e3864a22b9b3e731b029fba0c9868d7bb4f8af429ac636e"
+    }
+  ],
+  "csv": {
+    "encoding": "UTF-8 BOM",
+    "delimiter": ",",
+    "decimal": ".",
+    "wall_columns": [
+      "element_id",
+      "name",
+      "type_id",
+      "type_name",
+      "base_level_id",
+      "base_level",
+      "top_level_id",
+      "top_level",
+      "length_m",
+      "height_m",
+      "thickness_m",
+      "gross_side_area_m2",
+      "opening_side_area_m2",
+      "net_side_area_m2",
+      "gross_volume_m3",
+      "opening_volume_m3",
+      "net_volume_m3",
+      "quantity_rule",
+      "content_revision"
+    ],
+    "door_columns": [
+      "element_id",
+      "name",
+      "host_id",
+      "host_name",
+      "base_level_id",
+      "base_level",
+      "offset_m",
+      "width_m",
+      "height_m",
+      "sill_m",
+      "opening_area_m2",
+      "opening_volume_m3",
+      "frame_volume_m3",
+      "count",
+      "quantity_rule",
+      "content_revision"
+    ],
+    "additional_columns": {},
+    "text_policy": "Formula-like text cells have a leading apostrophe; original strings are in snapshot."
+  },
+  "publication": "Payloads replaced individually; this metadata is the final completion marker. Verify hashes before use.",
+  "freshness": "Compare content_revision with a new native snapshot; this file does not update when the model changes."
+}

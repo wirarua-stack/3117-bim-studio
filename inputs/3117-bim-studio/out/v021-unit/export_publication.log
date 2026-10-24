@@ -1,0 +1,14 @@
+test_existing_lock_is_not_removed_by_another_exporter (test_export_files.ExportPublicationTests.test_existing_lock_is_not_removed_by_another_exporter) ... ok
+test_metadata_is_published_last_after_source_revision_gate (test_export_files.ExportPublicationTests.test_metadata_is_published_last_after_source_revision_gate) ... ok
+test_metadata_replace_failure_removes_new_payloads (test_export_files.ExportPublicationTests.test_metadata_replace_failure_removes_new_payloads) ... ok
+test_overlapping_sidecar_is_locked_even_with_different_main_file (test_export_files.ExportPublicationTests.test_overlapping_sidecar_is_locked_even_with_different_main_file) ... ok
+test_overwrite_requires_explicit_opt_in_for_any_sidecar (test_export_files.ExportPublicationTests.test_overwrite_requires_explicit_opt_in_for_any_sidecar) ... ok
+test_second_replace_failure_restores_existing_bundle (test_export_files.ExportPublicationTests.test_second_replace_failure_restores_existing_bundle) ... ok
+test_source_changed_before_commit_leaves_existing_files_intact (test_export_files.ExportPublicationTests.test_source_changed_before_commit_leaves_existing_files_intact) ... ok
+test_symlink_destination_does_not_replace_unrelated_target (test_export_files.ExportPublicationTests.test_symlink_destination_does_not_replace_unrelated_target) ... ok
+test_writer_failure_does_not_replace_existing_files (test_export_files.ExportPublicationTests.test_writer_failure_does_not_replace_existing_files) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.012s
+
+OK

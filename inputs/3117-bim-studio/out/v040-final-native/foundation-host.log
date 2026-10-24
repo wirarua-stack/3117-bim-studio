@@ -1,0 +1,44 @@
+3117: Span X must be at least 0.001 mm
+3117: Name is required
+Traceback (most recent call last):
+  File "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/model.py", line 332, in execute
+    validate_object(obj)
+  File "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/model.py", line 142, in validate_object
+    raise FoundationError("Grid reference level is missing; use Edit Selected to reassign or explicitly detach it")
+<class 'bim3117_freecad.model.FoundationError'>: Grid reference level is missing; use Edit Selected to reassign or explicitly detach it
+Grid A: Grid reference level is missing; use Edit Selected to reassign or explicitly detach it
+{
+  "stage": "foundation",
+  "status": "passed",
+  "checks_passed": 35
+}
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Recompute......
+						(33 %)							(66 %)							(100 %)									Recompute......
+						(33 %)							(66 %)							(100 %)									Recompute......
+						(33 %)							(66 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(33 %)							(66 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(20 %)							(40 %)							(60 %)							(80 %)							(100 %)									Recompute......
+						(16 %)							(33 %)							(50 %)							(66 %)							(83 %)							(100 %)									Recompute......
+						(16 %)							(33 %)							(50 %)							(66 %)							(83 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(33 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Importing project files......
+						(25 %)							(50 %)							(75 %)							(100 %)									Postprocessing......
+						(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									Recompute......
+						(25 %)							(50 %)							(75 %)							(100 %)									

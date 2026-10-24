@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "saved exchange fixture comes from a passing native integration run",
+      "status": "passed"
+    },
+    {
+      "name": "model proxies are not preregistered before opening FCStd",
+      "status": "passed"
+    },
+    {
+      "name": "snapshot loads from the installed addon after automatic proxy restoration",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves content revision independently of file name and capture time",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves every saved native element UUID",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process quantity rows and actual net volumes match the saved multiwall fixture",
+      "status": "passed"
+    },
+    {
+      "name": "restored dependency edit invalidates prior snapshot and updates net quantity",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process Undo restores original content revision",
+      "status": "passed"
+    },
+    {
+      "name": "IFC export after fresh FCStd restore preserves every rooted GlobalId",
+      "status": "passed"
+    },
+    {
+      "name": "fresh IFC and metadata retain the same source content revision",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 10,
+  "content_revision": "0ef4d2ae247ed84bd1334782e3ab5fb6c6c6dffa961813054dd6a7a3797fb7d8",
+  "ifc": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/Quantity_Exchange_Reopened.ifc",
+  "element_ids": {
+    "BIM3117_Project": "02649304-fbf5-4aa4-863d-27b8999b3d3e",
+    "BIM3117_Level": "8f939382-80cb-46f6-bb1f-1d6da8c4da88",
+    "BIM3117_Level001": "04af3e78-0de0-4cb2-9f77-e8a182906efd",
+    "BIM3117_Wall": "124be9ee-81c6-47b8-817a-802913d31f3a",
+    "BIM3117_WallBody": "e9c9d9e2-3175-4b0d-990e-599d4dbb36f6",
+    "BIM3117_Door": "1477fc99-4951-4ef5-8066-99e114c65e7e",
+    "BIM3117_WallType": "42261658-1fa2-4439-a6f5-fac595efc6c5",
+    "BIM3117_Level002": "0853d1ab-a3f2-4214-ae4a-52c8b87a8fd9",
+    "BIM3117_Wall001": "f1d0b53e-3641-4b40-9d8b-0f35f3934b59",
+    "BIM3117_WallBody001": "d08a51a4-62e5-4fa4-af3d-358b9ec5a94b",
+    "BIM3117_Door001": "5c83b3a2-acaa-4483-966d-f87916c1f604",
+    "BIM3117_Wall002": "377ae6c6-9c69-4f97-b0e1-7996cd036280",
+    "BIM3117_WallBody002": "c5a5a618-25c0-4fd2-a204-5d58c603ddfa",
+    "BIM3117_Door002": "0453e4c0-2bd2-4632-a9e9-c9095c050d45",
+    "BIM3117_Grid": "4f76ecea-e086-438e-8d81-b9afbae24da5"
+  }
+}

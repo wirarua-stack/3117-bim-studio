@@ -1,0 +1,3340 @@
+{
+  "export_schema": 1,
+  "format": "csv",
+  "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+  "source": "FreeCAD native document / FCStd",
+  "editable_master": false,
+  "snapshot": {
+    "snapshot_schema": 1,
+    "workbench_version": "0.4.0",
+    "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+    "revision_rule": "3117.native-authored-and-coverage.sha256.v1",
+    "revision_scope": "3117 authored properties and coverage inventory; excludes display settings and unsupported object geometry",
+    "captured_at_utc": "2026-10-23T04:49:34.389063+00:00",
+    "source_document": {
+      "name": "BIM3118",
+      "label": "3117 อาคารสองชั้น",
+      "file": ""
+    },
+    "units": {
+      "length": "m",
+      "area": "m2",
+      "volume": "m3"
+    },
+    "coordinates": {
+      "origin_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": "right-handed X/Y, Z up",
+      "wall": "X follows start to end; material is on local +Y"
+    },
+    "project": {
+      "id": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+      "label": "3117 อาคารสองชั้น",
+      "object_name": "BIM3117_Project",
+      "schema": 1,
+      "creation_version": "0.4.0",
+      "number": "BLD-030",
+      "author": "3117 BIM"
+    },
+    "levels": [
+      {
+        "id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "label": "L02",
+        "object_name": "BIM3117_Level002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "elevation_m": 6.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      },
+      {
+        "id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "label": "L01",
+        "object_name": "BIM3117_Level001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "elevation_m": 3.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      },
+      {
+        "id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "label": "L00",
+        "object_name": "BIM3117_Level",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "elevation_m": 0.0,
+        "span_x_m": 12.0,
+        "span_y_m": 8.0
+      }
+    ],
+    "grids": [
+      {
+        "id": "386f2211-6045-4e05-af30-de5dc0186533",
+        "label": "2",
+        "object_name": "BIM3117_Grid003",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "axis": "Y",
+        "position_m": 6.0,
+        "length_m": 4.5,
+        "bubble_label": "2",
+        "bubble_radius_m": 0.25,
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "offset_m": 0.0,
+        "elevation_m": 0.0
+      },
+      {
+        "id": "a7966421-da81-4a14-9871-f0d5933d2f18",
+        "label": "A",
+        "object_name": "BIM3117_Grid",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "axis": "X",
+        "position_m": 0.0,
+        "length_m": 6.5,
+        "bubble_label": "A",
+        "bubble_radius_m": 0.25,
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "offset_m": 0.0,
+        "elevation_m": 0.0
+      },
+      {
+        "id": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+        "label": "B",
+        "object_name": "BIM3117_Grid001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "axis": "X",
+        "position_m": 4.0,
+        "length_m": 6.5,
+        "bubble_label": "B",
+        "bubble_radius_m": 0.25,
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "offset_m": 0.0,
+        "elevation_m": 0.0
+      },
+      {
+        "id": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+        "label": "1",
+        "object_name": "BIM3117_Grid002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "axis": "Y",
+        "position_m": 0.0,
+        "length_m": 4.5,
+        "bubble_label": "1",
+        "bubble_radius_m": 0.25,
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "offset_m": 0.0,
+        "elevation_m": 0.0
+      }
+    ],
+    "wall_types": [
+      {
+        "id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "label": "Block 200",
+        "object_name": "BIM3117_WallType",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "thickness_m": 0.2,
+        "material": "Blockwork"
+      }
+    ],
+    "walls": [
+      {
+        "id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "label": "Wall 2-1",
+        "object_name": "BIM3117_Wall004",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "start_m": [
+          0.15,
+          0.15
+        ],
+        "end_m": [
+          5.85,
+          0.15
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 3.0,
+        "height_m": 2.55,
+        "length_m": 5.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 14.535,
+          "opening_side_area_m2": 3.33,
+          "net_side_area_m2": 11.205,
+          "gross_volume_m3": 2.907,
+          "opening_volume_m3": 0.6659999999999999,
+          "net_volume_m3": 2.241
+        }
+      },
+      {
+        "id": "1a03652c-770c-405c-af28-4953b7322981",
+        "label": "Wall 1-4",
+        "object_name": "BIM3117_Wall003",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "start_m": [
+          0.15,
+          3.85
+        ],
+        "end_m": [
+          0.15,
+          0.15
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 0.0,
+        "height_m": 2.55,
+        "length_m": 3.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 9.435,
+          "opening_side_area_m2": 0.0,
+          "net_side_area_m2": 9.434999999999999,
+          "gross_volume_m3": 1.8870000000000002,
+          "opening_volume_m3": 2.220446049250313e-16,
+          "net_volume_m3": 1.887
+        }
+      },
+      {
+        "id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+        "label": "Wall 1-3",
+        "object_name": "BIM3117_Wall002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "start_m": [
+          5.85,
+          3.85
+        ],
+        "end_m": [
+          0.15,
+          3.85
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 0.0,
+        "height_m": 2.55,
+        "length_m": 5.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 14.535,
+          "opening_side_area_m2": 0.0,
+          "net_side_area_m2": 14.535,
+          "gross_volume_m3": 2.907,
+          "opening_volume_m3": 0.0,
+          "net_volume_m3": 2.907
+        }
+      },
+      {
+        "id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "label": "Wall 1-1",
+        "object_name": "BIM3117_Wall",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "start_m": [
+          0.15,
+          0.15
+        ],
+        "end_m": [
+          5.85,
+          0.15
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 0.0,
+        "height_m": 2.55,
+        "length_m": 5.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 14.535,
+          "opening_side_area_m2": 3.33,
+          "net_side_area_m2": 11.205,
+          "gross_volume_m3": 2.907,
+          "opening_volume_m3": 0.6659999999999999,
+          "net_volume_m3": 2.241
+        }
+      },
+      {
+        "id": "649b6875-af76-4ec6-9374-711b3458a49b",
+        "label": "Wall 2-2",
+        "object_name": "BIM3117_Wall005",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "start_m": [
+          5.85,
+          0.15
+        ],
+        "end_m": [
+          5.85,
+          3.85
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 3.0,
+        "height_m": 2.55,
+        "length_m": 3.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 9.435,
+          "opening_side_area_m2": 1.44,
+          "net_side_area_m2": 7.994999999999999,
+          "gross_volume_m3": 1.8870000000000002,
+          "opening_volume_m3": 0.28800000000000026,
+          "net_volume_m3": 1.599
+        }
+      },
+      {
+        "id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+        "label": "Wall 2-4",
+        "object_name": "BIM3117_Wall007",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "start_m": [
+          0.15,
+          3.85
+        ],
+        "end_m": [
+          0.15,
+          0.15
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 3.0,
+        "height_m": 2.55,
+        "length_m": 3.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 9.435,
+          "opening_side_area_m2": 0.0,
+          "net_side_area_m2": 9.434999999999999,
+          "gross_volume_m3": 1.8870000000000002,
+          "opening_volume_m3": 2.220446049250313e-16,
+          "net_volume_m3": 1.887
+        }
+      },
+      {
+        "id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+        "label": "Wall 1-2",
+        "object_name": "BIM3117_Wall001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "start_m": [
+          5.85,
+          0.15
+        ],
+        "end_m": [
+          5.85,
+          3.85
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 0.0,
+        "height_m": 2.55,
+        "length_m": 3.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 9.435,
+          "opening_side_area_m2": 1.44,
+          "net_side_area_m2": 7.994999999999999,
+          "gross_volume_m3": 1.8870000000000002,
+          "opening_volume_m3": 0.28800000000000026,
+          "net_volume_m3": 1.599
+        }
+      },
+      {
+        "id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+        "label": "Wall 2-3",
+        "object_name": "BIM3117_Wall006",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "start_m": [
+          5.85,
+          3.85
+        ],
+        "end_m": [
+          0.15,
+          3.85
+        ],
+        "base_offset_m": 0.0,
+        "top_offset_m": -0.45,
+        "base_z_m": 3.0,
+        "height_m": 2.55,
+        "length_m": 5.7,
+        "thickness_m": 0.2,
+        "quantities": {
+          "gross_side_area_m2": 14.535,
+          "opening_side_area_m2": 0.0,
+          "net_side_area_m2": 14.535,
+          "gross_volume_m3": 2.907,
+          "opening_volume_m3": 0.0,
+          "net_volume_m3": 2.907
+        }
+      }
+    ],
+    "doors": [
+      {
+        "id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+        "label": "D01",
+        "object_name": "BIM3117_Door",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "offset_m": 0.8,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "frame_volume_m3": 0.05000000000000003
+      },
+      {
+        "id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+        "label": "D02",
+        "object_name": "BIM3117_Door001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "offset_m": 0.8,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "frame_volume_m3": 0.05000000000000003
+      }
+    ],
+    "columns": [
+      {
+        "id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+        "label": "C14",
+        "object_name": "BIM3117_Column003",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 0.0,
+        "y_m": 4.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            3.85,
+            0.0
+          ],
+          [
+            0.15,
+            4.15,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+        "label": "C24",
+        "object_name": "BIM3117_Column007",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 0.0,
+        "y_m": 4.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 3.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            3.85,
+            3.0
+          ],
+          [
+            0.15,
+            4.15,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "72e68695-2037-4248-b41b-e8c980aaa998",
+        "label": "C13",
+        "object_name": "BIM3117_Column002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 6.0,
+        "y_m": 4.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            3.85,
+            0.0
+          ],
+          [
+            6.15,
+            4.15,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "730fef27-e695-4671-9806-4233c2c1068a",
+        "label": "C12",
+        "object_name": "BIM3117_Column001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 6.0,
+        "y_m": 0.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            0.0
+          ],
+          [
+            6.15,
+            0.15,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+        "label": "C11",
+        "object_name": "BIM3117_Column",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 0.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            0.0
+          ],
+          [
+            0.15,
+            0.15,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+        "label": "C22",
+        "object_name": "BIM3117_Column005",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 6.0,
+        "y_m": 0.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 3.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            -0.15,
+            3.0
+          ],
+          [
+            6.15,
+            0.15,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+        "label": "C21",
+        "object_name": "BIM3117_Column004",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 3.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            -0.15,
+            3.0
+          ],
+          [
+            0.15,
+            0.15,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "def71377-5ba1-49d3-8c76-be105187ac63",
+        "label": "C23",
+        "object_name": "BIM3117_Column006",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0,
+        "x_m": 6.0,
+        "y_m": 4.0,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "rotation_deg": 0.0,
+        "base_z_m": 3.0,
+        "height_m": 3.0,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.27,
+          "net_volume_m3": 0.2565,
+          "join_deduction_m3": 0.013500000000000012,
+          "section_area_m2": 0.09
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            3.85,
+            3.0
+          ],
+          [
+            6.15,
+            4.15,
+            5.85
+          ]
+        ]
+      }
+    ],
+    "beams": [
+      {
+        "id": "4f806193-5c43-4136-96ba-7be20d902072",
+        "label": "B13",
+        "object_name": "BIM3117_Beam002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "offset_m": 0.0,
+        "start_m": [
+          6.0,
+          4.0
+        ],
+        "end_m": [
+          0.0,
+          4.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 6.0,
+        "top_z_m": 3.0,
+        "base_z_m": 2.55,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.81,
+          "net_volume_m3": 0.54,
+          "join_deduction_m3": 0.27,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            0.0,
+            3.85,
+            2.55
+          ],
+          [
+            6.0,
+            4.15,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+        "label": "B22",
+        "object_name": "BIM3117_Beam005",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "offset_m": 0.0,
+        "start_m": [
+          6.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          4.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 4.0,
+        "top_z_m": 6.0,
+        "base_z_m": 5.55,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.54,
+          "net_volume_m3": 0.36,
+          "join_deduction_m3": 0.18000000000000005,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            0.0,
+            5.55
+          ],
+          [
+            6.15,
+            4.0,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+        "label": "B24",
+        "object_name": "BIM3117_Beam007",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "offset_m": 0.0,
+        "start_m": [
+          0.0,
+          4.0
+        ],
+        "end_m": [
+          0.0,
+          0.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 4.0,
+        "top_z_m": 6.0,
+        "base_z_m": 5.55,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.54,
+          "net_volume_m3": 0.36,
+          "join_deduction_m3": 0.18000000000000005,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            5.55
+          ],
+          [
+            0.15,
+            4.0,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+        "label": "B21",
+        "object_name": "BIM3117_Beam004",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "offset_m": 0.0,
+        "start_m": [
+          0.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          0.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 6.0,
+        "top_z_m": 6.0,
+        "base_z_m": 5.55,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.81,
+          "net_volume_m3": 0.54,
+          "join_deduction_m3": 0.27,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            5.55
+          ],
+          [
+            6.0,
+            0.15,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "70829b32-bbd0-437f-b072-a1745c850c61",
+        "label": "B12",
+        "object_name": "BIM3117_Beam001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "offset_m": 0.0,
+        "start_m": [
+          6.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          4.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 4.0,
+        "top_z_m": 3.0,
+        "base_z_m": 2.55,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.54,
+          "net_volume_m3": 0.36,
+          "join_deduction_m3": 0.18000000000000005,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            5.85,
+            0.0,
+            2.55
+          ],
+          [
+            6.15,
+            4.0,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+        "label": "B23",
+        "object_name": "BIM3117_Beam006",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "offset_m": 0.0,
+        "start_m": [
+          6.0,
+          4.0
+        ],
+        "end_m": [
+          0.0,
+          4.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 6.0,
+        "top_z_m": 6.0,
+        "base_z_m": 5.55,
+        "join_slab_ids": [
+          "e78967b0-bddf-4afb-b534-3a161f902227"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.81,
+          "net_volume_m3": 0.54,
+          "join_deduction_m3": 0.27,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            0.0,
+            3.85,
+            5.55
+          ],
+          [
+            6.0,
+            4.15,
+            5.85
+          ]
+        ]
+      },
+      {
+        "id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+        "label": "B14",
+        "object_name": "BIM3117_Beam003",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "offset_m": 0.0,
+        "start_m": [
+          0.0,
+          4.0
+        ],
+        "end_m": [
+          0.0,
+          0.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 4.0,
+        "top_z_m": 3.0,
+        "base_z_m": 2.55,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.54,
+          "net_volume_m3": 0.36,
+          "join_deduction_m3": 0.18000000000000005,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            -0.15,
+            0.0,
+            2.55
+          ],
+          [
+            0.15,
+            4.0,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+        "label": "B11",
+        "object_name": "BIM3117_Beam",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "offset_m": 0.0,
+        "start_m": [
+          0.0,
+          0.0
+        ],
+        "end_m": [
+          6.0,
+          0.0
+        ],
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "length_m": 6.0,
+        "top_z_m": 3.0,
+        "base_z_m": 2.55,
+        "join_slab_ids": [
+          "afde9f82-c48c-44bd-a143-1d90f91f13f1"
+        ],
+        "quantities": {
+          "gross_volume_m3": 0.81,
+          "net_volume_m3": 0.54,
+          "join_deduction_m3": 0.27,
+          "section_area_m2": 0.135
+        },
+        "native_bounds_m": [
+          [
+            0.0,
+            -0.15,
+            2.55
+          ],
+          [
+            6.0,
+            0.15,
+            2.85
+          ]
+        ]
+      }
+    ],
+    "windows": [
+      {
+        "id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+        "label": "WIN11",
+        "object_name": "BIM3117_Window",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "offset_m": 3.0,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "frame_volume_m3": 0.046
+      },
+      {
+        "id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+        "label": "WIN12",
+        "object_name": "BIM3117_Window001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+        "offset_m": 1.2,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "frame_volume_m3": 0.045999999999999985
+      },
+      {
+        "id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+        "label": "WIN21",
+        "object_name": "BIM3117_Window002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "offset_m": 3.0,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "frame_volume_m3": 0.046
+      },
+      {
+        "id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+        "label": "WIN22",
+        "object_name": "BIM3117_Window003",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "host_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+        "offset_m": 1.2,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "frame_volume_m3": 0.045999999999999985
+      }
+    ],
+    "slabs": [
+      {
+        "id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+        "label": "S00",
+        "object_name": "BIM3117_Slab",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "offset_m": 0.0,
+        "thickness_m": 0.15,
+        "top_z_m": 0.0,
+        "base_z_m": -0.15,
+        "boundary_m": [
+          [
+            -0.25,
+            -0.25
+          ],
+          [
+            6.25,
+            -0.25
+          ],
+          [
+            6.25,
+            4.25
+          ],
+          [
+            -0.25,
+            4.25
+          ]
+        ],
+        "quantities": {
+          "gross_volume_m3": 4.3875,
+          "net_volume_m3": 4.3875,
+          "join_deduction_m3": 0.0,
+          "gross_area_m2": 29.25,
+          "net_area_m2": 29.250000000000004,
+          "perimeter_m": 22.0
+        },
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            -0.15
+          ],
+          [
+            6.25,
+            4.25,
+            0.0
+          ]
+        ]
+      },
+      {
+        "id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "label": "S01",
+        "object_name": "BIM3117_Slab001",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "offset_m": 0.0,
+        "thickness_m": 0.15,
+        "top_z_m": 3.0,
+        "base_z_m": 2.85,
+        "boundary_m": [
+          [
+            -0.25,
+            -0.25
+          ],
+          [
+            6.25,
+            -0.25
+          ],
+          [
+            6.25,
+            4.25
+          ],
+          [
+            -0.25,
+            4.25
+          ]
+        ],
+        "quantities": {
+          "gross_volume_m3": 4.3875,
+          "net_volume_m3": 4.3875,
+          "join_deduction_m3": 0.0,
+          "gross_area_m2": 29.25,
+          "net_area_m2": 29.250000000000004,
+          "perimeter_m": 22.0
+        },
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            2.85
+          ],
+          [
+            6.25,
+            4.25,
+            3.0
+          ]
+        ]
+      },
+      {
+        "id": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "label": "S02",
+        "object_name": "BIM3117_Slab002",
+        "schema": 1,
+        "creation_version": "0.4.0",
+        "material": "Concrete",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "offset_m": 0.0,
+        "thickness_m": 0.15,
+        "top_z_m": 6.0,
+        "base_z_m": 5.85,
+        "boundary_m": [
+          [
+            -0.25,
+            -0.25
+          ],
+          [
+            6.25,
+            -0.25
+          ],
+          [
+            6.25,
+            4.25
+          ],
+          [
+            -0.25,
+            4.25
+          ]
+        ],
+        "quantities": {
+          "gross_volume_m3": 4.3875,
+          "net_volume_m3": 4.3875,
+          "join_deduction_m3": 0.0,
+          "gross_area_m2": 29.25,
+          "net_area_m2": 29.250000000000004,
+          "perimeter_m": 22.0
+        },
+        "native_bounds_m": [
+          [
+            -0.25,
+            -0.25,
+            5.85
+          ],
+          [
+            6.25,
+            4.25,
+            6.0
+          ]
+        ]
+      }
+    ],
+    "wall_rows": [
+      {
+        "element_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "object_name": "BIM3117_Wall004",
+        "name": "Wall 2-1",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "length_m": 5.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 14.535,
+        "opening_side_area_m2": 3.33,
+        "net_side_area_m2": 11.205,
+        "gross_volume_m3": 2.907,
+        "opening_volume_m3": 0.6659999999999999,
+        "net_volume_m3": 2.241,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "1a03652c-770c-405c-af28-4953b7322981",
+        "object_name": "BIM3117_Wall003",
+        "name": "Wall 1-4",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "length_m": 3.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 9.435,
+        "opening_side_area_m2": 0.0,
+        "net_side_area_m2": 9.434999999999999,
+        "gross_volume_m3": 1.8870000000000002,
+        "opening_volume_m3": 2.220446049250313e-16,
+        "net_volume_m3": 1.887,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+        "object_name": "BIM3117_Wall002",
+        "name": "Wall 1-3",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "length_m": 5.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 14.535,
+        "opening_side_area_m2": 0.0,
+        "net_side_area_m2": 14.535,
+        "gross_volume_m3": 2.907,
+        "opening_volume_m3": 0.0,
+        "net_volume_m3": 2.907,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "object_name": "BIM3117_Wall",
+        "name": "Wall 1-1",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "length_m": 5.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 14.535,
+        "opening_side_area_m2": 3.33,
+        "net_side_area_m2": 11.205,
+        "gross_volume_m3": 2.907,
+        "opening_volume_m3": 0.6659999999999999,
+        "net_volume_m3": 2.241,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+        "object_name": "BIM3117_Wall005",
+        "name": "Wall 2-2",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "length_m": 3.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 9.435,
+        "opening_side_area_m2": 1.44,
+        "net_side_area_m2": 7.994999999999999,
+        "gross_volume_m3": 1.8870000000000002,
+        "opening_volume_m3": 0.28800000000000026,
+        "net_volume_m3": 1.599,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+        "object_name": "BIM3117_Wall007",
+        "name": "Wall 2-4",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "length_m": 3.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 9.435,
+        "opening_side_area_m2": 0.0,
+        "net_side_area_m2": 9.434999999999999,
+        "gross_volume_m3": 1.8870000000000002,
+        "opening_volume_m3": 2.220446049250313e-16,
+        "net_volume_m3": 1.887,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+        "object_name": "BIM3117_Wall001",
+        "name": "Wall 1-2",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "length_m": 3.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 9.435,
+        "opening_side_area_m2": 1.44,
+        "net_side_area_m2": 7.994999999999999,
+        "gross_volume_m3": 1.8870000000000002,
+        "opening_volume_m3": 0.28800000000000026,
+        "net_volume_m3": 1.599,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+        "object_name": "BIM3117_Wall006",
+        "name": "Wall 2-3",
+        "type_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "type_name": "Block 200",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "length_m": 5.7,
+        "height_m": 2.55,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 14.535,
+        "opening_side_area_m2": 0.0,
+        "net_side_area_m2": 14.535,
+        "gross_volume_m3": 2.907,
+        "opening_volume_m3": 0.0,
+        "net_volume_m3": 2.907,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      }
+    ],
+    "door_rows": [
+      {
+        "element_id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+        "object_name": "BIM3117_Door",
+        "name": "D01",
+        "host_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "host_name": "Wall 1-1",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "offset_m": 0.8,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "opening_area_m2": 1.8900000000000001,
+        "opening_volume_m3": 0.37800000000000006,
+        "frame_volume_m3": 0.05000000000000003,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+        "object_name": "BIM3117_Door001",
+        "name": "D02",
+        "host_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "host_name": "Wall 2-1",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "offset_m": 0.8,
+        "width_m": 0.9,
+        "height_m": 2.1,
+        "sill_m": 0.0,
+        "opening_area_m2": 1.8900000000000001,
+        "opening_volume_m3": 0.37800000000000006,
+        "frame_volume_m3": 0.05000000000000003,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-three-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      }
+    ],
+    "window_rows": [
+      {
+        "element_id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+        "object_name": "BIM3117_Window",
+        "name": "WIN11",
+        "host_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "host_name": "Wall 1-1",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "offset_m": 3.0,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "opening_area_m2": 1.44,
+        "opening_volume_m3": 0.288,
+        "frame_volume_m3": 0.046,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-four-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+        "object_name": "BIM3117_Window001",
+        "name": "WIN12",
+        "host_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+        "host_name": "Wall 1-2",
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "offset_m": 1.2,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "opening_area_m2": 1.44,
+        "opening_volume_m3": 0.288,
+        "frame_volume_m3": 0.045999999999999985,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-four-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+        "object_name": "BIM3117_Window002",
+        "name": "WIN21",
+        "host_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "host_name": "Wall 2-1",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "offset_m": 3.0,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "opening_area_m2": 1.44,
+        "opening_volume_m3": 0.288,
+        "frame_volume_m3": 0.046,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-four-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      },
+      {
+        "element_id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+        "object_name": "BIM3117_Window003",
+        "name": "WIN22",
+        "host_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+        "host_name": "Wall 2-2",
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "offset_m": 1.2,
+        "width_m": 1.2,
+        "height_m": 1.2,
+        "sill_m": 0.9,
+        "opening_area_m2": 1.44,
+        "opening_volume_m3": 0.288,
+        "frame_volume_m3": 0.045999999999999985,
+        "count": 1,
+        "quantity_rule": "3117.overall-opening.generic-four-bar-frame.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433"
+      }
+    ],
+    "slab_rows": [
+      {
+        "element_id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+        "object_name": "BIM3117_Slab",
+        "name": "S00",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-polygon-slab.top-level.uniform.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "level": "L00",
+        "offset_m": 0.0,
+        "top_z_m": 0.0,
+        "thickness_m": 0.15,
+        "gross_volume_m3": 4.3875,
+        "net_volume_m3": 4.3875,
+        "join_deduction_m3": 0.0,
+        "gross_area_m2": 29.25,
+        "net_area_m2": 29.250000000000004,
+        "perimeter_m": 22.0
+      },
+      {
+        "element_id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "object_name": "BIM3117_Slab001",
+        "name": "S01",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-polygon-slab.top-level.uniform.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "level": "L01",
+        "offset_m": 0.0,
+        "top_z_m": 3.0,
+        "thickness_m": 0.15,
+        "gross_volume_m3": 4.3875,
+        "net_volume_m3": 4.3875,
+        "join_deduction_m3": 0.0,
+        "gross_area_m2": 29.25,
+        "net_area_m2": 29.250000000000004,
+        "perimeter_m": 22.0
+      },
+      {
+        "element_id": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "object_name": "BIM3117_Slab002",
+        "name": "S02",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-polygon-slab.top-level.uniform.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "level": "L02",
+        "offset_m": 0.0,
+        "top_z_m": 6.0,
+        "thickness_m": 0.15,
+        "gross_volume_m3": 4.3875,
+        "net_volume_m3": 4.3875,
+        "join_deduction_m3": 0.0,
+        "gross_area_m2": 29.25,
+        "net_area_m2": 29.250000000000004,
+        "perimeter_m": 22.0
+      }
+    ],
+    "column_rows": [
+      {
+        "element_id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+        "object_name": "BIM3117_Column003",
+        "name": "C14",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "x_m": 0.0,
+        "y_m": 4.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+        "object_name": "BIM3117_Column007",
+        "name": "C24",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "x_m": 0.0,
+        "y_m": 4.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "72e68695-2037-4248-b41b-e8c980aaa998",
+        "object_name": "BIM3117_Column002",
+        "name": "C13",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "x_m": 6.0,
+        "y_m": 4.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "730fef27-e695-4671-9806-4233c2c1068a",
+        "object_name": "BIM3117_Column001",
+        "name": "C12",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "x_m": 6.0,
+        "y_m": 0.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+        "object_name": "BIM3117_Column",
+        "name": "C11",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "base_level": "L00",
+        "top_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "top_level": "L01",
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+        "object_name": "BIM3117_Column005",
+        "name": "C22",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "x_m": 6.0,
+        "y_m": 0.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+        "object_name": "BIM3117_Column004",
+        "name": "C21",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "x_m": 0.0,
+        "y_m": 0.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      },
+      {
+        "element_id": "def71377-5ba1-49d3-8c76-be105187ac63",
+        "object_name": "BIM3117_Column006",
+        "name": "C23",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.vertical-rectangular-column.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.27,
+        "net_volume_m3": 0.2565,
+        "join_deduction_m3": 0.013500000000000012,
+        "section_area_m2": 0.09,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.3,
+        "base_level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "base_level": "L01",
+        "top_level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "top_level": "L02",
+        "x_m": 6.0,
+        "y_m": 4.0,
+        "rotation_deg": 0.0,
+        "height_m": 3.0,
+        "base_offset_m": 0.0,
+        "top_offset_m": 0.0
+      }
+    ],
+    "beam_rows": [
+      {
+        "element_id": "4f806193-5c43-4136-96ba-7be20d902072",
+        "object_name": "BIM3117_Beam002",
+        "name": "B13",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.81,
+        "net_volume_m3": 0.54,
+        "join_deduction_m3": 0.27,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "level": "L01",
+        "start_x_m": 6.0,
+        "start_y_m": 4.0,
+        "end_x_m": 0.0,
+        "end_y_m": 4.0,
+        "length_m": 6.0,
+        "offset_m": 0.0,
+        "top_z_m": 3.0
+      },
+      {
+        "element_id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+        "object_name": "BIM3117_Beam005",
+        "name": "B22",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.54,
+        "net_volume_m3": 0.36,
+        "join_deduction_m3": 0.18000000000000005,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "level": "L02",
+        "start_x_m": 6.0,
+        "start_y_m": 0.0,
+        "end_x_m": 6.0,
+        "end_y_m": 4.0,
+        "length_m": 4.0,
+        "offset_m": 0.0,
+        "top_z_m": 6.0
+      },
+      {
+        "element_id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+        "object_name": "BIM3117_Beam007",
+        "name": "B24",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.54,
+        "net_volume_m3": 0.36,
+        "join_deduction_m3": 0.18000000000000005,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "level": "L02",
+        "start_x_m": 0.0,
+        "start_y_m": 4.0,
+        "end_x_m": 0.0,
+        "end_y_m": 0.0,
+        "length_m": 4.0,
+        "offset_m": 0.0,
+        "top_z_m": 6.0
+      },
+      {
+        "element_id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+        "object_name": "BIM3117_Beam004",
+        "name": "B21",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.81,
+        "net_volume_m3": 0.54,
+        "join_deduction_m3": 0.27,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "level": "L02",
+        "start_x_m": 0.0,
+        "start_y_m": 0.0,
+        "end_x_m": 6.0,
+        "end_y_m": 0.0,
+        "length_m": 6.0,
+        "offset_m": 0.0,
+        "top_z_m": 6.0
+      },
+      {
+        "element_id": "70829b32-bbd0-437f-b072-a1745c850c61",
+        "object_name": "BIM3117_Beam001",
+        "name": "B12",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.54,
+        "net_volume_m3": 0.36,
+        "join_deduction_m3": 0.18000000000000005,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "level": "L01",
+        "start_x_m": 6.0,
+        "start_y_m": 0.0,
+        "end_x_m": 6.0,
+        "end_y_m": 4.0,
+        "length_m": 4.0,
+        "offset_m": 0.0,
+        "top_z_m": 3.0
+      },
+      {
+        "element_id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+        "object_name": "BIM3117_Beam006",
+        "name": "B23",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.81,
+        "net_volume_m3": 0.54,
+        "join_deduction_m3": 0.27,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "level": "L02",
+        "start_x_m": 6.0,
+        "start_y_m": 4.0,
+        "end_x_m": 0.0,
+        "end_y_m": 4.0,
+        "length_m": 6.0,
+        "offset_m": 0.0,
+        "top_z_m": 6.0
+      },
+      {
+        "element_id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+        "object_name": "BIM3117_Beam003",
+        "name": "B14",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.54,
+        "net_volume_m3": 0.36,
+        "join_deduction_m3": 0.18000000000000005,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "level": "L01",
+        "start_x_m": 0.0,
+        "start_y_m": 4.0,
+        "end_x_m": 0.0,
+        "end_y_m": 0.0,
+        "length_m": 4.0,
+        "offset_m": 0.0,
+        "top_z_m": 3.0
+      },
+      {
+        "element_id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+        "object_name": "BIM3117_Beam",
+        "name": "B11",
+        "material": "Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-rectangular-beam.slab-priority-cuts.v1",
+        "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+        "gross_volume_m3": 0.81,
+        "net_volume_m3": 0.54,
+        "join_deduction_m3": 0.27,
+        "section_area_m2": 0.135,
+        "join_slab_ids": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "join_count": 1,
+        "width_m": 0.3,
+        "depth_m": 0.45,
+        "level_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "level": "L01",
+        "start_x_m": 0.0,
+        "start_y_m": 0.0,
+        "end_x_m": 6.0,
+        "end_y_m": 0.0,
+        "length_m": 6.0,
+        "offset_m": 0.0,
+        "top_z_m": 3.0
+      }
+    ],
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Wall004",
+          "object_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "label": "Wall 2-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Door",
+          "object_id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "label": "D01",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallBody006",
+          "object_id": "18de5727-20e5-4c94-9fb6-a4e9c7f2bfd4",
+          "label": "Wall 2-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall003",
+          "object_id": "1a03652c-770c-405c-af28-4953b7322981",
+          "label": "Wall 1-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Column003",
+          "object_id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "label": "C14",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Door001",
+          "object_id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "label": "D02",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+          "label": "Block 200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level002",
+          "object_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+          "label": "L02",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody003",
+          "object_id": "38563856-c2ea-4f7a-aacd-0f43bd751b21",
+          "label": "Wall 1-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid003",
+          "object_id": "386f2211-6045-4e05-af30-de5dc0186533",
+          "label": "2",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall002",
+          "object_id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "label": "Wall 1-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "4238434d-fdef-49cb-911e-a9c87ee667fb",
+          "label": "Wall 1-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column007",
+          "object_id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "label": "C24",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam002",
+          "object_id": "4f806193-5c43-4136-96ba-7be20d902072",
+          "label": "B13",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window",
+          "object_id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+          "label": "WIN11",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+          "label": "Wall 1-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam005",
+          "object_id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+          "label": "B22",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Wall005",
+          "object_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+          "label": "Wall 2-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam007",
+          "object_id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "label": "B24",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam004",
+          "object_id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "label": "B21",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam001",
+          "object_id": "70829b32-bbd0-437f-b072-a1745c850c61",
+          "label": "B12",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Column002",
+          "object_id": "72e68695-2037-4248-b41b-e8c980aaa998",
+          "label": "C13",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column001",
+          "object_id": "730fef27-e695-4671-9806-4233c2c1068a",
+          "label": "C12",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column",
+          "object_id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "label": "C11",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Window001",
+          "object_id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "label": "WIN12",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_WallBody005",
+          "object_id": "9466ed73-bc97-4e4f-bb55-12c2073366ca",
+          "label": "Wall 2-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Window002",
+          "object_id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "label": "WIN21",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall007",
+          "object_id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "label": "Wall 2-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Slab",
+          "object_id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "label": "S00",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_WallBody007",
+          "object_id": "a1c43e24-e17e-4bb8-b523-d0505ecddef6",
+          "label": "Wall 2-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid",
+          "object_id": "a7966421-da81-4a14-9871-f0d5933d2f18",
+          "label": "A",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Beam006",
+          "object_id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "label": "B23",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+          "label": "3117 อาคารสองชั้น",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Slab001",
+          "object_id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "label": "S01",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Wall001",
+          "object_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "label": "Wall 1-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam003",
+          "object_id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "label": "B14",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window003",
+          "object_id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "label": "WIN22",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Column005",
+          "object_id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "label": "C22",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_WallBody002",
+          "object_id": "d3c3da29-eddd-43be-86a5-90fd5920304f",
+          "label": "Wall 1-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column004",
+          "object_id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "label": "C21",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column006",
+          "object_id": "def71377-5ba1-49d3-8c76-be105187ac63",
+          "label": "C23",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam",
+          "object_id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "label": "B11",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Slab002",
+          "object_id": "e78967b0-bddf-4afb-b534-3a161f902227",
+          "label": "S02",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Grid001",
+          "object_id": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+          "label": "B",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody004",
+          "object_id": "f2c56a58-101c-40aa-9e04-bce69fcf6cfe",
+          "label": "Wall 2-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody001",
+          "object_id": "f2e9d197-c862-4b36-a447-c9bb283dcd1d",
+          "label": "Wall 1-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall006",
+          "object_id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "label": "Wall 2-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Grid002",
+          "object_id": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+          "label": "1",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 38,
+        "derived": 8,
+        "reference": 4,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+        "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+        "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+        "4 native datum object(s) are listed as reference and omitted from IFC."
+      ],
+      "complete": false,
+      "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+    },
+    "totals": {
+      "walls_count": 8,
+      "doors_count": 2,
+      "windows_count": 4,
+      "slabs_count": 3,
+      "columns_count": 8,
+      "beams_count": 8,
+      "slab_net_volume_m3": 13.162500000000001,
+      "column_net_volume_m3": 2.052,
+      "beam_net_volume_m3": 3.6,
+      "structural_net_volume_m3": 18.814500000000002,
+      "join_deduction_m3": 1.9080000000000004,
+      "gross_side_area_m2": 95.88,
+      "net_side_area_m2": 86.34,
+      "gross_volume_m3": 19.176000000000002,
+      "net_volume_m3": 17.268,
+      "rule": "Sum of individual walls; no wall-join overlap deductions"
+    }
+  },
+  "coverage": {
+    "items": [
+      {
+        "object_name": "BIM3117_Wall004",
+        "object_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+        "label": "Wall 2-1",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Door",
+        "object_id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+        "label": "D01",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_WallBody006",
+        "object_id": "18de5727-20e5-4c94-9fb6-a4e9c7f2bfd4",
+        "label": "Wall 2-3 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Wall003",
+        "object_id": "1a03652c-770c-405c-af28-4953b7322981",
+        "label": "Wall 1-4",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Column003",
+        "object_id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+        "label": "C14",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Door001",
+        "object_id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+        "label": "D02",
+        "kind": "Door",
+        "status": "mapped",
+        "ifc_class": "IfcDoor",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "door"
+      },
+      {
+        "object_name": "BIM3117_WallType",
+        "object_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+        "label": "Block 200",
+        "kind": "WallType",
+        "status": "mapped",
+        "ifc_class": "IfcWallType",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level002",
+        "object_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+        "label": "L02",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallBody003",
+        "object_id": "38563856-c2ea-4f7a-aacd-0f43bd751b21",
+        "label": "Wall 1-4 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Grid003",
+        "object_id": "386f2211-6045-4e05-af30-de5dc0186533",
+        "label": "2",
+        "kind": "Grid",
+        "status": "reference",
+        "ifc_class": "",
+        "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Wall002",
+        "object_id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+        "label": "Wall 1-3",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_WallBody",
+        "object_id": "4238434d-fdef-49cb-911e-a9c87ee667fb",
+        "label": "Wall 1-1 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Column007",
+        "object_id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+        "label": "C24",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Beam002",
+        "object_id": "4f806193-5c43-4136-96ba-7be20d902072",
+        "label": "B13",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Window",
+        "object_id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+        "label": "WIN11",
+        "kind": "Window",
+        "status": "mapped",
+        "ifc_class": "IfcWindow",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "window"
+      },
+      {
+        "object_name": "BIM3117_Wall",
+        "object_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+        "label": "Wall 1-1",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Beam005",
+        "object_id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+        "label": "B22",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Wall005",
+        "object_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+        "label": "Wall 2-2",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Beam007",
+        "object_id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+        "label": "B24",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Beam004",
+        "object_id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+        "label": "B21",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Beam001",
+        "object_id": "70829b32-bbd0-437f-b072-a1745c850c61",
+        "label": "B12",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Column002",
+        "object_id": "72e68695-2037-4248-b41b-e8c980aaa998",
+        "label": "C13",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Column001",
+        "object_id": "730fef27-e695-4671-9806-4233c2c1068a",
+        "label": "C12",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Level001",
+        "object_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+        "label": "L01",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Column",
+        "object_id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+        "label": "C11",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Window001",
+        "object_id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+        "label": "WIN12",
+        "kind": "Window",
+        "status": "mapped",
+        "ifc_class": "IfcWindow",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "window"
+      },
+      {
+        "object_name": "BIM3117_WallBody005",
+        "object_id": "9466ed73-bc97-4e4f-bb55-12c2073366ca",
+        "label": "Wall 2-2 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Window002",
+        "object_id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+        "label": "WIN21",
+        "kind": "Window",
+        "status": "mapped",
+        "ifc_class": "IfcWindow",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "window"
+      },
+      {
+        "object_name": "BIM3117_Wall007",
+        "object_id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+        "label": "Wall 2-4",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Slab",
+        "object_id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+        "label": "S00",
+        "kind": "Slab",
+        "status": "mapped",
+        "ifc_class": "IfcSlab",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "slab"
+      },
+      {
+        "object_name": "BIM3117_WallBody007",
+        "object_id": "a1c43e24-e17e-4bb8-b523-d0505ecddef6",
+        "label": "Wall 2-4 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Grid",
+        "object_id": "a7966421-da81-4a14-9871-f0d5933d2f18",
+        "label": "A",
+        "kind": "Grid",
+        "status": "reference",
+        "ifc_class": "",
+        "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Beam006",
+        "object_id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+        "label": "B23",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Project",
+        "object_id": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+        "label": "3117 อาคารสองชั้น",
+        "kind": "Project",
+        "status": "mapped",
+        "ifc_class": "IfcProject",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Level",
+        "object_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+        "label": "L00",
+        "kind": "Level",
+        "status": "mapped",
+        "ifc_class": "IfcBuildingStorey",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Slab001",
+        "object_id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+        "label": "S01",
+        "kind": "Slab",
+        "status": "mapped",
+        "ifc_class": "IfcSlab",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "slab"
+      },
+      {
+        "object_name": "BIM3117_Wall001",
+        "object_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+        "label": "Wall 1-2",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Beam003",
+        "object_id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+        "label": "B14",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Window003",
+        "object_id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+        "label": "WIN22",
+        "kind": "Window",
+        "status": "mapped",
+        "ifc_class": "IfcWindow",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "window"
+      },
+      {
+        "object_name": "BIM3117_Column005",
+        "object_id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+        "label": "C22",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_WallBody002",
+        "object_id": "d3c3da29-eddd-43be-86a5-90fd5920304f",
+        "label": "Wall 1-3 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Column004",
+        "object_id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+        "label": "C21",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Column006",
+        "object_id": "def71377-5ba1-49d3-8c76-be105187ac63",
+        "label": "C23",
+        "kind": "Column",
+        "status": "mapped",
+        "ifc_class": "IfcColumn",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "column"
+      },
+      {
+        "object_name": "BIM3117_Beam",
+        "object_id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+        "label": "B11",
+        "kind": "Beam",
+        "status": "mapped",
+        "ifc_class": "IfcBeam",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "beam"
+      },
+      {
+        "object_name": "BIM3117_Slab002",
+        "object_id": "e78967b0-bddf-4afb-b534-3a161f902227",
+        "label": "S02",
+        "kind": "Slab",
+        "status": "mapped",
+        "ifc_class": "IfcSlab",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "slab"
+      },
+      {
+        "object_name": "BIM3117_Grid001",
+        "object_id": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+        "label": "B",
+        "kind": "Grid",
+        "status": "reference",
+        "ifc_class": "",
+        "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallBody004",
+        "object_id": "f2c56a58-101c-40aa-9e04-bce69fcf6cfe",
+        "label": "Wall 2-1 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_WallBody001",
+        "object_id": "f2e9d197-c862-4b36-a447-c9bb283dcd1d",
+        "label": "Wall 1-2 · Solid",
+        "kind": "WallBody",
+        "status": "derived",
+        "ifc_class": "",
+        "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+        "quantity_role": "none"
+      },
+      {
+        "object_name": "BIM3117_Wall006",
+        "object_id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+        "label": "Wall 2-3",
+        "kind": "Wall",
+        "status": "mapped",
+        "ifc_class": "IfcWall",
+        "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+        "quantity_role": "wall"
+      },
+      {
+        "object_name": "BIM3117_Grid002",
+        "object_id": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+        "label": "1",
+        "kind": "Grid",
+        "status": "reference",
+        "ifc_class": "",
+        "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+        "quantity_role": "none"
+      }
+    ],
+    "counts": {
+      "mapped": 38,
+      "derived": 8,
+      "reference": 4,
+      "unsupported": 0
+    },
+    "warnings": [
+      "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+      "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+      "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+      "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+      "4 native datum object(s) are listed as reference and omitted from IFC."
+    ],
+    "complete": false,
+    "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+  },
+  "validation": {
+    "status": "passed",
+    "native_geometry": "validated",
+    "units": "m / m2 / m3",
+    "wall_rows": 8,
+    "door_rows": 2,
+    "slab_rows": 3,
+    "column_rows": 8,
+    "beam_rows": 8,
+    "window_rows": 4
+  },
+  "files": [
+    {
+      "name": "Building_Authoring_Workbench.csv",
+      "bytes": 3134,
+      "sha256": "34a9e0be5f27733db6bb24ce838a3b15134fb3eb64530b5ad2985f3e8926c6cb"
+    },
+    {
+      "name": "Building_Authoring_Workbench_doors.csv",
+      "bytes": 821,
+      "sha256": "45967272a7543c1960af7fcee1d05aa852441eaabb6204f5d4188b025410e626"
+    },
+    {
+      "name": "Building_Authoring_Workbench_slabs.csv",
+      "bytes": 976,
+      "sha256": "86138b99719fcef9aed41fb05c6b05fab3399cc3a0bbce81136cc27573fce112"
+    },
+    {
+      "name": "Building_Authoring_Workbench_columns.csv",
+      "bytes": 3188,
+      "sha256": "d88c830bf5174e66d8a99d96a04c48ea9ce4fb7d9004d9e6e89fad877627cf45"
+    },
+    {
+      "name": "Building_Authoring_Workbench_beams.csv",
+      "bytes": 2796,
+      "sha256": "da06b42f0aa4d44ba34cb6b5714e24a093e5a64a819432c09a0f1fc99f9418b9"
+    },
+    {
+      "name": "Building_Authoring_Workbench_windows.csv",
+      "bytes": 1325,
+      "sha256": "66346e38465ee02113231bcbeaf856bc90eb3530531537d9d9818f8aaf9b48da"
+    }
+  ],
+  "csv": {
+    "encoding": "UTF-8 BOM",
+    "delimiter": ",",
+    "decimal": ".",
+    "wall_columns": [
+      "element_id",
+      "name",
+      "type_id",
+      "type_name",
+      "base_level_id",
+      "base_level",
+      "top_level_id",
+      "top_level",
+      "length_m",
+      "height_m",
+      "thickness_m",
+      "gross_side_area_m2",
+      "opening_side_area_m2",
+      "net_side_area_m2",
+      "gross_volume_m3",
+      "opening_volume_m3",
+      "net_volume_m3",
+      "quantity_rule",
+      "content_revision"
+    ],
+    "door_columns": [
+      "element_id",
+      "name",
+      "host_id",
+      "host_name",
+      "base_level_id",
+      "base_level",
+      "offset_m",
+      "width_m",
+      "height_m",
+      "sill_m",
+      "opening_area_m2",
+      "opening_volume_m3",
+      "frame_volume_m3",
+      "count",
+      "quantity_rule",
+      "content_revision"
+    ],
+    "additional_columns": {
+      "slabs": [
+        "element_id",
+        "name",
+        "level_id",
+        "level",
+        "offset_m",
+        "top_z_m",
+        "thickness_m",
+        "gross_area_m2",
+        "net_area_m2",
+        "perimeter_m",
+        "gross_volume_m3",
+        "net_volume_m3",
+        "material",
+        "count",
+        "quantity_rule",
+        "content_revision"
+      ],
+      "columns": [
+        "element_id",
+        "name",
+        "base_level_id",
+        "base_level",
+        "top_level_id",
+        "top_level",
+        "x_m",
+        "y_m",
+        "rotation_deg",
+        "width_m",
+        "depth_m",
+        "height_m",
+        "base_offset_m",
+        "top_offset_m",
+        "section_area_m2",
+        "gross_volume_m3",
+        "join_deduction_m3",
+        "net_volume_m3",
+        "join_slab_ids",
+        "join_count",
+        "material",
+        "count",
+        "quantity_rule",
+        "content_revision"
+      ],
+      "beams": [
+        "element_id",
+        "name",
+        "level_id",
+        "level",
+        "start_x_m",
+        "start_y_m",
+        "end_x_m",
+        "end_y_m",
+        "length_m",
+        "width_m",
+        "depth_m",
+        "offset_m",
+        "top_z_m",
+        "section_area_m2",
+        "gross_volume_m3",
+        "join_deduction_m3",
+        "net_volume_m3",
+        "join_slab_ids",
+        "join_count",
+        "material",
+        "count",
+        "quantity_rule",
+        "content_revision"
+      ],
+      "windows": [
+        "element_id",
+        "name",
+        "host_id",
+        "host_name",
+        "base_level_id",
+        "base_level",
+        "offset_m",
+        "width_m",
+        "height_m",
+        "sill_m",
+        "opening_area_m2",
+        "opening_volume_m3",
+        "frame_volume_m3",
+        "count",
+        "quantity_rule",
+        "content_revision"
+      ]
+    },
+    "text_policy": "Formula-like text cells have a leading apostrophe; original strings are in snapshot."
+  },
+  "publication": "Payloads replaced individually; this metadata is the final completion marker. Verify hashes before use.",
+  "freshness": "Compare content_revision with a new native snapshot; this file does not update when the model changes."
+}

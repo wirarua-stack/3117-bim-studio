@@ -1,0 +1,9 @@
+test_opening_boolean_geometry_matches_schedule (test_ifc.IfcTests.test_opening_boolean_geometry_matches_schedule) ... ok
+test_reexport_keeps_element_global_ids (test_ifc.IfcTests.test_reexport_keeps_element_global_ids) ... ok
+test_schema_validation (test_ifc.IfcTests.test_schema_validation) ... ok
+test_semantics_units_and_host_relations (test_ifc.IfcTests.test_semantics_units_and_host_relations) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.487s
+
+OK
