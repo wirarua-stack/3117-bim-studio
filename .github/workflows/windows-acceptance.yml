@@ -81,66 +81,8 @@ jobs:
       - name: Seal the exact accepted patched runtime for trial packaging
         if: success()
         run: |
-          $reportPath = Join-Path $env:BIM3117_ACCEPTANCE_ROOT 'WINDOWS_ACCEPTANCE.json'
-          $hostManifestPath = Join-Path $env:BIM3117_ACCEPTANCE_ROOT 'hosts/patched/host-manifest.json'
-          if (-not (Test-Path -LiteralPath $reportPath -PathType Leaf)) { throw "Acceptance report missing: $reportPath" }
-          if (-not (Test-Path -LiteralPath $hostManifestPath -PathType Leaf)) { throw "Patched host manifest missing: $hostManifestPath" }
-
-          $report = Get-Content -LiteralPath $reportPath -Raw -Encoding utf8 | ConvertFrom-Json
-          if ($report.status -ne 'passed' -or -not $report.windows_automated_acceptance_passed) {
-            throw 'Refusing to retain a trial runtime because automated Windows acceptance did not pass.'
-          }
-          if ($report.release_ready) { throw 'Automated acceptance must not set release_ready=true.' }
-
-          $host = Get-Content -LiteralPath $hostManifestPath -Raw -Encoding utf8 | ConvertFrom-Json
-          if ($host.variant -ne 'patched') { throw 'Expected the patched host manifest.' }
-          $buildRoot = [IO.Path]::GetFullPath([string]$host.host_root)
-          $expectedBuildRoot = [IO.Path]::GetFullPath((Join-Path $env:BIM3117_ACCEPTANCE_ROOT 'hosts/patched/build'))
-          if ($buildRoot -ne $expectedBuildRoot) {
-            throw "Patched host root is not the tested build tree. Expected $expectedBuildRoot; got $buildRoot"
-          }
-
-          $runtimeFamilies = @('bin','data','doc','Ext','lib','Mod')
-          $missing = @($runtimeFamilies | Where-Object { -not (Test-Path -LiteralPath (Join-Path $buildRoot $_) -PathType Container) })
-          if ($missing.Count -gt 0) { throw "Accepted runtime directories missing: $($missing -join ', ')" }
-
-          $sealRoot = Join-Path $env:BIM3117_ACCEPTANCE_ROOT 'accepted-runtime-seal'
-          New-Item -ItemType Directory -Path $sealRoot -Force | Out-Null
-          $records = foreach ($family in $runtimeFamilies) {
-            $familyRoot = Join-Path $buildRoot $family
-            Get-ChildItem -LiteralPath $familyRoot -File -Recurse | Sort-Object FullName | ForEach-Object {
-              $relative = [IO.Path]::GetRelativePath($buildRoot, $_.FullName).Replace('\','/')
-              [ordered]@{
-                path = $relative
-                bytes = $_.Length
-                sha256 = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
-              }
-            }
-          }
-          if (@($records).Count -eq 0) { throw 'Accepted runtime seal would be empty.' }
-
-          $seal = [ordered]@{
-            schema = 1
-            purpose = 'Exact patched FreeCAD runtime retained from the host that passed automated Windows acceptance'
-            source_run_id = $env:GITHUB_RUN_ID
-            source_run_attempt = $env:GITHUB_RUN_ATTEMPT
-            source_commit = $env:GITHUB_SHA
-            accepted_host_manifest = [ordered]@{
-              path = 'hosts/patched/host-manifest.json'
-              sha256 = (Get-FileHash -LiteralPath $hostManifestPath -Algorithm SHA256).Hash.ToLowerInvariant()
-            }
-            acceptance_report = [ordered]@{
-              path = 'WINDOWS_ACCEPTANCE.json'
-              sha256 = (Get-FileHash -LiteralPath $reportPath -Algorithm SHA256).Hash.ToLowerInvariant()
-            }
-            runtime_root = 'hosts/patched/build'
-            runtime_families = $runtimeFamilies
-            files = @($records)
-            release_ready = $false
-          }
-          $sealPath = Join-Path $sealRoot 'accepted-runtime-manifest.json'
-          $seal | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $sealPath -Encoding utf8
-          "BIM3117_ACCEPTED_RUNTIME_SEAL=$sealPath" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          python scripts/seal_accepted_runtime.py --run-root $env:BIM3117_ACCEPTANCE_ROOT
+          if ($LASTEXITCODE -ne 0) { throw 'Accepted runtime seal failed' }
 
       - name: Retain the exact patched runtime that passed automated acceptance
         if: success()
