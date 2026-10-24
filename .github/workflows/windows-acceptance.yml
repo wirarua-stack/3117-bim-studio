@@ -105,27 +105,44 @@ jobs:
           retention-days: 7
           compression-level: 0
 
+      - name: Collect evidence within checkout for artifact upload
+        if: always()
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $destination = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/windows-evidence'
+          New-Item -ItemType Directory -Path $destination -Force | Out-Null
+          if (Test-Path -LiteralPath $env:BIM3117_RUNNER_PREFLIGHT -PathType Leaf) {
+            Copy-Item -LiteralPath $env:BIM3117_RUNNER_PREFLIGHT -Destination (Join-Path $destination 'runner-preflight.json') -Force
+          }
+          $root = $env:BIM3117_ACCEPTANCE_ROOT
+          if (Test-Path -LiteralPath $root -PathType Container) {
+            foreach ($name in @('run.json','preflight.json','WINDOWS_ACCEPTANCE.json','WINDOWS_ACCEPTANCE.md','controller-logs','results','ifc-runtime')) {
+              $source = Join-Path $root $name
+              if (Test-Path -LiteralPath $source) {
+                Copy-Item -LiteralPath $source -Destination (Join-Path $destination $name) -Recurse -Force
+              }
+            }
+            foreach ($variant in @('unpatched','patched')) {
+              $host = Join-Path $root "hosts/$variant"
+              $target = Join-Path $destination "hosts/$variant"
+              if (Test-Path -LiteralPath $host -PathType Container) {
+                New-Item -ItemType Directory -Path $target -Force | Out-Null
+                foreach ($name in @('host-manifest.json','source-integrity.json','build-status.json','logs')) {
+                  $source = Join-Path $host $name
+                  if (Test-Path -LiteralPath $source) {
+                    Copy-Item -LiteralPath $source -Destination (Join-Path $target $name) -Recurse -Force
+                  }
+                }
+              }
+            }
+          }
+
       - name: Preserve original evidence on success or failure
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: 3117-windows-evidence-${{ github.run_id }}-${{ github.run_attempt }}
-          path: |
-            ${{ env.BIM3117_RUNNER_PREFLIGHT }}
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/run.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/preflight.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/WINDOWS_ACCEPTANCE.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/WINDOWS_ACCEPTANCE.md
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/controller-logs/
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/results/
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/host-manifest.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/source-integrity.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/build-status.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/logs/
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/build/CMakeCache.txt
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/hosts/*/build/src/Gui/FreeCADGui.vcxproj
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/ifc-runtime/ifc-*.json
-            ${{ env.BIM3117_ACCEPTANCE_ROOT }}/ifc-runtime/_preflight/
+          path: artifact-staging/windows-evidence/
           if-no-files-found: warn
           retention-days: 7
           compression-level: 6
