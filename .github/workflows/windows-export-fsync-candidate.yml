@@ -1,0 +1,42 @@
+name: Windows export fsync candidate checks
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - acceptance/windows-history-fix
+    paths:
+      - 'diagnostics/export_fsync_candidate.py'
+      - 'diagnostics/test_export_fsync_candidate.py'
+      - '.github/workflows/windows-export-fsync-candidate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-candidate:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - name: Check out candidate and frozen inputs
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Verify frozen inputs before tests
+        shell: pwsh
+        run: |
+          python scripts/run_acceptance.py --work-root "$env:RUNNER_TEMP/3117-fsync-preflight-$env:GITHUB_RUN_ID" --preflight-only
+          if ($LASTEXITCODE -ne 0) { throw 'Frozen input preflight failed' }
+      - name: Test isolated export candidate on native Windows
+        shell: pwsh
+        run: |
+          python -m unittest discover -s diagnostics -p test_export_fsync_candidate.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Candidate tests failed' }
+      - name: Notice
+        shell: pwsh
+        run: |
+          Write-Host 'Diagnostic candidate only. No FreeCAD Windows acceptance or release approval is claimed.'
