@@ -34,15 +34,12 @@ def failed_items(value, *, prefix=""):
             if status in ("failed", "blocked", "error", "unreadable"):
                 out.append({"location": location, "status": status,
                             "errors": node.get("errors", node.get("error"))})
-            for key in ("stages", "processes", "checks", "results", "gates", "modes"):
-                if key in node:
-                    visit(node[key], location + "/" + key, depth + 1)
+            for key, child in node.items():
+                if isinstance(child, (dict, list)):
+                    visit(child, location + "/" + str(key), depth + 1)
         elif isinstance(node, list):
             for index, child in enumerate(node):
                 visit(child, f"{location}/{index}", depth + 1)
-        elif isinstance(node, dict):
-            for key, child in node.items():
-                visit(child, location + "/" + str(key), depth + 1)
     visit(value, prefix or "root")
     return out
 
