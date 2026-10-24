@@ -109,7 +109,7 @@ jobs:
           $records = foreach ($family in $runtimeFamilies) {
             $familyRoot = Join-Path $buildRoot $family
             Get-ChildItem -LiteralPath $familyRoot -File -Recurse | Sort-Object FullName | ForEach-Object {
-              $relative = [IO.Path]::GetRelativePath($buildRoot, $_.FullName).Replace('\\','/')
+              $relative = [IO.Path]::GetRelativePath($buildRoot, $_.FullName).Replace('\','/')
               [ordered]@{
                 path = $relative
                 bytes = $_.Length
