@@ -1,0 +1,38 @@
+{
+  "status": "static_checks_passed_for_corrected_launcher_full_gate_pending",
+  "files": {
+    "run_package_batch.py": {
+      "sha256": "1ea65991bd843cc5bd8f2f049fa2f36b41036a7eb7afdd9864b99ae56236594b",
+      "bytes": 9664,
+      "syntax_valid": true
+    },
+    "run_package_check.py": {
+      "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727",
+      "bytes": 13311,
+      "syntax_valid": true
+    },
+    "package_autopilot.FCMacro": {
+      "sha256": "4a9dfa0f7e9feb61294502044e90aced3febf22d97f872631a186ba5ba126fe5",
+      "bytes": 17227,
+      "syntax_valid": true
+    },
+    "diagnose_parent_lifetime.py": {
+      "sha256": "fba826812dae4939c22fc709c4523bf227ae0734f9d85a12961fef86df4b780a",
+      "bytes": 8290,
+      "syntax_valid": true
+    },
+    "diagnose_package_smoke.py": {
+      "sha256": "fb2dec21702b7d00ac5e5e903ab337900a277869688b5880cf4ae0be55c5118b",
+      "bytes": 2629,
+      "syntax_valid": true
+    }
+  },
+  "packaging_assertion_call_expressions_unchanged": true,
+  "packaging_assertion_call_sites": 11,
+  "dialog_response_function_unchanged": true,
+  "suite_definitions_unchanged": true,
+  "seven_stage_order_unchanged": true,
+  "expected_public_gui_checks": 248,
+  "expected_packaging_checks": 48,
+  "initial_static_record_preserved": "static-verification.json"
+}

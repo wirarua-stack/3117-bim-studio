@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "native installer confirmation displayed actual host destination",
+      "status": "passed"
+    },
+    {
+      "name": "native installer success dialog displayed",
+      "status": "passed"
+    },
+    {
+      "name": "installed receipt identifies the intended version",
+      "status": "passed"
+    },
+    {
+      "name": "upgrade backup retained outside Mod",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 4,
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "gui_up": true,
+  "dialogs": [
+    "ติดตั้ง 3117 BIM Studio 0.2.0 สำหรับบัญชีผู้ใช้นี้\n\nตำแหน่ง: /tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117\nFreeCAD ที่เปิด: 1.1.4\nรุ่นเป้าหมาย: FreeCAD 1.1.4\n\nรุ่นเดิมที่ติดตั้งด้วยตัวช่วยนี้จะเก็บสำรองไว้\nหลังติดตั้งให้ปิด FreeCAD แล้วเปิดใหม่\n\nดำเนินการติดตั้งหรือไม่?",
+    "ติดตั้งไฟล์ workbench แล้ว / Workbench files installed.\nสำรอง: /tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/BIM3117_Backups/previous-20261023T022309Z-c5322581\n\nปิด FreeCAD ทุกหน้าต่าง แล้วเปิดใหม่\nRestart all FreeCAD windows."
+  ],
+  "target": "/tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117"
+}

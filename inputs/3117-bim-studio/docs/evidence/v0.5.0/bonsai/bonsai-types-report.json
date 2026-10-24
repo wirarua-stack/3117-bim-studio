@@ -1,0 +1,1675 @@
+{
+  "status": "passed",
+  "blender": "4.5.14 LTS",
+  "blender_build_hash": "62c1db4208e8",
+  "bonsai": "0.9.0-post1-py311",
+  "ifcopenshell": "0.9.0.post1",
+  "python": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "background": false,
+  "visual_review": {
+    "status": "passed",
+    "reviewed_at_utc": "2026-10-23T06:45:23.023077+00:00",
+    "reviewer": "Coding agent visual inspection of the actual captured PNG",
+    "screenshot_sha256": "c731a5673f97c12e07f56d739d6fe6cb7ec86e289d7ac9f5b28d91e4b5badf40",
+    "observations": [
+      "Bonsai displays the imported two-storey model in User Orthographic view with three visible slab planes, columns, beams, walls and hosted frames.",
+      "Front door apertures and front/side window openings remain visible; the selected upper side window is outlined in orange.",
+      "Project Info displays Types_Quantities_Workbench.ifc and IFC4; the spatial panel reports 33 elements.",
+      "No error dialog, blank viewport or missing building storey is visible. Material layer identity and SI thickness are established by the numeric IFC checks, not inferred from viewport colors."
+    ],
+    "limits": "One synthetic fixture and one camera view on this Linux application build; no Windows acceptance, general IFC compatibility, or independent geometry kernel claim."
+  },
+  "content_revision": "b1d7558505e38e8eab14517490e580a875eba1bb7b5503b72d140c259384c804",
+  "checks": [
+    {
+      "name": "typed native fixture and baseline independent expectations passed",
+      "status": "passed"
+    },
+    {
+      "name": "IFC completion metadata binds exact payload to the current native revision",
+      "status": "passed"
+    },
+    {
+      "name": "public Bonsai Load IFC Project completes",
+      "status": "passed"
+    },
+    {
+      "name": "active Bonsai IFC4 retains all 33 authored products and six shared types",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai imports metre units without rescaling",
+      "status": "passed"
+    },
+    {
+      "name": "native material Masonry source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Floor finish source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Screed source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Aluminium frame source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Plaster source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Timber frame source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "native material Concrete source identity and revision",
+      "status": "passed"
+    },
+    {
+      "name": "all seven native materials survive without fabricated frame components",
+      "status": "passed"
+    },
+    {
+      "name": "Wall UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Slab UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: ordered layers and usage orientation survive Bonsai import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Door UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Window UUIDs and counts match the frozen native geometry fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: actual Blender product mesh maps back to the native UUID",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: native type relationship and source revision survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: homogeneous material is inherited from its real type",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: actual Blender net volume and bounds preserve the frozen native solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: material rows conserve the imported native product volume",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: imported member retains its real slab-priority cut",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: imported wall void and generic frame centre remain empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: original frame bars survive type/material assignment",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai has exactly 33 authored mesh products and no material-layer product duplication",
+      "status": "passed"
+    },
+    {
+      "name": "material assignment coverage is complete and partitions conserve the whole declared product set",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai IFC schema and full EXPRESS validation have no findings",
+      "status": "passed"
+    },
+    {
+      "name": "actual Bonsai import leaves source IFC bytes unchanged",
+      "status": "passed"
+    }
+  ],
+  "observations": [
+    {
+      "category": "Wall",
+      "source_uuid": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+      "ifc_guid": "0jkhcZ$aT8tu0kgOo_5LFN",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 1-2",
+      "mesh_volume_m3": 1.598999573782071,
+      "expected_volume_m3": 1.599,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.850000381469727,
+          3.8500001430511475,
+          2.549999952316284
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+      "ifc_guid": "15bD3ovBPEhBR6yCyyJCjF",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 1-1",
+      "mesh_volume_m3": 2.2410001844465697,
+      "expected_volume_m3": 2.241,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          2.549999952316284
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "4748dd71-525a-4434-ba86-b7e616563128",
+      "ifc_guid": "17IDrnKbf4DBg6j_OMLZ4e",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 2-1",
+      "mesh_volume_m3": 2.241000484853997,
+      "expected_volume_m3": 2.241,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          5.550000190734863
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "665ad71a-4ce2-454b-a84a-154125035cd7",
+      "ifc_guid": "1cMjSQJE95IwXA5K4b0rpN",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 2-2",
+      "mesh_volume_m3": 1.5989997788220285,
+      "expected_volume_m3": 1.599,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.850000381469727,
+          3.8500001430511475,
+          5.550000190734863
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+      "ifc_guid": "2j0G1vdGz1VeXPvkFvzh98",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 2-3",
+      "mesh_volume_m3": 2.9070008094460067,
+      "expected_volume_m3": 2.907,
+      "world_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499993801116943,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+      "ifc_guid": "3R_1JhMvv6s98E5mZp4Fke",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 1-4",
+      "mesh_volume_m3": 1.8870000836476724,
+      "expected_volume_m3": 1.887,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          0.0
+        ],
+        [
+          0.3500002920627594,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+      "ifc_guid": "3YDyCp_sX1lOL7mzDHViSF",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 1-3",
+      "mesh_volume_m3": 2.9070005376487713,
+      "expected_volume_m3": 2.907,
+      "world_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499993801116943,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Wall",
+      "source_uuid": "f2cae468-6358-471b-8a67-a9ed151a8112",
+      "ifc_guid": "3ookHeOrX76ufdgUqL6e4I",
+      "type_guid": "1bunEtU6j7NvbCOBEl49Y8",
+      "blender_object": "IfcWall/Wall 2-4",
+      "mesh_volume_m3": 1.887000260077432,
+      "expected_volume_m3": 1.887,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          3.0
+        ],
+        [
+          0.3500002920627594,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Slab",
+      "source_uuid": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+      "ifc_guid": "0Iggh7aWLF2vGlh3AT4Ak5",
+      "type_guid": "3oxoEIgS15$PFrIOjeHqZm",
+      "blender_object": "IfcSlab/S00",
+      "mesh_volume_m3": 4.387500174343586,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          -0.15000000596046448
+        ],
+        [
+          6.25,
+          4.25,
+          0.0
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Slab",
+      "source_uuid": "54a5fde8-157c-40b7-be56-f69869705b43",
+      "ifc_guid": "1KfVte5Nn0jxvMzfXfS5j3",
+      "type_guid": "3oxoEIgS15$PFrIOjeHqZm",
+      "blender_object": "IfcSlab/S01",
+      "mesh_volume_m3": 4.3875027894973755,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          2.8499999046325684
+        ],
+        [
+          6.25,
+          4.25,
+          3.0
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Slab",
+      "source_uuid": "e766c1c9-f102-490f-88fa-979e8089bb06",
+      "ifc_guid": "3dPi79yG993uZwbvw0YRi6",
+      "type_guid": "3oxoEIgS15$PFrIOjeHqZm",
+      "blender_object": "IfcSlab/S02",
+      "mesh_volume_m3": 4.3875027894973755,
+      "expected_volume_m3": 4.3875,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          5.849999904632568
+        ],
+        [
+          6.25,
+          4.25,
+          6.0
+        ]
+      ],
+      "material_row_count": 3
+    },
+    {
+      "category": "Column",
+      "source_uuid": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+      "ifc_guid": "0Mw7aGGDT5HxdP$nGneS1c",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C13",
+      "mesh_volume_m3": 0.2565003175736401,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          0.0
+        ],
+        [
+          6.150000095367432,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+      "ifc_guid": "0xt23STFz9medJ5AVl4iMw",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C11",
+      "mesh_volume_m3": 0.2565000118017194,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -0.15000000596046448,
+          0.0
+        ],
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "5da805dc-1e32-4533-9fea-d355df30851d",
+      "ifc_guid": "1Tg0NS7Z95Cv$gqrNVC8KT",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C23",
+      "mesh_volume_m3": 0.2565003175736401,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          3.0
+        ],
+        [
+          6.150000095367432,
+          4.150000095367432,
+          5.849999904632568
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+      "ifc_guid": "2AyDbtGsTD4ux33v6GtOqI",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C14",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          3.8499999046325684,
+          0.0
+        ],
+        [
+          0.15000000596046448,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+      "ifc_guid": "2R2BfmqED869EqTbbWqxA2",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C22",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -0.15000000596046448,
+          3.0
+        ],
+        [
+          6.150000095367432,
+          0.15000000596046448,
+          5.849999904632568
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+      "ifc_guid": "2VGdbXuRLAvQk6twJz2JfH",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C24",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          3.8499999046325684,
+          3.0
+        ],
+        [
+          0.15000000596046448,
+          4.150000095367432,
+          5.849999904632568
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "a444a497-4a42-4a02-805f-bdac76a1312e",
+      "ifc_guid": "2aHAINIa9A0e1VlQnseJ4k",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C21",
+      "mesh_volume_m3": 0.2565000118017194,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -0.15000000596046448,
+          3.0
+        ],
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          5.849999904632568
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Column",
+      "source_uuid": "c6881a57-0739-4382-9db8-b187e4745510",
+      "ifc_guid": "36Y1fN1pb3WfsuiOVaT5KG",
+      "type_guid": "2qzVZABBv9cAvU6MM1owRM",
+      "blender_object": "IfcColumn/C12",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -0.15000000596046448,
+          0.0
+        ],
+        [
+          6.150000095367432,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+      "ifc_guid": "06vqr57zL36ucuRwmXnAUD",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B12",
+      "mesh_volume_m3": 0.35999988555909196,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -1.1324686077784918e-08,
+          2.549999952316284
+        ],
+        [
+          6.150000095367432,
+          4.0,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+      "ifc_guid": "0FBvqGEn5F9xkJl6z5JciC",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B21",
+      "mesh_volume_m3": 0.5400003647804397,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15000000596046448,
+          5.550000190734863
+        ],
+        [
+          6.0,
+          0.15000000596046448,
+          5.850000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "37134a20-b003-48ef-96bd-b1457cc94324",
+      "ifc_guid": "0t4qeWi0D8xvQziKLyoKCa",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B24",
+      "mesh_volume_m3": 0.3600002431869607,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -1.1324686077784918e-08,
+          5.550000190734863
+        ],
+        [
+          0.15000030398368835,
+          4.0,
+          5.850000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+      "ifc_guid": "1scM2VtDD2cvxman6GJheU",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B11",
+      "mesh_volume_m3": 0.5399999356269802,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15000000596046448,
+          2.549999952316284
+        ],
+        [
+          6.0,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+      "ifc_guid": "2ASg_a8tP5rRLBbU$bHRpe",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B13",
+      "mesh_volume_m3": 0.5400002574920127,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          -1.311341701892843e-08,
+          3.84999942779541,
+          2.549999952316284
+        ],
+        [
+          6.0,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+      "ifc_guid": "36kdpgggzAtOOFNgN8q$Mm",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B14",
+      "mesh_volume_m3": 0.35999995708465443,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -1.1324686077784918e-08,
+          2.549999952316284
+        ],
+        [
+          0.15000030398368835,
+          4.0,
+          2.8499999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+      "ifc_guid": "3FuOrfKcb6nOPWCJFO3fg1",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B23",
+      "mesh_volume_m3": 0.540000686645728,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          -1.311341701892843e-08,
+          3.84999942779541,
+          5.550000190734863
+        ],
+        [
+          6.0,
+          4.150000095367432,
+          5.850000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Beam",
+      "source_uuid": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+      "ifc_guid": "3yzCsddZ1Cow8VRdu898Ve",
+      "type_guid": "1uSwRGJm9Dmg2tvbi80Txb",
+      "blender_object": "IfcBeam/B22",
+      "mesh_volume_m3": 0.3600001716613414,
+      "expected_volume_m3": 0.36,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -1.1324686077784918e-08,
+          5.550000190734863
+        ],
+        [
+          6.150000095367432,
+          4.0,
+          5.850000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Door",
+      "source_uuid": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+      "ifc_guid": "0VesdLbJPCBfeLhJyyLJDT",
+      "type_guid": "2_icLtuPzAswDOb8shNnnm",
+      "blender_object": "IfcDoor/D01",
+      "mesh_volume_m3": 0.04999997943639647,
+      "expected_volume_m3": 0.05,
+      "world_bounds_m": [
+        [
+          0.949999988079071,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          1.8499999046325684,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Door",
+      "source_uuid": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+      "ifc_guid": "1ov5KiFq1E4QeYg9FY4wAE",
+      "type_guid": "2_icLtuPzAswDOb8shNnnm",
+      "blender_object": "IfcDoor/D02",
+      "mesh_volume_m3": 0.049999941289422666,
+      "expected_volume_m3": 0.05,
+      "world_bounds_m": [
+        [
+          0.949999988079071,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          1.8499999046325684,
+          0.3500000238418579,
+          5.099999904632568
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Window",
+      "source_uuid": "13dab521-9139-425c-b8e7-c6df71ef7471",
+      "ifc_guid": "0JshKXaJb2NBZdnjznxtHn",
+      "type_guid": "3B$4TfsvLEXA1OjjpcHMnX",
+      "blender_object": "IfcWindow/WIN22",
+      "mesh_volume_m3": 0.046000041246343576,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          3.9000000953674316
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          5.100000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Window",
+      "source_uuid": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+      "ifc_guid": "1aIF26d0z8nhbxfYktwYjq",
+      "type_guid": "3B$4TfsvLEXA1OjjpcHMnX",
+      "blender_object": "IfcWindow/WIN21",
+      "mesh_volume_m3": 0.04600007849933611,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          3.9000000953674316
+        ],
+        [
+          4.350000381469727,
+          0.3500000238418579,
+          5.100000381469727
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Window",
+      "source_uuid": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+      "ifc_guid": "23_s3njR989RKfNz0Sp$bb",
+      "type_guid": "3B$4TfsvLEXA1OjjpcHMnX",
+      "blender_object": "IfcWindow/WIN12",
+      "mesh_volume_m3": 0.04599999475475178,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          0.8999999761581421
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          2.0999999046325684
+        ]
+      ],
+      "material_row_count": 1
+    },
+    {
+      "category": "Window",
+      "source_uuid": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+      "ifc_guid": "3cEyBA1Gv7Pfhiu712_bc6",
+      "type_guid": "3B$4TfsvLEXA1OjjpcHMnX",
+      "blender_object": "IfcWindow/WIN11",
+      "mesh_volume_m3": 0.04600003200769367,
+      "expected_volume_m3": 0.046,
+      "world_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          0.8999999761581421
+        ],
+        [
+          4.350000381469727,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "material_row_count": 1
+    }
+  ],
+  "sources": {
+    "ifc": {
+      "path": "/tmp/bim3117-v050-canonical-final/Types_Quantities_Workbench.ifc",
+      "sha256": "5069ee9e77bf618be30020537b1287b4c7137b5989c69961f35f1b73896aa031"
+    },
+    "snapshot": {
+      "path": "/tmp/bim3117-v050-canonical-final/types-snapshot.json",
+      "sha256": "2404e65c1f0b081a8da8005d09d7ed9e9cb5afac1ec124f1f7e81bb30b51d022"
+    },
+    "native_report": {
+      "path": "/tmp/bim3117-v050-canonical-final/types-example.json",
+      "sha256": "d074816f6facb23819e1161a3a5bc8a91e714d9714ff36a4e5f685afad9cd695"
+    },
+    "baseline_snapshot": {
+      "path": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/building/building-snapshot.json",
+      "sha256": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0"
+    },
+    "baseline_native_report": {
+      "path": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/building-test-report.json",
+      "sha256": "424e0d640022e0f05a702daeaf4fe69072491f9f1302b0a96b5b10a7feb666c7"
+    }
+  },
+  "scope": "Actual Bonsai import and Blender meshes; six typed product categories, native materials and layer usages, conserved quantities, unchanged legacy fixture geometry. Uses IfcOpenShell, not another IFC kernel. GUI review is separate from numeric checks; no Windows claim.",
+  "express_validation": {
+    "statements": [],
+    "count": 0
+  },
+  "category_mesh_totals_m3": {
+    "Wall": 17.268001712724548,
+    "Slab": 13.162505753338337,
+    "Column": 2.0520013175012557,
+    "Beam": 3.600001502037209,
+    "Door": 0.09999992072581913,
+    "Window": 0.18400014650812513
+  },
+  "material_rows": 55,
+  "native_material_count": 7,
+  "type_count": 6,
+  "layer_set_count": 2,
+  "layer_usage_count": 11,
+  "display": {
+    "changes": "Viewport object colors, camera, overlays and selected window only",
+    "geometry_modified": false,
+    "view": "Two-storey southeast axonometric"
+  },
+  "screenshot": "/tmp/bim3117-v050-exchange/bonsai-final-gui-03/Bonsai_Types_Quantities.png",
+  "checks_passed": 216,
+  "gui_capture": {
+    "method": "X11 root framebuffer via Pillow ImageGrab",
+    "image_size": [
+      1600,
+      1100
+    ],
+    "nonblack": true,
+    "sha256": "c731a5673f97c12e07f56d739d6fe6cb7ec86e289d7ac9f5b28d91e4b5badf40"
+  },
+  "review_mode": "gui_application"
+}

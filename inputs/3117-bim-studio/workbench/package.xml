@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>BIM3117</name>
+  <description>3117 BIM Studio: native building authoring, shared types, material layers, editable-source schedules, solid-derived drawings, vector PDF/SVG and IFC4 exchange.</description>
+  <version>0.5.0</version>
+  <date>2026-10-23</date>
+  <maintainer>3117 BIM Studio contributors</maintainer>
+  <license>GPL-3.0-or-later</license>
+  <freecadmin>1.1.4</freecadmin>
+  <content>
+    <workbench>
+      <name>3117 BIM Studio</name>
+      <classname>BIM3117Workbench</classname>
+      <subdirectory>./</subdirectory>
+    </workbench>
+  </content>
+</package>

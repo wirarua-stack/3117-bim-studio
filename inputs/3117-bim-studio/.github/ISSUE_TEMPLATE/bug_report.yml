@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible BIM data, geometry or UI defect
+title: "[Bug] "
+body:
+  - type: textarea
+    attributes:
+      label: Expected and actual behavior
+      description: Explain the workflow and why the result is wrong.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps and minimal fixture
+      description: Use synthetic or publishable model data only.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: OS, FreeCAD build, workbench version, Python and IfcOpenShell version.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Data and recovery
+      description: Mention unit/origin, affected element IDs, Undo and save/reopen behavior.

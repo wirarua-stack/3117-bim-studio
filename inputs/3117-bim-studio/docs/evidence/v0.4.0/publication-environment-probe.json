@@ -1,0 +1,225 @@
+{
+  "recorded_at_utc": "2026-10-23T05:00:53.024547+00:00",
+  "status": "environment_interference_reproduced",
+  "production_files_modified": false,
+  "exact_installed_host": "/tmp/bim3117-freecad/squashfs-root/usr/bin/freecadcmd",
+  "installed_addon": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117",
+  "module_hashes": {
+    "drawing_render.py": {
+      "source_sha256": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388",
+      "installed_sha256": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388",
+      "identical": true
+    },
+    "drawing_export.py": {
+      "source_sha256": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75",
+      "installed_sha256": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75",
+      "identical": true
+    },
+    "export_files.py": {
+      "source_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+      "installed_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+      "identical": true
+    }
+  },
+  "short_probes": {
+    "FreeCADCmd_workspace": "passed",
+    "FreeCADCmd_tmp": "passed",
+    "ordinary_Python_workspace": "passed",
+    "ordinary_Python_tmp": "passed"
+  },
+  "delayed_probes": [
+    {
+      "runtime": "FreeCADCmd",
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+      "immediate_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "delayed_entries": [
+        "payload.txt",
+        "metadata.json",
+        "payload.txt.3117-export.lock",
+        "metadata.json.3117-export.lock",
+        ".3117-export-zcp8aagk"
+      ],
+      "restoration_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-zcp8aagk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".metadata.json.3117-export.lock.7E0zPw"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40",
+          "cookie": 25909,
+          "name": ".metadata.json.3117-export.lock.7E0zPw"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".payload.txt.3117-export.lock.PcHzhk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40",
+          "cookie": 25911,
+          "name": ".payload.txt.3117-export.lock.PcHzhk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25917,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25919,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        }
+      ],
+      "raw_report": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-freecad-report.json"
+    },
+    {
+      "runtime": "FreeCADCmd",
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+      "immediate_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "delayed_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "restoration_events": [],
+      "raw_report": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-freecad-report.json"
+    },
+    {
+      "runtime": "ordinary Python",
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+      "immediate_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "delayed_entries": [
+        "payload.txt",
+        "metadata.json",
+        "payload.txt.3117-export.lock",
+        ".3117-export-1yasnwqe",
+        "metadata.json.3117-export.lock"
+      ],
+      "restoration_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-1yasnwqe"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".metadata.json.3117-export.lock.iNoVkq"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40",
+          "cookie": 25933,
+          "name": ".metadata.json.3117-export.lock.iNoVkq"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".payload.txt.3117-export.lock.D9v6hx"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40",
+          "cookie": 25935,
+          "name": ".payload.txt.3117-export.lock.D9v6hx"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25941,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25943,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        }
+      ],
+      "raw_report": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-plain-report.json"
+    },
+    {
+      "runtime": "ordinary Python",
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+      "immediate_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "delayed_entries": [
+        "payload.txt",
+        "metadata.json"
+      ],
+      "restoration_events": [],
+      "raw_report": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-plain-report.json"
+    }
+  ],
+  "observed_mechanism": "In both FreeCADCmd and ordinary Python, publication completed with correct move/delete events and a clean immediate directory. After a yielded tool call and a separate read-only command, the workspace received rsync-style temporary-file CREATE/MOVE events restoring already deleted export locks and the staging directory. The /tmp counterparts stayed clean.",
+  "causal_scope": "Observed external workspace synchronization interference; no defective os.replace/unlink implementation or publisher cleanup was found. The exact external process identity cannot be established because ptrace/strace is denied.",
+  "recommendation": "Leave production publication code unchanged. Run the renderer gate with the exact installed root profile and a unique /tmp evidence output, then copy only completed reports and validated final artifacts into the workspace. Preserve the failed workspace runs as environment findings.",
+  "evidence_files": {
+    "freecad-report.json": {
+      "path": "/tmp/bim3117-drawing-render/filesystem-probes/freecad-report.json",
+      "sha256": "83d1e16d49c5de42d4ac26820c9276d9389d7d5d7b1184220068fe62ea1b6391"
+    },
+    "plain-report.json": {
+      "path": "/tmp/bim3117-drawing-render/filesystem-probes/plain-report.json",
+      "sha256": "44d9d806cf2ba51794b97c42203da921de1e8b191e86448dd38b803954585dc8"
+    },
+    "delayed-freecad-report.json": {
+      "path": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-freecad-report.json",
+      "sha256": "738df3deea93f9a327a0ee1e8a74ec126f52d4729b326d63cb769aa7a74b7515"
+    },
+    "delayed-plain-report.json": {
+      "path": "/tmp/bim3117-drawing-render/filesystem-probes/delayed-plain-report.json",
+      "sha256": "8cb42a122b6c253f4b99abbb6494a8503722b8a299838cb4b1a341be3f661e4f"
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "all type/material/schedule commands register",
+      "status": "passed"
+    },
+    {
+      "name": "production catalogue imports from installed addon",
+      "status": "passed"
+    },
+    {
+      "name": "cancelling material form changes neither objects nor history",
+      "status": "passed"
+    },
+    {
+      "name": "material creation has native identities and providers",
+      "status": "passed"
+    },
+    {
+      "name": "modeless catalogue opens without a model transaction",
+      "status": "passed"
+    },
+    {
+      "name": "repeated Catalogue command reuses one observer/panel",
+      "status": "passed"
+    },
+    {
+      "name": "layer sum is a disabled total in the type form",
+      "status": "passed"
+    },
+    {
+      "name": "ordered native layers persist their selected materials and thicknesses",
+      "status": "passed"
+    },
+    {
+      "name": "all five new typed categories use native ElementType providers",
+      "status": "passed"
+    },
+    {
+      "name": "catalogue assigns multiple selected instances in one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "catalogue row selection preserves the model selection",
+      "status": "passed"
+    },
+    {
+      "name": "all five categories retain native type references",
+      "status": "passed"
+    },
+    {
+      "name": "typed instance edit form displays type and locks shared dimensions/material",
+      "status": "passed"
+    },
+    {
+      "name": "type edit updates both instances and solids in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "one native Undo restores type and all dependent instances",
+      "status": "passed"
+    },
+    {
+      "name": "native Redo restores shared type fanout",
+      "status": "passed"
+    },
+    {
+      "name": "invalid shared opening edit preserves state and existing Redo",
+      "status": "passed"
+    },
+    {
+      "name": "Redo remains usable after rejected type edit",
+      "status": "passed"
+    },
+    {
+      "name": "detach retains current dimensions in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "Undo restores the detached type link",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate type has an independent UUID and shared material",
+      "status": "passed"
+    },
+    {
+      "name": "editing a duplicate does not alter the original type",
+      "status": "passed"
+    },
+    {
+      "name": "native material deletion guards referenced layers",
+      "status": "passed"
+    },
+    {
+      "name": "native type deletion guards active instances",
+      "status": "passed"
+    },
+    {
+      "name": "schedule creates native definition outside Project.Group in one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "schedule creation preserves building content revision",
+      "status": "passed"
+    },
+    {
+      "name": "native Schedule providers are attached",
+      "status": "passed"
+    },
+    {
+      "name": "modeless schedule opens from native definitions without new history",
+      "status": "passed"
+    },
+    {
+      "name": "reopening Schedules reuses one observer and table",
+      "status": "passed"
+    },
+    {
+      "name": "all quantity cells are read-only",
+      "status": "passed"
+    },
+    {
+      "name": "schedule source selection resolves actual UUID object",
+      "status": "passed"
+    },
+    {
+      "name": "schedule source Label Type and position apply in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "one Undo restores all source row fields",
+      "status": "passed"
+    },
+    {
+      "name": "Redo replays the source row edit",
+      "status": "passed"
+    },
+    {
+      "name": "cancelling a staged schedule edit creates no history",
+      "status": "passed"
+    },
+    {
+      "name": "source changes during a staged row edit are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "definition filtering/grouping is persisted and source counts are distinct",
+      "status": "passed"
+    },
+    {
+      "name": "grouped aggregate rows cannot be edited as quantities",
+      "status": "passed"
+    },
+    {
+      "name": "type deletion guard includes schedule filters",
+      "status": "passed"
+    },
+    {
+      "name": "real schedule export dialog writes CSV plus both-revision metadata",
+      "status": "passed"
+    },
+    {
+      "name": "CSV includes explicit source UUIDs and SI columns",
+      "status": "passed"
+    },
+    {
+      "name": "overwrite confirmation covers CSV and metadata; decline preserves both",
+      "status": "passed"
+    },
+    {
+      "name": "cancelling schedule file chooser publishes nothing",
+      "status": "passed"
+    },
+    {
+      "name": "model or definition changes during file selection block stale publication",
+      "status": "passed"
+    },
+    {
+      "name": "explicit overwrite publishes a current schedule snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "material schedule groups actual layer volumes",
+      "status": "passed"
+    },
+    {
+      "name": "material schedule counts each source UUID once in totals",
+      "status": "passed"
+    },
+    {
+      "name": "captured actual host catalogue and schedules screenshots",
+      "status": "passed"
+    },
+    {
+      "name": "historical building fixture remains byte-identical",
+      "status": "passed"
+    },
+    {
+      "name": "closing document detaches schedule observer and modeless panel",
+      "status": "passed"
+    }
+  ],
+  "scope": "Installed actual catalogue, layers, type fanout, schedule source edits and CSV",
+  "deletion_warnings": [
+    "วัสดุนี้ยังถูกอ้างอิงโดย: Slab Composite 200\n\nเปลี่ยนวัสดุของชนิดก่อนลบ",
+    "ชนิดนี้ยังถูกอ้างอิงโดย: C11, C12\n\nกรุณาเปลี่ยน Type หรือตัวกรอง Schedule ก่อนลบชนิด",
+    "ชนิดนี้ยังถูกอ้างอิงโดย: C12, Column Schedule\n\nกรุณาเปลี่ยน Type หรือตัวกรอง Schedule ก่อนลบชนิด"
+  ],
+  "expected_command_errors": [
+    {
+      "command": "BIM3117_EditSelected",
+      "message": "D01: opening extends beyond the wall axis"
+    },
+    {
+      "command": "panel action",
+      "message": "Model or schedule changed since the preview; refresh the schedule and try again"
+    },
+    {
+      "command": "schedule export",
+      "message": "Model or schedule changed since the preview; refresh the schedule and try again"
+    }
+  ],
+  "sample": "/tmp/bim3117-v050-ui/evidence-final/Types_Quantities_Workbench.FCStd",
+  "sample_sha256": "86ef197fcb80627508f11ae80b117ba670f40763624f5de374dc4886dba19f67",
+  "source_sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+  "model_revision": "35f6725516da7cb8a2a1201804f7ee83dbb63422644f3cac848481ce43050455",
+  "identifiers": {
+    "BIM3117_Project": "1cf36c90-f065-4bcf-bd10-d57c1d5c1b05",
+    "BIM3117_Level": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+    "BIM3117_Level001": "3087830e-4d1a-4f80-b674-777b13466c13",
+    "BIM3117_Level002": "23a017fd-103e-4f8e-bfd1-538f44a944cd",
+    "BIM3117_Slab": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+    "BIM3117_Slab001": "54a5fde8-157c-40b7-be56-f69869705b43",
+    "BIM3117_Slab002": "e766c1c9-f102-490f-88fa-979e8089bb06",
+    "BIM3117_WallType": "65e313b7-786b-475f-994c-60b3af109888",
+    "BIM3117_Column": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+    "BIM3117_Beam": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+    "BIM3117_Column001": "c6881a57-0739-4382-9db8-b187e4745510",
+    "BIM3117_Beam001": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+    "BIM3117_Column002": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+    "BIM3117_Beam002": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+    "BIM3117_Column003": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+    "BIM3117_Beam003": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+    "BIM3117_Wall": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+    "BIM3117_WallBody": "a5bd56d7-35a0-4055-8fa8-fb80db438448",
+    "BIM3117_Door": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+    "BIM3117_Window": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+    "BIM3117_Wall001": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+    "BIM3117_WallBody001": "01fe680b-6a65-40c9-9931-f295b1ce46ae",
+    "BIM3117_Window001": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+    "BIM3117_Wall002": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+    "BIM3117_WallBody002": "cc89153c-af99-4e81-8b37-02921f67d7c4",
+    "BIM3117_Wall003": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+    "BIM3117_WallBody003": "d588e465-b0b8-499b-a071-35f7f3214e87",
+    "BIM3117_Column004": "a444a497-4a42-4a02-805f-bdac76a1312e",
+    "BIM3117_Beam004": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+    "BIM3117_Column005": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+    "BIM3117_Beam005": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+    "BIM3117_Column006": "5da805dc-1e32-4533-9fea-d355df30851d",
+    "BIM3117_Beam006": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+    "BIM3117_Column007": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+    "BIM3117_Beam007": "37134a20-b003-48ef-96bd-b1457cc94324",
+    "BIM3117_Wall004": "4748dd71-525a-4434-ba86-b7e616563128",
+    "BIM3117_WallBody004": "47cd2305-1267-42d8-b726-d29790cf2ef6",
+    "BIM3117_Door001": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+    "BIM3117_Window002": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+    "BIM3117_Wall005": "665ad71a-4ce2-454b-a84a-154125035cd7",
+    "BIM3117_WallBody005": "e6a8d22f-785c-4f61-abc7-fe7b1e697bfd",
+    "BIM3117_Window003": "13dab521-9139-425c-b8e7-c6df71ef7471",
+    "BIM3117_Wall006": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+    "BIM3117_WallBody006": "99eccd65-674f-4546-a3bb-5e087d03b357",
+    "BIM3117_Wall007": "f2cae468-6358-471b-8a67-a9ed151a8112",
+    "BIM3117_WallBody007": "486e972a-1bf0-4a88-be41-4f1e6fb6487e",
+    "BIM3117_Grid": "1e3962f1-fee7-4fc5-b900-92916baa1696",
+    "BIM3117_Grid001": "7b483af6-434a-4504-a036-e560a3599b8a",
+    "BIM3117_Grid002": "fb5db00c-5c30-4442-a1dd-91fb884b9ddf",
+    "BIM3117_Grid003": "58235e7a-ab6e-4121-aa79-62c813dbdfbe",
+    "BIM3117_Material": "63c8c3a2-300a-462b-ad4a-d1c7b218615a",
+    "BIM3117_Material001": "8688a948-9056-4fd6-86b9-0d42c4bdcae4",
+    "BIM3117_Material002": "51fc033a-eaf9-4219-b1bd-bfb63a639dd7",
+    "BIM3117_ElementType": "08f0e808-13e7-45ee-b3c1-2ecdf8e00059",
+    "BIM3117_ElementType001": "dd67c1d2-c6ec-457d-84d2-1a8c5b2fbf22",
+    "BIM3117_ElementType002": "8e49bcd6-3068-4eb8-8c4c-d58ff0a6b07f",
+    "BIM3117_ElementType003": "b026c429-d594-4a68-92b2-49bc6c251e12",
+    "BIM3117_ElementType004": "7dcffd1b-5c25-4f53-be05-8292d115660d",
+    "BIM3117_ElementType005": "dd4052c0-dfe4-42bd-8174-f770127b11ee",
+    "BIM3117_Schedules": "38646399-cc98-42c9-a415-999a1f369b15",
+    "BIM3117_Schedule": "198008b7-ea50-45db-80c2-0635df18faf3",
+    "BIM3117_Schedule001": "945bab11-636e-47f2-b635-b74587f9d803"
+  },
+  "schedule_states": {
+    "Column Schedule": {
+      "model_revision": "35f6725516da7cb8a2a1201804f7ee83dbb63422644f3cac848481ce43050455",
+      "schedule_revision": "4d566561c06556acd4e49b276923fbdfbfbb6df623cbd6663a20c1807d6cde14"
+    },
+    "Material Volumes": {
+      "model_revision": "35f6725516da7cb8a2a1201804f7ee83dbb63422644f3cac848481ce43050455",
+      "schedule_revision": "52951cd47e4ab1f270a801efb560c5dcab68256dd5a3eb44ad04f65256766734"
+    }
+  },
+  "screenshots": [
+    "/tmp/bim3117-v050-ui/evidence-final/catalogue-gui.png",
+    "/tmp/bim3117-v050-ui/evidence-final/schedules-gui.png"
+  ],
+  "module_source": "/tmp/bim3117-v050-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/catalog.py",
+  "initial_model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "checks_passed": 50
+}

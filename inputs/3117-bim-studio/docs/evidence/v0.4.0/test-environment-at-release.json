@@ -1,0 +1,533 @@
+{
+  "recorded_date": "2026-10-23",
+  "recorded_at_utc": "2026-10-23T05:04:17.928897+00:00",
+  "workbench_version": "0.4.0",
+  "reference_package_version": "0.0.1",
+  "native_schema_version": 1,
+  "drawing_schema_version": 1,
+  "tested_environment": "Linux: installed FreeCAD native regression, actual GUI restore/presentation, canonical drawing CSV/IFC regression, SVG/PDF publication, independent vector PDF inspection, independent units",
+  "windows_status": "pending; no Windows desktop, executable or PowerShell runner executed",
+  "github_actions_status": "prepared; thirteen-stage JSON evidence gate executed locally; no remote workflow run or repository push",
+  "native_host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+    "qt": "6.8.3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "ifcopenshell": "0.8.4",
+    "gui_display": "Xvfb virtual X11, software rendering, isolated profile",
+    "official_runtime_sha256": "f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434"
+  },
+  "native_integration_suites": {
+    "install": {
+      "status": "passed",
+      "checks": 1,
+      "report": "docs/evidence/v0.4.0/final-native/install-report.json",
+      "sha256": "99d03d0b783dd3825a637cf592bbfa0e83a000750dc08d6cd74a43aaea6f9e7f"
+    },
+    "foundation": {
+      "status": "passed",
+      "checks": 35,
+      "report": "docs/evidence/v0.4.0/final-native/foundation-test-report.json",
+      "sha256": "d34f10758a5e5def22082b4959738d1bd3a067312c6a25003c0bc794440c4a4e"
+    },
+    "reopen": {
+      "status": "passed",
+      "checks": 9,
+      "report": "docs/evidence/v0.4.0/final-native/reopen-test-report.json",
+      "sha256": "bb9596c8df256f560a5d9e38e3bb73e65ae0392d25d6f6b3390619052bbe0185"
+    },
+    "architecture": {
+      "status": "passed",
+      "checks": 63,
+      "report": "docs/evidence/v0.4.0/final-native/architecture-test-report.json",
+      "sha256": "27f0c9f0f9f0b4f363fbb268511b5e7bdcfee69fd1c4cecc1b6bb52b1e9b5f51"
+    },
+    "architecture_reopen": {
+      "status": "passed",
+      "checks": 12,
+      "report": "docs/evidence/v0.4.0/final-native/architecture-reopen-test-report.json",
+      "sha256": "5dd1072f5c7a51c64c8d2eaedf68038e9ec42f3bdefdf650e0854d5329176682"
+    },
+    "exchange": {
+      "status": "passed",
+      "checks": 47,
+      "report": "docs/evidence/v0.4.0/final-native/exchange-test-report.json",
+      "sha256": "e8510bae34e2d74ef2479ff01352722358dfdbf951da966d6e7fb6ddacd60458"
+    },
+    "exchange_reopen": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.4.0/final-native/exchange-reopen-test-report.json",
+      "sha256": "9229436949c1067d0c936ba8e93f487d09d3d9941652a0328ed7ae1c85723b46"
+    },
+    "building": {
+      "status": "passed",
+      "checks": 112,
+      "report": "docs/evidence/v0.4.0/final-native/building-test-report.json",
+      "sha256": "defd71ae2ca543df6a83b15f7de7012ca0cfa8f242ad584a6e4e5db00525d30a"
+    },
+    "building_reopen": {
+      "status": "passed",
+      "checks": 19,
+      "report": "docs/evidence/v0.4.0/final-native/building-reopen-test-report.json",
+      "sha256": "4d6c0d1a595c012c4c73214f3b093cc9806b682a9c01f85f9b9890ab357fe6b5"
+    },
+    "drawing_geometry": {
+      "status": "passed",
+      "checks": 31,
+      "report": "docs/evidence/v0.4.0/final-native/drawing-geometry-test-report.json",
+      "sha256": "41ba920981eb1e24fdadd1dc23a0124d4da0eb2211e3d1136524377867095b79"
+    },
+    "drawings": {
+      "status": "passed",
+      "checks": 70,
+      "report": "docs/evidence/v0.4.0/final-native/drawings-test-report.json",
+      "sha256": "fefe44366f7208d9f08be9c9c0b8b376eb5c87beaf80d577722f6bae49941a3c"
+    },
+    "drawings_reopen": {
+      "status": "passed",
+      "checks": 25,
+      "report": "docs/evidence/v0.4.0/final-native/drawings-reopen-test-report.json",
+      "sha256": "17145137770de6a9c7e7023a18d39e092269a7edcfc8b08844b0d22f84e38a1a"
+    },
+    "drawing_render": {
+      "status": "passed",
+      "checks": 33,
+      "report": "docs/evidence/v0.4.0/final-native/drawing-render-test-report.json",
+      "sha256": "e06b7e34b67b91cdce23038dcdbef6dba91986eea9464b5c5fed2df5b1d16427"
+    }
+  },
+  "native_integration_assertions": 467,
+  "native_process_manifest": {
+    "report": "docs/evidence/v0.4.0/final-native/native-process-manifest.json",
+    "sha256": "af03156f128d9377f46bcf59ee177ee313363e05eecda4e0a4cc7b131f6e8c7b",
+    "production_files": 57,
+    "source_unchanged_during_run": true,
+    "renderer_retry_recorded": true
+  },
+  "gui_integration_suites": {
+    "drawings_fresh_gui": {
+      "status": "passed",
+      "checks": 18,
+      "report": "docs/evidence/v0.4.0/linux-drawings-gui-reopen-report.json",
+      "sha256": "bebbf8fbc3bebe3c7076364dfca0c1da4a21569fd0a227467557bf9fd6cb470d"
+    },
+    "canonical_model_and_sheet_previews": {
+      "status": "passed",
+      "checks": 13,
+      "report": "docs/evidence/v0.4.0/linux-drawings-presentation-report.json",
+      "sha256": "ff4892fb413fc9d40ecfb3c3d72c1c1c08bdf87089efd186df1a4e5e1f39528a"
+    }
+  },
+  "public_drawings_macro_count_contract": {
+    "public_keep_sample_true_checks": 53,
+    "full_keep_sample_false_checks": 56,
+    "difference": "The public macro leaves its sample open and skips three close/reopen checks; separate fresh GUI restore evidence has 18 checks.",
+    "final_exact_zip_observation": "Recorded in the external Release_Verification companion after archive freeze."
+  },
+  "pdf_review": {
+    "status": "passed",
+    "checks": 36,
+    "report": "docs/evidence/v0.4.0/pdf-review-report.json",
+    "sha256": "a031a962d8cc6c27dd295c82721e1b196c8e29cfff237507ddd5ae4066fb1077",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "pymupdf": "1.26.6",
+    "pages": [
+      {
+        "file": "3117_A101.pdf",
+        "sha256": "0434865c4279b1bbabb3954490a4ecb77da4257cc86a2821ea15cf6832e4b02b",
+        "paper_mm": [
+          420.1583333333333,
+          297.0388888888889
+        ],
+        "measurements": [
+          {
+            "view": "Ground Plan",
+            "axis": "view_x",
+            "native_mm": 6500.0,
+            "paper_mm": 129.9999972237481
+          },
+          {
+            "view": "Ground Plan",
+            "axis": "view_y",
+            "native_mm": 4500.0,
+            "paper_mm": 89.99998669094511
+          },
+          {
+            "view": "Upper Plan",
+            "axis": "view_x",
+            "native_mm": 6500.0,
+            "paper_mm": 129.99998914930555
+          },
+          {
+            "view": "Upper Plan",
+            "axis": "view_y",
+            "native_mm": 4500.0,
+            "paper_mm": 89.99998669094511
+          }
+        ],
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+        "rendered_page": "examples/drawings/3117_A101.png",
+        "png_sha256": "89f5b0e38ee006e55ae7f87b326fa36eced750e4aeea0dcdfe32f96ef4884370"
+      },
+      {
+        "file": "3117_A201.pdf",
+        "sha256": "29ea468074b5050555322b0805eadf9589de881ca50771289c8a25b60e5034a9",
+        "paper_mm": [
+          420.1583333333333,
+          297.0388888888889
+        ],
+        "measurements": [
+          {
+            "view": "Section A-A",
+            "axis": "view_x",
+            "native_mm": 6500.0,
+            "paper_mm": 129.9999972237481
+          },
+          {
+            "view": "Section A-A",
+            "axis": "view_y",
+            "native_mm": 6150.0,
+            "paper_mm": 122.99999114142523
+          },
+          {
+            "view": "South Elevation",
+            "axis": "view_x",
+            "native_mm": 6500.0,
+            "paper_mm": 129.9999676174588
+          },
+          {
+            "view": "South Elevation",
+            "axis": "view_y",
+            "native_mm": 6150.0,
+            "paper_mm": 122.99999114142523
+          }
+        ],
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+        "rendered_page": "examples/drawings/3117_A201.png",
+        "png_sha256": "39a1a00281f2903b353bddd91acba33498e3184865521a2dc7286edfd284cb84"
+      }
+    ],
+    "nominal_page_mm": [
+      420,
+      297
+    ],
+    "observed_media_box_mm": [
+      420.1583333333333,
+      297.0388888888889
+    ],
+    "actual_vector_scale_tolerance_mm": 0.001,
+    "visual_review": "Both final PDF pages plus actual FreeCAD model and both sheet preview screenshots were inspected.",
+    "qualification": "Vector file measurements; not a printer calibration or Windows test."
+  },
+  "canonical_drawings_exchange": {
+    "status": "passed",
+    "checks": 20,
+    "report": "docs/evidence/v0.4.0/canonical-drawings-exchange-report.json",
+    "sha256": "d38bbb3f61417c2516a3349bafe7acada74bd95f5ec6a421a58c7bdd1db2381d",
+    "process": "docs/evidence/v0.4.0/canonical-drawings-exchange-process.json",
+    "portable_harness": "tests/freecad_drawings_exchange.py",
+    "portable_harness_sha256": "ec50cc4bf509d9eb5f077fce552bd9c29234687151dd7e989a61067c76b4d718",
+    "native_export_readback_checks": 186,
+    "product_count": 33,
+    "csv_payloads_byte_identical_to_v030": 6,
+    "all_product_and_opening_global_ids_retained": true,
+    "all_product_world_triangle_fingerprints_match_v030": true,
+    "full_express": "not_requested by normal export",
+    "bonsai_executed": false,
+    "coverage": {
+      "mapped": 38,
+      "derived": 8,
+      "reference": 11,
+      "unsupported": 0
+    }
+  },
+  "unit_tests": {
+    "status": "passed",
+    "recorded_at_utc": "2026-10-23T04:44:11.335097+00:00",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "ifcopenshell": "0.9.0.post1",
+    "suites": {
+      "reference_model": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "reference_ifc": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "native_ifc_adapter": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "export_publication": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "installer": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      }
+    },
+    "total_tests": 55,
+    "scope": "Independent reference, native IFC adapter, publication and installer regressions; native/GUI drawing tests are separate.",
+    "report": "docs/evidence/v0.4.0/unit-test-report.json",
+    "sha256": "de7885cc4b84e1678cd96d9873a971b7c7153062fb8eac00f447b19f60cbcda7",
+    "skipped": 0
+  },
+  "canonical_example": {
+    "directory": "examples/drawings",
+    "native_file": "Drawings_Workbench.FCStd",
+    "native_sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c",
+    "previous_building_file": "examples/building/Building_Authoring_Workbench.FCStd",
+    "previous_building_sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+    "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+    "native_objects": 57,
+    "views": [
+      {
+        "id": "cd8248f0-b590-4348-bd28-2efc153b278e",
+        "object_name": "BIM3117_DrawingView",
+        "name": "Ground Plan",
+        "definition": {
+          "view_type": "Plan",
+          "bottom_offset_mm": -150.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2800.0,
+          "origin_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "depth_mm": 10000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "cd8248f0-b590-4348-bd28-2efc153b278e",
+          "name": "Ground Plan",
+          "level_id": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+          "level_elevation_mm": 0.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        }
+      },
+      {
+        "id": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+        "object_name": "BIM3117_DrawingView001",
+        "name": "Upper Plan",
+        "definition": {
+          "view_type": "Plan",
+          "bottom_offset_mm": -150.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2800.0,
+          "origin_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "depth_mm": 10000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+          "name": "Upper Plan",
+          "level_id": "3087830e-4d1a-4f80-b674-777b13466c13",
+          "level_elevation_mm": 3000.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        }
+      },
+      {
+        "id": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+        "object_name": "BIM3117_DrawingView002",
+        "name": "Section A-A",
+        "definition": {
+          "view_type": "Section",
+          "bottom_offset_mm": -200.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2700.0,
+          "origin_mm": [
+            0.0,
+            2000.0,
+            0.0
+          ],
+          "depth_mm": 3000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+          "name": "Section A-A",
+          "level_id": "",
+          "level_elevation_mm": 0.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        }
+      },
+      {
+        "id": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+        "object_name": "BIM3117_DrawingView003",
+        "name": "South Elevation",
+        "definition": {
+          "view_type": "Elevation",
+          "bottom_offset_mm": -200.0,
+          "cut_offset_mm": 1200.0,
+          "top_offset_mm": 2700.0,
+          "origin_mm": [
+            0.0,
+            -1000.0,
+            0.0
+          ],
+          "depth_mm": 6000.0,
+          "scale_denominator": 50,
+          "show_dimensions": true,
+          "show_tags": true,
+          "show_grid": true,
+          "show_levels": true,
+          "id": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+          "name": "South Elevation",
+          "level_id": "",
+          "level_elevation_mm": 0.0,
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "direction_name": "+Y"
+        }
+      }
+    ],
+    "sheets": [
+      {
+        "id": "af6abddc-4d14-4f20-9d20-cfecbd94a2f3",
+        "object_name": "BIM3117_DrawingSheet",
+        "name": "Floor Plans",
+        "number": "A101",
+        "view_ids": [
+          "cd8248f0-b590-4348-bd28-2efc153b278e",
+          "5965144a-dfd0-46f4-9d2e-9ec08635dc81"
+        ],
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481"
+      },
+      {
+        "id": "92adbcc4-cdeb-4b63-86cb-a109ea39fd17",
+        "object_name": "BIM3117_DrawingSheet001",
+        "name": "Section and Elevation",
+        "number": "A201",
+        "view_ids": [
+          "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+          "da9244a1-8af3-40b8-91c9-d502d24a3ca4"
+        ],
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5"
+      }
+    ],
+    "product_counts": {
+      "wall": 8,
+      "door": 2,
+      "window": 4,
+      "slab": 3,
+      "column": 8,
+      "beam": 8
+    },
+    "publication_report": "examples/drawings/drawings-export-report.json",
+    "publication_report_sha256": "010ebe0c4d24975ac172c51c0dd1ec87f191d32cf42f39cbea692002d9d35095",
+    "source_identity": "Documentation is added to a copy of the frozen building file; all earlier building/exchange files and archives remain byte-identical."
+  },
+  "publication_environment_finding": {
+    "status": "environment_interference_reproduced",
+    "report": "docs/evidence/v0.4.0/publication-environment-probe.json",
+    "sha256": "9fe0aaac0d6e6a25f9ffe29c98ae5871cd95a1bfcd8e3a0b4b7d3255c8a0fbb1",
+    "observed_mechanism": "In both FreeCADCmd and ordinary Python, publication completed with correct move/delete events and a clean immediate directory. After a yielded tool call and a separate read-only command, the workspace received rsync-style temporary-file CREATE/MOVE events restoring already deleted export locks and the staging directory. The /tmp counterparts stayed clean.",
+    "causal_scope": "Observed external workspace synchronization interference; no defective os.replace/unlink implementation or publisher cleanup was found. The exact external process identity cannot be established because ptrace/strace is denied.",
+    "production_modified": false,
+    "final_renderer_actual_output": "/tmp/bim3117-v040-final-native/final-renderer-5q9926zh",
+    "failed_attempt_evidence": "docs/evidence/v0.4.0/renderer-attempts",
+    "raw_probe_evidence": "docs/evidence/v0.4.0/publication-probes"
+  },
+  "font_distribution": {
+    "font": "Sarabun Regular/Bold",
+    "license": "SIL Open Font License 1.1",
+    "unmodified_upstream_fonts": true,
+    "source_and_hashes": "workbench/bim3117_freecad/fonts/SOURCE.json",
+    "notice": "workbench/bim3117_freecad/fonts/OFL.txt",
+    "production_loading": "App-local QFontDatabase; no system installation"
+  },
+  "exact_distribution_verification": {
+    "companion_report": "3117_BIM_Studio_v0_4_0_Release_Verification.json",
+    "status": "reported separately after archive freeze",
+    "scope": "Exact ZIP manifest, actual public installation macro, installed file hashes and five public test macros in fresh FreeCAD GUI processes",
+    "reason_external": "Recording the final result outside the archives preserves their exact tested bytes."
+  },
+  "source_gate": "docs/evidence/v0.4.0/final-source-gates.json",
+  "historical_only": [
+    {
+      "version": "0.3.0",
+      "record": "docs/VERIFICATION_v0_3_0.md",
+      "environment": "docs/evidence/v0.3.0/environment-manifest.json",
+      "bonsai_rerun_for_v040": false,
+      "canonical_building_files_retained": true
+    },
+    {
+      "version": "0.2.1",
+      "record": "docs/VERIFICATION_v0_2_1.md",
+      "environment": "docs/evidence/v0.2.1/environment-manifest.json",
+      "canonical_exchange_files_retained": true
+    }
+  ],
+  "notes": [
+    "Integration counts are assertions within suites, not independent unit tests. Repeated attempts are not added together.",
+    "FCStd/FreeCAD Document remains the sole editable authority. Native geometry uses mm; quantity/IFC uses SI; sheet coordinates use paper mm.",
+    "Model and drawing revisions are distinct content hashes, not monotonic edit counters. Documentation definitions do not alter the legacy building hash.",
+    "Invalid supported service proposals are checked before native mutation to preserve existing Redo. Arbitrary raw API edits are outside that guarantee.",
+    "Plan canonical ranges are -150/1200/2800 mm; form/API defaults are -200/1200/2700 mm. Both canonical sheets use explicit 1:50 scale.",
+    "PDF MediaBox rounding is separate from exact vector scale. Print Actual size / 100 percent.",
+    "Publication is atomic per file with metadata last and rollback for caught failures, not crash-atomic for the entire bundle.",
+    "The managed workspace externally restored deleted temporary files; /tmp controls in both runtimes stayed clean. The exact external process identity was not established.",
+    "Historical Bonsai and full EXPRESS results remain under v0.3.0; they are not relabelled as current v0.4.0 execution.",
+    "Source-only workbench distribution; fonts carry their own OFL notice. No FreeCAD, Qt, Blender, Bonsai or IfcOpenShell host/application binaries are redistributed."
+  ]
+}

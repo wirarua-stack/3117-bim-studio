@@ -1,0 +1,31 @@
+{
+  "workbench_version": "0.1.0",
+  "date": "2026-10-23",
+  "evidence_note": "Runtime and GUI reports apply to these implementation files; Windows execution remains pending.",
+  "sha256": {
+    "packaging/Install_3117_BIM_Studio.FCMacro": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632",
+    "packaging/Manage_3117_BIM_Studio.FCMacro": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e",
+    "packaging/Run_3117_Smoke_Test.FCMacro": "df6b205216e8e7921ef74163abfe48a3b6c9369e3d0e54e0dbe4a034fbc4aa63",
+    "packaging/freecad_installer_ui.py": "61c0d305f0b85c5c5fadc58bcec6d57f1fc16a90d494dc17e21c485606d894a1",
+    "packaging/install_support.py": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4",
+    "packaging/tests/test_install_support.py": "90ccadcd36799f8280caba1e132cf1d1a40096a5762953a3610ba8ae473eab29",
+    "workbench/Init.py": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+    "workbench/InitGui.py": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+    "workbench/bim3117_freecad/__init__.py": "175ef46f9684074ace63c06e4bef7eefdb127c22184ac0f2e35942a8eb8ad6fa",
+    "workbench/bim3117_freecad/model.py": "1668e1436a83ed1fbce2b2e7cbec1c7d05fd374d121d1a6246d1bb4985cee020",
+    "workbench/bim3117_freecad/services.py": "789f656df3a3b40a4780bb3774d65cab61f0691754f3d3c67f6fb1e1a4c6adee",
+    "workbench/package.xml": "429d3beeb286443e6dde84de2ea91482ce885a053118cd02c7357a1da985292f",
+    "workbench/ui3117/__init__.py": "b8733b5a99547bdc3230c99adebcf588fdcfb387a1e5f86446ff8c500ccab0eb",
+    "workbench/ui3117/commands.py": "10775d476dd60680e943dedcad4a42040536e1dbf26f159afb6a7ce6fd6d0899",
+    "workbench/ui3117/dialogs.py": "74fdb9aa69418202f61b4456b7b9ae66b08071868bf17a494b8b79387e341299",
+    "workbench/ui3117/icons/edit.svg": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+    "workbench/ui3117/icons/grid.svg": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+    "workbench/ui3117/icons/info.svg": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+    "workbench/ui3117/icons/level.svg": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+    "workbench/ui3117/icons/project.svg": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+    "workbench/ui3117/icons/workbench.svg": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+    "workbench/ui3117/qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+    "workbench/ui3117/viewproviders.py": "737725e95876a9dde07d8e53d1f120897f47fba668c42671a78c855fc6512e19",
+    "workbench/ui3117/workbench.py": "1fc299d5e0155d48cc4911865bada5ddc69a80a568234ef7f1e88bd9ab09bd57"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "scope": "offline build guard checks only; process cleanup unit check uses controlled mocks",
+  "windows_build_executed": false,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "recorded_at_utc": "2026-10-23T09:21:05.891306+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "build",
+    "-p",
+    "test_build.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "tests_run": 7,
+  "log": {
+    "path": "build/offline-build-guards.log",
+    "sha256": "d22ad0b3de0d655b1542d56ad4b67b79e79e444eea6c978cc547251d46e4e177"
+  },
+  "driver_sha256": "15a2dbeeefc9b5f8478ae8f9955e5d340b3c6bfc2f76cc716bbbab36b50a0735",
+  "tests_sha256": "58fefa16be952b188cb23fa1c1c7a1cf4aa78d168e032ea16cfc098fe7dc02d2"
+}

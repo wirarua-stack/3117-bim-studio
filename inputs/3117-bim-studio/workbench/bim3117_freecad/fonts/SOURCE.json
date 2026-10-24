@@ -1,0 +1,27 @@
+{
+  "family": "Sarabun",
+  "upstream": "https://github.com/google/fonts/tree/main/ofl/sarabun",
+  "downloaded_date": "2026-10-23",
+  "modified": false,
+  "license": "SIL Open Font License 1.1",
+  "files": [
+    {
+      "name": "Sarabun-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/Sarabun-Regular.ttf",
+      "bytes": 90220,
+      "sha256": "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1"
+    },
+    {
+      "name": "Sarabun-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/Sarabun-Bold.ttf",
+      "bytes": 89804,
+      "sha256": "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9"
+    },
+    {
+      "name": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/sarabun/OFL.txt",
+      "bytes": 4387,
+      "sha256": "b26cae1321380296ba8311b632a397d5eac11b47197f9d0aa0b9310f1531ad60"
+    }
+  ]
+}

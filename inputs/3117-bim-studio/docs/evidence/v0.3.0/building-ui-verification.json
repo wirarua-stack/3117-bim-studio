@@ -1,0 +1,232 @@
+{
+  "status": "passed",
+  "version": "0.3.0",
+  "generated_at_utc": "2026-10-23T04:06:26.694805+00:00",
+  "scope": "Actual installed FreeCAD GUI; new building authoring and canonical presentation with affected earlier regressions",
+  "host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "qt": "6.8.3"
+  },
+  "reported_checks": 181,
+  "runs": [
+    {
+      "name": "building-gui-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/building-gui-report.json",
+      "sha256": "7b0d00a551ee58085d8132cb97f2eeebab5273d9538a149f331e17e55c2d9bff",
+      "status": "passed",
+      "checks_passed": 35
+    },
+    {
+      "name": "building-gui-reopen-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/building-gui-reopen-report.json",
+      "sha256": "d8b77e7486765d3b5c29bcf621cd2e33b0fb1df6f03ac1e20d3ff9560999b6c5",
+      "status": "passed",
+      "checks_passed": 12
+    },
+    {
+      "name": "building-presentation-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/building-presentation-report.json",
+      "sha256": "04e3f67f787501988197ff6e852f4139f3c30dc3fafeb441fa400e16fa708dea",
+      "status": "passed",
+      "checks_passed": 14
+    },
+    {
+      "name": "building-presentation-reopen-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/building-presentation-reopen-report.json",
+      "sha256": "314b8bf3bfcab8967cc213e3a7f355ba2e3648c14d8f8e67a615eb1404f0d0bc",
+      "status": "passed",
+      "checks_passed": 10
+    },
+    {
+      "name": "architecture-gui-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/architecture-gui-report.json",
+      "sha256": "b26d6e603b4557c4d7dca4e17e537a5048a629a5b983385829717e2e0696b78e",
+      "status": "passed",
+      "checks_passed": 43
+    },
+    {
+      "name": "architecture-gui-reopen-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/architecture-gui-reopen-report.json",
+      "sha256": "be81c63ec81f6065da993eb9b1c116cfe99aeaae3f64b76a8fcde455c8698053",
+      "status": "passed",
+      "checks_passed": 16
+    },
+    {
+      "name": "exchange-gui-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/exchange-gui-report.json",
+      "sha256": "d12177e82c0daf80d564ee5c5922b433232061b269655ebd69dcd7fd17bfe8ae",
+      "status": "passed",
+      "checks_passed": 41
+    },
+    {
+      "name": "exchange-gui-reopen-report.json",
+      "path": "/tmp/bim3117-building-ui/evidence/exchange-gui-reopen-report.json",
+      "sha256": "9b164b6766e3ef864fd8c8e0bac67bf2a9cb6126d4f1cc922b497d0f27290c5e",
+      "status": "passed",
+      "checks_passed": 10
+    }
+  ],
+  "production_payload": {
+    "source_root": "/workspace/scratch/9457befac3c8/3117-bim-studio/workbench",
+    "installed_root": "/tmp/bim3117-building-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117",
+    "files_checked": 39,
+    "all_installed_bytes_match_source": true,
+    "sha256": {
+      "Init.py": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+      "InitGui.py": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+      "README.md": "5a8d34c0fd74bd2ef4577b1ad94c4996fe8a577a01d4479c34fec8c5c4708d20",
+      "bim3117_freecad/__init__.py": "ca2894c7fd4e59b78d0ba478ba6b619f0f49177fe9ee415c4783ebd98a58f968",
+      "bim3117_freecad/building.py": "ee643014815dc1f0d782ada92d07e08f2eb565fbbf7eafecc8ebc043c11f7ac5",
+      "bim3117_freecad/elements.py": "ae57ec1434a7d86258f8fcaf947dd7c04eec34d6c2566b79cc555885f2e9e9d2",
+      "bim3117_freecad/exchange.py": "778516b426aadc9748865da1de6fc832ed515a6febc6ee3cb74628f1fe31c334",
+      "bim3117_freecad/export_files.py": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+      "bim3117_freecad/ifc_native.py": "18ea51fc422f876dff488e05bbc4e90a46adee309c71796794d0fdfb58265f75",
+      "bim3117_freecad/model.py": "b9fc9d68c793b4cd29d9937b07380123e4e388ee067cab6e417c90f9d83d906f",
+      "bim3117_freecad/services.py": "f666a8f2911d17a4eb0689897d998996b82d87cf9b7d7d45785cb7c7e91788d8",
+      "bim3117_freecad/snapshot.py": "9906040e571fdb273921c4a90033733d4cf6fd40367afcbd9a7ce2d75c1bdb2d",
+      "package.xml": "7e92f2d74bc45fbe1e020c93ce473053caa2eac916e1a6acd536ded36a3fb6ab",
+      "ui3117/__init__.py": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+      "ui3117/building_dialogs.py": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461",
+      "ui3117/commands.py": "2983bfa691d7e50c944c382bac86b57a26608dd4ca68101495fce357526d7e0d",
+      "ui3117/dialogs.py": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2",
+      "ui3117/exchange_dialog.py": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c",
+      "ui3117/icons/beam.svg": "1ebe9b42eed1d290a4290cc8aa3dea47dde442002b4b27bd14045db58bbdf849",
+      "ui3117/icons/column.svg": "74fbe20fb49c5c97f235ca07ece9a409d7d4929b8bbdf455f14a6734d41e3883",
+      "ui3117/icons/delete.svg": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f",
+      "ui3117/icons/door.svg": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c",
+      "ui3117/icons/edit.svg": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+      "ui3117/icons/export_ifc.svg": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456",
+      "ui3117/icons/grid.svg": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+      "ui3117/icons/info.svg": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+      "ui3117/icons/join.svg": "fd65af34fe918eec5e52dfc1cb817d7f311a498f665aba4a9340daee77ef4322",
+      "ui3117/icons/level.svg": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+      "ui3117/icons/project.svg": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+      "ui3117/icons/quantities.svg": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5",
+      "ui3117/icons/slab.svg": "e16f013eaa9330055caa9fb64153eb2ed4289b0f843ee0ebea8a6891ee21fe88",
+      "ui3117/icons/unjoin.svg": "70487b54b545e7b78e1f555babccc0f13697557d8e7571013bd1523fa5e840b8",
+      "ui3117/icons/wall.svg": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae",
+      "ui3117/icons/wall_type.svg": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944",
+      "ui3117/icons/window.svg": "1bca8c9fbd7c54b44f3e013c5af642510bc4ba7142bc93772adc9f6ffe105ff2",
+      "ui3117/icons/workbench.svg": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+      "ui3117/qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+      "ui3117/viewproviders.py": "3c7bf4cbaa656f8625d838d09822959622fcfbcfe3df5242ec91ff031cb1646a",
+      "ui3117/workbench.py": "7a66cc82b84fe2e63ed1869742b0a8828f04a8014f13a009ba7f38665f2cc9c2"
+    }
+  },
+  "harness_sha256": {
+    "tests/freecad_building_gui.py": "00fdd5a9b87216f96ac52cc78c030bad671979a1ca5d592b49bd7ed7022f8909",
+    "tests/freecad_building_gui_reopen.py": "e2fadb975ca38e1ab417513e26ce5c2ac9668d65fafe13d75cf895cc5ba22aae",
+    "tests/freecad_building_presentation.py": "e6cbe0338883da041e9064f0c4c5b24a876ef60be6b701ba4a3a9197abb134f2",
+    "tests/freecad_architecture_gui.py": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d",
+    "tests/freecad_architecture_gui_reopen.py": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b",
+    "tests/freecad_exchange_gui.py": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5",
+    "tests/freecad_exchange_gui_reopen.py": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c"
+  },
+  "canonical_presentation": {
+    "content_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+    "counts": {
+      "wall_rows": 8,
+      "door_rows": 2,
+      "slab_rows": 3,
+      "column_rows": 8,
+      "beam_rows": 8,
+      "window_rows": 4
+    },
+    "totals": {
+      "walls_count": 8,
+      "doors_count": 2,
+      "windows_count": 4,
+      "slabs_count": 3,
+      "columns_count": 8,
+      "beams_count": 8,
+      "slab_net_volume_m3": 13.162500000000001,
+      "column_net_volume_m3": 2.052,
+      "beam_net_volume_m3": 3.6,
+      "structural_net_volume_m3": 18.814500000000002,
+      "join_deduction_m3": 1.9080000000000004,
+      "gross_side_area_m2": 95.88,
+      "net_side_area_m2": 86.34,
+      "gross_volume_m3": 19.176000000000002,
+      "net_volume_m3": 17.268,
+      "rule": "Sum of individual walls; no wall-join overlap deductions"
+    },
+    "artifacts": {
+      "source": {
+        "path": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+        "sha256": "a784c6303a5fb09eaae7cbe1a2a4f3854ccb7384ae9327c089aff11a7bc9897e"
+      },
+      "gui_copy": {
+        "path": "/tmp/bim3117-building-ui/evidence/canonical/Building_Authoring_Workbench.FCStd",
+        "sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995"
+      },
+      "screenshot": {
+        "path": "/tmp/bim3117-building-ui/evidence/Building_Authoring_Fixture_GUI.png",
+        "sha256": "6f03fa9dc268492aa0efd80eae5f667b87792c267c4e5485e2e96f0dfea70d07",
+        "pixels": [
+          1440,
+          1000
+        ]
+      },
+      "table_screenshot": {
+        "path": "/tmp/bim3117-building-ui/evidence/Building_Authoring_Fixture_Table.png",
+        "sha256": "4a789d088e3ace043648ff6ea5a91be7f574fc83ad22009b984863a5baf9f81f",
+        "pixels": [
+          1420,
+          405
+        ]
+      }
+    },
+    "verification_note": "Capture uses the final UI implementation and unchanged frozen native fixture. Fresh-process reopen uses the final core proposal-preflight fix. The capture and fresh reopen verify unchanged UUIDs, content revision and quantities; appearance-only save changes FCStd bytes."
+  },
+  "command_created_gui_fixture": {
+    "path": "/tmp/bim3117-building-ui/evidence/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+    "sha256": "29b25cd9389feb99bb023ac7e317ac2df75b5fad270832f61d75b4ed2a95d3c9",
+    "content_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+    "counts": {
+      "wall_rows": 2,
+      "door_rows": 1,
+      "window_rows": 2,
+      "slab_rows": 3,
+      "column_rows": 8,
+      "beam_rows": 8
+    },
+    "native_objects": 32,
+    "note": "Independent GUI fixture uses 200 mm slabs and two front walls; it is distinct from the canonical 150 mm slab, eight-wall IFC/Bonsai fixture."
+  },
+  "strict_overlap_rejection": {
+    "before_history": [
+      19,
+      1,
+      32
+    ],
+    "after_history": [
+      19,
+      1,
+      32
+    ],
+    "refreshed": true,
+    "expected_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+    "actual_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+    "host": "BIM3117_Wall",
+    "expected_host": "BIM3117_Wall",
+    "offset_mm": 2800.0,
+    "last_refresh_error": ""
+  },
+  "test_adjustment": "Building harness waits for existing zero-timer document-observer teardown before checking close/reopen, consistent with the established Exchange harness. Production code and strict native history assertions were unchanged by this harness correction.",
+  "old_gui_harnesses_modified": false,
+  "acceptance_limits": [
+    "These are Linux FreeCAD 1.1.4 GUI results, not Windows runtime acceptance.",
+    "Public installer and macros from the final release ZIP require their separate exact-package gate."
+  ]
+}

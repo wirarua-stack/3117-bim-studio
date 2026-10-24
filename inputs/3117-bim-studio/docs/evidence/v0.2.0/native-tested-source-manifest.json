@@ -1,0 +1,23 @@
+{
+  "workbench_version": "0.2.0",
+  "platform": "Linux",
+  "freecad": "1.1.4",
+  "files": {
+    "workbench/bim3117_freecad/__init__.py": {
+      "sha256": "9d6916547a001ad0d8c85efd8b19396d7dfab14044aedd190f62af01ee5b4c2e",
+      "matches_tested_native_install": true
+    },
+    "workbench/bim3117_freecad/building.py": {
+      "sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61",
+      "matches_tested_native_install": true
+    },
+    "workbench/bim3117_freecad/model.py": {
+      "sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce",
+      "matches_tested_native_install": true
+    },
+    "workbench/bim3117_freecad/services.py": {
+      "sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582",
+      "matches_tested_native_install": true
+    }
+  }
+}

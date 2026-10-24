@@ -1,0 +1,324 @@
+{
+  "recorded_date": "2026-10-23",
+  "workbench_version": "0.3.0",
+  "reference_package_version": "0.0.1",
+  "native_schema_version": 1,
+  "tested_environment": "Linux: installed native FreeCAD, actual GUI, six-category CSV/IFC, units, and actual Bonsai application import/geometry review",
+  "windows_status": "pending; no Windows desktop, executable or PowerShell runner executed",
+  "github_actions_status": "prepared; nine-stage JSON evidence gate executed locally; no remote workflow run or repository push",
+  "native_host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+    "qt": "6.8.3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "ifcopenshell": "0.8.4",
+    "gui_display": "Xvfb virtual X11, software rendering, isolated profile",
+    "official_runtime_sha256": "f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434"
+  },
+  "native_integration_suites": {
+    "install": {
+      "status": "passed",
+      "checks": 1,
+      "report": "docs/evidence/v0.3.0/final-native/install-report.json",
+      "sha256": "efee05f54da25307c1007fc1a6ce39eb036fbe239dcd77fa46a4c4b43ca7186d"
+    },
+    "foundation": {
+      "status": "passed",
+      "checks": 35,
+      "report": "docs/evidence/v0.3.0/final-native/foundation-test-report.json",
+      "sha256": "0744dcb5e33c516f6436dcf4a7dffa436ffd434ff4ac9087561d741ac48679d7"
+    },
+    "foundation_fresh_headless": {
+      "status": "passed",
+      "checks": 9,
+      "report": "docs/evidence/v0.3.0/final-native/reopen-test-report.json",
+      "sha256": "cdb0c8e2df83e9f6100529697be503c84373fc37638742654a26c0116e511734"
+    },
+    "architecture": {
+      "status": "passed",
+      "checks": 63,
+      "report": "docs/evidence/v0.3.0/final-native/architecture-test-report.json",
+      "sha256": "3877c33c62cdf0b1d170cdc7155a5770a4b8650cef896eb052d7d5281db870f2"
+    },
+    "architecture_fresh_headless": {
+      "status": "passed",
+      "checks": 12,
+      "report": "docs/evidence/v0.3.0/final-native/architecture-reopen-test-report.json",
+      "sha256": "61a40cdcb1caddb816f8312be350e7950459d5db8b02acd6d7913287755b2e53"
+    },
+    "exchange": {
+      "status": "passed",
+      "checks": 47,
+      "report": "docs/evidence/v0.3.0/final-native/exchange-test-report.json",
+      "sha256": "3401bebd802fd240173496f8f7e3324dffdef5ed2531f8bfdec3fe6f98e65d9a"
+    },
+    "exchange_fresh_headless": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.3.0/final-native/exchange-reopen-test-report.json",
+      "sha256": "b2772ed4dd6763d3e0c71b63bf079f1735532cdffc2baa5cf7897eb050dd8097"
+    },
+    "building": {
+      "status": "passed",
+      "checks": 112,
+      "report": "docs/evidence/v0.3.0/final-native/building-test-report.json",
+      "sha256": "8d4870bc2558a0ff76fe94acbceff144714f443f3399c449a6804c7b2ce1fa46"
+    },
+    "building_fresh_headless": {
+      "status": "passed",
+      "checks": 19,
+      "report": "docs/evidence/v0.3.0/final-native/building-reopen-test-report.json",
+      "sha256": "9311555d518e0cdc57f770903f1907ebd73837dceeb5cc32e2c5e316f0f909ce"
+    }
+  },
+  "gui_integration_suites": {
+    "building": {
+      "status": "passed",
+      "checks": 35,
+      "report": "docs/evidence/v0.3.0/linux-building-gui-report.json",
+      "sha256": "7b0d00a551ee58085d8132cb97f2eeebab5273d9538a149f331e17e55c2d9bff"
+    },
+    "building_fresh_gui": {
+      "status": "passed",
+      "checks": 12,
+      "report": "docs/evidence/v0.3.0/linux-building-gui-reopen-report.json",
+      "sha256": "d8b77e7486765d3b5c29bcf621cd2e33b0fb1df6f03ac1e20d3ff9560999b6c5"
+    },
+    "canonical_presentation": {
+      "status": "passed",
+      "checks": 14,
+      "report": "docs/evidence/v0.3.0/linux-building-presentation-report.json",
+      "sha256": "04e3f67f787501988197ff6e852f4139f3c30dc3fafeb441fa400e16fa708dea"
+    },
+    "canonical_presentation_fresh_gui": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.3.0/linux-building-presentation-reopen-report.json",
+      "sha256": "314b8bf3bfcab8967cc213e3a7f355ba2e3648c14d8f8e67a615eb1404f0d0bc"
+    },
+    "architecture": {
+      "status": "passed",
+      "checks": 43,
+      "report": "docs/evidence/v0.3.0/linux-architecture-gui-report.json",
+      "sha256": "b26d6e603b4557c4d7dca4e17e537a5048a629a5b983385829717e2e0696b78e"
+    },
+    "architecture_fresh_gui": {
+      "status": "passed",
+      "checks": 16,
+      "report": "docs/evidence/v0.3.0/linux-architecture-gui-reopen-report.json",
+      "sha256": "be81c63ec81f6065da993eb9b1c116cfe99aeaae3f64b76a8fcde455c8698053"
+    },
+    "exchange": {
+      "status": "passed",
+      "checks": 41,
+      "report": "docs/evidence/v0.3.0/linux-exchange-gui-report.json",
+      "sha256": "d12177e82c0daf80d564ee5c5922b433232061b269655ebd69dcd7fd17bfe8ae"
+    },
+    "exchange_fresh_gui": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.3.0/linux-exchange-gui-reopen-report.json",
+      "sha256": "9b164b6766e3ef864fd8c8e0bac67bf2a9cb6126d4f1cc922b497d0f27290c5e"
+    }
+  },
+  "gui_manifest": "docs/evidence/v0.3.0/building-ui-verification.json",
+  "unit_tests": {
+    "status": "passed",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "suites": {
+      "reference_model": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "reference_ifc": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "native_ifc_adapter": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "export_publication": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "installer": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      }
+    },
+    "ifcopenshell": "0.9.0.post1",
+    "total_tests": 55,
+    "skipped": 0,
+    "report": "docs/evidence/v0.3.0/unit-test-report.json"
+  },
+  "host_ifc_adapter_units": {
+    "python": "3.11.14",
+    "ifcopenshell": "0.8.4",
+    "pytest": "9.1.1 from isolated QA path; not installed into FreeCAD",
+    "tests": 17,
+    "skipped": 0,
+    "synthetic_fixture_validation_checks": 42,
+    "report": "docs/evidence/v0.3.0/host084-unit-report.json",
+    "scope": "Synthetic fixtures; report also includes a 187-check reproduction from an earlier regression snapshot (revision 495f5dd2674fdbf68ec62bfdbb1018c7a99c00b4d3d23d4efbce9b15b1449c81), not the frozen delivered canonical IFC."
+  },
+  "native_proposal_preflight": {
+    "status": "passed",
+    "checks": 31,
+    "report": "docs/evidence/v0.3.0/native-proposal-history-report.json",
+    "sha256": "4e78861bafd6caaf4e12bfdb12dd2bbfa857c4cf70eb52d8b8f34ae3ac348561"
+  },
+  "native_ifc_validation": {
+    "checks": 186,
+    "full_express": {
+      "requested": false,
+      "status": "not_requested",
+      "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+    },
+    "scope": "Actual serialized canonical IFC readback; identities, hierarchy, quantities, placements, solid geometry, explicit slab cuts, and opening interiors."
+  },
+  "bonsai_application": {
+    "status": "passed",
+    "blender": "4.5.14 LTS",
+    "build_hash": "62c1db4208e8",
+    "python": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "bonsai": "0.9.0-post1-py311",
+    "ifcopenshell": "0.9.0.post1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "background": false,
+    "full_express_findings": 0,
+    "blender_artifact": {
+      "checksum_source": "https://download.blender.org/release/Blender4.5/blender-4.5.14.sha256",
+      "archive_sha256": "9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3",
+      "archive_bytes": 378045212,
+      "blender_version": "4.5.14 LTS",
+      "build_hash": "62c1db4208e8",
+      "binary": "/tmp/bang_phra_blender/blender-4.5.14-linux-x64/blender",
+      "binary_sha256": "050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8"
+    },
+    "bonsai_artifact": {
+      "url": "https://extensions.blender.org/download/sha256:c6e486d096a05584c18fa03ae92ac7799998a4bb6d975161c698d02aa5bb79e2/add-on-bonsai-v0.9.0-post1-py311-linux-x64.zip",
+      "sha256": "c6e486d096a05584c18fa03ae92ac7799998a4bb6d975161c698d02aa5bb79e2",
+      "bytes": 170349791
+    },
+    "qualification": "Bonsai uses IfcOpenShell; cross-application inspection is not proof of a different IFC geometry kernel",
+    "application_geometry_express_checks": 265,
+    "total_with_inspected_gui_capture": 266,
+    "report": "docs/evidence/v0.3.0/bonsai-building-report.json",
+    "portable_harness": "tests/bonsai_building_review.py",
+    "source_ifc_sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609"
+  },
+  "canonical_example": {
+    "directory": "examples/building",
+    "content_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+    "ifc_sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609",
+    "original_headless_fcstd_sha256": "a784c6303a5fb09eaae7cbe1a2a4f3854ccb7384ae9327c089aff11a7bc9897e",
+    "styled_fcstd_sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+    "snapshot_sha256": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0",
+    "counts": {
+      "walls": 8,
+      "doors": 2,
+      "windows": 4,
+      "slabs": 3,
+      "columns": 8,
+      "beams": 8
+    },
+    "levels_m": [
+      0,
+      3,
+      6
+    ],
+    "category_net_volumes_m3": {
+      "wall": 17.268,
+      "door_frame": 0.1,
+      "window_frame": 0.184,
+      "slab": 13.1625,
+      "column": 2.052,
+      "beam": 3.6
+    },
+    "grid_ifc_exported": false,
+    "slab_top_datum": true,
+    "slab_thickness_m": 0.15,
+    "explicit_slab_member_joins": 16,
+    "coverage": {
+      "mapped": 38,
+      "derived": 8,
+      "reference": 4,
+      "unsupported": 0
+    },
+    "native_creation_report": {
+      "status": "passed",
+      "checks": 100,
+      "report": "docs/evidence/v0.3.0/linux-building-report.json",
+      "sha256": "424e0d640022e0f05a702daeaf4fe69072491f9f1302b0a96b5b10a7feb666c7"
+    },
+    "identity_note": "Original 100-check canonical generation is frozen. Final 112-check regression generated a separate fixture and revision. GUI presentation retains canonical UUIDs/revision; fresh GUI reopen used the final proposal-preflight implementation."
+  },
+  "exact_distribution_verification": {
+    "companion_report": "3117_BIM_Studio_v0_3_0_Release_Verification.json",
+    "status": "reported separately after archive freeze",
+    "scope": "Exact ZIP manifest, actual public installation macro, installed file hashes, fresh FreeCAD processes, public Building / Architecture / Exchange / Foundation macros",
+    "reason_external": "Recording the final result outside the archives preserves their exact tested bytes."
+  },
+  "source_gate": "docs/evidence/v0.3.0/final-source-gates.json",
+  "historical_only": {
+    "version": "0.2.1",
+    "record": "docs/VERIFICATION_v0_2_1.md",
+    "environment": "docs/evidence/v0.2.1/environment-manifest.json",
+    "canonical_exchange_example_retained": true
+  },
+  "dependencies_used_in_reference_test_environment": {
+    "Pygments": "2.21.0",
+    "ifcopenshell": "0.9.0.post1",
+    "iniconfig": "2.3.1",
+    "isodate": "0.7.2",
+    "lark": "1.3.1",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pyparsing": "3.3.3",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "shapely": "2.2.0",
+    "six": "1.17.0",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5"
+  },
+  "evidence_directory": "docs/evidence/v0.3.0",
+  "notes": [
+    "Integration counts are assertions, not independent unit tests or performance measurements. Reruns are not added together.",
+    "FCStd/FreeCAD Document is the editable authority. Native geometry uses millimetres; snapshots, quantity rows and exports use SI.",
+    "Content revision is a hash; identical authored state restored by Undo has the same revision. New empty category lists are omitted from that hash to retain v0.2.1 compatibility.",
+    "The independent command-created GUI fixture uses 200 mm slabs and two front walls; the canonical delivered fixture uses 150 mm slabs and eight walls.",
+    "Canonical presentation capture preceded the final proposal-preflight change; fresh GUI reopening and all final building/architecture/exchange GUI suites used the final implementation.",
+    "Slab keeps its volume and explicitly cuts Column/Beam; Beam-Column and wall intersections are not deducted. Quantities are per declared element/join rules, not a complete clash-free BOQ.",
+    "Normal IFC export explicitly reports full EXPRESS not_requested. Actual canonical full EXPRESS validation passed in Bonsai. Bonsai also uses IfcOpenShell.",
+    "Exports are atomic per file with metadata last and caught-failure rollback, not crash-atomic across files. Removed category sidecars can remain on disk; current metadata defines the bundle.",
+    "Invalid supported service proposals are checked before opening a mutation transaction to preserve existing Redo. This is not a blanket guarantee for arbitrary raw native Property edits.",
+    "Source-only distribution; no FreeCAD, Qt, Blender, Bonsai or IfcOpenShell host/application binaries are redistributed."
+  ]
+}

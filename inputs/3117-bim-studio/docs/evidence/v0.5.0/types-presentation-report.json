@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "canonical catalogue reads all types and materials",
+      "status": "passed"
+    },
+    {
+      "name": "canonical grouped material schedule is current",
+      "status": "passed"
+    },
+    {
+      "name": "material assignment coverage is visible",
+      "status": "passed"
+    },
+    {
+      "name": "presentation creates no native objects or history entries",
+      "status": "passed"
+    },
+    {
+      "name": "presentation preserves model content revision",
+      "status": "passed"
+    },
+    {
+      "name": "canonical saved FCStd bytes remain unchanged",
+      "status": "passed"
+    }
+  ],
+  "sample": "/tmp/bim3117-v050-canonical-final/Types_Quantities_Workbench.FCStd",
+  "sample_sha256": "ab308e5e7b20acfa2738e7cb21d24e519fa4b65d8ad8b55f81e6931c75bd6843",
+  "transient_hidden_datums": [
+    "4bd6b473-7294-4b93-b953-97c20a2378cf",
+    "3087830e-4d1a-4f80-b674-777b13466c13",
+    "23a017fd-103e-4f8e-bfd1-538f44a944cd",
+    "1e3962f1-fee7-4fc5-b900-92916baa1696",
+    "7b483af6-434a-4504-a036-e560a3599b8a",
+    "fb5db00c-5c30-4442-a1dd-91fb884b9ddf",
+    "58235e7a-ab6e-4121-aa79-62c813dbdfbe"
+  ],
+  "model_revision": "b1d7558505e38e8eab14517490e580a875eba1bb7b5503b72d140c259384c804",
+  "screenshots": [
+    "/tmp/bim3117-v050-ui/evidence-final/types-model-gui.png",
+    "/tmp/bim3117-v050-ui/evidence-final/types-catalogue-gui.png",
+    "/tmp/bim3117-v050-ui/evidence-final/types-materials-gui.png",
+    "/tmp/bim3117-v050-ui/evidence-final/types-material-schedule-gui.png",
+    "/tmp/bim3117-v050-ui/evidence-final/types-source-schedule-gui.png"
+  ],
+  "screenshot_sha256": {
+    "types-model-gui.png": "c57fb5c892a703840715cc1ca84ebfd8898b0c751182f7207b5315550fa96483",
+    "types-catalogue-gui.png": "b5afcae073b0e1f247e640918c768db37ef487e23c03e5f2eff932d899627030",
+    "types-materials-gui.png": "24a561ea31788cf3a831cfaf0f79244ddadbc648fa40c194772262ca197c4557",
+    "types-material-schedule-gui.png": "a3aecac3cc52e8c38254969384a3000e90f2477d0aa696cc18ad16dbe2f81086",
+    "types-source-schedule-gui.png": "e5caf132da74be8c7cdd9d9a10cc65598d8a512740a2262446db9aaf4f3a3588"
+  },
+  "material_coverage": {
+    "row_count": 55,
+    "assigned_product_count": 33,
+    "product_count": 33,
+    "unassigned_product_count": 0,
+    "unassigned_products": [],
+    "gross_volume_m3": 40.1825,
+    "deduction_volume_m3": 3.8160000000000007,
+    "net_volume_m3": 36.3665,
+    "complete": true,
+    "rule": "3117.material.native-solid-partition.v1",
+    "scope": "Only native material assignments are quantified. Layer rows partition products and must not be added again to product quantities. No costs, densities or global overlap deductions are inferred."
+  },
+  "checks_passed": 6,
+  "installed_ui": {
+    "root": "/tmp/bim3117-v050-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/ui3117",
+    "sha256": {
+      "__init__.py": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+      "building_dialogs.py": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461",
+      "catalog_commands.py": "0659e82dcee8dc7b1e4f0718b7d39e51784af0d3e80d558d909f5357c011c79d",
+      "catalog_dialogs.py": "b0829f6445379ac7090481ac8fe6060bf683ddf2e7ac8229a6063541df8e12d2",
+      "catalog_panel.py": "89cb3e12900044d56456ff109a04a2096c3a6083d6b7424affbac89ba5ef5aec",
+      "commands.py": "c87391fb35de0b0865f13460828f39ee789bc6094eb4931e8c675ecd290fe7a2",
+      "dialogs.py": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2",
+      "drawing_commands.py": "7774894dcc1a9e467aa932f4fd1a966e5071a756dd81ea236f5b9716a82fe52a",
+      "drawing_dialogs.py": "2fa7bdc256fd0ece02328ee9af97be4f211717fc02fe4adc5936316ad7afc673",
+      "drawing_preview.py": "79a8edf6c30bb818c2b30288bd3cf8509fdb96dd583cb77524f4afdcb25b7b0b",
+      "exchange_dialog.py": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c",
+      "icons/beam.svg": "1ebe9b42eed1d290a4290cc8aa3dea47dde442002b4b27bd14045db58bbdf849",
+      "icons/catalogue.svg": "33b906ad3e6d70efe88d139f98eaa88b74f83ed6bbf6127acae45901dcd68245",
+      "icons/column.svg": "74fbe20fb49c5c97f235ca07ece9a409d7d4929b8bbdf455f14a6734d41e3883",
+      "icons/delete.svg": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f",
+      "icons/door.svg": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c",
+      "icons/drawing.svg": "c46870e400472264e74cf3681d8dad14a54951c8c89d811ca5be4eccd7df2a0b",
+      "icons/drawing_export.svg": "4d99c9c36c11aa77f362f432316278ea38892d8330e88f7c5f2c7b0aea0e220a",
+      "icons/drawing_preview.svg": "2da62039bb6dafbee6e6e54a8282d4d1d925dc981effafb580ad74562b581c97",
+      "icons/edit.svg": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+      "icons/elevation.svg": "3765ee23a0df006466b63632ba95609b4a196edd0916fbae9d8007745a398222",
+      "icons/export_ifc.svg": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456",
+      "icons/grid.svg": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+      "icons/info.svg": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+      "icons/join.svg": "fd65af34fe918eec5e52dfc1cb817d7f311a498f665aba4a9340daee77ef4322",
+      "icons/level.svg": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+      "icons/material.svg": "7f50018d0cf6d5ec23438b7062b34f0ae96edaf361178af4873c267308ad11d5",
+      "icons/plan.svg": "50aae068543ecd7407d22c2d550b039c4169c31879452cae923daca8e04abf8c",
+      "icons/project.svg": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+      "icons/quantities.svg": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5",
+      "icons/schedule.svg": "202ffadc479d93de37a45906f3cf18ca67726ac676fe14a9a01348f2e7798050",
+      "icons/section.svg": "57ead555e969b187db13352df6c26d8bdb3ad60226c7e5a110c319b4297997b2",
+      "icons/sheet.svg": "647ee4eb88893f1a98ead1b23aed8b18d9d52899a1026c3f51bb5ad6e54bde0e",
+      "icons/slab.svg": "e16f013eaa9330055caa9fb64153eb2ed4289b0f843ee0ebea8a6891ee21fe88",
+      "icons/unjoin.svg": "70487b54b545e7b78e1f555babccc0f13697557d8e7571013bd1523fa5e840b8",
+      "icons/wall.svg": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae",
+      "icons/wall_type.svg": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944",
+      "icons/window.svg": "1bca8c9fbd7c54b44f3e013c5af642510bc4ba7142bc93772adc9f6ffe105ff2",
+      "icons/workbench.svg": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+      "model_panels.py": "97f89a12c829d01836c0c6b7daf29275666a5cbc5b8681fbfc71276418659b5e",
+      "qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+      "schedule_dialogs.py": "4c7038826bcea802b1e6738c06db44a7a0536ae4df8423bc030a3c8f4e23326d",
+      "schedule_panel.py": "de6b116ec1709173e4c05352711e244b3bd0545edc9999acdeb75b003ca4cf02",
+      "viewproviders.py": "9fae15b92ac4f99c4929bac94855b313add1a4d1591bb2245ac5bbc04ea33e25",
+      "workbench.py": "ad6f924343bf171d1ea6a1baa440cf9dcbd2410dd27b75de08446e884c6d36bc"
+    }
+  }
+}

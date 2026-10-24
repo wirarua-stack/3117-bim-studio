@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:09:32) [GCC 14.3.0]",
+  "ifcopenshell": "0.8.4",
+  "pytest": "9.1.1",
+  "tests_run": 9,
+  "passed": 9,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "implementation_sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0",
+  "test_sha256": "5590443575fe68ca820bf364e3d3cc28a410947b536575e87fe03c11abc84fd5"
+}

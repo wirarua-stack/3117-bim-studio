@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bim3117-reference"
+version = "0.0.1"
+description = "Reference model contracts for the 3117 BIM Studio FreeCAD workbench"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [{name = "3117 BIM Studio contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+ifc = ["ifcopenshell==0.9.0.post1"]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+bim3117 = "bim3117.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

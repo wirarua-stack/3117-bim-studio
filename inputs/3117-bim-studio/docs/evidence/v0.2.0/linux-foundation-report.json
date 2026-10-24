@@ -1,0 +1,167 @@
+{
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "native project and two levels",
+      "status": "passed"
+    },
+    {
+      "name": "native dimensional properties",
+      "status": "passed"
+    },
+    {
+      "name": "project backlink and membership",
+      "status": "passed"
+    },
+    {
+      "name": "level datum elevation and extents",
+      "status": "passed"
+    },
+    {
+      "name": "project creation is one undo item",
+      "status": "passed"
+    },
+    {
+      "name": "project rename leaves non-transactional document title unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "project rename undo restores exact project name",
+      "status": "passed"
+    },
+    {
+      "name": "grid geometry, label and elevation",
+      "status": "passed"
+    },
+    {
+      "name": "grid create adds one undo item",
+      "status": "passed"
+    },
+    {
+      "name": "undo grid creation removes object and membership",
+      "status": "passed"
+    },
+    {
+      "name": "redo restores grid identity and links",
+      "status": "passed"
+    },
+    {
+      "name": "negative basement elevation drives datum and grid",
+      "status": "passed"
+    },
+    {
+      "name": "basement edit recomputes linked grid below origin",
+      "status": "passed"
+    },
+    {
+      "name": "undo followed by new edit clears redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "one edit transaction changes all parameters",
+      "status": "passed"
+    },
+    {
+      "name": "level dependency recomputes grid",
+      "status": "passed"
+    },
+    {
+      "name": "undo restores level and dependent grid geometry",
+      "status": "passed"
+    },
+    {
+      "name": "redo restores dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "invalid numeric commands preserve model and history",
+      "status": "passed"
+    },
+    {
+      "name": "native property edit keeps one transaction and rejects zero span",
+      "status": "passed"
+    },
+    {
+      "name": "invalid native blank label preserves exact name",
+      "status": "passed"
+    },
+    {
+      "name": "post-mutation failure rolls back object, membership and undo item",
+      "status": "passed"
+    },
+    {
+      "name": "failed command closes owned transaction",
+      "status": "passed"
+    },
+    {
+      "name": "service does not steal external empty transaction",
+      "status": "passed"
+    },
+    {
+      "name": "supported level deletion rejects dependencies without mutation",
+      "status": "passed"
+    },
+    {
+      "name": "raw native deletion retains expected identity and exposes invalid state",
+      "status": "passed"
+    },
+    {
+      "name": "aborting raw deletion restores link and dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "explicit detach intentionally uses project origin",
+      "status": "passed"
+    },
+    {
+      "name": "undo explicit detach restores expected level identity",
+      "status": "passed"
+    },
+    {
+      "name": "grid edit switches axis and retains stable identity",
+      "status": "passed"
+    },
+    {
+      "name": "native model validates with no dependency cycles",
+      "status": "passed"
+    },
+    {
+      "name": "all element IDs are unique",
+      "status": "passed"
+    },
+    {
+      "name": "FCStd reopen preserves UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "FCStd reopen preserves membership, reference and proxy",
+      "status": "passed"
+    },
+    {
+      "name": "restored proxy recomputes level dependency",
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v020-native/save_ภาษาไทย/Foundation.FCStd",
+  "element_ids": {
+    "BIM3117_Project": "ced34c39-e7ad-4b62-8504-6eacbdd3826f",
+    "BIM3117_Level": "473425f2-d112-4877-ac8d-e8748aa62207",
+    "BIM3117_Grid": "67ca848d-d198-41e5-a7ac-b732945b8e09",
+    "BIM3117_Level001": "206d7841-2d67-4a08-a21a-2552866ce127"
+  },
+  "elements": 4,
+  "checks_passed": 35
+}

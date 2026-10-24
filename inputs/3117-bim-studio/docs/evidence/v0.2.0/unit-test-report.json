@@ -1,0 +1,24 @@
+{
+  "recorded_date": "2026-10-23",
+  "status": "passed",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "suites": [
+    {
+      "name": "installer unit tests",
+      "command": "python -m unittest discover -s packaging/tests -v",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "name": "reference model and IFC tests",
+      "command": "PYTHONPATH=src:/tmp/bim3117-ifc python -m unittest discover -s tests -v",
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0,
+      "note": "IfcOpenShell EXPRESS executor emitted an upstream ResourceWarning; validation passed."
+    }
+  ],
+  "workbench_version": "0.2.0",
+  "note": "Rerun during v0.2.0 work: installer8 passed; reference17 + IFC4 =21 passed,0skipped. Counts are unit tests, not host integration assertions."
+}

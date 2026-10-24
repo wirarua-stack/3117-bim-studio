@@ -1,0 +1,4741 @@
+{
+  "schema": 1,
+  "purpose": "Windows acceptance source kit with native Windows runner-readiness evidence; FreeCAD build/runtime acceptance remains pending",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 152,
+      "sha256": "0974683aeabd21c3ca9ac08b35ab244ad7aeadf9af6fcd803a568388513fa0b5"
+    },
+    {
+      "path": ".github/workflows/windows-acceptance.yml",
+      "bytes": 6061,
+      "sha256": "fa1cd796861917af5a4e2e75cf58eb9b0733ab7e45c6e9b9e21472e7a1cb61a7"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 57,
+      "sha256": "e73761431d8c8c1cb018e53321bf64fdca9df602f1775bac5b600f0cab4a18b0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "PREPARATION_STATUS.json",
+      "bytes": 2022,
+      "sha256": "652a20c403ebd9cfdac3458583f8d12832b0a201d92df34445fac5aa4eb91249"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3121,
+      "sha256": "ad00be38dc2df9ba4166251dd2b1094064e176cf7a5e461e928652218ae395b4"
+    },
+    {
+      "path": "README_TH.md",
+      "bytes": 18042,
+      "sha256": "0e5c15b02ce5c38429dd044545cc4e42c967ee3d7f5f832ba3fc017c8f6938e9"
+    },
+    {
+      "path": "Start-WindowsAcceptance.ps1",
+      "bytes": 628,
+      "sha256": "bf22350391fb067a326ddc453c88e49d7d05e11fcfe105a14bde9f1c93d49f62"
+    },
+    {
+      "path": "build/Build-FreeCAD.ps1",
+      "bytes": 935,
+      "sha256": "a42445346e1cf08ed9938528ef8952f038c5fd47f5f96555866bb30ec0f64f88"
+    },
+    {
+      "path": "build/build_freecad.py",
+      "bytes": 24920,
+      "sha256": "15a2dbeeefc9b5f8478ae8f9955e5d340b3c6bfc2f76cc716bbbab36b50a0735"
+    },
+    {
+      "path": "build/ifc-windows.lock.json",
+      "bytes": 4793,
+      "sha256": "89ba908ea55f7cf881cb7d64d374143987d8b536a4877edc1a29ba91d889a4d7"
+    },
+    {
+      "path": "build/offline-build-guards.json",
+      "bytes": 838,
+      "sha256": "2de41905eff3f9388ae442f183bb674ec32fe3182291ce6e8a6bacaee9bd6d45"
+    },
+    {
+      "path": "build/offline-build-guards.log",
+      "bytes": 1040,
+      "sha256": "d22ad0b3de0d655b1542d56ad4b67b79e79e444eea6c978cc547251d46e4e177"
+    },
+    {
+      "path": "build/offline-source-validation.json",
+      "bytes": 547,
+      "sha256": "961c5fee8cc2f77e3e0e13bb88e1901f8b7f3f0eb9aebddf4f4eb875d62a896e"
+    },
+    {
+      "path": "build/primary-input-evidence.json",
+      "bytes": 4220,
+      "sha256": "c00278b0ae0dd6d460a1e7313753677d5575ab53f6593d4b155df268cb69a4f2"
+    },
+    {
+      "path": "build/test_build.py",
+      "bytes": 4781,
+      "sha256": "58fefa16be952b188cb23fa1c1c7a1cf4aa78d168e032ea16cfc098fe7dc02d2"
+    },
+    {
+      "path": "build/windows-build.lock.json",
+      "bytes": 3687,
+      "sha256": "53335d22293290074f613f8f1a585a9eb7dfeb87911ce9339db1a974b2080f25"
+    },
+    {
+      "path": "docs/ACCEPTANCE_CONTRACT.md",
+      "bytes": 4421,
+      "sha256": "dfeaa0478a839833ee4c1168ffccf621f5ee2266b1ea8c79153f92f62f805b66"
+    },
+    {
+      "path": "docs/PUBLIC_GUI.md",
+      "bytes": 6949,
+      "sha256": "f53d671fbfaa5dc012e7cd3892106c5a4744e973634ea24e6711e15132476c16"
+    },
+    {
+      "path": "docs/WINDOWS_BUILD.md",
+      "bytes": 10422,
+      "sha256": "ef8ea94984203f7c0ba24fb801a1227899d09f56f8387b8627f798c972cbdf21"
+    },
+    {
+      "path": "evidence/access-check.json",
+      "bytes": 544,
+      "sha256": "e1f210784491905b678be5f1ae2c45c06810516b21a907cb82bd8f89f8540a07"
+    },
+    {
+      "path": "evidence/ci/runner-readiness-39934642607.json",
+      "bytes": 1924,
+      "sha256": "a5d2f0f2f21eb799235fafc2c9842fcb703eb91bc31be781b773242253ada99e"
+    },
+    {
+      "path": "evidence/ci/runner-readiness-39934642607.provenance.json",
+      "bytes": 1954,
+      "sha256": "180a91fa477f11ffe6b1be923d2a6adfdd98253306f4a8afb3dab234d935630b"
+    },
+    {
+      "path": "evidence/ifc-download-inspection/ifc-files.json",
+      "bytes": 142289,
+      "sha256": "3a210bb36f5a0ca52b4f3d3db4a26b3e8e2075dc6e79747131679bde9f6c4bb2"
+    },
+    {
+      "path": "evidence/ifc-download-inspection/ifc-preflight.json",
+      "bytes": 2357,
+      "sha256": "661e564aae4d987a8404b55793fd0230257f88c12dc7d40e02f3c23b136f9c5b"
+    },
+    {
+      "path": "evidence/ifc-download-inspection/offline-pe-inspection.json",
+      "bytes": 1107,
+      "sha256": "07ee020ed27d8fcf074565d03912b02005433a2f64363c871aee36cfa83adbb2"
+    },
+    {
+      "path": "evidence/offline-tests.json",
+      "bytes": 321,
+      "sha256": "15de7be8b06a589e77b8f5eef6a1061d9f5b46b50eae1412286d1536286d7e19"
+    },
+    {
+      "path": "evidence/offline-tests.log",
+      "bytes": 6135,
+      "sha256": "f51dd0823ea01cfb16dbe3e7a5336396b1636c6f6651dbee5bfa3be3570629f2"
+    },
+    {
+      "path": "evidence/powershell-entrypoint.json",
+      "bytes": 302,
+      "sha256": "c3919516c1f4368d8c6b0f6b355244d42aa1104d45a75f4f24b76f82dce070fd"
+    },
+    {
+      "path": "evidence/powershell-parser.json",
+      "bytes": 421,
+      "sha256": "4647086579338e144f1312ed2434680a06453b6665e5484b158f7aaab5ec949b"
+    },
+    {
+      "path": "evidence/powershell-preflight/preflight.json",
+      "bytes": 730,
+      "sha256": "6ed7b457d483960a0d60f0c00ff2df5cfab9ad73e66d235ff58279a1d701f593"
+    },
+    {
+      "path": "evidence/runner-preparation-validation-20261023.json",
+      "bytes": 4696,
+      "sha256": "5b3d2b5d0d3c329c99c0420e84bf39334987db6c4854b2ed3861883fe03b366a"
+    },
+    {
+      "path": "evidence/static-checks.json",
+      "bytes": 639,
+      "sha256": "f4cb44cfdbacbe5686b7756a17aecf051b046ee2ef666e3747f30ce826c8c8bf"
+    },
+    {
+      "path": "evidence/workflow-context-correction-20261023.json",
+      "bytes": 3604,
+      "sha256": "41adc85ffb4998b40ccad602a2e759d170764bf85e6fe9852ee021b7aec100d3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 814,
+      "sha256": "d04b0214ada227d1a50bbd9da1225dac45ab450d29392fa6256022076835431d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.github/ISSUE_TEMPLATE/feature_request.yml",
+      "bytes": 633,
+      "sha256": "d4ef39f0afc18e20608eef3f90fa9213088d33412c6bcd785cf3510fcf000c06"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.github/pull_request_template.md",
+      "bytes": 478,
+      "sha256": "f579fc32fe55b656fa7df7f2eff11231c8fbc2c862a99128d436f47034454220"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.github/workflows/freecad-host.yml",
+      "bytes": 11654,
+      "sha256": "d2c1a0522334d1f0e3d69dab18d459b6f43a819dc400b222ad95a3c0f05e6c9b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.github/workflows/tests.yml",
+      "bytes": 1095,
+      "sha256": "cdbd835b2fbf7ff762087929f6caa2a5639ff91c76ac755ea988246b40bc60ac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.gitignore",
+      "bytes": 155,
+      "sha256": "33f6aab66287810fe49004d9641fe4c53c14944ff457db367dddd90f51bf7650"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.pytest_cache/.gitignore",
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.pytest_cache/CACHEDIR.TAG",
+      "bytes": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.pytest_cache/README.md",
+      "bytes": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    {
+      "path": "inputs/3117-bim-studio/.pytest_cache/v/cache/nodeids",
+      "bytes": 5772,
+      "sha256": "c0d41533277015e766a19f93e0b00c0e96c96ce515ddd39c9452eacd98090a34"
+    },
+    {
+      "path": "inputs/3117-bim-studio/AGENTS.md",
+      "bytes": 4195,
+      "sha256": "2e0591cda75d8339da5c8ba6bb4e62e43f9ca83df7b4aebf243c44d9a0e41436"
+    },
+    {
+      "path": "inputs/3117-bim-studio/CHANGELOG.md",
+      "bytes": 10123,
+      "sha256": "cd3a445e0175bd805a2c17dee18c7fcc8a2cf1598a33c28a7d66430bb8ea951d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/CONTRIBUTING.md",
+      "bytes": 1399,
+      "sha256": "2aeada28ab24282fb74c3c93a84b2da5535738b36f2ab615aed39064e780a6ab"
+    },
+    {
+      "path": "inputs/3117-bim-studio/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "inputs/3117-bim-studio/README.md",
+      "bytes": 10966,
+      "sha256": "509e6db6c7309cfba27cb554b380a8c377144f923ebce5563a390ba1c272dde7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/THIRD_PARTY.md",
+      "bytes": 7827,
+      "sha256": "e69459a226eef7e25e45d728912398404ab75ee3d1795dbb12f9cf480aa1e080"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/ACCEPTANCE.md",
+      "bytes": 27689,
+      "sha256": "9cc1638d06c0141a90b2fcdd5d2436686ab3936d66e531c615b966cb97ae1019"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/ARCHITECTURE.md",
+      "bytes": 32281,
+      "sha256": "e997e6fb259d93389ec150de5fad639d81937e21dfd7a968a996e01975af38eb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/BACKLOG.csv",
+      "bytes": 4281,
+      "sha256": "926250b6e5c7b5e6c12872fbe9589509d52857adfb9773b5bcd1b306b1abec17"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/BONSAI_BUILDING_REVIEW.md",
+      "bytes": 4823,
+      "sha256": "faa88e4964da3e01e4de17b2daf85c73a28ecc80f6bd6b09037bc4ddf66f170a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/BONSAI_REVIEW.md",
+      "bytes": 13171,
+      "sha256": "34f880a0de8125ae895fa5a9faeb611d6bcf92380350186fdee5b8b62e70f512"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/BONSAI_TYPES_REVIEW.md",
+      "bytes": 13437,
+      "sha256": "47cb62870c501b1f3cca76107b541ca414ba401a037fa5d9ab4d66217d6e463c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/BUILDING_AUTHORING.md",
+      "bytes": 12040,
+      "sha256": "73100a62e6e5bfb9ed174d6e155efbb90b47095efedfa40e66029b9dca6a4b9c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/DECISIONS.md",
+      "bytes": 2172,
+      "sha256": "23e04050d879ba9507db1f8199a127f75f2bb914ba00317e64a5f661d89da9ed"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/DEVELOPMENT_BLUEPRINT.md",
+      "bytes": 25568,
+      "sha256": "5a0cd53ae905c57b4e1c62efcac733ce4ae01e048e9680dbd15385d59e6e9cf9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/DRAWINGS_AND_SHEETS.md",
+      "bytes": 21079,
+      "sha256": "0ae9939574e05a877f0695f32fe4ddc3d2ccef9ac027ab66e2032a195b2a4bc7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/FOUNDATION_WORKBENCH.md",
+      "bytes": 12375,
+      "sha256": "c62e8057cfa0645f2607fbab00bad265960efe8653950b7e6c29db5a159b18e8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/GITHUB_SETUP.md",
+      "bytes": 3234,
+      "sha256": "269ac2a9be622465efcadbb4538453e57322c73ae9bc5410e13517dbd397c7ce"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/HOST_COMPATIBILITY.md",
+      "bytes": 8651,
+      "sha256": "43e52b75de267a51488a07e398c141ad3ef17ab463ec53594bf783538ab6c4cb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/QUANTITY_EXCHANGE.md",
+      "bytes": 22880,
+      "sha256": "ef3fb33b6e40acc3c67f96cc2eba627bfe74c1c96771c39cdcc434eda8958903"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/ROADMAP.md",
+      "bytes": 8471,
+      "sha256": "b9e471bb543eaa04fb237e4484fe705334cf389ce44f3daa905b0edc1ff74f2d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/SOURCES.md",
+      "bytes": 11341,
+      "sha256": "f685bb5b8d5eb2cb937948e02009ec0c5cd6fbb8f60318c9344315868d392478"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/TEST_ENVIRONMENT.json",
+      "bytes": 14356,
+      "sha256": "fcb00ee186927461666453d413fa1fbb65ba6a9bd63e00b41603e566b47f61a0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/TYPES_AND_QUANTITIES.md",
+      "bytes": 21520,
+      "sha256": "f5335f94341494e1287dafef3c98448698a9f036905c881192dcf340defcbb14"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/VERIFICATION.md",
+      "bytes": 16197,
+      "sha256": "4cc0647396289322ed251dbbb1e700e6799e74972479c506e603066ab488586c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/VERIFICATION_v0_2_0.md",
+      "bytes": 11921,
+      "sha256": "7dfce0e28a591b0f7a0b53af4ecff8a9815f1f61a67a11c7cf501809c115a668"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/VERIFICATION_v0_2_1.md",
+      "bytes": 15862,
+      "sha256": "1e8d079af0360a4d1efccd4a35b0694c13bd3d3e1f2566c7a71bbbae59ab039a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/VERIFICATION_v0_3_0.md",
+      "bytes": 17649,
+      "sha256": "624b0d1d201018de16842c1f8d7999ef4c054a21f7f322fdb87789a5a81e013a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/VERIFICATION_v0_4_0.md",
+      "bytes": 17307,
+      "sha256": "b613e7b6060a004828a8062f35feed52cd92c1563c4586e884c2de2d709f243e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/WALL_DOOR_WORKBENCH.md",
+      "bytes": 19142,
+      "sha256": "f5ce0a8e1b00bc733ba62063702e4b0ef078528ad934633155ce39f2d570d0e0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/WINDOWS_ACCEPTANCE.md",
+      "bytes": 18081,
+      "sha256": "fd3c08f97170746d4a79ca1282e68876a2d7d3fa64b7835d3c17839e1e601cf8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-foundation-report.json",
+      "bytes": 4367,
+      "sha256": "e40a0016187efeb24dc8d9e0022ceb914ebff4c66c648c8765c9817f3e5c698c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-gui-reopen-report.json",
+      "bytes": 1485,
+      "sha256": "90893757560117bc6cac9f52cb313ffa19fa306c5f2311cc275aac175d2efa90"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-gui-report.json",
+      "bytes": 4802,
+      "sha256": "e5e7a975833b3deb47c5df59330e9bea06eb77c9e6e2d50798ebc80d6667bdd9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-install-report.json",
+      "bytes": 631,
+      "sha256": "febb64e8ab44448e0b72b6b4046ab2e14e006c45666f042a57179e453975a6c0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-installer-gui-report.json",
+      "bytes": 1734,
+      "sha256": "5966026bc23bdf8030d25b9868df1f95574546ba9a8346a5a35e19405d23dc05"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/linux-reopen-report.json",
+      "bytes": 1429,
+      "sha256": "eaa1097b3853148a76080b4d224346538aa4dd5c89a2ab2cce0f0e8193bfc3a7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/tested-implementation-manifest.json",
+      "bytes": 2765,
+      "sha256": "df80b040889bdaf37b3056ffe94ff45c146b4de65cc8fa3a43ffac7097ec702e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/unit-test-report.json",
+      "bytes": 668,
+      "sha256": "4ef9e70007b5f29ef4672d446d92829363c0f66a5a8bcd5a2068d0454aea02c0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-architecture-gui-reopen-report.json",
+      "bytes": 2188,
+      "sha256": "bbda1bb0147d1b49a601a5a4b89ebacc5b84e4b00a38f3fd9e7c097da9df062a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-architecture-gui-report.json",
+      "bytes": 7815,
+      "sha256": "485f3baaef732dc7240f8b64baefa8d808c8fbba678dbe8e659a2015fae5ec58"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-architecture-reopen-report.json",
+      "bytes": 2496,
+      "sha256": "8fe92afebdb4198b7d3d93b552309265e670a04778321e46d76caefb18114d49"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-architecture-report.json",
+      "bytes": 9888,
+      "sha256": "1e840da5267a1f4cfdeb4178603cebb510243e1d681572fdbd572baf69a15318"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-foundation-gui-reopen-report.json",
+      "bytes": 1485,
+      "sha256": "90893757560117bc6cac9f52cb313ffa19fa306c5f2311cc275aac175d2efa90"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-foundation-gui-report.json",
+      "bytes": 4716,
+      "sha256": "ea76d85f4041e43e2dd1e8b01bd06b418ea64f4e3613fde3cccd8edbb8704590"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-foundation-report.json",
+      "bytes": 4372,
+      "sha256": "e8bd042fa81f1b3e88f44b2a8815ba9f4981835aeb4f904495cda346276a133a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-install-report.json",
+      "bytes": 737,
+      "sha256": "68787ce71246654286be6d13e4c8de79bc6018bb4f1bcafbb4a9f84392112ec3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-installer-gui-report.json",
+      "bytes": 1734,
+      "sha256": "109ce727a5338099a0f81e1befe04fab96ae5f740f2abcbd108e3f8bcfabdaaf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/linux-reopen-report.json",
+      "bytes": 1434,
+      "sha256": "977771fcac8b0b58486a7304a262f5a2650823f45bd51f0155da5cf9d1ab00f8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/native-tested-source-manifest.json",
+      "bytes": 822,
+      "sha256": "8aebcfffebad1fb2b1332daf1fcccd5e2edced2813a5712c0b45a53903ebfa05"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/tested-implementation-manifest.json",
+      "bytes": 3848,
+      "sha256": "5bccd5de54a9d5c0f00756fae7c8b92a1e30fc66991d90ade35ccffea680e1f8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.0/unit-test-report.json",
+      "bytes": 855,
+      "sha256": "461c4e69923765876470b12e249f10d28d353a0738395d3e1aff5764e33b9d54"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/blender-artifact.json",
+      "bytes": 439,
+      "sha256": "2d6d2409300b766d68a93192a43dc9db94d2ccc68edc841665c72c866c9094e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/bonsai-application-report.json",
+      "bytes": 8593,
+      "sha256": "1bebb396377e680fd50f22413864a0a7929ebc3f82e510853a47b4b3a87c7fc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/bonsai-artifact.json",
+      "bytes": 275,
+      "sha256": "5b43058ed2925d2a2b2a36120e1607d7dbb523e8df3078b25c2d478d03f3563b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/ci-gate-exchange-reopen-test-report.json",
+      "bytes": 2836,
+      "sha256": "3e950b98e928a938adee5461b711459c9c78e1f854dfae7ed7b7a8e3ef864334"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/ci-gate-exchange-test-report.json",
+      "bytes": 31491,
+      "sha256": "e0b7ac39980f9888c36130e7cda98f0b5202c299ed1912582345994e3ca7a996"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/environment-manifest.json",
+      "bytes": 8623,
+      "sha256": "84846fbf859a4b80380025f7db7fb82e6b6acbadc36dc23bb44e909b067a14ae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/final-source-gates.json",
+      "bytes": 14386,
+      "sha256": "ebadcc34594c392797dff54389eca1f9a310196671ca28278b899a3718277866"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/gui-tested-source-manifest.json",
+      "bytes": 11633,
+      "sha256": "579a96c2fdc0b2737271be037197241db3c136c5c436da5f32bc337679f8d522"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/ifc-host-adapter-unit-report.json",
+      "bytes": 428,
+      "sha256": "c439ec26539940e50ffbdcfcd1c29fb74bfd2e349e390bd967dafb04f87c7788"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/ifc-host-adapter-validation.json",
+      "bytes": 3661,
+      "sha256": "f866285489432f301f4f87da46c56e169557512efc7e24243e0be57287d57725"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-architecture-gui-reopen-report.json",
+      "bytes": 2188,
+      "sha256": "c2764355a4a59da89ee4347feddf929fb13ed8af9e83dfa90214d8742f63c7e6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-architecture-gui-report.json",
+      "bytes": 7805,
+      "sha256": "1f134c02c5f0a0d126ba4ca680e64b0281b235ecfb9d7ae42dd58bb7a4628576"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-architecture-reopen-report.json",
+      "bytes": 2496,
+      "sha256": "8390b9d347bfd1cfd716e83460c81dc78ef5e7b8a3ac9d6168519ba236f22af3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-architecture-report.json",
+      "bytes": 9888,
+      "sha256": "7bd1bbbf0b93bc29437cc6edcdf67810e9b90813e37101424c1a951aa3754c5a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-exchange-gui-reopen-report.json",
+      "bytes": 1481,
+      "sha256": "9b164b6766e3ef864fd8c8e0bac67bf2a9cb6126d4f1cc922b497d0f27290c5e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-exchange-gui-report.json",
+      "bytes": 6831,
+      "sha256": "23358818c8ae8a048d92dfc9bd4d07ede909333a0337f3aa2d0e736ef1070110"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-exchange-reopen-report.json",
+      "bytes": 2810,
+      "sha256": "03dc493c85e0a3bdbbef340f910626d1667293047f2bb39b5ec181b48bcfba58"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-exchange-report.json",
+      "bytes": 31257,
+      "sha256": "6bb1947c1415208554497dbd023ba1028d7c7a7c3461e886bb7cd6f2ad0b1bcb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-foundation-reopen-report.json",
+      "bytes": 1434,
+      "sha256": "e01bfab8e8b9a2c1ad377b6b8fc6da4840dc1d9610f7cf565615e3d4197a360f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-foundation-report.json",
+      "bytes": 4372,
+      "sha256": "661dbc6e56dc7e3aab3e261696ea73980f42fa2596536020d973e3f7cb0b76b6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-headless-gui-reopen-report.json",
+      "bytes": 1707,
+      "sha256": "f88e72e24a756109aab1a5e038a6c8091e1499926bdcaba7d58a811077b3efae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-headless-gui-report.json",
+      "bytes": 6879,
+      "sha256": "8501bc90cb4783d4c128ebbe706580d58877345014c366998b538c15e9fa9bcc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/linux-install-report.json",
+      "bytes": 630,
+      "sha256": "9e8b6659c7b60f3da6736bd59181b45a76c2b37263daa8d64951b37c9d4d9122"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/native-tested-source-manifest.json",
+      "bytes": 2125,
+      "sha256": "fd982b44aa12cf3fb59fd5929dfe90b4335410d1066ae9f74b1270ffe997aafc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.2.1/unit-test-report.json",
+      "bytes": 798,
+      "sha256": "8f6088039bd89eb41a46dab0e339ce5b06f8c0a729ed8f155be38ec0a1eb0f6c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/bonsai-building-report.json",
+      "bytes": 61798,
+      "sha256": "1dac664ca7393037587342a159d3c322d3beba9432a487af73a7f43112d27617"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/bonsai-process-report.json",
+      "bytes": 1373,
+      "sha256": "9e0b84aee081cc183bdb57514590cb05f267afdb1c85224e3cf2a9d6e656cffa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/bonsai-review-manifest.json",
+      "bytes": 1288,
+      "sha256": "cecc9dcc458925e59bb0c4f8455a3bbb7a6586f024e776057ba3db9a9dde2f2f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/building-ui-verification.json",
+      "bytes": 11835,
+      "sha256": "c6d0e8c7a9e7e3433e49fc8d9da69246ea83cfff5694e04b8ce11681cdb7ab44"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/environment-manifest.json",
+      "bytes": 13780,
+      "sha256": "ced678850c806d1b7afc5b8a28e5614cfa11a5b1dbf0ec738909c3a3d86a831a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/architecture-reopen-test-report.json",
+      "bytes": 2502,
+      "sha256": "61a40cdcb1caddb816f8312be350e7950459d5db8b02acd6d7913287755b2e53"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/architecture-test-report.json",
+      "bytes": 9894,
+      "sha256": "3877c33c62cdf0b1d170cdc7155a5770a4b8650cef896eb052d7d5281db870f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/building-reopen-test-report.json",
+      "bytes": 77758,
+      "sha256": "9311555d518e0cdc57f770903f1907ebd73837dceeb5cc32e2c5e316f0f909ce"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/building-test-report.json",
+      "bytes": 114692,
+      "sha256": "8d4870bc2558a0ff76fe94acbceff144714f443f3399c449a6804c7b2ce1fa46"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/exchange-reopen-test-report.json",
+      "bytes": 2842,
+      "sha256": "b2772ed4dd6763d3e0c71b63bf079f1735532cdffc2baa5cf7897eb050dd8097"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/exchange-test-report.json",
+      "bytes": 31745,
+      "sha256": "3401bebd802fd240173496f8f7e3324dffdef5ed2531f8bfdec3fe6f98e65d9a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/foundation-test-report.json",
+      "bytes": 4378,
+      "sha256": "0744dcb5e33c516f6436dcf4a7dffa436ffd434ff4ac9087561d741ac48679d7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/install-report.json",
+      "bytes": 737,
+      "sha256": "efee05f54da25307c1007fc1a6ce39eb036fbe239dcd77fa46a4c4b43ca7186d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-native/reopen-test-report.json",
+      "bytes": 1440,
+      "sha256": "cdb0c8e2df83e9f6100529697be503c84373fc37638742654a26c0116e511734"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/final-source-gates.json",
+      "bytes": 10850,
+      "sha256": "1b87c23a99050fd9a30ae502c50b13e51850f383c713dee7e81c463e3bfb9d94"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/host084-adapter-validation.json",
+      "bytes": 9647,
+      "sha256": "fade28cadcfb8267f85cddbff3d4e942abd37d52fd93a59b5b8560a3cc2179dc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/host084-unit-report.json",
+      "bytes": 993,
+      "sha256": "1161d048980fcd728586382d2dfcc49250cdd5deb117805d8dfc3322c5c406b2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/isolated090-adapter-validation.json",
+      "bytes": 9638,
+      "sha256": "aa2fc71aa8bdfdcf220d163a8eaf52338b3b667f122da072db58a5d0ba29192f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/isolated090-unit-report.json",
+      "bytes": 1135,
+      "sha256": "d5b39c586b25a020086ed875cec19470569096dec564fb08a2b0d230f7aae7c8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-architecture-gui-reopen-report.json",
+      "bytes": 2188,
+      "sha256": "be81c63ec81f6065da993eb9b1c116cfe99aeaae3f64b76a8fcde455c8698053"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-architecture-gui-report.json",
+      "bytes": 7883,
+      "sha256": "b26d6e603b4557c4d7dca4e17e537a5048a629a5b983385829717e2e0696b78e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-architecture-reopen-report.json",
+      "bytes": 2496,
+      "sha256": "3ff5f584ddb6b14338dc539b4bea213859ae2744146d593145969cc49d31314f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-architecture-report.json",
+      "bytes": 9888,
+      "sha256": "e9277cc56a4a354a9261596920dd7eba5d8605b037bfaed650b61260ed8f4662"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-gui-reopen-report.json",
+      "bytes": 2357,
+      "sha256": "d8b77e7486765d3b5c29bcf621cd2e33b0fb1df6f03ac1e20d3ff9560999b6c5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-gui-report.json",
+      "bytes": 10751,
+      "sha256": "7b0d00a551ee58085d8132cb97f2eeebab5273d9538a149f331e17e55c2d9bff"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-presentation-reopen-report.json",
+      "bytes": 2180,
+      "sha256": "314b8bf3bfcab8967cc213e3a7f355ba2e3648c14d8f8e67a615eb1404f0d0bc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-presentation-report.json",
+      "bytes": 37393,
+      "sha256": "04e3f67f787501988197ff6e852f4139f3c30dc3fafeb441fa400e16fa708dea"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-reopen-report.json",
+      "bytes": 77734,
+      "sha256": "ea4bcbfb8bd5598bf7ff31359106a05e53941d3fac092e6f645dbf551ec8aba3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-building-report.json",
+      "bytes": 113164,
+      "sha256": "424e0d640022e0f05a702daeaf4fe69072491f9f1302b0a96b5b10a7feb666c7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-exchange-gui-reopen-report.json",
+      "bytes": 1481,
+      "sha256": "9b164b6766e3ef864fd8c8e0bac67bf2a9cb6126d4f1cc922b497d0f27290c5e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-exchange-gui-report.json",
+      "bytes": 6831,
+      "sha256": "d12177e82c0daf80d564ee5c5922b433232061b269655ebd69dcd7fd17bfe8ae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-exchange-reopen-report.json",
+      "bytes": 2836,
+      "sha256": "ce63327c3822370823dac89120d59e5e960fdec956a52fec94927a877be9f2d7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-exchange-report.json",
+      "bytes": 31691,
+      "sha256": "bcd96418b706f66e1108509db2ae90ef8ded8be17130ca86d8c26d40f382f789"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-foundation-reopen-report.json",
+      "bytes": 1434,
+      "sha256": "eb0f28b9ade989f8a33d3b675e4f3be4ee70f3d4e915facffe385808bb6f6f44"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-foundation-report.json",
+      "bytes": 4372,
+      "sha256": "05becdc58f53977f3682eeb5228aff191a5f420183b85e3c98a0b59662977757"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/linux-install-report.json",
+      "bytes": 737,
+      "sha256": "6c8a4b25323ba525c09da8eff289f2c102c8e797b1b5069cf0eb2cedd010d739"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/native-proposal-history-report.json",
+      "bytes": 8417,
+      "sha256": "4e78861bafd6caaf4e12bfdb12dd2bbfa857c4cf70eb52d8b8f34ae3ac348561"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.3.0/unit-test-report.json",
+      "bytes": 799,
+      "sha256": "ba519c7138dccdea9175d9b4d59990ca9f84753abee17470398e9266d969d94f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/canonical-drawings-exchange-host.log",
+      "bytes": 6768,
+      "sha256": "10f03980dd24494ab3b484f4614b7a77ffa3b166efa2eb237ef53212ff52946a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/canonical-drawings-exchange-process.json",
+      "bytes": 682,
+      "sha256": "c08982eef00ad3f4d258805f63e7706fd1358725b876666dd25147580b38a876"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/canonical-drawings-exchange-report.json",
+      "bytes": 139406,
+      "sha256": "d38bbb3f61417c2516a3349bafe7acada74bd95f5ec6a421a58c7bdd1db2381d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/architecture-reopen-test-report.json",
+      "bytes": 2502,
+      "sha256": "5dd1072f5c7a51c64c8d2eaedf68038e9ec42f3bdefdf650e0854d5329176682"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/architecture-test-report.json",
+      "bytes": 9894,
+      "sha256": "27f0c9f0f9f0b4f363fbb268511b5e7bdcfee69fd1c4cecc1b6bb52b1e9b5f51"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/building-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/building-reopen-test-report.json",
+      "bytes": 77758,
+      "sha256": "4d6c0d1a595c012c4c73214f3b093cc9806b682a9c01f85f9b9890ab357fe6b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/building-test-report.json",
+      "bytes": 114677,
+      "sha256": "defd71ae2ca543df6a83b15f7de7012ca0cfa8f242ad584a6e4e5db00525d30a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/building_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawing-geometry-test-report.json",
+      "bytes": 4034,
+      "sha256": "41ba920981eb1e24fdadd1dc23a0124d4da0eb2211e3d1136524377867095b79"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawing-render-test-report.json",
+      "bytes": 5448,
+      "sha256": "e06b7e34b67b91cdce23038dcdbef6dba91986eea9464b5c5fed2df5b1d16427"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawing_geometry-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawing_render-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawings-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawings-reopen-test-report.json",
+      "bytes": 7729,
+      "sha256": "17145137770de6a9c7e7023a18d39e092269a7edcfc8b08844b0d22f84e38a1a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawings-test-report.json",
+      "bytes": 23203,
+      "sha256": "fefe44366f7208d9f08be9c9c0b8b376eb5c87beaf80d577722f6bae49941a3c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/drawings_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/exchange-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/exchange-reopen-test-report.json",
+      "bytes": 2842,
+      "sha256": "9229436949c1067d0c936ba8e93f487d09d3d9941652a0328ed7ae1c85723b46"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/exchange-test-report.json",
+      "bytes": 31745,
+      "sha256": "e8510bae34e2d74ef2479ff01352722358dfdbf951da966d6e7fb6ddacd60458"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/exchange_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/foundation-test-report.json",
+      "bytes": 4378,
+      "sha256": "d34f10758a5e5def22082b4959738d1bd3a067312c6a25003c0bc794440c4a4e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/install-report.json",
+      "bytes": 628,
+      "sha256": "99d03d0b783dd3825a637cf592bbfa0e83a000750dc08d6cd74a43aaea6f9e7f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/native-process-manifest.json",
+      "bytes": 11824,
+      "sha256": "af03156f128d9377f46bcf59ee177ee313363e05eecda4e0a4cc7b131f6e8c7b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-native/reopen-test-report.json",
+      "bytes": 1440,
+      "sha256": "bb9596c8df256f560a5d9e38e3bb73e65ae0392d25d6f6b3390619052bbe0185"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/final-source-gates.json",
+      "bytes": 28904,
+      "sha256": "722203ca7296343b3e18d8666371138f559e75687b9ca9e08d0e3bf078a77ba4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/linux-drawings-gui-reopen-report.json",
+      "bytes": 3097,
+      "sha256": "bebbf8fbc3bebe3c7076364dfca0c1da4a21569fd0a227467557bf9fd6cb470d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/linux-drawings-presentation-report.json",
+      "bytes": 19276,
+      "sha256": "ff4892fb413fc9d40ecfb3c3d72c1c1c08bdf87089efd186df1a4e5e1f39528a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/pdf-review-report.json",
+      "bytes": 8126,
+      "sha256": "a031a962d8cc6c27dd295c82721e1b196c8e29cfff237507ddd5ae4066fb1077"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/publication-environment-probe.json",
+      "bytes": 9638,
+      "sha256": "9fe0aaac0d6e6a25f9ffe29c98ae5871cd95a1bfcd8e3a0b4b7d3255c8a0fbb1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/publication-probes/delayed-freecad-report.json",
+      "bytes": 10859,
+      "sha256": "738df3deea93f9a327a0ee1e8a74ec126f52d4729b326d63cb769aa7a74b7515"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/publication-probes/delayed-plain-report.json",
+      "bytes": 10648,
+      "sha256": "8cb42a122b6c253f4b99abbb6494a8503722b8a299838cb4b1a341be3f661e4f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/publication-probes/freecad-report.json",
+      "bytes": 13075,
+      "sha256": "83d1e16d49c5de42d4ac26820c9276d9389d7d5d7b1184220068fe62ea1b6391"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/publication-probes/plain-report.json",
+      "bytes": 12022,
+      "sha256": "44d9d806cf2ba51794b97c42203da921de1e8b191e86448dd38b803954585dc8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/first-render-attempt/drawing-render-test-report.json",
+      "bytes": 4216,
+      "sha256": "3ec9e980868199c5dd7933ea09ea698853e3e32225c5106a16ad1156e82986b2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/first-render-attempt/drawing_render-host.log",
+      "bytes": 6152,
+      "sha256": "47f4eb5798b4b111d8badd0897d98e681923d74ae77ca9e976d0c3e62dce4083"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/first-render-attempt/native-process-manifest.json",
+      "bytes": 9215,
+      "sha256": "9ed139271fe73b5f790c411e9c7bc9dc51f6a2d9d27443207d36d61340fb8bf9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/second-render-attempt/drawing-render-test-report.json",
+      "bytes": 4925,
+      "sha256": "92e12e0c05dec5a5e5e138e5f51614c45c92ea697d998e083342833260bde76a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/second-render-attempt/drawing_render-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/second-render-attempt/drawing_render-host.log",
+      "bytes": 8260,
+      "sha256": "fbdbb0b2198320080ede8ce6793939686dcb2fc0d46b6c6fbd40bdb4e328f531"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/renderer-attempts/second-render-attempt/native-process-manifest.json",
+      "bytes": 10117,
+      "sha256": "03179c0a26e96953986c379639ca78edefd4c8c6bcd981e9d8721be5d5dcedd4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/test-environment-at-release.json",
+      "bytes": 20718,
+      "sha256": "0f8e3506ccd5e60a103dc3aeec36ec6ca3cffe688f855c3b7768a68342f80a23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.4.0/unit-test-report.json",
+      "bytes": 1013,
+      "sha256": "de7885cc4b84e1678cd96d9873a971b7c7153062fb8eac00f447b19f60cbcda7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/bonsai/Bonsai_Types_Quantities.png",
+      "bytes": 335316,
+      "sha256": "c731a5673f97c12e07f56d739d6fe6cb7ec86e289d7ac9f5b28d91e4b5badf40"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/bonsai/bonsai-types-report.json",
+      "bytes": 49865,
+      "sha256": "e1f0d94936943c0e61cf2747b5b5fdb6c6af9eae1da5d992139a8baae62bba04"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/bonsai/process-report.json",
+      "bytes": 1534,
+      "sha256": "059d1f602c092f5ca65631ecee5eb01c9d29d2e205d2280796f413a7fae3bace"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/architecture-reopen-test-report.json",
+      "bytes": 2470,
+      "sha256": "1d3bd3d977de95ea449696c9c038138d199589518f5589ea2c822199a5c9990d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/architecture-test-report.json",
+      "bytes": 9862,
+      "sha256": "99317df84920f20c2728f3d607e434a1c60ddd82bac931e30cfd2bb39c45630e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/building-reopen-test-report.json",
+      "bytes": 83069,
+      "sha256": "75140cf6b1029ea10fdfc73fcf42dc306b4f50a28105c566b3d5e715c096154f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/building-test-report.json",
+      "bytes": 119780,
+      "sha256": "40d476cb25dc22b57437f125eb3014692d3a5e9e9340255bbc97f2865ef041f8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/drawing-geometry-test-report.json",
+      "bytes": 4034,
+      "sha256": "21850dfeba8532d262a9b050a6d9494c5c96e25b5a04db233c76c8a0ad6533e8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/drawing-render-test-report.json",
+      "bytes": 5380,
+      "sha256": "290b580aa42db8c149bf7e1f2b28298bd194f9b6e6dbf46ef663e3c92921feb1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/drawings-reopen-test-report.json",
+      "bytes": 7601,
+      "sha256": "e8e890c137fd07363e5c1419e35ce8a43c4c2c40ab5b60d01ee513c820f0328b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/drawings-test-report.json",
+      "bytes": 22979,
+      "sha256": "f381ea09c3e36392ae9de90f02d4610a526d4ddc16cc79d563b5e7335db08f23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/exchange-reopen-test-report.json",
+      "bytes": 2810,
+      "sha256": "3b5868fe6d31f771c1901635bb1f1c724603652383bdb84caaef63f53eea20fa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/exchange-test-report.json",
+      "bytes": 33002,
+      "sha256": "984b949a333b706721176a3ffcfd0e071f52436593af4022dc2ab5530d05ec11"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/foundation-test-report.json",
+      "bytes": 4346,
+      "sha256": "0b12ff1a033585f9923e723a47e9a43f0e6a9aa40f83bf608410faf0c2952be8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/install-report.json",
+      "bytes": 628,
+      "sha256": "b70ac4633a69ab49f71ea80583a67562f8c1814376a1f9b4076bcc5cbb8cd016"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/native-process-manifest.json",
+      "bytes": 11689,
+      "sha256": "ec8f56a3326bec5aaeb21a5794df51b05b522504c8c54086ba7715d4a427ffca"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/reopen-test-report.json",
+      "bytes": 1408,
+      "sha256": "065d7934b447f43838caebf32f1e587a635ebb7607d0adff4d0bd8cd8e2fb51a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/schedules-reopen-test-report.json",
+      "bytes": 4202,
+      "sha256": "606b108614e6fd25edc373c4cd8bcfaff70e3e9aed558802fe5f834f6652d5ee"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/schedules-test-report.json",
+      "bytes": 18303,
+      "sha256": "38def868c57f6f6c4085cac5140c6a9b4fe33325c5a9211ab751a72f301b46d2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/types-exchange-reopen-test-report.json",
+      "bytes": 19417,
+      "sha256": "1239d7092f310e189d66f96de22b8de2d37b0d1289e169a7d7daa4ddd500116f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/types-exchange-test-report.json",
+      "bytes": 29234,
+      "sha256": "1762efaef130a56f59215daa4f5860199cf5d2325a5692e5039ad800b7779c9a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/types-reopen-test-report.json",
+      "bytes": 2986,
+      "sha256": "47f641633bc9afecb383d403dcf5113b3aa283f2055d7f041dbe94d5e862415c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-native/types-test-report.json",
+      "bytes": 14075,
+      "sha256": "ac0ee251c86b8681b1613316032b5b05d2d1cb06d98637ab0469c5af4a6ebd30"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/final-source-gates.json",
+      "bytes": 24052,
+      "sha256": "c330d80938d32c8e288ade50adffcd09f6ebf3c259b4055c6b8d1c957153735a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-adapter-unit-report.json",
+      "bytes": 901,
+      "sha256": "f48e4f5cb935231da18b646735e360ed2751ae8f359fb5c9af70db2c4abb7ca9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/HOST_HISTORY_BRANCH_BLOCKER.md",
+      "bytes": 5653,
+      "sha256": "b2fce513173881519c0b039932dab419f4d210acb9a11a48bcbbbc0f8d97cfb6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/SHA256.json",
+      "bytes": 3688,
+      "sha256": "ab147933b938be6bfc88de4ff0ac54d6b8ba14fde910f2c7aaec9fd341bd66f7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/host-blocker-report.json",
+      "bytes": 6741,
+      "sha256": "506c47c3886a934549b263f9c751fba578c534a6f7a183b87cc6a17fd892d29c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/external-outcome.json",
+      "bytes": 414,
+      "sha256": "9148668bdffc4b7ebe761a90d232ada130cca301f535242b68313d8c428cb072"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/gui.log",
+      "bytes": 4808,
+      "sha256": "e9f292931f73681db4e77bf04f646d4071969e6efa93a7a1100d7cc1345f29f6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/install.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/probe-a-report.json",
+      "bytes": 422,
+      "sha256": "261d1ae29523d184625177ebd66dee77708479cfbe2a857112c8c20a13780880"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/probe_a.py",
+      "bytes": 2677,
+      "sha256": "824aacfdedbb202e75c3d5a7d79c46f5acfb4ad21357d7eb39918330eac8fb2e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/catalogue-sequence/run_probe_a.py",
+      "bytes": 2630,
+      "sha256": "d22554bd0f54ddcf06d83ebc4571abbd2ba7288c881b695ddfe36bac2e1e0de0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/control_unbranched_history.FCMacro",
+      "bytes": 2138,
+      "sha256": "613960dab664078fb8c32d82f7447b2042ac19fd11511bc6c29795ec85e4461a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/minimal-native/external-outcome.json",
+      "bytes": 892,
+      "sha256": "875b5af010ae8221f96642d799ac555ff8c791657e76799a905df8c3d819ce8e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/minimal-native/gui.log",
+      "bytes": 180,
+      "sha256": "194e2044e891e7ce65421641bbf4f7b4745c2821c693ebf3f3e306e7d5bb9b7c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/minimal-native/report.json",
+      "bytes": 252,
+      "sha256": "4a1a0af5fe276a5f32228a2015e40d92ffc72aa01411c8b4e0c82e7011b5f648"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/minimal-native/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/probe_native.py",
+      "bytes": 1761,
+      "sha256": "28d641c7fcb3a9f6321d7ab62a3d2fb3c84c00a6263b086456d68bacfbc14a87"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/probe_native_control.py",
+      "bytes": 1648,
+      "sha256": "6758c152f0677ba552e71fa4c4957406b67856d43a66d11403a1a8392cd7a155"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/probe_variants.py",
+      "bytes": 3613,
+      "sha256": "da48a7d3071432518b16e5b068ae003d43d340d1c7f38f6a1e726e8b5907b700"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/reproduce_minimal_native.FCMacro",
+      "bytes": 2251,
+      "sha256": "92cf0b6342a8812a57b0d520615657c13b9fd1b86a2554d8d288bbcd7ef24388"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/reproduce_timed_native.FCMacro",
+      "bytes": 4114,
+      "sha256": "45640bfdbd5e6f16b8ddab698ae79f367e96f49b1d46f8724c6c93e401d0472d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/reproduce_timed_non_python.FCMacro",
+      "bytes": 4116,
+      "sha256": "1978b1d173028cc4a917445522d1b341cae565b1e46bba4db23700435acfec82"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/run_probe_native.py",
+      "bytes": 2201,
+      "sha256": "03e1627068696bb0c032c22b9aa50031b81133db206ba739e8fc1e909b0544aa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/run_probe_native_control.py",
+      "bytes": 2215,
+      "sha256": "953d87713e2462f3feca1a0e64718c7b1175649af9aa8b3e2c8e142b7eff8220"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/run_probe_variant.py",
+      "bytes": 2226,
+      "sha256": "f0e255e30e539604e8db1f7938dc77ba95b8f4e0406dd23e698fc0674504dba4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-native/external-outcome.json",
+      "bytes": 828,
+      "sha256": "949ebd2a6a546a3829e9adc9215a075758e8b8b76f3fce3fca7ab436e07bb101"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-native/gui.log",
+      "bytes": 4808,
+      "sha256": "943c6037aec3e2c929b1e9f980e9a797954e9592105d046402063f0ea1f5abff"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-native/report.json",
+      "bytes": 1586,
+      "sha256": "8bf3b08b5eef9e897b9506b8574aad784276e92d43127c86eff3244bec077b33"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-native/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-non-python/external-outcome.json",
+      "bytes": 839,
+      "sha256": "bd0b761fbfa8aa8bcd99c0ce89512d64f1199b07bb0058dc040882b33f611b58"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-non-python/gui.log",
+      "bytes": 150,
+      "sha256": "485ad360a0a604f1e3d41b6bb3e5b28f18dde03d8ce6567d2e8c5515b12f61ab"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-non-python/report.json",
+      "bytes": 1711,
+      "sha256": "9b8610ee560eae4eb0aaa57735f13fcd5f0a6dae21324aa1ee9e71c065e23057"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/timed-non-python/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/unbranched-control/external-outcome.json",
+      "bytes": 843,
+      "sha256": "2d85e15b6e41d3c0f8d85b01192010aafd3ef144b04249737fba8f5725ebd746"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/unbranched-control/gui.log",
+      "bytes": 471,
+      "sha256": "1968e1035171187b95e4abdb1c588a6b0d8ccfcdbdd30eb6ef87b036f9b8c1c6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/unbranched-control/report.json",
+      "bytes": 339,
+      "sha256": "ea17382843f5ccb2b4845aa9e44fee07b94cb5b8764be07b1967e280c7bff86d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/native/unbranched-control/xvfb.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/source-review/FREECAD_HISTORY_BRANCH_SOURCE_REVIEW.md",
+      "bytes": 9757,
+      "sha256": "e39d0fd39fab2c9662176c1dfeabfef2af65f76279905bb9e291263977fdde88"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/source-review/source-manifest.json",
+      "bytes": 5817,
+      "sha256": "7355e4cc2d8aabfcbcd4fa8adbd517c89e30f666c2ef2577d701d47dace3e4dc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/source-review/untested-provider-removal.patch",
+      "bytes": 550,
+      "sha256": "95c7ad7a1eb65bb43341ae71266ff4deede321c942bd6bdc2d5e52e615b0a23e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/README.md",
+      "bytes": 2753,
+      "sha256": "fd88aa1aae357439cb6cebdc457588739a12d677dbb46a5a92a40b9e16370b1d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/Types_Quantities_Workbench.FCStd",
+      "bytes": 89524,
+      "sha256": "86ef197fcb80627508f11ae80b117ba670f40763624f5de374dc4886dba19f67"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/fixture-types-gui-report.json",
+      "bytes": 12274,
+      "sha256": "4ac82da1d8f4f489172dcfbad530e305a524a00f0cc82e1ad86479dbad30b630"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/original_freecad_types_gui.py",
+      "bytes": 31696,
+      "sha256": "cb58f1e2bb7152164976a8af1699f40a51558db7fac152091a2ef47842b91ac2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/original_freecad_types_gui_reopen.py",
+      "bytes": 10577,
+      "sha256": "48b723e42853857ba7675599e88e096289c4be62d7531ac7efba59bf711c8c30"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/original_run_reopen.FCMacro",
+      "bytes": 514,
+      "sha256": "6fb568bad94e2bffd1e5463d24a555d60d000784ecc393ab6170eee1baa365ff"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/regression-report.json",
+      "bytes": 7661,
+      "sha256": "6d098ebb576b70becbbbcdb98251ebd70c65dba89333fac18df14a399b0cb14e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/ui/reopen-gui.log",
+      "bytes": 5323,
+      "sha256": "c6b252efe774903829780e97cf3019d0a136126b27939f2990fcf038a7d38c3d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/independent-adapter-unit-report.json",
+      "bytes": 249,
+      "sha256": "4eadc8b0c9306bdb750e8080b1f0df23538cccdda857e5f5f8534c7a010281a2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/independent-tests.json",
+      "bytes": 8760,
+      "sha256": "5d8294a8eb7d15dbdffd6c80bf83601b232a81ba842654f747973975256c7628"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/source-review-resolutions.json",
+      "bytes": 1073,
+      "sha256": "edadfe6f19fef5face56efafabfde678b8b97eb42c78741641acf02716bc84ca"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/source-review.json",
+      "bytes": 6571,
+      "sha256": "5ba3317981b87043fae0594b4e6aec5f2cbc52137aeb8d9e19bd88ba2d798a18"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/types-gui-reopen-report.json",
+      "bytes": 9667,
+      "sha256": "79fe86f79a0e29bfd351229dd449cafa9d064dd38076d66501f1c0b41efde850"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/types-gui-reopen.log",
+      "bytes": 758,
+      "sha256": "c978b00f24968dc188cf66a3c9018cb9afdcf1d12ea08543f03c4c15e7892d60"
+    },
+    {
+      "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/types-presentation-report.json",
+      "bytes": 7453,
+      "sha256": "b454871f35f2c87906d5f2f3d2230712febc6c5e241c02e51f24d04bb48d122b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/README.md",
+      "bytes": 1959,
+      "sha256": "faa7eff023bfbc3df1f100e286bd2ff65c12afe95b0ef69f44f7f745128e166a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Bonsai_Building_Authoring.png",
+      "bytes": 322788,
+      "sha256": "8b66f529df6ecede9f228acbc60d0777091bfc46790f5d0c14e5d6ab3364260b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench.FCStd",
+      "bytes": 86612,
+      "sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench.csv",
+      "bytes": 3134,
+      "sha256": "e342fd44a79ece34077bca4f8eaa4e5d17035e7ceca9c0745fa3bea111de623c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench.ifc",
+      "bytes": 124944,
+      "sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench.png",
+      "bytes": 144955,
+      "sha256": "6f03fa9dc268492aa0efd80eae5f667b87792c267c4e5485e2e96f0dfea70d07"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_beams.csv",
+      "bytes": 2796,
+      "sha256": "f0fc5d04a6fcfb8627038671d554e075661001690f610b30b09d299eb9fad65a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_columns.csv",
+      "bytes": 3188,
+      "sha256": "f07bf88d4101b3d3ee740fb5bdadce903396d7168788596282b044c30706c34f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_csv_metadata.json",
+      "bytes": 107791,
+      "sha256": "49c3c74ce25170fdd5079a7c19449075e5d1cdef27c4b3679dbbe1d6694f5398"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_doors.csv",
+      "bytes": 821,
+      "sha256": "8641e27ad9e67182219876d2d971c7ae0d95c892c3f85e545af876b05697e6bf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_ifc_metadata.json",
+      "bytes": 154009,
+      "sha256": "cb1aff45f38a231d6f00ac618b9e7f1afb3fdf325ae1392e520d1d15431beef1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_slabs.csv",
+      "bytes": 976,
+      "sha256": "c36b92700441b1d07e0fd41df3f6581eb8fe6c9c57139833cb4e37634fd430ca"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/Building_Authoring_Workbench_windows.csv",
+      "bytes": 1325,
+      "sha256": "c8b7f56fed47d6fd1924a8634c0e8852f6b55315a74e6afb207efd3970cb42d6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/README.md",
+      "bytes": 5012,
+      "sha256": "ecfbb7988413d3db41ea1adcc55e6ddc8aabab67925b03500ab469c3864e658f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/building/building-snapshot.json",
+      "bytes": 78910,
+      "sha256": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A101.pdf",
+      "bytes": 29950,
+      "sha256": "0434865c4279b1bbabb3954490a4ecb77da4257cc86a2821ea15cf6832e4b02b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A101.png",
+      "bytes": 159051,
+      "sha256": "89f5b0e38ee006e55ae7f87b326fa36eced750e4aeea0dcdfe32f96ef4884370"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A101.svg",
+      "bytes": 303729,
+      "sha256": "5a65ff6effbe20034938422b5b2120b9a6eb2d964c71ba83695240262398e627"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A101_pdf_metadata.json",
+      "bytes": 152673,
+      "sha256": "b701addb1d3a8da72256f2ca9ab042089fd7ec2d8468230cbd235654f8a83799"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A101_svg_metadata.json",
+      "bytes": 152209,
+      "sha256": "fe8b3f0f75ed5da603713e499baaff20467aeb55b5e6b381a75a0a0136aa6949"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A201.pdf",
+      "bytes": 29717,
+      "sha256": "29ea468074b5050555322b0805eadf9589de881ca50771289c8a25b60e5034a9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A201.png",
+      "bytes": 167209,
+      "sha256": "39a1a00281f2903b353bddd91acba33498e3184865521a2dc7286edfd284cb84"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A201.svg",
+      "bytes": 299744,
+      "sha256": "3d89b509c7b0f4b74b0a7830deb951924c8d15d1a2983031db7b9f5ddeb957ac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A201_pdf_metadata.json",
+      "bytes": 146994,
+      "sha256": "e6bdbb663d527f97944342c4b99b23e26014bd45d10b66ea904a4e9a49e12d9d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/3117_A201_svg_metadata.json",
+      "bytes": 146530,
+      "sha256": "4144c611fce339f83f82fc7c95e2769c67cd5bd55203957814428cad6eae7884"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/A101_FreeCAD_Preview.png",
+      "bytes": 104641,
+      "sha256": "07c240ed63740e424023574080baf5bb84fa234350acb3901e7f622c37dd8f92"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/A201_FreeCAD_Preview.png",
+      "bytes": 111372,
+      "sha256": "c57dde5226101ceba47a5503deadfc97fa9b877907ab76c5aa088b4808df33bb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/Drawings_Workbench.FCStd",
+      "bytes": 56561,
+      "sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/Drawings_Workbench.png",
+      "bytes": 97062,
+      "sha256": "83c59deacddeb9dab3c68cce4437a6a296809ae0f45ad21256c799c321aea5ec"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/README.md",
+      "bytes": 4227,
+      "sha256": "a9b5cf17d69262979a67746b35d90de10ef7994306523fa09c293357e43ce5ea"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/build_example.py",
+      "bytes": 5399,
+      "sha256": "c5d9eac8a7bfaff84b5fac086937511eaef12baf5a804ef7f107570c16de4265"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/drawings-example.json",
+      "bytes": 8653,
+      "sha256": "8786f697760f1613ce353546f67f94b6cb206cee26c00d56d1081af6d451224a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/drawings/drawings-export-report.json",
+      "bytes": 12162,
+      "sha256": "010ebe0c4d24975ac172c51c0dd1ec87f191d32cf42f39cbea692002d9d35095"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Bonsai_Native_IFC_Review.png",
+      "bytes": 212710,
+      "sha256": "c20a202cb228621f3190ccd1621d5bb01a439a955804344d5297965eb912016d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Fixture_GUI.png",
+      "bytes": 132477,
+      "sha256": "80ef28e8dad4b2fcaec1cf0a76a8049cb1b416e852994cddfc4312f18a4a25d3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench.FCStd",
+      "bytes": 26644,
+      "sha256": "f7f9395b8bf830f512734d4421698f426d67177c97b2df11cce947c2b5bafae7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench.csv",
+      "bytes": 1352,
+      "sha256": "aadd8d1b62d6434cfd9d08b79f3c8e748d9a19a9041f791d9b9ef164905a37de"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30124,
+      "sha256": "a62ab703c0170ba9134d0c81ae0ba7932ab04d6ff7da6e44fc6fb01a005aac25"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench_csv_metadata.json",
+      "bytes": 26844,
+      "sha256": "86cac3c290b410729ac1ba3c6ef5956954474519e067cb9fbf8888d08ba37d51"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench_doors.csv",
+      "bytes": 1157,
+      "sha256": "650fe0593247a3d1b289cdaa230d70bd6241ad58b853cf9524955b93a6f60fd0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34116,
+      "sha256": "b18797f3b07c73c7f2ba1bafc9a49be7565feaaf7fa169a67e8ed2a372f639e1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/README.md",
+      "bytes": 3884,
+      "sha256": "44c1517b66a0f66ae8a1d91436a09844c690f1df2c5e65f99e7ef413da313d26"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/exchange/exchange-snapshot.json",
+      "bytes": 17612,
+      "sha256": "75bbb7d3430cc99309468aab70cab708650d96d55f383b88e3497f8ad8911317"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/freecad/Architecture_Workbench.FCStd",
+      "bytes": 23140,
+      "sha256": "42ec6e78e12b6c8a9941cb2757cb54d18de766672c163cb7f6364e74949222c7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/freecad/Architecture_Workbench.png",
+      "bytes": 137827,
+      "sha256": "483db2c084a0e1a2c2938dadb545286b1514531535bf74daf2ec0c9b471c045a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/freecad/Foundation_Workbench.FCStd",
+      "bytes": 25413,
+      "sha256": "289abd263ba11a062c070a1f28483bccd5d6f0603445454074c2679d1cbfd261"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/freecad/Foundation_Workbench.png",
+      "bytes": 113010,
+      "sha256": "ade255a3740df2c2257502651b397b87765ee51b4238693b2a12a1af41758f22"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/freecad/README.md",
+      "bytes": 2009,
+      "sha256": "3a8690f7910c42a97aad2a800ee734e065817b5eccdec2c59d43f1d2d487a06b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/generated/room.ifc",
+      "bytes": 9092,
+      "sha256": "eeeddbf2c6f7de9e1a2ba01c4775a0d91c997854f961220375894e55cb1ca063"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/generated/room.reference.json",
+      "bytes": 2568,
+      "sha256": "dc9d3f11fad8b738093dc72b36cdd694d6c003eb307dfbdcffdc2d1e7c5f3016"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/generated/wall_schedule.csv",
+      "bytes": 509,
+      "sha256": "ceb6b8f536368f8517c8e4ca0ba5051d455329047e28d3ad54962527a0348911"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Beam_Schedule.csv",
+      "bytes": 1207,
+      "sha256": "9aad2f1525a01d76783a8ff621776de849893c32176460b868677227573cdf89"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Beam_Schedule_schedule_metadata.json",
+      "bytes": 49749,
+      "sha256": "44a668be6bc2bfbda8c161fa4375d4baaba66443ab6d26da4eba278e8560e92d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Bonsai_Types_Quantities.png",
+      "bytes": 335316,
+      "sha256": "c731a5673f97c12e07f56d739d6fe6cb7ec86e289d7ac9f5b28d91e4b5badf40"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Column_Schedule.csv",
+      "bytes": 1341,
+      "sha256": "623fe75ebb45744b44cf1ba3c96ca9c8e3e038a29669f535fb35ba02857e0484"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Column_Schedule_schedule_metadata.json",
+      "bytes": 51259,
+      "sha256": "cdcd97ddea4e1aa8c8ac3ac1c8a8e28bb331d8cd94dca2e45d50442961d7a9a6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Door_Schedule.csv",
+      "bytes": 438,
+      "sha256": "80e992e46c3a21e2a73328574a83fba70842a3b1855893f6a7c01ece1567511c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Door_Schedule_schedule_metadata.json",
+      "bytes": 41870,
+      "sha256": "06078c6e8e9fe7b61462bedbac0998fdde7376ace14aa6c4b03c3b1450e6e24e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Material_Details.csv",
+      "bytes": 11223,
+      "sha256": "e92d99a5b72be14836595709e7419782408e60fa3623683c760d4adbaab3ff5d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Material_Details_schedule_metadata.json",
+      "bytes": 101811,
+      "sha256": "e187c9af9fde72f5f52eaa4ddac2ac988ee3b7563e5d289fb782ba89c41e4539"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Materials_by_Material.csv",
+      "bytes": 2660,
+      "sha256": "6b6fcd8120c864f11a013318924d9ef04302c6326f9fffe9d6827032ddd78872"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Materials_by_Material_schedule_metadata.json",
+      "bytes": 45878,
+      "sha256": "de60148e6f968749d891b500369180863cc3d4252336f487db7914f8bdf44628"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/README.md",
+      "bytes": 4632,
+      "sha256": "b9fb6d08b7a36c29d7a1d37481ec90075f432a9a54757bb052bb1765e22def42"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Slab_Schedule.csv",
+      "bytes": 556,
+      "sha256": "b57f78869adba7e2d1a66f308e78a0c1c77c4704440907abce7e2e10408b9e6b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Slab_Schedule_schedule_metadata.json",
+      "bytes": 42622,
+      "sha256": "3832ce66d1d9039e0e6f87ee9b6575f2389af20551a041ae969b8e80de2ab2b1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench.FCStd",
+      "bytes": 61319,
+      "sha256": "ab308e5e7b20acfa2738e7cb21d24e519fa4b65d8ad8b55f81e6931c75bd6843"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench.csv",
+      "bytes": 3282,
+      "sha256": "34c996de167c35c803053ca3a7583cf879e447d5c876f5e76382af05cfc62927"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench.ifc",
+      "bytes": 222773,
+      "sha256": "5069ee9e77bf618be30020537b1287b4c7137b5989c69961f35f1b73896aa031"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_beams.csv",
+      "bytes": 3698,
+      "sha256": "fa478b8f9bb131618af3bc97e5e347ed3728841bccc95c050788c69352afeb5b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_columns.csv",
+      "bytes": 4082,
+      "sha256": "d4355354888aac011579177cd80b76e977fbb57654874ec8d542d39e23ccaea7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_csv_metadata.json",
+      "bytes": 203035,
+      "sha256": "effedc2303887f3d5e244014db8504b0b31f07965dedaa8f696c50b4b5acb48e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_doors.csv",
+      "bytes": 1095,
+      "sha256": "063383f4300a862e18cafb5962b7914d621044e0ade49e7565cd8ba19058d6f0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_ifc_metadata.json",
+      "bytes": 271135,
+      "sha256": "cb5896336d8f564e02c46bcfcd954383d39c8de1b7e89138515a4196dbb53b23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_materials.csv",
+      "bytes": 20063,
+      "sha256": "7cc148096343c968afb58dc3cbca9d0ca7033b3231a2d0fa4d9cc8a216f24581"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_slabs.csv",
+      "bytes": 1285,
+      "sha256": "3b02fe7f291a0e83c4ae89e618a915b80efee1ccc5db1ed0e6b7edc378330fe9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_types.csv",
+      "bytes": 2228,
+      "sha256": "31cc4cb267f2ee60d1b2ff7d351f4ff3a8173725b231bbfe19b1659b7f7c8a74"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Types_Quantities_Workbench_windows.csv",
+      "bytes": 1843,
+      "sha256": "9c1f4e562ff74112247c51e09299f3d1afe1907b867346c71e2cabf1ed57f030"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Wall_Schedule.csv",
+      "bytes": 1389,
+      "sha256": "fd0c3a64f521bc90fbb935a039c0b4fc14e1daee4526687be1be822bcec685fc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Wall_Schedule_schedule_metadata.json",
+      "bytes": 49885,
+      "sha256": "260bf865a095ffd47b8e8f74e0bb705491338dce148c769a9dbd1cab7e6876d2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Walls_by_Type.csv",
+      "bytes": 602,
+      "sha256": "29a3d5ca6b4f9f148f2737eba5d8c6212589b53ab3a4457d7a587e6681764f4b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Walls_by_Type_schedule_metadata.json",
+      "bytes": 40525,
+      "sha256": "6f295299ee7ceeb474923b3a268cb6503ccbebe3b8421aeeadd8aa4b147c47d1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Window_Schedule.csv",
+      "bytes": 698,
+      "sha256": "e5542dfd2dac5061d84534c8c1ee9f52d29bb28965cc2ed8c4464df84918788c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/Window_Schedule_schedule_metadata.json",
+      "bytes": 44324,
+      "sha256": "8fa36423168deaa7b6f1a83c5e43b1bda2064fc8da898541d14e67ecb3cf5023"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/build_example.py",
+      "bytes": 9459,
+      "sha256": "f33d48692a1ca90a79376b3d853e27f6014d532acfaa2eabf6e4964565d63fe0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-catalogue-gui.png",
+      "bytes": 137753,
+      "sha256": "b5afcae073b0e1f247e640918c768db37ef487e23c03e5f2eff932d899627030"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-example.json",
+      "bytes": 169547,
+      "sha256": "d074816f6facb23819e1161a3a5bc8a91e714d9714ff36a4e5f685afad9cd695"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-material-schedule-gui.png",
+      "bytes": 146866,
+      "sha256": "a3aecac3cc52e8c38254969384a3000e90f2477d0aa696cc18ad16dbe2f81086"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-materials-gui.png",
+      "bytes": 114544,
+      "sha256": "24a561ea31788cf3a831cfaf0f79244ddadbc648fa40c194772262ca197c4557"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-model-gui.png",
+      "bytes": 89817,
+      "sha256": "c57fb5c892a703840715cc1ca84ebfd8898b0c751182f7207b5315550fa96483"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-snapshot.json",
+      "bytes": 155873,
+      "sha256": "2404e65c1f0b081a8da8005d09d7ed9e9cb5afac1ec124f1f7e81bb30b51d022"
+    },
+    {
+      "path": "inputs/3117-bim-studio/examples/types/types-source-schedule-gui.png",
+      "bytes": 171724,
+      "sha256": "e5caf132da74be8c7cdd9d9a10cc65598d8a512740a2262446db9aaf4f3a3588"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/Foundation_Reopened.FCStd",
+      "bytes": 4444,
+      "sha256": "05c70d110c47f4acb368083dba660a87ac201cefb26d7c2db19c7ae2cce8cae6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/foundation-host.log",
+      "bytes": 2979,
+      "sha256": "3c3b2d075ff51d1d493ed0c1d567ac7c5b5a31cec7168a11fd80356d914f6ae8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/foundation-test-report.json",
+      "bytes": 4367,
+      "sha256": "e40a0016187efeb24dc8d9e0022ceb914ebff4c66c648c8765c9817f3e5c698c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/install-report.json",
+      "bytes": 631,
+      "sha256": "febb64e8ab44448e0b72b6b4046ab2e14e006c45666f042a57179e453975a6c0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/reopen-test-report.json",
+      "bytes": 1429,
+      "sha256": "eaa1097b3853148a76080b4d224346538aa4dd5c89a2ab2cce0f0e8193bfc3a7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/save_ภาษาไทย/Foundation.20261022-213423.FCBak",
+      "bytes": 4440,
+      "sha256": "27029cde1221ca27e93246f81849660833ade50a1060acd3a518d5b81357625d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4436,
+      "sha256": "a01ae0ae0d2d60a5be7725e893a9b6390d70fae5e9547490472bb60ae6ff8510"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/Architecture_Reopened.FCStd",
+      "bytes": 8409,
+      "sha256": "d21b249b91585d7c4153210b2b71bd41745d9d13d72e824173a5d970252ed1f4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/Foundation_Reopened.20261022-221200.FCBak",
+      "bytes": 4441,
+      "sha256": "cded9747814ea18e808106bc8a91b7996cdfe2fbb6cb0024a50a751bffe2f540"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/Foundation_Reopened.FCStd",
+      "bytes": 4449,
+      "sha256": "3983857a5d0d65099044d23682513fc7de621e2a22755ce201812807f0ad0726"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture-host.log",
+      "bytes": 17387,
+      "sha256": "c5ca9ed777771cd592e079fb0036f838d1be343cbf9f643cd736dbd2ba4dbe3f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture-reopen-test-report.json",
+      "bytes": 2496,
+      "sha256": "8fe92afebdb4198b7d3d93b552309265e670a04778321e46d76caefb18114d49"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture-test-report.json",
+      "bytes": 9888,
+      "sha256": "1e840da5267a1f4cfdeb4178603cebb510243e1d681572fdbd572baf69a15318"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/architecture_reopen-host.log",
+      "bytes": 1486,
+      "sha256": "d3fe257b0d027ac6bcc1a7e4485d52ee77ae4dc2e2248623199786c893132641"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/foundation-host.log",
+      "bytes": 2977,
+      "sha256": "16167ca92ad4de501fd8c97349925fc0f32e104c26da4abe7d6b00f891048a66"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/foundation-test-report.json",
+      "bytes": 4372,
+      "sha256": "e8bd042fa81f1b3e88f44b2a8815ba9f4981835aeb4f904495cda346276a133a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/install-report.json",
+      "bytes": 737,
+      "sha256": "68787ce71246654286be6d13e4c8de79bc6018bb4f1bcafbb4a9f84392112ec3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/reopen-test-report.json",
+      "bytes": 1434,
+      "sha256": "977771fcac8b0b58486a7304a262f5a2650823f45bd51f0155da5cf9d1ab00f8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+      "bytes": 8409,
+      "sha256": "0214178a9df08ea23045db4536613ed27da02567e6610fb418a755cad397cfa4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/save_ภาษาไทย/Foundation.20261022-221200.FCBak",
+      "bytes": 4437,
+      "sha256": "741d2101e42451004db1c95b3f5b30f2cb64836cd2a8caebff0f5852009687fb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/save_ภาษาไทย/Foundation.20261022-221439.FCBak",
+      "bytes": 4439,
+      "sha256": "1beba352828d8d52b52ef010a182401968d4356398e8b2330794f3335601bfa0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v020-native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4437,
+      "sha256": "3ce8a5b68ebde48f7bca71400e5eacc99cb2fc851d46c2627d5ef30fc05b6526"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/.3117-export-0lej9ql2/Quantity_Exchange_Reopened.ifc",
+      "bytes": 30124,
+      "sha256": "ff1b4bb500c28c71c30b92bffc3d0ca810a2307fdb0a50c684acfadb27b2dfde"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Architecture_Reopened.FCStd",
+      "bytes": 8408,
+      "sha256": "587611ebe50eb4827585729f8117b70d3874b03fcd2cb2fe24e3a78d53fd4c59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Foundation_Reopened.FCStd",
+      "bytes": 4445,
+      "sha256": "d58b067e0071a62f25d19f2a86ee0b3ac09099f5179918fd29b850ceba022d24"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Reopened.ifc",
+      "bytes": 30124,
+      "sha256": "ff1b4bb500c28c71c30b92bffc3d0ca810a2307fdb0a50c684acfadb27b2dfde"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Reopened.ifc.3117-export.lock",
+      "bytes": 23,
+      "sha256": "0edb4900783033a4d386218646e6d592cbdf17a2a4c596c8ba8472f8382f020f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Reopened_ifc_metadata.json",
+      "bytes": 34161,
+      "sha256": "818cd062904c6f8962bfd2d7b2acfba464f3ec8c058f5efa515cb7f827b37a3f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Reopened_ifc_metadata.json.3117-export.lock",
+      "bytes": 23,
+      "sha256": "0edb4900783033a4d386218646e6d592cbdf17a2a4c596c8ba8472f8382f020f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Workbench.csv",
+      "bytes": 1352,
+      "sha256": "3ebf58e5a5264dde4826bb226f9c5229f43b385f102371f28f1634e079f8ad83"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30124,
+      "sha256": "eba66c2470bfbda91f45288fb5d9bd5be89be02db01044027a69731fed5f82c6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Workbench_csv_metadata.json",
+      "bytes": 26870,
+      "sha256": "f1ac152ad99b7c8e569e67a86e79c1f34d02906133b2d6a54f614dd9da325b03"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Workbench_doors.csv",
+      "bytes": 1157,
+      "sha256": "02014276ad63cf5649326ed82831796b2cddeb7e8dc95041ae0ed89bb269a039"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34142,
+      "sha256": "41755b3ae458e5574f7b33c90253d8a505c64046b12474e9d3ec5f33e8b594b6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture-host.log",
+      "bytes": 17387,
+      "sha256": "9abb9ee37d1219385b0e17b76e002ef9e3aaf48d0ded2d5a60e65183e6330fb5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture-reopen-test-report.json",
+      "bytes": 2496,
+      "sha256": "8390b9d347bfd1cfd716e83460c81dc78ef5e7b8a3ac9d6168519ba236f22af3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture-test-report.json",
+      "bytes": 9888,
+      "sha256": "7bd1bbbf0b93bc29437cc6edcdf67810e9b90813e37101424c1a951aa3754c5a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/architecture_reopen-host.log",
+      "bytes": 1486,
+      "sha256": "d3fe257b0d027ac6bcc1a7e4485d52ee77ae4dc2e2248623199786c893132641"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/coverage.csv",
+      "bytes": 603,
+      "sha256": "95812daa7eb3037354d0dd1b97d39ac86d435e1cfccb681e2bac00cc0bf81e38"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/coverage_csv_metadata.json",
+      "bytes": 15831,
+      "sha256": "b1dcc411f4358699fead3c778a12cd1e6de8791e76238eb4c2b459b77c1e8118"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/coverage_doors.csv",
+      "bytes": 514,
+      "sha256": "be007742ccb4397240c9bd75ad1e0cd6548a8009295e1fff241547a9687ca6e7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange-host.log",
+      "bytes": 11353,
+      "sha256": "855ef4434d71df9d3b31d6484412528923fcd3f85691a809d3d3e4250456d037"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange-reopen-test-report.json",
+      "bytes": 2836,
+      "sha256": "3e950b98e928a938adee5461b711459c9c78e1f854dfae7ed7b7a8e3ef864334"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange-snapshot.json",
+      "bytes": 17612,
+      "sha256": "c10b43d75bf047e52f7a5e1439ee542f4b9cefab7b7fc955f24824ef204832d2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange-test-report.json",
+      "bytes": 31491,
+      "sha256": "e0b7ac39980f9888c36130e7cda98f0b5202c299ed1912582345994e3ca7a996"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/exchange_reopen-host.log",
+      "bytes": 2644,
+      "sha256": "e28cae975f78ecb08156996401dbfa8a1f3e733534b0f5571be65fd05e7b84d4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/foundation-host.log",
+      "bytes": 2977,
+      "sha256": "ea7ecfdb5fe80d47a90459ba8473e8ecd400d6eaf737e2227a4bdb4f63ae4636"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/foundation-test-report.json",
+      "bytes": 4372,
+      "sha256": "661dbc6e56dc7e3aab3e261696ea73980f42fa2596536020d973e3f7cb0b76b6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/install-report.json",
+      "bytes": 630,
+      "sha256": "9e8b6659c7b60f3da6736bd59181b45a76c2b37263daa8d64951b37c9d4d9122"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/reopen-test-report.json",
+      "bytes": 1434,
+      "sha256": "e01bfab8e8b9a2c1ad377b6b8fc6da4840dc1d9610f7cf565615e3d4197a360f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/repeat.ifc",
+      "bytes": 14192,
+      "sha256": "f79053dfa11c9f5592bd5dab38a703ae550d4353b3b9cfa34adad0e7b01e84f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/repeat_ifc_metadata.json",
+      "bytes": 16387,
+      "sha256": "b754620fb833a351ff2917de048da7f0f0f1e5e4f9b0fe8dca161c2a1a72f92a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+      "bytes": 8410,
+      "sha256": "58776b5c1b69be17d8bd4bf982ab9422c45d96fc9abffb8ad1a5bf42d93d644a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/save_ภาษาไทย/Foundation.20261022-231633.FCBak",
+      "bytes": 4436,
+      "sha256": "ad17d36bc5b3ea3b3689a47bbebd825e6432b2c132470b4d4008fadf7035f927"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4435,
+      "sha256": "278d0b3c447c51a0d9e394ae7671f4c5fa88994eba29bf5e3b72a956526134c3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+      "bytes": 16325,
+      "sha256": "7129d1cf6e1e22dd6079c643c6e5744c63af7cc129ac253c0274d615664b9169"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/spreadsheet_text.csv",
+      "bytes": 604,
+      "sha256": "a76d51f8a8d17cc0dc76d805f8ce20ad38dee02b21ab41075676eeb9fd3f3d59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/spreadsheet_text_csv_metadata.json",
+      "bytes": 13611,
+      "sha256": "3807e43dacf5dfc8516121b2ddfb8159a6531b13b92472d06c4884bf1d0732ac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/spreadsheet_text_doors.csv",
+      "bytes": 502,
+      "sha256": "c96bc856a2193666751aec5386ca10c7d2fc85f507d5b2d7dd2843bb3dcd8537"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "ba33e7d48bd5e0f60f6786af7d0dc6e7bc6eedbc5360a96f25f0561932466a9a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/ปริมาณ.ifc",
+      "bytes": 14192,
+      "sha256": "f79053dfa11c9f5592bd5dab38a703ae550d4353b3b9cfa34adad0e7b01e84f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/ปริมาณ_csv_metadata.json",
+      "bytes": 13671,
+      "sha256": "df2cb6256fbd8e6433af85b541336c24634a1005a70177e11c37f4208c5215b7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "72f9e3b0226cad592e21dbf49fcb0f2898bd714bb0be15e8fc348f7d0712d901"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-native/ส่งออก_ภาษาไทย/ปริมาณ_ifc_metadata.json",
+      "bytes": 16399,
+      "sha256": "e9f70820e54f59a149e993f8b7753573c04b1c667cfb9223721418af9e96c456"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/export_publication.log",
+      "bytes": 1572,
+      "sha256": "59a0f81cee4f4c32523990964b8243cad1751b1a871b6f50dfd07706352eb352"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/installer.log",
+      "bytes": 1268,
+      "sha256": "1109b27b1baff0c6b557a9ca6b9b72c14bed821067eb2a11f0dcf26f9b6057fa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/native_ifc_adapter.log",
+      "bytes": 1430,
+      "sha256": "53ed5deb8ef90be575f48d4504a00b358a4c62d1e2aff8e67ec5434487a8e94b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/reference_ifc.log",
+      "bytes": 504,
+      "sha256": "4aa44b9e36ad905bd663400957e076a9f45edc04f5fcbc2d90d20239610a87fd"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/reference_model.log",
+      "bytes": 2000,
+      "sha256": "f951d6eacf048044c414f1713784a65ec421ae89f9cfe191443aa2acb99c2ec1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v021-unit/unit-test-report.json",
+      "bytes": 798,
+      "sha256": "8f6088039bd89eb41a46dab0e339ce5b06f8c0a729ed8f155be38ec0a1eb0f6c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Architecture_Reopened.FCStd",
+      "bytes": 8421,
+      "sha256": "e09ca6e0974965dba13ea5682acc00170c0af7d04488634425977780f2124555"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Reopened.ifc",
+      "bytes": 124944,
+      "sha256": "8e295485a48b02adcf699d2020391d8e682853e2adc669ec7a235a1850eec107"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Reopened_ifc_metadata.json",
+      "bytes": 154161,
+      "sha256": "a27f2a366b475960dd55628880a42396d6bfd5f74d07448003eefdd21d7657f3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench.csv",
+      "bytes": 3134,
+      "sha256": "f5da2e01de55361baffa041b157587cb9798185ad14d5d2c660c5215228cb14f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench.ifc",
+      "bytes": 124944,
+      "sha256": "c6bdf8395c4cfef6c01cead651cfef7fc733c4b9b3b8cbfe2fd551c9de74e93b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_beams.csv",
+      "bytes": 2796,
+      "sha256": "ab7a25d239122126bc26083100c1c493e562b986a89b75ed39997af6e23f83ce"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_columns.csv",
+      "bytes": 3188,
+      "sha256": "63ab927386e3df137b10f937ed28cdeec96c291db54e77875a3d7f0eff52775a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_csv_metadata.json",
+      "bytes": 107791,
+      "sha256": "5546acb70d308cbeff435be6f161685e9567c25b2fecba27ff34ccf01998592c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_doors.csv",
+      "bytes": 821,
+      "sha256": "ad06aecad0daae1ddbedd19ea44158592fe6e4d57ff2fe38d80920f0374eb7ef"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_ifc_metadata.json",
+      "bytes": 154009,
+      "sha256": "5dd300a87bda3651253336c0956692e31b32b232335f8dda403f2904d3bdf698"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_slabs.csv",
+      "bytes": 976,
+      "sha256": "a64186a4413af1cf10fb428fcf5541b74cde3d3455c407ab573782fcf575fd0f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Building_Authoring_Workbench_windows.csv",
+      "bytes": 1325,
+      "sha256": "9be8010b7b9d6e992edc4a010bd6cbbca86d84fc6627393d6787483d147a8d98"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Foundation_Reopened.FCStd",
+      "bytes": 4443,
+      "sha256": "8f09fcc8890d83df20be4299cb480c7fdaf5fb17906668297c9869f62c378e0d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Reopened.ifc",
+      "bytes": 30297,
+      "sha256": "07e03ffd6bccc6469550bf4f4cf7f3deb282bcbaea514cfbfe2519972e75fea6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Reopened_ifc_metadata.json",
+      "bytes": 34627,
+      "sha256": "1485995f95312820ceb52ce8055a925b05bb1e0d22fe738b7f714bb8d7dd384e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Workbench.csv",
+      "bytes": 1352,
+      "sha256": "a97daa5193cd91024a5dc46acf71f8993f6d0879099530f38d3983fdcec4a0a1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30297,
+      "sha256": "fc53bc5ded4c4580611a740f70c80347d07605f89d6661a642fa5b6687c759f4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Workbench_csv_metadata.json",
+      "bytes": 27350,
+      "sha256": "c77e14b642a3f57efd2257abacaefd71dacf1040ef4b87a2443ebcdae3e25fed"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Workbench_doors.csv",
+      "bytes": 1157,
+      "sha256": "ad3359af0e3b5ded6046ed3d8dd035f1a8410175d44d12b6e12ed3dc73107d31"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34608,
+      "sha256": "ec33c07c181a922ad11ffa2a6db0b07c11237ca51be2ca9647dea59af81024aa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture-host.log",
+      "bytes": 16744,
+      "sha256": "9ddf648a88db390068c50593abe9bcf29a8ee0f4b72fb6426e8f1c0201da70b7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture-reopen-test-report.json",
+      "bytes": 2502,
+      "sha256": "61a40cdcb1caddb816f8312be350e7950459d5db8b02acd6d7913287755b2e53"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture-test-report.json",
+      "bytes": 9894,
+      "sha256": "3877c33c62cdf0b1d170cdc7155a5770a4b8650cef896eb052d7d5281db870f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/architecture_reopen-host.log",
+      "bytes": 1486,
+      "sha256": "d3fe257b0d027ac6bcc1a7e4485d52ee77ae4dc2e2248623199786c893132641"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building-host.log",
+      "bytes": 34166,
+      "sha256": "7aa9c900b8232e7771fdd897c75c5a4435b86dad4477e34e9cc21857cee7ae3d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building-reopen-test-report.json",
+      "bytes": 77758,
+      "sha256": "9311555d518e0cdc57f770903f1907ebd73837dceeb5cc32e2c5e316f0f909ce"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building-snapshot.json",
+      "bytes": 78910,
+      "sha256": "ef76c242f93e728dd7211d8408430ef4811a140c50ce33fa57732e8cc1ccf5a5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building-test-report.json",
+      "bytes": 114692,
+      "sha256": "8d4870bc2558a0ff76fe94acbceff144714f443f3399c449a6804c7b2ce1fa46"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/building_reopen-host.log",
+      "bytes": 6847,
+      "sha256": "f3fc4bf5d00719fdcd989fe8e1ea0643376f8149e75533635609f2779dc115b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/coverage.csv",
+      "bytes": 603,
+      "sha256": "14302aa0334758fc7bb6063b730fc7863015ae1909c9e821c8b8dec38c0e373c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/coverage_csv_metadata.json",
+      "bytes": 16305,
+      "sha256": "dce741fea540477eb44bbfaa33af23a1c326f5ad82b1fd320038d0d069db15bb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/coverage_doors.csv",
+      "bytes": 514,
+      "sha256": "a5e4ddb24dddc7b0543ef123f312ed30a17548972f3e4633d6337e799d18ecd4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange-host.log",
+      "bytes": 11353,
+      "sha256": "fdd7607f2cadd9ed6e7243bf5e6b1b61b1786aa4968197338e71dc3aae71ee5c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange-reopen-test-report.json",
+      "bytes": 2842,
+      "sha256": "b2772ed4dd6763d3e0c71b63bf079f1735532cdffc2baa5cf7897eb050dd8097"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange-snapshot.json",
+      "bytes": 17946,
+      "sha256": "28e7bd1750884ab0bf94822f8d845c95a6b3fa3defb64900cc7a0a836604d12b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange-test-report.json",
+      "bytes": 31745,
+      "sha256": "3401bebd802fd240173496f8f7e3324dffdef5ed2531f8bfdec3fe6f98e65d9a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/exchange_reopen-host.log",
+      "bytes": 2644,
+      "sha256": "e28cae975f78ecb08156996401dbfa8a1f3e733534b0f5571be65fd05e7b84d4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/foundation-host.log",
+      "bytes": 2977,
+      "sha256": "bd530c5596c9a1b74c0cf729ff762981541425693ca019b55cac4883ac458f7c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/foundation-test-report.json",
+      "bytes": 4378,
+      "sha256": "0744dcb5e33c516f6436dcf4a7dffa436ffd434ff4ac9087561d741ac48679d7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/install-report.json",
+      "bytes": 737,
+      "sha256": "efee05f54da25307c1007fc1a6ce39eb036fbe239dcd77fa46a4c4b43ca7186d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/reopen-test-report.json",
+      "bytes": 1440,
+      "sha256": "cdb0c8e2df83e9f6100529697be503c84373fc37638742654a26c0116e511734"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/repeat.ifc",
+      "bytes": 14365,
+      "sha256": "6e1394078dd426e7f1ede016994e727060bde7b99f7560cc36feab5e67b95897"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/repeat_ifc_metadata.json",
+      "bytes": 16847,
+      "sha256": "d91b97d2732a887966ef1195635d0934ea666546d9e1aea5fd35bba1a5bb099b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+      "bytes": 8424,
+      "sha256": "f718354c4efb6b67736e2ac99ba374b7d270c506ee34300021e7edba73d307d9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/save_ภาษาไทย/Foundation.20261023-000220.FCBak",
+      "bytes": 4438,
+      "sha256": "1bfee0e5f8b4266641b4bfae60f2029a0ae2109c860db8244aa56cc882b43bc2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4436,
+      "sha256": "0f6f2a30ff410e8ab1088e1b439ad0b90f12ac6dc3149d105726561945846960"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+      "bytes": 16329,
+      "sha256": "7afabeb3e213ef75a404c6c80cd274cbf881c6a0987f62c81c984abe3ae22d83"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.20261023-000239.FCBak",
+      "bytes": 54552,
+      "sha256": "57213fc6b5b9a62abe00f27d93525ba48616bb9d214c81b0fdfb67eac3f1b322"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+      "bytes": 54553,
+      "sha256": "95a41659de78fb2845b3ca28546dd0dbdfdea17c19252a7f229f10013e86728f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/spreadsheet_text.csv",
+      "bytes": 604,
+      "sha256": "8458a8388fce479fbd32b0471ed3f2f5517bef834838ed725ddd07e8abb06950"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/spreadsheet_text_csv_metadata.json",
+      "bytes": 14085,
+      "sha256": "f252cba54fbb55ec85ad9cb33f5c7cfc1b996947d0999115acc8305081e24194"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/spreadsheet_text_doors.csv",
+      "bytes": 502,
+      "sha256": "b6ddb90151512619a12d4e88a318bf795a4aa3e37fa9c32c88157563a5a6e3ad"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "470431e1051e1dc2277ce5927fd03e435f30472fc6d98c53f4fe1a205b239cda"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/ปริมาณ.ifc",
+      "bytes": 14365,
+      "sha256": "2aec01cb43548ee83cf063690eb0dca1400ec9dd78a1973aa1a785b03a8a65cb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/ปริมาณ_csv_metadata.json",
+      "bytes": 14145,
+      "sha256": "8622054b2b322236851d39a64fcfdcf6a8bdae9100ace688ce4db2de60e5fc04"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "271adb30f7fae644cce71e6f499925fb3b9b16d55d810ccd13d1afd34a9911bd"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-final-native/ส่งออก_ภาษาไทย/ปริมาณ_ifc_metadata.json",
+      "bytes": 16859,
+      "sha256": "c6711f3356652efc829be9b127d277269e14e2d303e8a0c704d0dcf7b70e2ee9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/.3117-export-n7v20qwa/Building_Authoring_Workbench.ifc",
+      "bytes": 124945,
+      "sha256": "b03761806b64bd9b24c4e1ae16d5cce1d1bb6ee0d2244b40c6c7119e21627c44"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Architecture_Reopened.FCStd",
+      "bytes": 8416,
+      "sha256": "d2736221dade0427a4980204fa5be3c7a3ec417061b23ea1950262cd5792b0d9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Reopened.ifc",
+      "bytes": 124944,
+      "sha256": "f85b1efd12a97ebaf70130b38cdc0a5a82cfc7b30c4aa096d8da184c522e3da6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Reopened_ifc_metadata.json",
+      "bytes": 154155,
+      "sha256": "ad0a849190dd4545ff1c926168aea07a70142e22740b13cee6e92134f17a05d1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench.csv",
+      "bytes": 3134,
+      "sha256": "e342fd44a79ece34077bca4f8eaa4e5d17035e7ceca9c0745fa3bea111de623c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench.ifc",
+      "bytes": 124944,
+      "sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_beams.csv",
+      "bytes": 2796,
+      "sha256": "f0fc5d04a6fcfb8627038671d554e075661001690f610b30b09d299eb9fad65a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_columns.csv",
+      "bytes": 3188,
+      "sha256": "f07bf88d4101b3d3ee740fb5bdadce903396d7168788596282b044c30706c34f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_csv_metadata.json",
+      "bytes": 107791,
+      "sha256": "49c3c74ce25170fdd5079a7c19449075e5d1cdef27c4b3679dbbe1d6694f5398"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_doors.csv",
+      "bytes": 821,
+      "sha256": "8641e27ad9e67182219876d2d971c7ae0d95c892c3f85e545af876b05697e6bf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_ifc_metadata.json",
+      "bytes": 154009,
+      "sha256": "cb1aff45f38a231d6f00ac618b9e7f1afb3fdf325ae1392e520d1d15431beef1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_slabs.csv",
+      "bytes": 976,
+      "sha256": "c36b92700441b1d07e0fd41df3f6581eb8fe6c9c57139833cb4e37634fd430ca"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Building_Authoring_Workbench_windows.csv",
+      "bytes": 1325,
+      "sha256": "c8b7f56fed47d6fd1924a8634c0e8852f6b55315a74e6afb207efd3970cb42d6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Foundation_Reopened.FCStd",
+      "bytes": 4441,
+      "sha256": "4b065fde8650ab94c864a9e4279973539ae1a788159f796babb3d82b390f1ca1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Reopened.ifc",
+      "bytes": 30297,
+      "sha256": "9d60c9f19ba68794e405738ffa3eeb8d06434cc8691f25f35016846799f11c3d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Reopened_ifc_metadata.json",
+      "bytes": 34621,
+      "sha256": "f727d626a00dd06f31ae4c890fb864c985048a0efff74492beca3ac1d9ede526"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Workbench.csv",
+      "bytes": 1352,
+      "sha256": "993c8e4fafe218f0ba9307fa13cdd7e5de6e0c3030f149b7567e28cbc27de90c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30297,
+      "sha256": "6c4f50e9a1401f1d2846c355bcd054080465ea58d375216ba0b6b54268853dc4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Workbench_csv_metadata.json",
+      "bytes": 27344,
+      "sha256": "0a175e55959aa9abe310439c2122c299a15b50708c1aacb87ad709795f511817"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Workbench_doors.csv",
+      "bytes": 1157,
+      "sha256": "f46639159db70c1b969bdd6910ac3ea1446b4c49cd769f690766786077bbaf0b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34602,
+      "sha256": "215476ba29fa9ced3b612e580b70702a2f46dde3fa231a6e0b62510b6097b9da"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture-host.log",
+      "bytes": 17408,
+      "sha256": "61ef1cdc4c99567d2fd3c6af4441fb82942c5aaf42837962975e1a2746ef0e3a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture-reopen-test-report.json",
+      "bytes": 2496,
+      "sha256": "3ff5f584ddb6b14338dc539b4bea213859ae2744146d593145969cc49d31314f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture-test-report.json",
+      "bytes": 9888,
+      "sha256": "e9277cc56a4a354a9261596920dd7eba5d8605b037bfaed650b61260ed8f4662"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/architecture_reopen-host.log",
+      "bytes": 1486,
+      "sha256": "d3fe257b0d027ac6bcc1a7e4485d52ee77ae4dc2e2248623199786c893132641"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-host.log",
+      "bytes": 35760,
+      "sha256": "c253e7cff8dcc9dfb2a99bda5de4383f27bf5a51a4e445747985a7e5b1591dfd"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-ifc-failure.json",
+      "bytes": 46020,
+      "sha256": "14c77e2e89368cbd5ca00c63bc0296125191e3b7090c6b52ff69f02fb35e9969"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-reopen-test-report.json",
+      "bytes": 77734,
+      "sha256": "ea4bcbfb8bd5598bf7ff31359106a05e53941d3fac092e6f645dbf551ec8aba3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-snapshot.json",
+      "bytes": 78910,
+      "sha256": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building-test-report.json",
+      "bytes": 113164,
+      "sha256": "424e0d640022e0f05a702daeaf4fe69072491f9f1302b0a96b5b10a7feb666c7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/building_reopen-host.log",
+      "bytes": 6847,
+      "sha256": "f3fc4bf5d00719fdcd989fe8e1ea0643376f8149e75533635609f2779dc115b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/coverage.csv",
+      "bytes": 603,
+      "sha256": "4ec93bdb952cd27eeb0e9cdd56459d958d1029a10fef4409c35d1fac932138fc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/coverage_csv_metadata.json",
+      "bytes": 16305,
+      "sha256": "17eb4275eafc6ffee02e1c32adbb92bd0c676c11057c924220c40f9ddb511628"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/coverage_doors.csv",
+      "bytes": 514,
+      "sha256": "2124103de72d9b7b7cdc82326f3497cd59cfa192a054dfdd99ca1a4bfd7b97da"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange-host.log",
+      "bytes": 11353,
+      "sha256": "238c69dd8c58be42bfdb18d13357113bfdf3209fa016689721eed4b54cb47df4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange-reopen-test-report.json",
+      "bytes": 2836,
+      "sha256": "ce63327c3822370823dac89120d59e5e960fdec956a52fec94927a877be9f2d7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange-snapshot.json",
+      "bytes": 17946,
+      "sha256": "2261d6793237e10d1dfe8f501843870be7cfa0f056b7f635649da137fac983b7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange-test-report.json",
+      "bytes": 31691,
+      "sha256": "bcd96418b706f66e1108509db2ae90ef8ded8be17130ca86d8c26d40f382f789"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/exchange_reopen-host.log",
+      "bytes": 2644,
+      "sha256": "e28cae975f78ecb08156996401dbfa8a1f3e733534b0f5571be65fd05e7b84d4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/foundation-host.log",
+      "bytes": 2977,
+      "sha256": "bd530c5596c9a1b74c0cf729ff762981541425693ca019b55cac4883ac458f7c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/foundation-test-report.json",
+      "bytes": 4372,
+      "sha256": "05becdc58f53977f3682eeb5228aff191a5f420183b85e3c98a0b59662977757"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/install-report.json",
+      "bytes": 737,
+      "sha256": "6c8a4b25323ba525c09da8eff289f2c102c8e797b1b5069cf0eb2cedd010d739"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/qa-stale-lock-cleanup.json",
+      "bytes": 408,
+      "sha256": "6237603f896ea07589669df44e63e917193a5a758b1937cf83563d9faf007f30"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/reopen-test-report.json",
+      "bytes": 1434,
+      "sha256": "eb0f28b9ade989f8a33d3b675e4f3be4ee70f3d4e915facffe385808bb6f6f44"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/repeat.ifc",
+      "bytes": 14365,
+      "sha256": "fcdd0385358e3b7a50cd96fcab8c49ef8b5afb790d87d306ef5873f090176bdb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/repeat_ifc_metadata.json",
+      "bytes": 16847,
+      "sha256": "3930a081f4b43c86b3e73513b2631b2ec0b268db66a5440d953965f5ea335729"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+      "bytes": 8418,
+      "sha256": "36be3703417f64e58028d010accedc581e02be37176b6245866c93859501e1d1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/save_ภาษาไทย/Foundation.20261022-235454.FCBak",
+      "bytes": 4437,
+      "sha256": "e88cf2fe51fecebd938012973f6c47ddaa5b8b2be677e2ce1002873f0ae2b67b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4434,
+      "sha256": "80eda1903f06d68d8dc8b72716eecf029be6180d4504a3f38acebd60a912847e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+      "bytes": 16337,
+      "sha256": "0c3eff0ec89ee0dc755a19d6065a0a94fee126cdc99a33566d4e5bd857c338c3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+      "bytes": 54588,
+      "sha256": "a784c6303a5fb09eaae7cbe1a2a4f3854ccb7384ae9327c089aff11a7bc9897e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/spreadsheet_text.csv",
+      "bytes": 604,
+      "sha256": "9cfb8bd935447835ada93d7f72c912da670f4b757ab2c86c37e2fbc37b02c269"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/spreadsheet_text_csv_metadata.json",
+      "bytes": 14085,
+      "sha256": "a449fcd767c62217764744b208803610d569c6d30ce0d81e65bff18680af3489"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/spreadsheet_text_doors.csv",
+      "bytes": 502,
+      "sha256": "6306f6b6ecd531377a2ef76cb4a449357c4a3c2723db581593224b2bc9e611a1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "f79eca79dde110dc2a73899978a56bc11fdad5e405dc260960fd4c388ef8133a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/ปริมาณ.ifc",
+      "bytes": 14365,
+      "sha256": "fcdd0385358e3b7a50cd96fcab8c49ef8b5afb790d87d306ef5873f090176bdb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/ปริมาณ_csv_metadata.json",
+      "bytes": 14145,
+      "sha256": "7103c94f0b17ff94a04fd84ab5938fa69dd034acd0910d45e9d7405034a39254"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "d412283df903d9523e3864a22b9b3e731b029fba0c9868d7bb4f8af429ac636e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-native/ส่งออก_ภาษาไทย/ปริมาณ_ifc_metadata.json",
+      "bytes": 16859,
+      "sha256": "b94e710c42b1669566af40300661cdc962f98e5274ca4ba0bbeac7ad1e1b6247"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/export_publication.log",
+      "bytes": 1572,
+      "sha256": "9532e7581e5dae280fa06b8732a2a837e5d184ced493cfc906f3b6ece982f81f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/installer.log",
+      "bytes": 1268,
+      "sha256": "d62c430039e3d8f827b9f07a581675eb3cf5ad221ce91bb8e2a8a0a0d9050856"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/native_ifc_adapter.log",
+      "bytes": 2711,
+      "sha256": "46d93f109fe03c60ea6c76db7ffcdff2d94781a565557793241a758e504aba7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/reference_ifc.log",
+      "bytes": 504,
+      "sha256": "d63d2532ec7a6c3f5c1925272cc5b06d302443be1877e045f1a1182c74b3466a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/reference_model.log",
+      "bytes": 2000,
+      "sha256": "5d1672dcdcce791408c5b54ecd1a709a1623d1288d44e129df485d2f813ab401"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v030-unit/unit-test-report.json",
+      "bytes": 799,
+      "sha256": "ba519c7138dccdea9175d9b4d59990ca9f84753abee17470398e9266d969d94f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-6buh29ca/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30297,
+      "sha256": "b8814c822d8056875718acc3d34e1f7142ed179b07cf3f862f9d08e21abe0126"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-6buh29ca/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34608,
+      "sha256": "cd27d07a338b792209fd58473bd8941e5d7f5c7f7115b9fab36692865e1a69aa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-j_3v6k0n/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "e3f0da1595fca85c15894888df8e724cda39be63615f291d7120b48a3ba523de"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-j_3v6k0n/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "8f95685be76d429cd29d0e0db18cbfaa9acf61c7db3766d62784839dd1e61fcf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-jhw_w_f3/A201.svg",
+      "bytes": 299744,
+      "sha256": "0d83542e9b72a47fc4368bca7388f8ee61718f1c64ace6e2aec3586b24f6a3a6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-jhw_w_f3/A201_svg_metadata.json",
+      "bytes": 146558,
+      "sha256": "c259f4d87467b5446e887c5206a99064495a488e0e834245dd1af4ba64ef97e4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-n5zhjy0n/A101_Reopened.svg",
+      "bytes": 303729,
+      "sha256": "1f8df1574b5177f79defa5bd5e4d7ab395d9d83e9c34021f233a68f9e5fc0991"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-n5zhjy0n/A101_Reopened_svg_metadata.json",
+      "bytes": 152220,
+      "sha256": "57f052c8fd7b8eb72a743a5b2db063587b47081170aa22e58094ff2e0eb99e60"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-ob2ff29z/A101.svg",
+      "bytes": 303729,
+      "sha256": "1f8df1574b5177f79defa5bd5e4d7ab395d9d83e9c34021f233a68f9e5fc0991"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/.3117-export-ob2ff29z/A101_svg_metadata.json",
+      "bytes": 152237,
+      "sha256": "33c487a6cbd750afc2ddf658ba6a20e42c1a28c91df105493e07639a7741a907"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101-capture.json",
+      "bytes": 106327,
+      "sha256": "26a47f38c1eab201ff4d51a93529a33f19084235eade8713500f8bb090821cc0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101.svg",
+      "bytes": 303729,
+      "sha256": "1f8df1574b5177f79defa5bd5e4d7ab395d9d83e9c34021f233a68f9e5fc0991"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101.svg.3117-export.lock",
+      "bytes": 24,
+      "sha256": "ec3e047e62e48bd59a2cea1f18a015547bad947f3a84444bb03fd130b0e6e5a8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_Reopened.svg",
+      "bytes": 303729,
+      "sha256": "1f8df1574b5177f79defa5bd5e4d7ab395d9d83e9c34021f233a68f9e5fc0991"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_Reopened.svg.3117-export.lock",
+      "bytes": 24,
+      "sha256": "d0cac1ebc260d52139be88070d169fb4c8c3ca9b6d4e422fe0488eabe2659028"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_Reopened_svg_metadata.json",
+      "bytes": 152220,
+      "sha256": "57f052c8fd7b8eb72a743a5b2db063587b47081170aa22e58094ff2e0eb99e60"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_Reopened_svg_metadata.json.3117-export.lock",
+      "bytes": 24,
+      "sha256": "d0cac1ebc260d52139be88070d169fb4c8c3ca9b6d4e422fe0488eabe2659028"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_svg_metadata.json",
+      "bytes": 152237,
+      "sha256": "33c487a6cbd750afc2ddf658ba6a20e42c1a28c91df105493e07639a7741a907"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A101_svg_metadata.json.3117-export.lock",
+      "bytes": 24,
+      "sha256": "ec3e047e62e48bd59a2cea1f18a015547bad947f3a84444bb03fd130b0e6e5a8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A201-capture.json",
+      "bytes": 101592,
+      "sha256": "00cff1a00c75486b229231a1155f8b5411959ef7ba60a4d331e723ee2628cd23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A201.svg",
+      "bytes": 299744,
+      "sha256": "0d83542e9b72a47fc4368bca7388f8ee61718f1c64ace6e2aec3586b24f6a3a6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A201.svg.3117-export.lock",
+      "bytes": 24,
+      "sha256": "ec3e047e62e48bd59a2cea1f18a015547bad947f3a84444bb03fd130b0e6e5a8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A201_svg_metadata.json",
+      "bytes": 146558,
+      "sha256": "c259f4d87467b5446e887c5206a99064495a488e0e834245dd1af4ba64ef97e4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/A201_svg_metadata.json.3117-export.lock",
+      "bytes": 24,
+      "sha256": "ec3e047e62e48bd59a2cea1f18a015547bad947f3a84444bb03fd130b0e6e5a8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Architecture_Reopened.FCStd",
+      "bytes": 8418,
+      "sha256": "dca2cf543ebf0aeeed3db1e869a8291956e1058c05b45087ae0e16dfbb11aedb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Reopened.ifc",
+      "bytes": 124944,
+      "sha256": "10a52527de809656955340a90273f1cb31cfda5c36e20ec3ac49fc911ca7ddf4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Reopened_ifc_metadata.json",
+      "bytes": 154161,
+      "sha256": "53225122e4f40f738d8ad95505ceb2c049bcb56a7a52baac400096ae47d56236"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench.csv",
+      "bytes": 3134,
+      "sha256": "34a9e0be5f27733db6bb24ce838a3b15134fb3eb64530b5ad2985f3e8926c6cb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench.ifc",
+      "bytes": 124944,
+      "sha256": "45cc3518961ebe0de5ba1940067cded6a625b0831f664a9b79344eb815050ae9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_beams.csv",
+      "bytes": 2796,
+      "sha256": "da06b42f0aa4d44ba34cb6b5714e24a093e5a64a819432c09a0f1fc99f9418b9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_columns.csv",
+      "bytes": 3188,
+      "sha256": "d88c830bf5174e66d8a99d96a04c48ea9ce4fb7d9004d9e6e89fad877627cf45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_csv_metadata.json",
+      "bytes": 107791,
+      "sha256": "d92871deb8715316eebb43bf88ca00a08cba8c0e9398dc694cf3529ce33f8eba"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_doors.csv",
+      "bytes": 821,
+      "sha256": "45967272a7543c1960af7fcee1d05aa852441eaabb6204f5d4188b025410e626"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_ifc_metadata.json",
+      "bytes": 154009,
+      "sha256": "d7dc184eafc373d4722d430d0879bca5900e54eb40c0b66ee2149b6d1e08486c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_slabs.csv",
+      "bytes": 976,
+      "sha256": "86138b99719fcef9aed41fb05c6b05fab3399cc3a0bbce81136cc27573fce112"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_windows.csv",
+      "bytes": 1325,
+      "sha256": "66346e38465ee02113231bcbeaf856bc90eb3530531537d9d9818f8aaf9b48da"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Drawings_Workbench.FCStd",
+      "bytes": 56489,
+      "sha256": "6ca93196b59ad03d69456a59fbe1de6a818aaabd28b25bb47d142dddfe6acfd0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Foundation_Reopened.FCStd",
+      "bytes": 4442,
+      "sha256": "9605ce8552c0f622486002b2057446ddc1c092bc072ea6891841824542af80b8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Reopened.ifc",
+      "bytes": 30297,
+      "sha256": "e4749be45feecace41da1eed660499fb782a99543133b07c2dd28c5f241ad155"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Reopened_ifc_metadata.json",
+      "bytes": 34627,
+      "sha256": "7d980ec9f7924375431c3a082cbdc7a7aa66e250eb75e5feec27d95a19f5f44e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench.csv",
+      "bytes": 1352,
+      "sha256": "c3d1b61593c5734f7734923830ccde4b463fc3cfe8bc799b85ae0556f0882108"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench.ifc",
+      "bytes": 30297,
+      "sha256": "b8814c822d8056875718acc3d34e1f7142ed179b07cf3f862f9d08e21abe0126"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench.ifc.3117-export.lock",
+      "bytes": 23,
+      "sha256": "8507f59f7214e9182fce187802ee886ce90dd3c3736b4e803cfa589c71497b45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench_csv_metadata.json",
+      "bytes": 27350,
+      "sha256": "171f1ff61714580b4da7eaae208d4755c4621aa41fe7358efa09e1c262b47b0f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench_doors.csv",
+      "bytes": 1157,
+      "sha256": "c19aa7fda91435b555ae25ed493bcf9307427523829d4cfcbadf108c0f43bc26"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench_ifc_metadata.json",
+      "bytes": 34608,
+      "sha256": "cd27d07a338b792209fd58473bd8941e5d7f5c7f7115b9fab36692865e1a69aa"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/Quantity_Exchange_Workbench_ifc_metadata.json.3117-export.lock",
+      "bytes": 23,
+      "sha256": "8507f59f7214e9182fce187802ee886ce90dd3c3736b4e803cfa589c71497b45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture-host.log",
+      "bytes": 16690,
+      "sha256": "e29d511bed8f43c1780ee77414f6948f73ad9c1920da727ca2d444a94369efb1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture-reopen-test-report.json",
+      "bytes": 2502,
+      "sha256": "5dd1072f5c7a51c64c8d2eaedf68038e9ec42f3bdefdf650e0854d5329176682"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture-test-report.json",
+      "bytes": 9894,
+      "sha256": "27f0c9f0f9f0b4f363fbb268511b5e7bdcfee69fd1c4cecc1b6bb52b1e9b5f51"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/architecture_reopen-host.log",
+      "bytes": 1486,
+      "sha256": "d3fe257b0d027ac6bcc1a7e4485d52ee77ae4dc2e2248623199786c893132641"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building-host.log",
+      "bytes": 34166,
+      "sha256": "7aa9c900b8232e7771fdd897c75c5a4435b86dad4477e34e9cc21857cee7ae3d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building-reopen-test-report.json",
+      "bytes": 77758,
+      "sha256": "4d6c0d1a595c012c4c73214f3b093cc9806b682a9c01f85f9b9890ab357fe6b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building-snapshot.json",
+      "bytes": 78910,
+      "sha256": "0cb051bc958c3ba6aa44c9b95d45e3f91f8fc4418804749ecb2c329ef12e5ff7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building-test-report.json",
+      "bytes": 114677,
+      "sha256": "defd71ae2ca543df6a83b15f7de7012ca0cfa8f242ad584a6e4e5db00525d30a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/building_reopen-host.log",
+      "bytes": 6847,
+      "sha256": "f3fc4bf5d00719fdcd989fe8e1ea0643376f8149e75533635609f2779dc115b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/coverage.csv",
+      "bytes": 603,
+      "sha256": "234289dc7da2415b17dd0a25f7f317321a7f20f089cca85114f4a51602c71bb8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/coverage_csv_metadata.json",
+      "bytes": 16305,
+      "sha256": "93ed039679741dcfe8e636f18756f14fbf7df489eae934f2506f9e14b3047f08"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/coverage_doors.csv",
+      "bytes": 514,
+      "sha256": "afba49d0864a8a9031c111537cee7044d42b220251d6991e609509aa56a09c72"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-geometry-test-report.json",
+      "bytes": 4034,
+      "sha256": "41ba920981eb1e24fdadd1dc23a0124d4da0eb2211e3d1136524377867095b79"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/.3117-export-zt4ifjn3/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "dece1f3fd5cc0695029e59d1d292639085f0344e590692f3b0d039d13395f5ff"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/.3117-export-zt4ifjn3/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "7de2daccb12b0f2ab934575cd09f6f7e1cb935055a0b93bf60e188a7d45eeba5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/drawing-render-test-report.json",
+      "bytes": 4925,
+      "sha256": "92e12e0c05dec5a5e5e138e5f51614c45c92ea697d998e083342833260bde76a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "dece1f3fd5cc0695029e59d1d292639085f0344e590692f3b0d039d13395f5ff"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/drawing-render.svg.3117-export.lock",
+      "bytes": 22,
+      "sha256": "7e47e11d18c27228e48f629e898ef25dff99938c10bbc27e9fc38020998abfac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "7de2daccb12b0f2ab934575cd09f6f7e1cb935055a0b93bf60e188a7d45eeba5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-219sdd3f/drawing-render_svg_metadata.json.3117-export.lock",
+      "bytes": 22,
+      "sha256": "7e47e11d18c27228e48f629e898ef25dff99938c10bbc27e9fc38020998abfac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/.3117-export-klzkpvic/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "fede361f84d324c2a229c89917538a3449f4e634117ef5d12626ad4cf2c553ae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/.3117-export-klzkpvic/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "de9924924c7781143086327dbb6c5ba03ffacd25717d4ff25446afd1bea36420"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/drawing-render-test-report.json",
+      "bytes": 4925,
+      "sha256": "5c5a678df7f768cc0c5088fb4d038c239c29b14be872db4dfc9987ad1adfc380"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "fede361f84d324c2a229c89917538a3449f4e634117ef5d12626ad4cf2c553ae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/drawing-render.svg.3117-export.lock",
+      "bytes": 22,
+      "sha256": "7e47e11d18c27228e48f629e898ef25dff99938c10bbc27e9fc38020998abfac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "de9924924c7781143086327dbb6c5ba03ffacd25717d4ff25446afd1bea36420"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-case-mi5bd5d4/drawing-render_svg_metadata.json.3117-export.lock",
+      "bytes": 22,
+      "sha256": "7e47e11d18c27228e48f629e898ef25dff99938c10bbc27e9fc38020998abfac"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render-test-report.json",
+      "bytes": 5448,
+      "sha256": "e06b7e34b67b91cdce23038dcdbef6dba91986eea9464b5c5fed2df5b1d16427"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render.svg",
+      "bytes": 268585,
+      "sha256": "e3f0da1595fca85c15894888df8e724cda39be63615f291d7120b48a3ba523de"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render.svg.3117-export.lock",
+      "bytes": 24,
+      "sha256": "8a3a54bd6abfd6da3a97e0dd088387db10845fcb04a9bfa6d48075c9941e2057"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render_svg_metadata.json",
+      "bytes": 44300,
+      "sha256": "8f95685be76d429cd29d0e0db18cbfaa9acf61c7db3766d62784839dd1e61fcf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing-render_svg_metadata.json.3117-export.lock",
+      "bytes": 24,
+      "sha256": "8a3a54bd6abfd6da3a97e0dd088387db10845fcb04a9bfa6d48075c9941e2057"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing_geometry-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing_geometry-host.log",
+      "bytes": 250,
+      "sha256": "57274995eb8a355f2fd30759d05fa8d9d5d5afc9442c3becb5ecd43eb92a54eb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing_render-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawing_render-host.log",
+      "bytes": 5940,
+      "sha256": "55fd55d664920db8bb778391fb8725342b610757b881936a063c164faa29cd36"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings-host.log",
+      "bytes": 52587,
+      "sha256": "b525f1f77f6dd1c8213ce4162ca610e11f776c48d0696cfd78e5629012b2c9e3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings-reopen-test-report.json",
+      "bytes": 7729,
+      "sha256": "17145137770de6a9c7e7023a18d39e092269a7edcfc8b08844b0d22f84e38a1a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings-test-report.json",
+      "bytes": 23203,
+      "sha256": "fefe44366f7208d9f08be9c9c0b8b376eb5c87beaf80d577722f6bae49941a3c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/drawings_reopen-host.log",
+      "bytes": 11718,
+      "sha256": "73f537ca9cd0625d38f5acd50375d3bfd37a667ed86072384f91c97c847b3bae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange-host.log",
+      "bytes": 11343,
+      "sha256": "e0987f151ee53363d2d7e7245f73b7adef9125ad320c0311d13e9a58b9a093f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange-reopen-test-report.json",
+      "bytes": 2842,
+      "sha256": "9229436949c1067d0c936ba8e93f487d09d3d9941652a0328ed7ae1c85723b46"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange-snapshot.json",
+      "bytes": 17946,
+      "sha256": "cc6cacbab7a39a04db4f098e89c479d04a717c7bbbd7540731dbf17fb4e8129a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange-test-report.json",
+      "bytes": 31745,
+      "sha256": "e8510bae34e2d74ef2479ff01352722358dfdbf951da966d6e7fb6ddacd60458"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange_reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/exchange_reopen-host.log",
+      "bytes": 2644,
+      "sha256": "e28cae975f78ecb08156996401dbfa8a1f3e733534b0f5571be65fd05e7b84d4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk/payload.txt",
+      "bytes": 15,
+      "sha256": "d7c152406147dad9ec509d1ff3985cdd86ca8cf23c681f730a036b672086aad0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/metadata.json.3117-export.lock",
+      "bytes": 22,
+      "sha256": "22080df2fa090e10c3b3e7a85b9c5220ffae2e214a55f106c82e546e1305f9f3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/payload.txt",
+      "bytes": 15,
+      "sha256": "d7c152406147dad9ec509d1ff3985cdd86ca8cf23c681f730a036b672086aad0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/payload.txt.3117-export.lock",
+      "bytes": 22,
+      "sha256": "22080df2fa090e10c3b3e7a85b9c5220ffae2e214a55f106c82e546e1305f9f3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe/payload.txt",
+      "bytes": 15,
+      "sha256": "d7c152406147dad9ec509d1ff3985cdd86ca8cf23c681f730a036b672086aad0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/metadata.json.3117-export.lock",
+      "bytes": 22,
+      "sha256": "eba1b8762fd421556ab51476da75b1d68ff0da9a4d7c6a921f0490a2368b7e11"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/payload.txt",
+      "bytes": 15,
+      "sha256": "d7c152406147dad9ec509d1ff3985cdd86ca8cf23c681f730a036b672086aad0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/payload.txt.3117-export.lock",
+      "bytes": 22,
+      "sha256": "eba1b8762fd421556ab51476da75b1d68ff0da9a4d7c6a921f0490a2368b7e11"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-probe-freecad-rpl0q2fk/bundle/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-probe-freecad-rpl0q2fk/bundle/payload.txt",
+      "bytes": 17,
+      "sha256": "c9a6458180ec9ff87f580a0c2286b1c37dda811bd27ac717123869c3357296d1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-probe-plain-5tbp0pex/bundle/metadata.json",
+      "bytes": 17,
+      "sha256": "ccbc6726842d83aea07933c211d212d83713fd67442f8d13bd743ad93fb89bc3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/filesystem-probe-plain-5tbp0pex/bundle/payload.txt",
+      "bytes": 17,
+      "sha256": "c9a6458180ec9ff87f580a0c2286b1c37dda811bd27ac717123869c3357296d1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/foundation-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/foundation-host.log",
+      "bytes": 2973,
+      "sha256": "2305da3ad6102d01143964c177fb742fd859b82d912db61e5240f55cdc7c895a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/foundation-test-report.json",
+      "bytes": 4378,
+      "sha256": "d34f10758a5e5def22082b4959738d1bd3a067312c6a25003c0bc794440c4a4e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/install-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/install-host.log",
+      "bytes": 240,
+      "sha256": "f4432b33f80b96889d2ba347c68f242c2817332c294fa2aede4905813ddcaa7e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/install-report.json",
+      "bytes": 628,
+      "sha256": "99d03d0b783dd3825a637cf592bbfa0e83a000750dc08d6cd74a43aaea6f9e7f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/native-process-manifest.json",
+      "bytes": 11824,
+      "sha256": "af03156f128d9377f46bcf59ee177ee313363e05eecda4e0a4cc7b131f6e8c7b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/reopen-exit-code.txt",
+      "bytes": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/reopen-host.log",
+      "bytes": 626,
+      "sha256": "e63e709cd3360d953fc54ab9b2c6ba635972fab8de3f9e62aaa4c76eb771cb59"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/reopen-test-report.json",
+      "bytes": 1440,
+      "sha256": "bb9596c8df256f560a5d9e38e3bb73e65ae0392d25d6f6b3390619052bbe0185"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/repeat.ifc",
+      "bytes": 14365,
+      "sha256": "d8b6e91f2819ee37c18d53ff084dc9641dcd93bf6978c12c74b60c7e2dda0af6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/repeat_ifc_metadata.json",
+      "bytes": 16847,
+      "sha256": "de43fb89dbc7558b2bd3110fd46cb29b4c839a2644c2b41eb31e952afb5fd975"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+      "bytes": 8419,
+      "sha256": "9a8c21b9e66734769556599dd42328b465b2229aa372b7c5f40a0f9fc8b5d89e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/save_ภาษาไทย/Foundation.20261023-004919.FCBak",
+      "bytes": 4437,
+      "sha256": "f45b1b0331d86b9f9e87ae809664f6a54d42c1f15d777f7f041e19109e991f62"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/save_ภาษาไทย/Foundation.FCStd",
+      "bytes": 4434,
+      "sha256": "e7181da7f5c3cfe5deea04a9ad09e443677d028a4b6cb4b1f800f593070573c5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+      "bytes": 16330,
+      "sha256": "d72546ea445835d8c01b7630245195717b8b431c3bb248f7764e396e20a11ceb"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+      "bytes": 54555,
+      "sha256": "3a64b27ad881c54a8d59e855aa9ee243394d9d140ff82b71af9dd9459df4f456"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/.3117-export-rl3zgg30/ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "9d8cb118cb47eb7de24872d958d835ee3b62cc4d89c7e7598f4e552a53acc398"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/.3117-export-rl3zgg30/ปริมาณ_csv_metadata.json",
+      "bytes": 14145,
+      "sha256": "d0f427d612de14313eb1d79121ff8213e7488db917b692fc8649b525e0905831"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/.3117-export-rl3zgg30/ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "2b89272a5af041ec369819f51d64ad055955bc90667e57c008117f3143163258"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/spreadsheet_text.csv",
+      "bytes": 604,
+      "sha256": "79402dd6f05a2ea52878d36f40c9288651a0450a86c27f2804f01ec9668df388"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/spreadsheet_text_csv_metadata.json",
+      "bytes": 14085,
+      "sha256": "bd12970ec9c59c27b233ae0869909e2a37e2241c8274360f3ea422fa9266ab23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/spreadsheet_text_doors.csv",
+      "bytes": 502,
+      "sha256": "855d51d90295fb69bba9148f20f3c9bb20ed449156fd5fcfb6bcfc1cd6a4d436"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ.csv",
+      "bytes": 603,
+      "sha256": "9d8cb118cb47eb7de24872d958d835ee3b62cc4d89c7e7598f4e552a53acc398"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ.csv.3117-export.lock",
+      "bytes": 23,
+      "sha256": "8507f59f7214e9182fce187802ee886ce90dd3c3736b4e803cfa589c71497b45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ.ifc",
+      "bytes": 14365,
+      "sha256": "57ff4850c648242028ee6171c689f03305ebe58526a11847c162662b67e92899"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ_csv_metadata.json",
+      "bytes": 14145,
+      "sha256": "d0f427d612de14313eb1d79121ff8213e7488db917b692fc8649b525e0905831"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ_csv_metadata.json.3117-export.lock",
+      "bytes": 23,
+      "sha256": "8507f59f7214e9182fce187802ee886ce90dd3c3736b4e803cfa589c71497b45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ_doors.csv",
+      "bytes": 514,
+      "sha256": "2b89272a5af041ec369819f51d64ad055955bc90667e57c008117f3143163258"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ_doors.csv.3117-export.lock",
+      "bytes": 23,
+      "sha256": "8507f59f7214e9182fce187802ee886ce90dd3c3736b4e803cfa589c71497b45"
+    },
+    {
+      "path": "inputs/3117-bim-studio/out/v040-final-native/ส่งออก_ภาษาไทย/ปริมาณ_ifc_metadata.json",
+      "bytes": 16859,
+      "sha256": "ca198cc6ef7d7f3039f5a00c229db33fb6d06b6e1ed9befb75f3992625e2ee3c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/CI_HOSTS.md",
+      "bytes": 8434,
+      "sha256": "8e78371728a51e6646ef9d79ffd8e076440ff2f5752fc19c6e8c629e910f83de"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/INSTALL_TH.md",
+      "bytes": 24151,
+      "sha256": "ad7868c20aea545215d3e177d4203f0dc972f7772c8427adf295312242d011f6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Install_3117_BIM_Studio.FCMacro",
+      "bytes": 1640,
+      "sha256": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Manage_3117_BIM_Studio.FCMacro",
+      "bytes": 1487,
+      "sha256": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/README.md",
+      "bytes": 6100,
+      "sha256": "528a1523aa7f65d099550055263a127876413119f4a0bf719cdac90d4433c14e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Architecture_Test.FCMacro",
+      "bytes": 2740,
+      "sha256": "636b48bdb0db0a8fa467c51c5f5f103070c03105de0a79be1505c618bb7a23be"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Building_Test.FCMacro",
+      "bytes": 2991,
+      "sha256": "cf02a8ef4ec0cd87dd947e42832ad89ae4192748b2d3b057a29f653fa5b69aa5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Drawings_Test.FCMacro",
+      "bytes": 2885,
+      "sha256": "553449ef38da90e79cf53625049f8e0e23a74bf9e9d1dc0c7d48c55aa52e7e53"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Exchange_Test.FCMacro",
+      "bytes": 2929,
+      "sha256": "3baebd70592a6bcc45197079b4db7d437e5cc708fdd808de9ab9cf410c6d1853"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Smoke_Test.FCMacro",
+      "bytes": 2404,
+      "sha256": "fc87af0a0a0dae2036a5c2bb581db61b344705081a1f0c834022c4386af41e19"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/Run_3117_Types_Test.FCMacro",
+      "bytes": 3003,
+      "sha256": "60278d5999ccd27f33474d4dc45843ebdad73c1e4fe60dc4822bcf60c9deb4ea"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/freecad_installer_ui.py",
+      "bytes": 5280,
+      "sha256": "61c0d305f0b85c5c5fadc58bcec6d57f1fc16a90d494dc17e21c485606d894a1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/install_support.py",
+      "bytes": 9608,
+      "sha256": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/packaging/tests/test_install_support.py",
+      "bytes": 5808,
+      "sha256": "90ccadcd36799f8280caba1e132cf1d1a40096a5762953a3610ba8ae473eab29"
+    },
+    {
+      "path": "inputs/3117-bim-studio/pyproject.toml",
+      "bytes": 547,
+      "sha256": "cc11fed432718633a0ff2cdebdea64061c8ff76179ab9ca3f34a50cd96c4a9cf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/scripts/build_workbench_package.py",
+      "bytes": 10914,
+      "sha256": "89bdc72419907db85044b8f94272f5b74a70a62e5998d0aa0da688f3da1a2bce"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/__init__.py",
+      "bytes": 304,
+      "sha256": "e6ac810819ed7d4f195d0fe7c3b0522a4e6bb9fbee4cd594cd9b518df9cdbec2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/__main__.py",
+      "bytes": 1559,
+      "sha256": "f7400f401db6c885838075d14ed93e4a3608176924f942393224d7b897ce8979"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/demo.py",
+      "bytes": 806,
+      "sha256": "394c894461606feac2d97905944a4877136ba86a91c8163f0d7e16cbd490fdf1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/ifc_export.py",
+      "bytes": 6645,
+      "sha256": "b6fa14ef71631f911ae130a5a0e5782d34aa1e81dbaed2e9aacbaf2a94b324a5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/io.py",
+      "bytes": 787,
+      "sha256": "c47f17677c362f79de95125c1aed07eae7901e29d84f6157e4ccd472139905f0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/src/bim3117/model.py",
+      "bytes": 14422,
+      "sha256": "04c8b3c3edd3420f3cbf9e64ad6f2653883b3f13cc4055f91f106826e779f947"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/bonsai_building_review.py",
+      "bytes": 21770,
+      "sha256": "a27b018897429128503a48c33c0e850b0a0186cac1e843b9731a38ce286ecad6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/bonsai_exchange_review.py",
+      "bytes": 14216,
+      "sha256": "4f2da9b81dc36efab0bd2b240ea205b6c08647bf2055f71bd830716a9000a5d2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/bonsai_types_review.py",
+      "bytes": 19182,
+      "sha256": "d141ce6b4ae78498ce6db6a4afe4fadeff3b73d77714c7d0db8f434d1be7d6e8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_architecture.py",
+      "bytes": 28867,
+      "sha256": "04172806b21a21a4a9e6fac37012fdecd34afd9d2ec914cba376dcffdeaaaaa9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_architecture_gui.py",
+      "bytes": 22471,
+      "sha256": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_architecture_gui_reopen.py",
+      "bytes": 5865,
+      "sha256": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_architecture_reopen.py",
+      "bytes": 5446,
+      "sha256": "f9c865ab52b7d7610bd19dd9517cc193cfdef0bf77ebc3886b4809daa7cb4273"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_building.py",
+      "bytes": 29703,
+      "sha256": "55987e60ea0f7c6f71e6fe9878c2d33d44fbace772ef6aa29859204eff9233a7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_building_gui.py",
+      "bytes": 34083,
+      "sha256": "00fdd5a9b87216f96ac52cc78c030bad671979a1ca5d592b49bd7ed7022f8909"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_building_gui_reopen.py",
+      "bytes": 6992,
+      "sha256": "e2fadb975ca38e1ab417513e26ce5c2ac9668d65fafe13d75cf895cc5ba22aae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_building_presentation.py",
+      "bytes": 16583,
+      "sha256": "e6cbe0338883da041e9064f0c4c5b24a876ef60be6b701ba4a3a9197abb134f2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_building_reopen.py",
+      "bytes": 4847,
+      "sha256": "8cac94c69f6cf9da584392d92f88f17f98ca4881b90150bde99627089164ecef"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawing_geometry.py",
+      "bytes": 10645,
+      "sha256": "6993422af2fa6a1f905e12b49f8a3f713d3a393551e51c878cdff43737994307"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawing_render.py",
+      "bytes": 13945,
+      "sha256": "b9785bf6ce583f7d015fb37beafa9e495f3a38fa3705a033708783fb93aa2acf"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings.py",
+      "bytes": 26319,
+      "sha256": "9dcef531856f7c7ce193d18cdf9abd2789dd5550d127e09613354b826c9a0f35"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings_exchange.py",
+      "bytes": 18737,
+      "sha256": "ec50cc4bf509d9eb5f077fce552bd9c29234687151dd7e989a61067c76b4d718"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings_gui.py",
+      "bytes": 26733,
+      "sha256": "43ca2af46ed65f712850e847fd688e6300590073d31aea7377b1bfd452c76447"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings_gui_reopen.py",
+      "bytes": 6242,
+      "sha256": "9afbd5e83784d8aa764099ebed23a4b4cc42be621ea039ee5b5a9a4c00058097"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings_presentation.py",
+      "bytes": 8388,
+      "sha256": "0cc6e3f491d39956a7e9c7e8f85f24a5af0e14973dff2ced564f7c204751a81b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_drawings_reopen.py",
+      "bytes": 9349,
+      "sha256": "73d85c87c7bb8e3318af1fbdbb880c3d612af3c53fe978f16ed34ef3b2eee8a4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_exchange.py",
+      "bytes": 23446,
+      "sha256": "f3ab6720a8d0f615b041c01e1ca9e0ac7a79b048b8fd63edfebe76387aa7e259"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_exchange_gui.py",
+      "bytes": 21043,
+      "sha256": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_exchange_gui_reopen.py",
+      "bytes": 4233,
+      "sha256": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_exchange_reopen.py",
+      "bytes": 4616,
+      "sha256": "92dcccf82fb28901f44005ef097b6ceaef1951b6dd8758afa6bf566f9c634c43"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_foundation.py",
+      "bytes": 12367,
+      "sha256": "105b521552c3aa3f41af729ce2736288e909ec918fc3fb5919402c6b8d821c23"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_gui_reopen.py",
+      "bytes": 3482,
+      "sha256": "a49b213f7b8547764da16f55793fd27bce1e25f3de9ca3c985e2d69f723150c4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_gui_smoke.py",
+      "bytes": 13592,
+      "sha256": "d5283fe35a4c4d1ffe258da8857b9739f83b3e3bf00aa11bddd96d0f2bec427b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_headless_gui.py",
+      "bytes": 9627,
+      "sha256": "5cf1b6479a5c2aa8efc785ffcd40e9838306042e2aac1b839add833561a245d5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_headless_gui_reopen.py",
+      "bytes": 3794,
+      "sha256": "5b1be4f4a62a5c57e8d18f226964f1c9f1a5f11973fc1d5c8f4c78d787874686"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_reopen.py",
+      "bytes": 3710,
+      "sha256": "100dc1d1f899d3af42bde596916d0a00b14db7d2ad0188d4a3ac85c637b953b5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_schedules.py",
+      "bytes": 19066,
+      "sha256": "7d9d87cf4a24124b090154930588a387064c8b438b43784d4a04163ec65df57e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_schedules_reopen.py",
+      "bytes": 6224,
+      "sha256": "c43d56bd134dff8fa695cd9626bc44e43c100a36aef49f0ca3abbf4a81c6f969"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types.py",
+      "bytes": 20276,
+      "sha256": "b2dec99a02e1955171d91db0bfae4388383da45cf773f06285cf3ea70a26cab2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types_exchange.py",
+      "bytes": 22250,
+      "sha256": "047fd0c2d050e9df6d7d1596f2261b1a35c099adc0e87d7482b689a55853e7e0"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types_gui.py",
+      "bytes": 32522,
+      "sha256": "0a8c205695ae50f819993e79609206e8e3624a6a14640c257e875d854c97010c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types_gui_reopen.py",
+      "bytes": 11037,
+      "sha256": "b75152984bb170cf2d73388fad0207ca5a745261d785ebc10636c27d5d61a656"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types_presentation.py",
+      "bytes": 6416,
+      "sha256": "541e186c841937bb8297160eebc6dec28d00b54d5e87aa4e6098941a37fb2402"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/freecad_types_reopen.py",
+      "bytes": 6233,
+      "sha256": "cba562198ffe06fafb8ac81ec00e43266b36a4770e8fd7eb53509ec9985c92fd"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/pdf_drawing_review.py",
+      "bytes": 7126,
+      "sha256": "e6a44e01842b83649f9495421794748454eb06d53efb1087a649cacb01d3b14f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/run_freecad_tests.py",
+      "bytes": 3594,
+      "sha256": "15f4d23bd72b48db30e7ae2ad18281648cd1a999d00ee8292f28425caa56e4c7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/test_export_files.py",
+      "bytes": 6396,
+      "sha256": "45385d7ae4c583886b03bb5621df2a4ae4faa5e8ed4e45b0076c5df4c3fe75b8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/test_ifc.py",
+      "bytes": 3697,
+      "sha256": "0088f1debcfdb6c339fcbf714edf22c7b76c350ef9d00d723596d95ac1573084"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/test_model.py",
+      "bytes": 8217,
+      "sha256": "1d9b713fcf610343e1e1869abf7708c236c1121b54dfff0300965333397c72c9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/tests/test_native_ifc.py",
+      "bytes": 34513,
+      "sha256": "b47692be335ae064481d65b0d8ce674d9b771c122b19ea564e9b4ced36ca994d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/Init.py",
+      "bytes": 339,
+      "sha256": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/InitGui.py",
+      "bytes": 311,
+      "sha256": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/README.md",
+      "bytes": 1639,
+      "sha256": "d8391113c9cdb378ea1a141141c3e2f3bd56272555f24d954c0785298ae6af8a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/__init__.py",
+      "bytes": 171,
+      "sha256": "edf70e02ca2d6afd022a392b43b25ba46d5ac4d5ff2cde97a146a901d0d990c7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/building.py",
+      "bytes": 21798,
+      "sha256": "be21c13089ef6acf99a8ea9cf4984a36b07100ec313768844e2bf28fade2d80a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/catalog.py",
+      "bytes": 42625,
+      "sha256": "4ff39ee337bbbf2a5285fc72f75bb7caea70aaa149adbd27d8aa7c43cd83c0e2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/drawing_export.py",
+      "bytes": 13077,
+      "sha256": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/drawing_geometry.py",
+      "bytes": 14935,
+      "sha256": "98c8251d5c4ce1e6529475a97ed5f764ed29e8642a4ea284127bebb2de4c30ec"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/drawing_render.py",
+      "bytes": 27275,
+      "sha256": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/drawings.py",
+      "bytes": 29619,
+      "sha256": "6e82b3c4fc76098e9d4da0b349fd6eebe723c536edc785ecdcf45bb657246885"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/elements.py",
+      "bytes": 21942,
+      "sha256": "bc83505e537c2d1f5bc165b2780cdfd2b0803de70f0e48c462cc00c9cb0a2a07"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/exchange.py",
+      "bytes": 11508,
+      "sha256": "47eb90bea02c18d58faea53cf9ad41cb3272bf54be5b352f9eef66245b6338e4"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/export_files.py",
+      "bytes": 4743,
+      "sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/fonts/OFL.txt",
+      "bytes": 4387,
+      "sha256": "b26cae1321380296ba8311b632a397d5eac11b47197f9d0aa0b9310f1531ad60"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/fonts/SOURCE.json",
+      "bytes": 946,
+      "sha256": "51b475510e81d0fbfaa542931636832be85edca72af9767486b597e329db1962"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/fonts/Sarabun-Bold.ttf",
+      "bytes": 89804,
+      "sha256": "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/fonts/Sarabun-Regular.ttf",
+      "bytes": 90220,
+      "sha256": "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/ifc_native.py",
+      "bytes": 72064,
+      "sha256": "9c9fe8e4ec1dc454a86dd72c7859f62a94b0e8167413d78b5c2df96cb17e79d8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/material_quantities.py",
+      "bytes": 10535,
+      "sha256": "672e71dd4288a37ebb7942ce43b6de11cddf7abfee35f40f939aa0a4b5b719c3"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/model.py",
+      "bytes": 20728,
+      "sha256": "8c212edd59e2de1b89ac8a4fa99235bf98d5a65313885d65974d92699842dfd9"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/schedules.py",
+      "bytes": 27330,
+      "sha256": "5673594d7478e4e3a198d7be171e7eb162290e4d85757e882ace0a3fc0c20abc"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/services.py",
+      "bytes": 36272,
+      "sha256": "6fdcc6c21b5e4997003677cd17a07fdf58f8dfaded6e62af58b6a72baa4160b2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/bim3117_freecad/snapshot.py",
+      "bytes": 29342,
+      "sha256": "53503cc5c79efe50ed13a560df54a1d54269872178929d43c99281df4090a157"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/package.xml",
+      "bytes": 690,
+      "sha256": "aa8e1767e16ee49cf89b240f638c81ffcb9589151cce07a62284197ad46b8f35"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/__init__.py",
+      "bytes": 342,
+      "sha256": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/building_dialogs.py",
+      "bytes": 20261,
+      "sha256": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/catalog_commands.py",
+      "bytes": 6828,
+      "sha256": "0659e82dcee8dc7b1e4f0718b7d39e51784af0d3e80d558d909f5357c011c79d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/catalog_dialogs.py",
+      "bytes": 14794,
+      "sha256": "b0829f6445379ac7090481ac8fe6060bf683ddf2e7ac8229a6063541df8e12d2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/catalog_panel.py",
+      "bytes": 13051,
+      "sha256": "89cb3e12900044d56456ff109a04a2096c3a6083d6b7424affbac89ba5ef5aec"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/commands.py",
+      "bytes": 31670,
+      "sha256": "c87391fb35de0b0865f13460828f39ee789bc6094eb4931e8c675ecd290fe7a2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/dialogs.py",
+      "bytes": 25181,
+      "sha256": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/drawing_commands.py",
+      "bytes": 8020,
+      "sha256": "7774894dcc1a9e467aa932f4fd1a966e5071a756dd81ea236f5b9716a82fe52a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/drawing_dialogs.py",
+      "bytes": 13376,
+      "sha256": "2fa7bdc256fd0ece02328ee9af97be4f211717fc02fe4adc5936316ad7afc673"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/drawing_preview.py",
+      "bytes": 23179,
+      "sha256": "79a8edf6c30bb818c2b30288bd3cf8509fdb96dd583cb77524f4afdcb25b7b0b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/exchange_dialog.py",
+      "bytes": 32362,
+      "sha256": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/beam.svg",
+      "bytes": 346,
+      "sha256": "1ebe9b42eed1d290a4290cc8aa3dea47dde442002b4b27bd14045db58bbdf849"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/catalogue.svg",
+      "bytes": 399,
+      "sha256": "33b906ad3e6d70efe88d139f98eaa88b74f83ed6bbf6127acae45901dcd68245"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/column.svg",
+      "bytes": 361,
+      "sha256": "74fbe20fb49c5c97f235ca07ece9a409d7d4929b8bbdf455f14a6734d41e3883"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/delete.svg",
+      "bytes": 357,
+      "sha256": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/door.svg",
+      "bytes": 443,
+      "sha256": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/drawing.svg",
+      "bytes": 452,
+      "sha256": "c46870e400472264e74cf3681d8dad14a54951c8c89d811ca5be4eccd7df2a0b"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/drawing_export.svg",
+      "bytes": 386,
+      "sha256": "4d99c9c36c11aa77f362f432316278ea38892d8330e88f7c5f2c7b0aea0e220a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/drawing_preview.svg",
+      "bytes": 479,
+      "sha256": "2da62039bb6dafbee6e6e54a8282d4d1d925dc981effafb580ad74562b581c97"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/edit.svg",
+      "bytes": 341,
+      "sha256": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/elevation.svg",
+      "bytes": 334,
+      "sha256": "3765ee23a0df006466b63632ba95609b4a196edd0916fbae9d8007745a398222"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/export_ifc.svg",
+      "bytes": 388,
+      "sha256": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/grid.svg",
+      "bytes": 342,
+      "sha256": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/info.svg",
+      "bytes": 294,
+      "sha256": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/join.svg",
+      "bytes": 390,
+      "sha256": "fd65af34fe918eec5e52dfc1cb817d7f311a498f665aba4a9340daee77ef4322"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/level.svg",
+      "bytes": 246,
+      "sha256": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/material.svg",
+      "bytes": 350,
+      "sha256": "7f50018d0cf6d5ec23438b7062b34f0ae96edaf361178af4873c267308ad11d5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/plan.svg",
+      "bytes": 379,
+      "sha256": "50aae068543ecd7407d22c2d550b039c4169c31879452cae923daca8e04abf8c"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/project.svg",
+      "bytes": 329,
+      "sha256": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/quantities.svg",
+      "bytes": 472,
+      "sha256": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/schedule.svg",
+      "bytes": 403,
+      "sha256": "202ffadc479d93de37a45906f3cf18ca67726ac676fe14a9a01348f2e7798050"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/section.svg",
+      "bytes": 364,
+      "sha256": "57ead555e969b187db13352df6c26d8bdb3ad60226c7e5a110c319b4297997b2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/sheet.svg",
+      "bytes": 404,
+      "sha256": "647ee4eb88893f1a98ead1b23aed8b18d9d52899a1026c3f51bb5ad6e54bde0e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/slab.svg",
+      "bytes": 375,
+      "sha256": "e16f013eaa9330055caa9fb64153eb2ed4289b0f843ee0ebea8a6891ee21fe88"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/unjoin.svg",
+      "bytes": 412,
+      "sha256": "70487b54b545e7b78e1f555babccc0f13697557d8e7571013bd1523fa5e840b8"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/wall.svg",
+      "bytes": 388,
+      "sha256": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/wall_type.svg",
+      "bytes": 366,
+      "sha256": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/window.svg",
+      "bytes": 304,
+      "sha256": "1bca8c9fbd7c54b44f3e013c5af642510bc4ba7142bc93772adc9f6ffe105ff2"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/icons/workbench.svg",
+      "bytes": 343,
+      "sha256": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/model_panels.py",
+      "bytes": 4549,
+      "sha256": "97f89a12c829d01836c0c6b7daf29275666a5cbc5b8681fbfc71276418659b5e"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/qt.py",
+      "bytes": 676,
+      "sha256": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/schedule_dialogs.py",
+      "bytes": 10481,
+      "sha256": "4c7038826bcea802b1e6738c06db44a7a0536ae4df8423bc030a3c8f4e23326d"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/schedule_panel.py",
+      "bytes": 17601,
+      "sha256": "de6b116ec1709173e4c05352711e244b3bd0545edc9999acdeb75b003ca4cf02"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/viewproviders.py",
+      "bytes": 25346,
+      "sha256": "9fae15b92ac4f99c4929bac94855b313add1a4d1591bb2245ac5bbc04ea33e25"
+    },
+    {
+      "path": "inputs/3117-bim-studio/workbench/ui3117/workbench.py",
+      "bytes": 4065,
+      "sha256": "ad6f924343bf171d1ea6a1baa440cf9dcbd2410dd27b75de08446e884c6d36bc"
+    },
+    {
+      "path": "inputs/3117_BIM_Studio_v0_5_0_FreeCAD.zip",
+      "bytes": 4554884,
+      "sha256": "ddfdaed0c10a4d93f4f9e808106f7c31db553d825619cd1ce39cd21ab70b9eb7"
+    },
+    {
+      "path": "inputs/package-gui/README.md",
+      "bytes": 6375,
+      "sha256": "21ff89d5fa6b31df1dd4d6ccd616501ab3b9c9d16ba655400a5ba44bb57318af"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/patched-host-01/SHA256.json",
+      "bytes": 630,
+      "sha256": "9cebd15d7959e1e516038f50609898c4152da28f2ff358d433cc4f3e47121565"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/patched-host-01/package_autopilot.FCMacro",
+      "bytes": 14692,
+      "sha256": "d8411ceca5d676fc9ff28a1f02c423c1f12359c10a2c6d6444b494914fb8e8a9"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/patched-host-01/run_package_batch.py",
+      "bytes": 9599,
+      "sha256": "196a3551e3a2fdf3bef4ca1a7e99be0c804805316599c5efd14851575ff95ec8"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/patched-host-01/run_package_check.py",
+      "bytes": 13311,
+      "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/SHA256.json",
+      "bytes": 389,
+      "sha256": "cc2e9500a82ef06dcd84c76e89718755b84577fd4764b757d04539d6240c8f90"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/diagnose_package_smoke.py",
+      "bytes": 2629,
+      "sha256": "fb2dec21702b7d00ac5e5e903ab337900a277869688b5880cf4ae0be55c5118b"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/package_autopilot.FCMacro",
+      "bytes": 16528,
+      "sha256": "d3e09e933cf8c0675e5469851703c3d265da9f8cf1c938c2eea078fa161ea3df"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/run_package_batch.py",
+      "bytes": 9664,
+      "sha256": "1ea65991bd843cc5bd8f2f049fa2f36b41036a7eb7afdd9864b99ae56236594b"
+    },
+    {
+      "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/run_package_check.py",
+      "bytes": 13311,
+      "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727"
+    },
+    {
+      "path": "inputs/package-gui/copy_package_artifacts.py",
+      "bytes": 3343,
+      "sha256": "72887695792905c690513a427c9e3546aaa1313309b2c8305ab3a83b2f1334c7"
+    },
+    {
+      "path": "inputs/package-gui/diagnose_package_smoke.py",
+      "bytes": 2629,
+      "sha256": "fb2dec21702b7d00ac5e5e903ab337900a277869688b5880cf4ae0be55c5118b"
+    },
+    {
+      "path": "inputs/package-gui/diagnose_parent_lifetime.py",
+      "bytes": 8290,
+      "sha256": "fba826812dae4939c22fc709c4523bf227ae0734f9d85a12961fef86df4b780a"
+    },
+    {
+      "path": "inputs/package-gui/launcher-correction.json",
+      "bytes": 3520,
+      "sha256": "5659baeb02dbd2dc54f4c192cdc407165b7faac97f309f675fcafaa09b64349b"
+    },
+    {
+      "path": "inputs/package-gui/original-qa-provenance.json",
+      "bytes": 605,
+      "sha256": "14f5d9ac52a5df7ad6bc453915513177c0a274ddb362d628d623813294392dbf"
+    },
+    {
+      "path": "inputs/package-gui/originals/package_autopilot.FCMacro",
+      "bytes": 10333,
+      "sha256": "e02740935d8fd60373aa8159869e198b520b8977c572cc93e425f0a2295a6652"
+    },
+    {
+      "path": "inputs/package-gui/originals/run_package_batch.py",
+      "bytes": 6000,
+      "sha256": "1026f8fe577b74463e3cd80579b03ed382cd65bb130d1e3864538e4ec7b3ab4d"
+    },
+    {
+      "path": "inputs/package-gui/originals/run_package_check.py",
+      "bytes": 6215,
+      "sha256": "e8172e6959f612adfc3cd97f8a46b33d6a09def212dd004e7912f0f7bf29f179"
+    },
+    {
+      "path": "inputs/package-gui/package_autopilot.FCMacro",
+      "bytes": 17227,
+      "sha256": "4a9dfa0f7e9feb61294502044e90aced3febf22d97f872631a186ba5ba126fe5"
+    },
+    {
+      "path": "inputs/package-gui/run_package_batch.py",
+      "bytes": 9664,
+      "sha256": "1ea65991bd843cc5bd8f2f049fa2f36b41036a7eb7afdd9864b99ae56236594b"
+    },
+    {
+      "path": "inputs/package-gui/run_package_check.py",
+      "bytes": 13311,
+      "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727"
+    },
+    {
+      "path": "inputs/package-gui/static-verification-corrected.json",
+      "bytes": 1320,
+      "sha256": "6badd55bb7c046343de52fb321b01fd1962defa234b7dc8b00f21b5a7dd8cb31"
+    },
+    {
+      "path": "inputs/package-gui/static-verification.json",
+      "bytes": 3421,
+      "sha256": "192b8cb0572ed542529a0aab71fe1cac77abb722631c07cad1e36c5b2302a9e9"
+    },
+    {
+      "path": "inputs/patches/PATCH_REVIEW.md",
+      "bytes": 8250,
+      "sha256": "c0e02d1dcc481c45a664703db5f7dd24d5f49a78d696b224132ae130b2de31b0"
+    },
+    {
+      "path": "inputs/patches/apply-reviewed-patch.py",
+      "bytes": 2035,
+      "sha256": "624476e9bbd0d4100e475cdfe5a7eebf5370e1c22adf57a1c42d633934ea730c"
+    },
+    {
+      "path": "inputs/patches/provider-removal-crlf.patch",
+      "bytes": 465,
+      "sha256": "bc095e5fbca715ae0800a4aab2a759b498937105335d03cb0b1f2efd0d5aead1"
+    },
+    {
+      "path": "inputs/patches/provider-removal-lf.patch",
+      "bytes": 456,
+      "sha256": "3de05dbb6a5341b496b88a34197095da00f732835d9b733af39ba4035fe81ee4"
+    },
+    {
+      "path": "inputs/regression/fixture/Types_Quantities_Workbench.FCStd",
+      "bytes": 89524,
+      "sha256": "86ef197fcb80627508f11ae80b117ba670f40763624f5de374dc4886dba19f67"
+    },
+    {
+      "path": "inputs/regression/fixture/fixture-types-gui-report.json",
+      "bytes": 12274,
+      "sha256": "4ac82da1d8f4f489172dcfbad530e305a524a00f0cc82e1ad86479dbad30b630"
+    },
+    {
+      "path": "inputs/regression/history_invariants.py",
+      "bytes": 15810,
+      "sha256": "469a3e946c9859f44463905082e0a0f0e9c11f83d00c5f0d594d9b14ea6b7072"
+    },
+    {
+      "path": "inputs/regression/installer/install_support.py",
+      "bytes": 9608,
+      "sha256": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4"
+    },
+    {
+      "path": "inputs/regression/native/probe_native.py",
+      "bytes": 1761,
+      "sha256": "28d641c7fcb3a9f6321d7ab62a3d2fb3c84c00a6263b086456d68bacfbc14a87"
+    },
+    {
+      "path": "inputs/regression/native/probe_native_control.py",
+      "bytes": 1648,
+      "sha256": "6758c152f0677ba552e71fa4c4957406b67856d43a66d11403a1a8392cd7a155"
+    },
+    {
+      "path": "inputs/regression/native/probe_variants.py",
+      "bytes": 3613,
+      "sha256": "da48a7d3071432518b16e5b068ae003d43d340d1c7f38f6a1e726e8b5907b700"
+    },
+    {
+      "path": "inputs/regression/original-ui/freecad_types_gui.py",
+      "bytes": 31696,
+      "sha256": "cb58f1e2bb7152164976a8af1699f40a51558db7fac152091a2ef47842b91ac2"
+    },
+    {
+      "path": "inputs/regression/original-ui/freecad_types_gui_reopen.py",
+      "bytes": 10577,
+      "sha256": "48b723e42853857ba7675599e88e096289c4be62d7531ac7efba59bf711c8c30"
+    },
+    {
+      "path": "inputs/regression/originals-sha256.json",
+      "bytes": 2460,
+      "sha256": "01c9483c1cb66a8e169549978ffb813012f78aae7e03f302156f17b110ce16d5"
+    },
+    {
+      "path": "inputs/regression/run_regressions.py",
+      "bytes": 18209,
+      "sha256": "c9e875912f2e37979d4bb5b8c876f95077cb1d3252830c65f1b5ef6914e66023"
+    },
+    {
+      "path": "inputs/regression/source-host-command.json",
+      "bytes": 197,
+      "sha256": "2102ccc369f876b6e5b4800d503e89ec2081c13bc4eaaf723c20b12bb246e16e"
+    },
+    {
+      "path": "inputs/regression/source-host-environment.json",
+      "bytes": 56,
+      "sha256": "c48b3df8f9f0d96736340bc024e82dc220516fe38fca3d9e34ef8047da8231a2"
+    },
+    {
+      "path": "inputs/regression/support/freecad_building_gui.py",
+      "bytes": 34083,
+      "sha256": "00fdd5a9b87216f96ac52cc78c030bad671979a1ca5d592b49bd7ed7022f8909"
+    },
+    {
+      "path": "inputs.lock.json",
+      "bytes": 189051,
+      "sha256": "5de1955c32fe8391b3d43a7e8f2ff394027c5091c575f4cadbac2ba33319f9e9"
+    },
+    {
+      "path": "scripts/Prepare-WindowsRunner.ps1",
+      "bytes": 11015,
+      "sha256": "3fc54baf6373b1c0131f016ae002283332d2d8a8ea78b6f0afc109b7f20789df"
+    },
+    {
+      "path": "scripts/collect_acceptance.py",
+      "bytes": 13148,
+      "sha256": "0743fb4c518dc66fde4c7ba27908b0e30b6839b7e17c52d6becdc86a56ff453c"
+    },
+    {
+      "path": "scripts/prepare_ifc.py",
+      "bytes": 18213,
+      "sha256": "171293e736401b7b8fab3cd7c36fe21a5017c9f78f9e31d84e4638a438a946cd"
+    },
+    {
+      "path": "scripts/run_acceptance.py",
+      "bytes": 11912,
+      "sha256": "12dd47a1abe4e34dade03c9ed1498ae34eaf47c142d415c6f22d877239531409"
+    },
+    {
+      "path": "scripts/run_native.py",
+      "bytes": 13882,
+      "sha256": "27749833e032d5978b1ee41886b6a8002bf5f6808363b091012c470871fca434"
+    },
+    {
+      "path": "scripts/run_public_gui.py",
+      "bytes": 21698,
+      "sha256": "8814bbacddbff25f7f5c1bf7c0da7cf83f529d6cdf2f2c6836067df1fb4a804f"
+    },
+    {
+      "path": "scripts/run_regression.py",
+      "bytes": 20703,
+      "sha256": "27c46acd93d4fe4f5d455166ac2182e6af4dc9bc1079c84257cb6aca7f135997"
+    },
+    {
+      "path": "scripts/seal_accepted_runtime.py",
+      "bytes": 4979,
+      "sha256": "17263f0d7523a1c205e140f3c831dfcfa54a754a482e88e8a0df9307bee6fc44"
+    },
+    {
+      "path": "scripts/windows_common.py",
+      "bytes": 23416,
+      "sha256": "3b6fa8b8eda9c24ec98e2180f6b22c4d2be3da77983e47088c49b75deef7947c"
+    },
+    {
+      "path": "tests/Test-RunnerPreparation.ps1",
+      "bytes": 3327,
+      "sha256": "1c84b0f72f3d1a73e8dc2b190e04f88907d5c45a28816a6c05584791b48ec345"
+    },
+    {
+      "path": "tests/test_acceptance_controller.py",
+      "bytes": 4351,
+      "sha256": "bb0bee3ff6616ea9b28155a092bc80a5e13d4a35efcfdaf97710803ea6c2d668"
+    },
+    {
+      "path": "tests/test_native_runner.py",
+      "bytes": 10895,
+      "sha256": "4b0a0f0d297ead095b2f5fae7089e85823c6af9e32282f979e0b288920731d89"
+    },
+    {
+      "path": "tests/test_public_runner.py",
+      "bytes": 7619,
+      "sha256": "83809c8e252f72c0c3261b1e8fee4b9ad26906bd34f74a543ee1cb177c854f34"
+    },
+    {
+      "path": "tests/test_runtime_seal.py",
+      "bytes": 2792,
+      "sha256": "ae6049479009f77aa607514fe23969a6972dd8c97897747564dd60f70fd9515a"
+    }
+  ]
+}

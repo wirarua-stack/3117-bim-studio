@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "restored native proxy module is installed",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves all model and drawing UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves model content revision",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process preserves both sheet revisions",
+      "status": "passed"
+    },
+    {
+      "name": "drawing set GUI tree restores from installed proxy",
+      "status": "passed"
+    },
+    {
+      "name": "all view and sheet GUI providers restore",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI renders sheet from current native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "opening a restored preview adds no transaction/cache objects",
+      "status": "passed"
+    },
+    {
+      "name": "fresh preview does not invent a remembered export status",
+      "status": "passed"
+    },
+    {
+      "name": "restored definition remains editable through installed command",
+      "status": "passed"
+    },
+    {
+      "name": "restored view supports native Undo",
+      "status": "passed"
+    },
+    {
+      "name": "observer automatically refreshes a changed native model",
+      "status": "passed"
+    },
+    {
+      "name": "automatic refresh follows native model Undo",
+      "status": "passed"
+    },
+    {
+      "name": "documentation-only project has no model children",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete protects a documentation-only Project",
+      "status": "passed"
+    },
+    {
+      "name": "empty drawing set can be removed through native Delete",
+      "status": "passed"
+    },
+    {
+      "name": "fresh host exercise leaves saved FCStd bytes unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-host close detaches document observer",
+      "status": "passed"
+    }
+  ],
+  "deletion_warnings": [
+    "โครงการยังมีรายการอยู่ภายใน: 3117 Drawings\n\nกรุณาลบรายการภายในก่อนลบโครงการ และเปลี่ยนการอ้างอิง Level, Type และ Host ที่ยังใช้งานอยู่ก่อน"
+  ],
+  "expected_command_errors": [],
+  "sample": "/tmp/bim3117-drawing-ui/evidence/ตัวอย่าง_แบบ/Drawings_Workbench.FCStd",
+  "sample_sha256": "951f5e4ec51f614fe415bbe72620b19a1dc3d7b8ec0ec89a641c210f4351226c",
+  "module_source": "/tmp/bim3117-drawing-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawings.py",
+  "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "checks_passed": 18
+}

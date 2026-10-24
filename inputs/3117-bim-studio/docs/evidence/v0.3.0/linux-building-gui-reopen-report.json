@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "checks": [
+    {
+      "name": "fresh process restores every native UUID before quantity commands",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process captures the identical authored content revision and six category counts",
+      "status": "passed"
+    },
+    {
+      "name": "new native objects restore valid solids and persistent view providers",
+      "status": "passed"
+    },
+    {
+      "name": "native slab join references persist with valid live cutters",
+      "status": "passed"
+    },
+    {
+      "name": "independently hidden Window remains hidden under its visible host after fresh restore",
+      "status": "passed"
+    },
+    {
+      "name": "freshly restored wall visibility toggles its hosted Window subtree",
+      "status": "passed"
+    },
+    {
+      "name": "fresh quantity command reads native data without creating history or restoring stale export sessions",
+      "status": "passed"
+    },
+    {
+      "name": "fresh Window quantity row selects the persistent native object",
+      "status": "passed"
+    },
+    {
+      "name": "GUI level edit after fresh restore recomputes member cuts and live tables",
+      "status": "passed"
+    },
+    {
+      "name": "fresh native Undo returns the saved content revision and original member geometry",
+      "status": "passed"
+    },
+    {
+      "name": "fresh native Redo restores the same linked level change",
+      "status": "passed"
+    },
+    {
+      "name": "closing restored model releases its quantity observer and panel",
+      "status": "passed"
+    }
+  ],
+  "deletion_warnings": [],
+  "expected_command_errors": [],
+  "checks_passed": 12,
+  "content_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+  "sample": "/tmp/bim3117-building-ui/evidence/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+  "module_source": "/tmp/bim3117-building-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py"
+}

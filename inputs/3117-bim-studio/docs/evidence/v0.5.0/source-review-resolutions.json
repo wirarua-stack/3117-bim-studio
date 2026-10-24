@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "review": "source-review.json",
+  "resolutions": [
+    {
+      "finding": "INSTALL excludes implemented layers/schedules",
+      "file": "packaging/INSTALL_TH.md",
+      "resolution": "Removed those exclusions; updated current v050 guide"
+    },
+    {
+      "finding": "Packaging command names old ZIP",
+      "file": "packaging/README.md",
+      "resolution": "Changed to v0_5_0"
+    },
+    {
+      "finding": "Quantity guide lists implemented catalogue features as future",
+      "file": "docs/QUANTITY_EXCHANGE.md",
+      "resolution": "Updated future exclusions and added explicit v050 extension"
+    },
+    {
+      "finding": "CI guide heading and required stage list incomplete",
+      "file": "packaging/CI_HOSTS.md",
+      "resolution": "Nineteen-process heading plus all six additional required report filenames"
+    },
+    {
+      "finding": "Schedule stores revision wording",
+      "file": "docs/TYPES_AND_QUANTITIES.md",
+      "resolution": "Preview/capture computes revisions; native definition stores no revision stamp"
+    }
+  ]
+}

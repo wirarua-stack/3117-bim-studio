@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "checks": [
+    {
+      "name": "source headless-to-GUI test passed",
+      "status": "passed"
+    },
+    {
+      "name": "native and view proxies not preregistered",
+      "status": "passed"
+    },
+    {
+      "name": "GUI copy matches the reported file hash",
+      "status": "passed"
+    },
+    {
+      "name": "all native and view proxies restore automatically",
+      "status": "passed"
+    },
+    {
+      "name": "all original persistent identities survive the GUI presentation save",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI copy has visible authored wall modes, solids and doors",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI revision exactly matches tested native IFC/CSV revision",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI quantity rows reproduce all three native walls and doors",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI quantity read preserves native history and model",
+      "status": "passed"
+    },
+    {
+      "name": "original headless source remains unchanged",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 10,
+  "gui_copy": "/tmp/bim3117-exchange-ui/evidence/native-example/Quantity_Exchange_Workbench.FCStd",
+  "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0"
+}

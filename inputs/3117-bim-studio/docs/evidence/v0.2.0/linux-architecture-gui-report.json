@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "installed workbench discovered",
+      "status": "passed"
+    },
+    {
+      "name": "activation does not create documents",
+      "status": "passed"
+    },
+    {
+      "name": "architecture commands registered",
+      "status": "passed"
+    },
+    {
+      "name": "project created through GUI",
+      "status": "passed"
+    },
+    {
+      "name": "invalid type form cancels without mutation",
+      "status": "passed"
+    },
+    {
+      "name": "type form commits shared thickness and material in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "wall form creates valid level-bound solid",
+      "status": "passed"
+    },
+    {
+      "name": "second wall shares type with independent axis",
+      "status": "passed"
+    },
+    {
+      "name": "body selection resolves host and cuts a real opening",
+      "status": "passed"
+    },
+    {
+      "name": "door follows perpendicular host axis",
+      "status": "passed"
+    },
+    {
+      "name": "new door inherits hidden host visibility",
+      "status": "passed"
+    },
+    {
+      "name": "architecture view providers are attached",
+      "status": "passed"
+    },
+    {
+      "name": "new authored wall and displayed subtree have consistent visibility",
+      "status": "passed"
+    },
+    {
+      "name": "first native Space-equivalent toggle hides wall solid and hosted door",
+      "status": "passed"
+    },
+    {
+      "name": "second native Space-equivalent toggle shows wall solid and hosted door",
+      "status": "passed"
+    },
+    {
+      "name": "type edit updates both wall solids in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores type and both cut solids",
+      "status": "passed"
+    },
+    {
+      "name": "native Redo restores type without changing identities",
+      "status": "passed"
+    },
+    {
+      "name": "level form recomputes both walls with hosted openings",
+      "status": "passed"
+    },
+    {
+      "name": "downstream-invalid level edit rolls back complete command",
+      "status": "passed"
+    },
+    {
+      "name": "editing selected solid moves authored axis, door and opening",
+      "status": "passed"
+    },
+    {
+      "name": "Undo restores rotated host and cut geometry",
+      "status": "passed"
+    },
+    {
+      "name": "invalid wall and door forms remain open until cancelled without mutation",
+      "status": "passed"
+    },
+    {
+      "name": "overlapping opening command rejects without extra object or undo item",
+      "status": "passed"
+    },
+    {
+      "name": "door rehost form heals previous wall and cuts new host",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores door host, opening lists and cut solids",
+      "status": "passed"
+    },
+    {
+      "name": "wall tree groups derived body and hosted door",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves wall",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves derived wall body",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves hosted door",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves used type",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves referenced base level",
+      "status": "passed"
+    },
+    {
+      "name": "Delete Selected removes door and heals wall in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "Undo deletion restores same door identity and opening",
+      "status": "passed"
+    },
+    {
+      "name": "Redo deletion heals wall again",
+      "status": "passed"
+    },
+    {
+      "name": "door dimension edit updates cut and clears old redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "complete architecture document validates",
+      "status": "passed"
+    },
+    {
+      "name": "GUI save and reopen preserves UUIDs and native host dependencies",
+      "status": "passed"
+    },
+    {
+      "name": "GUI reopen restores view providers and actual hole",
+      "status": "passed"
+    },
+    {
+      "name": "GUI reopen preserves visible authored wall and subtree",
+      "status": "passed"
+    },
+    {
+      "name": "native document valid after GUI lifecycle",
+      "status": "passed"
+    },
+    {
+      "name": "GUI reopen preserves an independently hidden door under a visible wall",
+      "status": "passed"
+    },
+    {
+      "name": "actual FreeCAD GUI screenshot saved",
+      "status": "passed"
+    }
+  ],
+  "expected_command_errors": [
+    {
+      "command": "BIM3117_EditSelected",
+      "message": "D01 | Entrance: opening extends above the wall top"
+    },
+    {
+      "command": "BIM3117_CreateDoor",
+      "message": "Overlapping door: opening overlaps D01 | Entrance"
+    }
+  ],
+  "deletion_warnings": [
+    "กรุณาใช้ 3117 BIM → Delete Selected เพื่อลบผนังพร้อมรูปทรงในหนึ่ง Undo\n\nหากยังมีประตูอยู่ ให้ลบหรือย้ายประตูก่อนลบผนัง",
+    "รูปทรงนี้คำนวณจากผนังและช่องเปิด\n\nใช้ Edit Selected เพื่อแก้ผนัง หรือ 3117 BIM → Delete Selected เพื่อลบผนัง",
+    "กรุณาใช้ 3117 BIM → Delete Selected เพื่อลบประตูและคืนเนื้อผนัง\n\nUndo จะคืนทั้งประตูและช่องเปิดพร้อมกัน",
+    "ชนิดนี้ยังถูกใช้โดยผนัง: W01 | Front wall, W02 | Return wall\n\nกรุณาเปลี่ยน Wall Type ของผนังก่อนลบชนิด",
+    "ระดับนี้ยังถูกอ้างอิงโดย: W01 | Front wall, W02 | Return wall\n\nกรุณาใช้ Edit Selected เพื่อเปลี่ยนระดับอ้างอิงของกริดหรือผนัง ก่อนลบระดับ"
+  ],
+  "checks_passed": 43,
+  "sample": "/tmp/bim3117-freecad/v020-gui-evidence/ตัวอย่าง_3117/Architecture_Workbench.FCStd",
+  "screenshot": "/tmp/bim3117-freecad/v020-gui-evidence/Architecture_Workbench.png",
+  "identifiers": {
+    "BIM3117_Project": "5c73d774-77e7-43e4-9413-c953c0c51e07",
+    "BIM3117_Level": "e69c214c-120a-4665-a624-38a07f514cac",
+    "BIM3117_Level001": "9f59607d-99b9-4c82-8c4b-8f2f0e64b1dd",
+    "BIM3117_WallType": "d89d9509-4f84-4663-9803-d08a6bbabc2a",
+    "BIM3117_Wall": "12cb4077-741c-4ed2-aba0-c0d0db615902",
+    "BIM3117_WallBody": "42a25cbb-b5bb-4677-bb31-950925641c9b",
+    "BIM3117_Wall001": "4b9d9aa8-44ad-46ce-8d46-76fa609de83a",
+    "BIM3117_WallBody001": "8fe39544-7c78-456b-9062-a6800e15c982",
+    "BIM3117_Door001": "78603225-28d1-42c9-8dc7-9c8fc342f851",
+    "BIM3117_Door": "2ab7611e-d9ac-4541-b600-8884ad0a044f",
+    "BIM3117_Grid": "26f4b24d-b41b-49a4-ae16-1d63800ea82c",
+    "BIM3117_Grid001": "4c0504c9-8fda-4b2f-b230-59676ffedc35"
+  },
+  "module_source": "/tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+  "elements": 12,
+  "sample_wall": "BIM3117_Wall",
+  "sample_door": "BIM3117_Door",
+  "wall_a_net_volume_mm3": 4477500000.0
+}

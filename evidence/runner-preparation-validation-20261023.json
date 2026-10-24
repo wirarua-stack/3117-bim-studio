@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-23T09:43:24.055016+00:00",
+  "status": "targeted_offline_checks_passed_windows_execution_pending",
+  "scope": "New runner preparation code and workflow only. Historical preparation evidence is preserved unchanged; these checks do not establish native Windows execution.",
+  "system": "Linux",
+  "powershell_version": "7.6.8",
+  "changed_or_added_source_files": [
+    {
+      "path": "scripts/Prepare-WindowsRunner.ps1",
+      "sha256": "3fc54baf6373b1c0131f016ae002283332d2d8a8ea78b6f0afc109b7f20789df",
+      "bytes": 11015
+    },
+    {
+      "path": "tests/Test-RunnerPreparation.ps1",
+      "sha256": "1c84b0f72f3d1a73e8dc2b190e04f88907d5c45a28816a6c05584791b48ec345",
+      "bytes": 3327
+    },
+    {
+      "path": ".github/workflows/windows-acceptance.yml",
+      "sha256": "ee8dd702add34d3537f6bd9c0208b87a05d842255795fd3ce04b951e00ecbfdc",
+      "bytes": 4280
+    },
+    {
+      "path": "docs/WINDOWS_BUILD.md",
+      "sha256": "49c9cd36427e08beff6b0fe56b7e4015332cac37ae522c5ea3e654f55e4bfcee",
+      "bytes": 9206
+    }
+  ],
+  "powershell_parser": {
+    "status": "passed",
+    "files": [
+      "scripts/Prepare-WindowsRunner.ps1",
+      "tests/Test-RunnerPreparation.ps1"
+    ],
+    "errors": 0
+  },
+  "winapi_declarations": {
+    "csharp_compilation": "passed_on_linux",
+    "native_calls_executed": false
+  },
+  "focused_helper_checks": {
+    "status": "passed",
+    "count": 6,
+    "checks": [
+      "prefer_c_when_both_have_capacity",
+      "fall_back_when_c_below_threshold",
+      "deduplicate_same_volume",
+      "reject_inadequate_or_nonlocal_volumes",
+      "build_short_unique_path_without_creating_it",
+      "reject_path_and_environment_injection"
+    ]
+  },
+  "non_windows_refusal": {
+    "exit_code": 1,
+    "status": "blocked",
+    "reason": "Native Windows is required for runner preparation",
+    "github_env_unchanged": true,
+    "desktop_observation": null
+  },
+  "workflow_static_checks": {
+    "status": "passed",
+    "yaml_parsed": true,
+    "read_only_repository_permission": true,
+    "preparation_before_compile": true,
+    "preflight_evidence_in_always_upload": true,
+    "temporary_readiness_workflow_checked": true
+  },
+  "packaging_omission_recovery": {
+    "observation": "The new checkout extracted from the historical sealed archive omitted three nested SHA256.json files required by inputs.lock.json.",
+    "recovery": "Copied the exact original bytes from the untouched original working directory into the new Git checkout; verified each against its frozen input pin.",
+    "restored_files": [
+      {
+        "path": "inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/SHA256.json",
+        "bytes": 3688,
+        "sha256": "ab147933b938be6bfc88de4ff0ac54d6b8ba14fde910f2c7aaec9fd341bd66f7",
+        "source": "/workspace/scratch/9457befac3c8/3117-windows-acceptance/inputs/3117-bim-studio/docs/evidence/v0.5.0/host-history-branch/SHA256.json"
+      },
+      {
+        "path": "inputs/package-gui/attempt-scripts/patched-host-01/SHA256.json",
+        "bytes": 630,
+        "sha256": "9cebd15d7959e1e516038f50609898c4152da28f2ff358d433cc4f3e47121565",
+        "source": "/workspace/scratch/9457befac3c8/3117-windows-acceptance/inputs/package-gui/attempt-scripts/patched-host-01/SHA256.json"
+      },
+      {
+        "path": "inputs/package-gui/attempt-scripts/smoke-diagnostic-01/SHA256.json",
+        "bytes": 389,
+        "sha256": "cc2e9500a82ef06dcd84c76e89718755b84577fd4764b757d04539d6240c8f90",
+        "source": "/workspace/scratch/9457befac3c8/3117-windows-acceptance/inputs/package-gui/attempt-scripts/smoke-diagnostic-01/SHA256.json"
+      }
+    ],
+    "original_archive_modified": false,
+    "original_working_directory_modified": false
+  },
+  "frozen_inputs": {
+    "status": "byte_identical_to_locked_inputs_after_recovery",
+    "files_checked": 898,
+    "inputs_lock_sha256": "5de1955c32fe8391b3d43a7e8f2ff394027c5091c575f4cadbac2ba33319f9e9"
+  },
+  "historical_preparation_status": {
+    "path": "PREPARATION_STATUS.json",
+    "created_at_utc": "2026-10-23T09:25:33.483364+00:00",
+    "sha256": "652a20c403ebd9cfdac3458583f8d12832b0a201d92df34445fac5aa4eb91249",
+    "unchanged": true
+  },
+  "existing_build_guard_unchanged": {
+    "path": "build/build_freecad.py",
+    "sha256": "15a2dbeeefc9b5f8478ae8f9955e5d340b3c6bfc2f76cc716bbbab36b50a0735",
+    "minimum_first_build_gib": 30,
+    "minimum_second_build_gib": 12
+  },
+  "windows_build_executed": false,
+  "windows_acceptance_executed": false,
+  "release_ready": false,
+  "limitations": [
+    "Native WinAPI observation and drive/write-probe behavior await the Windows runner.",
+    "Previous suites were not rerun."
+  ]
+}

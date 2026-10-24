@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Execute after installing 3117 v0.4.0 and restarting FreeCAD.
+import datetime
+from pathlib import Path
+import sys
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtGui
+try:
+    from PySide import QtWidgets
+except ImportError:
+    QtWidgets = QtGui
+
+_bim3117_drawings_root = None
+try:
+    _bim3117_drawings_macro = Path(__file__).resolve()
+    for _bim3117_drawings_candidate in (_bim3117_drawings_macro.parent, _bim3117_drawings_macro.parent.parent):
+        if (_bim3117_drawings_candidate / "tests" / "freecad_drawings_gui.py").is_file():
+            _bim3117_drawings_root = _bim3117_drawings_candidate
+            break
+except (NameError, TypeError, OSError):
+    pass
+if _bim3117_drawings_root is None:
+    _bim3117_drawings_selected = QtWidgets.QFileDialog.getExistingDirectory(
+        Gui.getMainWindow(), "Select the extracted 3117 v0.4.0 package folder")
+    if _bim3117_drawings_selected:
+        _bim3117_drawings_root = Path(_bim3117_drawings_selected)
+
+
+def _bim3117_drawings_run_tests(_bim3117_drawings_root=_bim3117_drawings_root):
+    try:
+        if not (_bim3117_drawings_root / "tests" / "freecad_drawings_gui.py").is_file():
+            raise RuntimeError("The selected folder does not contain tests/freecad_drawings_gui.py")
+        _bim3117_drawings_output = (Path(App.getUserAppDataDir()) / "BIM3117_Test_Reports" /
+                                  ("Drawings_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")))
+        sys.path.insert(0, str(_bim3117_drawings_root / "tests"))
+        from freecad_drawings_gui import run
+        _bim3117_drawings_report = run(_bim3117_drawings_output, keep_sample=True)
+        _bim3117_drawings_message = (
+            "Passed {checks} Drawings and Sheets GUI checks.\n\nReport, native example, SVG/PDF and screenshots:\n{path}\n\n"
+            "Next: close FreeCAD, reopen the generated Drawings_Workbench.FCStd, double-click Floor Plans or Section and Elevation, "
+            "edit a Level or Slab, check both revisions and use Undo/Redo. Print the exported A3 PDF at Actual size / 100%."
+        ).format(checks=_bim3117_drawings_report["checks_passed"], path=str(_bim3117_drawings_output))
+        App.Console.PrintMessage(_bim3117_drawings_message + "\n")
+        QtWidgets.QMessageBox.information(Gui.getMainWindow(), "3117 Drawings and Sheets test", _bim3117_drawings_message)
+    except BaseException as _bim3117_drawings_error:
+        App.Console.PrintError(traceback.format_exc() + "\n")
+        QtWidgets.QMessageBox.warning(
+            Gui.getMainWindow(), "3117 Drawings and Sheets test failed", str(_bim3117_drawings_error))
+
+
+if _bim3117_drawings_root is not None:
+    # Native Undo/Redo actions are enabled after the macro returns to the event loop.
+    QtCore.QTimer.singleShot(0, _bim3117_drawings_run_tests)

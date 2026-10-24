@@ -1,0 +1,294 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "qt": "6.8.3",
+  "gui_up": false,
+  "source_file": "Drawings_Workbench.FCStd",
+  "source_sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c",
+  "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "sheets": [
+    {
+      "number": "A101",
+      "sheet_id": "af6abddc-4d14-4f20-9d20-cfecbd94a2f3",
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+      "exports": [
+        {
+          "format": "svg",
+          "files": [
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101.svg",
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101_svg_metadata.json"
+          ],
+          "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101_svg_metadata.json",
+          "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+          "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+          "validation": {
+            "status": "passed",
+            "paper": "A3",
+            "orientation": "Landscape",
+            "units": "mm",
+            "view_count": 2,
+            "explicit_scales_preserved": true,
+            "no_fit_rescaling": true,
+            "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+            "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+            "visible_path_count": 140,
+            "cut_face_count": 34,
+            "dimension_count": 4,
+            "tag_count": 32,
+            "datum_count": 8,
+            "truncated_tag_count": 0,
+            "full_source_names_retained_in_metadata": true,
+            "svg": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.0,
+                297.0
+              ],
+              "view_count": 2,
+              "vector_geometry": true,
+              "embedded_sarabun_fonts": true,
+              "source_revisions_match": true
+            }
+          }
+        },
+        {
+          "format": "pdf",
+          "files": [
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101.pdf",
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101_pdf_metadata.json"
+          ],
+          "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A101_pdf_metadata.json",
+          "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+          "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+          "validation": {
+            "status": "passed",
+            "paper": "A3",
+            "orientation": "Landscape",
+            "units": "mm",
+            "view_count": 2,
+            "explicit_scales_preserved": true,
+            "no_fit_rescaling": true,
+            "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+            "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+            "visible_path_count": 140,
+            "cut_face_count": 34,
+            "dimension_count": 4,
+            "tag_count": 32,
+            "datum_count": 8,
+            "truncated_tag_count": 0,
+            "full_source_names_retained_in_metadata": true,
+            "svg": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.0,
+                297.0
+              ],
+              "view_count": 2,
+              "vector_geometry": true,
+              "embedded_sarabun_fonts": true,
+              "source_revisions_match": true
+            },
+            "pdf": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.1583333333333,
+                297.0388888888889
+              ],
+              "vector_geometry": true,
+              "embedded_fonts": true,
+              "text_layer": "host QPainter text from the preview SVG",
+              "engine": "FreeCAD host Qt QSvgRenderer / QPainter / QPdfWriter",
+              "readback_scope": "Header/trailer, one page, physical MediaBox, no raster image objects, embedded font program"
+            }
+          }
+        }
+      ],
+      "preview_png": "/tmp/bim3117-drawing-render/A101-svg-preview.png"
+    },
+    {
+      "number": "A201",
+      "sheet_id": "92adbcc4-cdeb-4b63-86cb-a109ea39fd17",
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+      "exports": [
+        {
+          "format": "svg",
+          "files": [
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201.svg",
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201_svg_metadata.json"
+          ],
+          "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201_svg_metadata.json",
+          "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+          "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+          "validation": {
+            "status": "passed",
+            "paper": "A3",
+            "orientation": "Landscape",
+            "units": "mm",
+            "view_count": 2,
+            "explicit_scales_preserved": true,
+            "no_fit_rescaling": true,
+            "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+            "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+            "visible_path_count": 164,
+            "cut_face_count": 17,
+            "dimension_count": 4,
+            "tag_count": 38,
+            "datum_count": 6,
+            "truncated_tag_count": 0,
+            "full_source_names_retained_in_metadata": true,
+            "svg": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.0,
+                297.0
+              ],
+              "view_count": 2,
+              "vector_geometry": true,
+              "embedded_sarabun_fonts": true,
+              "source_revisions_match": true
+            }
+          }
+        },
+        {
+          "format": "pdf",
+          "files": [
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201.pdf",
+            "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201_pdf_metadata.json"
+          ],
+          "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/drawings/3117_A201_pdf_metadata.json",
+          "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+          "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+          "validation": {
+            "status": "passed",
+            "paper": "A3",
+            "orientation": "Landscape",
+            "units": "mm",
+            "view_count": 2,
+            "explicit_scales_preserved": true,
+            "no_fit_rescaling": true,
+            "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+            "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+            "visible_path_count": 164,
+            "cut_face_count": 17,
+            "dimension_count": 4,
+            "tag_count": 38,
+            "datum_count": 6,
+            "truncated_tag_count": 0,
+            "full_source_names_retained_in_metadata": true,
+            "svg": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.0,
+                297.0
+              ],
+              "view_count": 2,
+              "vector_geometry": true,
+              "embedded_sarabun_fonts": true,
+              "source_revisions_match": true
+            },
+            "pdf": {
+              "status": "passed",
+              "page_count": 1,
+              "paper_mm": [
+                420.1583333333333,
+                297.0388888888889
+              ],
+              "vector_geometry": true,
+              "embedded_fonts": true,
+              "text_layer": "host QPainter text from the preview SVG",
+              "engine": "FreeCAD host Qt QSvgRenderer / QPainter / QPdfWriter",
+              "readback_scope": "Header/trailer, one page, physical MediaBox, no raster image objects, embedded font program"
+            }
+          }
+        }
+      ],
+      "preview_png": "/tmp/bim3117-drawing-render/A201-svg-preview.png"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Both native sheets captured from saved FCStd",
+      "status": "passed"
+    },
+    {
+      "name": "All SVG/PDF payload hashes match their published metadata",
+      "status": "passed"
+    },
+    {
+      "name": "Native source model revision is unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Native object identity, BRep and Undo/Redo/pending state are unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Source FCStd file remains byte-identical",
+      "status": "passed"
+    },
+    {
+      "name": "Independent PDF readback: each page renders, contains embedded Sarabun fonts and extractable Thai labels, with no raster image objects",
+      "status": "passed"
+    },
+    {
+      "name": "All final SVG/PDF pages were visually inspected for text readability, openings, cut lines, scale bars and annotation/page clipping",
+      "status": "passed"
+    },
+    {
+      "name": "Verified completed-stage payload hashes before cleanup; no export locks or staging folders remain",
+      "status": "passed"
+    },
+    {
+      "name": "Installed host Qt repeat exports all four canonical payloads to a temporary folder with automatic lock/stage cleanup and byte-identical SVGs",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 9,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm 120 dpi and actual host Qt SVG",
+    "pages": 2,
+    "status": "passed",
+    "minimum_product_tag_font_mm": 2.25,
+    "nominal_product_tag_font_mm": 2.5,
+    "pdf_text_engine": "FreeCAD host QPainter text from identical SVG records; geometry rendered by host QSvgRenderer"
+  },
+  "publication_cleanup": {
+    "initial_export_process_exit": 0,
+    "observed_completed_locks": 8,
+    "observed_completed_staging_directories": 4,
+    "stage_contents": "Only payload/metadata files; each SHA-256 equalled the matching published final file. No backup/recovery files.",
+    "action": "Removed only the known completed PID7 export locks and matching staging directories after source and payload/metadata verification.",
+    "final_folder_clean": true,
+    "note": "These remnants were observed after the successful workspace export and are recorded explicitly; automatic cleanup is separately verified by the installed headless publication gates and installed Qt temporary-folder export.",
+    "installed_temporary_folder_repeat": {
+      "status": "passed",
+      "source_and_installed_module_bytes_match": true,
+      "exports": 4,
+      "locks_remaining": 0,
+      "staging_folders_remaining": 0,
+      "canonical_svg_bytes_match_current_renderer": true,
+      "source_model_and_drawing_revisions_match": true
+    }
+  },
+  "verified_source_module_hashes": {
+    "drawing_render.py": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388",
+    "drawing_export.py": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75",
+    "export_files.py": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6"
+  }
+}

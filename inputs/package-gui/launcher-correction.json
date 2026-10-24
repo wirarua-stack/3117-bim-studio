@@ -1,0 +1,62 @@
+{
+  "status": "launcher_setup_correction_validated_by_complete_seven_mode_retry",
+  "accepted_package_run": "patched-host-02",
+  "scope": "Outer validation launcher only. Frozen ZIP/macros/tests, source patch, build flags, SDK and host binaries remain unchanged.",
+  "corrections": [
+    {
+      "kind": "embedded_python_search_path",
+      "change": "Use supported --python-path /tmp/bim3117-host-fix/ifc-runtime in the FreeCAD CLI argv. Embedded Python ignores PYTHONPATH.",
+      "evidence": "../evidence/native-runtime-diagnosis/diagnosis.json"
+    },
+    {
+      "kind": "qt_parent_wrapper_lifetime",
+      "change": "Retain _package_main_window = Gui.getMainWindow() in the outer autopilot throughout the public macro lifetime. No child filtering/replacement and no assertion changes.",
+      "observed_temporary_parent": "Both returned QTreeWidget wrappers invalid; expandAll raised RuntimeError.",
+      "observed_retained_parent": "Both returned QTreeWidget wrappers valid; expandAll returned.",
+      "diagnostic_path": "/tmp/bim3117-host-fix/package-gui/runs/parent-lifetime-diagnostic-01/evidence/main-window-lifetime-diagnosis.json",
+      "diagnostic_sha256": "6eadcfbc522c933a1a6c6b0a130cec6eb279801cd4d4b434b16c3926b9ea8025",
+      "build_scope": "This source validation host uses FREECAD_USE_PYSIDE=OFF and FREECAD_USE_SHIBOKEN=OFF. The official 1.1.4 AppImage links both and uses WrapperManager; configuration equivalence is not claimed.",
+      "source_review": "../evidence/qt-wrapper-review/REVIEW.md"
+    }
+  ],
+  "preserved_attempts": [
+    {
+      "run_name": "patched-host-01",
+      "summary": "runs/patched-host-01/evidence/package-seven-modes-report.json",
+      "inner_failed_report": "runs/patched-host-01/evidence/failed-publicsmoke-detail/gui-smoke-report.json",
+      "raw_smoke_checks_passed": 23,
+      "scripts": "attempt-scripts/patched-host-01/SHA256.json"
+    },
+    {
+      "run_name": "smoke-diagnostic-01",
+      "summary": "runs/smoke-diagnostic-01/evidence/diagnosis-summary.json",
+      "inner_failed_report": "runs/smoke-diagnostic-01/evidence/failed-publicsmoke-detail/gui-smoke-report.json",
+      "raw_smoke_checks_passed": 23,
+      "scripts": "attempt-scripts/smoke-diagnostic-01/SHA256.json"
+    }
+  ],
+  "current_qa_script_sha256": {
+    "run_package_batch.py": "1ea65991bd843cc5bd8f2f049fa2f36b41036a7eb7afdd9864b99ae56236594b",
+    "run_package_check.py": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727",
+    "package_autopilot.FCMacro": "4a9dfa0f7e9feb61294502044e90aced3febf22d97f872631a186ba5ba126fe5",
+    "diagnose_parent_lifetime.py": "fba826812dae4939c22fc709c4523bf227ae0734f9d85a12961fef86df4b780a",
+    "diagnose_package_smoke.py": "fb2dec21702b7d00ac5e5e903ab337900a277869688b5880cf4ae0be55c5118b"
+  },
+  "static_checks": {
+    "packaging_assertion_call_expressions_unchanged": true,
+    "packaging_assertion_call_sites": 11,
+    "dialog_response_function_unchanged": true,
+    "suite_definitions_unchanged": true,
+    "seven_stage_order_unchanged": true
+  },
+  "main_window_probe": "runs/parent-lifetime-diagnostic-01/evidence/main-window-lifetime-diagnosis.json",
+  "does_not_establish_history_branch_fix": true,
+  "test_counts_modified": false,
+  "accepted_summary": "runs/patched-host-02/evidence/package-seven-modes-report.json",
+  "accepted_summary_sha256": "0842631440e193bc23f847f12e14a403af40613adacdad51ccd2826a29f1a57c",
+  "accepted_totals": {
+    "modes": 7,
+    "gui_assertions": 248,
+    "packaging_assertions": 48
+  }
+}

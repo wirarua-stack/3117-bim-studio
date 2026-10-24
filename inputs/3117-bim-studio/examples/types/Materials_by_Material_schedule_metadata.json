@@ -1,0 +1,1115 @@
+{
+  "export_schema": 1,
+  "format": "schedule_csv",
+  "editable_master": false,
+  "model_revision": "b1d7558505e38e8eab14517490e580a875eba1bb7b5503b72d140c259384c804",
+  "schedule_revision": "c8d5ef3cc368df348936a497d5d930f45c6b81b477058f084ff3c0afe14ec08a",
+  "snapshot": {
+    "schema": 1,
+    "model_revision": "b1d7558505e38e8eab14517490e580a875eba1bb7b5503b72d140c259384c804",
+    "schedule_revision": "c8d5ef3cc368df348936a497d5d930f45c6b81b477058f084ff3c0afe14ec08a",
+    "definition": {
+      "id": "0d110990-2476-487b-af8a-3022f2d1cff5",
+      "name": "Materials by Material",
+      "level_id": "",
+      "type_id": "",
+      "category": "Material",
+      "group_by": "Material",
+      "sort_by": "Material",
+      "descending": false,
+      "name_filter": ""
+    },
+    "columns": [
+      {
+        "key": "name",
+        "label": "Name",
+        "unit": ""
+      },
+      {
+        "key": "count",
+        "label": "Count",
+        "unit": ""
+      },
+      {
+        "key": "gross_volume_m3",
+        "label": "Gross volume",
+        "unit": "m3"
+      },
+      {
+        "key": "deduction_volume_m3",
+        "label": "Deduction volume",
+        "unit": "m3"
+      },
+      {
+        "key": "net_volume_m3",
+        "label": "Net volume",
+        "unit": "m3"
+      }
+    ],
+    "rows": [
+      {
+        "row_id": "group:a156298be692b286d9ff4e68a7d5577229d72e40877c99be460bb2a01c56b084",
+        "element_ids": [
+          "13dab521-9139-425c-b8e7-c6df71ef7471",
+          "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+          "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+          "e63bc2ca-050e-4766-9aec-e07042fa5986"
+        ],
+        "name": "Aluminium frame",
+        "category": "Material",
+        "count": 4,
+        "source_row_count": 4,
+        "gross_volume_m3": 0.18399999999999997,
+        "deduction_volume_m3": 0.0,
+        "net_volume_m3": 0.18399999999999997,
+        "type_id": "cbfc4769-db95-4e84-a058-b6dce6456c61",
+        "type_name": "Window 1200 x 1200",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01",
+        "material_id": "4e0d48ac-a10c-4dcd-9bb2-4adeb1a1c2eb",
+        "material_name": "Aluminium frame"
+      },
+      {
+        "row_id": "group:7fa2943d0f1d6fec13e1d4da9c6d22b2a61398f9d71af2800fbb7440173fda85",
+        "element_ids": [
+          "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+          "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+          "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+          "16e87910-40d7-4547-b9d9-ff1431a1c066",
+          "37134a20-b003-48ef-96bd-b1457cc94324",
+          "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+          "54a5fde8-157c-40b7-be56-f69869705b43",
+          "5da805dc-1e32-4533-9fea-d355df30851d",
+          "7699609f-dcd3-429b-9ef0-9311904eba1e",
+          "8a72afa4-2376-45d5-b54b-95efe545bce8",
+          "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+          "9b08ba70-d0e3-4818-93b4-765960d3b282",
+          "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+          "a444a497-4a42-4a02-805f-bdac76a1312e",
+          "c6881a57-0739-4382-9db8-b187e4745510",
+          "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+          "cfe18d69-5269-46c5-8660-3133d80e9a81",
+          "e766c1c9-f102-490f-88fa-979e8089bb06",
+          "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8"
+        ],
+        "name": "Concrete",
+        "category": "Material",
+        "count": 19,
+        "source_row_count": 19,
+        "gross_volume_m3": 16.335,
+        "deduction_volume_m3": 1.9080000000000004,
+        "net_volume_m3": 14.427,
+        "type_id": "Multiple",
+        "type_name": "Beam 300 x 450; Column 300 x 300; Slab 150 layered",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01; L02",
+        "material_id": "c914a542-3e86-48de-8977-109cd4dfb8d9",
+        "material_name": "Concrete"
+      },
+      {
+        "row_id": "group:5c99f86d0428b25892ee7485201df31167b1c53dd3885200189ec059eefa41a2",
+        "element_ids": [
+          "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+          "54a5fde8-157c-40b7-be56-f69869705b43",
+          "e766c1c9-f102-490f-88fa-979e8089bb06"
+        ],
+        "name": "Floor finish",
+        "category": "Material",
+        "count": 3,
+        "source_row_count": 3,
+        "gross_volume_m3": 0.8775,
+        "deduction_volume_m3": 0.0,
+        "net_volume_m3": 0.8775,
+        "type_id": "f2ef2392-a9c0-45fd-93f5-498b684748f0",
+        "type_name": "Slab 150 layered",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01; L02",
+        "material_id": "0ae0a897-4649-4874-8093-5bfe9567f215",
+        "material_name": "Floor finish"
+      },
+      {
+        "row_id": "group:c55e9a55b7898946effd23e317137f79bb805b5885219ae8617bb9e5a3e7a907",
+        "element_ids": [
+          "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+          "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+          "4748dd71-525a-4434-ba86-b7e616563128",
+          "665ad71a-4ce2-454b-a84a-154125035cd7",
+          "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+          "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+          "e237c333-fb68-41bd-8547-c3d3517ec70f",
+          "f2cae468-6358-471b-8a67-a9ed151a8112"
+        ],
+        "name": "Masonry",
+        "category": "Material",
+        "count": 8,
+        "source_row_count": 8,
+        "gross_volume_m3": 16.2996,
+        "deduction_volume_m3": 1.6218000000000004,
+        "net_volume_m3": 14.677800000000001,
+        "type_id": "65e313b7-786b-475f-994c-60b3af109888",
+        "type_name": "Wall 200 layered",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01",
+        "material_id": "09ac0651-dd5b-492a-845e-e1a702f0de0b",
+        "material_name": "Masonry"
+      },
+      {
+        "row_id": "group:b69e3fc8e5c91a2f1fe719ca205d8291a603a657efcb99e9be3afa7c5f605a19",
+        "element_ids": [
+          "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+          "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+          "4748dd71-525a-4434-ba86-b7e616563128",
+          "665ad71a-4ce2-454b-a84a-154125035cd7",
+          "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+          "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+          "e237c333-fb68-41bd-8547-c3d3517ec70f",
+          "f2cae468-6358-471b-8a67-a9ed151a8112"
+        ],
+        "name": "Plaster",
+        "category": "Material",
+        "count": 8,
+        "source_row_count": 16,
+        "gross_volume_m3": 2.8764000000000003,
+        "deduction_volume_m3": 0.2862,
+        "net_volume_m3": 2.5902000000000003,
+        "type_id": "65e313b7-786b-475f-994c-60b3af109888",
+        "type_name": "Wall 200 layered",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01",
+        "material_id": "52f257eb-2c99-4630-9ba8-4108f966e817",
+        "material_name": "Plaster"
+      },
+      {
+        "row_id": "group:286eaeb7102d00a4e159f5794e5b87614e0ff4cd0117a9d7ad3c54eb4b603f54",
+        "element_ids": [
+          "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+          "54a5fde8-157c-40b7-be56-f69869705b43",
+          "e766c1c9-f102-490f-88fa-979e8089bb06"
+        ],
+        "name": "Screed",
+        "category": "Material",
+        "count": 3,
+        "source_row_count": 3,
+        "gross_volume_m3": 3.51,
+        "deduction_volume_m3": 0.0,
+        "net_volume_m3": 3.51,
+        "type_id": "f2ef2392-a9c0-45fd-93f5-498b684748f0",
+        "type_name": "Slab 150 layered",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01; L02",
+        "material_id": "0e4bf164-d1c0-429a-9c15-62911cfd8f3c",
+        "material_name": "Screed"
+      },
+      {
+        "row_id": "group:e8a391be75913d0e7fb1820721a75fd5e33466219295cea0e18874aa4db75892",
+        "element_ids": [
+          "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+          "72e4552c-3f40-4e11-aa22-a893e213a28e"
+        ],
+        "name": "Timber frame",
+        "category": "Material",
+        "count": 2,
+        "source_row_count": 2,
+        "gross_volume_m3": 0.10000000000000006,
+        "deduction_volume_m3": 0.0,
+        "net_volume_m3": 0.10000000000000006,
+        "type_id": "beb26577-e19f-4adb-a358-948dab5f1c70",
+        "type_name": "Door 900 x 2100",
+        "type_code": "",
+        "level_id": "Multiple",
+        "level": "L00; L01",
+        "material_id": "76dc9624-8ca1-4adf-bedd-d0c6d80f101f",
+        "material_name": "Timber frame"
+      }
+    ],
+    "totals": {
+      "source_element_count": 33,
+      "source_row_count": 55,
+      "display_row_count": 7,
+      "gross_volume_m3": 40.1825,
+      "deduction_volume_m3": 3.8160000000000007,
+      "net_volume_m3": 36.3665
+    },
+    "coverage": {
+      "building": {
+        "items": [
+          {
+            "object_name": "BIM3117_WallBody001",
+            "object_id": "01fe680b-6a65-40c9-9931-f295b1ce46ae",
+            "label": "Wall 1-2 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Beam001",
+            "object_id": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+            "label": "B12",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Material001",
+            "object_id": "09ac0651-dd5b-492a-845e-e1a702f0de0b",
+            "label": "Masonry",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Material003",
+            "object_id": "0ae0a897-4649-4874-8093-5bfe9567f215",
+            "label": "Floor finish",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Schedule008",
+            "object_id": "0d110990-2476-487b-af8a-3022f2d1cff5",
+            "label": "Materials by Material",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Material004",
+            "object_id": "0e4bf164-d1c0-429a-9c15-62911cfd8f3c",
+            "label": "Screed",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Beam004",
+            "object_id": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+            "label": "B21",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Slab",
+            "object_id": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+            "label": "S00",
+            "kind": "Slab",
+            "status": "mapped",
+            "ifc_class": "IfcSlab",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "slab"
+          },
+          {
+            "object_name": "BIM3117_Window003",
+            "object_id": "13dab521-9139-425c-b8e7-c6df71ef7471",
+            "label": "WIN22",
+            "kind": "Window",
+            "status": "mapped",
+            "ifc_class": "IfcWindow",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "window"
+          },
+          {
+            "object_name": "BIM3117_Column002",
+            "object_id": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+            "label": "C13",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Project",
+            "object_id": "1cf36c90-f065-4bcf-bd10-d57c1d5c1b05",
+            "label": "3117 อาคารสองชั้น",
+            "kind": "Project",
+            "status": "mapped",
+            "ifc_class": "IfcProject",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Grid",
+            "object_id": "1e3962f1-fee7-4fc5-b900-92916baa1696",
+            "label": "A",
+            "kind": "Grid",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Door",
+            "object_id": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+            "label": "D01",
+            "kind": "Door",
+            "status": "mapped",
+            "ifc_class": "IfcDoor",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "door"
+          },
+          {
+            "object_name": "BIM3117_Level002",
+            "object_id": "23a017fd-103e-4f8e-bfd1-538f44a944cd",
+            "label": "L02",
+            "kind": "Level",
+            "status": "mapped",
+            "ifc_class": "IfcBuildingStorey",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Schedule003",
+            "object_id": "2a0bbbb9-5223-4812-a123-8dc365537f4d",
+            "label": "Beam Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall001",
+            "object_id": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+            "label": "Wall 1-2",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_Level001",
+            "object_id": "3087830e-4d1a-4f80-b674-777b13466c13",
+            "label": "L01",
+            "kind": "Level",
+            "status": "mapped",
+            "ifc_class": "IfcBuildingStorey",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Beam007",
+            "object_id": "37134a20-b003-48ef-96bd-b1457cc94324",
+            "label": "B24",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Column",
+            "object_id": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+            "label": "C11",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Schedule007",
+            "object_id": "3cab710b-95f1-4a24-a6ba-385b949a13a9",
+            "label": "Material Details",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall",
+            "object_id": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+            "label": "Wall 1-1",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_Wall004",
+            "object_id": "4748dd71-525a-4434-ba86-b7e616563128",
+            "label": "Wall 2-1",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_WallBody004",
+            "object_id": "47cd2305-1267-42d8-b726-d29790cf2ef6",
+            "label": "Wall 2-1 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_WallBody007",
+            "object_id": "486e972a-1bf0-4a88-be41-4f1e6fb6487e",
+            "label": "Wall 2-4 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Drawings",
+            "object_id": "4a963eb7-8540-4f13-9b3b-bc2163689a79",
+            "label": "3117 Drawings",
+            "kind": "DrawingSet",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Level",
+            "object_id": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+            "label": "L00",
+            "kind": "Level",
+            "status": "mapped",
+            "ifc_class": "IfcBuildingStorey",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Material006",
+            "object_id": "4e0d48ac-a10c-4dcd-9bb2-4adeb1a1c2eb",
+            "label": "Aluminium frame",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Material002",
+            "object_id": "52f257eb-2c99-4630-9ba8-4108f966e817",
+            "label": "Plaster",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Slab001",
+            "object_id": "54a5fde8-157c-40b7-be56-f69869705b43",
+            "label": "S01",
+            "kind": "Slab",
+            "status": "mapped",
+            "ifc_class": "IfcSlab",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "slab"
+          },
+          {
+            "object_name": "BIM3117_Grid003",
+            "object_id": "58235e7a-ab6e-4121-aa79-62c813dbdfbe",
+            "label": "2",
+            "kind": "Grid",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_DrawingView001",
+            "object_id": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+            "label": "Upper Plan",
+            "kind": "DrawingView",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Column006",
+            "object_id": "5da805dc-1e32-4533-9fea-d355df30851d",
+            "label": "C23",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Window002",
+            "object_id": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+            "label": "WIN21",
+            "kind": "Window",
+            "status": "mapped",
+            "ifc_class": "IfcWindow",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "window"
+          },
+          {
+            "object_name": "BIM3117_WallType",
+            "object_id": "65e313b7-786b-475f-994c-60b3af109888",
+            "label": "Wall 200 layered",
+            "kind": "WallType",
+            "status": "mapped",
+            "ifc_class": "IfcWallType",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall005",
+            "object_id": "665ad71a-4ce2-454b-a84a-154125035cd7",
+            "label": "Wall 2-2",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_Door001",
+            "object_id": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+            "label": "D02",
+            "kind": "Door",
+            "status": "mapped",
+            "ifc_class": "IfcDoor",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "door"
+          },
+          {
+            "object_name": "BIM3117_Beam",
+            "object_id": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+            "label": "B11",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Material005",
+            "object_id": "76dc9624-8ca1-4adf-bedd-d0c6d80f101f",
+            "label": "Timber frame",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_ElementType002",
+            "object_id": "7873a6d0-4f02-4dc2-a0b7-e65b0801dee5",
+            "label": "Beam 300 x 450",
+            "kind": "ElementType",
+            "status": "mapped",
+            "ifc_class": "IfcBeamType",
+            "reason": "Native shared type definition; mapped to its category type and instance relations, not an additional IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Grid001",
+            "object_id": "7b483af6-434a-4504-a036-e560a3599b8a",
+            "label": "B",
+            "kind": "Grid",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Schedule005",
+            "object_id": "7cf2fdd9-8aa2-47fc-922c-6e476ae53e78",
+            "label": "Window Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Window001",
+            "object_id": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+            "label": "WIN12",
+            "kind": "Window",
+            "status": "mapped",
+            "ifc_class": "IfcWindow",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "window"
+          },
+          {
+            "object_name": "BIM3117_Beam002",
+            "object_id": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+            "label": "B13",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Column003",
+            "object_id": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+            "label": "C14",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_DrawingSheet001",
+            "object_id": "92adbcc4-cdeb-4b63-86cb-a109ea39fd17",
+            "label": "Section and Elevation",
+            "kind": "DrawingSheet",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_WallBody006",
+            "object_id": "99eccd65-674f-4546-a3bb-5e087d03b357",
+            "label": "Wall 2-3 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Column005",
+            "object_id": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+            "label": "C22",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Column007",
+            "object_id": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+            "label": "C24",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Column004",
+            "object_id": "a444a497-4a42-4a02-805f-bdac76a1312e",
+            "label": "C21",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_WallBody",
+            "object_id": "a5bd56d7-35a0-4055-8fa8-fb80db438448",
+            "label": "Wall 1-1 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall006",
+            "object_id": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+            "label": "Wall 2-3",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_DrawingSheet",
+            "object_id": "af6abddc-4d14-4f20-9d20-cfecbd94a2f3",
+            "label": "Floor Plans",
+            "kind": "DrawingSheet",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_ElementType001",
+            "object_id": "b4f5f8ca-2cbe-4998-ae5e-196581cba6d6",
+            "label": "Column 300 x 300",
+            "kind": "ElementType",
+            "status": "mapped",
+            "ifc_class": "IfcColumnType",
+            "reason": "Native shared type definition; mapped to its category type and instance relations, not an additional IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_ElementType003",
+            "object_id": "beb26577-e19f-4adb-a358-948dab5f1c70",
+            "label": "Door 900 x 2100",
+            "kind": "ElementType",
+            "status": "mapped",
+            "ifc_class": "IfcDoorType",
+            "reason": "Native shared type definition; mapped to its category type and instance relations, not an additional IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Column001",
+            "object_id": "c6881a57-0739-4382-9db8-b187e4745510",
+            "label": "C12",
+            "kind": "Column",
+            "status": "mapped",
+            "ifc_class": "IfcColumn",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "column"
+          },
+          {
+            "object_name": "BIM3117_Beam003",
+            "object_id": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+            "label": "B14",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Material",
+            "object_id": "c914a542-3e86-48de-8977-109cd4dfb8d9",
+            "label": "Concrete",
+            "kind": "Material",
+            "status": "mapped",
+            "ifc_class": "IfcMaterial",
+            "reason": "Native material definition; mapped to IfcMaterial with source identity, not an IFC product or an additional building quantity.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Schedule001",
+            "object_id": "cb0bd699-484a-4652-a13b-6bbd972b400c",
+            "label": "Slab Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_ElementType004",
+            "object_id": "cbfc4769-db95-4e84-a058-b6dce6456c61",
+            "label": "Window 1200 x 1200",
+            "kind": "ElementType",
+            "status": "mapped",
+            "ifc_class": "IfcWindowType",
+            "reason": "Native shared type definition; mapped to its category type and instance relations, not an additional IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_WallBody002",
+            "object_id": "cc89153c-af99-4e81-8b37-02921f67d7c4",
+            "label": "Wall 1-3 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_DrawingView",
+            "object_id": "cd8248f0-b590-4348-bd28-2efc153b278e",
+            "label": "Ground Plan",
+            "kind": "DrawingView",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Beam006",
+            "object_id": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+            "label": "B23",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          },
+          {
+            "object_name": "BIM3117_Schedule",
+            "object_id": "d327d895-bea2-4cfb-9bb9-e8d1542a62a2",
+            "label": "Wall Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_WallBody003",
+            "object_id": "d588e465-b0b8-499b-a071-35f7f3214e87",
+            "label": "Wall 1-4 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_DrawingView003",
+            "object_id": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+            "label": "South Elevation",
+            "kind": "DrawingView",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall003",
+            "object_id": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+            "label": "Wall 1-4",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_Schedules",
+            "object_id": "ddd9523d-c7f2-48fc-8cdc-04c49e15af10",
+            "label": "3117 Schedules",
+            "kind": "ScheduleSet",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall002",
+            "object_id": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+            "label": "Wall 1-3",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_Schedule006",
+            "object_id": "e51d1b64-86b8-4364-8e22-783d46db8601",
+            "label": "Walls by Type",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Window",
+            "object_id": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+            "label": "WIN11",
+            "kind": "Window",
+            "status": "mapped",
+            "ifc_class": "IfcWindow",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "window"
+          },
+          {
+            "object_name": "BIM3117_WallBody005",
+            "object_id": "e6a8d22f-785c-4f61-abc7-fe7b1e697bfd",
+            "label": "Wall 2-2 · Solid",
+            "kind": "WallBody",
+            "status": "derived",
+            "ifc_class": "",
+            "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Slab002",
+            "object_id": "e766c1c9-f102-490f-88fa-979e8089bb06",
+            "label": "S02",
+            "kind": "Slab",
+            "status": "mapped",
+            "ifc_class": "IfcSlab",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "slab"
+          },
+          {
+            "object_name": "BIM3117_Schedule004",
+            "object_id": "e84163b6-80ee-41cd-92d7-47a7481321e6",
+            "label": "Door Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_DrawingView002",
+            "object_id": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+            "label": "Section A-A",
+            "kind": "DrawingView",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native drawing definition retained in FCStd; separate drawing revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Schedule002",
+            "object_id": "eb725190-54a7-41cd-9114-72ee2274d5c9",
+            "label": "Column Schedule",
+            "kind": "Schedule",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native schedule definition retained in FCStd; separate schedule revision, no building quantity or IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Wall007",
+            "object_id": "f2cae468-6358-471b-8a67-a9ed151a8112",
+            "label": "Wall 2-4",
+            "kind": "Wall",
+            "status": "mapped",
+            "ifc_class": "IfcWall",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "wall"
+          },
+          {
+            "object_name": "BIM3117_ElementType",
+            "object_id": "f2ef2392-a9c0-45fd-93f5-498b684748f0",
+            "label": "Slab 150 layered",
+            "kind": "ElementType",
+            "status": "mapped",
+            "ifc_class": "IfcSlabType",
+            "reason": "Native shared type definition; mapped to its category type and instance relations, not an additional IFC product.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Grid002",
+            "object_id": "fb5db00c-5c30-4442-a1dd-91fb884b9ddf",
+            "label": "1",
+            "kind": "Grid",
+            "status": "reference",
+            "ifc_class": "",
+            "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+            "quantity_role": "none"
+          },
+          {
+            "object_name": "BIM3117_Beam005",
+            "object_id": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+            "label": "B22",
+            "kind": "Beam",
+            "status": "mapped",
+            "ifc_class": "IfcBeam",
+            "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+            "quantity_role": "beam"
+          }
+        ],
+        "counts": {
+          "mapped": 50,
+          "derived": 8,
+          "reference": 21,
+          "unsupported": 0
+        },
+        "warnings": [
+          "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+          "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+          "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+          "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+          "4 native datum object(s) are listed as reference and omitted from IFC.",
+          "7 native drawing definition(s) are references with a separate drawing revision and omitted from IFC.",
+          "10 native schedule definition(s) are references with a separate schedule revision and omitted from IFC.",
+          "Native material rows partition assigned product solids only; legacy text materials remain unassigned. Consult material_totals for assignment coverage; do not add material rows again to product quantities."
+        ],
+        "complete": false,
+        "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+      },
+      "material": {
+        "row_count": 55,
+        "assigned_product_count": 33,
+        "product_count": 33,
+        "unassigned_product_count": 0,
+        "unassigned_products": [],
+        "gross_volume_m3": 40.1825,
+        "deduction_volume_m3": 3.8160000000000007,
+        "net_volume_m3": 36.3665,
+        "complete": true,
+        "rule": "3117.material.native-solid-partition.v1",
+        "scope": "Only native material assignments are quantified. Layer rows partition products and must not be added again to product quantities. No costs, densities or global overlap deductions are inferred."
+      },
+      "scope": "Filtered source rows; material quantities include only products with assigned native materials.",
+      "quantity_rules": [
+        "3117.material.native-solid-partition.v1"
+      ],
+      "deduction_rules": [
+        "none",
+        "none; generic frame solid, not the wall opening",
+        "openings",
+        "slab-priority joins"
+      ]
+    },
+    "captured_at_utc": "2026-10-23T06:41:03.211371+00:00",
+    "source": {
+      "project_id": "1cf36c90-f065-4bcf-bd10-d57c1d5c1b05",
+      "project_name": "3117 อาคารสองชั้น",
+      "document": "Drawings_Workbench",
+      "path": "/tmp/bim3117-v050-canonical-final/Types_Quantities_Workbench.FCStd",
+      "editable_master": "FreeCAD Document / FCStd",
+      "native_length_unit": "mm",
+      "quantity_units": "m / m2 / m3",
+      "name_filter": "Case-insensitive substring of source element name",
+      "level_filter": "Base Level for Wall/Door/Window/Column; Level for Slab/Beam",
+      "count_rule": "Distinct parent element UUIDs; material layer row counts are separate",
+      "total_rule": "Sum independent product quantities; not the spatial union of different products"
+    }
+  },
+  "files": [
+    {
+      "name": "Materials_by_Material.csv",
+      "bytes": 2660,
+      "sha256": "6b6fcd8120c864f11a013318924d9ef04302c6326f9fffe9d6827032ddd78872"
+    }
+  ],
+  "csv": {
+    "encoding": "UTF-8 BOM",
+    "delimiter": ",",
+    "decimal": ".",
+    "columns": [
+      "row_id",
+      "element_ids",
+      "name",
+      "count",
+      "gross_volume_m3",
+      "deduction_volume_m3",
+      "net_volume_m3"
+    ],
+    "text_policy": "Formula-like text cells have a leading apostrophe; original strings are in snapshot."
+  },
+  "publication": "Files replaced individually; metadata is the final completion marker. Verify hashes before use.",
+  "freshness": "Compare both revisions with the current native schedule; this file does not update automatically."
+}

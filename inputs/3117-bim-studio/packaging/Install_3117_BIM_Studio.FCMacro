@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Open in FreeCAD and use Macro > Execute macro. Extract the whole ZIP first.
+import importlib.util
+from pathlib import Path
+import FreeCADGui as Gui
+from PySide import QtWidgets
+
+
+def _run_3117_installer():
+    hint = globals().get("__file__")
+    candidates = []
+    if hint:
+        location = Path(hint).resolve().parent
+        candidates = [location, location.parent]
+    root = next((path for path in candidates
+                 if (path / "packaging" / "freecad_installer_ui.py").is_file()
+                 and (path / "workbench" / "package.xml").is_file()), None)
+    if root is None:
+        selected = QtWidgets.QFileDialog.getExistingDirectory(Gui.getMainWindow(),
+            "เลือกโฟลเดอร์ที่แตก ZIP ของ 3117 ซึ่งมีโฟลเดอร์ workbench และ packaging")
+        if not selected:
+            return
+        root = Path(selected)
+    path = root / "packaging" / "freecad_installer_ui.py"
+    if not path.is_file() or not (root / "workbench" / "package.xml").is_file():
+        QtWidgets.QMessageBox.critical(Gui.getMainWindow(), "3117 BIM Studio",
+            "ไม่พบชุดติดตั้งครบถ้วน กรุณาแตก ZIP ทั้งชุด แล้วเลือกโฟลเดอร์ที่มี workbench และ packaging")
+        return
+    spec = importlib.util.spec_from_file_location("bim3117_installer_ui", path)
+    ui = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(ui)
+    ui.run(root, mode="install")
+
+
+_run_3117_installer()

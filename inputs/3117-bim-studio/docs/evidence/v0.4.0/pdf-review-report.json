@@ -1,0 +1,280 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-23T04:49:34.149872+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pymupdf": "1.26.6",
+  "checks": [
+    {
+      "name": "A101 published payload matches metadata",
+      "status": "passed"
+    },
+    {
+      "name": "A101 is a one-page PDF",
+      "status": "passed"
+    },
+    {
+      "name": "A101 nominal A3 landscape page",
+      "status": "passed",
+      "observed_mm": [
+        420.1583333333333,
+        297.0388888888889
+      ],
+      "tolerance_mm": 0.2,
+      "note": "Qt expresses the MediaBox in integer PDF points; drawing vectors use exact millimetres"
+    },
+    {
+      "name": "A101 has no raster image objects",
+      "status": "passed"
+    },
+    {
+      "name": "A101 embeds both Sarabun font programs",
+      "status": "passed",
+      "embedded_font_bytes": {
+        "Sarabun-Bold": 9772,
+        "Sarabun-Regular": 10424
+      }
+    },
+    {
+      "name": "A101 has selectable Thai and source revision text",
+      "status": "passed"
+    },
+    {
+      "name": "A101 contains actual vector paths",
+      "status": "passed",
+      "path_count": 402,
+      "line_count": 415
+    },
+    {
+      "name": "A101 Ground Plan retains canonical dimensions and scale",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Ground Plan view_x dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Ground Plan view_x has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 129.9999972237481,
+      "expected_paper_mm": 130.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A101 Ground Plan view_y dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Ground Plan view_y has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 89.99998669094511,
+      "expected_paper_mm": 90.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A101 Upper Plan retains canonical dimensions and scale",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Upper Plan view_x dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Upper Plan view_x has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 129.99998914930555,
+      "expected_paper_mm": 130.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A101 Upper Plan view_y dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A101 Upper Plan view_y has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 89.99998669094511,
+      "expected_paper_mm": 90.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A101 all text is inside the paper",
+      "status": "passed"
+    },
+    {
+      "name": "A201 published payload matches metadata",
+      "status": "passed"
+    },
+    {
+      "name": "A201 is a one-page PDF",
+      "status": "passed"
+    },
+    {
+      "name": "A201 nominal A3 landscape page",
+      "status": "passed",
+      "observed_mm": [
+        420.1583333333333,
+        297.0388888888889
+      ],
+      "tolerance_mm": 0.2,
+      "note": "Qt expresses the MediaBox in integer PDF points; drawing vectors use exact millimetres"
+    },
+    {
+      "name": "A201 has no raster image objects",
+      "status": "passed"
+    },
+    {
+      "name": "A201 embeds both Sarabun font programs",
+      "status": "passed",
+      "embedded_font_bytes": {
+        "Sarabun-Bold": 9864,
+        "Sarabun-Regular": 10768
+      }
+    },
+    {
+      "name": "A201 has selectable Thai and source revision text",
+      "status": "passed"
+    },
+    {
+      "name": "A201 contains actual vector paths",
+      "status": "passed",
+      "path_count": 362,
+      "line_count": 359
+    },
+    {
+      "name": "A201 Section A-A retains canonical dimensions and scale",
+      "status": "passed"
+    },
+    {
+      "name": "A201 Section A-A view_x dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A201 Section A-A view_x has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 129.9999972237481,
+      "expected_paper_mm": 130.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A201 Section A-A view_y dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A201 Section A-A view_y has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 122.99999114142523,
+      "expected_paper_mm": 123.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A201 South Elevation retains canonical dimensions and scale",
+      "status": "passed"
+    },
+    {
+      "name": "A201 South Elevation view_x dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A201 South Elevation view_x has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 129.9999676174588,
+      "expected_paper_mm": 130.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A201 South Elevation view_y dimension is present at exact PDF coordinates",
+      "status": "passed"
+    },
+    {
+      "name": "A201 South Elevation view_y has true physical 1:50 length",
+      "status": "passed",
+      "observed_paper_mm": 122.99999114142523,
+      "expected_paper_mm": 123.0,
+      "tolerance_mm": 0.001
+    },
+    {
+      "name": "A201 all text is inside the paper",
+      "status": "passed"
+    }
+  ],
+  "pages": [
+    {
+      "file": "3117_A101.pdf",
+      "sha256": "0434865c4279b1bbabb3954490a4ecb77da4257cc86a2821ea15cf6832e4b02b",
+      "paper_mm": [
+        420.1583333333333,
+        297.0388888888889
+      ],
+      "measurements": [
+        {
+          "view": "Ground Plan",
+          "axis": "view_x",
+          "native_mm": 6500.0,
+          "paper_mm": 129.9999972237481
+        },
+        {
+          "view": "Ground Plan",
+          "axis": "view_y",
+          "native_mm": 4500.0,
+          "paper_mm": 89.99998669094511
+        },
+        {
+          "view": "Upper Plan",
+          "axis": "view_x",
+          "native_mm": 6500.0,
+          "paper_mm": 129.99998914930555
+        },
+        {
+          "view": "Upper Plan",
+          "axis": "view_y",
+          "native_mm": 4500.0,
+          "paper_mm": 89.99998669094511
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481",
+      "rendered_page": "examples/drawings/3117_A101.png",
+      "png_sha256": "89f5b0e38ee006e55ae7f87b326fa36eced750e4aeea0dcdfe32f96ef4884370"
+    },
+    {
+      "file": "3117_A201.pdf",
+      "sha256": "29ea468074b5050555322b0805eadf9589de881ca50771289c8a25b60e5034a9",
+      "paper_mm": [
+        420.1583333333333,
+        297.0388888888889
+      ],
+      "measurements": [
+        {
+          "view": "Section A-A",
+          "axis": "view_x",
+          "native_mm": 6500.0,
+          "paper_mm": 129.9999972237481
+        },
+        {
+          "view": "Section A-A",
+          "axis": "view_y",
+          "native_mm": 6150.0,
+          "paper_mm": 122.99999114142523
+        },
+        {
+          "view": "South Elevation",
+          "axis": "view_x",
+          "native_mm": 6500.0,
+          "paper_mm": 129.9999676174588
+        },
+        {
+          "view": "South Elevation",
+          "axis": "view_y",
+          "native_mm": 6150.0,
+          "paper_mm": 122.99999114142523
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5",
+      "rendered_page": "examples/drawings/3117_A201.png",
+      "png_sha256": "39a1a00281f2903b353bddd91acba33498e3184865521a2dc7286edfd284cb84"
+    }
+  ],
+  "scope": "Independent canonical PDF structure, font, text, vector scale and render review; not a printer or Windows test",
+  "checks_passed": 36
+}

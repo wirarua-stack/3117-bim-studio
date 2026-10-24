@@ -1,0 +1,4090 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "ifcopenshell/__init__.py",
+      "sha256": "58664ff3e886d73100a1ba91a5d452363bc77ed7f45f3da9364f34f0d9531a1c",
+      "bytes": 13610
+    },
+    {
+      "path": "ifcopenshell/_ifcopenshell_wrapper.cp312-win_amd64.pyd",
+      "sha256": "110d1696696f773770ce7d710257e0e61b895369d1b6be82cb2d6ba4191108fb",
+      "bytes": 55774720
+    },
+    {
+      "path": "ifcopenshell/draw.py",
+      "sha256": "7825ed81a32aa13e53fc33d05d29e85b46db21a2c3c2b25426b99a4117120425",
+      "bytes": 29099
+    },
+    {
+      "path": "ifcopenshell/entity_instance.py",
+      "sha256": "0942384047751012a2b98fe8844c402e4d4417c4a87df208ac01aba89c86b2b8",
+      "bytes": 25794
+    },
+    {
+      "path": "ifcopenshell/file.py",
+      "sha256": "f57a69fb8b3cebb64ff20a5388954767f17c8523b145eb5862b18cdd65136e2f",
+      "bytes": 40735
+    },
+    {
+      "path": "ifcopenshell/guid.py",
+      "sha256": "2bb2e1cfb09c1be26fda0f7815c22a8b107208d577cf05822585addbf7da7d8f",
+      "bytes": 4368
+    },
+    {
+      "path": "ifcopenshell/ifcopenshell_wrapper.py",
+      "sha256": "5cbb3eb45afea535b843034233be517368906a8444d57f8ccdeb2c0b0d6f2e60",
+      "bytes": 394524
+    },
+    {
+      "path": "ifcopenshell/ifcopenshell_wrapper.pyi",
+      "sha256": "06d154a866dde61f5f369011372131bf46b68a6e8e0be82e0b6f8fc2b7354a2e",
+      "bytes": 47340
+    },
+    {
+      "path": "ifcopenshell/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "ifcopenshell/requirements.txt",
+      "sha256": "c8139ed03d956951bc596f7a7b6c54e6eb8ab071585a8f03c7e8b160148c615a",
+      "bytes": 58
+    },
+    {
+      "path": "ifcopenshell/settings.py",
+      "sha256": "ccb4f0761b35ff8785259ce2b8154449b0033f80f3491638387fdcddaf19ce25",
+      "bytes": 1341
+    },
+    {
+      "path": "ifcopenshell/sql.py",
+      "sha256": "8bfa411ef395807b61030c11a736577dd860acb3fc73295e1fdf996d298d791a",
+      "bytes": 22291
+    },
+    {
+      "path": "ifcopenshell/stream.py",
+      "sha256": "8d151cd147455380ba7751898d0a772d165e114eaf9570e4c03e1198c1c39c54",
+      "bytes": 18401
+    },
+    {
+      "path": "ifcopenshell/template.py",
+      "sha256": "bf37317ceae3894c43ff031cc14596e2d2537c1dad9a7a8179f9d7db80c42d76",
+      "bytes": 4135
+    },
+    {
+      "path": "ifcopenshell/validate.py",
+      "sha256": "974c5c4ed6fb90c93468b9fbe501472aab117320d38a3e93d773f6625aea097f",
+      "bytes": 33512
+    },
+    {
+      "path": "ifcopenshell/api/__init__.py",
+      "sha256": "0511a18c7c99a6e6a1748139dfc4ee0a7e46991a62340976cecdf420f703997a",
+      "bytes": 12751
+    },
+    {
+      "path": "ifcopenshell/api/aggregate/__init__.py",
+      "sha256": "2c6f2bc46e51c031594be23a034661f9f122e0709cf6d87d8ee8413b06fcac42",
+      "bytes": 1326
+    },
+    {
+      "path": "ifcopenshell/api/aggregate/assign_object.py",
+      "sha256": "82d688748981a50b09bd04de4fb149b520ad769aa47715e60e897f2151350ee7",
+      "bytes": 6906
+    },
+    {
+      "path": "ifcopenshell/api/aggregate/unassign_object.py",
+      "sha256": "83b02e671a1ee85bcbdb40263182d7b15429b7b7da8bfe527ea381bd1badc8a1",
+      "bytes": 3160
+    },
+    {
+      "path": "ifcopenshell/api/alignment/__init__.py",
+      "sha256": "bf2efb4f3b44ce8a37b222de2e55a21b0e546242a45760ecc386eb2372b2ada8",
+      "bytes": 5901
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_add_segment_to_curve.py",
+      "sha256": "fec5f17e5f199f7a597587883f4bc68a030316e6046fbb7832bf09b3532e653a",
+      "bytes": 6463
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_add_segment_to_layout.py",
+      "sha256": "d8b61a205a3bb838a5914297f91a36f6324d8c10374ec784b3576a6a6960d45d",
+      "bytes": 10287
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_add_zero_length_segment.py",
+      "sha256": "f57decb9cc166e8de07f3f7ddd6fb462ae09e0bcece80dd6d54517c21cb8fab4",
+      "bytes": 2737
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_create_geometric_representation.py",
+      "sha256": "99b6394b0ad8e42f44cf22892fa432258a24cb0589a057ef6d7e9843ae390d45",
+      "bytes": 7830
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_create_offset_curve_representation.py",
+      "sha256": "ffd011b917fe321029fa5283b8af9447358d4c3074aeed7df1bc3ede7c7bb3f9",
+      "bytes": 2711
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_create_polyline_representation.py",
+      "sha256": "c7616e2f968bf64c3a047192cfda6cda98f3eff738fc866bf592e00ee16fff1a",
+      "bytes": 2575
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_get_cant_segment.py",
+      "sha256": "1662d47965a7c1a96c7c4b80fe9d62aac5d0c6683ff2cb1140b9e0f859542d2a",
+      "bytes": 3319
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_get_segment_start_point_label.py",
+      "sha256": "08c59e341689e0e32fc8a245b75859932a0fbde3ea1a02134b88e9a6f4208eff",
+      "bytes": 11901
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_map_alignment_cant_segment.py",
+      "sha256": "362df9e3cd96e2b4aa4d819fbc7c276045897e742a54d5556ad0d7782886cab5",
+      "bytes": 18810
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_map_alignment_horizontal_segment.py",
+      "sha256": "d85419e61193a14dd5c640760c5f48334cde7d8b950dbda8aae563ff5bb02ea4",
+      "bytes": 23403
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_map_alignment_vertical_segment.py",
+      "sha256": "d3aaf1339f3ca9568849fe658dfb6b04cb36ec8a4bf23539f1f9283d31081b89",
+      "bytes": 8613
+    },
+    {
+      "path": "ifcopenshell/api/alignment/_update_curve_segment_transition_code.py",
+      "sha256": "34894d376656853811e042d363412bd1c3e6b37697419e14a8610967a35cd3be",
+      "bytes": 1426
+    },
+    {
+      "path": "ifcopenshell/api/alignment/add_stationing_referent.py",
+      "sha256": "f511f56198ee0acdeb43d15e7870b86b7bd86a899aad55b568c4bc655d7b4e3d",
+      "bytes": 6054
+    },
+    {
+      "path": "ifcopenshell/api/alignment/add_vertical_layout.py",
+      "sha256": "ecfd6911266a50bd0dded1457042bafb871b272262ff4443e0f7cac9b2dce861",
+      "bytes": 11360
+    },
+    {
+      "path": "ifcopenshell/api/alignment/add_zero_length_segment.py",
+      "sha256": "62a88b774f552b01d19ff1ef592b588877d2b43d0dfb94212db3978d98e98246",
+      "bytes": 11348
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create.py",
+      "sha256": "03d9a72a8ae82185af9ee5809c98a1a8f0589bf6b350c49385e75b0515f9ee0b",
+      "bytes": 4523
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_as_offset_curve.py",
+      "sha256": "5efc110616df0d206729671ff1da1c78e4fe6d82f49490793db2b3e116b602ed",
+      "bytes": 2174
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_as_polyline.py",
+      "sha256": "4bc623098d77fa0f4c9aa2e9d2d0d06c838fde170d2fa4ae1887d530cf102f07",
+      "bytes": 5610
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_by_pi_method.py",
+      "sha256": "938d82bc4f60c2451a0d934e9d38e2c942a35b50c44265452f31dd6084472c35",
+      "bytes": 2559
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_from_csv.py",
+      "sha256": "8105f6b3f27475ed9a0f35a2566a7ec02ce19ee809999fe7fb2c985eeaa7325e",
+      "bytes": 3819
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_layout_segment.py",
+      "sha256": "1a86a69a0f95e6dfe5fca0cd24fa672dcc293c51d8b136b86d47de2f61a421ab",
+      "bytes": 4430
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_representation.py",
+      "sha256": "29a08d74c6622d6901534790acc25725b9bb4f0324b7d869c85fdfab0e822999",
+      "bytes": 2371
+    },
+    {
+      "path": "ifcopenshell/api/alignment/create_segment_representations.py",
+      "sha256": "a53ec1467a884d9151f8be2c8ece100c11c74b57a224ceef07f4f41e9f49e649",
+      "bytes": 3702
+    },
+    {
+      "path": "ifcopenshell/api/alignment/distance_along_from_station.py",
+      "sha256": "14c43193e9a4bc6b7f7a433d936916e1e63ce816231e198baea23f26903d273a",
+      "bytes": 1986
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_alignment.py",
+      "sha256": "e9a2f998e9694663bd74af23f67f413bad565dfe693736554e3842dacc825bb9",
+      "bytes": 1163
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_alignment_layout_nest.py",
+      "sha256": "734ab697df5d44da2857af2003fffdcc616244de2343e61d66a0c700f07de341",
+      "bytes": 1458
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_alignment_layouts.py",
+      "sha256": "9251dd4ee061c092a8bf6bfebc435b8ef3277b2aa96346d542853317cc46aecb",
+      "bytes": 1476
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_alignment_segment_nest.py",
+      "sha256": "e5bd037219e90527795696415941e72e1fa61d3f23009ec4a6aed1d1a672a856",
+      "bytes": 1380
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_alignment_start_station.py",
+      "sha256": "f9f4b588780b4ca83d0cd4d0f28a6e5636d66559f036a506bfff03e1f0e31425",
+      "bytes": 2028
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_axis_subcontext.py",
+      "sha256": "1fe4a6fb22c03f38759d83f8a05045974c5c0c4e121f207ef2f003a7572d6828",
+      "bytes": 1692
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_basis_curve.py",
+      "sha256": "f315e3bc4c4a6c5940e740f062ec2458eb99c1aafc3cccb094d55478cb80d18d",
+      "bytes": 2499
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_cant_layout.py",
+      "sha256": "245d39a72a57b71205781efae47ccc565a9586e897f73e4393cabc5cd178303f",
+      "bytes": 1168
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_child_alignments.py",
+      "sha256": "cc73adb5ffbe01e89f6b50bcb98dcb97439208fc4e9437b324675b1eb6f04027",
+      "bytes": 1559
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_curve.py",
+      "sha256": "acb6f53677ecd9ac87e9557fae3c25e42eaac9aa189882c362111c4ef90413a8",
+      "bytes": 2168
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_curve_segment_transition_code.py",
+      "sha256": "d8afe10e4d5531bf7526c629502ae84c55d7a08acde41cd777400b27befe915d",
+      "bytes": 3658
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_horizontal_layout.py",
+      "sha256": "da36e22be5428d44385e32806ea208c03cb1945b7d2df221f2f3dff2e4443e08",
+      "bytes": 1186
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_layout_curve.py",
+      "sha256": "9962a2caaa036e59a2764558f444137e82d7ed3ef55294e6711c0b46a5e45f1a",
+      "bytes": 2204
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_layout_segments.py",
+      "sha256": "b2754e2629fca58bf1aaae8481a4aa617afe58a7498004235081f6f1e1781a88",
+      "bytes": 1514
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_mapped_segments.py",
+      "sha256": "9a36d13a68d2f9bcd0f2d7d790391a14b68c7ff70281763799d1c6e91e76924c",
+      "bytes": 2555
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_parent_alignment.py",
+      "sha256": "230b82c5c0303b40ff7ff7e2179b0d8e67f099f7bcfdad52ea0a1bfff9dd84c3",
+      "bytes": 1649
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_referent_nest.py",
+      "sha256": "cab8d2141c129ac964a612956cb9f20624aa0a02eec002f070331ea71f0250fa",
+      "bytes": 1638
+    },
+    {
+      "path": "ifcopenshell/api/alignment/get_vertical_layout.py",
+      "sha256": "c40d1f14926e79e9594d06c13d1fdc2e109cf3409815f8186d6c58b3f6c74ac9",
+      "bytes": 1180
+    },
+    {
+      "path": "ifcopenshell/api/alignment/has_zero_length_segment.py",
+      "sha256": "ac69f4b85bbd849420aaf0337d5a52d46def585c8a4f962a7b6f40dd26878667",
+      "bytes": 2782
+    },
+    {
+      "path": "ifcopenshell/api/alignment/layout_horizontal_alignment_by_pi_method.py",
+      "sha256": "bb0152f1bb44bc805cc396de9fd796ed924023bd6bfddfc78dc2e42da4721cd6",
+      "bytes": 4932
+    },
+    {
+      "path": "ifcopenshell/api/alignment/layout_vertical_alignment_by_pi_method.py",
+      "sha256": "0a9474f286a5eff2476113c182c7299f82472f80f2f4c5b2ac2a5e61c7bcd140",
+      "bytes": 4342
+    },
+    {
+      "path": "ifcopenshell/api/alignment/name_segments.py",
+      "sha256": "68a4e185c64bd91b3e41b1262141d53ebad30fee0af3ed6a70262b7813c154a1",
+      "bytes": 1778
+    },
+    {
+      "path": "ifcopenshell/api/alignment/update_fallback_position.py",
+      "sha256": "3d8f6dcbd13edb3b71410159655e37136f6bb7c28a95e383f5391e82e8abda78",
+      "bytes": 2119
+    },
+    {
+      "path": "ifcopenshell/api/alignment/util.py",
+      "sha256": "f2cc7a4894c2c135245a4e256c5e44fb6a64ed3e16deca22aca90fcf429677c9",
+      "bytes": 6495
+    },
+    {
+      "path": "ifcopenshell/api/attribute/__init__.py",
+      "sha256": "a10a1002bc3b32d0f90ac762e012ea4d05d70e6092ab588e55abcbb297cd6c21",
+      "bytes": 1206
+    },
+    {
+      "path": "ifcopenshell/api/attribute/edit_attributes.py",
+      "sha256": "a785062d5f547c5c4a2489d4af9ee78b19a9afda14960e4bdf1205142b7ceb87",
+      "bytes": 3906
+    },
+    {
+      "path": "ifcopenshell/api/boundary/__init__.py",
+      "sha256": "6151ba159433295afc1ffd09831c0cda8dcb0e5e05a67c5ab2e2a70c0ec12078",
+      "bytes": 1406
+    },
+    {
+      "path": "ifcopenshell/api/boundary/assign_connection_geometry.py",
+      "sha256": "6dd95e65c13207d9fa945f41a5ed621c8c0ecf38a2fabaa36644ff8005005b72",
+      "bytes": 5880
+    },
+    {
+      "path": "ifcopenshell/api/boundary/copy_boundary.py",
+      "sha256": "b2c54dcea2f13c012ad8e82bd3e66269b4483fecbefa1195dcec59c4a907144c",
+      "bytes": 1697
+    },
+    {
+      "path": "ifcopenshell/api/boundary/edit_attributes.py",
+      "sha256": "0ef65ddd7539e9be135285448b44b0d3db77f459ca58735d2b29fc805ce2868e",
+      "bytes": 2592
+    },
+    {
+      "path": "ifcopenshell/api/boundary/remove_boundary.py",
+      "sha256": "55842aff676fd53a5bcf8b8d6903b0a683a1577153a8274559fac6f6c1439ab1",
+      "bytes": 1866
+    },
+    {
+      "path": "ifcopenshell/api/classification/__init__.py",
+      "sha256": "3fbed7b43fc37d95e7e6076d6e07ecead155b145d23c245190c88d40042036e1",
+      "bytes": 1766
+    },
+    {
+      "path": "ifcopenshell/api/classification/add_classification.py",
+      "sha256": "8c78382475fc6e22bdc735c7b7cb9bc44a4187c5dad732ed0920d971d73dc650",
+      "bytes": 5383
+    },
+    {
+      "path": "ifcopenshell/api/classification/add_reference.py",
+      "sha256": "3ce3c47941acc1899b7ef72faf0a3ffedf2f45365eec0d13b80c594189a5b1ea",
+      "bytes": 11969
+    },
+    {
+      "path": "ifcopenshell/api/classification/edit_classification.py",
+      "sha256": "4bdaf4d1e249e0a332fd94ae3ed79fa163ef212c95b39e8a5f3f27e23bec7de5",
+      "bytes": 1713
+    },
+    {
+      "path": "ifcopenshell/api/classification/edit_reference.py",
+      "sha256": "bc7b4824dc326c64075d4fcdd818c9273eebeaf5ce6e508dee28ed3e747a3994",
+      "bytes": 1688
+    },
+    {
+      "path": "ifcopenshell/api/classification/remove_classification.py",
+      "sha256": "fde807430c5e93977580e1c6b17bce6b54026996138acc35f7708c76d1ce7507",
+      "bytes": 2995
+    },
+    {
+      "path": "ifcopenshell/api/classification/remove_reference.py",
+      "sha256": "8ea4d6d2dfdb125e50ff69819865708a89c6d27eb654cc15a163733b43b87e51",
+      "bytes": 4630
+    },
+    {
+      "path": "ifcopenshell/api/cogo/__init__.py",
+      "sha256": "7d57f35106c80942d39130e0fb91f4cfb54b5a06dd0f9d3a468407500d8cad7b",
+      "bytes": 1218
+    },
+    {
+      "path": "ifcopenshell/api/cogo/add_survey_point.py",
+      "sha256": "991a45fff5d0321dafeda6934e52ccc6352242a2abae8bfba80ebf4833a1fcb9",
+      "bytes": 2315
+    },
+    {
+      "path": "ifcopenshell/api/cogo/assign_survey_point.py",
+      "sha256": "b492e3bc4e6d00e768eb168f1ddb9442bcd3ff108ce68c11bcbbbf1af5862774",
+      "bytes": 1484
+    },
+    {
+      "path": "ifcopenshell/api/cogo/bearing2dd.py",
+      "sha256": "7f13b6338f83f689e87c1338b39b1c0c364a838cc18dc40fc231982456f1d2aa",
+      "bytes": 2939
+    },
+    {
+      "path": "ifcopenshell/api/cogo/edit_survey_point.py",
+      "sha256": "6995cb75a928521349ad1fda3d2cd09e29e1c7137bd5b2014720c13744afd740",
+      "bytes": 1577
+    },
+    {
+      "path": "ifcopenshell/api/constraint/__init__.py",
+      "sha256": "187f6eb9a84f73e28d630eec439e74c6bb375b57cc0f451963409e2c7b13e1b1",
+      "bytes": 1666
+    },
+    {
+      "path": "ifcopenshell/api/constraint/add_metric.py",
+      "sha256": "9c97c70dffb01f55032c2c2fa15837fbc29dd458e31fab20a435308632b6b835",
+      "bytes": 2022
+    },
+    {
+      "path": "ifcopenshell/api/constraint/add_metric_reference.py",
+      "sha256": "4ce0d3c4704ed5fa69bdd59790452ce41c4b808c29916e1d93fcdc7c6d891e71",
+      "bytes": 1891
+    },
+    {
+      "path": "ifcopenshell/api/constraint/add_objective.py",
+      "sha256": "6a87225d4085405763963f52af98442f8cd89c0edfd42ab9256ad1f2028a0ba1",
+      "bytes": 1969
+    },
+    {
+      "path": "ifcopenshell/api/constraint/assign_constraint.py",
+      "sha256": "6d50e950daace29404bc973a2cfa35820e7f4ff4de56146e42c6cab214725f56",
+      "bytes": 3447
+    },
+    {
+      "path": "ifcopenshell/api/constraint/edit_metric.py",
+      "sha256": "3c2718b62944b5771a7739b0143874a26a5b76cf70c601e3e7ee9a9809ddc353",
+      "bytes": 1662
+    },
+    {
+      "path": "ifcopenshell/api/constraint/edit_objective.py",
+      "sha256": "7795e525de489d7a1ca8455e0665e2f6268537808c0e362fcffedd7df4e1364d",
+      "bytes": 1602
+    },
+    {
+      "path": "ifcopenshell/api/constraint/remove_constraint.py",
+      "sha256": "41821e4499fe577b1984de3e3dae08402995615f4e99ffdb85a8feca5874d3b8",
+      "bytes": 1819
+    },
+    {
+      "path": "ifcopenshell/api/constraint/remove_metric.py",
+      "sha256": "05147fb2c836e9c8463257d10a6a1c54400ae6ae7aecc23ad3df4cc120b829c7",
+      "bytes": 2491
+    },
+    {
+      "path": "ifcopenshell/api/constraint/unassign_constraint.py",
+      "sha256": "7c8457dce080364b19d932e9a3632a2fd01435567ec50657005c57bf108aa631",
+      "bytes": 2805
+    },
+    {
+      "path": "ifcopenshell/api/context/__init__.py",
+      "sha256": "a8a934cdb7b0515566db2e0e37cbc4be41996241fc2e6e23c0dfdd93b5b3c1d6",
+      "bytes": 1436
+    },
+    {
+      "path": "ifcopenshell/api/context/add_context.py",
+      "sha256": "273978fc50b10542fb101d74a7c2930fdcc8b9e4d2a9393d8c6a3400f0c5e633",
+      "bytes": 11896
+    },
+    {
+      "path": "ifcopenshell/api/context/edit_context.py",
+      "sha256": "ebfb4116bb5e96f2204e87dbbdae4756c8d93640bbc2589a647b873281fd418c",
+      "bytes": 1961
+    },
+    {
+      "path": "ifcopenshell/api/context/remove_context.py",
+      "sha256": "02768f04e9104c6850334934ef007a4771faf2a83076551f8ab7ff6d41f384b6",
+      "bytes": 2831
+    },
+    {
+      "path": "ifcopenshell/api/control/__init__.py",
+      "sha256": "5a135bed38ffda6ed756f881d2fcd288dd1329c6e73ad4df45e37fb7320ed215",
+      "bytes": 1191
+    },
+    {
+      "path": "ifcopenshell/api/control/assign_control.py",
+      "sha256": "b891c2b9a85650a3448d75b8525322ca8ad1696e1f867a8f8c620f4d17312eea",
+      "bytes": 4618
+    },
+    {
+      "path": "ifcopenshell/api/control/unassign_control.py",
+      "sha256": "af7f9add88e517255a25f816c3099f163b6ad8ce0e106c4277ed2a621a802434",
+      "bytes": 2597
+    },
+    {
+      "path": "ifcopenshell/api/cost/__init__.py",
+      "sha256": "c545c1d4da72e968474270f0d42b0b8dadb454b22f618c9faa648c9f1088b3f9",
+      "bytes": 2768
+    },
+    {
+      "path": "ifcopenshell/api/cost/add_cost_item.py",
+      "sha256": "7d1ba9e64d863a5e4895939b8eb73993514603601e72dfa61ec8c5b8b5698879",
+      "bytes": 2637
+    },
+    {
+      "path": "ifcopenshell/api/cost/add_cost_item_quantity.py",
+      "sha256": "1a6d381f123129c5495bd20feaa30055b33335f58809a38b82150e8e0546685b",
+      "bytes": 3700
+    },
+    {
+      "path": "ifcopenshell/api/cost/add_cost_schedule.py",
+      "sha256": "29abe562c4651ad25c81f00459b00036e70a233a02e34ca79dee99a728098c01",
+      "bytes": 2377
+    },
+    {
+      "path": "ifcopenshell/api/cost/add_cost_value.py",
+      "sha256": "de0827a0f1191b24cf18ad0bd9ddddf603711fab52e82c99839b0b5eaddee9c6",
+      "bytes": 5084
+    },
+    {
+      "path": "ifcopenshell/api/cost/assign_cost_item_quantity.py",
+      "sha256": "acac8bfec6d07b6073015c82b1bd58e9a7dc6cc54757f79925c40a619e8ad40a",
+      "bytes": 7141
+    },
+    {
+      "path": "ifcopenshell/api/cost/assign_cost_value.py",
+      "sha256": "38ad6567490a3be408008cb35ed26ffde6dc47b127055984313a46c1923a9c8b",
+      "bytes": 3115
+    },
+    {
+      "path": "ifcopenshell/api/cost/calculate_cost_item_resource_value.py",
+      "sha256": "bda495e8e91e0cd74bd329da5cd656f8c54464ce48d86d0a7eaea193064e15c1",
+      "bytes": 5528
+    },
+    {
+      "path": "ifcopenshell/api/cost/copy_cost_item.py",
+      "sha256": "7ac111cc95c62e675233d89f316d5cf337eaeb34575793a7803bb271e96f31ef",
+      "bytes": 5138
+    },
+    {
+      "path": "ifcopenshell/api/cost/copy_cost_item_values.py",
+      "sha256": "dedf6e4aaf4b3e381b28670286ced3a635817fe029b28360b8a86f67cb6edf3c",
+      "bytes": 2502
+    },
+    {
+      "path": "ifcopenshell/api/cost/copy_cost_schedule.py",
+      "sha256": "cc151636ea72e1813bebdfedeb3423487e2ba55d5beb364a55ac580f37ce3c03",
+      "bytes": 1969
+    },
+    {
+      "path": "ifcopenshell/api/cost/edit_cost_item.py",
+      "sha256": "e896eafceae674581a87b9dd2ae22fa964408838fd7551a484d337f538f2a9e4",
+      "bytes": 1654
+    },
+    {
+      "path": "ifcopenshell/api/cost/edit_cost_item_quantity.py",
+      "sha256": "bb4a514df4c4d658fa7f4ee5a5f1b85e42b134dcd6dd48800256cb52602e9a16",
+      "bytes": 2143
+    },
+    {
+      "path": "ifcopenshell/api/cost/edit_cost_schedule.py",
+      "sha256": "a8be7962f723ed36827c3a4911ec94645c55026be703f5050b38fb8145136547",
+      "bytes": 1624
+    },
+    {
+      "path": "ifcopenshell/api/cost/edit_cost_value.py",
+      "sha256": "62fe91e393d5d3d6eba1f0389b5670dc0efbf4509d5f62b672eb3253a394bd25",
+      "bytes": 2633
+    },
+    {
+      "path": "ifcopenshell/api/cost/edit_cost_value_formula.py",
+      "sha256": "c2300d27e1b8d5a4cbc1e8fb642918834fd69004d6e8a58df42242e9edabc34d",
+      "bytes": 3151
+    },
+    {
+      "path": "ifcopenshell/api/cost/remove_cost_item.py",
+      "sha256": "79af603ab7386c9c72a1638ea80f6fd6fb93b961ad95242d33401e59719cfd22",
+      "bytes": 2551
+    },
+    {
+      "path": "ifcopenshell/api/cost/remove_cost_item_quantity.py",
+      "sha256": "e860ab01eb37e13a2100fa04343dd6b560893c4028d4e26032a561c4389cebe6",
+      "bytes": 2071
+    },
+    {
+      "path": "ifcopenshell/api/cost/remove_cost_schedule.py",
+      "sha256": "f1ed5f8929d4767e553d05e390f023629473f6a837d9455a692e06499c917471",
+      "bytes": 2001
+    },
+    {
+      "path": "ifcopenshell/api/cost/remove_cost_value.py",
+      "sha256": "4c16f91f0eddcf2d7435527f165b901e0f2c28831ac28cd21e127e2370914213",
+      "bytes": 2521
+    },
+    {
+      "path": "ifcopenshell/api/cost/unassign_cost_item_quantity.py",
+      "sha256": "94070060460a08a9ab4520495297e54f128aeabdd009a790047dc9380235cb35",
+      "bytes": 4675
+    },
+    {
+      "path": "ifcopenshell/api/document/__init__.py",
+      "sha256": "689f22fbb42e06ac5530a5d161c233945d053cb79f27ea71f5e5d18dae24a7df",
+      "bytes": 1781
+    },
+    {
+      "path": "ifcopenshell/api/document/add_information.py",
+      "sha256": "393f2060fa07dd20d62f522483a2bcfb00c1ea1fbfed77662fc2d1c667dfcc93",
+      "bytes": 3556
+    },
+    {
+      "path": "ifcopenshell/api/document/add_reference.py",
+      "sha256": "f304c53efd4081f2c8954e1f903e2ebcb084876c976514645b4fb4217906769c",
+      "bytes": 3345
+    },
+    {
+      "path": "ifcopenshell/api/document/assign_document.py",
+      "sha256": "e60f379529c7156e5dce934682d0cf24a779bb8c4a50bbfdb429bc7e88662750",
+      "bytes": 4233
+    },
+    {
+      "path": "ifcopenshell/api/document/edit_information.py",
+      "sha256": "94a138868cfc10b4ed50b22a03e6ca06037af4a5cc76124fd9bda4cc22c9f3d4",
+      "bytes": 1754
+    },
+    {
+      "path": "ifcopenshell/api/document/edit_reference.py",
+      "sha256": "1be52c877cc2251f44bd3eeeda4930ad157908d8c6fdd62f33ced6569f1fd5fc",
+      "bytes": 1961
+    },
+    {
+      "path": "ifcopenshell/api/document/remove_information.py",
+      "sha256": "995c262e97626ec3539e640b10689b5e10646a47b5a4faf57bc0dc17c26b881e",
+      "bytes": 2416
+    },
+    {
+      "path": "ifcopenshell/api/document/remove_reference.py",
+      "sha256": "454c58175bc993672d16eae6c5de2ac45eaec66f963532cc8d1b479011e2f237",
+      "bytes": 1770
+    },
+    {
+      "path": "ifcopenshell/api/document/unassign_document.py",
+      "sha256": "7bae789f79119c5e9c3958a9fa3a638161a34106526d94da8b2650b919086e13",
+      "bytes": 3076
+    },
+    {
+      "path": "ifcopenshell/api/drawing/__init__.py",
+      "sha256": "a276bedc12787d872d69da2132c174ce433a7771248e846c27a8885809019966",
+      "bytes": 1313
+    },
+    {
+      "path": "ifcopenshell/api/drawing/assign_product.py",
+      "sha256": "aa103cacc15f2e69e74268cbf32340a4db7835d9265266a19da11a9418d859b1",
+      "bytes": 4158
+    },
+    {
+      "path": "ifcopenshell/api/drawing/edit_text_literal.py",
+      "sha256": "739a16ecdf52325f432d8291b1595c548ed60ef9ed2bdd6da76c5e7aaa4c83ca",
+      "bytes": 1602
+    },
+    {
+      "path": "ifcopenshell/api/drawing/unassign_product.py",
+      "sha256": "beef98eae7e55895d7d9363dfd660aeeaa4efcef2a10ff5e4f08ef113aab9e46",
+      "bytes": 3030
+    },
+    {
+      "path": "ifcopenshell/api/feature/__init__.py",
+      "sha256": "88f30b1a149e779860465047617928a8614de0dbe63e3ad70fa6e1979cf335da",
+      "bytes": 1519
+    },
+    {
+      "path": "ifcopenshell/api/feature/add_feature.py",
+      "sha256": "d5ca47fe279297140390dbdccaed283091ba06dbcf074f1dd4cac057ce7afd5a",
+      "bytes": 6706
+    },
+    {
+      "path": "ifcopenshell/api/feature/add_filling.py",
+      "sha256": "8d22de6a7ad93f2ec3ea86aad675a988a98090ad4587e3d2786effc61071c838",
+      "bytes": 5163
+    },
+    {
+      "path": "ifcopenshell/api/feature/remove_feature.py",
+      "sha256": "8e65f1f12a98c3f7d82bd090070e98d7618e22fd8fba137c47105a64ae6f681c",
+      "bytes": 2572
+    },
+    {
+      "path": "ifcopenshell/api/feature/remove_filling.py",
+      "sha256": "6e34c27f6571234f805c16f45ccef57eb212243df9053b59c1eff8fcc0f6a3cd",
+      "bytes": 2191
+    },
+    {
+      "path": "ifcopenshell/api/geometry/__init__.py",
+      "sha256": "35ce09f1cccd3b013031115c3c7f00a84923c075c210a2e61121948dc2c1deb9",
+      "bytes": 3449
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_axis_representation.py",
+      "sha256": "6f0bf72fc3489e8b48895866a25ca0326aa995a8f747cecdfa74161f68464e4a",
+      "bytes": 4750
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_boolean.py",
+      "sha256": "c5541c4eccd70ac74e119490651314840d7dedf79c4d8f360dc6f93427bc7ebf",
+      "bytes": 5184
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_door_representation.py",
+      "sha256": "b08c6d37efe7f3ffdbc8587ae36468cbf631385afa75e3efaf30f33161567265",
+      "bytes": 29372
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_footprint_representation.py",
+      "sha256": "8e2d83b4be140fbdbdf12b2f03a3eb0615c413e7bbaa3ce80f48d9990074ce39",
+      "bytes": 1281
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_mesh_representation.py",
+      "sha256": "fa5d7e13f78da010e80191db6339b992bafaa25d7dfa83d0548bf16551762a82",
+      "bytes": 5170
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_profile_representation.py",
+      "sha256": "96a3e3d22025cb489d25836dfbef3d2052c2117b5fbdd1e5a793015d662bc91a",
+      "bytes": 10151
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_railing_representation.py",
+      "sha256": "407f5a6af48fd9d45020596646871c1a07bbdf5c5decff09e58f23f13964e98b",
+      "bytes": 17729
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_representation.py",
+      "sha256": "7511908ac2f42b31283f92370796aadd4e50fe61637218403c4e8592c7090f36",
+      "bytes": 47387
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_shape_aspect.py",
+      "sha256": "8abe21c97c8380372c2af389564602fe48175d5218721db25783ad7c2cb3487b",
+      "bytes": 3823
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_slab_representation.py",
+      "sha256": "1f16c0832298fb2366f84caacd9c5893ac3a23a68a59015441b494509f8900e7",
+      "bytes": 6660
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_wall_representation.py",
+      "sha256": "ef295708c027a71c4afedf24b8d30803f263a953c5c7a5e44473f99931ba2374",
+      "bytes": 6082
+    },
+    {
+      "path": "ifcopenshell/api/geometry/add_window_representation.py",
+      "sha256": "0931766573497ecdf8fd5f40ac7a4106d3440344806e938a638f588774695905",
+      "bytes": 32981
+    },
+    {
+      "path": "ifcopenshell/api/geometry/assign_representation.py",
+      "sha256": "8d5ec6e0bd49d77771b7a6053630d29e7e377f69f29dfb1e2f3617fe99bcca52",
+      "bytes": 4259
+    },
+    {
+      "path": "ifcopenshell/api/geometry/connect_element.py",
+      "sha256": "340981fe96a7093f027ced3db640bce427121c6176841e94f25b49dd5ee87d21",
+      "bytes": 2322
+    },
+    {
+      "path": "ifcopenshell/api/geometry/connect_path.py",
+      "sha256": "3d7615e7f68470a789850277ac2e80041cfe72ce024a5642340be47b6053b9ad",
+      "bytes": 3397
+    },
+    {
+      "path": "ifcopenshell/api/geometry/connect_wall.py",
+      "sha256": "bb45a7ab2ca46ca1c0b7d8c8f386f7ced27ffecd1bcf209693f9df6986ad7ddb",
+      "bytes": 2337
+    },
+    {
+      "path": "ifcopenshell/api/geometry/create_2pt_wall.py",
+      "sha256": "d02a43f4ffd4c6c3d05b92f7d5dfc6c7aec333dc7d62d3d4267127dea8d27a0b",
+      "bytes": 3210
+    },
+    {
+      "path": "ifcopenshell/api/geometry/disconnect_element.py",
+      "sha256": "c73d69b31ce40dc77344f5eecab7d1e5fd9bdf648deaf2eaffda641e65438af0",
+      "bytes": 2316
+    },
+    {
+      "path": "ifcopenshell/api/geometry/disconnect_path.py",
+      "sha256": "db5247c7e695b83fd8eb774494916ffb02c39cb70d54bedd8ab801b7e88a5988",
+      "bytes": 2309
+    },
+    {
+      "path": "ifcopenshell/api/geometry/edit_object_placement.py",
+      "sha256": "4461f185c891059231b880b5982f86f0a1205dcbd8a88b86734b77b32ddf2d5c",
+      "bytes": 9094
+    },
+    {
+      "path": "ifcopenshell/api/geometry/map_representation.py",
+      "sha256": "08dfabf0028fd251a539201d377fd6e45349dbb5e1dba4c11e4d063d6e274ad9",
+      "bytes": 2750
+    },
+    {
+      "path": "ifcopenshell/api/geometry/regenerate_wall_representation.py",
+      "sha256": "e67b7fdfb8f517d00aab553d8b765eba47432459fc97fd5075dbaa6f6e905fe3",
+      "bytes": 30489
+    },
+    {
+      "path": "ifcopenshell/api/geometry/remove_boolean.py",
+      "sha256": "0cb793831c80ca87896971655c40991ed9d483aa89ec464c84f33d7fab8c8916",
+      "bytes": 2434
+    },
+    {
+      "path": "ifcopenshell/api/geometry/remove_representation.py",
+      "sha256": "3c0fd628f84d91ea7159471e33b49a5e9ef0bfc26d79c75befbbab59ee2e8db6",
+      "bytes": 4243
+    },
+    {
+      "path": "ifcopenshell/api/geometry/unassign_representation.py",
+      "sha256": "66a70afdd904eec2fd9bb1bc2a21b4d368569b352f47e006f07c3843a61edac2",
+      "bytes": 5530
+    },
+    {
+      "path": "ifcopenshell/api/geometry/validate_type.py",
+      "sha256": "04325615a7743ad699cf11be07c2cfb647ca7f6d753fcb66260ae5e830b41798",
+      "bytes": 3601
+    },
+    {
+      "path": "ifcopenshell/api/georeference/__init__.py",
+      "sha256": "70f81c08caccb9ca54c1701b1ef863d5996fef56f7e2adb4079ca11afa9d12d2",
+      "bytes": 1494
+    },
+    {
+      "path": "ifcopenshell/api/georeference/add_georeferencing.py",
+      "sha256": "bb7a6dbe63075f1b409f2dbadcc7818678814866b50af7e58d93bddba743a6b1",
+      "bytes": 3878
+    },
+    {
+      "path": "ifcopenshell/api/georeference/edit_georeferencing.py",
+      "sha256": "2fb7bc9e0cc38f6bc05bda1de95ca01c9fb572dd6c641417eddb17c80c57d967",
+      "bytes": 5519
+    },
+    {
+      "path": "ifcopenshell/api/georeference/edit_true_north.py",
+      "sha256": "6e6dd990bbd82fad3e9667b8e28cd6ae727b8f3affd96374d3df78548df74791",
+      "bytes": 3098
+    },
+    {
+      "path": "ifcopenshell/api/georeference/edit_wcs.py",
+      "sha256": "3923287b0c1f131a73594154de99f0eb8323e568e65560f2ddcd40fd820e7516",
+      "bytes": 3690
+    },
+    {
+      "path": "ifcopenshell/api/georeference/remove_georeferencing.py",
+      "sha256": "e0368c3df3dc7691bee08e38f18ae1f2501aec45eea29ff67aefa45e6889f5ea",
+      "bytes": 2158
+    },
+    {
+      "path": "ifcopenshell/api/grid/__init__.py",
+      "sha256": "4d5dddc17742b2121fc1a68709487d9efd2ebfeac3192f970f3aac5ebda4b2bb",
+      "bytes": 1210
+    },
+    {
+      "path": "ifcopenshell/api/grid/create_axis_curve.py",
+      "sha256": "c5bb89e2034122443822624311f77b0f050ef235af09adb5542f43ec1d42912b",
+      "bytes": 3411
+    },
+    {
+      "path": "ifcopenshell/api/grid/create_grid_axis.py",
+      "sha256": "35529ffbae3896107940d8d4a61f31f77b03070f79fa0454aa44387ab89212bb",
+      "bytes": 3500
+    },
+    {
+      "path": "ifcopenshell/api/grid/remove_grid_axis.py",
+      "sha256": "9a7dae111aee27edc302931b295f68402aa249c8c277135bdf814fe77ed50093",
+      "bytes": 1911
+    },
+    {
+      "path": "ifcopenshell/api/group/__init__.py",
+      "sha256": "e02ecc93dfeef7c95377816f525ea5251794461c21398430d58ff0c266d5ecc2",
+      "bytes": 1550
+    },
+    {
+      "path": "ifcopenshell/api/group/add_group.py",
+      "sha256": "0ea190dbd92c312f117fbc4e38498680e253e3ac524c25f440e59c7d205b11ff",
+      "bytes": 2077
+    },
+    {
+      "path": "ifcopenshell/api/group/assign_group.py",
+      "sha256": "bfd6fcf9a32e356d1ec5705db463ee13c6e9a8b430fdc3994904600060b1b5e5",
+      "bytes": 2470
+    },
+    {
+      "path": "ifcopenshell/api/group/edit_group.py",
+      "sha256": "72e6ae725fa3a1f9c536e13e029de5b7f94c7e8ee92d4e839f07f53169a8915d",
+      "bytes": 1603
+    },
+    {
+      "path": "ifcopenshell/api/group/remove_group.py",
+      "sha256": "7513d6f9e87aeb1d5ae5861a859b093ec6d4af14780a16f4b792d066344782eb",
+      "bytes": 2400
+    },
+    {
+      "path": "ifcopenshell/api/group/unassign_group.py",
+      "sha256": "efafb2ea463cdbc2825d51d78bf9d68e0b1a60c093b9abeb41018baf4947411f",
+      "bytes": 2166
+    },
+    {
+      "path": "ifcopenshell/api/group/update_group_products.py",
+      "sha256": "551902c3abea5862357814c832b2e05fa1a400541eddfb8b010805f08635148a",
+      "bytes": 2498
+    },
+    {
+      "path": "ifcopenshell/api/layer/__init__.py",
+      "sha256": "ffe63af43d26ca11acc48eb8cf894d42cf2303715195af1f2271db8220e0e575",
+      "bytes": 1527
+    },
+    {
+      "path": "ifcopenshell/api/layer/add_layer.py",
+      "sha256": "6def30acaa7a4161daf6ee00f0cf505792963449a178f72783268f8a22bc90a3",
+      "bytes": 1882
+    },
+    {
+      "path": "ifcopenshell/api/layer/add_layer_with_style.py",
+      "sha256": "6d40e41358e41bdeae74d69a27911fc79d0f9817d738a52a6a806362bb04ca47",
+      "bytes": 2024
+    },
+    {
+      "path": "ifcopenshell/api/layer/assign_layer.py",
+      "sha256": "4b54155c0832b117623cfba330247bbcc0033e6b140cd78b5c87b1cea1b9c502",
+      "bytes": 3245
+    },
+    {
+      "path": "ifcopenshell/api/layer/edit_layer.py",
+      "sha256": "94313d37c96f1d4add22ce6de672bac0a5109a295cebcc557324c058a2cda51e",
+      "bytes": 1660
+    },
+    {
+      "path": "ifcopenshell/api/layer/remove_layer.py",
+      "sha256": "97e715999949eabef550f03b3cfd33e7cc9558d3b5c980203211171ef53102ea",
+      "bytes": 1345
+    },
+    {
+      "path": "ifcopenshell/api/layer/unassign_layer.py",
+      "sha256": "a4ec638b6bdcaab83fa17fbeb78ae3e3f2571bdd2a6d2150c7020022c3dd198e",
+      "bytes": 3105
+    },
+    {
+      "path": "ifcopenshell/api/library/__init__.py",
+      "sha256": "e6f991a75c1c126a5aa7c9debba1224eb6b4ea338926dc6defbd59b3ffb8993c",
+      "bytes": 1683
+    },
+    {
+      "path": "ifcopenshell/api/library/add_library.py",
+      "sha256": "bdc3faf395ae0256f6ee3f9a8bdc2cafcbb3beb23bb13788be10fbd43cfd769e",
+      "bytes": 2704
+    },
+    {
+      "path": "ifcopenshell/api/library/add_reference.py",
+      "sha256": "1fe880225373e99ca1effefed3ea6e13df7b8305d5ce81a82add3932a34f6fdc",
+      "bytes": 2545
+    },
+    {
+      "path": "ifcopenshell/api/library/assign_reference.py",
+      "sha256": "186cf0b599d56d1477b2e9d4d839b780ecacfa80d8f3eaa10cfab5c1615149e5",
+      "bytes": 3634
+    },
+    {
+      "path": "ifcopenshell/api/library/edit_library.py",
+      "sha256": "066e00515f46779ff561d8e4d139e8c3edf350bd339e98dbba80f2c873cb1d9b",
+      "bytes": 2243
+    },
+    {
+      "path": "ifcopenshell/api/library/edit_reference.py",
+      "sha256": "a4553666e16236fbee373c9dc226d8f10ec2b51dd9c0c141e90bb044993e9e28",
+      "bytes": 1836
+    },
+    {
+      "path": "ifcopenshell/api/library/remove_library.py",
+      "sha256": "d275cd4a8926d983e04254de2edacb48056e47a3190462d56792c13d53787445",
+      "bytes": 2192
+    },
+    {
+      "path": "ifcopenshell/api/library/remove_reference.py",
+      "sha256": "354c2e9247fca0fdba43a63fa653352b680ac605a98ab64cf6b420a96eac6b63",
+      "bytes": 1889
+    },
+    {
+      "path": "ifcopenshell/api/library/unassign_reference.py",
+      "sha256": "9dc648a4c31618f1580ffcd77c19b010a2858f6a6c87c2919bfe25a7a78b9785",
+      "bytes": 3148
+    },
+    {
+      "path": "ifcopenshell/api/material/__init__.py",
+      "sha256": "0330160208efc55168dd66e1660b27b873567cf7ee3b9eb15e969c0302d95697",
+      "bytes": 3207
+    },
+    {
+      "path": "ifcopenshell/api/material/add_constituent.py",
+      "sha256": "210181d7c551c991008ba457b071d278bac871fc3d4baa22e8805fca7ef47ef4",
+      "bytes": 4531
+    },
+    {
+      "path": "ifcopenshell/api/material/add_layer.py",
+      "sha256": "3e76f8c960b0541499618448bec96a8c9134179a9e3cc38077543755112cd9b2",
+      "bytes": 4700
+    },
+    {
+      "path": "ifcopenshell/api/material/add_list_item.py",
+      "sha256": "33bd6f40b61c219ccb656aa8b55418ba50ae7ae947d1d7922ddbcc3c508267ad",
+      "bytes": 3796
+    },
+    {
+      "path": "ifcopenshell/api/material/add_material.py",
+      "sha256": "16d051e37e31ab368fd8f91d5e576efdff4e1fe34c052813648119d7694cbc8a",
+      "bytes": 3901
+    },
+    {
+      "path": "ifcopenshell/api/material/add_material_set.py",
+      "sha256": "55173535622e83e5660e2c4f92792806a1f9b0c0001d4fb35504063f1f63f2c1",
+      "bytes": 6060
+    },
+    {
+      "path": "ifcopenshell/api/material/add_profile.py",
+      "sha256": "7319e1ba89b1314cf0fe40124c0d6731e1bfb6977817731be1d154e66b307fa5",
+      "bytes": 4539
+    },
+    {
+      "path": "ifcopenshell/api/material/assign_material.py",
+      "sha256": "19d6696ff430ee7d393b9feec69f79190e365e1815ecd0b096fc8e0097be9d8f",
+      "bytes": 18081
+    },
+    {
+      "path": "ifcopenshell/api/material/assign_profile.py",
+      "sha256": "1b9c8cf9e5b3af7cc290adb4a8b9fd05451844e49e2b9aeadea38effb96b6a0b",
+      "bytes": 6005
+    },
+    {
+      "path": "ifcopenshell/api/material/copy_material.py",
+      "sha256": "8a6fc98181d1c0f654f4480f28ed9f710c58e38baaf8b66007c696ed57752a7a",
+      "bytes": 4376
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_assigned_material.py",
+      "sha256": "b2b2db4921d43ffc46f123e8aba0e0eaf32560fa93c88ed15a9661fef90cdaa5",
+      "bytes": 1670
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_constituent.py",
+      "sha256": "f4307c0d5e2d626930b8b8bed268f50ce08ab91d53d339192fb5de81cc31342e",
+      "bytes": 2895
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_layer.py",
+      "sha256": "ae4b03917bb36f38a8973ca1bad57be998ebb05c8c470fcce5c085cec9671461",
+      "bytes": 2960
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_layer_usage.py",
+      "sha256": "99737e3f5bcd4364e8ac8d1695878ac0005551e83e92d60bff7ee4add7b8847d",
+      "bytes": 3634
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_material.py",
+      "sha256": "ff0b656347cf492c64c2de47a2b80f6530504d2875d1770e7a26170ddbe88e2c",
+      "bytes": 1096
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_profile.py",
+      "sha256": "d37d1fb1b20e7ee96f7c8778a5eca2aced0799aaea17f1defdee871f66800197",
+      "bytes": 3513
+    },
+    {
+      "path": "ifcopenshell/api/material/edit_profile_usage.py",
+      "sha256": "f61a12a2d74c3f5fc17b959deef40790f320059683a2eca85385d17f8c4ecffd",
+      "bytes": 10519
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_constituent.py",
+      "sha256": "7b5a920a043e156e6927ccaae925ae487b005374a8c7066b9023af7de17c0a4c",
+      "bytes": 2560
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_layer.py",
+      "sha256": "a30d1b7e323183a67bff844ac4e1d3dd4e911792d06b2c6b7ec1322b363917ac",
+      "bytes": 2901
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_list_item.py",
+      "sha256": "095fd9ad878ee2443c4ff622b90f0aa915baf37c0de9f7d508971a72fe7bd142",
+      "bytes": 2333
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_material.py",
+      "sha256": "88b518ddd4e35ae9d4b214bd9f2222d32cd009151591799407ef36b3f2766853",
+      "bytes": 3098
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_material_set.py",
+      "sha256": "2090a49e1161b5721acaaa6685e0a613cf988094b51d1fd746dbf17b1306ac04",
+      "bytes": 3929
+    },
+    {
+      "path": "ifcopenshell/api/material/remove_profile.py",
+      "sha256": "5d3ab2f9c9e2e7535dde90a435984662a2211ff741efc29a5ec0f0be68ac7cf8",
+      "bytes": 3355
+    },
+    {
+      "path": "ifcopenshell/api/material/reorder_set_item.py",
+      "sha256": "8e04df6d007b883684f16c1b9d0677366101e2969efb40fb8e8e7da7fa229571",
+      "bytes": 2918
+    },
+    {
+      "path": "ifcopenshell/api/material/set_shape_aspect_constituents.py",
+      "sha256": "1f36444f3498be2e30a34152f4cc71b97b0493de88180a70624cdde79b1663f4",
+      "bytes": 5545
+    },
+    {
+      "path": "ifcopenshell/api/material/unassign_material.py",
+      "sha256": "7cf21a7114dfbdca379a4ce28284704c279ebd094f44b496d218480d2c79b4ee",
+      "bytes": 5899
+    },
+    {
+      "path": "ifcopenshell/api/nest/__init__.py",
+      "sha256": "4a32e51449619ee36bf0381ede3876d1e2144d674fae2c7fcd7adb19d201e21b",
+      "bytes": 1628
+    },
+    {
+      "path": "ifcopenshell/api/nest/assign_object.py",
+      "sha256": "74c45e7661c9b4796aacd00688112d6fe1ed6eab2c0ef717ecd58740527aec34",
+      "bytes": 7836
+    },
+    {
+      "path": "ifcopenshell/api/nest/change_nest.py",
+      "sha256": "161f68c445685146d50ce2b481a253d5bd6f6e74e57490fc213140f64fd6325b",
+      "bytes": 1703
+    },
+    {
+      "path": "ifcopenshell/api/nest/reorder_nesting.py",
+      "sha256": "16ae083b553a87765d1eb8fd7be4e109ba3e34eca7d3916f82281e4a01ae761c",
+      "bytes": 1366
+    },
+    {
+      "path": "ifcopenshell/api/nest/unassign_object.py",
+      "sha256": "9dacd12a54bc0182676c5d51ffea0b164a50a61258f88c4be45c0f3dbc87d06f",
+      "bytes": 3078
+    },
+    {
+      "path": "ifcopenshell/api/owner/__init__.py",
+      "sha256": "0b671aa8ad82f801aa710517a01560f40211a10fdda95ed503118e95d83df159",
+      "bytes": 2775
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_actor.py",
+      "sha256": "bfad44bb272010c6de9c59c44377b9805b054d2200270bf1c841997378fe32a2",
+      "bytes": 2746
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_address.py",
+      "sha256": "5fa082c82fe6d238da19dc37607b12c8847009365f5d4c1c93702567c489c1df",
+      "bytes": 3092
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_application.py",
+      "sha256": "0a36509a8433f473fde0e870430375a973680d809a7f0252d99386c17a7fa41f",
+      "bytes": 4694
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_organisation.py",
+      "sha256": "b893ca29336d1f0942970bc3000f6d112c36e16def9c4b9bcbc8e0465eff518a",
+      "bytes": 1931
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_person.py",
+      "sha256": "0aabc523f099b12d86e921b70ecc275170cee0db0a6d1c4e0df984a35fbae7f6",
+      "bytes": 1821
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_person_and_organisation.py",
+      "sha256": "48825e4a6ffbb6034bff68e273946ec3232ccdb34bef4deda6ef15dab6f1f0fe",
+      "bytes": 1881
+    },
+    {
+      "path": "ifcopenshell/api/owner/add_role.py",
+      "sha256": "fc1d524651ea661f712243ef36081b79f77126985a91a1f3634198d173bc60b9",
+      "bytes": 2305
+    },
+    {
+      "path": "ifcopenshell/api/owner/assign_actor.py",
+      "sha256": "5e2569a8cdef668d618d5e94256b436f392086a586b6cacd0674de11d7b843c8",
+      "bytes": 4282
+    },
+    {
+      "path": "ifcopenshell/api/owner/create_owner_history.py",
+      "sha256": "2913e3f300ecdf0c82bc76a7026a19f69a5b3a78ed3b44b1accc69df704be015",
+      "bytes": 5626
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_actor.py",
+      "sha256": "346bc65dcc3fd5fdab87d52bdb443ab0cdb1e2bf68ef39419eedae5799f8a168",
+      "bytes": 2078
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_address.py",
+      "sha256": "98b1b28805ca8e5fb4d36d48bf3368d3ed2b60e99e2e754e1679442fbb29c089",
+      "bytes": 2223
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_application.py",
+      "sha256": "82209cb7e33c44be508d746f90c0d0561935fd5bea9653b02bd705f668c33789",
+      "bytes": 1686
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_organisation.py",
+      "sha256": "c48efeb0ea040a083f6ef512a0e77579309df23c11645703d172c502f0c0b68a",
+      "bytes": 1718
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_person.py",
+      "sha256": "03139c81f6164f9cdff91f795f348686764782f370150d0d8884839b38e8a453",
+      "bytes": 1671
+    },
+    {
+      "path": "ifcopenshell/api/owner/edit_role.py",
+      "sha256": "0f1499d022dbddf27f76b522ebda021b0d033beada9834f7b0283befc55cc20f",
+      "bytes": 1801
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_actor.py",
+      "sha256": "4d2c36b70c8b8b1135d81adc88980285b805837cd02a345d2e6d7b78f1d87091",
+      "bytes": 1829
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_address.py",
+      "sha256": "acd24088244a3e8b5102275d810ee5cbe4df0fc4d18e2da208e3621396240813",
+      "bytes": 1688
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_application.py",
+      "sha256": "d3e40c1538e4d9adb72ecc32f59642289d242e5fe9b43dee12d69910fd4f5e9e",
+      "bytes": 1390
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_organisation.py",
+      "sha256": "5bbee64dc96f6eb52b81cb13a3b51c1abe8201541a9bcc79ce855983300c76a2",
+      "bytes": 2843
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_person.py",
+      "sha256": "a9b3c0159152be3e8f11a8767ed2c3029b938ea069ace8d1d2a65cd254738c52",
+      "bytes": 2875
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_person_and_organisation.py",
+      "sha256": "88f64058dc1432f8563c26ace9a4ff5e29cceecfd27272d341dfcf17c5aea474",
+      "bytes": 2391
+    },
+    {
+      "path": "ifcopenshell/api/owner/remove_role.py",
+      "sha256": "66112a294ba9aa0fe1169dba49797a3743f47c77b241cb5401c48d45fd02f733",
+      "bytes": 2004
+    },
+    {
+      "path": "ifcopenshell/api/owner/settings.py",
+      "sha256": "5f21d06b34d6d55ed554f19d96fdd19eb7800341095ae099fbe3fc20ad1709ee",
+      "bytes": 3879
+    },
+    {
+      "path": "ifcopenshell/api/owner/unassign_actor.py",
+      "sha256": "20b302adcc4c1d4763324a8476cac05c3a022c542739889ed8f70d9f75f74ea5",
+      "bytes": 2731
+    },
+    {
+      "path": "ifcopenshell/api/owner/update_owner_history.py",
+      "sha256": "011e7c3ef6a99d9ab09d180f3380abbf5c269ec23c6875caf3751a70628500ef",
+      "bytes": 3407
+    },
+    {
+      "path": "ifcopenshell/api/profile/__init__.py",
+      "sha256": "a1afbd802dc61a3dd310c38131650169d8f885160499a437de7ccd74a3846ab4",
+      "bytes": 1582
+    },
+    {
+      "path": "ifcopenshell/api/profile/add_arbitrary_profile.py",
+      "sha256": "79f33fa551f1b984d3d00d2933de9517bc9e5b7c182f1beddff1d6d794940db1",
+      "bytes": 3326
+    },
+    {
+      "path": "ifcopenshell/api/profile/add_arbitrary_profile_with_voids.py",
+      "sha256": "7fd48c406cd74107c36706fb11a5bcef8d18b2ac4c65fe750c929c99daa5c7c3",
+      "bytes": 4782
+    },
+    {
+      "path": "ifcopenshell/api/profile/add_parameterized_profile.py",
+      "sha256": "44b6a380e1bb642ce04b0db5e8f5ee3be20220ec1dad49b888277ba8d2f4f76a",
+      "bytes": 1845
+    },
+    {
+      "path": "ifcopenshell/api/profile/copy_profile.py",
+      "sha256": "bde905c7c8ac18a00f6a68374ff2b1769e0b591fb3d383118c1b5d93a3a42711",
+      "bytes": 1788
+    },
+    {
+      "path": "ifcopenshell/api/profile/edit_profile.py",
+      "sha256": "0536a43d714e246243afa1d15089dd5e858d5a32f145f250ba5e8603383d00cc",
+      "bytes": 1666
+    },
+    {
+      "path": "ifcopenshell/api/profile/remove_profile.py",
+      "sha256": "c8e77a28b0273e6ad220e1e7affacbc4fb899771dacfbbc695bbc7c6ae1a6ba5",
+      "bytes": 2046
+    },
+    {
+      "path": "ifcopenshell/api/project/__init__.py",
+      "sha256": "efcfd910951bbf386b27a96f5f71b54c2fdb1f1f5176f0794149bf6966d18494",
+      "bytes": 1495
+    },
+    {
+      "path": "ifcopenshell/api/project/append_asset.py",
+      "sha256": "913736e6ff2ae0176527157ff3131631a6c76e373f71a386069add954f58050a",
+      "bytes": 35548
+    },
+    {
+      "path": "ifcopenshell/api/project/assign_declaration.py",
+      "sha256": "fc0b7d869afd47c7b93d600a649dc611778b89eb43ca423756c2ee010fdb2619",
+      "bytes": 6094
+    },
+    {
+      "path": "ifcopenshell/api/project/create_file.py",
+      "sha256": "fd061f959a6322648c866ac14aefa1e367067b4d6ed0a7ff230334e063df8854",
+      "bytes": 2635
+    },
+    {
+      "path": "ifcopenshell/api/project/unassign_declaration.py",
+      "sha256": "eab010bb609bb4f99b44b3dbbef36caf765a6522626c51bbe7c576870f78326f",
+      "bytes": 2875
+    },
+    {
+      "path": "ifcopenshell/api/pset/__init__.py",
+      "sha256": "e407896b0f74ff5c5f6de13bb37e557c1cd07a16b219f3c5fe10d42bf717ac76",
+      "bytes": 1556
+    },
+    {
+      "path": "ifcopenshell/api/pset/add_pset.py",
+      "sha256": "9b1fb52b973ef6ae751d4ace93a7c75abb5b5cc861543e4dfe8609d1afe712ac",
+      "bytes": 7521
+    },
+    {
+      "path": "ifcopenshell/api/pset/add_qto.py",
+      "sha256": "9bdd6f6fadec5e8c648f251dd1a177d7aa40f21337d9a81a78db10673999426b",
+      "bytes": 5614
+    },
+    {
+      "path": "ifcopenshell/api/pset/assign_pset.py",
+      "sha256": "2461c4b5198fac6f9d52ee92b4d4241eaa88429fce29d8f3c06028e8a39dd388",
+      "bytes": 3771
+    },
+    {
+      "path": "ifcopenshell/api/pset/edit_pset.py",
+      "sha256": "a83864ef2ba29d697e85b8357c6b2e5316dae6e88f5e7b6feb32adbdfa3a4851",
+      "bytes": 22045
+    },
+    {
+      "path": "ifcopenshell/api/pset/edit_qto.py",
+      "sha256": "f934fc8088241422e8e3eb6eac9bd43815cd0f54f6c9f31f63fa72e9da3deee6",
+      "bytes": 10954
+    },
+    {
+      "path": "ifcopenshell/api/pset/remove_pset.py",
+      "sha256": "d87c0f2577bd184588714a470d4786b84db261383a68c367e8a058b179d9d425",
+      "bytes": 3368
+    },
+    {
+      "path": "ifcopenshell/api/pset/unassign_pset.py",
+      "sha256": "328ff13e1cc1210479a210fa22afd85fcf386042d4218f3c009ae7bb0ad9e9ce",
+      "bytes": 2989
+    },
+    {
+      "path": "ifcopenshell/api/pset/unshare_pset.py",
+      "sha256": "418a1505858c3f98cd41aa64eedd2e7ff75a3376b5a47ffa37ef2b58dddc00bc",
+      "bytes": 3751
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/__init__.py",
+      "sha256": "78c98bd11a31231de385eee57b9500818e9330f95bab011a440c5f40a6f4dcff",
+      "bytes": 1706
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/add_prop_template.py",
+      "sha256": "0c6526d6590f3791e899ca5ead33d1de646103dc7370590bfbc3a5fb6a87d8f5",
+      "bytes": 4882
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/add_pset_template.py",
+      "sha256": "218d990afd4c2b24bb4de714d1d3bf2fb276430f12017bb6c27b5595774135eb",
+      "bytes": 4802
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/edit_prop_template.py",
+      "sha256": "4a9d5481a47a46ab1db94d730436dd9cf23970c7aeb7b76f3b3ac502d4789a83",
+      "bytes": 2735
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/edit_pset_template.py",
+      "sha256": "83697e9e13c45bcde8727d0b36bbfd42c21ebbba6bfa9171f4f23724fcf763bf",
+      "bytes": 1841
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/remove_prop_template.py",
+      "sha256": "eac1c90cbad75f37c4af1ee5ef469b3784e15b30a00e1f60e6ba53d3d9f04a99",
+      "bytes": 2160
+    },
+    {
+      "path": "ifcopenshell/api/pset_template/remove_pset_template.py",
+      "sha256": "4c7fec0c87a1d94236a57fd4b35814c5e028568146a34eea7695670e79af3391",
+      "bytes": 1523
+    },
+    {
+      "path": "ifcopenshell/api/resource/__init__.py",
+      "sha256": "cccf88b97e4067b31cc6f5d4bdbdcda036d2b731ce81b8c9d44f50a4dfec8508",
+      "bytes": 2042
+    },
+    {
+      "path": "ifcopenshell/api/resource/add_resource.py",
+      "sha256": "384eefe68bb788a7f07a7188e447358f906f26d2bd7d7482066804fb60eb384c",
+      "bytes": 3871
+    },
+    {
+      "path": "ifcopenshell/api/resource/add_resource_quantity.py",
+      "sha256": "1f08a9aec4fedfc994dd286604fab5f7afa3e56b038798a57617ba89cccf107b",
+      "bytes": 3534
+    },
+    {
+      "path": "ifcopenshell/api/resource/add_resource_time.py",
+      "sha256": "991048fd64980be62501c68045ccb0c457170291e2d9daa97ecb48aa6547d3d6",
+      "bytes": 2500
+    },
+    {
+      "path": "ifcopenshell/api/resource/assign_resource.py",
+      "sha256": "7ceeb5fe741231c682cded68a8145c45209d39bc500d7d4a96b042a8d7284a9e",
+      "bytes": 4496
+    },
+    {
+      "path": "ifcopenshell/api/resource/calculate_resource_usage.py",
+      "sha256": "ffc40983fd5cfe79ba0311f33d7629947e7fed998434f763a44d0e6e795a3912",
+      "bytes": 2115
+    },
+    {
+      "path": "ifcopenshell/api/resource/calculate_resource_work.py",
+      "sha256": "69e5d369b808606a0e4aedb249e1c4845242b98927a3c2359195b89f090effb5",
+      "bytes": 2697
+    },
+    {
+      "path": "ifcopenshell/api/resource/edit_resource.py",
+      "sha256": "2f8db81299f1d10b96d91e1b3512ea8716c8adcf6572e8a3a160fa8768a8d352",
+      "bytes": 1679
+    },
+    {
+      "path": "ifcopenshell/api/resource/edit_resource_quantity.py",
+      "sha256": "13fa0e9abdf98d56a01f20f147df34ae5c3459e2c5b4a7239ad70313d7304cbf",
+      "bytes": 2080
+    },
+    {
+      "path": "ifcopenshell/api/resource/edit_resource_time.py",
+      "sha256": "1c7b998d0654559bab60620f96e20b95f6c2249f8e5fe624807c6228fdb808dd",
+      "bytes": 4298
+    },
+    {
+      "path": "ifcopenshell/api/resource/remove_resource.py",
+      "sha256": "9d7c2d7f561af0de4efbb869b5a6e0aafe33b1e9ff3669ac0f19b3bf128c660a",
+      "bytes": 3413
+    },
+    {
+      "path": "ifcopenshell/api/resource/remove_resource_quantity.py",
+      "sha256": "0a4c24326d8d3c36f86ccbf98e90e97b8119048c6c366d0b69941c495fffa49a",
+      "bytes": 1969
+    },
+    {
+      "path": "ifcopenshell/api/resource/unassign_resource.py",
+      "sha256": "ef0f6bb44d13d09d723fdca6d17498fcb993ded9f0ad53f6c8ea52ff85454c27",
+      "bytes": 2832
+    },
+    {
+      "path": "ifcopenshell/api/root/__init__.py",
+      "sha256": "4675cb41bfdb4af4fdb27129e0a6c248358d07a90c602e17e90f4221d73be47e",
+      "bytes": 1517
+    },
+    {
+      "path": "ifcopenshell/api/root/copy_class.py",
+      "sha256": "6224a6f13584ff96067126702a3325812988c8e7e4f995cee1c3050bb7dcb927",
+      "bytes": 9509
+    },
+    {
+      "path": "ifcopenshell/api/root/create_entity.py",
+      "sha256": "5cb8dc2375e8603c7f1feda2b23fff4f881c5a4d52ce4025e7c7157591cc093d",
+      "bytes": 5799
+    },
+    {
+      "path": "ifcopenshell/api/root/reassign_class.py",
+      "sha256": "32f33ae3cdc127563db4de1ab8ed39a53bc6ce5322fea76c54b11e186893a029",
+      "bytes": 10221
+    },
+    {
+      "path": "ifcopenshell/api/root/remove_product.py",
+      "sha256": "cc486ed5b12094353216457bed45271b93f59caed59fb31d871d93a161e2de13",
+      "bytes": 9995
+    },
+    {
+      "path": "ifcopenshell/api/sequence/__init__.py",
+      "sha256": "7df17baa75cd91ecb41b26bac59286c408ca1b3245504419206ab9e4dd4e2069",
+      "bytes": 4070
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_date_time.py",
+      "sha256": "1dd5ed1740b8bb3782cd6e352b7d31e231918b78f82d88957954df29491ce160",
+      "bytes": 2222
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_task.py",
+      "sha256": "2ccf962e0edd701aa553c93f48767bd3bb831e30004ff1351b00486d169d764c",
+      "bytes": 7673
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_task_time.py",
+      "sha256": "c8bd1671203299fba6d8ff12cebc1f022ebef477602f5402d93cf96e55114174",
+      "bytes": 2987
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_time_period.py",
+      "sha256": "c4e3f6251c2e84cb205b9551ba243f73121b2c6cbbd7b4fb8cacbd8c7e4e9aae",
+      "bytes": 3966
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_work_calendar.py",
+      "sha256": "6fdc436c94fc2fe4cf609c417b60e282d114e1c352b42d791289e722c272a41e",
+      "bytes": 4086
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_work_plan.py",
+      "sha256": "b56013d3357c7eac3608666f994ae130aa36ec37ed8946acc7687d75505189fa",
+      "bytes": 3198
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_work_schedule.py",
+      "sha256": "55ba891288240c70728fc4a00d2b52d103177955a53b049c7a6be958ae4f325f",
+      "bytes": 4522
+    },
+    {
+      "path": "ifcopenshell/api/sequence/add_work_time.py",
+      "sha256": "fcdfb56251584f07cf83ec62fdd6c41e478a0871442d87cbc652d5243d077ac9",
+      "bytes": 3645
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_lag_time.py",
+      "sha256": "36d59b38bce3c1773838b9f5278cc0ae98d6def2469267eeaaf30759285059a7",
+      "bytes": 4453
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_process.py",
+      "sha256": "4458668e812874a0b2b44cfc886f70eb8f9ae7e586c3300099926e06766fa1f9",
+      "bytes": 4685
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_product.py",
+      "sha256": "ad6c934aee791dd93223669bc19b25fa099a44a1132bca14c25d19c988e48a93",
+      "bytes": 3671
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_recurrence_pattern.py",
+      "sha256": "ad1bcd2597f72ad3ceac2fb0be89bfc2bdd41cb3d38bdc35450c74fea0d8bfd5",
+      "bytes": 5512
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_sequence.py",
+      "sha256": "a95c98d63f5fdfb9f7f754376bc672f8cdf129fb1a6b714fb5193861c98437a8",
+      "bytes": 5785
+    },
+    {
+      "path": "ifcopenshell/api/sequence/assign_work_plan.py",
+      "sha256": "e6c93486762b828ddc2a589bd1836804c0069af24aca129dd2049742111a4f3a",
+      "bytes": 2570
+    },
+    {
+      "path": "ifcopenshell/api/sequence/calculate_task_duration.py",
+      "sha256": "8222798d9850ccf0b2af0d038ef3a3f791618bc39b7ebd2ba92e35f10447d12d",
+      "bytes": 6513
+    },
+    {
+      "path": "ifcopenshell/api/sequence/cascade_schedule.py",
+      "sha256": "6434ba87c020ef3ee4f73da20a2f78562edc65a0bbc0b9594421a18b871507ef",
+      "bytes": 15205
+    },
+    {
+      "path": "ifcopenshell/api/sequence/copy_work_schedule.py",
+      "sha256": "8bcc8469962955f48fc763f8ff70b022f79239eef93943c3bd70b622a68367b3",
+      "bytes": 2063
+    },
+    {
+      "path": "ifcopenshell/api/sequence/create_baseline.py",
+      "sha256": "cfcce86ac5b0394d4d919829a0b795981ec9b8842514d314b699c302c4ea5723",
+      "bytes": 4496
+    },
+    {
+      "path": "ifcopenshell/api/sequence/duplicate_task.py",
+      "sha256": "acb861c0a667e394d8b962042d69dfe4e3dc0f58e3672cd8fcab8f07de8bff5b",
+      "bytes": 9058
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_lag_time.py",
+      "sha256": "f26d35116ca7918b8bc8e0ee274124846b1ae6cd86603635aa332b271cce4588",
+      "bytes": 4002
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_recurrence_pattern.py",
+      "sha256": "867f18a176db3d8894533182ba43d590948fbfc2c422a4080ea28476776fb481",
+      "bytes": 2351
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_sequence.py",
+      "sha256": "101289680e1dcb567c3b17eb30f3c6d9236705766e53ce133d098506e0fab892",
+      "bytes": 2709
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_task.py",
+      "sha256": "b2f6e25133a4f37c2ec714401d0d53bc1162b9b3358aed00165f6f8e5a2fc378",
+      "bytes": 1961
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_task_time.py",
+      "sha256": "eed2675ec1c4f5e26fd175140d11283597296900ecbf914321005383976fdc9f",
+      "bytes": 7181
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_work_calendar.py",
+      "sha256": "a693e73632aeebf13381ab616e880bf3284262beda8ee647f1e025299c4736fc",
+      "bytes": 1761
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_work_plan.py",
+      "sha256": "d92e2c6f4cb68dca29a2fb072fb85f06baf123194f575cd880cddc5b77f02663",
+      "bytes": 2040
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_work_schedule.py",
+      "sha256": "e75f0f04f92d148ffdbc0f09b983d5096258755dd14c28cb80226cda3ab13578",
+      "bytes": 2285
+    },
+    {
+      "path": "ifcopenshell/api/sequence/edit_work_time.py",
+      "sha256": "b6f8d7437d5735f271803ff4f5b4bd57b7db7ff3d2ca545f0ab493c840ca8d3f",
+      "bytes": 2505
+    },
+    {
+      "path": "ifcopenshell/api/sequence/recalculate_schedule.py",
+      "sha256": "fed9894cc7db6af85ec3a18390140629e412c18b465ea194f288e1b7dc41f4bb",
+      "bytes": 22477
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_task.py",
+      "sha256": "680b08eecbce8c523a6345e00034705ffedb9b6338ebcbac156a295b7b12889d",
+      "bytes": 5637
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_time_period.py",
+      "sha256": "f8c5a05185945055e85f1d005591685d74b6e5ea056408c13f11e2c1dbf0fb20",
+      "bytes": 2308
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_work_calendar.py",
+      "sha256": "45b7737e16bf3f19e336bc3ac224d02bb30e210e3b26cc4f31eb10d44910a989",
+      "bytes": 2633
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_work_plan.py",
+      "sha256": "f707042d5f2ef835c8eb5233ab450116fc4683e2a9a8f0da07bbc69012db1af3",
+      "bytes": 1996
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_work_schedule.py",
+      "sha256": "9a08ac8e42e7639d8544bf8d90a626054fae491a236530aeb111126bb951a47a",
+      "bytes": 3290
+    },
+    {
+      "path": "ifcopenshell/api/sequence/remove_work_time.py",
+      "sha256": "2c15a15168a52f9e543763080d99e02435d7f7d1d0c40096e19a13fc62140f03",
+      "bytes": 1829
+    },
+    {
+      "path": "ifcopenshell/api/sequence/unassign_lag_time.py",
+      "sha256": "cd7240df910d21762b69c386c4550d98b768997cc29e0c2c8d37a26ba9aa1fe8",
+      "bytes": 2607
+    },
+    {
+      "path": "ifcopenshell/api/sequence/unassign_process.py",
+      "sha256": "4a4e0c915d6783f1720f9579e7fe89bdb9844198e94aefebc34650d9d069e2fc",
+      "bytes": 2872
+    },
+    {
+      "path": "ifcopenshell/api/sequence/unassign_product.py",
+      "sha256": "553b3b54c8c84a16b391ae6964f3522747daba2e7816d11092773eae58780643",
+      "bytes": 2870
+    },
+    {
+      "path": "ifcopenshell/api/sequence/unassign_recurrence_pattern.py",
+      "sha256": "e1f6fc871fee4fe1c6caec3ff5308885837457733b37a634f4db825935da5874",
+      "bytes": 2171
+    },
+    {
+      "path": "ifcopenshell/api/sequence/unassign_sequence.py",
+      "sha256": "8a7142130262d2f31dcbd944040699f308a1cefaa2895ee625147dfbb81dd244",
+      "bytes": 2687
+    },
+    {
+      "path": "ifcopenshell/api/spatial/__init__.py",
+      "sha256": "9daf8dbaf07731a239f5d389def320176d04f0e41d4623a1aad363a2d79309e7",
+      "bytes": 1392
+    },
+    {
+      "path": "ifcopenshell/api/spatial/assign_container.py",
+      "sha256": "72db4b29b6cbae5a13618ba27a2f1fa183c2406cc51e239c3abb81d01a580440",
+      "bytes": 8015
+    },
+    {
+      "path": "ifcopenshell/api/spatial/dereference_structure.py",
+      "sha256": "af1e6208aef83e053ee86d13cb3e905e69f97a0255fd53a223f7498d9917c05b",
+      "bytes": 3854
+    },
+    {
+      "path": "ifcopenshell/api/spatial/reference_structure.py",
+      "sha256": "3bace0d3a1dadc076439ad4d40fef5e989a6e2d499a46066c8b4fb8fb4647fb0",
+      "bytes": 4997
+    },
+    {
+      "path": "ifcopenshell/api/spatial/unassign_container.py",
+      "sha256": "7c55de25ac4b9f2cb08e745e0a9656bf069e39e45cdeccf0529aab033d2943ef",
+      "bytes": 2904
+    },
+    {
+      "path": "ifcopenshell/api/structural/__init__.py",
+      "sha256": "287c5b230ca2007af267c08c3b711f56733fb89db299adff85ace72c1bb86562",
+      "bytes": 3363
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_activity.py",
+      "sha256": "12e0dfa42aac17d454bff82b1fc390dd952b92415dc7c0d7e3180e5e12ba5ad4",
+      "bytes": 2764
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_analysis_model.py",
+      "sha256": "f3f1593772ecbed57657d4c1ba197829484006c443b1e5c9365ce78ee57004cc",
+      "bytes": 1579
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_boundary_condition.py",
+      "sha256": "432b390288c2cda1c5e02bbc0cfdbbb313eb520e66ff50c0b44c052144396a5d",
+      "bytes": 2995
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_load.py",
+      "sha256": "1d249d8ecd1ba092e8125b4ed7d255c62d5cb5060e1a31a535920ebdb4a63589",
+      "bytes": 1722
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_load_case.py",
+      "sha256": "16cb25eb5270139e87e9b74da097c44222e9f01f3fc77cddf9010c4f6bcca740",
+      "bytes": 1760
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_load_group.py",
+      "sha256": "408a1765d368d846409b3248abc674263e70d26c2c12406b2e7eba02a5a3e25e",
+      "bytes": 1788
+    },
+    {
+      "path": "ifcopenshell/api/structural/add_structural_member_connection.py",
+      "sha256": "bf344141301dbc9a93c84de04dde533fe14f22afc2873a50e4d6a260e21315b5",
+      "bytes": 1866
+    },
+    {
+      "path": "ifcopenshell/api/structural/assign_structural_analysis_model.py",
+      "sha256": "1ed1aeffa3d19f2fe947587a0dac1deb09ce778ace90a6a3b767f0be485475b1",
+      "bytes": 1567
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_analysis_model.py",
+      "sha256": "71c24aafcd9776b1c01cfd70e6a4c68aa208b880899d8e3c52bb5ec9514890ab",
+      "bytes": 1482
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_boundary_condition.py",
+      "sha256": "7f82d596a0ce7ddf31db37ff7398e12ad8a3a7a9083e7ae1494d5f25b2658fcb",
+      "bytes": 1929
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_connection_cs.py",
+      "sha256": "9e85056a2630534522475bcb4d839bf81387467a7b45b23823c45f639c4ba5af",
+      "bytes": 2215
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_item_axis.py",
+      "sha256": "3fc097719116dd782a90b65de9ab561f89712dabf35049392a0f6fadcda4e66c",
+      "bytes": 1515
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_load.py",
+      "sha256": "9f427c76ed1932d3a54a0f997c7640c36df778055be87b2c38b240a8e55a50ef",
+      "bytes": 1415
+    },
+    {
+      "path": "ifcopenshell/api/structural/edit_structural_load_case.py",
+      "sha256": "c968bcf17a240cc7836689fe505c93641075d8ba4a19d46dd1a769d1b52fa2df",
+      "bytes": 1414
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_analysis_model.py",
+      "sha256": "92d769e43b3da090f7fd43dcbe417bc9382c0877905e0f2bb4c09c7d8d69044a",
+      "bytes": 1591
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_boundary_condition.py",
+      "sha256": "05f8662b476618e07e27268b41c3ec1f3248c74afe47a4cc029eede98c7a62d1",
+      "bytes": 2006
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_connection_condition.py",
+      "sha256": "1409b72d26c04c6e93cbad380a5c50d91003d49d5187e35d1896888755479992",
+      "bytes": 1560
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_load.py",
+      "sha256": "95a64a66defeafccf043aab12a91e27411322be8aa3b5582e29094b84db80725",
+      "bytes": 1083
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_load_case.py",
+      "sha256": "e4575186f9df4e417c6b670a4c42e7d821afa6b7d11477186bece15a88104ba7",
+      "bytes": 1450
+    },
+    {
+      "path": "ifcopenshell/api/structural/remove_structural_load_group.py",
+      "sha256": "423346ffbdcf0f2cf094905375a3aa81cded44dc537a9fbb240149ee2f8f7068",
+      "bytes": 1592
+    },
+    {
+      "path": "ifcopenshell/api/structural/unassign_structural_analysis_model.py",
+      "sha256": "7a6bb10d234a84ae4d09dec0f622a6170cf9c8c5c0e818821df1afcf20b01167",
+      "bytes": 1495
+    },
+    {
+      "path": "ifcopenshell/api/style/__init__.py",
+      "sha256": "e73339b5efe53f2086c59a8cedbf6153fe414f90f9c7e469600a3cf2e44a529f",
+      "bytes": 2236
+    },
+    {
+      "path": "ifcopenshell/api/style/add_style.py",
+      "sha256": "321e52b4832d3d5a168b9450fc831f4a0d98d3825756a04c91c2fd578a85dff2",
+      "bytes": 2626
+    },
+    {
+      "path": "ifcopenshell/api/style/add_surface_style.py",
+      "sha256": "1d8ee2704428c2d16afe91bc978bd22c104e021e3814d287aaf6275329be3d5b",
+      "bytes": 6634
+    },
+    {
+      "path": "ifcopenshell/api/style/add_surface_textures.py",
+      "sha256": "99da83b684b1535c8e4e4beface2fc52c66a8c5001950d711e7a24ac1abdb41c",
+      "bytes": 9536
+    },
+    {
+      "path": "ifcopenshell/api/style/assign_item_style.py",
+      "sha256": "0edec260d3cf5d95414ce82c34c53d20ee40cbe25adff794265bea88275f1d60",
+      "bytes": 5407
+    },
+    {
+      "path": "ifcopenshell/api/style/assign_material_style.py",
+      "sha256": "9b67be3383ca9aa4a8d86aba4816316e32269e16aa0c429ae9bb23f52a4eecf2",
+      "bytes": 10767
+    },
+    {
+      "path": "ifcopenshell/api/style/assign_representation_styles.py",
+      "sha256": "c016c8fde7f8bb7cff365d75a340db36bc15117ce15fea9556f99c0e02cb8c9b",
+      "bytes": 9830
+    },
+    {
+      "path": "ifcopenshell/api/style/edit_presentation_style.py",
+      "sha256": "4780b1dc5bc68423e2d0dc63925b802ae2ac5f130ed6ee62ad0edf99d8d7e017",
+      "bytes": 1679
+    },
+    {
+      "path": "ifcopenshell/api/style/edit_surface_style.py",
+      "sha256": "ad6de64cf44dc8c417a00bed53936c347395c4ef4561600b94cf7b35456b8ffd",
+      "bytes": 6056
+    },
+    {
+      "path": "ifcopenshell/api/style/remove_style.py",
+      "sha256": "17cc1219932b46399972019fa9fb4e9110c47332b5c05d3df05e482ebf553508",
+      "bytes": 3872
+    },
+    {
+      "path": "ifcopenshell/api/style/remove_styled_representation.py",
+      "sha256": "284d4bfb093aa75e5df118c762b2c9c9b5729daa0ec76554a5f1d34305447e01",
+      "bytes": 1888
+    },
+    {
+      "path": "ifcopenshell/api/style/remove_surface_style.py",
+      "sha256": "eb0547513f86a395f829ac2f1323c6da1e4096381febb829869a148c6d4ee3eb",
+      "bytes": 2413
+    },
+    {
+      "path": "ifcopenshell/api/style/unassign_material_style.py",
+      "sha256": "f939a4058129380a39a65383232ffbb6f2e3e8093525e7457755377675e975cc",
+      "bytes": 3882
+    },
+    {
+      "path": "ifcopenshell/api/style/unassign_representation_styles.py",
+      "sha256": "bb2f3b851f8459310789b7bb5123a51b221ccbfd68b569cd41f375add66c35cb",
+      "bytes": 3823
+    },
+    {
+      "path": "ifcopenshell/api/system/__init__.py",
+      "sha256": "53e064be64e57512559957f53c43651481e9b7690008c88c5e5c75c30a71d9e7",
+      "bytes": 1965
+    },
+    {
+      "path": "ifcopenshell/api/system/add_port.py",
+      "sha256": "179a9e63efbac100e898d9b85b53f907b50cadb16719680b632556ac1efc9fd5",
+      "bytes": 2253
+    },
+    {
+      "path": "ifcopenshell/api/system/add_system.py",
+      "sha256": "56ac7670aac40243209b6b54113b49b4db58b0d020cd5a188817b2ff2604e60f",
+      "bytes": 2254
+    },
+    {
+      "path": "ifcopenshell/api/system/assign_flow_control.py",
+      "sha256": "46d3bc7180f06bcee7f8a4c3fb17da10aabe48ce7f35cfcdaae78148f2afbd8a",
+      "bytes": 3255
+    },
+    {
+      "path": "ifcopenshell/api/system/assign_port.py",
+      "sha256": "2c805168ce9601f7598e0e9e1994d2a5f479fa1081f2fece1a70b2425b9ecb87",
+      "bytes": 4412
+    },
+    {
+      "path": "ifcopenshell/api/system/assign_system.py",
+      "sha256": "4f02064c8836903bbfea97c860591fbac77eaf8a9e344c246521b8a57dd01924",
+      "bytes": 2206
+    },
+    {
+      "path": "ifcopenshell/api/system/connect_port.py",
+      "sha256": "1cba7cf67b6dabb28eb1999ca3d8061e2e1d379da74f5be875f510454c789cec",
+      "bytes": 9516
+    },
+    {
+      "path": "ifcopenshell/api/system/disconnect_port.py",
+      "sha256": "9c73f2fcd16974a26ddf03204e022b393071056a42d7b114d79fc8b211bc968c",
+      "bytes": 3058
+    },
+    {
+      "path": "ifcopenshell/api/system/edit_system.py",
+      "sha256": "5f2d92ad75f2bb765a9d05dde12a437aa24cbc3d083e9b1c2036389ca7a4c838",
+      "bytes": 1650
+    },
+    {
+      "path": "ifcopenshell/api/system/remove_system.py",
+      "sha256": "ef05a53c972965870207bc2963101de125c2334f108fb3951c66e2e14bef6fa0",
+      "bytes": 2429
+    },
+    {
+      "path": "ifcopenshell/api/system/unassign_flow_control.py",
+      "sha256": "43ae9c8b081017544908ff91bcbdc8496b094ba58ad8c7bfadb0c14c53f0989b",
+      "bytes": 2543
+    },
+    {
+      "path": "ifcopenshell/api/system/unassign_port.py",
+      "sha256": "226db645d6851333f9e259a557a2caed54c9ff640acecdecdbe195472edcb599",
+      "bytes": 3279
+    },
+    {
+      "path": "ifcopenshell/api/system/unassign_system.py",
+      "sha256": "f9bdeffd9ff2f301026851af84c96e2fdc9a66ed8c3fbd8ac12092002ea61bcb",
+      "bytes": 1891
+    },
+    {
+      "path": "ifcopenshell/api/type/__init__.py",
+      "sha256": "e67233a2897a13b440836471269f54074847cdecccc01cd4ceef97fb6cbf065b",
+      "bytes": 1353
+    },
+    {
+      "path": "ifcopenshell/api/type/assign_type.py",
+      "sha256": "b04fa38369a0c2aba04db72246f376bbd71f5db60b31085e69828b6d84f9fb0d",
+      "bytes": 13588
+    },
+    {
+      "path": "ifcopenshell/api/type/map_type_representations.py",
+      "sha256": "903879ba365c675dbd970d7876faad14e2b8293139c1a77f1778a6836dd8a59e",
+      "bytes": 4851
+    },
+    {
+      "path": "ifcopenshell/api/type/unassign_type.py",
+      "sha256": "285def1cfd0a5501d82ac7a39b32657285bbf8ead6d2adb8082ff4839eb6f147",
+      "bytes": 2854
+    },
+    {
+      "path": "ifcopenshell/api/unit/__init__.py",
+      "sha256": "23657fc32b9ba22807459e0108bea331b9d7a260441c7535b490a5a4651fe274",
+      "bytes": 1900
+    },
+    {
+      "path": "ifcopenshell/api/unit/add_context_dependent_unit.py",
+      "sha256": "aee7b46bed50b9f7178050924e9fc0edd6ffb22f692873f6d08a74676a1a1cd8",
+      "bytes": 2750
+    },
+    {
+      "path": "ifcopenshell/api/unit/add_conversion_based_unit.py",
+      "sha256": "5ad89c383cb1116e77e52177487b820dfa2708683fe693816f5ec69f2630ea2f",
+      "bytes": 3617
+    },
+    {
+      "path": "ifcopenshell/api/unit/add_derived_unit.py",
+      "sha256": "0d38181e18ae0e48f6f460447f55ddc7a38d01e6f4aa4d2bdef63d271568f13b",
+      "bytes": 3771
+    },
+    {
+      "path": "ifcopenshell/api/unit/add_monetary_unit.py",
+      "sha256": "3fabe6071c8b0b7e1b20c09418b8196f515a801a5920c99ae7b97430fe93902a",
+      "bytes": 1623
+    },
+    {
+      "path": "ifcopenshell/api/unit/add_si_unit.py",
+      "sha256": "794c61c75ec7826dfb433defea922ecaad6d65c45f6cc695b2bc112d21770eb0",
+      "bytes": 2551
+    },
+    {
+      "path": "ifcopenshell/api/unit/assign_unit.py",
+      "sha256": "36d5db0124f5c73d1493bcb58b4c12d9f871a73cfa9ba9eb4db6a3e42d529875",
+      "bytes": 7033
+    },
+    {
+      "path": "ifcopenshell/api/unit/edit_derived_unit.py",
+      "sha256": "02e001b4666b31460a97bf17713a780f3be99dc2c9b71524edb35092d2f9cf0d",
+      "bytes": 1364
+    },
+    {
+      "path": "ifcopenshell/api/unit/edit_monetary_unit.py",
+      "sha256": "1dafc367092a5dc8f086bfd7e4e9a57748070437d7aa961c2bb5d33fa41264e7",
+      "bytes": 1733
+    },
+    {
+      "path": "ifcopenshell/api/unit/edit_named_unit.py",
+      "sha256": "4fcbf9edb7aa5ba6a1cbcbabcc42fb0f5c5fc47d7723a9f4775e08607a7657f6",
+      "bytes": 2091
+    },
+    {
+      "path": "ifcopenshell/api/unit/remove_unit.py",
+      "sha256": "07a9323f93afc72ea1b48f5b2f6d1da9d29fb3f2c2a828b9e8bacc66cea200b9",
+      "bytes": 1783
+    },
+    {
+      "path": "ifcopenshell/api/unit/unassign_unit.py",
+      "sha256": "4decaaade07f77b46919971c99c2a0cdd330bd87dc9cb61bfb7cd5d0e4301abe",
+      "bytes": 2099
+    },
+    {
+      "path": "ifcopenshell/express/DocAttribute.csv",
+      "sha256": "0d57d8599edea571ae39151ec823521fb291b5c2063be2be466852fae84c08d8",
+      "bytes": 321801
+    },
+    {
+      "path": "ifcopenshell/express/DocDefined.csv",
+      "sha256": "eda4769f7d501eacba16c87380248be0cf45517ac33cd6d9eba185c2610f2fef",
+      "bytes": 69912
+    },
+    {
+      "path": "ifcopenshell/express/DocEntity.csv",
+      "sha256": "add593ccfaa5da189ea24ba4f8f82fa55a83fd0fd826be5e97c75b893cb54f28",
+      "bytes": 2371594
+    },
+    {
+      "path": "ifcopenshell/express/DocEntityAttributes.csv",
+      "sha256": "5e1875c9eb92b8dbd99709dd9acf0fb97088319a562ecd8b7f845386c91d4cec",
+      "bytes": 19105
+    },
+    {
+      "path": "ifcopenshell/express/DocEnumeration.csv",
+      "sha256": "dba6e84cc5b0ded929be29262ed7b9165235241e92f6349aad6317ca02e10b6f",
+      "bytes": 290854
+    },
+    {
+      "path": "ifcopenshell/express/DocSelect.csv",
+      "sha256": "a7f4dc0dda8f5bb151461c373ef3c5d3a8462503b99f33a93c8d6aa3d60ad521",
+      "bytes": 43748
+    },
+    {
+      "path": "ifcopenshell/express/README.md",
+      "sha256": "1de04d77cb63f563358cc9c6640aa4eaaa199de854db90ded41dd09f0749e1cc",
+      "bytes": 1592
+    },
+    {
+      "path": "ifcopenshell/express/__init__.py",
+      "sha256": "a24ff49a54a2e487e5a254ff08a0a4e691428c95abd9b4058fe4401446ed6be7",
+      "bytes": 1461
+    },
+    {
+      "path": "ifcopenshell/express/bootstrap.py",
+      "sha256": "dce905cc4db80a2daa889c36701de67c6f77c947a500a09e061dbd64ef806bf2",
+      "bytes": 7683
+    },
+    {
+      "path": "ifcopenshell/express/cat.py",
+      "sha256": "47a46e8157c8b5542bdfc3790a92d7e32ea2c9976e4829694bfeb75e469dcc6c",
+      "bytes": 386
+    },
+    {
+      "path": "ifcopenshell/express/codegen.py",
+      "sha256": "a41b695d4f5fb1ee4fc7926cedd7fc30f3d2454551f8257911027d0a566fe72c",
+      "bytes": 1731
+    },
+    {
+      "path": "ifcopenshell/express/definitions.py",
+      "sha256": "03748cdcf0569a31666af37e38fcdb7b226067647affe64c0f80ed6b5ced3c79",
+      "bytes": 2417
+    },
+    {
+      "path": "ifcopenshell/express/documentation.py",
+      "sha256": "571b949ab8e5801c5408e95f0c21766c4e48a101afe18effd746f32f2d61db4e",
+      "bytes": 3350
+    },
+    {
+      "path": "ifcopenshell/express/express.bnf",
+      "sha256": "24b502546d98e6cdd2420d24d4c020187b5c7adaa9c2aee91caaf241a892f795",
+      "bytes": 15563
+    },
+    {
+      "path": "ifcopenshell/express/express_parser.py",
+      "sha256": "0eb89b7f0c5f6ad6eee175958f26c51e16cb260dbf2d7494490b995fef7c5a97",
+      "bytes": 59214
+    },
+    {
+      "path": "ifcopenshell/express/header.py",
+      "sha256": "9f7c6ede134984a4c30b2dd62f80e3360b9169df35653308107650793ad3080d",
+      "bytes": 11671
+    },
+    {
+      "path": "ifcopenshell/express/header_schema.exp",
+      "sha256": "44cdfe91bff1e2c2d93f4575331cc8ae9ce4f0130a9751bd2a2f20476d2dd2d2",
+      "bytes": 700
+    },
+    {
+      "path": "ifcopenshell/express/implementation.py",
+      "sha256": "d8000a49e38d4e4d121d80c26e4aadd9a44b383c10db8485e5177df57996f243",
+      "bytes": 19414
+    },
+    {
+      "path": "ifcopenshell/express/mapping.py",
+      "sha256": "d35bbb7406439af60ec6b6f60089b246013ddbea3d090651f05040896a3febe3",
+      "bytes": 12240
+    },
+    {
+      "path": "ifcopenshell/express/nodes.py",
+      "sha256": "f00becab36b89e3232998a8d2bde717f491543d5cb06ba1645d09d9cbb51b16c",
+      "bytes": 19770
+    },
+    {
+      "path": "ifcopenshell/express/rule_compiler.py",
+      "sha256": "62ba804d975edf4e8adeef590c1eb231fff0a5ce279efb9e8c570b6759a21f26",
+      "bytes": 33286
+    },
+    {
+      "path": "ifcopenshell/express/rule_executor.py",
+      "sha256": "5362a567d3d59a337c14e7631841f6733e48fb320117bc28049f8185337e51d9",
+      "bytes": 10220
+    },
+    {
+      "path": "ifcopenshell/express/run.bat",
+      "sha256": "5b9d4b63da76cace7589272f77c6a7700889db6a314b55ccde687e230773b91b",
+      "bytes": 8502
+    },
+    {
+      "path": "ifcopenshell/express/schema.py",
+      "sha256": "ae3bc913e3635c519092b4bc65178e20d7ae2d61fa8f4a58870787c8d3435038",
+      "bytes": 4659
+    },
+    {
+      "path": "ifcopenshell/express/schema_class.py",
+      "sha256": "286acf3b42dfa3b2aa3c8acb84e27ad88c1a310ad1c098f1329c7f29d72277e2",
+      "bytes": 22467
+    },
+    {
+      "path": "ifcopenshell/express/templates.py",
+      "sha256": "ef182c05b995affad9e52216d3adf5982f7d18587a0c4872269c422324ec8762",
+      "bytes": 12143
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC2X3.py",
+      "sha256": "2b44a886227572364e9a048e1ab6b672e2d3f1f21eb619118f4b93188c81acf7",
+      "bytes": 380964
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4.py",
+      "sha256": "d9a3800984b0d1e8e56e8454ed8e27d84d7ee728b670a0b2e7dbae8fc5e3a3c6",
+      "bytes": 603951
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X1.py",
+      "sha256": "0edd5a5e35042f59d0d7b968c8fc44a1faed962f6bfe4c26a2c35cc2a551062c",
+      "bytes": 613378
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X2.py",
+      "sha256": "d6b03fc16f41ddc5db1463541724319f0b2a72a4ede5161225bcd1e7ab78ec7e",
+      "bytes": 629874
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3.py",
+      "sha256": "d40271d0d1942552c4b182d24aa68138228f93ad11f5a216c1f696017f75d053",
+      "bytes": 713769
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_ADD1.py",
+      "sha256": "34c68543939302af865d73e402972467f176c963aadc49e7f34cd32ed14ea5e8",
+      "bytes": 714415
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_ADD2.py",
+      "sha256": "c7e9aff0b860b5cd2c9b93ab2b5c782d5c128acb3633e4490d9ea6203519f4d5",
+      "bytes": 715433
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_RC1.py",
+      "sha256": "731f456300bafed234de2daa880bddd74353c76f842913370ce38052a181120c",
+      "bytes": 695943
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_RC2.py",
+      "sha256": "20197352f2888fa63113b72d11a87fff2c0bfd020aca2270dce7465f8bd7bb2e",
+      "bytes": 700633
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_RC3.py",
+      "sha256": "c19bcb56cffecea4109ca587a93e0bc9bbc457d6f030e66d369d476ef9be4cb2",
+      "bytes": 711297
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_RC4.py",
+      "sha256": "78f60b1fcc2ac38685ef46c1ada4da3cfbde94211fbf106f0ea10a10a2dde64b",
+      "bytes": 712976
+    },
+    {
+      "path": "ifcopenshell/express/rules/IFC4X3_TC1.py",
+      "sha256": "f98f25a1ef61bab7be29611ea213177bd869a089fc6edf267f6b211ecdb3cb2e",
+      "bytes": 711280
+    },
+    {
+      "path": "ifcopenshell/express/rules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "ifcopenshell/express/txt/endif.txt",
+      "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+      "bytes": 7
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc2x3.txt",
+      "sha256": "767cd88387d21752039488dac908ebb8e7ad69d70ac41bb4b42bdd80d526dc5d",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4.txt",
+      "sha256": "61ed5753700c338569969f4916303fdd42e97d7d87af7245f904d229c65c8d89",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x1.txt",
+      "sha256": "8841137c0cbf6f25f6981e466bdb014935888caaa5c5330c8dfe83068e7a55cc",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x2.txt",
+      "sha256": "580f8029f2f8c4123a02277e9f036a3ec03dce9648cb32274c4f01bf708284b0",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x3_add1.txt",
+      "sha256": "6a38de4ac78e44c897beb42243ce2ca5430cccf75d88e3615e28378087175589",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x3_add2.txt",
+      "sha256": "fca46c838cb00dd5e4169c44195fd05050fd355054246318b952c32733386b1b",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x3_rc1.txt",
+      "sha256": "53f4af1922f30fb3bb97a3523050cdc9a2f8efbc238d7a079baa5fdf8f3ac67a",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x3_rc2.txt",
+      "sha256": "fd914cd339a55e1ea015e10e26ee4e853d4609242fae68bc8f6647ee6ba2251d",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/header_ifc4x3_tc1.txt",
+      "sha256": "fda0e66fa4212161093988cb4bd88cf967d2ec9ef787664ca3d94889964e5ce0",
+      "bytes": 1971
+    },
+    {
+      "path": "ifcopenshell/express/txt/ifdef_ifc4.txt",
+      "sha256": "5fd725133c86233265344b81f5aad7508f26c127658d11180f1f74cb11a1fdce",
+      "bytes": 17
+    },
+    {
+      "path": "ifcopenshell/express/txt/ifdef_ifc4x1.txt",
+      "sha256": "2eed7908afa03beb58d01ea9c845902d96da10a9a18a57d7fae1433b5f48a59e",
+      "bytes": 19
+    },
+    {
+      "path": "ifcopenshell/express/txt/ifndef_ifc4.txt",
+      "sha256": "a082015bb8c36c4d20038391b1404a14eefa81676a59947c9b89c937a95ee3a0",
+      "bytes": 18
+    },
+    {
+      "path": "ifcopenshell/express/txt/ifndef_ifc4x1 - Copy.txt",
+      "sha256": "dc1168c8b0e40bd2d81fcb4977563ed9a72ca45ac5a5c8737cb97f247578a8a8",
+      "bytes": 20
+    },
+    {
+      "path": "ifcopenshell/express/txt/ifndef_ifc4x1.txt",
+      "sha256": "dc1168c8b0e40bd2d81fcb4977563ed9a72ca45ac5a5c8737cb97f247578a8a8",
+      "bytes": 20
+    },
+    {
+      "path": "ifcopenshell/geom/__init__.py",
+      "sha256": "8ac7b56798f053066f3b5a5e06c00fe0331f8d8589cc79219c8d01feb20b373e",
+      "bytes": 1703
+    },
+    {
+      "path": "ifcopenshell/geom/app.py",
+      "sha256": "aaf0b86691e2d802fb73a7ffc9033c59d9bbfe5ff678ec8393b14c32c78cb340",
+      "bytes": 25667
+    },
+    {
+      "path": "ifcopenshell/geom/code_editor_pane.py",
+      "sha256": "4a5b34e0f1a3e3569f99654fa487c9eef34425f62bf92951495ee313512ef852",
+      "bytes": 6222
+    },
+    {
+      "path": "ifcopenshell/geom/main.py",
+      "sha256": "65cd912917c3aa619ab158b387512a7007a10a3b08ab4e1fc47f772e22fe584e",
+      "bytes": 26923
+    },
+    {
+      "path": "ifcopenshell/geom/occ_utils.py",
+      "sha256": "377d96a45acf5e116eff2e379946b04de0be0e75ece4cc2a4118d511b8becad2",
+      "bytes": 10347
+    },
+    {
+      "path": "ifcopenshell/geom/stats.py",
+      "sha256": "b624ca519fba35503871fd6e320fbfafad7d52413ef9e3c6e3f4d69a7ee6b338",
+      "bytes": 7770
+    },
+    {
+      "path": "ifcopenshell/mvd/README.md",
+      "sha256": "9e4d16de91375bf6f4b50ff68d8a31ba61813e110d22b5b61bebd0c6e960e666",
+      "bytes": 3163
+    },
+    {
+      "path": "ifcopenshell/mvd/__init__.py",
+      "sha256": "b2a3c550470e579f85924e8b091017964922d5f5bd39561289e08955fec2c9a9",
+      "bytes": 7893
+    },
+    {
+      "path": "ifcopenshell/mvd/__main__.py",
+      "sha256": "3632dc3944f46f54f8dbc9d1537de62f0c2d551791c008328bfdbf586f536c1d",
+      "bytes": 1057
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd.py",
+      "sha256": "c06c144b3728eef24f2a714da27d9f20c7691efd6b1fa5acf5a52f2b313c8d31",
+      "bytes": 14893
+    },
+    {
+      "path": "ifcopenshell/mvd/mvdxml_expression.py",
+      "sha256": "e4de37c9d57426cc92457f7cdaaef2d4fc40ca6c1c709601de9f7ecca4a69ba5",
+      "bytes": 1129
+    },
+    {
+      "path": "ifcopenshell/mvd/sparql.py",
+      "sha256": "81184b29d6e09197e14ecae555851bed727bcea77f23ea2af717b4e32d99627d",
+      "bytes": 19082
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/Example-CV100.mvdxml",
+      "sha256": "42029fec7953e850df3b454f5a27e57442b2f260835d9bdadf004d955ad44030",
+      "bytes": 10997
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/Example-CV104.mvdxml",
+      "sha256": "70d1ff16a21e62fbacded8073155b6c26b26226f2adc7d4671ce066debe75c66",
+      "bytes": 4609
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/Example-CV106.mvdxml",
+      "sha256": "e0eb2a842a0c1a7bd38bf098fcc845dc417fc942b7bddb02b46b856cf03bcd24",
+      "bytes": 5856
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/building.mvdxml",
+      "sha256": "74297645bc4d8dade00987ca9ccc0c6aa691b2e8e0d321bcda5f504ca8b3b13d",
+      "bytes": 83148
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/wall_extraction.mvdxml",
+      "sha256": "ed7fcf22c4ed138d32e0b827ff0e4318c1192e4139eaad28a7aedc0a9f17c56a",
+      "bytes": 10700
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/xset.mvdxml",
+      "sha256": "64ccb0be96dbb0c4755c1a8b908d404487700ea7a2ee5dde57a5975c8077a958",
+      "bytes": 27163
+    },
+    {
+      "path": "ifcopenshell/mvd/mvd_examples/officials/ReferenceView_V1-2.mvdxml",
+      "sha256": "0b6eab1e6d878874000c51a1deba1ec711b81152e1023059060f339ab41e4fb5",
+      "bytes": 792777
+    },
+    {
+      "path": "ifcopenshell/simple_spf/README.md",
+      "sha256": "e59764f552adb00a06a97d84a2b42e95ed00f050644ed0f5fd1aa9874662a24c",
+      "bytes": 1159
+    },
+    {
+      "path": "ifcopenshell/simple_spf/__init__.py",
+      "sha256": "be948e300a18a34757d258d597dd8f765f2d4bd0bf9e13a78f40e5c67256f0df",
+      "bytes": 544
+    },
+    {
+      "path": "ifcopenshell/simple_spf/__main__.py",
+      "sha256": "cc61b233d05ef88f660c4ea94bb239377171e536e4ad5b1ad634d7456d241306",
+      "bytes": 1128
+    },
+    {
+      "path": "ifcopenshell/simple_spf/ifcgraph.py",
+      "sha256": "9a5f0691efec5178a053808ca996086c2a0659ecc603fd18e1f1dce98675b40d",
+      "bytes": 2225
+    },
+    {
+      "path": "ifcopenshell/simple_spf/requirements.in",
+      "sha256": "e38c97e852c834275d9ebbc77deec4267300b0bf2ee45c6fbd7131ffa63d27e5",
+      "bytes": 12
+    },
+    {
+      "path": "ifcopenshell/simple_spf/test_parser.py",
+      "sha256": "35905b1f735a93046984ec4c5f5963bc467c9d3feb937dfb163c4af320956e76",
+      "bytes": 5636
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/extended_mvd.ifc",
+      "sha256": "b9604ee24f00c8825362cc39de0b3a46c1c9a67f1243a2ffeafa2adcbe7dcd86",
+      "bytes": 1444
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_double_comma.ifc",
+      "sha256": "83deb119b486fe58387756f6aad8110122c86d82637eebc996a8a39db7bb89d5",
+      "bytes": 1141
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_double_semi.ifc",
+      "sha256": "60bd8555464c1742715cbbffeb05a20a3a924f43b6b78517a82b988978f0daa5",
+      "bytes": 1143
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_duplicate_id.ifc",
+      "sha256": "e53321f53dfc15445b85fd81bd3bdce4af11fe8130727b9f317f4351a3ec0737",
+      "bytes": 1142
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_invalid_header_entity.ifc",
+      "sha256": "d1bfffcc2c7c1658e73045c3cacbf0edce11eaea5b22f64c0cbbf683b7e7199e",
+      "bytes": 1790
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_multiple_duplicate_ids.ifc",
+      "sha256": "48e928f7d10bcb0899cd330ddfaeca7d0f7afb4962a23396b46b3fd40d69c766",
+      "bytes": 1142
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_multiple_wrong_header_fields.ifc",
+      "sha256": "bb73cfeedf9c8cbdfa54ef175c93fabf4db7c3d1b23f96f0f768c1a47b12b188",
+      "bytes": 1313
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_no_header.ifc",
+      "sha256": "36fc9e5d443b1f8082b208470e9d3d75a6c74b08dc81349979a78ac2262a5cb9",
+      "bytes": 1134
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_reverse_string.ifc",
+      "sha256": "016ac3d7a98f68e102951c410993dcc9a8025f5fa05d021724e74c6210668f88",
+      "bytes": 1147
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_too_many_header_entity_fields.ifc",
+      "sha256": "f92f5c66bb4b91d137ea1d1e08f6e981b0e503d6d1ab3a9d7a655f374332fb14",
+      "bytes": 1319
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/fail_utf_encoding.ifc",
+      "sha256": "5b85c6a5660c5fe925f155230c13c567bd0ecd62abe4349c2e2e037447d9653e",
+      "bytes": 1151
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/pass_1.ifc",
+      "sha256": "1999b7cd7415be3e608dc67462a1b96ae62b4e1b0fb7474a28152fd7cb43b07b",
+      "bytes": 1198
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/pass_double_reverse.ifc",
+      "sha256": "ee5941d18b2df04543f72c88fc6e38e8a21db1f3937183c566a29abc3fce1b42",
+      "bytes": 1148
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/pass_page_encoding.ifc",
+      "sha256": "61e6a8242fccee0aa14d388ba4c936f1bf428eec2213044369490f0eae906705",
+      "bytes": 1150
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/pass_reverse_comment.ifc",
+      "sha256": "aa00e74023fb06a1abc1edd296e88c5eb2902111e28373eb59c0d91e5cd0af64",
+      "bytes": 1166
+    },
+    {
+      "path": "ifcopenshell/simple_spf/fixtures/passing_header.ifc",
+      "sha256": "2c4e4b891f56ae587fd737eddee3c9f947a1a1f071004d1fb4c42a44630a58be",
+      "bytes": 1313
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/errors.py",
+      "sha256": "97d2ee1fc3a2ba90cff4d89119f1e0d8d53a30528993dc9f0ca8483adaffc4c7",
+      "bytes": 3801
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/file.py",
+      "sha256": "151ce6614ba46638e6c9011fe37e8072d3404d734f220fb548b0a55ef42aa217",
+      "bytes": 3421
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/grammar.py",
+      "sha256": "006da08ddee99a1835eefbfebcd28bd2f69ae67bba11d1a39beaf5c7434f4574",
+      "bytes": 3343
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/mvd_info.py",
+      "sha256": "fca14cf03a2d6e957e07cc60d479b6d71487306d7baea363e9e040aa540f70ce",
+      "bytes": 10472
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/parse.py",
+      "sha256": "5686c1ccdc8a4c77b36d789100ee8888e77021fb151ec757948a76bdd7bc40af",
+      "bytes": 6049
+    },
+    {
+      "path": "ifcopenshell/simple_spf/parser/transformer.py",
+      "sha256": "ee0d425f89cf673b3cb35fd1b576ec86e2e36fbda907338b7505b0788f012eb4",
+      "bytes": 2345
+    },
+    {
+      "path": "ifcopenshell/util/__init__.py",
+      "sha256": "8177c29588019e09547dfe01eb7044e6247a2ec51de7659a68e3170ca6d2bd3f",
+      "bytes": 2051
+    },
+    {
+      "path": "ifcopenshell/util/alignment.py",
+      "sha256": "ab3341c0743c600a5b51224a64008686e247864be3ceb79b7d12b6526c4ff21e",
+      "bytes": 4257
+    },
+    {
+      "path": "ifcopenshell/util/attribute.py",
+      "sha256": "5a0415818bfcaecca44bf060773937828d699593343b2108734ad8369a28165f",
+      "bytes": 3426
+    },
+    {
+      "path": "ifcopenshell/util/attribute_4_to_2x3.json",
+      "sha256": "29c0d98e0c20abc66dc0980d04d55fbdee97f7916b5ef6b8511b181276ad6c54",
+      "bytes": 7673
+    },
+    {
+      "path": "ifcopenshell/util/attribute_4x3_to_4.json",
+      "sha256": "41d341d53487fb377223929975d7024afaa18d63afa3e90e62cbe2de52bc7e71",
+      "bytes": 709
+    },
+    {
+      "path": "ifcopenshell/util/brick.py",
+      "sha256": "3fbd281ede564ad5b834b81d16f6972957d10c76082bce65847c20f8c578d606",
+      "bytes": 4198
+    },
+    {
+      "path": "ifcopenshell/util/class_2x3_to_4.json",
+      "sha256": "26d683707f12b75e2eff76684afaefa0b5e8f26eaf3510a1208ec81813b2e6a7",
+      "bytes": 409
+    },
+    {
+      "path": "ifcopenshell/util/class_4_to_2x3.json",
+      "sha256": "45cc2fc3ba748cb596e3829d0829b32b2848e7a693b2fc370370545cd18b1874",
+      "bytes": 6575
+    },
+    {
+      "path": "ifcopenshell/util/classification.py",
+      "sha256": "0df3115c7cf46954b379cff283093d141de5ce5bff227fae6c1ea002f42e4bfe",
+      "bytes": 4253
+    },
+    {
+      "path": "ifcopenshell/util/constraint.py",
+      "sha256": "1f0d3cbeec83cdba850512b92929c98730117bf3f6dd52dd3da2baa62cfd2dec",
+      "bytes": 3783
+    },
+    {
+      "path": "ifcopenshell/util/cost.py",
+      "sha256": "ef132635b7522025f255329714f433448f9e2136a63dc0e2c56193cb83b15cc5",
+      "bytes": 17987
+    },
+    {
+      "path": "ifcopenshell/util/data.py",
+      "sha256": "ed7ac35d81d44a181c458d347c9fc012352a0ec2b4c838b5c81da5f080c225a4",
+      "bytes": 4429
+    },
+    {
+      "path": "ifcopenshell/util/date.py",
+      "sha256": "d226f64e25b8d8bd2f3c81b92ccb460896ca0f89149c3c0bca23ff41b92f5457",
+      "bytes": 9435
+    },
+    {
+      "path": "ifcopenshell/util/doc.py",
+      "sha256": "c12176b0b4c173e6cbac69b1cc834c014a4e265f79cf267a9e3b7b3ede288258",
+      "bytes": 55887
+    },
+    {
+      "path": "ifcopenshell/util/element.py",
+      "sha256": "0b7d66e29adc089ad105364ffceb433a9aafd3e65c06a45c208df42205d64a8a",
+      "bytes": 71281
+    },
+    {
+      "path": "ifcopenshell/util/entity_to_type_map_2x3.json",
+      "sha256": "7d16c5208673d856e7e1efe6adaa9f530d78e3c4e950548d3eaec3771309aa5f",
+      "bytes": 10679
+    },
+    {
+      "path": "ifcopenshell/util/entity_to_type_map_4.json",
+      "sha256": "d0c183dfd52c4ae275d3c074d84e38b6f63e8aa4b58758b90b8eada7b6757c7b",
+      "bytes": 7953
+    },
+    {
+      "path": "ifcopenshell/util/entity_to_type_map_4x3.json",
+      "sha256": "05b789e670420a438a6e1062611af36b9d793c17aaf52e737e5f98d6e01c972f",
+      "bytes": 8920
+    },
+    {
+      "path": "ifcopenshell/util/file.py",
+      "sha256": "f1de691ee66ce5118d7993e62f8c031a1d2746437abb694b39f8aca9f5be43e0",
+      "bytes": 4226
+    },
+    {
+      "path": "ifcopenshell/util/fm.py",
+      "sha256": "2ac0279ae0b52d1de2be87eca4568eea3d5015ff58f0c3f5e9e665e6b44d1b54",
+      "bytes": 5513
+    },
+    {
+      "path": "ifcopenshell/util/generate_pset_templates.py",
+      "sha256": "e673352412926b4228f7a2a255f169fa0f142b35a4a9e88d5f7f0e1c290291b4",
+      "bytes": 19893
+    },
+    {
+      "path": "ifcopenshell/util/geolocation.py",
+      "sha256": "753569676ee286fb38e759cc6d6f2cbd693f6d081459120881b49cab8de262e1",
+      "bytes": 28346
+    },
+    {
+      "path": "ifcopenshell/util/ifc4_to_brick.json",
+      "sha256": "d25fa0ab9d2d53e267ba28b1ca7148818f02b078c162e100faacf7fc41a68eba",
+      "bytes": 1397
+    },
+    {
+      "path": "ifcopenshell/util/ifc4x3dev_scrape_data_for_docs.py",
+      "sha256": "8a5dc97ab43dac33929f60b4f3f7c113bf97960a6bee7c4edf1278f970b63b53",
+      "bytes": 8721
+    },
+    {
+      "path": "ifcopenshell/util/mvd_info.py",
+      "sha256": "3374b474e761e2c7d6c5608acbcb504ab07291f5e631cf6c8d0fce610fc03110",
+      "bytes": 11150
+    },
+    {
+      "path": "ifcopenshell/util/placement.py",
+      "sha256": "67af47de5222636885de28ff2ad55a767362d9bd58209904ebbe7f793b229990",
+      "bytes": 8136
+    },
+    {
+      "path": "ifcopenshell/util/profiler.py",
+      "sha256": "77df3cf6ed2d6306f9bd3ea59917a0d7b27caeab3298e59ccdf451be1e1e3134",
+      "bytes": 1166
+    },
+    {
+      "path": "ifcopenshell/util/pset.py",
+      "sha256": "96dce75e874070f665a41ce69bfd76e8ec48482e6859fc98a0975800a23e8831",
+      "bytes": 9943
+    },
+    {
+      "path": "ifcopenshell/util/representation.py",
+      "sha256": "1e5c6089c8e06c73ea36c4ba14071446ca9a9a619667a85d50dfb9ea0632f292",
+      "bytes": 20268
+    },
+    {
+      "path": "ifcopenshell/util/resource.py",
+      "sha256": "260c391e22f4c64f63d3384be38736482c58ab02151e0e0ba88ccc61b558bbd2",
+      "bytes": 7225
+    },
+    {
+      "path": "ifcopenshell/util/schema.py",
+      "sha256": "163f37be6144ec5d0f3895bdd3c402c72cd7bee84450142098f23ecb703dba47",
+      "bytes": 22972
+    },
+    {
+      "path": "ifcopenshell/util/selector.py",
+      "sha256": "c41b91d8d0ab2ffd55c9285bac66918a908d706ef893a3029569f959b02e28f7",
+      "bytes": 47224
+    },
+    {
+      "path": "ifcopenshell/util/sequence.py",
+      "sha256": "1c267c43e1c0af32d0777b3f786297262658daddd3b34220ba493b2a674c4796",
+      "bytes": 17522
+    },
+    {
+      "path": "ifcopenshell/util/shape.py",
+      "sha256": "3556ad8f81a3672309d5bbeac0ecb96596c7c8e10e72ab238e3bc93e61033d82",
+      "bytes": 29148
+    },
+    {
+      "path": "ifcopenshell/util/shape_builder.py",
+      "sha256": "0a26c560ad3c21ead90386d0fc8a18262b71ad2fa409eba8e75df208cc4f3fb7",
+      "bytes": 87191
+    },
+    {
+      "path": "ifcopenshell/util/system.py",
+      "sha256": "c3ad2092fa17c4ff64ebc069554221540570849a0764bf1d298bd38672b491ee",
+      "bytes": 5694
+    },
+    {
+      "path": "ifcopenshell/util/type.py",
+      "sha256": "60b6cf271b58abef03883ba9fad242023b5e4728e51d6f2d85c335b47c586f93",
+      "bytes": 3876
+    },
+    {
+      "path": "ifcopenshell/util/unit.py",
+      "sha256": "b8f67addc97ded6e8ef79fa46aaa46a160da0af2b10765646295a9da1b0e0671",
+      "bytes": 32769
+    },
+    {
+      "path": "ifcopenshell/util/schema/Pset_IFC2X3.ifc",
+      "sha256": "61a8732fbc35c5e911d7750e2be0e93ce7724e7eee751e9a6bfd71ebce7ef407",
+      "bytes": 613615
+    },
+    {
+      "path": "ifcopenshell/util/schema/Pset_IFC4X3.ifc",
+      "sha256": "41c5b181eabd56da0c298c9adebc9c6f3aeebabb41f1c916848681f798aa8455",
+      "bytes": 1435670
+    },
+    {
+      "path": "ifcopenshell/util/schema/Pset_IFC4_ADD2.ifc",
+      "sha256": "5224cb82bea85ad4168e4a972fe410d1e4a727b55ae2127afbf2f623c4372bb1",
+      "bytes": 3153156
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc2x3_entities.json",
+      "sha256": "b76c1b31673544370a885321993559c3857723c70b840e41db50327931bd25d1",
+      "bytes": 586810
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc2x3_properties.json",
+      "sha256": "d56bd3c0c4f7f2514e477ae54a90cd9275cdd232cabac54e2157a29b1aaf2228",
+      "bytes": 419692
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc2x3_property_sets_site_domains.json",
+      "sha256": "07aebcf40b5bcdd7dd4490c350df825e0db8164a27984af61bef648e1e8a9169",
+      "bytes": 19236
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc2x3_types.json",
+      "sha256": "30180f023199919a223dfc4966c1fab5abb77b802058e6099df40ea2be4ed1be",
+      "bytes": 107944
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4_entities.json",
+      "sha256": "f164de9e34dd4964cee5605ccb5e1f41e48682136d5aed3147d8f679df0b82ed",
+      "bytes": 826405
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4_properties.json",
+      "sha256": "d9533bd1e425d8e18ae743bafd6830d26b27bff3ee710ef7b90fe100ca5ce8db",
+      "bytes": 722448
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4_property_sets_site_domains.json",
+      "sha256": "32c4e3a6ebe11d8c82c8941cb3df8fcd33c90fa51313903ccdf0d238214ec4a8",
+      "bytes": 31303
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4_types.json",
+      "sha256": "25b9c4ab4eddf14e68d57191aa8d78f4a5a20aea7604b4a8a28df0a10240fce9",
+      "bytes": 137745
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4x3_entities.json",
+      "sha256": "c1334c534c433c436c1116b1d73e844ca8226df276c2470fdd058e28533ee976",
+      "bytes": 959334
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4x3_properties.json",
+      "sha256": "f7d1941f4d088c5dabccc43d0e8e6ea1a148c845b144c2258433701e9945cb0f",
+      "bytes": 1107569
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc4x3_types.json",
+      "sha256": "035199737175b7cc16c0327d61a1dde03c34de3a9c1a6867e94a9e498a1e22be",
+      "bytes": 139659
+    },
+    {
+      "path": "ifcopenshell/util/schema/ifc_classes_suggestions.json",
+      "sha256": "bb6a26b9535968f35b06f5f6e872fe5309e791029f204b2d0b60b4f0d5bb511f",
+      "bytes": 3798
+    },
+    {
+      "path": "ifcopenshell/util/scripts/validate_stub.py",
+      "sha256": "c37153f6cdaf84cf1b87e18f6797bc50fb83de0047c2a0f2b9f4f89ea360e363",
+      "bytes": 10207
+    },
+    {
+      "path": "ifcopenshell-0.8.4.dist-info/METADATA",
+      "sha256": "857778274aaaed7dec63611b700e84f28b8b17a33e849af3b46d6ee7b13b646a",
+      "bytes": 12296
+    },
+    {
+      "path": "ifcopenshell-0.8.4.dist-info/WHEEL",
+      "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+      "bytes": 91
+    },
+    {
+      "path": "ifcopenshell-0.8.4.dist-info/top_level.txt",
+      "sha256": "5c7641abdc63ec95407a4d4c25f5cccc6d7e0744d934ece0b80a5b9e50c7f883",
+      "bytes": 13
+    },
+    {
+      "path": "ifcopenshell-0.8.4.dist-info/RECORD",
+      "sha256": "b05b724f8973de60087f6b846dcf2d43a338cc1cfff99ebd4354c8f5cc8342c1",
+      "bytes": 57712
+    },
+    {
+      "path": "shapely/affinity.py",
+      "sha256": "5f8821ac779aa98b99d3a4fa6916d872d33257ee0f6843c8b61c0fe0ab53ebc8",
+      "bytes": 8521
+    },
+    {
+      "path": "shapely/conftest.py",
+      "sha256": "3163bf43ae87f9f329beec687bbec02f82e9a0d02f84e47d6a0f2caa4c8318cd",
+      "bytes": 2017
+    },
+    {
+      "path": "shapely/constructive.py",
+      "sha256": "e6d017d5272cbee94e7ecd7252f2058a957e67a2874983029866a56c848e25a2",
+      "bytes": 57741
+    },
+    {
+      "path": "shapely/coordinates.py",
+      "sha256": "bcd4e6b8fe562c527fbac0ea281a418110e343e4a9ed3c4a2f659510970ddc51",
+      "bytes": 12910
+    },
+    {
+      "path": "shapely/coords.py",
+      "sha256": "03fc5cb24d2849145495152d435084fd66a3b7394046fee16f6ae59d23253505",
+      "bytes": 3151
+    },
+    {
+      "path": "shapely/creation.py",
+      "sha256": "2441deeaf1c5ec7cf3b2db5c2ae218383ae302f0d90df4364445968057715dba",
+      "bytes": 31818
+    },
+    {
+      "path": "shapely/decorators.py",
+      "sha256": "7c76069b7ed63a86d00e1a9d27db0b6d28f24dbec93606e92e3c9a270baa7d55",
+      "bytes": 5877
+    },
+    {
+      "path": "shapely/errors.py",
+      "sha256": "eeba7c2a5857baa817b615b4058535967a798a5b2845bcc0aaa6aafc9a1029d6",
+      "bytes": 2477
+    },
+    {
+      "path": "shapely/geos.py",
+      "sha256": "17342ddd744c7af6889ef34d1aa82178850291b69d0e39b4435e9d3affea1a91",
+      "bytes": 537
+    },
+    {
+      "path": "shapely/io.py",
+      "sha256": "4fb3da633637e34c22efa25cb479d7c05b324a207711b6493fd22553bb912e29",
+      "bytes": 15516
+    },
+    {
+      "path": "shapely/lib.cp312-win_amd64.pyd",
+      "sha256": "662dab5d5a3c93b8a457118f0d96765c6a7b51538133754d7e2a540ef9ab65e3",
+      "bytes": 157184
+    },
+    {
+      "path": "shapely/linear.py",
+      "sha256": "f404f2a731bd42367bec0352b6f5778510184b81c7bd9ab72c992658a9c88c51",
+      "bytes": 8911
+    },
+    {
+      "path": "shapely/measurement.py",
+      "sha256": "8fdd1a45a7965b27d4d5c3a8525e3a3c85252edcdd0f8b4c326467fdbb899ad8",
+      "bytes": 10977
+    },
+    {
+      "path": "shapely/ops.py",
+      "sha256": "e1ca0a854669b1d375542ecfeb6a1b8382f319d92f422dd0b70311fffc183601",
+      "bytes": 26399
+    },
+    {
+      "path": "shapely/plotting.py",
+      "sha256": "8b3ad59b6519b46da5e688a67b1d8095525a80594d33bb68fc966cf03002d65f",
+      "bytes": 6544
+    },
+    {
+      "path": "shapely/predicates.py",
+      "sha256": "13a2e4ffeb3e6640d8219bc8990b73007fdebcb1c437a9606cc0d7b59621e246",
+      "bytes": 41023
+    },
+    {
+      "path": "shapely/prepared.py",
+      "sha256": "95572af279db105af45cd142d504fbd4aa912c8434b9b4a1743fcc10f99eb5fd",
+      "bytes": 2425
+    },
+    {
+      "path": "shapely/set_operations.py",
+      "sha256": "e571e3b6ae6422ee01d68eb4c6db1cfdd4112658f64d9c75b8a03c89a0b6fd3f",
+      "bytes": 28224
+    },
+    {
+      "path": "shapely/speedups.py",
+      "sha256": "23ba04c587a56f4d82bf517ed53791940de8496c12c569690faba99f00011f47",
+      "bytes": 1077
+    },
+    {
+      "path": "shapely/strtree.py",
+      "sha256": "819462a89f6e87822effc7b06a20e64806fad8e9b0c9beb972a7761ea50e7630",
+      "bytes": 21199
+    },
+    {
+      "path": "shapely/testing.py",
+      "sha256": "63bcd6df9b7bec375897b3d9ba7f06d0d2e98eeee280e374d8955ffd6f15f1f8",
+      "bytes": 6680
+    },
+    {
+      "path": "shapely/validation.py",
+      "sha256": "e30b234363c3cd82f00f2bbb8d48923df0ae47373bfce7955756a574007be20b",
+      "bytes": 1526
+    },
+    {
+      "path": "shapely/wkb.py",
+      "sha256": "b227def1a6e20b571ef1560eab39d8a41f2919ccba8b9a0444ce98085d0cf88f",
+      "bytes": 2007
+    },
+    {
+      "path": "shapely/wkt.py",
+      "sha256": "ead6970ab21cd2e4ca4421e38836fcd8f51b44632ced094ae97e7d01a153373a",
+      "bytes": 1815
+    },
+    {
+      "path": "shapely/_coverage.py",
+      "sha256": "8c2ec1ba75a8bb6a723d7fbf74a47229efd4f77cf031a59ddb91944ca9771dc2",
+      "bytes": 5900
+    },
+    {
+      "path": "shapely/_enum.py",
+      "sha256": "0572bda2ba885640dcd0da4bb491ad7d07c25527a035cc35ab697c678f284c6f",
+      "bytes": 727
+    },
+    {
+      "path": "shapely/_geometry.py",
+      "sha256": "8fcf8ed04c472b59955cd5eace7d2adf9005b56db826348a3146020a81e95144",
+      "bytes": 30182
+    },
+    {
+      "path": "shapely/_geometry_helpers.cp312-win_amd64.pyd",
+      "sha256": "8e65aeb9230fdcad1ec63ae9bcaa781a084a3fc94c4744e886a35328c8f4cc73",
+      "bytes": 227328
+    },
+    {
+      "path": "shapely/_geos.cp312-win_amd64.pyd",
+      "sha256": "fa81c1de078db6956bb4327b7a2aeabecfef6e42827518ec10eec1f4b991c1ce",
+      "bytes": 46080
+    },
+    {
+      "path": "shapely/_geos.pxd",
+      "sha256": "4056ec58cdad6527d483fac22ff5f82b34d6301ca5c2900087ee573fc54600b0",
+      "bytes": 3266
+    },
+    {
+      "path": "shapely/_pygeos_api.pxd",
+      "sha256": "a3b3c766540189e2886966090a548c32c82cdd087e235c75375f268fa25a03f7",
+      "bytes": 2148
+    },
+    {
+      "path": "shapely/_ragged_array.py",
+      "sha256": "bff119b1beae855180fa720fe0ef98930bccca578611fbc3f57e95f7acf5ea4b",
+      "bytes": 17920
+    },
+    {
+      "path": "shapely/_version.py",
+      "sha256": "e382475837befc7e7814009a168e340c53e94264d85a73462f41d0b1b7aaaeb5",
+      "bytes": 518
+    },
+    {
+      "path": "shapely/__init__.py",
+      "sha256": "c045820913e7e586e1cddfb172b42891ce8e5c934be899a65af612303fa16b8f",
+      "bytes": 1391
+    },
+    {
+      "path": "shapely/algorithms/cga.py",
+      "sha256": "ee38f6bc3b93cc19ee3cecfeb7375a78b93ed52ccbc355e648c54ec55d378831",
+      "bytes": 1807
+    },
+    {
+      "path": "shapely/algorithms/polylabel.py",
+      "sha256": "eaec46740f87308e53b57bb1f7ae0da9707aa5becba7ca0c30579f8c729a5e4d",
+      "bytes": 1387
+    },
+    {
+      "path": "shapely/algorithms/_oriented_envelope.py",
+      "sha256": "ba4513a9c9bd5441ffd20b1f8b6526840687f26f82d5b60e151b46fcb80f4664",
+      "bytes": 1989
+    },
+    {
+      "path": "shapely/algorithms/__init__.py",
+      "sha256": "80a1e2e5b80c243158d754d121045cd6d9907e6eb54805623d02e1ea5376267d",
+      "bytes": 42
+    },
+    {
+      "path": "shapely/geometry/base.py",
+      "sha256": "b978511e9b2914bdc0994d2caa95205e1015cbde36ca2a93387d468e1eb7879a",
+      "bytes": 41513
+    },
+    {
+      "path": "shapely/geometry/collection.py",
+      "sha256": "63dc127bb0683a591b1227787e4f696a033fab8c794ae0c2600717df1c786ea0",
+      "bytes": 1794
+    },
+    {
+      "path": "shapely/geometry/geo.py",
+      "sha256": "52c20f3ea735308f1397cd8d11882a828ae04deefb2403f1a95b5ebaee9801f5",
+      "bytes": 4509
+    },
+    {
+      "path": "shapely/geometry/linestring.py",
+      "sha256": "801384bc382043ed06c25e246f4309c8726eb668ce407520a95dab2895e44b8c",
+      "bytes": 7810
+    },
+    {
+      "path": "shapely/geometry/multilinestring.py",
+      "sha256": "9bb928f75fa11dd47008421f10c852bba7be84de7f7b17f1ad26ab74d88c0f2b",
+      "bytes": 3037
+    },
+    {
+      "path": "shapely/geometry/multipoint.py",
+      "sha256": "52b991f759606b5120c09f020f5dae60a166f7728d9fcb50de6efc1b66205141",
+      "bytes": 3326
+    },
+    {
+      "path": "shapely/geometry/multipolygon.py",
+      "sha256": "043fded69e6ef3fe3fce7c6faeec7226d9b957b987e9e05d39710b29e728b91d",
+      "bytes": 4080
+    },
+    {
+      "path": "shapely/geometry/point.py",
+      "sha256": "0135ab1df0f5268a09d8ec505e40679061bff3b4d5d001ad65588d670549d702",
+      "bytes": 4897
+    },
+    {
+      "path": "shapely/geometry/polygon.py",
+      "sha256": "c899d1fe6462e1953d50ee9e639988953e9686d1e0f1c6c5b3fecc18c232bbc6",
+      "bytes": 11427
+    },
+    {
+      "path": "shapely/geometry/__init__.py",
+      "sha256": "5ce6fb811fc28893b658c4e7c898d48a9a0d84e2683409fae8c9f7783e270cf7",
+      "bytes": 790
+    },
+    {
+      "path": "shapely/tests/common.py",
+      "sha256": "e13d1309d11d4813b10dcdb1a03d61e368f0652716ae6fc55316aef7b078b97e",
+      "bytes": 10436
+    },
+    {
+      "path": "shapely/tests/test_constructive.py",
+      "sha256": "f2d3e0522248562745d878711de89f91571d8c05c3ff30221812818040921c0b",
+      "bytes": 47469
+    },
+    {
+      "path": "shapely/tests/test_coordinates.py",
+      "sha256": "358514b77fdf71f06a8098a9110893b23ff112178dd8eb383ddc106311cf5170",
+      "bytes": 13716
+    },
+    {
+      "path": "shapely/tests/test_coverage.py",
+      "sha256": "c943756564252f74049d2cfcf67600c4d90ba2050209b5238dceeb57e468b973",
+      "bytes": 9827
+    },
+    {
+      "path": "shapely/tests/test_creation.py",
+      "sha256": "8bbedcc5986f254bf7c82d94cdf49a8fac2906ec68a6231ad3817cebc248227c",
+      "bytes": 23087
+    },
+    {
+      "path": "shapely/tests/test_creation_indices.py",
+      "sha256": "525d71ad8ad1c033bd6ed68c6d1518cedff83440cba819dd8a526d9a529c49bd",
+      "bytes": 19182
+    },
+    {
+      "path": "shapely/tests/test_decorators.py",
+      "sha256": "7e9b48be092c820b22955b1cc681e0beafdf9a90e55891687e3c19945a9be4b3",
+      "bytes": 3837
+    },
+    {
+      "path": "shapely/tests/test_geometry.py",
+      "sha256": "e577f8473fb8d1b1af49c95530b7834901e19fb85cfb9b806b22a8959c6d479a",
+      "bytes": 24560
+    },
+    {
+      "path": "shapely/tests/test_io.py",
+      "sha256": "472ddfef85fb325398b8d985877ffbdf4d47b25b950e4ab12b2ddb1bbaba20f3",
+      "bytes": 51413
+    },
+    {
+      "path": "shapely/tests/test_linear.py",
+      "sha256": "577cda92baa3af3f75d074bd800113b8165e6542b1de6715ead804f695de579e",
+      "bytes": 7950
+    },
+    {
+      "path": "shapely/tests/test_measurement.py",
+      "sha256": "5a6dbbdfbf45c3e2d05c21197b222d7129931b13c0ff1f1cc4d7ddb68aa2d311",
+      "bytes": 10292
+    },
+    {
+      "path": "shapely/tests/test_misc.py",
+      "sha256": "e1d2f7c06dd7b8339d8a20615ed5a2a3c29825a773e3085631d862d6837cc920",
+      "bytes": 5583
+    },
+    {
+      "path": "shapely/tests/test_plotting.py",
+      "sha256": "774985c3cf768cfede02fdca7f59bb3d57222dd3f838d5e95bbdda3884e274bb",
+      "bytes": 4164
+    },
+    {
+      "path": "shapely/tests/test_predicates.py",
+      "sha256": "c78de5d2363db30c9ff7039567de87d6f1611e5010f5f6ffc505855335e6d1d2",
+      "bytes": 14128
+    },
+    {
+      "path": "shapely/tests/test_ragged_array.py",
+      "sha256": "e909a7b429df082c53c2c2274b064b4a1b8806b5a9136f30d475be6b26bc1d4d",
+      "bytes": 21732
+    },
+    {
+      "path": "shapely/tests/test_set_operations.py",
+      "sha256": "f505af2cd19528fda83c164e5503d40faf4bfe86ebbfef55a0117eea6ad2cf57",
+      "bytes": 18183
+    },
+    {
+      "path": "shapely/tests/test_strtree.py",
+      "sha256": "f5511a06a1b57cfaa7da43a8840bfd495a1d3669a204b0f1062a4617f98c88e5",
+      "bytes": 75475
+    },
+    {
+      "path": "shapely/tests/test_testing.py",
+      "sha256": "378c64ba9562dd11210e3f263d6067cbd0d9c8c1ed56e1ac2f4c4a0fe0a7f10e",
+      "bytes": 2943
+    },
+    {
+      "path": "shapely/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "shapely/tests/geometry/test_collection.py",
+      "sha256": "043e952e2b5eb2205fa36cc430eaf3318a1601383132cdad33bd9eafa62606d4",
+      "bytes": 2764
+    },
+    {
+      "path": "shapely/tests/geometry/test_coords.py",
+      "sha256": "2d92bedfe0f38bb43a70fbf9289ef7bbecd05d9f8d07ccf56e38a505678e6b31",
+      "bytes": 4117
+    },
+    {
+      "path": "shapely/tests/geometry/test_decimal.py",
+      "sha256": "08009f66282e2575046ced306361698f3290324436a5483430f8508b4e90c786",
+      "bytes": 2963
+    },
+    {
+      "path": "shapely/tests/geometry/test_emptiness.py",
+      "sha256": "cbee6ab4ea2f2ca0a2314d3078cdee55cd7d6d78f0da8626d79ee3294e618228",
+      "bytes": 2460
+    },
+    {
+      "path": "shapely/tests/geometry/test_equality.py",
+      "sha256": "827cb95ba88679e917cb23dcd5f0ab986d2e3ad603f4191d0db382ab43450aa3",
+      "bytes": 9720
+    },
+    {
+      "path": "shapely/tests/geometry/test_format.py",
+      "sha256": "ed88b7a6c5ad4e91d5851c2fc677b45942b56176da4b0c4112fdb271b5c6c34f",
+      "bytes": 4636
+    },
+    {
+      "path": "shapely/tests/geometry/test_geometry_base.py",
+      "sha256": "5d247b22108b31f1eec37d222bd84def6e5b7e34442c201a0ac8284b44941a10",
+      "bytes": 11095
+    },
+    {
+      "path": "shapely/tests/geometry/test_hash.py",
+      "sha256": "a91f92aa572cddc0b31cab0bdd80b9535f9db85e97f340bbc0ab0c5b699d0665",
+      "bytes": 701
+    },
+    {
+      "path": "shapely/tests/geometry/test_linestring.py",
+      "sha256": "7aac15fdbcd67f5efe27db8cc5a89b925bb195e5df40483e403ab0049ad1aa6e",
+      "bytes": 7275
+    },
+    {
+      "path": "shapely/tests/geometry/test_multi.py",
+      "sha256": "56ce0058b6e3e88c4266b36ae173f34d02ceb8c3064b41dccba72f707107db94",
+      "bytes": 308
+    },
+    {
+      "path": "shapely/tests/geometry/test_multilinestring.py",
+      "sha256": "1b65523ff6b6bd672fd5f017c8c4361319ce785874f9a171d246fe32d613bef5",
+      "bytes": 2911
+    },
+    {
+      "path": "shapely/tests/geometry/test_multipoint.py",
+      "sha256": "504f7d29af87eeb34ceed62ab85987cffb3798547bcc5a81f8592cefb6bea5d7",
+      "bytes": 3140
+    },
+    {
+      "path": "shapely/tests/geometry/test_multipolygon.py",
+      "sha256": "36fed804581da9fb910f89bca1bf07daf17f165aa4a8c9ca6eae622244f63ce2",
+      "bytes": 5063
+    },
+    {
+      "path": "shapely/tests/geometry/test_point.py",
+      "sha256": "97b38689524836057e8b36c7dab0452000d670c18ebd99f83f3cbebbf4158bb1",
+      "bytes": 5533
+    },
+    {
+      "path": "shapely/tests/geometry/test_polygon.py",
+      "sha256": "2a9bdae869bc219acfbe0757a22705a92d4f0cc4d948fae4091010a4f9aa58e8",
+      "bytes": 15763
+    },
+    {
+      "path": "shapely/tests/geometry/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "shapely/tests/legacy/conftest.py",
+      "sha256": "a7a8c964aca50cd847974c9c29e882948b3292ea9d5f0bfa6e44636fcd059c2f",
+      "bytes": 346
+    },
+    {
+      "path": "shapely/tests/legacy/test_affinity.py",
+      "sha256": "8123994b1c63856a47c162ecf3da5a0dbcdc1895607871672be90d10ddc8a9c7",
+      "bytes": 12791
+    },
+    {
+      "path": "shapely/tests/legacy/test_box.py",
+      "sha256": "494961ae058e217904dfca4d3ced1eda769b0c55c3d662c15737bb2278973bc1",
+      "bytes": 619
+    },
+    {
+      "path": "shapely/tests/legacy/test_buffer.py",
+      "sha256": "85138808d078ed1e2f2597da7f1ca94dcc0fee2e72a5d4eefdff5f7e07d6f759",
+      "bytes": 6769
+    },
+    {
+      "path": "shapely/tests/legacy/test_cga.py",
+      "sha256": "c712d9520e6dd093b4f325d663cf90e07de777a2d63830151b73ffb6b59935cf",
+      "bytes": 1560
+    },
+    {
+      "path": "shapely/tests/legacy/test_clip_by_rect.py",
+      "sha256": "43d6e01e51711a7646fb2aadb69bf4aa75966c287c90d58bee24aa3c9653007d",
+      "bytes": 4156
+    },
+    {
+      "path": "shapely/tests/legacy/test_create_inconsistent_dimensionality.py",
+      "sha256": "b0fee86acc5401a4336a46c034b5477fb85a44f3863704b84c69600621a4b719",
+      "bytes": 10889
+    },
+    {
+      "path": "shapely/tests/legacy/test_delaunay.py",
+      "sha256": "5eca1aa01e4da4a1dffe78d61692cef1a3222535b05b03dfec5f9901e4117a66",
+      "bytes": 870
+    },
+    {
+      "path": "shapely/tests/legacy/test_empty_polygons.py",
+      "sha256": "346c26bb8ed830422553284cbbafb43614f0a677696f5d1df0838f8d9cc48fc5",
+      "bytes": 705
+    },
+    {
+      "path": "shapely/tests/legacy/test_equality.py",
+      "sha256": "0eb93641c40f1980609436343cbde2709dac21c11f33116b060fcac12e318a74",
+      "bytes": 771
+    },
+    {
+      "path": "shapely/tests/legacy/test_geointerface.py",
+      "sha256": "9ce56eb78c5d06dce1714b59d676025087d32ed51bda97f4af304d8876da921b",
+      "bytes": 3766
+    },
+    {
+      "path": "shapely/tests/legacy/test_invalid_geometries.py",
+      "sha256": "c32e785eb9fe1cd1fe34714cf799e5a2d22a8c9caf80ed390a95d346895ffa83",
+      "bytes": 917
+    },
+    {
+      "path": "shapely/tests/legacy/test_linear_referencing.py",
+      "sha256": "e03935c3e22abc3cfbaac71bdde8679fbcad3a8e5cebfe0f288ea3b93b3114ae",
+      "bytes": 2986
+    },
+    {
+      "path": "shapely/tests/legacy/test_linemerge.py",
+      "sha256": "e74ca9292bbade918f92ea43351ec8b11abc952c38b34ba6f81ae7bcbee69779",
+      "bytes": 1372
+    },
+    {
+      "path": "shapely/tests/legacy/test_locale.py",
+      "sha256": "d731bfac710953cee38fdb1077ef36417b77e3d65eed87deca10f2669789e82c",
+      "bytes": 1488
+    },
+    {
+      "path": "shapely/tests/legacy/test_make_valid.py",
+      "sha256": "3d6cef03715f1f3013fa7eeca55faaf91d4c73fda3cc4ed258f64ffcdfd07204",
+      "bytes": 494
+    },
+    {
+      "path": "shapely/tests/legacy/test_mapping.py",
+      "sha256": "2c32d5b771a989488372d9a244645c06f5a205aa673a32aba024ecebd6d722c3",
+      "bytes": 409
+    },
+    {
+      "path": "shapely/tests/legacy/test_minimum_clearance.py",
+      "sha256": "54ac0ff5ad68fd871e8fcd2fcc914aea8951df6e7fb97a82b40c216d30b5ec32",
+      "bytes": 724
+    },
+    {
+      "path": "shapely/tests/legacy/test_ndarrays.py",
+      "sha256": "089aad42cc0f5bfe7325b36fc96ac08bc0e0218b5bae01893785aa6948654bea",
+      "bytes": 1286
+    },
+    {
+      "path": "shapely/tests/legacy/test_nearest.py",
+      "sha256": "b7695a6833b3acba7437792877f740b15136561e7903bbf7884fde34a148ba3b",
+      "bytes": 494
+    },
+    {
+      "path": "shapely/tests/legacy/test_operations.py",
+      "sha256": "30ccfa73e03340d78827cc89750f9c0ccf50a29cbef7e9d22f06c22f795bfdcf",
+      "bytes": 4431
+    },
+    {
+      "path": "shapely/tests/legacy/test_operators.py",
+      "sha256": "ead06be2382e5907ef08dd0f1ca4fb73be5c43c56ece145ab53c82953da16b54",
+      "bytes": 2008
+    },
+    {
+      "path": "shapely/tests/legacy/test_orient.py",
+      "sha256": "6bc139130d3dd7b37a1f2ef8ad502c7ce843122e81d4cc45d410b3be5976bfa5",
+      "bytes": 3607
+    },
+    {
+      "path": "shapely/tests/legacy/test_parallel_offset.py",
+      "sha256": "3d38102346114e654e677849bc0f266c86abbfa5757b2fcfbd8403c044c50028",
+      "bytes": 2392
+    },
+    {
+      "path": "shapely/tests/legacy/test_persist.py",
+      "sha256": "f1f65c6dbffd8ab731fb3ac72df7bf3128d921485da5dcedb0d93706ec641c87",
+      "bytes": 1758
+    },
+    {
+      "path": "shapely/tests/legacy/test_pickle.py",
+      "sha256": "7ffa42ec8966dc29b6bfba4d7f4da687514e1bff831b265e00ba5329f9d31ad0",
+      "bytes": 2449
+    },
+    {
+      "path": "shapely/tests/legacy/test_polygonize.py",
+      "sha256": "69f977de65df951895fa3a57c3d221d433b8322414845060c44f5544084ba984",
+      "bytes": 1431
+    },
+    {
+      "path": "shapely/tests/legacy/test_polylabel.py",
+      "sha256": "19fc9ad433dffac516f05c18b71c40aa8e7e9b13d3057e724efa99849d3c746c",
+      "bytes": 3228
+    },
+    {
+      "path": "shapely/tests/legacy/test_predicates.py",
+      "sha256": "516a3ec2018f77e3819aa1b2d651f4b9e8f2dfca04880d4303534f6057beb206",
+      "bytes": 3053
+    },
+    {
+      "path": "shapely/tests/legacy/test_prepared.py",
+      "sha256": "ca9bb057d5b3aa917d07866f149e678018a936b1efad529b2e58d2312ce976fa",
+      "bytes": 2541
+    },
+    {
+      "path": "shapely/tests/legacy/test_products_z.py",
+      "sha256": "654230bc18676f513bc274879903181339c30140c37ba66ba6a4f36f7cce47f4",
+      "bytes": 401
+    },
+    {
+      "path": "shapely/tests/legacy/test_shape.py",
+      "sha256": "21b73ef28281c1f466ffba9d0e83782f177fad32e2c9048f43bb65e7bb959806",
+      "bytes": 1872
+    },
+    {
+      "path": "shapely/tests/legacy/test_shared_paths.py",
+      "sha256": "0bce6c42b73a2d69065f550aef43271976a024e61d4ef7a175f09f3a2bc5fac7",
+      "bytes": 1479
+    },
+    {
+      "path": "shapely/tests/legacy/test_singularity.py",
+      "sha256": "d510355703a999b63277c679d4bf1664fd9e0c41b5afd55b4a06b88d948884e8",
+      "bytes": 396
+    },
+    {
+      "path": "shapely/tests/legacy/test_snap.py",
+      "sha256": "64a6013539baae99fc4657d9e695fc235097635cfbdb66c75cc3d42efa3f0b2d",
+      "bytes": 787
+    },
+    {
+      "path": "shapely/tests/legacy/test_split.py",
+      "sha256": "b148b40da5b3323ffde8ac7de2aa7456e6af35741b5464688ec5980c72e5c657",
+      "bytes": 11616
+    },
+    {
+      "path": "shapely/tests/legacy/test_substring.py",
+      "sha256": "12d044975d33b4b31b36fe020f3920a99e3a2c6ba1d56ee2b8c0d460ae0cf89a",
+      "bytes": 21382
+    },
+    {
+      "path": "shapely/tests/legacy/test_svg.py",
+      "sha256": "93ab7f4b0b5cc66db1d08a57cdf9899963f2114b9899703572d1151216fa6c55",
+      "bytes": 8466
+    },
+    {
+      "path": "shapely/tests/legacy/test_transform.py",
+      "sha256": "8ea726d6180384489b52fb23c8f128d2784cac7bf27cad3e362279fa4dc0f419",
+      "bytes": 2785
+    },
+    {
+      "path": "shapely/tests/legacy/test_union.py",
+      "sha256": "99e6f7ef4ac29b3eefe09ae15118f66fdef06e751aab5fa90716803e90929cc6",
+      "bytes": 2160
+    },
+    {
+      "path": "shapely/tests/legacy/test_validation.py",
+      "sha256": "a45d78de8ab9770ae2d30822af2708c130de5c672de58d207ea3111dec053df3",
+      "bytes": 247
+    },
+    {
+      "path": "shapely/tests/legacy/test_vectorized.py",
+      "sha256": "418602733afd951e5406ccbe410726731443cc302052f14722d6c4efea449225",
+      "bytes": 3831
+    },
+    {
+      "path": "shapely/tests/legacy/test_voronoi_diagram.py",
+      "sha256": "adf6ea8fcb64bd42d0301b1c3d2501be6a7b39efab896d494e781c65eb447e11",
+      "bytes": 4209
+    },
+    {
+      "path": "shapely/tests/legacy/test_wkb.py",
+      "sha256": "87f1ed75215df803326210357ad34564b6ad84e90e1c22d95b2b0ecbb08d5f23",
+      "bytes": 5734
+    },
+    {
+      "path": "shapely/tests/legacy/test_wkt.py",
+      "sha256": "eaa59aba630335b899c7c6d60ee93b4e1c1aa855959e36783bfb72912499b155",
+      "bytes": 1661
+    },
+    {
+      "path": "shapely/tests/legacy/threading_test.py",
+      "sha256": "f44689e5030f28f1c74ceb3e6f25f5555be66fb2112b7d57c3aece1d1335255b",
+      "bytes": 1048
+    },
+    {
+      "path": "shapely/tests/legacy/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "shapely/vectorized/__init__.py",
+      "sha256": "c730430fa128f332d5eed26c662e26e18c9031e2c9d8e849f572f9acdbe94871",
+      "bytes": 2903
+    },
+    {
+      "path": "shapely.libs/geos-ae6efa0782962b98e358f10ea539ae5f.dll",
+      "sha256": "094508747b6bb6eb785b2aa67d7899724ce78ee6cc375e7a66e11be3bcf5a08e",
+      "bytes": 2564608
+    },
+    {
+      "path": "shapely.libs/geos_c-072b7a9224d16d3e4ab2395bb855b2d3.dll",
+      "sha256": "7e4d87ccb640eda92f150b7cee178ef13abe282acd36af08f6dca5eddaf931a4",
+      "bytes": 451072
+    },
+    {
+      "path": "shapely.libs/msvcp140-90bc62d4947a5878f1dc1057312f3be2.dll",
+      "sha256": "90bc62d4947a5878f1dc1057312f3be2137eb376039f4afda2f64c06353f2198",
+      "bytes": 557704
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/DELVEWHEEL",
+      "sha256": "ae640bacb70848f45778434dbebad146e92c8598fd49141e790dc010c72944af",
+      "bytes": 448
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/METADATA",
+      "sha256": "01dd9a347d1efa56099c3aa54c09f61ddd19e8c91eb222b9f16b6d6095b0e4a3",
+      "bytes": 7052
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/RECORD",
+      "sha256": "3f55bb58d3a5983d4d7f366c201d4169dafc39756cf552cc4468b0e5907383f4",
+      "bytes": 12638
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/top_level.txt",
+      "sha256": "7f173950828a95da4a3f7971d9dbcce51de159e2b0966556ebe9df8a4af7894d",
+      "bytes": 8
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/WHEEL",
+      "sha256": "f143fdc7da6e588d0fd55fddecada831306a7de2cd9b6d424f367f3edaf43575",
+      "bytes": 101
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/licenses/LICENSE.txt",
+      "sha256": "e8cd7d34604d2758ff589f0f34d6ed79c3f7fb14aaf5e12fb09221421391a3bf",
+      "bytes": 1612
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/licenses/LICENSE_GEOS",
+      "sha256": "91a5bb11df4d44bfddc0c68db43681705326107781599fb6c6ff821042072d64",
+      "bytes": 27295
+    },
+    {
+      "path": "shapely-2.1.2.dist-info/licenses/LICENSE_win32",
+      "sha256": "9b30cd1a09789884dd54e5828e31d2bf8e6879034e7cf7b6e0321444cf6dd11d",
+      "bytes": 1179
+    },
+    {
+      "path": "lark/__init__.py",
+      "sha256": "d0e3cee5cc961578ab60dfcf7ef31eae685b1362913da5af0f96a621f50e5139",
+      "bytes": 772
+    },
+    {
+      "path": "lark/ast_utils.py",
+      "sha256": "8f09f8e2870d4216466df705b04667c22fe01af3db360ce343ed11b84b700f32",
+      "bytes": 2117
+    },
+    {
+      "path": "lark/common.py",
+      "sha256": "33df8214050fdfef8e91fb72c968e47be29cd7ea5031ccd3d4c96e1c2170772e",
+      "bytes": 3008
+    },
+    {
+      "path": "lark/exceptions.py",
+      "sha256": "a884df43aff35190cc347f124a56bc3c19bcf14108845c1cce0aa7bf28adff11",
+      "bytes": 10892
+    },
+    {
+      "path": "lark/grammar.py",
+      "sha256": "2cec2b32822aa72dc4469ababe590863c289871c09cd9e0b943b96ad59c9b695",
+      "bytes": 4004
+    },
+    {
+      "path": "lark/indenter.py",
+      "sha256": "7352790ab5781ddcd306e2a4ee4ee100d52d9b353c5205fc6d8e9242850ced2e",
+      "bytes": 4324
+    },
+    {
+      "path": "lark/lark.py",
+      "sha256": "be9e5c96ba62375dc9d9fc1bc5fdc79ca8fd1f9b21629da2a1fcdaae09460d2a",
+      "bytes": 29588
+    },
+    {
+      "path": "lark/lexer.py",
+      "sha256": "21e54a0878b770401fc7ff59d7354d99503924fa5b5739ac84a278beb7bb467e",
+      "bytes": 25022
+    },
+    {
+      "path": "lark/load_grammar.py",
+      "sha256": "ded1fd02534bc3c257d09d77885cc31c06d21e4dec57c356e6feca1360f9da46",
+      "bytes": 54030
+    },
+    {
+      "path": "lark/parse_tree_builder.py",
+      "sha256": "82bada705614a1bd9e43970cb46293b684d7a519af380f197e03f7d832a60452",
+      "bytes": 14469
+    },
+    {
+      "path": "lark/parser_frontends.py",
+      "sha256": "c78cf01febc82fcfbed994b1de9d42f1038ed2b1b134903c946de76991c62d42",
+      "bytes": 11671
+    },
+    {
+      "path": "lark/py.typed",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "lark/reconstruct.py",
+      "sha256": "b3b09ebc15dc8541bf7deda8b5d0084f121a4970842224a3cb849b879402d21b",
+      "bytes": 3763
+    },
+    {
+      "path": "lark/tree.py",
+      "sha256": "aa0c0ef3fca86543ae70e1359954ddd7e890738e540b0b18c19c551e40439282",
+      "bytes": 8973
+    },
+    {
+      "path": "lark/tree_matcher.py",
+      "sha256": "e3e6680d92c49b1932d187fe5cde9012faadbbf3cf542656721cbffa6a6b2e45",
+      "bytes": 6774
+    },
+    {
+      "path": "lark/tree_templates.py",
+      "sha256": "b129dfc359bcb7102424e621710ae8a06ef16a357256996e9f34e736cc58ef6d",
+      "bytes": 6139
+    },
+    {
+      "path": "lark/utils.py",
+      "sha256": "14dfbde47312db3681b968a81f341561953d7e0bb2ff8be8b673d9321eaa4a38",
+      "bytes": 13350
+    },
+    {
+      "path": "lark/visitors.py",
+      "sha256": "935a05079021e8b06bc64b14d6f215bcd2bc065fbb408f701a01544790e685e2",
+      "bytes": 21578
+    },
+    {
+      "path": "lark/__pyinstaller/__init__.py",
+      "sha256": "fcfa459b8e1ffe6c07942a6f620bfd660b9b2df3437373e578f562af8b3145f2",
+      "bytes": 182
+    },
+    {
+      "path": "lark/__pyinstaller/hook-lark.py",
+      "sha256": "e5a1478995951cf45d1d3f2a9dbe245b82523aa9791aeb07a1d1d1db9feaf6c5",
+      "bytes": 599
+    },
+    {
+      "path": "lark/grammars/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "lark/grammars/common.lark",
+      "sha256": "155f711883e23ea1d133850b0313fa8c0a5745356c4b06ce7baf7b23db3b0cbb",
+      "bytes": 885
+    },
+    {
+      "path": "lark/grammars/lark.lark",
+      "sha256": "9ead4d4d962a9bf0cf2369a344896977765cc4f8c685aa40e0653391c7c14d0b",
+      "bytes": 1541
+    },
+    {
+      "path": "lark/grammars/python.lark",
+      "sha256": "58c6a44e4a730aa39dd2352360e348dcb3a74b2d8a44df4da0bf6916d0196022",
+      "bytes": 10641
+    },
+    {
+      "path": "lark/grammars/unicode.lark",
+      "sha256": "77d602cf45d68a6765e05f0ce580a9b5abc17051bd0f9f1877868cc318d8b442",
+      "bytes": 96
+    },
+    {
+      "path": "lark/parsers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "lark/parsers/cyk.py",
+      "sha256": "73718b93792adb75f06fc32a50e8ef8afc0fe3cf0a258e8d516831a9e479f7cd",
+      "bytes": 12192
+    },
+    {
+      "path": "lark/parsers/earley.py",
+      "sha256": "2142cc9b9265e26932ce7501b67406171364a4271c2298d00ea265feeced5335",
+      "bytes": 14933
+    },
+    {
+      "path": "lark/parsers/earley_common.py",
+      "sha256": "7b67ba36b36e730f96322355f07a90fd3a46c7a3fbbff4bc7f9684705d1392aa",
+      "bytes": 1620
+    },
+    {
+      "path": "lark/parsers/earley_forest.py",
+      "sha256": "c382536f8b5531ec2e7bc74bfa008ef7af94a34c1de016d051f49f221afbb716",
+      "bytes": 31332
+    },
+    {
+      "path": "lark/parsers/grammar_analysis.py",
+      "sha256": "ad0e129fd10ff208d719365712258b5b4281c8f3e978aa4de6148841980d9772",
+      "bytes": 7141
+    },
+    {
+      "path": "lark/parsers/lalr_analysis.py",
+      "sha256": "064663426337af81ed13c42651d11ea1299b2c96812c850373dc35beaae308ff",
+      "bytes": 12287
+    },
+    {
+      "path": "lark/parsers/lalr_interactive_parser.py",
+      "sha256": "2ec81f4f581d9def295c74c2b0de9b97acc3e8f761d9d0eaa75ac858ece9ed8c",
+      "bytes": 5757
+    },
+    {
+      "path": "lark/parsers/lalr_parser.py",
+      "sha256": "4c639213403ab1eb849924c2a8335c7099168c486cba0147164ee8d3aa1f4144",
+      "bytes": 4591
+    },
+    {
+      "path": "lark/parsers/lalr_parser_state.py",
+      "sha256": "419d76a780adbdcbc5008288aa4783049620114de7b509650490d85dbe35f65b",
+      "bytes": 3793
+    },
+    {
+      "path": "lark/parsers/xearley.py",
+      "sha256": "bca2d19a95e1fd6338b3982903a165fe55c1837cb1167714327d536d37e4f80b",
+      "bytes": 7897
+    },
+    {
+      "path": "lark/tools/__init__.py",
+      "sha256": "15e2989955235d2b7ebe5426da4b725a473168e0933a46671c3fe43945a352e0",
+      "bytes": 2469
+    },
+    {
+      "path": "lark/tools/nearley.py",
+      "sha256": "41a2d8756ea6610743abc24a322b15de5bcfab3174c0f82ef2af01b6c480df78",
+      "bytes": 6265
+    },
+    {
+      "path": "lark/tools/serialize.py",
+      "sha256": "9f0b78e8b3719039b44ff521f64db04b87dc7e0bd9436772e3e602fda2a14d09",
+      "bytes": 965
+    },
+    {
+      "path": "lark/tools/standalone.py",
+      "sha256": "e9e5c3a81bb3652a44e411999bf161e97e7246100f631355ca5d9a514dc00730",
+      "bytes": 5627
+    },
+    {
+      "path": "lark-1.3.1.dist-info/licenses/LICENSE",
+      "sha256": "2eee60f52d4e11357bf89e72b034d050e285e47fda1361e5662fb322ee27d771",
+      "bytes": 1055
+    },
+    {
+      "path": "lark-1.3.1.dist-info/METADATA",
+      "sha256": "730d3f056045a9096bc0a65e4faccae53fe7f3634055174d4b8245cd19cb4cde",
+      "bytes": 1848
+    },
+    {
+      "path": "lark-1.3.1.dist-info/WHEEL",
+      "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+      "bytes": 91
+    },
+    {
+      "path": "lark-1.3.1.dist-info/entry_points.txt",
+      "sha256": "597620fee0947459714033d48658b71c56a1dfb6cd34541f5cb7730aab1a7062",
+      "bytes": 61
+    },
+    {
+      "path": "lark-1.3.1.dist-info/top_level.txt",
+      "sha256": "7724ba8e0f210871e45d6bec7dc20c3bcae396ffdb773031884d25924cc9e619",
+      "bytes": 5
+    },
+    {
+      "path": "lark-1.3.1.dist-info/RECORD",
+      "sha256": "7597caf89d651bc105ca7e4361435fe9d9ad1f273564677f9f3b88c42e23591a",
+      "bytes": 3635
+    },
+    {
+      "path": "isodate/__init__.py",
+      "sha256": "c1f3c8de67039cb6c49dd89d6a8cd62bf8bf5c6b4ecab1a14c5737e4fa6df483",
+      "bytes": 2397
+    },
+    {
+      "path": "isodate/duration.py",
+      "sha256": "0fd54b240e12f7d8bafb73976821ebac3cdcd395ac22bd884a17c84a57892fb6",
+      "bytes": 11008
+    },
+    {
+      "path": "isodate/isodates.py",
+      "sha256": "c5bdf9ed2b2fa0145256c114a46d9fa814a78c68f0914c6c8b95479231a31b39",
+      "bytes": 8529
+    },
+    {
+      "path": "isodate/isodatetime.py",
+      "sha256": "f5932783a9f86e52964ac147024d41b03ca89b45db1d3cfb3ebc695a220c3a3e",
+      "bytes": 1373
+    },
+    {
+      "path": "isodate/isoduration.py",
+      "sha256": "a7b4af05bc7cd32895c977434c9ecc909c6a146618e9f343492f8e44512b65b2",
+      "bytes": 5423
+    },
+    {
+      "path": "isodate/isoerror.py",
+      "sha256": "c7a48eeb2e1d0dc7498163a48f054d470f8e3a28a172d323e537bd74eaabaac1",
+      "bytes": 168
+    },
+    {
+      "path": "isodate/isostrf.py",
+      "sha256": "97b035981e77d9b4389f458cc3639a2cab2ae7795515ee85dc54ad305925eacd",
+      "bytes": 7039
+    },
+    {
+      "path": "isodate/isotime.py",
+      "sha256": "ba7e1ab87f758cb8e1f7d06e1e83f5570fed8c258e6fc04dbf246cb78934217a",
+      "bytes": 5544
+    },
+    {
+      "path": "isodate/isotzinfo.py",
+      "sha256": "544cd352cf48ba50310b509ecff52ea62c04656da34b1a8a610d13315d6f7ee3",
+      "bytes": 2672
+    },
+    {
+      "path": "isodate/tzinfo.py",
+      "sha256": "36dd7944a8eacfb89807202c4fef47225c2fcaf31150259e42b5be22d6baa2e9",
+      "bytes": 3784
+    },
+    {
+      "path": "isodate/version.py",
+      "sha256": "4b0be43e5ec62e11b15852be1837adc6ceaa92af134ea09f9f1254349aa65ad5",
+      "bytes": 411
+    },
+    {
+      "path": "isodate-0.7.2.dist-info/LICENSE",
+      "sha256": "ce5fe4893fb6ab843de77b367bfa9db974d7b00ab9033fcca8d7760a97fe1b43",
+      "bytes": 1609
+    },
+    {
+      "path": "isodate-0.7.2.dist-info/METADATA",
+      "sha256": "90bc9d1eee7c3c97fd3a52001dece07c0f9b480cfc8fbbf767ca4ae0ab848529",
+      "bytes": 11852
+    },
+    {
+      "path": "isodate-0.7.2.dist-info/WHEEL",
+      "sha256": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+      "bytes": 91
+    },
+    {
+      "path": "isodate-0.7.2.dist-info/top_level.txt",
+      "sha256": "26076a687070d15c7be0a9b4c59d7eea7a4e5077bfe9c287481084c7aa6955ef",
+      "bytes": 8
+    },
+    {
+      "path": "isodate-0.7.2.dist-info/RECORD",
+      "sha256": "8d264c0f016b01fbc19f7d784bf63905c78c242ee8c56f17ed68babea3dce336",
+      "bytes": 1223
+    },
+    {
+      "path": "dateutil/__init__.py",
+      "sha256": "32a6a6ebb58ef4891399417223aeaf4ba2284974e9f46dfcf0369d1f62c230b6",
+      "bytes": 620
+    },
+    {
+      "path": "dateutil/_common.py",
+      "sha256": "efbc34cb2b64af19586d29fefa50d53d431a6d45d147d237941bffbd0454a946",
+      "bytes": 932
+    },
+    {
+      "path": "dateutil/_version.py",
+      "sha256": "055d37d4ec430c09b2e7c9de520e72caa2e42daa88c3b89b2bd02cde388c89bd",
+      "bytes": 166
+    },
+    {
+      "path": "dateutil/easter.py",
+      "sha256": "772062fa52af8a61f5bbf93aa7b6742492bbd9086a56d541b2a072be910f2af7",
+      "bytes": 2678
+    },
+    {
+      "path": "dateutil/relativedelta.py",
+      "sha256": "218fe6825323a196d87ebbe5a1363671ed366a25633c892265faa03536517ee0",
+      "bytes": 24903
+    },
+    {
+      "path": "dateutil/rrule.py",
+      "sha256": "289cca95a09dd6311bbb8037f1996db256a801487d9d26dd6ce15d8e9ef429ec",
+      "bytes": 66557
+    },
+    {
+      "path": "dateutil/tzwin.py",
+      "sha256": "ec0af8bdd4029e733498a4773148db20ab19ac155f1e0770b0965cfe619845ec",
+      "bytes": 59
+    },
+    {
+      "path": "dateutil/utils.py",
+      "sha256": "74a09c844c3c78e6e2d25a064f1f75ba70719bfed41a5537bff16314c76ac183",
+      "bytes": 1965
+    },
+    {
+      "path": "dateutil/parser/__init__.py",
+      "sha256": "c1693a185bb14e98e8820086b6091c789a2d8b8a558e5e3f7c7417a4d39a4988",
+      "bytes": 1766
+    },
+    {
+      "path": "dateutil/parser/_parser.py",
+      "sha256": "ee494377289c92c401fd7825fb7500981c33098a2bd40219aa4948713e9d1fff",
+      "bytes": 58796
+    },
+    {
+      "path": "dateutil/parser/isoparser.py",
+      "sha256": "f05cbdf7d6e709dd5fad274e62e3ab6967c94ed7795bba90e7537036e1ff8573",
+      "bytes": 13233
+    },
+    {
+      "path": "dateutil/tz/__init__.py",
+      "sha256": "17e333d77bfa8d8b1e92541ff537bd27a9f370b0e6ab8ee03916bad4adf9fc50",
+      "bytes": 444
+    },
+    {
+      "path": "dateutil/tz/_common.py",
+      "sha256": "720cc34c036c397bc473ce9c605efb12c962b9269bf0fbb0a6c979f9b5f7fd2e",
+      "bytes": 12977
+    },
+    {
+      "path": "dateutil/tz/_factories.py",
+      "sha256": "ba76fa5d0357acf32f7a4b13094f8083c8e6559b384a88e83d47001e95a7aef5",
+      "bytes": 2569
+    },
+    {
+      "path": "dateutil/tz/tz.py",
+      "sha256": "1149c474c7de4e15e263a978b21f7205a6d9eb7fcf3b3cb4d734ac87db619f5a",
+      "bytes": 62855
+    },
+    {
+      "path": "dateutil/tz/win.py",
+      "sha256": "c49b335a04b0135c4fc7f1c98f86647a9cae902fe1372d35e9631c5e16d1681f",
+      "bytes": 12935
+    },
+    {
+      "path": "dateutil/zoneinfo/__init__.py",
+      "sha256": "298834a6d842323729e4c5d21220499f79cc8d978d65abfbae5270e7eb73d52e",
+      "bytes": 5889
+    },
+    {
+      "path": "dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+      "sha256": "d3ea52e7b6e968de0d884df1288193596fa95b803db4f92a18279a7398004475",
+      "bytes": 156400
+    },
+    {
+      "path": "dateutil/zoneinfo/rebuild.py",
+      "sha256": "322a98cc2207bcd6cc1fe2dd4582effb84f410803b8432ade462d1d084532dd2",
+      "bytes": 2392
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/LICENSE",
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "bytes": 2889
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/METADATA",
+      "sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+      "bytes": 8354
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/WHEEL",
+      "sha256": "f86fedd281ae13b503d03ad2a55667ab584730157d0c3d97912e6fed7a664e79",
+      "bytes": 110
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/top_level.txt",
+      "sha256": "e2d8dd5a485166f17b2c0fc161efcbf60076c3fa766becf9cba02b8da464a2df",
+      "bytes": 9
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/zip-safe",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
+      "path": "python_dateutil-2.9.0.post0.dist-info/RECORD",
+      "sha256": "fc7aa54068c354d522c07153aad6d77b2d8625ec21e45442dc6056682ef3c74a",
+      "bytes": 2080
+    },
+    {
+      "path": "typing_extensions.py",
+      "sha256": "433d11d170d3a24d2eb065ebc1bfe848cea7e3d7ce68567ab52bea2d4c2f7ed8",
+      "bytes": 160429
+    },
+    {
+      "path": "typing_extensions-4.15.0.dist-info/licenses/LICENSE",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "bytes": 13936
+    },
+    {
+      "path": "typing_extensions-4.15.0.dist-info/WHEEL",
+      "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db",
+      "bytes": 82
+    },
+    {
+      "path": "typing_extensions-4.15.0.dist-info/METADATA",
+      "sha256": "c138378fe8f18934ac99de060535c53ec6c13aeed65e94c32641da7ee3192a72",
+      "bytes": 3259
+    },
+    {
+      "path": "typing_extensions-4.15.0.dist-info/RECORD",
+      "sha256": "d115b31bd342e1ffe5c3e13291f1b633969390e029b9f64f8ddbcc9883feef3a",
+      "bytes": 427
+    },
+    {
+      "path": "six.py",
+      "sha256": "c51c91f703d3d4b3696c923cb5fec213e05e75d9215393befac7f2fa6a3904df",
+      "bytes": 34703
+    },
+    {
+      "path": "six-1.17.0.dist-info/LICENSE",
+      "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0",
+      "bytes": 1066
+    },
+    {
+      "path": "six-1.17.0.dist-info/METADATA",
+      "sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+      "bytes": 1658
+    },
+    {
+      "path": "six-1.17.0.dist-info/WHEEL",
+      "sha256": "a7178d5f925db427b9f0f51260ff6ea6673b8dd44f82f4f41a6f646f5487955c",
+      "bytes": 109
+    },
+    {
+      "path": "six-1.17.0.dist-info/top_level.txt",
+      "sha256": "fe2547fe2604b445e70fc9d819062960552f9145bdb043b51986e478a4806a2b",
+      "bytes": 4
+    },
+    {
+      "path": "six-1.17.0.dist-info/RECORD",
+      "sha256": "5067d83422e8d7118fdca18230fc735d9f9afabf72647606bacc7a70d5f6901d",
+      "bytes": 435
+    }
+  ]
+}

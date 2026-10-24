@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "source lifecycle suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "schedule proxy module is not preregistered in this fresh process",
+      "status": "passed"
+    },
+    {
+      "name": "lifecycle FCStd matches its recorded file hash",
+      "status": "passed"
+    },
+    {
+      "name": "restored proxies load from the installed workbench",
+      "status": "passed"
+    },
+    {
+      "name": "all source and schedule UUIDs survive native restoration",
+      "status": "passed"
+    },
+    {
+      "name": "schedule set and definitions restore as native Python proxies",
+      "status": "passed"
+    },
+    {
+      "name": "persistent filters grouping and order restore exactly",
+      "status": "passed"
+    },
+    {
+      "name": "both model and schedule identities survive save and fresh reopen",
+      "status": "passed"
+    },
+    {
+      "name": "fresh native capture reproduces every row source UUID and quantity",
+      "status": "passed"
+    },
+    {
+      "name": "fresh capture is read-only",
+      "status": "passed"
+    },
+    {
+      "name": "restored row edits change the source label and solid in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "restored Undo returns both saved content identities",
+      "status": "passed"
+    },
+    {
+      "name": "restored Redo reproduces the edited solid",
+      "status": "passed"
+    },
+    {
+      "name": "restored publication records both revisions and the exact payload bytes",
+      "status": "passed"
+    },
+    {
+      "name": "restored publication preserves its valid Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process edits never overwrite the saved lifecycle example",
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh installed-process schedule and catalogue restore, quantities, native source edit and CSV",
+  "checks_passed": 16,
+  "sample": "/tmp/bim3117-v050-final-native/output/Schedules_Lifecycle.FCStd",
+  "sample_sha256": "fc136620c0d36658b4d9c0a7471e9fbc1389a88a637e8c18f89fc4453a85d908",
+  "schedule_states": {
+    "26828a0a-ddf6-4c9c-985b-2e9cf83607c2": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "3f6469a3be5bc9de6ed987c8a59615be1ce422918ae8272ead3d46467ef4e76d"
+    },
+    "6fb11239-a2a8-4397-aca9-19091681c881": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "79323f2d224ca6633a3dc51f259340dd655965a58db08490abb4f353dd7ab913"
+    },
+    "77b94a1b-f804-4397-840f-408a0b419072": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "d8fa4b42ffbafb796c4f9f959bdb90ef8114f507190ffb49bb94117828049170"
+    }
+  },
+  "installed_modules": {
+    "bim3117_freecad.schedules": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/schedules.py",
+      "sha256": "5673594d7478e4e3a198d7be171e7eb162290e4d85757e882ace0a3fc0c20abc"
+    },
+    "bim3117_freecad.catalog": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/catalog.py",
+      "sha256": "4ff39ee337bbbf2a5285fc72f75bb7caea70aaa149adbd27d8aa7c43cd83c0e2"
+    },
+    "bim3117_freecad.services": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+      "sha256": "6fdcc6c21b5e4997003677cd17a07fdf58f8dfaded6e62af58b6a72baa4160b2"
+    },
+    "bim3117_freecad.snapshot": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+      "sha256": "53503cc5c79efe50ed13a560df54a1d54269872178929d43c99281df4090a157"
+    }
+  }
+}

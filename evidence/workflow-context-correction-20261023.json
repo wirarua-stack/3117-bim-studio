@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-23T09:47:13.216126+00:00",
+  "status": "workflow_context_corrected_semantic_validation_passed",
+  "failed_remote_readiness_attempt": {
+    "commit": "41c596e4110ca9de50238d46c75b8b54555376e0",
+    "run_id": 39933997887,
+    "observation": "Root reported an immediate workflow-validation failure with zero jobs; native Windows execution did not begin."
+  },
+  "cause": "runner.temp was used in jobs.<job_id>.env, where the runner context is unavailable.",
+  "validation_gap": "The earlier YAML structural checks parsed workflow syntax but did not validate GitHub Actions expression-context availability.",
+  "correction": "Initialize paths from the assigned runner RUNNER_TEMP environment variable in the first PowerShell step and export through GITHUB_ENV. The preparation script and frozen inputs remain unchanged.",
+  "primary_reference": "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability",
+  "actionlint": {
+    "version": "1.7.12",
+    "release_url": "https://github.com/rhysd/actionlint/releases/tag/v1.7.12",
+    "archive_url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz",
+    "archive_sha256": "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8",
+    "official_checksum_url": "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_checksums.txt",
+    "published_checksum_verified": true,
+    "binary_sha256": "c872d6db8c6bf83a8eaa704fc93999f027d55dffbc63b8a6abdccb47df5f4cd4",
+    "validation": [
+      {
+        "phase": "before",
+        "exit_code": 1,
+        "output": "../../../tmp/bim3117-actionlint-validation/runner-readiness-before.yml:23:37: context \"runner\" is not allowed here. available contexts are \"github\", \"inputs\", \"matrix\", \"needs\", \"secrets\", \"strategy\", \"vars\". see https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability for more details [expression]\n   |\n23 |       BIM3117_RUNNER_PREFLIGHT: ${{ runner.temp }}/3117-runner-preflight-${{ github.run_id }}-${{ github.run_attempt }}.json\n   |                                     ^~~~~~~~~~~\n"
+      },
+      {
+        "phase": "after",
+        "exit_code": 0,
+        "output": ""
+      }
+    ]
+  },
+  "initialization_step_checks": [
+    {
+      "workflow": "readiness",
+      "exit_code": 0,
+      "expected_environment_entries_matched": true,
+      "execution_platform": "Linux PowerShell 7.6.8; no Windows API calls"
+    },
+    {
+      "workflow": "acceptance",
+      "exit_code": 0,
+      "expected_environment_entries_matched": true,
+      "execution_platform": "Linux PowerShell 7.6.8; no Windows API calls"
+    }
+  ],
+  "corrected_workflows": [
+    {
+      "path": ".github/workflows/windows-acceptance.yml",
+      "sha256": "8cf603c34d13a517ab1cb8465836924f970e4c2673ba1cfd793219d604de5bbc"
+    },
+    {
+      "temporary_readiness_path": "/tmp/bim3117-github-upload/runner-readiness.yml",
+      "sha256": "e7ad04b1d73a6cffa5160e523e19abffd6b1117c2e1ef0bda4a95eb7c2fae691"
+    }
+  ],
+  "preserved_preparation_script": {
+    "path": "scripts/Prepare-WindowsRunner.ps1",
+    "sha256": "3fc54baf6373b1c0131f016ae002283332d2d8a8ea78b6f0afc109b7f20789df"
+  },
+  "frozen_inputs": {
+    "files_verified": 898,
+    "inputs_lock_sha256": "5de1955c32fe8391b3d43a7e8f2ff394027c5091c575f4cadbac2ba33319f9e9",
+    "unchanged": true
+  },
+  "historical_preparation_status_preserved": true,
+  "windows_build_executed": false,
+  "windows_acceptance_executed": false,
+  "release_ready": false
+}

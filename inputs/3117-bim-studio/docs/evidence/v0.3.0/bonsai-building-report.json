@@ -1,0 +1,2315 @@
+{
+  "status": "passed",
+  "blender": "4.5.14 LTS",
+  "blender_build_hash": "62c1db4208e8",
+  "bonsai": "0.9.0-post1-py311",
+  "ifcopenshell": "0.9.0.post1",
+  "python": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "background": false,
+  "review_mode": "gui_application",
+  "visual_review": {
+    "status": "passed",
+    "method": "Exact PNG opened and inspected at normal size with view_image",
+    "image_sha256": "8b66f529df6ecede9f228acbc60d0777091bfc46790f5d0c14e5d6ab3364260b",
+    "observations": [
+      "Visible real Blender/Bonsai BIM workspace, source filename Building_Authoring_Workbench.ifc and IFC4 project information.",
+      "Complete two-storey model visible: three slabs, perimeter members, wall faces, door openings and four-bar window frames.",
+      "Both front and right faces visible, including empty window centres and lower window bars.",
+      "Bonsai project panel shows 33 elements and category/storey trees; no black or unrelated screen."
+    ]
+  },
+  "source_ifc": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/Building_Authoring_Workbench.ifc",
+  "source_snapshot": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/building-snapshot.json",
+  "source_native_report": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/building-test-report.json",
+  "source_sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609",
+  "source_snapshot_sha256": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0",
+  "source_native_report_sha256": "424e0d640022e0f05a702daeaf4fe69072491f9f1302b0a96b5b10a7feb666c7",
+  "content_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "checks": [
+    {
+      "name": "source installed-native building suite passed with matching revision",
+      "status": "passed"
+    },
+    {
+      "name": "IFC completion metadata binds these payload bytes to the native snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "public Bonsai Load IFC Project operator finishes",
+      "status": "passed"
+    },
+    {
+      "name": "active Bonsai file is IFC4 with all six expected category counts",
+      "status": "passed"
+    },
+    {
+      "name": "storeys types and opening relationships have the expected fixture counts",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai scene uses metre scale",
+      "status": "passed"
+    },
+    {
+      "name": "all IfcRoot GlobalIds are unique",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S00: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S01: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Slab S02: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: material and declared join identities/deduction survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-2: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-1: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-1: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-2: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-3: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-4: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 1-3: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: quantity net volume agrees with the imported Blender solid",
+      "status": "passed"
+    },
+    {
+      "name": "Wall Wall 2-4: shared WallType and Base/Top Level semantics survive",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: maps to a real Blender mesh and expected IFC identity",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: source UUID revision and storey survive import",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: imported triangle volume matches independent numeric expectation",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: actual world bounds match the native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: frame quantity and dimension meaning survive import",
+      "status": "passed"
+    },
+    {
+      "name": "all category totals match the independently tested two-storey fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C13: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C11: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C23: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C14: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C22: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C24: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C21: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Column C12: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B12: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B21: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B24: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B11: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B13: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B14: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B23: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: imported slab occupies the removed member zone",
+      "status": "passed"
+    },
+    {
+      "name": "Beam B22: positive member material remains below the join",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Door D01: door has no bottom bar",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Door D02: door has no bottom bar",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN22: window bottom frame bar is solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN21: window bottom frame bar is solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN12: window bottom frame bar is solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: fill and void relationships identify its native Wall host",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: real wall opening and frame centre are empty",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: wall beside the opening and above its head remains solid",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: imported generic frame contains both jamb and head material",
+      "status": "passed"
+    },
+    {
+      "name": "Window WIN11: window bottom frame bar is solid",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai contains exactly 33 authored mesh products with no derived WallBody duplication",
+      "status": "passed"
+    },
+    {
+      "name": "full schema and EXPRESS validation in the Bonsai runtime reports zero findings",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai import leaves the exact IFC payload bytes unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "actual Bonsai GUI capture visually inspected with complete two-storey model and IFC project panel",
+      "status": "passed"
+    }
+  ],
+  "observations": [
+    {
+      "category": "Slab",
+      "name": "S00",
+      "source_uuid": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+      "ifc_guid": "0Iggh7aWLF2vGlh3AT4Ak5",
+      "blender_object": "IfcSlab/S00",
+      "mesh_volume_m3": 4.387500174343586,
+      "expected_volume_m3": 4.3875,
+      "absolute_error_m3": 1.743435857903819e-07,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          -0.15000000596046448
+        ],
+        [
+          6.25,
+          4.25,
+          0.0
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          -0.15
+        ],
+        [
+          6.25,
+          4.25,
+          0.0
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Slab",
+      "name": "S01",
+      "source_uuid": "54a5fde8-157c-40b7-be56-f69869705b43",
+      "ifc_guid": "1KfVte5Nn0jxvMzfXfS5j3",
+      "blender_object": "IfcSlab/S01",
+      "mesh_volume_m3": 4.3875027894973755,
+      "expected_volume_m3": 4.3875,
+      "absolute_error_m3": 2.7894973753106456e-06,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          2.8499999046325684
+        ],
+        [
+          6.25,
+          4.25,
+          3.0
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          2.85
+        ],
+        [
+          6.25,
+          4.25,
+          3.0
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Slab",
+      "name": "S02",
+      "source_uuid": "e766c1c9-f102-490f-88fa-979e8089bb06",
+      "ifc_guid": "3dPi79yG993uZwbvw0YRi6",
+      "blender_object": "IfcSlab/S02",
+      "mesh_volume_m3": 4.3875027894973755,
+      "expected_volume_m3": 4.3875,
+      "absolute_error_m3": 2.7894973753106456e-06,
+      "world_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          5.849999904632568
+        ],
+        [
+          6.25,
+          4.25,
+          6.0
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.25,
+          -0.25,
+          5.85
+        ],
+        [
+          6.25,
+          4.25,
+          6.0
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C13",
+      "source_uuid": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+      "ifc_guid": "0Mw7aGGDT5HxdP$nGneS1c",
+      "blender_object": "IfcColumn/C13",
+      "mesh_volume_m3": 0.2565003175736401,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 3.175736401073159e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          0.0
+        ],
+        [
+          6.150000095367432,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          3.85,
+          0.0
+        ],
+        [
+          6.15,
+          4.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C11",
+      "source_uuid": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+      "ifc_guid": "0xt23STFz9medJ5AVl4iMw",
+      "blender_object": "IfcColumn/C11",
+      "mesh_volume_m3": 0.2565000118017194,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.1801719379533893e-08,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -0.15000000596046448,
+          0.0
+        ],
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          -0.15,
+          0.0
+        ],
+        [
+          0.15,
+          0.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C23",
+      "source_uuid": "5da805dc-1e32-4533-9fea-d355df30851d",
+      "ifc_guid": "1Tg0NS7Z95Cv$gqrNVC8KT",
+      "blender_object": "IfcColumn/C23",
+      "mesh_volume_m3": 0.2565003175736401,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 3.175736401073159e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          3.0
+        ],
+        [
+          6.150000095367432,
+          4.150000095367432,
+          5.849999904632568
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          3.85,
+          3.0
+        ],
+        [
+          6.15,
+          4.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C14",
+      "source_uuid": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+      "ifc_guid": "2AyDbtGsTD4ux33v6GtOqI",
+      "blender_object": "IfcColumn/C14",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.6468763419652532e-07,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          3.8499999046325684,
+          0.0
+        ],
+        [
+          0.15000000596046448,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          3.85,
+          0.0
+        ],
+        [
+          0.15,
+          4.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C22",
+      "source_uuid": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+      "ifc_guid": "2R2BfmqED869EqTbbWqxA2",
+      "blender_object": "IfcColumn/C22",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.6468763419652532e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -0.15000000596046448,
+          3.0
+        ],
+        [
+          6.150000095367432,
+          0.15000000596046448,
+          5.849999904632568
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          -0.15,
+          3.0
+        ],
+        [
+          6.15,
+          0.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C24",
+      "source_uuid": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+      "ifc_guid": "2VGdbXuRLAvQk6twJz2JfH",
+      "blender_object": "IfcColumn/C24",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.6468763419652532e-07,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          3.8499999046325684,
+          3.0
+        ],
+        [
+          0.15000000596046448,
+          4.150000095367432,
+          5.849999904632568
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          3.85,
+          3.0
+        ],
+        [
+          0.15,
+          4.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C21",
+      "source_uuid": "a444a497-4a42-4a02-805f-bdac76a1312e",
+      "ifc_guid": "2aHAINIa9A0e1VlQnseJ4k",
+      "blender_object": "IfcColumn/C21",
+      "mesh_volume_m3": 0.2565000118017194,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.1801719379533893e-08,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -0.15000000596046448,
+          3.0
+        ],
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          5.849999904632568
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          -0.15,
+          3.0
+        ],
+        [
+          0.15,
+          0.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Column",
+      "name": "C12",
+      "source_uuid": "c6881a57-0739-4382-9db8-b187e4745510",
+      "ifc_guid": "36Y1fN1pb3WfsuiOVaT5KG",
+      "blender_object": "IfcColumn/C12",
+      "mesh_volume_m3": 0.2565001646876342,
+      "expected_volume_m3": 0.2565,
+      "absolute_error_m3": 1.6468763419652532e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -0.15000000596046448,
+          0.0
+        ],
+        [
+          6.150000095367432,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          -0.15,
+          0.0
+        ],
+        [
+          6.15,
+          0.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B12",
+      "source_uuid": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+      "ifc_guid": "06vqr57zL36ucuRwmXnAUD",
+      "blender_object": "IfcBeam/B12",
+      "mesh_volume_m3": 0.35999988555909196,
+      "expected_volume_m3": 0.36,
+      "absolute_error_m3": 1.1444090802781304e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -1.1324686077784918e-08,
+          2.549999952316284
+        ],
+        [
+          6.150000095367432,
+          4.0,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          0.0,
+          2.55
+        ],
+        [
+          6.15,
+          4.0,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B21",
+      "source_uuid": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+      "ifc_guid": "0FBvqGEn5F9xkJl6z5JciC",
+      "blender_object": "IfcBeam/B21",
+      "mesh_volume_m3": 0.5400003647804397,
+      "expected_volume_m3": 0.54,
+      "absolute_error_m3": 3.64780439632284e-07,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15000000596046448,
+          5.550000190734863
+        ],
+        [
+          6.0,
+          0.15000000596046448,
+          5.850000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.0,
+          -0.15,
+          5.55
+        ],
+        [
+          6.0,
+          0.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B24",
+      "source_uuid": "37134a20-b003-48ef-96bd-b1457cc94324",
+      "ifc_guid": "0t4qeWi0D8xvQziKLyoKCa",
+      "blender_object": "IfcBeam/B24",
+      "mesh_volume_m3": 0.3600002431869607,
+      "expected_volume_m3": 0.36,
+      "absolute_error_m3": 2.43186960735553e-07,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -1.1324686077784918e-08,
+          5.550000190734863
+        ],
+        [
+          0.15000030398368835,
+          4.0,
+          5.850000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          0.0,
+          5.55
+        ],
+        [
+          0.15,
+          4.0,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B11",
+      "source_uuid": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+      "ifc_guid": "1scM2VtDD2cvxman6GJheU",
+      "blender_object": "IfcBeam/B11",
+      "mesh_volume_m3": 0.5399999356269802,
+      "expected_volume_m3": 0.54,
+      "absolute_error_m3": 6.437301980355414e-08,
+      "world_bounds_m": [
+        [
+          0.0,
+          -0.15000000596046448,
+          2.549999952316284
+        ],
+        [
+          6.0,
+          0.15000000596046448,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.0,
+          -0.15,
+          2.55
+        ],
+        [
+          6.0,
+          0.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B13",
+      "source_uuid": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+      "ifc_guid": "2ASg_a8tP5rRLBbU$bHRpe",
+      "blender_object": "IfcBeam/B13",
+      "mesh_volume_m3": 0.5400002574920127,
+      "expected_volume_m3": 0.54,
+      "absolute_error_m3": 2.574920127118574e-07,
+      "world_bounds_m": [
+        [
+          -1.311341701892843e-08,
+          3.84999942779541,
+          2.549999952316284
+        ],
+        [
+          6.0,
+          4.150000095367432,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.0,
+          3.85,
+          2.55
+        ],
+        [
+          6.0,
+          4.15,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B14",
+      "source_uuid": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+      "ifc_guid": "36kdpgggzAtOOFNgN8q$Mm",
+      "blender_object": "IfcBeam/B14",
+      "mesh_volume_m3": 0.35999995708465443,
+      "expected_volume_m3": 0.36,
+      "absolute_error_m3": 4.291534555500576e-08,
+      "world_bounds_m": [
+        [
+          -0.15000000596046448,
+          -1.1324686077784918e-08,
+          2.549999952316284
+        ],
+        [
+          0.15000030398368835,
+          4.0,
+          2.8499999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          -0.15,
+          0.0,
+          2.55
+        ],
+        [
+          0.15,
+          4.0,
+          2.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B23",
+      "source_uuid": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+      "ifc_guid": "3FuOrfKcb6nOPWCJFO3fg1",
+      "blender_object": "IfcBeam/B23",
+      "mesh_volume_m3": 0.540000686645728,
+      "expected_volume_m3": 0.54,
+      "absolute_error_m3": 6.866457279430804e-07,
+      "world_bounds_m": [
+        [
+          -1.311341701892843e-08,
+          3.84999942779541,
+          5.550000190734863
+        ],
+        [
+          6.0,
+          4.150000095367432,
+          5.850000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.0,
+          3.85,
+          5.55
+        ],
+        [
+          6.0,
+          4.15,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Beam",
+      "name": "B22",
+      "source_uuid": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+      "ifc_guid": "3yzCsddZ1Cow8VRdu898Ve",
+      "blender_object": "IfcBeam/B22",
+      "mesh_volume_m3": 0.3600001716613414,
+      "expected_volume_m3": 0.36,
+      "absolute_error_m3": 1.7166134141932687e-07,
+      "world_bounds_m": [
+        [
+          5.849999904632568,
+          -1.1324686077784918e-08,
+          5.550000190734863
+        ],
+        [
+          6.150000095367432,
+          4.0,
+          5.850000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.85,
+          0.0,
+          5.55
+        ],
+        [
+          6.15,
+          4.0,
+          5.85
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 1-2",
+      "source_uuid": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+      "ifc_guid": "0jkhcZ$aT8tu0kgOo_5LFN",
+      "blender_object": "IfcWall/Wall 1-2",
+      "mesh_volume_m3": 1.5989995308667162,
+      "expected_volume_m3": 1.599,
+      "absolute_error_m3": 4.691332837758466e-07,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.850000381469727,
+          3.8500001430511475,
+          2.549999952316284
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          3.8500001430511475,
+          2.549999952316284
+        ]
+      ],
+      "vertices": 16,
+      "polygons": 32
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 1-1",
+      "source_uuid": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+      "ifc_guid": "15bD3ovBPEhBR6yCyyJCjF",
+      "blender_object": "IfcWall/Wall 1-1",
+      "mesh_volume_m3": 2.24100018444657,
+      "expected_volume_m3": 2.241,
+      "absolute_error_m3": 1.8444657001737141e-07,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          2.549999952316284
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          2.549999952316284
+        ]
+      ],
+      "vertices": 24,
+      "polygons": 48
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 2-1",
+      "source_uuid": "4748dd71-525a-4434-ba86-b7e616563128",
+      "ifc_guid": "17IDrnKbf4DBg6j_OMLZ4e",
+      "blender_object": "IfcWall/Wall 2-1",
+      "mesh_volume_m3": 2.2410004848539966,
+      "expected_volume_m3": 2.241,
+      "absolute_error_m3": 4.848539965074394e-07,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          5.550000190734863
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000000596046448,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          0.3500000238418579,
+          5.550000190734863
+        ]
+      ],
+      "vertices": 24,
+      "polygons": 48
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 2-2",
+      "source_uuid": "665ad71a-4ce2-454b-a84a-154125035cd7",
+      "ifc_guid": "1cMjSQJE95IwXA5K4b0rpN",
+      "blender_object": "IfcWall/Wall 2-2",
+      "mesh_volume_m3": 1.598999735906651,
+      "expected_volume_m3": 1.599,
+      "absolute_error_m3": 2.640933489672648e-07,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.850000381469727,
+          3.8500001430511475,
+          5.550000190734863
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.650000095367432,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          3.8500001430511475,
+          5.550000190734863
+        ]
+      ],
+      "vertices": 16,
+      "polygons": 32
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 2-3",
+      "source_uuid": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+      "ifc_guid": "2j0G1vdGz1VeXPvkFvzh98",
+      "blender_object": "IfcWall/Wall 2-3",
+      "mesh_volume_m3": 2.9070008094460067,
+      "expected_volume_m3": 2.907,
+      "absolute_error_m3": 8.094460066665476e-07,
+      "world_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499993801116943,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499998569488525,
+          3.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 1-4",
+      "source_uuid": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+      "ifc_guid": "3R_1JhMvv6s98E5mZp4Fke",
+      "blender_object": "IfcWall/Wall 1-4",
+      "mesh_volume_m3": 1.8870000836476724,
+      "expected_volume_m3": 1.887,
+      "absolute_error_m3": 8.364767234425585e-08,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          0.0
+        ],
+        [
+          0.3500002920627594,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          0.0
+        ],
+        [
+          0.3500000238418579,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 1-3",
+      "source_uuid": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+      "ifc_guid": "3YDyCp_sX1lOL7mzDHViSF",
+      "blender_object": "IfcWall/Wall 1-3",
+      "mesh_volume_m3": 2.9070005376487713,
+      "expected_volume_m3": 2.907,
+      "absolute_error_m3": 5.376487712815958e-07,
+      "world_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499993801116943,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000009536743164,
+          3.6499998569488525,
+          0.0
+        ],
+        [
+          5.849999904632568,
+          3.8499999046325684,
+          2.549999952316284
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Wall",
+      "name": "Wall 2-4",
+      "source_uuid": "f2cae468-6358-471b-8a67-a9ed151a8112",
+      "ifc_guid": "3ookHeOrX76ufdgUqL6e4I",
+      "blender_object": "IfcWall/Wall 2-4",
+      "mesh_volume_m3": 1.887000260077432,
+      "expected_volume_m3": 1.887,
+      "absolute_error_m3": 2.6007743203493305e-07,
+      "world_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          3.0
+        ],
+        [
+          0.3500002920627594,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.15000000596046448,
+          0.14999985694885254,
+          3.0
+        ],
+        [
+          0.3500000238418579,
+          3.8499999046325684,
+          5.550000190734863
+        ]
+      ],
+      "vertices": 8,
+      "polygons": 12
+    },
+    {
+      "category": "Door",
+      "name": "D01",
+      "source_uuid": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+      "ifc_guid": "0VesdLbJPCBfeLhJyyLJDT",
+      "blender_object": "IfcDoor/D01",
+      "mesh_volume_m3": 0.04999997943639647,
+      "expected_volume_m3": 0.05,
+      "absolute_error_m3": 2.0563603535250774e-08,
+      "world_bounds_m": [
+        [
+          0.949999988079071,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          1.8499999046325684,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.9500000476837158,
+          0.15000000596046448,
+          0.0
+        ],
+        [
+          1.850000023841858,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "vertices": 24,
+      "polygons": 36
+    },
+    {
+      "category": "Door",
+      "name": "D02",
+      "source_uuid": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+      "ifc_guid": "1ov5KiFq1E4QeYg9FY4wAE",
+      "blender_object": "IfcDoor/D02",
+      "mesh_volume_m3": 0.049999941289422666,
+      "expected_volume_m3": 0.05,
+      "absolute_error_m3": 5.8710577337250935e-08,
+      "world_bounds_m": [
+        [
+          0.949999988079071,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          1.8499999046325684,
+          0.3500000238418579,
+          5.099999904632568
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          0.9500000476837158,
+          0.15000000596046448,
+          3.0
+        ],
+        [
+          1.850000023841858,
+          0.3500000238418579,
+          5.099999904632568
+        ]
+      ],
+      "vertices": 24,
+      "polygons": 36
+    },
+    {
+      "category": "Window",
+      "name": "WIN22",
+      "source_uuid": "13dab521-9139-425c-b8e7-c6df71ef7471",
+      "ifc_guid": "0JshKXaJb2NBZdnjznxtHn",
+      "blender_object": "IfcWindow/WIN22",
+      "mesh_volume_m3": 0.046000041246343576,
+      "expected_volume_m3": 0.046,
+      "absolute_error_m3": 4.1246343576717415e-08,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          3.9000000953674316
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          5.100000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          3.9000000953674316
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          5.099999904632568
+        ]
+      ],
+      "vertices": 32,
+      "polygons": 48
+    },
+    {
+      "category": "Window",
+      "name": "WIN21",
+      "source_uuid": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+      "ifc_guid": "1aIF26d0z8nhbxfYktwYjq",
+      "blender_object": "IfcWindow/WIN21",
+      "mesh_volume_m3": 0.04600007849933611,
+      "expected_volume_m3": 0.046,
+      "absolute_error_m3": 7.849933610776239e-08,
+      "world_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          3.9000000953674316
+        ],
+        [
+          4.350000381469727,
+          0.3500000238418579,
+          5.100000381469727
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          3.9000000953674316
+        ],
+        [
+          4.349999904632568,
+          0.3500000238418579,
+          5.099999904632568
+        ]
+      ],
+      "vertices": 32,
+      "polygons": 48
+    },
+    {
+      "category": "Window",
+      "name": "WIN12",
+      "source_uuid": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+      "ifc_guid": "23_s3njR989RKfNz0Sp$bb",
+      "blender_object": "IfcWindow/WIN12",
+      "mesh_volume_m3": 0.04599999475475178,
+      "expected_volume_m3": 0.046,
+      "absolute_error_m3": 5.2452482218745544e-09,
+      "world_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          0.8999999761581421
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          2.0999999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          5.650000095367432,
+          1.350000023841858,
+          0.8999999761581421
+        ],
+        [
+          5.849999904632568,
+          2.5500001907348633,
+          2.0999999046325684
+        ]
+      ],
+      "vertices": 32,
+      "polygons": 48
+    },
+    {
+      "category": "Window",
+      "name": "WIN11",
+      "source_uuid": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+      "ifc_guid": "3cEyBA1Gv7Pfhiu712_bc6",
+      "blender_object": "IfcWindow/WIN11",
+      "mesh_volume_m3": 0.04600003200769367,
+      "expected_volume_m3": 0.046,
+      "absolute_error_m3": 3.2007693669122705e-08,
+      "world_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          0.8999999761581421
+        ],
+        [
+          4.350000381469727,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "expected_bounds_m": [
+        [
+          3.1500000953674316,
+          0.15000000596046448,
+          0.8999999761581421
+        ],
+        [
+          4.349999904632568,
+          0.3500000238418579,
+          2.0999999046325684
+        ]
+      ],
+      "vertices": 32,
+      "polygons": 48
+    }
+  ],
+  "mesh_tolerance": "max(2e-6, abs(expected) * 2e-6)",
+  "scope": "Actual Bonsai import, Blender meshes and rays, IFC quantities/relations and full EXPRESS. Uses IfcOpenShell; no other-kernel or Windows claim.",
+  "category_mesh_totals_m3": {
+    "Slab": 13.162505753338337,
+    "Column": 2.0520013175012557,
+    "Beam": 3.600001502037209,
+    "Wall": 17.268001626893817,
+    "Door": 0.09999992072581913,
+    "Window": 0.18400014650812513
+  },
+  "express_validation": {
+    "statements": [],
+    "count": 0
+  },
+  "display": {
+    "changes": "Object viewport colors, camera, overlays and selected window only",
+    "geometry_modified": false,
+    "view": "Two-storey southeast axonometric"
+  },
+  "screenshot": "/tmp/bim3117-building-qa/evidence-gui/Bonsai_Building_Authoring.png",
+  "checks_passed": 266,
+  "gui_capture": {
+    "method": "X11 root framebuffer via Pillow ImageGrab",
+    "image_size": [
+      1600,
+      1100
+    ],
+    "nonblack": true,
+    "sha256": "8b66f529df6ecede9f228acbc60d0777091bfc46790f5d0c14e5d6ab3364260b"
+  }
+}

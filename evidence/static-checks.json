@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": "Static Python AST and GitHub workflow checks only",
+  "windows_execution": false,
+  "python_files": [
+    "build/build_freecad.py",
+    "build/test_build.py",
+    "scripts/collect_acceptance.py",
+    "scripts/prepare_ifc.py",
+    "scripts/run_acceptance.py",
+    "scripts/run_native.py",
+    "scripts/run_public_gui.py",
+    "scripts/run_regression.py",
+    "scripts/windows_common.py",
+    "tests/test_acceptance_controller.py",
+    "tests/test_native_runner.py",
+    "tests/test_public_runner.py"
+  ],
+  "workflow": "parsed with BaseLoader; triggers,permissions,time bound,full action pins checked"
+}

@@ -1,0 +1,29 @@
+﻿id,milestone,priority,module,title,scope,acceptance,depends_on
+BIM-001,v0.1.0,P0,freecad,Pin host baseline,Record FreeCAD OS Python Qt versions and supported build,Install and run integrated BIM on Windows,
+BIM-002,v0.1.0,P0,freecad,Workbench installation,Load 3117 bootstrap and version diagnostics,New user profile installs and loads with no errors,BIM-001
+BIM-003,v0.1.0,P0,domain,Document authority,Persist UUID schema origin units in FCStd,Save reopen preserves IDs and parameters,BIM-001
+BIM-004,v0.1.0,P0,domain,Transactions and undo,One command equals one document transaction,Failure rolls back and redo branch clears correctly,BIM-003
+BIM-005,v0.1.0,P0,ui,Viewport selection,Highlight blank click deselect box and crossing selection,Pointer workflow tested in Windows GUI,BIM-002
+BIM-006,v0.1.0,P0,domain,Levels and grid,Base top offset grid identity and labels,Level movement updates dependents,BIM-003;BIM-004
+BIM-007,v0.1.0,P0,ui,Units and coordinates,Explicit m to mm boundary local origin north,No 1000x scale error on export/reopen,BIM-003
+BIM-008,v0.2.0,P0,domain,Wall type instance,Shared type thickness and instance baselines,Type edit updates all members and Undo restores,BIM-004;BIM-006
+BIM-009,v0.2.0,P0,geometry,Hosted door opening,Wall host plus placement and void relation,Moving host moves door and opening without orphans,BIM-008
+BIM-010,v0.2.0,P0,quantities,Gross net wall quantities,Version quantity rules and deduct rectangular openings,6m wall fixture net volume 3.222 m3,BIM-009
+BIM-011,v0.2.0,P0,ifc,IFC4 export,Stable IDs types containment and void/fill mappings,Schema plus geometry/QTO assertions pass,BIM-009;BIM-010
+BIM-012,v0.2.0,P0,ifc,External IFC review,Open export in Bonsai and record exact build,Placements units openings checked; engine dependency noted,BIM-011
+BIM-013,v0.2.0,P0,freecad,Native IFC ADR spike,Evaluate but do not dual-write masters,Decision records save edit undo and type fidelity,BIM-003;BIM-011
+BIM-014,v0.3.0,P0,geometry,Slab beam column,Limited profiles with level constraints,2-storey fixture edits all supported objects,BIM-008
+BIM-015,v0.3.0,P1,geometry,Wall junction policy,Limited joins tolerance and quantity attribution,Geometry union and net quantities are consistent,BIM-010;BIM-014
+BIM-016,v0.3.0,P1,families,Door and window templates,Type size swing symbolic plan and host,Type change updates geometry and symbol,BIM-009
+BIM-017,v0.4.0,P0,drawings,Plan section elevation,Cut plane view range scale and categories,Views reflect current document revision,BIM-014
+BIM-018,v0.4.0,P0,drawings,Dimensions and tags,Stable semantic references and annotation rules,Geometry edit keeps references or reports broken ones,BIM-017
+BIM-019,v0.4.0,P0,drawings,Sheets and PDF,Templates line weight hatch fonts and scales,Readable correct-scale drawing set approved by BIM owner,BIM-018
+BIM-020,v0.5.0,P0,quantities,Schedules and CSV,Grouping filters fields rounding rules revisions,Published table and model share revision,BIM-010;BIM-017
+BIM-021,v0.5.0,P1,families,Versioned type catalogue,Material layers and parameter templates,Catalogue update cannot silently break instances,BIM-016
+BIM-022,v0.9.0,P0,freecad,Recovery and migration,Atomic save backup schema upgrade and missing plugin handling,Interrupted save and previous-version fixture recover,BIM-003
+BIM-023,v0.9.0,P0,performance,Performance baseline,Measure 1k and 10k fixtures on declared hardware,Record select recompute save memory and open timing,BIM-017;BIM-020
+BIM-024,v0.9.0,P0,release,Windows installer,Dependency inventory licenses install/uninstall,Clean Windows install and reopen pilot model,BIM-022;BIM-023
+BIM-025,v1.0.0,P0,qa,Pilot acceptance,Users complete declared building workflow,No blocking geometry data-loss drawing or IFC defects,BIM-019;BIM-020;BIM-024
+BIM-026,future,P2,integration,Site and structural interfaces,Common ID units origin and revision contracts,Published fixtures compare correctly across apps,BIM-011
+BIM-027,future,P2,mep,Connectors and systems,Connector topology and system identities before routing,Independent MEP acceptance approved,BIM-025
+BIM-028,future,P2,ai,Command assistant,AI uses same commands with preview and Undo,No direct bypass of transaction or validation,BIM-025

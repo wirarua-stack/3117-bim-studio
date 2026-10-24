@@ -1,0 +1,12 @@
+{
+  "status": "passed_offline_source_input_validation",
+  "windows_build_executed": false,
+  "source_archive_sha256": "d381064aede10f7d9388bd78d2073d05f07b4da53f723940a16860e0c5fe446a",
+  "pinned_upstream_files_verified": 6,
+  "original_document_sha256": "8c2efdcd569b4c1a4fe378bb756a6d8b9bc4b0faf0a764e2efff0933350a47b6",
+  "patched_document_sha256": "0ac1f9c7876481523480aa59273379da9a2f86dc8a23837f38a1c1262cc74417",
+  "added_lines": 3,
+  "removed_lines": 0,
+  "newlines": "CRLF_preserved",
+  "repeat_application": "refused_without_mutation"
+}

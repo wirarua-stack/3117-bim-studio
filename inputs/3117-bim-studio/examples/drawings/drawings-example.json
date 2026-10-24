@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "fixture": "Synthetic two-storey native drawing example",
+  "file": "Drawings_Workbench.FCStd",
+  "sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c",
+  "source_file": "../building/Building_Authoring_Workbench.FCStd",
+  "source_sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+  "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "views": [
+    {
+      "id": "cd8248f0-b590-4348-bd28-2efc153b278e",
+      "object_name": "BIM3117_DrawingView",
+      "name": "Ground Plan",
+      "definition": {
+        "view_type": "Plan",
+        "bottom_offset_mm": -150.0,
+        "cut_offset_mm": 1200.0,
+        "top_offset_mm": 2800.0,
+        "origin_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "depth_mm": 10000.0,
+        "scale_denominator": 50,
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "id": "cd8248f0-b590-4348-bd28-2efc153b278e",
+        "name": "Ground Plan",
+        "level_id": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+        "level_elevation_mm": 0.0,
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "direction_name": "+Y"
+      }
+    },
+    {
+      "id": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+      "object_name": "BIM3117_DrawingView001",
+      "name": "Upper Plan",
+      "definition": {
+        "view_type": "Plan",
+        "bottom_offset_mm": -150.0,
+        "cut_offset_mm": 1200.0,
+        "top_offset_mm": 2800.0,
+        "origin_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "depth_mm": 10000.0,
+        "scale_denominator": 50,
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "id": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+        "name": "Upper Plan",
+        "level_id": "3087830e-4d1a-4f80-b674-777b13466c13",
+        "level_elevation_mm": 3000.0,
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "direction_name": "+Y"
+      }
+    },
+    {
+      "id": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+      "object_name": "BIM3117_DrawingView002",
+      "name": "Section A-A",
+      "definition": {
+        "view_type": "Section",
+        "bottom_offset_mm": -200.0,
+        "cut_offset_mm": 1200.0,
+        "top_offset_mm": 2700.0,
+        "origin_mm": [
+          0.0,
+          2000.0,
+          0.0
+        ],
+        "depth_mm": 3000.0,
+        "scale_denominator": 50,
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "id": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+        "name": "Section A-A",
+        "level_id": "",
+        "level_elevation_mm": 0.0,
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "direction_name": "+Y"
+      }
+    },
+    {
+      "id": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+      "object_name": "BIM3117_DrawingView003",
+      "name": "South Elevation",
+      "definition": {
+        "view_type": "Elevation",
+        "bottom_offset_mm": -200.0,
+        "cut_offset_mm": 1200.0,
+        "top_offset_mm": 2700.0,
+        "origin_mm": [
+          0.0,
+          -1000.0,
+          0.0
+        ],
+        "depth_mm": 6000.0,
+        "scale_denominator": 50,
+        "show_dimensions": true,
+        "show_tags": true,
+        "show_grid": true,
+        "show_levels": true,
+        "id": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+        "name": "South Elevation",
+        "level_id": "",
+        "level_elevation_mm": 0.0,
+        "direction": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "direction_name": "+Y"
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "id": "af6abddc-4d14-4f20-9d20-cfecbd94a2f3",
+      "object_name": "BIM3117_DrawingSheet",
+      "name": "Floor Plans",
+      "number": "A101",
+      "view_ids": [
+        "cd8248f0-b590-4348-bd28-2efc153b278e",
+        "5965144a-dfd0-46f4-9d2e-9ec08635dc81"
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481"
+    },
+    {
+      "id": "92adbcc4-cdeb-4b63-86cb-a109ea39fd17",
+      "object_name": "BIM3117_DrawingSheet001",
+      "name": "Section and Elevation",
+      "number": "A201",
+      "view_ids": [
+        "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+        "da9244a1-8af3-40b8-91c9-d502d24a3ca4"
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5"
+    }
+  ],
+  "element_ids": {
+    "BIM3117_Project": "1cf36c90-f065-4bcf-bd10-d57c1d5c1b05",
+    "BIM3117_Level": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+    "BIM3117_Level001": "3087830e-4d1a-4f80-b674-777b13466c13",
+    "BIM3117_Level002": "23a017fd-103e-4f8e-bfd1-538f44a944cd",
+    "BIM3117_Slab": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+    "BIM3117_Slab001": "54a5fde8-157c-40b7-be56-f69869705b43",
+    "BIM3117_Slab002": "e766c1c9-f102-490f-88fa-979e8089bb06",
+    "BIM3117_WallType": "65e313b7-786b-475f-994c-60b3af109888",
+    "BIM3117_Column": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+    "BIM3117_Beam": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+    "BIM3117_Column001": "c6881a57-0739-4382-9db8-b187e4745510",
+    "BIM3117_Beam001": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+    "BIM3117_Column002": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+    "BIM3117_Beam002": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+    "BIM3117_Column003": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+    "BIM3117_Beam003": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+    "BIM3117_Wall": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+    "BIM3117_WallBody": "a5bd56d7-35a0-4055-8fa8-fb80db438448",
+    "BIM3117_Door": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+    "BIM3117_Window": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+    "BIM3117_Wall001": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+    "BIM3117_WallBody001": "01fe680b-6a65-40c9-9931-f295b1ce46ae",
+    "BIM3117_Window001": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+    "BIM3117_Wall002": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+    "BIM3117_WallBody002": "cc89153c-af99-4e81-8b37-02921f67d7c4",
+    "BIM3117_Wall003": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+    "BIM3117_WallBody003": "d588e465-b0b8-499b-a071-35f7f3214e87",
+    "BIM3117_Column004": "a444a497-4a42-4a02-805f-bdac76a1312e",
+    "BIM3117_Beam004": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+    "BIM3117_Column005": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+    "BIM3117_Beam005": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+    "BIM3117_Column006": "5da805dc-1e32-4533-9fea-d355df30851d",
+    "BIM3117_Beam006": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+    "BIM3117_Column007": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+    "BIM3117_Beam007": "37134a20-b003-48ef-96bd-b1457cc94324",
+    "BIM3117_Wall004": "4748dd71-525a-4434-ba86-b7e616563128",
+    "BIM3117_WallBody004": "47cd2305-1267-42d8-b726-d29790cf2ef6",
+    "BIM3117_Door001": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+    "BIM3117_Window002": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+    "BIM3117_Wall005": "665ad71a-4ce2-454b-a84a-154125035cd7",
+    "BIM3117_WallBody005": "e6a8d22f-785c-4f61-abc7-fe7b1e697bfd",
+    "BIM3117_Window003": "13dab521-9139-425c-b8e7-c6df71ef7471",
+    "BIM3117_Wall006": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+    "BIM3117_WallBody006": "99eccd65-674f-4546-a3bb-5e087d03b357",
+    "BIM3117_Wall007": "f2cae468-6358-471b-8a67-a9ed151a8112",
+    "BIM3117_WallBody007": "486e972a-1bf0-4a88-be41-4f1e6fb6487e",
+    "BIM3117_Grid": "1e3962f1-fee7-4fc5-b900-92916baa1696",
+    "BIM3117_Grid001": "7b483af6-434a-4504-a036-e560a3599b8a",
+    "BIM3117_Grid002": "fb5db00c-5c30-4442-a1dd-91fb884b9ddf",
+    "BIM3117_Grid003": "58235e7a-ab6e-4121-aa79-62c813dbdfbe",
+    "BIM3117_Drawings": "4a963eb7-8540-4f13-9b3b-bc2163689a79",
+    "BIM3117_DrawingView": "cd8248f0-b590-4348-bd28-2efc153b278e",
+    "BIM3117_DrawingView001": "5965144a-dfd0-46f4-9d2e-9ec08635dc81",
+    "BIM3117_DrawingView002": "eb5c2bb1-fb66-4b80-aadd-e7bb1771304b",
+    "BIM3117_DrawingView003": "da9244a1-8af3-40b8-91c9-d502d24a3ca4",
+    "BIM3117_DrawingSheet": "af6abddc-4d14-4f20-9d20-cfecbd94a2f3",
+    "BIM3117_DrawingSheet001": "92adbcc4-cdeb-4b63-86cb-a109ea39fd17"
+  }
+}

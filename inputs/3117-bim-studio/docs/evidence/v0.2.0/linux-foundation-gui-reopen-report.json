@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "source GUI suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "all model proxies restored in fresh GUI process",
+      "status": "passed"
+    },
+    {
+      "name": "all view proxies restored in fresh GUI process",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI reopen preserves original identities",
+      "status": "passed"
+    },
+    {
+      "name": "all grid labels have reconstructed Coin scene nodes",
+      "status": "passed"
+    },
+    {
+      "name": "reference level and geometry restored",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process native edit recomputes geometry and text position",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process native Undo restores geometry and text position",
+      "status": "passed"
+    },
+    {
+      "name": "document validates after fresh GUI lifecycle",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 9,
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "module_source": "/tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py"
+}

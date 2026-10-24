@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "kind": "runner_preparation",
+  "created_at_utc": "2026-10-23T09:49:32.5361180Z",
+  "status": "capacity_prepared_not_acceptance",
+  "minimum_free_bytes": 32212254720,
+  "powershell_version": "7.6.6",
+  "operating_system": "Microsoft Windows 10.0.20348",
+  "run_id": "39934642607",
+  "run_attempt": "1",
+  "repository": "wirarua-stack/3117-bim-studio",
+  "commit": "1139434ce9bc2ca4bb2813bea1623e5c249c316c",
+  "drive_observations": [
+    {
+      "label": "c_drive",
+      "probe_path": "C:\\",
+      "volume_root": "C:\\",
+      "is_ready": true,
+      "drive_type": "Fixed",
+      "available_free_bytes": 88530812928,
+      "total_free_bytes": 88530812928,
+      "total_bytes": 274284392448,
+      "error": null
+    },
+    {
+      "label": "runner_temp",
+      "probe_path": "D:\\a\\_temp",
+      "volume_root": "D:\\",
+      "is_ready": true,
+      "drive_type": "Fixed",
+      "available_free_bytes": 157855506432,
+      "total_free_bytes": 157855506432,
+      "total_bytes": 161059172352,
+      "error": null
+    }
+  ],
+  "write_probes": [
+    {
+      "volume_root": "C:\\",
+      "proposed_work_root": "C:\\b3117\\39934642607-1-131e10c4",
+      "writable": true,
+      "error": null
+    }
+  ],
+  "desktop_observation": {
+    "kind": "informational_native_windows_observation",
+    "session_id": 2,
+    "window_station_visible": true,
+    "monitor_count": 1,
+    "virtual_screen": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768
+    },
+    "user_interactive": true,
+    "errors": [],
+    "note": "These WinAPI observations are not Qt desktop acceptance; the later GUI gate remains required."
+  },
+  "selected_work_root": "C:\\b3117\\39934642607-1-131e10c4",
+  "windows_build_executed": false,
+  "windows_acceptance_executed": false,
+  "release_ready": false,
+  "finished_at_utc": "2026-10-23T09:49:36.0005746Z"
+}

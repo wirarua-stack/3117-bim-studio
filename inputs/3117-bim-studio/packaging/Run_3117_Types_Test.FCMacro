@@ -1,0 +1,59 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Execute after installing 3117 v0.5.0 and restarting FreeCAD.
+import datetime
+from pathlib import Path
+import sys
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtGui
+try:
+    from PySide import QtWidgets
+except ImportError:
+    QtWidgets = QtGui
+
+_bim3117_types_root = None
+try:
+    _bim3117_types_macro = Path(__file__).resolve()
+    for _bim3117_types_candidate in (_bim3117_types_macro.parent, _bim3117_types_macro.parent.parent):
+        if (_bim3117_types_candidate / "tests" / "freecad_types_gui.py").is_file():
+            _bim3117_types_root = _bim3117_types_candidate
+            break
+except (NameError, TypeError, OSError):
+    pass
+if _bim3117_types_root is None:
+    _bim3117_types_selected = QtWidgets.QFileDialog.getExistingDirectory(
+        Gui.getMainWindow(), "Select the extracted 3117 v0.5.0 package folder")
+    if _bim3117_types_selected:
+        _bim3117_types_root = Path(_bim3117_types_selected)
+
+
+def _bim3117_types_run_tests(_bim3117_types_root=_bim3117_types_root):
+    try:
+        if not (_bim3117_types_root / "tests" / "freecad_types_gui.py").is_file():
+            raise RuntimeError("The selected folder does not contain tests/freecad_types_gui.py")
+        _bim3117_types_output = (Path(App.getUserAppDataDir()) / "BIM3117_Test_Reports" /
+                                  ("Types_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")))
+        sys.path.insert(0, str(_bim3117_types_root / "tests"))
+        from freecad_types_gui import run
+        _bim3117_types_report = run(_bim3117_types_output, keep_sample=True)
+        _bim3117_types_message = (
+            "Passed {checks} Types and Quantities GUI checks.\n\n"
+            "Development candidate: the separate native history-branch gate remains FAILED on the tested Linux FreeCAD 1.1.4 host. "
+            "Pilot/production acceptance is blocked; Windows remains untested. See docs/HOST_COMPATIBILITY.md.\n\n"
+            "Report, native example, CSV and screenshots:\n{path}\n\n"
+            "Next: close FreeCAD, reopen the generated Types_Quantities_Workbench.FCStd, open Type Catalogue and Schedules, "
+            "edit a shared Type or schedule source row, check quantities and use Undo/Redo."
+        ).format(checks=_bim3117_types_report["checks_passed"], path=str(_bim3117_types_output))
+        App.Console.PrintMessage(_bim3117_types_message + "\n")
+        QtWidgets.QMessageBox.information(Gui.getMainWindow(), "3117 Types and Quantities test", _bim3117_types_message)
+    except BaseException as _bim3117_types_error:
+        App.Console.PrintError(traceback.format_exc() + "\n")
+        QtWidgets.QMessageBox.warning(
+            Gui.getMainWindow(), "3117 Types and Quantities test failed", str(_bim3117_types_error))
+
+
+if _bim3117_types_root is not None:
+    # Native Undo/Redo actions are enabled after the macro returns to the event loop.
+    QtCore.QTimer.singleShot(0, _bim3117_types_run_tests)

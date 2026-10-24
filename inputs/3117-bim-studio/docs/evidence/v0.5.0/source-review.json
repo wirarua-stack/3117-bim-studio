@@ -1,0 +1,203 @@
+{
+  "ci_report_maps_identical": true,
+  "ci_stage_count": 19,
+  "runner_stages_match_ci": true,
+  "reports": [
+    {
+      "stage": "install",
+      "report": "install-report.json",
+      "source": "tests/run_freecad_tests.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "foundation",
+      "report": "foundation-test-report.json",
+      "source": "tests/freecad_foundation.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "reopen",
+      "report": "reopen-test-report.json",
+      "source": "tests/freecad_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "architecture",
+      "report": "architecture-test-report.json",
+      "source": "tests/freecad_architecture.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "architecture_reopen",
+      "report": "architecture-reopen-test-report.json",
+      "source": "tests/freecad_architecture_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "exchange",
+      "report": "exchange-test-report.json",
+      "source": "tests/freecad_exchange.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "exchange_reopen",
+      "report": "exchange-reopen-test-report.json",
+      "source": "tests/freecad_exchange_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "building",
+      "report": "building-test-report.json",
+      "source": "tests/freecad_building.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "building_reopen",
+      "report": "building-reopen-test-report.json",
+      "source": "tests/freecad_building_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "drawing_geometry",
+      "report": "drawing-geometry-test-report.json",
+      "source": "tests/freecad_drawing_geometry.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "drawings",
+      "report": "drawings-test-report.json",
+      "source": "tests/freecad_drawings.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "drawings_reopen",
+      "report": "drawings-reopen-test-report.json",
+      "source": "tests/freecad_drawings_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "drawing_render",
+      "report": "drawing-render-test-report.json",
+      "source": "tests/freecad_drawing_render.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "types",
+      "report": "types-test-report.json",
+      "source": "tests/freecad_types.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "types_reopen",
+      "report": "types-reopen-test-report.json",
+      "source": "tests/freecad_types_reopen.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "types_exchange",
+      "report": "types-exchange-test-report.json",
+      "source": "tests/freecad_types_exchange.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "types_exchange_reopen",
+      "report": "types-exchange-reopen-test-report.json",
+      "source": "tests/freecad_types_exchange.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "schedules",
+      "report": "schedules-test-report.json",
+      "source": "tests/freecad_schedules.py",
+      "present_in_source": true
+    },
+    {
+      "stage": "schedules_reopen",
+      "report": "schedules-reopen-test-report.json",
+      "source": "tests/freecad_schedules_reopen.py",
+      "present_in_source": true
+    }
+  ],
+  "new_test_payloads": {
+    "freecad_types.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_types_reopen.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_types_exchange.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_schedules.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_schedules_reopen.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_types_gui.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_types_gui_reopen.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "freecad_types_presentation.py": {
+      "exists": true,
+      "listed_by_builder": true
+    },
+    "bonsai_types_review.py": {
+      "exists": true,
+      "listed_by_builder": true
+    }
+  },
+  "api_doc_calls_match_actual_signatures": true,
+  "notes": [
+    "types_exchange_reopen imports reopen() from freecad_types_exchange.py; a separate reopen module is not required.",
+    "README and ROADMAP identify v0.5.0 with v0.9.0 Pilot next, and preserve Windows acceptance as pending.",
+    "No repo files were edited in this release review. VERIFICATION and TEST_ENVIRONMENT counts were deliberately excluded while parent updates them."
+  ],
+  "findings": [
+    {
+      "severity": "medium",
+      "path": "packaging/INSTALL_TH.md",
+      "line": 39,
+      "issue": "Current-release paragraph incorrectly excludes material layers and schedule editor although v0.5.0 implements them.",
+      "suggestion": "Keep wall joins and RVT/RFA excluded; describe current native layers and schedules as implemented bounded features."
+    },
+    {
+      "severity": "low",
+      "path": "packaging/README.md",
+      "line": 12,
+      "issue": "Build example still uses output ZIP v0_4_0 filename.",
+      "suggestion": "Change filename to 3117_BIM_Studio_v0_5_0_FreeCAD.zip."
+    },
+    {
+      "severity": "medium",
+      "path": "docs/QUANTITY_EXCHANGE.md",
+      "line": 155,
+      "issue": "Next-scope paragraph still lists schedule editor and layered materials as future.",
+      "suggestion": "Link v0.5.0 Types and Quantities; keep only unimplemented general joins/annotation editor/import and expanded categories in future scope."
+    },
+    {
+      "severity": "low",
+      "path": "packaging/CI_HOSTS.md",
+      "line": 28,
+      "issue": "Thirteen-process heading/table describes13 required reports while new6 are only summarized in appendix.",
+      "suggestion": "Use Nineteen-process heading and add exact six report filenames to the main table; actual CI runner mappings are already correct."
+    },
+    {
+      "severity": "low",
+      "path": "docs/TYPES_AND_QUANTITIES.md",
+      "line": 81,
+      "issue": "Thai statement that the table stores both revisions may be read as persisted native revision stamps, while schedule_state/capture computes them and section5 correctly denies native stamps.",
+      "suggestion": "Say preview/capture returns or tracks both model_revision and schedule_revision."
+    }
+  ],
+  "status": "reviewed_with_documentation_findings"
+}

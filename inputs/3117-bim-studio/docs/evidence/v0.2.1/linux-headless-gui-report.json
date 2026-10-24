@@ -1,0 +1,188 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "checks": [
+    {
+      "name": "source fixture was saved without a GUI document",
+      "status": "passed"
+    },
+    {
+      "name": "headless wall enumeration is initially missing its scripted Default mode",
+      "status": "passed"
+    },
+    {
+      "name": "native DisplayMode property type is preserved while missing values initialize",
+      "status": "passed"
+    },
+    {
+      "name": "styled headless walls and children are actually visible",
+      "status": "passed"
+    },
+    {
+      "name": "styled headless wall presentation claims its derived body and doors",
+      "status": "passed"
+    },
+    {
+      "name": "first native visibility toggle hides newly attached wall and children",
+      "status": "passed"
+    },
+    {
+      "name": "second native visibility toggle shows newly attached wall and children",
+      "status": "passed"
+    },
+    {
+      "name": "repeated attach after headless restore does not duplicate Coin nodes",
+      "status": "passed"
+    },
+    {
+      "name": "headless model quantity table preserves authored revision and rows",
+      "status": "passed"
+    },
+    {
+      "name": "presentation attachment leaves identities and native history unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "separate GUI copy restores scripted wall modes automatically",
+      "status": "passed"
+    },
+    {
+      "name": "GUI copy reopens with the original model revision and identities",
+      "status": "passed"
+    },
+    {
+      "name": "actual verified fixture GUI and table screenshots saved",
+      "status": "passed"
+    },
+    {
+      "name": "headless source FCStd remains byte-for-byte unchanged",
+      "status": "passed"
+    }
+  ],
+  "scope": "Headless-created FCStd receives GUI providers; source file is never overwritten",
+  "checks_passed": 14,
+  "source": "/tmp/bim3117-exchange-qa/native-final/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+  "source_sha256": "eabc3b3cd4d23f3a98217592fa525d388d6b47e73c431af3b514c842c81a430d",
+  "gui_copy": "/tmp/bim3117-exchange-ui/evidence/native-example/Quantity_Exchange_Workbench.FCStd",
+  "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0",
+  "gui_copy_sha256": "f7f9395b8bf830f512734d4421698f426d67177c97b2df11cce947c2b5bafae7",
+  "screenshot": "/tmp/bim3117-exchange-ui/evidence/Quantity_Exchange_Fixture_GUI.png",
+  "table_screenshot": "/tmp/bim3117-exchange-ui/evidence/Quantity_Exchange_Fixture_Table.png",
+  "wall_rows": [
+    {
+      "element_id": "51a7eca2-9c6d-44da-ba50-9d6b8ddd1399",
+      "object_name": "BIM3117_Wall001",
+      "name": "Diagonal basement",
+      "type_id": "3c128d9c-69c6-4b0c-bd01-b3223d5e85a7",
+      "type_name": "W200",
+      "base_level_id": "230935d7-840a-4aa9-87b8-76a7526eec0b",
+      "base_level": "B01",
+      "top_level_id": "31868b9e-88d3-49bd-9e50-c9dcd42291a8",
+      "top_level": "L00",
+      "length_m": 5.0,
+      "height_m": 2.7,
+      "thickness_m": 0.2,
+      "gross_side_area_m2": 13.5,
+      "opening_side_area_m2": 1.6,
+      "net_side_area_m2": 11.899999999999995,
+      "gross_volume_m3": 2.7,
+      "opening_volume_m3": 0.3200000000000012,
+      "net_volume_m3": 2.379999999999999,
+      "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+      "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0"
+    },
+    {
+      "element_id": "7410926a-82ea-41e5-bea3-75919c69bfb7",
+      "object_name": "BIM3117_Wall",
+      "name": "W201",
+      "type_id": "3c128d9c-69c6-4b0c-bd01-b3223d5e85a7",
+      "type_name": "W200",
+      "base_level_id": "31868b9e-88d3-49bd-9e50-c9dcd42291a8",
+      "base_level": "L00",
+      "top_level_id": "fadca764-1520-4ba5-a6d3-5ad77eae43eb",
+      "top_level": "L01",
+      "length_m": 6.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "gross_side_area_m2": 18.0,
+      "opening_side_area_m2": 1.8900000000000001,
+      "net_side_area_m2": 16.11,
+      "gross_volume_m3": 3.6,
+      "opening_volume_m3": 0.3780000000000001,
+      "net_volume_m3": 3.222,
+      "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+      "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0"
+    },
+    {
+      "element_id": "8966d9c6-657f-4440-a326-bc937a373f9a",
+      "object_name": "BIM3117_Wall002",
+      "name": "Reversed wall",
+      "type_id": "3c128d9c-69c6-4b0c-bd01-b3223d5e85a7",
+      "type_name": "W200",
+      "base_level_id": "31868b9e-88d3-49bd-9e50-c9dcd42291a8",
+      "base_level": "L00",
+      "top_level_id": "fadca764-1520-4ba5-a6d3-5ad77eae43eb",
+      "top_level": "L01",
+      "length_m": 4.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "gross_side_area_m2": 12.0,
+      "opening_side_area_m2": 1.6800000000000002,
+      "net_side_area_m2": 10.32,
+      "gross_volume_m3": 2.4000000000000004,
+      "opening_volume_m3": 0.3360000000000003,
+      "net_volume_m3": 2.064,
+      "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+      "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0"
+    }
+  ],
+  "before_wall_modes": {
+    "BIM3117_Wall": {
+      "property_type": "App::PropertyEnumeration",
+      "enumeration": [
+        ""
+      ]
+    },
+    "BIM3117_Wall001": {
+      "property_type": "App::PropertyEnumeration",
+      "enumeration": [
+        ""
+      ]
+    },
+    "BIM3117_Wall002": {
+      "property_type": "App::PropertyEnumeration",
+      "enumeration": [
+        ""
+      ]
+    }
+  },
+  "identifiers": {
+    "BIM3117_Project": "abcc5d1e-74d9-4b4a-b672-aeee0ef0c2aa",
+    "BIM3117_Level": "31868b9e-88d3-49bd-9e50-c9dcd42291a8",
+    "BIM3117_Level001": "fadca764-1520-4ba5-a6d3-5ad77eae43eb",
+    "BIM3117_Wall": "7410926a-82ea-41e5-bea3-75919c69bfb7",
+    "BIM3117_WallBody": "d7c79c1d-0304-4791-8265-c1294fae6c00",
+    "BIM3117_Door": "c33f0a63-aa43-4dcf-8094-15cf41523f46",
+    "BIM3117_WallType": "3c128d9c-69c6-4b0c-bd01-b3223d5e85a7",
+    "BIM3117_Level002": "230935d7-840a-4aa9-87b8-76a7526eec0b",
+    "BIM3117_Wall001": "51a7eca2-9c6d-44da-ba50-9d6b8ddd1399",
+    "BIM3117_WallBody001": "9cec5a2e-cb99-4af3-a342-87ee99eca428",
+    "BIM3117_Door001": "4b1e8b7b-5e0a-494e-b085-b10497472b16",
+    "BIM3117_Wall002": "8966d9c6-657f-4440-a326-bc937a373f9a",
+    "BIM3117_WallBody002": "1d7e19f2-c791-48cc-b8fa-b9588430ffdd",
+    "BIM3117_Door002": "506cfd92-dd12-4cf7-a52f-4f3ba470dc03",
+    "BIM3117_Grid": "1baee451-5790-4d44-822c-d01105cc9489"
+  }
+}

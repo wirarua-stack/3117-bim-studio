@@ -1,0 +1,17 @@
+{
+  "run_package_batch.py": {
+    "source": "/tmp/bim3117-release-v050/run_package_batch.py",
+    "sha256": "1026f8fe577b74463e3cd80579b03ed382cd65bb130d1e3864538e4ec7b3ab4d",
+    "bytes": 6000
+  },
+  "run_package_check.py": {
+    "source": "/tmp/bim3117-release-v050/run_package_check.py",
+    "sha256": "e8172e6959f612adfc3cd97f8a46b33d6a09def212dd004e7912f0f7bf29f179",
+    "bytes": 6215
+  },
+  "package_autopilot.FCMacro": {
+    "source": "/tmp/bim3117-release-v050/package_autopilot.FCMacro",
+    "sha256": "e02740935d8fd60373aa8159869e198b520b8977c572cc93e425f0a2295a6652",
+    "bytes": 10333
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "scope": "Fresh GUI restoration and edit/Undo of the separate canonical presentation copy",
+  "checks": [
+    {
+      "name": "presentation capture passed and its native copy matches the recorded hash",
+      "status": "passed"
+    },
+    {
+      "name": "fresh host has not preregistered native and view classes",
+      "status": "passed"
+    },
+    {
+      "name": "every native and view proxy restores from the installed workbench automatically",
+      "status": "passed"
+    },
+    {
+      "name": "presentation save preserved every UUID revision quantity row and total",
+      "status": "passed"
+    },
+    {
+      "name": "saved member joins and visible wall bodies and opening frames restore",
+      "status": "passed"
+    },
+    {
+      "name": "restored Window visibility remains independent until native host toggle",
+      "status": "passed"
+    },
+    {
+      "name": "fresh quantity command reproduces all rows without native history changes",
+      "status": "passed"
+    },
+    {
+      "name": "actual column edit after headless-to-GUI restore recomputes slab cuts and live quantities",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores the exact canonical revision UUIDs quantities and member solid",
+      "status": "passed"
+    },
+    {
+      "name": "verification never rewrites either the headless original or styled copy",
+      "status": "passed"
+    }
+  ],
+  "deletion_warnings": [],
+  "expected_command_errors": [],
+  "checks_passed": 10,
+  "gui_copy": "/tmp/bim3117-building-ui/evidence/canonical/Building_Authoring_Workbench.FCStd",
+  "content_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "module_source": "/tmp/bim3117-building-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py"
+}

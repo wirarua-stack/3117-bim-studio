@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "status": "prepared_not_built_on_windows",
+  "source_commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+  "source_version": "1.1.4",
+  "source_document_before_sha256": "8c2efdcd569b4c1a4fe378bb756a6d8b9bc4b0faf0a764e2efff0933350a47b6",
+  "source_document_patched_sha256": "0ac1f9c7876481523480aa59273379da9a2f86dc8a23837f38a1c1262cc74417",
+  "patch_file": "inputs/patches/provider-removal-crlf.patch",
+  "patch_sha256": "bc095e5fbca715ae0800a4aab2a759b498937105335d03cb0b1f2efd0d5aead1",
+  "patch_helper": "inputs/patches/apply-reviewed-patch.py",
+  "patch_helper_sha256": "624476e9bbd0d4100e475cdfe5a7eebf5370e1c22adf57a1c42d633934ea730c",
+  "assets": {
+    "freecad": {
+      "filename": "FreeCAD-4fd3bf320d9566a27e60069fc8387448aaa3a094.tar.gz",
+      "url": "https://codeload.github.com/FreeCAD/FreeCAD/tar.gz/4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "sha256": "d381064aede10f7d9388bd78d2073d05f07b4da53f723940a16860e0c5fe446a",
+      "bytes": 91812296,
+      "archive_root": "FreeCAD-4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    },
+    "gsl": {
+      "filename": "GSL-543d0dd3fe966ddf20e884b44e5fdbf12cb43784.tar.gz",
+      "url": "https://codeload.github.com/microsoft/GSL/tar.gz/543d0dd3fe966ddf20e884b44e5fdbf12cb43784",
+      "sha256": "dd06a9190c02f6c04d008366faabc8947c817f33cbc6a838c5bfc9ad79652410",
+      "bytes": 65378,
+      "archive_root": "GSL-543d0dd3fe966ddf20e884b44e5fdbf12cb43784"
+    },
+    "libpack": {
+      "filename": "LibPack-1.1.0-v3.1.1.3-Release.7z",
+      "url": "https://github.com/FreeCAD/FreeCAD-LibPack/releases/download/3.1.1.3/LibPack-1.1.0-v3.1.1.3-Release.7z",
+      "sha256": "3565842b2f2c464d891d37f1ce8467f2cd0b3dd758a6dfacc7acfeff290b67d4",
+      "bytes": 948616324,
+      "archive_root": "LibPack-1.1.0-v3.1.1.3-Release",
+      "checksum_provenance": "Computed from the complete public release artifact on 2026-10-23; official GitHub API asset248987223 has digest:null and no checksum sidecar. Not an upstream-published SHA256."
+    },
+    "cmake": {
+      "filename": "cmake-3.31.6-windows-x86_64.zip",
+      "url": "https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.zip",
+      "sha256": "d163cd3ab4959b0a53fa8988f2ddbd2e6c501658201e6a154386bad9dbe4f836",
+      "bytes": 46473549,
+      "archive_root": "cmake-3.31.6-windows-x86_64",
+      "checksum_provenance": "https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-SHA-256.txt"
+    }
+  },
+  "expected_runtime": {
+    "os": "Windows",
+    "architecture": "AMD64",
+    "python": "3.12.10",
+    "qt": "6.8.3",
+    "pyside": "6.8.3",
+    "occt": "7.8.1",
+    "numpy": "1.26.4"
+  },
+  "toolchain": {
+    "cmake": "3.31.6",
+    "generator": "Visual Studio 17 2022",
+    "toolset": "v143,host=x64",
+    "architecture": "x64",
+    "configuration": "Release",
+    "compiler_patch": "observed and compared between A/B builds; Visual Studio not silently installed or updated"
+  },
+  "upstream_source_evidence": {
+    ".github/workflows/sub_buildWindows.yml": "3d6f81313c4d62ced1a6f133d8552f3901d3de292be2ec728b36085d2249f8f7",
+    ".github/workflows/actions/windows/getLibpack/action.yml": "2c16649b8fb426f524101156f92883f65a093bfb68ecf9f155afd53259f21bb2",
+    "cMake/FreeCAD_Helpers/CopyLibpackDirectories.cmake": "4a288d2c7360765a3e0934ff12539120007916ed026451b34b69891395bec1f5",
+    "cMake/FreeCAD_Helpers/SetupShibokenAndPyside.cmake": "27bda54da89d5133ec3a049459200ffb146944b17dc457e083c332c72a421fa6",
+    "cMake/UseLibPack3.cmake": "706b1433564367d7f18e9d50bd51af344eed68061b4d132a1ef232b08a1fa70b",
+    "src/Gui/CMakeLists.txt": "6bc5224747d612e7dda7abad51dfceace3dbd6b4a2408aef11046930be2a31fd"
+  }
+}

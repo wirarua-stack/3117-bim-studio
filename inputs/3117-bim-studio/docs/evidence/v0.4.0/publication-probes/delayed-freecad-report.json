@@ -1,0 +1,287 @@
+{
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "publisher": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/bim3117_freecad/export_files.py",
+  "rows": [
+    {
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+      "immediate_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "immediate_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-zcp8aagk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x40",
+          "cookie": 25905,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25905,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x40",
+          "cookie": 25907,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25907,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x400",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_/.3117-export-zcp8aagk",
+          "mask": "0x8000",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".3117-export-zcp8aagk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        }
+      ],
+      "three_seconds_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}",
+        "payload.txt.3117-export.lock": "3117 export process 7\n",
+        "metadata.json.3117-export.lock": "3117 export process 7\n",
+        ".3117-export-zcp8aagk": [
+          "metadata.json",
+          "payload.txt"
+        ]
+      },
+      "three_seconds_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-zcp8aagk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".metadata.json.3117-export.lock.7E0zPw"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40",
+          "cookie": 25909,
+          "name": ".metadata.json.3117-export.lock.7E0zPw"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".payload.txt.3117-export.lock.PcHzhk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40",
+          "cookie": 25911,
+          "name": ".payload.txt.3117-export.lock.PcHzhk"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25917,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x80",
+          "cookie": 25919,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-freecad-q3dy_mo_",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        }
+      ],
+      "final_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}",
+        "payload.txt.3117-export.lock": "3117 export process 7\n",
+        "metadata.json.3117-export.lock": "3117 export process 7\n",
+        ".3117-export-zcp8aagk": [
+          "metadata.json",
+          "payload.txt"
+        ]
+      }
+    },
+    {
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+      "immediate_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "immediate_events": [
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-qe98mfcf"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x40",
+          "cookie": 25925,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x80",
+          "cookie": 25925,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x40",
+          "cookie": 25927,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x80",
+          "cookie": 25927,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x400",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7/.3117-export-qe98mfcf",
+          "mask": "0x8000",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".3117-export-qe98mfcf"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-freecad-xu8v25s7",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        }
+      ],
+      "three_seconds_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "three_seconds_events": [],
+      "final_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      }
+    }
+  ],
+  "final_events": []
+}

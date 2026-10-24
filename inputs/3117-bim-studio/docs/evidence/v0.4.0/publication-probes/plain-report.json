@@ -1,0 +1,309 @@
+{
+  "mode": "plain",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "pid": 2,
+  "publisher": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/bim3117_freecad/export_files.py",
+  "publisher_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+  "functions": {
+    "replace": {
+      "repr": "<built-in function replace>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "rename": {
+      "repr": "<built-in function rename>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "unlink": {
+      "repr": "<built-in function unlink>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "remove": {
+      "repr": "<built-in function remove>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "rmdir": {
+      "repr": "<built-in function rmdir>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    }
+  },
+  "directories": [
+    {
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-probe-plain-5tbp0pex",
+      "parent_stat": {
+        "device": 27,
+        "mode": 16877
+      },
+      "operations": [
+        {
+          "operation": "os.replace(source,target)",
+          "return": "None",
+          "immediate_state": {
+            "target.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658875,
+              "device": 27,
+              "data": "new payload"
+            }
+          }
+        },
+        {
+          "operation": "os.unlink(target)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "Path(source).unlink(missing_ok=True)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(nonexistent)",
+          "exception": "FileNotFoundError(2, 'No such file or directory')",
+          "errno": 2,
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(relative,dir_fd)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "ctypes libc.unlink(path)",
+          "return": "{'result': 0, 'errno': 0}",
+          "immediate_state": {}
+        },
+        {
+          "operation": "shutil.rmtree(tree)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "installed publish_bundle success",
+          "return": "None",
+          "immediate_state": {
+            "metadata.json": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658953,
+              "device": 27,
+              "data": "{\"complete\":true}"
+            },
+            "payload.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658952,
+              "device": 27,
+              "data": "published payload"
+            }
+          }
+        },
+        {
+          "operation": "installed publish_bundle before_commit rejection",
+          "exception": "RuntimeError('intentional before_commit rejection')",
+          "errno": null,
+          "immediate_state": {}
+        }
+      ],
+      "initial_state": {
+        "source.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658875,
+          "device": 27,
+          "data": "new payload"
+        },
+        "target.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658877,
+          "device": 27,
+          "data": "old payload"
+        }
+      },
+      "final_state": {
+        "aborted": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658877,
+          "device": 27,
+          "children": []
+        },
+        "bundle": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658875,
+          "device": 27,
+          "children": [
+            "payload.txt",
+            "metadata.json"
+          ]
+        }
+      }
+    },
+    {
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-probe-plain-lj1hhuq1",
+      "parent_stat": {
+        "device": 27,
+        "mode": 16877
+      },
+      "operations": [
+        {
+          "operation": "os.replace(source,target)",
+          "return": "None",
+          "immediate_state": {
+            "target.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658944,
+              "device": 27,
+              "data": "new payload"
+            }
+          }
+        },
+        {
+          "operation": "os.unlink(target)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "Path(source).unlink(missing_ok=True)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(nonexistent)",
+          "exception": "FileNotFoundError(2, 'No such file or directory')",
+          "errno": 2,
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(relative,dir_fd)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "ctypes libc.unlink(path)",
+          "return": "{'result': 0, 'errno': 0}",
+          "immediate_state": {}
+        },
+        {
+          "operation": "shutil.rmtree(tree)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "installed publish_bundle success",
+          "return": "None",
+          "immediate_state": {
+            "metadata.json": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 659190,
+              "device": 27,
+              "data": "{\"complete\":true}"
+            },
+            "payload.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 659174,
+              "device": 27,
+              "data": "published payload"
+            }
+          }
+        },
+        {
+          "operation": "installed publish_bundle before_commit rejection",
+          "exception": "RuntimeError('intentional before_commit rejection')",
+          "errno": null,
+          "immediate_state": {}
+        }
+      ],
+      "initial_state": {
+        "source.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658944,
+          "device": 27,
+          "data": "new payload"
+        },
+        "target.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 659087,
+          "device": 27,
+          "data": "old payload"
+        }
+      },
+      "final_state": {
+        "aborted": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 659087,
+          "device": 27,
+          "children": []
+        },
+        "bundle": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658944,
+          "device": 27,
+          "children": [
+            "payload.txt",
+            "metadata.json"
+          ]
+        }
+      }
+    }
+  ],
+  "pathlib_unlink_source": "    def unlink(self, missing_ok=False):\n        \"\"\"\n        Remove this file or link.\n        If the path is a directory, use rmdir() instead.\n        \"\"\"\n        try:\n            os.unlink(self)\n        except FileNotFoundError:\n            if not missing_ok:\n                raise\n",
+  "pathlib_rename_source": "    def rename(self, target):\n        \"\"\"\n        Rename this path to the target path.\n\n        The target path may be absolute or relative. Relative paths are\n        interpreted relative to the current working directory, *not* the\n        directory of the Path object.\n\n        Returns the new Path instance pointing to the target path.\n        \"\"\"\n        os.rename(self, target)\n        return self.with_segments(target)\n",
+  "rmtree_avoids_symlink_attacks": true,
+  "selected_runtime_variables": {
+    "LD_PRELOAD": null,
+    "LD_LIBRARY_PATH": null,
+    "PYTHONHOME": null
+  },
+  "relevant_maps": [
+    "7f93250d3000-7f93250fb000 r--p 00000000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f93250fb000-7f9325283000 r-xp 00028000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f9325283000-7f93252d2000 r--p 001b0000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f93252d2000-7f93252d6000 r--p 001fe000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f93252d6000-7f93252d8000 rw-p 00202000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6"
+  ],
+  "relevant_mounts": [
+    "142 75 0:27 / / ro,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "143 142 0:30 / /proc ro,nosuid,nodev,noexec,relatime - proc proc rw",
+    "150 142 0:31 / /dev ro,nosuid,nodev - tmpfs tmpfs rw,size=65536k,mode=755",
+    "151 150 0:32 / /dev/pts ro,nosuid,nodev,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666",
+    "152 150 0:26 / /dev/shm ro,nosuid,nodev,relatime - tmpfs shm rw",
+    "153 150 0:25 / /dev/mqueue ro,nosuid,nodev,noexec,relatime - mqueue mqueue rw",
+    "154 142 0:20 / /sys ro,nosuid,nodev,noexec,relatime - sysfs sysfs rw",
+    "155 154 0:24 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime - cgroup2 cgroup2 rw,nsdelegate",
+    "156 150 0:48 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755",
+    "163 156 0:49 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666",
+    "164 142 0:50 / /tmp/codex-daemon-0 ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=000",
+    "165 142 0:27 /tmp /tmp rw,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "166 165 0:51 / /tmp/codex-daemon-0 ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=000",
+    "167 165 0:52 / /tmp/.git ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "168 165 0:53 / /tmp/.agents ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "170 165 0:54 / /tmp/.aws ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "172 142 0:27 /workspace/scratch/9457befac3c8 /workspace/scratch/9457befac3c8 rw,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "173 172 0:55 / /workspace/scratch/9457befac3c8/.git ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "197 172 0:56 / /workspace/scratch/9457befac3c8/.agents ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "202 172 0:27 /workspace/scratch/9457befac3c8/.codex /workspace/scratch/9457befac3c8/.codex ro,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "203 172 0:58 / /workspace/scratch/9457befac3c8/.aws ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555"
+  ]
+}

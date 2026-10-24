@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "installed quantity and IFC commands registered",
+      "status": "passed"
+    },
+    {
+      "name": "quantity command opens a modeless document-bound dialog",
+      "status": "passed"
+    },
+    {
+      "name": "one wall and one door row exclude the derived wall body",
+      "status": "passed"
+    },
+    {
+      "name": "table cells are read-only and lengths explicitly use SI units",
+      "status": "passed"
+    },
+    {
+      "name": "initial quantity table matches native solid net volume",
+      "status": "passed"
+    },
+    {
+      "name": "quantity table revision matches current model content",
+      "status": "passed"
+    },
+    {
+      "name": "opening and reading quantities creates no transaction or model object",
+      "status": "passed"
+    },
+    {
+      "name": "reopening quantity command reuses the same dialog and observer",
+      "status": "passed"
+    },
+    {
+      "name": "wall row selects its authored persistent object",
+      "status": "passed"
+    },
+    {
+      "name": "door row selects its hosted source object",
+      "status": "passed"
+    },
+    {
+      "name": "coverage includes explicit grid exclusion and derived body role",
+      "status": "passed"
+    },
+    {
+      "name": "cancel coverage preview writes nothing and preserves history",
+      "status": "passed"
+    },
+    {
+      "name": "cancel actual save dialog writes nothing and preserves history",
+      "status": "passed"
+    },
+    {
+      "name": "CSV export requires acknowledgement of excluded grid",
+      "status": "passed"
+    },
+    {
+      "name": "CSV command writes both row files and metadata through chosen path",
+      "status": "passed"
+    },
+    {
+      "name": "GUI-written CSV contains correct authored identity and volume",
+      "status": "passed"
+    },
+    {
+      "name": "CSV success is labelled a current snapshot and does not change history",
+      "status": "passed"
+    },
+    {
+      "name": "reject overwrite preserves every existing bundle file",
+      "status": "passed"
+    },
+    {
+      "name": "host IFC dependency available for actual GUI export",
+      "status": "passed"
+    },
+    {
+      "name": "IFC command uses coverage and save dialogs then creates validated export",
+      "status": "passed"
+    },
+    {
+      "name": "GUI IFC readback has wall, door and real void/fill relationships",
+      "status": "passed"
+    },
+    {
+      "name": "same stem IFC and CSV keep separate metadata sidecars",
+      "status": "passed"
+    },
+    {
+      "name": "both completed exports preserve native history",
+      "status": "passed"
+    },
+    {
+      "name": "model change immediately marks old table stale",
+      "status": "passed"
+    },
+    {
+      "name": "native observer automatically refreshes after completed transaction",
+      "status": "passed"
+    },
+    {
+      "name": "old CSV and IFC snapshots visibly become stale",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores table revision and earlier exports become current",
+      "status": "passed"
+    },
+    {
+      "name": "native Redo restores edited table and stale export indicators",
+      "status": "passed"
+    },
+    {
+      "name": "manual mode retains visibly stale rows and blocks export buttons",
+      "status": "passed"
+    },
+    {
+      "name": "explicit refresh reads new shared type and native volume",
+      "status": "passed"
+    },
+    {
+      "name": "explicit overwrite publishes a fresh bundle without an undo item",
+      "status": "passed"
+    },
+    {
+      "name": "CSV current and older IFC stale statuses are independent",
+      "status": "passed"
+    },
+    {
+      "name": "changed model between preview and save rejects stale revision before writing",
+      "status": "passed"
+    },
+    {
+      "name": "rejected stale export leaves the genuine model edit undoable",
+      "status": "passed"
+    },
+    {
+      "name": "open transaction suspends quantity export",
+      "status": "passed"
+    },
+    {
+      "name": "aborted empty transaction allows automatic refresh",
+      "status": "passed"
+    },
+    {
+      "name": "Escape-style rejection detaches observer and removes panel registry",
+      "status": "passed"
+    },
+    {
+      "name": "quantity dialog reopens cleanly after rejection",
+      "status": "passed"
+    },
+    {
+      "name": "closing document closes quantity window and stops observer",
+      "status": "passed"
+    },
+    {
+      "name": "save/reopen restores identical content revision and source UUID rows",
+      "status": "passed"
+    },
+    {
+      "name": "actual quantity dialog screenshot saved",
+      "status": "passed"
+    }
+  ],
+  "dialogs_seen": [
+    "coverage",
+    "coverage",
+    "file",
+    "coverage",
+    "file",
+    "coverage",
+    "file",
+    "overwrite",
+    "coverage",
+    "file",
+    "coverage",
+    "file",
+    "overwrite",
+    "coverage",
+    "file"
+  ],
+  "expected_errors": [
+    "The model changed since the export preview; refresh quantities and export again"
+  ],
+  "checks_passed": 41,
+  "sample": "/tmp/bim3117-exchange-ui/evidence/ตัวอย่าง_3117/Quantity_Exchange_Workbench.FCStd",
+  "screenshot": "/tmp/bim3117-exchange-ui/evidence/Quantity_Exchange_Workbench.png",
+  "identifiers": {
+    "BIM3117_Project": "01380745-dfde-488a-a2fc-12485bb8d9e2",
+    "BIM3117_Level": "93d2c0ba-85c6-433f-8f00-1f95b2f59282",
+    "BIM3117_Level001": "cc3df8aa-b088-4c4f-b9e8-4ef63b8e7d9e",
+    "BIM3117_WallType": "150b7d39-8560-4730-b49a-5b64e1923de0",
+    "BIM3117_Wall": "a59e582a-8b5f-4f37-877f-506487ecbad4",
+    "BIM3117_WallBody": "9774d328-eab7-44d4-9e49-7c99682eefe3",
+    "BIM3117_Door": "eb779557-a2e8-4e6b-ace6-c956aa95b64a",
+    "BIM3117_Grid": "2a2d04eb-6bce-4e8d-9352-7f1fde9a44d8"
+  },
+  "sample_wall": "BIM3117_Wall",
+  "sample_door": "BIM3117_Door",
+  "content_revision": "fe33ab25d314a6bc8a06cf8c1878a7b223008c8d3e3f88e879232fdef51f7c8c",
+  "net_volume_m3": 4.4775,
+  "csv_path": "/tmp/bim3117-exchange-ui/evidence/ส่งออก_ปริมาณ/6e3bd86b33e1/ทดสอบ.csv",
+  "ifc_path": "/tmp/bim3117-exchange-ui/evidence/ส่งออก_ปริมาณ/6e3bd86b33e1/ทดสอบ.ifc",
+  "snapshot_module": "/tmp/bim3117-exchange-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+  "exchange_module": "/tmp/bim3117-exchange-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/exchange.py"
+}

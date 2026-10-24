@@ -1,0 +1,338 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Window mixed overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Window A: opening overlaps Door A"
+    },
+    {
+      "name": "Window bounds after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Window A: opening extends beyond the wall axis"
+    },
+    {
+      "name": "Window negative sill after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Window A: offset and sill must be zero or positive"
+    },
+    {
+      "name": "Window rehost overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Window A: opening overlaps Window B"
+    },
+    {
+      "name": "Window create overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Invalid window: opening overlaps Door A"
+    },
+    {
+      "name": "Door create mixed overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Invalid door: opening overlaps Window A"
+    },
+    {
+      "name": "Door edit mixed overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Door A: opening overlaps Window A"
+    },
+    {
+      "name": "Door rehost mixed overlap after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Door A: opening overlaps Window B"
+    },
+    {
+      "name": "Opening full wall removal after Undo",
+      "status": "passed",
+      "before": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "after": [
+        8,
+        1,
+        13,
+        "1eead6d70c4c56a9f4a5fc660e23441c67cfae304abce24b8e97a62e4b8e7fdb"
+      ],
+      "error": "Wall C: openings must leave positive wall volume"
+    },
+    {
+      "name": "preserved Window rehost Redo replays",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Window edit is exactly one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Window edit Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Window edit Redo",
+      "status": "passed"
+    },
+    {
+      "name": "Slab complete beam cut after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Beam: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "name": "Slab splitting column after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Column: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "name": "Join splitting column after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Column: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "name": "Beam section fully inside cutter after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Beam: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "name": "Beam zero axis after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Beam axis length must be at least 0.001 mm"
+    },
+    {
+      "name": "Column height fully inside cutter after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Column: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "name": "Column negative effective height after Undo",
+      "status": "passed",
+      "before": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "after": [
+        15,
+        1,
+        17,
+        "10232bad5d2d176a4251af9fc398f9b211a0832173b7fd2746717657b940aff4"
+      ],
+      "error": "Effective column height must be at least 0.001 mm"
+    },
+    {
+      "name": "preserved Slab Redo replays",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Slab edit is exactly one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Slab edit Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Slab edit Redo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Beam edit is exactly one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Beam edit Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Beam edit Redo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Column edit is exactly one Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Column edit Undo",
+      "status": "passed"
+    },
+    {
+      "name": "accepted Column edit Redo",
+      "status": "passed"
+    },
+    {
+      "name": "complete native document validates",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 31
+}

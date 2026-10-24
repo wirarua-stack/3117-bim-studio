@@ -1,0 +1,240 @@
+{
+  "recorded_date": "2026-10-23",
+  "workbench_version": "0.2.1",
+  "reference_package_version": "0.0.1",
+  "tested_environment": "Linux: installed native FreeCAD, real GUI, CSV/IFC, reference and publication units, actual Bonsai application review",
+  "windows_status": "pending; no Windows desktop, executable or PowerShell runner executed",
+  "github_actions_status": "prepared; seven-stage evidence gate executed locally; no remote workflow run",
+  "native_host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+    "qt": "6.8.3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "ifcopenshell": "0.8.4",
+    "gui_display": "Xvfb virtual X11, software rendering, isolated profile",
+    "official_runtime_sha256": "f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434"
+  },
+  "integration_suites": {
+    "install": {
+      "status": "passed",
+      "checks": 1,
+      "report": "docs/evidence/v0.2.1/linux-install-report.json"
+    },
+    "foundation_native": {
+      "status": "passed",
+      "checks": 35,
+      "report": "docs/evidence/v0.2.1/linux-foundation-report.json"
+    },
+    "foundation_fresh_headless": {
+      "status": "passed",
+      "checks": 9,
+      "report": "docs/evidence/v0.2.1/linux-foundation-reopen-report.json"
+    },
+    "architecture_native": {
+      "status": "passed",
+      "checks": 63,
+      "report": "docs/evidence/v0.2.1/linux-architecture-report.json"
+    },
+    "architecture_fresh_headless": {
+      "status": "passed",
+      "checks": 12,
+      "report": "docs/evidence/v0.2.1/linux-architecture-reopen-report.json"
+    },
+    "architecture_gui": {
+      "status": "passed",
+      "checks": 43,
+      "report": "docs/evidence/v0.2.1/linux-architecture-gui-report.json"
+    },
+    "architecture_fresh_gui": {
+      "status": "passed",
+      "checks": 16,
+      "report": "docs/evidence/v0.2.1/linux-architecture-gui-reopen-report.json"
+    },
+    "exchange_native": {
+      "status": "passed",
+      "checks": 47,
+      "report": "docs/evidence/v0.2.1/linux-exchange-report.json"
+    },
+    "exchange_fresh_headless": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.2.1/linux-exchange-reopen-report.json"
+    },
+    "exchange_gui": {
+      "status": "passed",
+      "checks": 41,
+      "report": "docs/evidence/v0.2.1/linux-exchange-gui-report.json"
+    },
+    "exchange_fresh_gui": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.2.1/linux-exchange-gui-reopen-report.json"
+    },
+    "headless_fixture_to_gui": {
+      "status": "passed",
+      "checks": 14,
+      "report": "docs/evidence/v0.2.1/linux-headless-gui-report.json"
+    },
+    "styled_fixture_fresh_gui": {
+      "status": "passed",
+      "checks": 10,
+      "report": "docs/evidence/v0.2.1/linux-headless-gui-reopen-report.json"
+    }
+  },
+  "unit_tests": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "ifcopenshell": "0.9.0.post1",
+    "suites": {
+      "reference_model": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "reference_ifc": {
+        "tests": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "native_ifc_adapter": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "export_publication": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      },
+      "installer": {
+        "tests": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": true
+      }
+    },
+    "total_tests": 47,
+    "skipped": 0,
+    "report": "docs/evidence/v0.2.1/unit-test-report.json"
+  },
+  "host_ifc_adapter_units": {
+    "python": "3.11.14",
+    "ifcopenshell": "0.8.4",
+    "pytest": "9.1.1 from isolated QA path; not installed into FreeCAD",
+    "tests": 9,
+    "skipped": 0,
+    "express_fixture_validation_checks": 19,
+    "scope": "Synthetic adapter fixture, separate from the canonical native sample"
+  },
+  "native_ifc_validation": {
+    "checks": 37,
+    "full_express": {
+      "requested": false,
+      "status": "not_requested",
+      "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+    },
+    "scope": "Actual written/readback native IFC with schema, identity, relationships, placements, solids and quantities"
+  },
+  "bonsai_application": {
+    "status": "passed",
+    "blender": "4.5.14 LTS",
+    "build_hash": "62c1db4208e8",
+    "python": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+    "bonsai": "0.9.0-post1-py311",
+    "ifcopenshell": "0.9.0.post1",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "background": false,
+    "application_geometry_express_checks": 41,
+    "total_with_inspected_gui_capture": 42,
+    "full_express_findings": 0,
+    "report": "docs/evidence/v0.2.1/bonsai-application-report.json",
+    "blender_artifact": {
+      "checksum_source": "https://download.blender.org/release/Blender4.5/blender-4.5.14.sha256",
+      "archive_sha256": "9ba871ff2ecd36526b77432745980b7e6664ecd0c7ca11c48849073dcfe06da3",
+      "archive_bytes": 378045212,
+      "blender_version": "4.5.14 LTS",
+      "build_hash": "62c1db4208e8",
+      "binary": "/tmp/bang_phra_blender/blender-4.5.14-linux-x64/blender",
+      "binary_sha256": "050c02562f81fe80ba616a80198fa02d381e60f8b61b8d39add881f4bca0d7d8"
+    },
+    "bonsai_artifact": {
+      "url": "https://extensions.blender.org/download/sha256:c6e486d096a05584c18fa03ae92ac7799998a4bb6d975161c698d02aa5bb79e2/add-on-bonsai-v0.9.0-post1-py311-linux-x64.zip",
+      "sha256": "c6e486d096a05584c18fa03ae92ac7799998a4bb6d975161c698d02aa5bb79e2",
+      "bytes": 170349791
+    },
+    "qualification": "Bonsai uses IfcOpenShell; cross-application inspection is not proof of a different IFC geometry kernel"
+  },
+  "canonical_example": {
+    "directory": "examples/exchange",
+    "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0",
+    "ifc_sha256": "a62ab703c0170ba9134d0c81ae0ba7932ab04d6ff7da6e44fc6fb01a005aac25",
+    "styled_fcstd_sha256": "f7f9395b8bf830f512734d4421698f426d67177c97b2df11cce947c2b5bafae7",
+    "walls": 3,
+    "doors": 3,
+    "levels_m": [
+      -3,
+      0,
+      3
+    ],
+    "net_wall_volume_m3": 7.666,
+    "gross_one_side_area_m2": 43.5,
+    "net_one_side_area_m2": 38.33,
+    "grid_ifc_exported": false
+  },
+  "exact_distribution_verification": {
+    "companion_report": "3117_BIM_Studio_v0_2_1_Release_Verification.json",
+    "scope": "Exact installer ZIP, public installation macro, installed payload hashes, restart and public Exchange test macro",
+    "reason_external": "Test result is recorded outside the archive to preserve the exact tested bytes"
+  },
+  "historical_only": {
+    "foundation_gui_checks": 24,
+    "foundation_fresh_gui_checks": 9,
+    "installer_gui_checks": 4,
+    "version": "0.2.0",
+    "record": "docs/VERIFICATION_v0_2_0.md"
+  },
+  "dependencies_used_in_reference_test_environment": {
+    "Pygments": "2.21.0",
+    "ifcopenshell": "0.9.0.post1",
+    "iniconfig": "2.3.1",
+    "isodate": "0.7.2",
+    "lark": "1.3.1",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pyparsing": "3.3.3",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "shapely": "2.2.0",
+    "six": "1.17.0",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5"
+  },
+  "evidence_directory": "docs/evidence/v0.2.1",
+  "notes": [
+    "Integration counts are assertions, not independent unit tests or performance measurements. Repeated suite runs are not added together.",
+    "FCStd is the editable authority. Snapshot/CSV/IFC are outputs; native schema remains 1.",
+    "Content revision is a hash; identical authored state after Undo has the same revision.",
+    "Styled FCStd retains the canonical native UUIDs/revision. The GUI stale-output test has a different one-wall fixture.",
+    "Normal native IFC export does not claim full EXPRESS; that additional gate ran in Bonsai and the isolated host-adapter QA path.",
+    "Exports are atomic per file with caught-failure rollback, not crash-atomic across files.",
+    "No host/application binaries are redistributed."
+  ]
+}

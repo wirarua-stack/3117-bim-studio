@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "Plan frame is world XY without double inversion",
+      "status": "passed"
+    },
+    {
+      "name": "Front frame is world X right and Z up",
+      "status": "passed"
+    },
+    {
+      "name": "Rear cardinal view reverses horizontal direction explicitly",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal vertical directions are explicitly unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid plan range rejected before OCCT",
+      "status": "passed"
+    },
+    {
+      "name": "Sub-tolerance plan range rejected before OCCT",
+      "status": "passed"
+    },
+    {
+      "name": "Section preserves a native window hole as two evenodd loops",
+      "status": "passed"
+    },
+    {
+      "name": "Independent section area equals gross wall minus real opening",
+      "status": "passed"
+    },
+    {
+      "name": "Cut fill leaves the actual window interior empty",
+      "status": "passed"
+    },
+    {
+      "name": "Positive cut material is present beside the window",
+      "status": "passed"
+    },
+    {
+      "name": "Plan cut through window gives two wall pieces",
+      "status": "passed"
+    },
+    {
+      "name": "Raising plan cut above window restores continuous wall material",
+      "status": "passed"
+    },
+    {
+      "name": "Rotated rectangular member keeps exact native cut area",
+      "status": "passed"
+    },
+    {
+      "name": "Rotated projection width agrees with independent trigonometry",
+      "status": "passed"
+    },
+    {
+      "name": "Joined member section area retains the native slab deduction",
+      "status": "passed"
+    },
+    {
+      "name": "Joined member cut fill leaves deducted material empty",
+      "status": "passed"
+    },
+    {
+      "name": "Overhead beam inside Top range produces dashed-layer lines",
+      "status": "passed"
+    },
+    {
+      "name": "A wall crossing Cut is not duplicated in the overhead layer",
+      "status": "passed"
+    },
+    {
+      "name": "Top and Bottom range omit wholly outside native products",
+      "status": "passed"
+    },
+    {
+      "name": "Clipped overhead source preserves its projected native bounds",
+      "status": "passed"
+    },
+    {
+      "name": "Global HLR suppresses duplicate coincident front/back outlines",
+      "status": "passed"
+    },
+    {
+      "name": "Native first-hit source is taggable",
+      "status": "passed"
+    },
+    {
+      "name": "Fully occluded source with identical projected bounds is not tagged",
+      "status": "passed"
+    },
+    {
+      "name": "Elevation does not invent section hatching",
+      "status": "passed"
+    },
+    {
+      "name": "Finite elevation depth excludes a farther object",
+      "status": "passed"
+    },
+    {
+      "name": "Section plane adds the genuine first-face cut",
+      "status": "passed"
+    },
+    {
+      "name": "An empty positive-depth view reports no intersecting geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Unsupported native curved edges are not silently tessellated",
+      "status": "passed"
+    },
+    {
+      "name": "Repeat projection has deterministic detached values",
+      "status": "passed"
+    },
+    {
+      "name": "Transient cuts leave the original native BRep byte-identical",
+      "status": "passed"
+    },
+    {
+      "name": "Geometry projection creates no FreeCAD documents",
+      "status": "passed"
+    }
+  ],
+  "scope": "Transient native OCCT cuts, global TechDraw HLR and source visibility",
+  "checks_passed": 31,
+  "geometry_module": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_geometry.py"
+}

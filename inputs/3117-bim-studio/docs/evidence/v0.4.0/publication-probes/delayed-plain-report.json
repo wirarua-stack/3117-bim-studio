@@ -1,0 +1,278 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "publisher": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/bim3117_freecad/export_files.py",
+  "rows": [
+    {
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+      "immediate_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "immediate_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-1yasnwqe"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x40",
+          "cookie": 25929,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25929,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x40",
+          "cookie": 25931,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25931,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x400",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6/.3117-export-1yasnwqe",
+          "mask": "0x8000",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".3117-export-1yasnwqe"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        }
+      ],
+      "three_seconds_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}",
+        "payload.txt.3117-export.lock": "3117 export process 2\n",
+        ".3117-export-1yasnwqe": [
+          "metadata.json",
+          "payload.txt"
+        ],
+        "metadata.json.3117-export.lock": "3117 export process 2\n"
+      },
+      "three_seconds_events": [
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-1yasnwqe"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".metadata.json.3117-export.lock.iNoVkq"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40",
+          "cookie": 25933,
+          "name": ".metadata.json.3117-export.lock.iNoVkq"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": ".payload.txt.3117-export.lock.D9v6hx"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40",
+          "cookie": 25935,
+          "name": ".payload.txt.3117-export.lock.D9v6hx"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25941,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x80",
+          "cookie": 25943,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-delayed-plain-k79l8oe6",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".rsync-tmp"
+        }
+      ],
+      "final_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}",
+        "payload.txt.3117-export.lock": "3117 export process 2\n",
+        ".3117-export-1yasnwqe": [
+          "metadata.json",
+          "payload.txt"
+        ],
+        "metadata.json.3117-export.lock": "3117 export process 2\n"
+      }
+    },
+    {
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+      "immediate_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "immediate_events": [
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x40000100",
+          "cookie": 0,
+          "name": ".3117-export-qz9fbx_p"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x100",
+          "cookie": 0,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x40",
+          "cookie": 25949,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x80",
+          "cookie": 25949,
+          "name": "payload.txt"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x40",
+          "cookie": 25951,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x80",
+          "cookie": 25951,
+          "name": "metadata.json"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x400",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2/.3117-export-qz9fbx_p",
+          "mask": "0x8000",
+          "cookie": 0,
+          "name": ""
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x40000200",
+          "cookie": 0,
+          "name": ".3117-export-qz9fbx_p"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "payload.txt.3117-export.lock"
+        },
+        {
+          "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-delayed-plain-ynnfnyv2",
+          "mask": "0x200",
+          "cookie": 0,
+          "name": "metadata.json.3117-export.lock"
+        }
+      ],
+      "three_seconds_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      },
+      "three_seconds_events": [],
+      "final_state": {
+        "payload.txt": "delayed payload",
+        "metadata.json": "{\"complete\":true}"
+      }
+    }
+  ],
+  "final_events": []
+}

@@ -1,0 +1,38 @@
+Program received signal SIGSEGV, Segmentation fault.
+#0  /lib/x86_64-linux-gnu/libc.so.6(+0x45330) [0x7f81fe7ce330]
+#1  0x7f82049f5f9a in Gui::Document::handleChildren3D(Gui::ViewProvider*, bool) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x3a
+#2  0x7f8204a01185 in Gui::Document::redo(int) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0xa5
+#3  0x7f8204e8ffe3 in Gui::View3DInventor::onMsg(char const*, char const**) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x563
+#4  0x7f8204973460 in Gui::Application::sendMsgToActiveView(char const*, char const**) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x30
+#5  0x7f8204abb6a6 in Gui::Command::_invoke(int, bool) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x126
+#6  0x7f8204abb530 in Gui::Command::invoke(int, Gui::Command::TriggerSource) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x150
+#7  0x7f82049acd0c in Gui::ApplicationPy::sRunCommand(_object*, _object*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x9c
+#8  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpython3.11.so.1.0(+0x1ff3d8) [0x7f82028dc3d8]
+#9  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpython3.11.so.1.0(_PyObject_MakeTpCall+0x254) [0x7f82028b9b14]
+#10  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpython3.11.so.1.0(_PyEval_EvalFrameDefault+0x662) [0x7f82028c6152]
+#11  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpython3.11.so.1.0(_PyFunction_Vectorcall+0x16c) [0x7f82028ed8ac]
+#12  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpyside6.cpython-311-x86_64-linux-gnu.so.6.8(+0x1aeec) [0x7f81ff3f0eec]
+#13  0x7f81ff3f1ad8 in PySide::SignalManager::callPythonMetaMethod(QList<QByteArray> const&, char const*, void**, _object*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpyside6.cpython-311-x86_64-linux-gnu.so.6.8+0x52
+#14  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpyside6.cpython-311-x86_64-linux-gnu.so.6.8(+0x1bbec) [0x7f81ff3f1bec]
+#15  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libpyside6.cpython-311-x86_64-linux-gnu.so.6.8(+0x13cee) [0x7f81ff3e9cee]
+#16  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6(+0x31684a) [0x7f81ff0ca84a]
+#17  0x7f81ff0cb43f in QTimer::timeout(QTimer::QPrivateSignal) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x3f
+#18  /tmp/bim3117-freecad/squashfs-root/usr/lib/python3.11/site-packages/PySide6/QtCore.cpython-311-x86_64-linux-gnu.so(+0x16e642) [0x7f81b4b6a642]
+#19  0x7f81ff097076 in QObject::event(QEvent*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x1f6
+#20  /tmp/bim3117-freecad/squashfs-root/usr/lib/python3.11/site-packages/PySide6/QtCore.cpython-311-x86_64-linux-gnu.so(+0x12f4f1) [0x7f81b4b2b4f1]
+#21  0x7f82003dee48 in QApplicationPrivate::notify_helper(QObject*, QEvent*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Widgets.so.6+0x88
+#22  0x7f8204a55f78 in Gui::GUIApplication::notify(QObject*, QEvent*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0x78
+#23  0x7f81ff113b8a in QCoreApplication::notifyInternal2(QObject*, QEvent*) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x17a
+#24  0x7f81ff01b58c in QTimerInfoList::activateTimers() from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x5ac
+#25  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6(+0xf6972) [0x7f81feeaa972]
+#26  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/./libglib-2.0.so.0(+0x5bde6) [0x7f81fbf32de6]
+#27  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/./libglib-2.0.so.0(+0x5f0a7) [0x7f81fbf360a7]
+#28  /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/./libglib-2.0.so.0(g_main_context_iteration+0x2e) [0x7f81fbf3681e]
+#29  0x7f81feeaab12 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x72
+#30  0x7f81ff14b47c in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x25c
+#31  0x7f81ff14b7da in QCoreApplication::exec() from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libQt6Core.so.6+0x9a
+#32  0x7f820497a861 in Gui::Application::runApplication() from /tmp/bim3117-freecad/squashfs-root/usr/bin/../lib/libFreeCADGui.so+0xd61
+#33  /tmp/bim3117-freecad/squashfs-root/usr/bin/freecad(+0x9cf5) [0x55607b72dcf5]
+#34  /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x7f81fe7b31ca]
+#35  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x7f81fe7b328b]
+#36  /tmp/bim3117-freecad/squashfs-root/usr/bin/freecad(+0x8de9) [0x55607b72cde9]

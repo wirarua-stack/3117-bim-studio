@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "scope": "Offline controller, archive, identity and report-gate unit tests on Linux; synthetic fixtures are not Windows results",
+  "status": "passed",
+  "tests_run": 39,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "windows_execution": false,
+  "created_at": "2026-10-23T09:24:42.555325+00:00"
+}

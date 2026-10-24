@@ -1,0 +1,79 @@
+# Known FreeCAD 1.1.4 native crash reproduction. Run only in a fresh disposable GUI process.
+# The tested sequence may terminate FreeCAD and lose other unsaved documents in that process.
+# No addon, existing file, custom Proxy, Undo clearing, or host binary patch is needed.
+import json,sys,traceback
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtWidgets
+
+def start(output_dir, variant):
+    output=Path(output_dir);output.mkdir(exist_ok=True)
+    report={'status':'running','variant':variant,'steps':[],'freecad':App.Version(),
+            'user_data':App.getUserAppDataDir(),
+            'addon_modules':[name for name in sys.modules if name.startswith(('bim3117','ui3117'))],
+            'addon_directories':list(str(path) for path in (Path(App.getUserAppDataDir())/'Mod').glob('*'))}
+    state={}
+    def write():
+        (output/'report.json').write_text(json.dumps(report,indent=2))
+    def step(s):
+        report['steps'].append(s);print('VARIANT',variant,s,flush=True);write()
+    def drain():
+        Gui.updateGui()
+        QtWidgets.QApplication.processEvents()
+    def baseline():
+        doc=App.newDocument('NativeUndoBranch');doc.UndoMode=1
+        if variant=='feature':
+            try:
+                target=doc.addObject('App::Feature','Target')
+                report['object_type']='App::Feature'
+            except BaseException as error:
+                report['app_feature_available']=False
+                report['app_feature_error']=str(error)
+                import Part
+                target=doc.addObject('Part::Feature','Target')
+                report['object_type']='Part::Feature'
+        else:
+            target=doc.addObject('App::FeaturePython','Target')
+            report['object_type']='App::FeaturePython'
+        state.update(doc=doc,target=target)
+        target.Label='Original';doc.recompute();drain()
+        report['gui_document_api']=[name for name in dir(Gui.activeDocument()) if not name.startswith('_')]
+    def create():
+        doc=state['doc'];doc.openTransaction('Create disposable feature')
+        disposable=doc.addObject(report['object_type'],'Disposable')
+        state['disposable_name']=disposable.Name
+        doc.recompute();doc.commitTransaction();drain()
+    def delete():
+        doc=state['doc'];doc.openTransaction('Delete disposable feature')
+        doc.removeObject(state['disposable_name']);doc.recompute();doc.commitTransaction();drain()
+    def undo():
+        Gui.runCommand('Std_Undo');state['doc'].recompute();drain()
+    def branch():
+        doc=state['doc'];doc.openTransaction('Branch target label edit')
+        state['target'].Label='Edited';doc.recompute();doc.commitTransaction();drain()
+    def redo():
+        Gui.runCommand('Std_Redo');state['doc'].recompute();drain()
+        assert state['target'].Label=='Edited'
+    actions=iter([('baseline target',baseline),('create disposable',create),('delete disposable',delete),
+                  ('Undo deletion',undo),('Undo creation',undo),('new Label edit branch',branch),
+                  ('Undo label edit',undo),('Redo label edit',redo)])
+    def advance():
+        try:
+            name,action=next(actions)
+        except StopIteration:
+            report['status']='passed';step('all passed');App.closeDocument(state['doc'].Name)
+            QtCore.QTimer.singleShot(150,QtWidgets.QApplication.quit);return
+        try:
+            step('before '+name);action();step('after '+name)
+        except BaseException as error:
+            report.update(status='failed',error=str(error),traceback=traceback.format_exc());write()
+            traceback.print_exc();QtCore.QTimer.singleShot(150,QtWidgets.QApplication.quit);return
+        # Return to the top-level event loop between EVERY operation.
+        QtCore.QTimer.singleShot(500,advance)
+    write();QtCore.QTimer.singleShot(500,advance)
+
+import tempfile
+_repro_output = Path(tempfile.mkdtemp(prefix='freecad-redo-branch-'))
+print('Reproduction evidence:', str(_repro_output), flush=True)
+QtCore.QTimer.singleShot(1500, lambda: start(str(_repro_output), 'feature'))

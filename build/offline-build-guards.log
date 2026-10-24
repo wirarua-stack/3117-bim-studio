@@ -1,0 +1,12 @@
+test_archive_traversal_rejected (test_build.BuildGuardTests.test_archive_traversal_rejected) ... ok
+test_download_cache_rejects_changed_bytes (test_build.BuildGuardTests.test_download_cache_rejects_changed_bytes) ... ok
+test_linux_attempt_refuses_before_creating_workroot (test_build.BuildGuardTests.test_linux_attempt_refuses_before_creating_workroot) ... ok
+test_non_pe_cannot_be_attested_as_windows_host (test_build.BuildGuardTests.test_non_pe_cannot_be_attested_as_windows_host) ... ok
+test_release_bindings_cannot_be_satisfied_by_debug_defines (test_build.BuildGuardTests.test_release_bindings_cannot_be_satisfied_by_debug_defines) ... ok
+test_reviewed_patch_and_asset_pins_are_complete (test_build.BuildGuardTests.test_reviewed_patch_and_asset_pins_are_complete) ... ok
+test_timeout_still_kills_owned_process_if_tree_cleanup_times_out (test_build.BuildGuardTests.test_timeout_still_kills_owned_process_if_tree_cleanup_times_out) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.084s
+
+OK

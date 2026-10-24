@@ -1,0 +1,12 @@
+import sys, traceback
+from PySide import QtCore, QtWidgets
+sys.path.insert(0, '/workspace/scratch/9457befac3c8/3117-bim-studio/tests')
+def run_tests():
+    try:
+        from freecad_types_gui_reopen import main
+        report=main('/tmp/bim3117-v050-ui/evidence-final')
+        print('GUI_RESULT', report['status'], report['checks_passed'], flush=True)
+    except BaseException:
+        traceback.print_exc()
+    QtCore.QTimer.singleShot(150, QtWidgets.QApplication.quit)
+QtCore.QTimer.singleShot(1500, run_tests)

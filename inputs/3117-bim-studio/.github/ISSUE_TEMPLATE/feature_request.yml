@@ -1,0 +1,20 @@
+name: Feature request
+description: Define a user workflow and its acceptance criteria
+title: "[Feature] "
+body:
+  - type: textarea
+    attributes:
+      label: User workflow
+      description: Describe a real building design or documentation task.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Acceptance criteria
+      description: Include observable output, editing, Undo and persistence where relevant.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Scope and dependencies
+      description: State what model entities, IFC coverage and UI are needed.

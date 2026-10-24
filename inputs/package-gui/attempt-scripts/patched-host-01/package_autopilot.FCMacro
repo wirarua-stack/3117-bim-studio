@@ -1,0 +1,244 @@
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtWidgets
+
+_package_root = Path(os.environ['BIM3117_PACKAGE_ROOT'])
+_package_output = Path(os.environ['BIM3117_PACKAGE_EVIDENCE'])
+_package_mode = os.environ['BIM3117_PACKAGE_STAGE']
+_package_suite = {
+    'publicbuilding': {'name': 'building', 'count': 35, 'title': '3117 Building Authoring test',
+                       'success': 'Building Authoring GUI checks',
+                       'glob': 'Building_*/building-gui-report.json',
+                       'module_fields': ('module_source',)},
+    'publicmacro': {'name': 'exchange', 'count': 41, 'title': '3117 Quantity / Exchange test',
+                    'success': 'Passed 41 Quantity / Exchange GUI checks',
+                    'glob': 'Exchange_*/exchange-gui-report.json',
+                    'module_fields': ('snapshot_module', 'exchange_module')},
+    'publicarchitecture': {'name': 'architecture', 'count': 43, 'title': '3117 Wall / Door test',
+                           'success': 'Passed 43 Wall / Door GUI checks',
+                           'glob': 'Architecture_*/architecture-gui-report.json',
+                           'module_fields': ('module_source',)},
+    'publicdrawings': {'name': 'drawings', 'count': 53, 'title': '3117 Drawings and Sheets test',
+                       'success': 'Passed 53 Drawings and Sheets GUI checks',
+                       'glob': 'Drawings_*/drawings-gui-report.json',
+                       'module_fields': ('module_source',)},
+    'publictypes': {'name': 'types', 'count': 52, 'title': '3117 Types and Quantities test',
+                    'success': 'Passed 52 Types and Quantities GUI checks',
+                    'glob': 'Types_*/types-gui-report.json', 'module_fields': ('module_source',)},
+    'publicsmoke': {'name': 'smoke', 'count': 24, 'title': '3117 smoke test',
+                   'success': 'Passed 24 GUI checks', 'glob': '[0-9]*/gui-smoke-report.json',
+                   'module_fields': ('module_source',)},
+}.get(_package_mode)
+_package_sha256 = os.environ['BIM3117_PACKAGE_SHA256']
+_package_user = Path(App.getUserAppDataDir())
+_package_expected_data = Path(os.environ['XDG_DATA_HOME']).resolve()
+if not _package_user.resolve().is_relative_to(_package_expected_data):
+    raise RuntimeError('FreeCAD did not use the task-specific isolated data profile')
+_package_target = _package_user / 'Mod' / 'BIM3117'
+_package_dialogs = []
+_package_checks = []
+_package_initial_documents = set(App.listDocuments())
+_package_finished = False
+_package_timer = QtCore.QTimer()
+
+
+def _package_attest_host(phase):
+    """Bind the actual mapped GUI/App libraries to the batch's pinned files."""
+    report = {'status': 'running', 'phase': phase, 'pid': os.getpid(),
+              'freecad': App.Version(), 'python': sys.version, 'qt': QtCore.qVersion(),
+              'gui_up': bool(App.GuiUp), 'libraries': {}}
+    try:
+        manifest_path = Path(os.environ['BIM3117_HOST_MANIFEST'])
+        manifest_bytes = manifest_path.read_bytes()
+        manifest_sha = hashlib.sha256(manifest_bytes).hexdigest()
+        report['expected_manifest_sha256'] = manifest_sha
+        if manifest_sha != os.environ['BIM3117_HOST_MANIFEST_SHA256']:
+            raise RuntimeError('Expected host manifest changed after process launch')
+        expected = json.loads(manifest_bytes)
+        executable = Path('/proc/self/exe').resolve(strict=True)
+        executable_sha = hashlib.sha256(Path('/proc/self/exe').read_bytes()).hexdigest()
+        report['executable'] = {'path': str(executable), 'sha256': executable_sha}
+        if (str(executable) != expected['executable']['path']
+                or executable_sha != expected['executable']['sha256']):
+            raise RuntimeError('Actual GUI executable is not the pinned compiled host')
+        maps = []
+        for line in Path('/proc/self/maps').read_text().splitlines():
+            parts = line.split(maxsplit=5)
+            if len(parts) == 6 and parts[5].startswith('/'):
+                maps.append({'path': parts[5], 'inode': int(parts[4]), 'device': parts[3]})
+        for name, wanted in expected['libraries'].items():
+            matches = [item for item in maps if Path(item['path']).name == name
+                       or Path(item['path']).name.startswith(name + '.')]
+            if not matches:
+                raise RuntimeError('Pinned library is not mapped in this GUI process: ' + name)
+            if any(item['path'].endswith(' (deleted)') for item in matches):
+                raise RuntimeError('A mapped host library was replaced while loaded: ' + name)
+            paths = {str(Path(item['path']).resolve(strict=True)) for item in matches}
+            if paths != {wanted['path']}:
+                raise RuntimeError('Unexpected or duplicate mapped host libraries: ' + repr((name, sorted(paths))))
+            actual_path = Path(wanted['path'])
+            details = actual_path.stat()
+            inodes = {item['inode'] for item in matches}
+            actual_sha = hashlib.sha256(actual_path.read_bytes()).hexdigest()
+            row = {'path': str(actual_path), 'sha256': actual_sha, 'bytes': details.st_size,
+                   'mapped_inodes': sorted(inodes), 'file_inode': details.st_ino,
+                   'expected_sha256': wanted['sha256'],
+                   'matches': actual_sha == wanted['sha256'] and inodes == {details.st_ino}}
+            report['libraries'][name] = row
+            if not row['matches']:
+                raise RuntimeError('Mapped host library identity/hash differs from the pinned file: ' + name)
+        if set(report['libraries']) != {'libFreeCADGui.so', 'libFreeCADApp.so'}:
+            raise RuntimeError('Host manifest must attest both FreeCAD GUI and App libraries')
+        if not report['gui_up']:
+            raise RuntimeError('Expected a real GUI host')
+        report['status'] = 'passed'
+    except BaseException as error:
+        report.update(status='failed', error=str(error), traceback=traceback.format_exc())
+    (_package_output / ('package-' + _package_mode + '-host-' + phase + '.json')).write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    return report
+
+
+_package_host_start = _package_attest_host('start')
+if _package_host_start['status'] != 'passed':
+    QtCore.QTimer.singleShot(0, QtWidgets.QApplication.quit)
+    raise RuntimeError('Host attestation failed: ' + _package_host_start.get('error', 'unknown error'))
+
+if os.environ.get('BIM3117_PACKAGE_TRACE') == '1':
+    import sys
+    from PySide import QtGui
+    def _package_trace(frame, event, arg):
+        if event == 'line' and frame.f_code.co_filename.endswith('freecad_exchange_gui.py') and frame.f_lineno in (258, 259, 260, 263):
+            local = frame.f_locals
+            doc, panel, top = local.get('doc'), local.get('panel'), local.get('top')
+            undo = Gui.getMainWindow().findChild(QtGui.QAction, 'Std_Undo')
+            print('PACKAGE_UNDO_TRACE', json.dumps({'line': frame.f_lineno, 'UndoCount': doc.UndoCount,
+                'RedoCount': doc.RedoCount, 'HasPendingTransaction': doc.HasPendingTransaction,
+                'active_transaction': repr(App.getActiveTransaction()), 'top': top.Elevation.Value,
+                'baseline': local.get('baseline_revision'), 'panel_revision': panel.source_snapshot['content_revision'],
+                'dirty': panel._dirty, 'exports': panel.export_label.text(),
+                'undo_action_enabled': undo.isEnabled() if undo else None,
+                'active_document': App.ActiveDocument.Name if App.ActiveDocument else None}, ensure_ascii=False), flush=True)
+        return _package_trace
+    sys.settrace(_package_trace)
+
+
+def _package_check(name, condition):
+    if not condition:
+        raise AssertionError(name)
+    _package_checks.append({'name': name, 'status': 'passed'})
+
+
+def _package_finish():
+    global _package_finished
+    if _package_finished:
+        return
+    _package_finished = True
+    _package_timer.stop()
+    report = {'status': 'running', 'checks': _package_checks,
+              'freecad': App.Version(), 'qt': QtCore.qVersion(), 'gui_up': bool(App.GuiUp),
+              'zip_sha256': _package_sha256, 'extracted_root': str(_package_root),
+              'actual_user_data': str(_package_user), 'target': str(_package_target),
+              'expected_data_root': str(_package_expected_data),
+              'profile_containment_checked_before_any_installation': True,
+              'dialogs': _package_dialogs, 'mode': _package_mode}
+    report['host_attestation_start'] = _package_host_start
+    report['host_attestation_end'] = _package_attest_host('end')
+    report['host_history_branch_gate'] = 'not_evaluated_by_package_suite'
+    try:
+        if report['host_attestation_end']['status'] != 'passed':
+            raise RuntimeError('Host attestation failed at package completion: '
+                               + report['host_attestation_end'].get('error', 'unknown error'))
+        manifest = json.loads((_package_root / 'MANIFEST.json').read_text())
+        matches = []
+        for name, expected in manifest['sha256'].items():
+            if name.startswith('workbench/'):
+                rel = name[len('workbench/'):]
+                destination = _package_target / rel
+                observed = hashlib.sha256(destination.read_bytes()).hexdigest()
+                matches.append({'path': rel, 'sha256': observed, 'matches': observed == expected})
+        _package_check('installed workbench files match the tested ZIP manifest',
+                       bool(matches) and all(item['matches'] for item in matches))
+        report['installed_files'] = matches
+        _package_check('actual host user-data and extracted package paths include Thai characters',
+                       any(ord(char) >= 0x0E00 and ord(char) <= 0x0E7F for char in str(_package_user))
+                       and any(ord(char) >= 0x0E00 and ord(char) <= 0x0E7F for char in str(_package_root)))
+        if _package_mode == 'install':
+            receipt = json.loads((_package_target / 'bim3117-install.json').read_text())
+            _package_check('native installer confirmation shows the actual host destination',
+                           any(str(_package_target) in value and 'ดำเนินการติดตั้งหรือไม่' in value
+                               for value in _package_dialogs))
+            _package_check('native installer shows successful completion',
+                           any('Workbench files installed' in value for value in _package_dialogs))
+            _package_check('installer receipt identifies version 0.5.0 and expected project',
+                           receipt['version'] == '0.5.0'
+                           and receipt['project_id'] == 'org.3117.bimstudio.workbench')
+            _package_check('installer leaves native documents unchanged',
+                           set(App.listDocuments()) == _package_initial_documents)
+        else:
+            _package_check('unchanged packaged public macro reaches its success dialog',
+                           any(_package_suite['success'] in value
+                               for value in _package_dialogs))
+            reports = sorted((_package_user / 'BIM3117_Test_Reports').glob(_package_suite['glob']))
+            _package_check('public macro writes its report in the actual host user-data folder', bool(reports))
+            source = reports[-1]
+            gui = json.loads(source.read_text())
+            _package_check('public macro completes all expected actual GUI checks',
+                           gui['status'] == 'passed' and gui['checks_passed'] == _package_suite['count'])
+            _package_check('public macro imports installed native modules',
+                           all(Path(gui[field]).resolve().is_relative_to(_package_target.resolve())
+                               for field in _package_suite['module_fields']))
+            _package_check('public macro leaves its saved example open for inspection',
+                           any(doc.FileName == gui['sample'] for doc in App.listDocuments().values()))
+            (_package_output / ('public-' + _package_suite['name'] + '-gui-report.json')).write_bytes(source.read_bytes())
+            report.update(public_gui_report=str(source), gui_checks_passed=gui['checks_passed'],
+                          example=gui['sample'], screenshot=gui.get('screenshot') or gui.get('screenshots', [''])[0])
+        report.update(status='passed', checks_passed=len(_package_checks))
+    except BaseException as error:
+        report.update(status='failed', error=str(error), traceback=traceback.format_exc(),
+                      checks_passed=len(_package_checks))
+    name = ('packaged-installer-gui-report.json' if _package_mode == 'install'
+            else 'public-' + _package_suite['name'] + '-macro-report.json')
+    (_package_output / name).write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print('PACKAGE_CHECK', _package_mode, report['status'], report['checks_passed'], flush=True)
+    for name in set(App.listDocuments()) - _package_initial_documents:
+        App.closeDocument(name)
+    QtCore.QTimer.singleShot(100, QtWidgets.QApplication.quit)
+
+
+def _package_respond():
+    modal = QtWidgets.QApplication.activeModalWidget()
+    if isinstance(modal, QtWidgets.QFileDialog):
+        title = modal.windowTitle()
+        if ('เลือกโฟลเดอร์ที่แตก ZIP' in title or 'Select the extracted 3117' in title):
+            modal.setDirectory(str(_package_root))
+            entry = modal.findChild(QtWidgets.QLineEdit, 'fileNameEdit')
+            if entry is not None:
+                entry.setText(str(_package_root))
+            QtCore.QTimer.singleShot(100, modal.accept)
+    elif isinstance(modal, QtWidgets.QMessageBox):
+        title, message = modal.windowTitle(), modal.text()
+        is_installer = _package_mode == 'install' and title == '3117 BIM Studio'
+        is_final = _package_suite is not None and title in (
+            _package_suite['title'], _package_suite['title'] + ' failed')
+        if not (is_installer or is_final):
+            return
+        _package_dialogs.append(message)
+        yes = modal.button(QtWidgets.QMessageBox.Yes)
+        if is_installer and yes is not None:
+            yes.click()
+        else:
+            modal.accept()
+            QtCore.QTimer.singleShot(150, _package_finish)
+
+
+_package_timer.setInterval(100)
+_package_timer.timeout.connect(_package_respond)
+_package_timer.start()

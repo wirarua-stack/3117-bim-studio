@@ -1,0 +1,2 @@
+Program received signal SIGSEGV, Segmentation fault.
+/tmp/bim3117-freecad/squashfs-root/AppRun: line 34: 48779 Segmentation fault      "${MAIN}" "$@"

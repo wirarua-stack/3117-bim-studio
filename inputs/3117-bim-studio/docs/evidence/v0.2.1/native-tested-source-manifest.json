@@ -1,0 +1,50 @@
+[
+  {
+    "path": "bim3117_freecad/__init__.py",
+    "tested_sha256": "0f9766fa8a0b8a123879eecd56b74d9c142a80e2a9911f9d60f9f9c222b40129",
+    "current_source_sha256": "0f9766fa8a0b8a123879eecd56b74d9c142a80e2a9911f9d60f9f9c222b40129",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/building.py",
+    "tested_sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61",
+    "current_source_sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/exchange.py",
+    "tested_sha256": "36cf2e6e45b51f64428f5e20644b2c9dfe4f1cd075385f8d9328614995110c61",
+    "current_source_sha256": "36cf2e6e45b51f64428f5e20644b2c9dfe4f1cd075385f8d9328614995110c61",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/export_files.py",
+    "tested_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+    "current_source_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/ifc_native.py",
+    "tested_sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0",
+    "current_source_sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/model.py",
+    "tested_sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce",
+    "current_source_sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/services.py",
+    "tested_sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582",
+    "current_source_sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582",
+    "matches_source": true
+  },
+  {
+    "path": "bim3117_freecad/snapshot.py",
+    "tested_sha256": "ab2a3ef40eafadc19e83c9526d0e116a66a4b51d6ceb937ff6d9e11be49be023",
+    "current_source_sha256": "ab2a3ef40eafadc19e83c9526d0e116a66a4b51d6ceb937ff6d9e11be49be023",
+    "matches_source": true
+  }
+]

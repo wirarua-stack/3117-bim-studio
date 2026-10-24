@@ -1,0 +1,105 @@
+{
+  "status": "static_checks_passed_gui_not_executed",
+  "files": {
+    "run_package_batch.py": {
+      "sha256": "196a3551e3a2fdf3bef4ca1a7e99be0c804805316599c5efd14851575ff95ec8",
+      "bytes": 9599,
+      "syntax_valid": true,
+      "original_qa_bytes_preserved": true
+    },
+    "run_package_check.py": {
+      "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727",
+      "bytes": 13311,
+      "syntax_valid": true,
+      "original_qa_bytes_preserved": true
+    },
+    "package_autopilot.FCMacro": {
+      "sha256": "d8411ceca5d676fc9ff28a1f02c423c1f12359c10a2c6d6444b494914fb8e8a9",
+      "bytes": 14692,
+      "syntax_valid": true,
+      "original_qa_bytes_preserved": true
+    }
+  },
+  "frozen_zip": "/workspace/scratch/9457befac3c8/deliverables/3117_BIM_Studio_v0_5_0_FreeCAD.zip",
+  "frozen_zip_sha256": "ddfdaed0c10a4d93f4f9e808106f7c31db553d825619cd1ce39cd21ab70b9eb7",
+  "public_macros_from_frozen_zip": {
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Install_3117_BIM_Studio.FCMacro": {
+      "sha256": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632",
+      "bytes": 1640
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Manage_3117_BIM_Studio.FCMacro": {
+      "sha256": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e",
+      "bytes": 1487
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Architecture_Test.FCMacro": {
+      "sha256": "636b48bdb0db0a8fa467c51c5f5f103070c03105de0a79be1505c618bb7a23be",
+      "bytes": 2740
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Building_Test.FCMacro": {
+      "sha256": "cf02a8ef4ec0cd87dd947e42832ad89ae4192748b2d3b057a29f653fa5b69aa5",
+      "bytes": 2991
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Drawings_Test.FCMacro": {
+      "sha256": "553449ef38da90e79cf53625049f8e0e23a74bf9e9d1dc0c7d48c55aa52e7e53",
+      "bytes": 2885
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Exchange_Test.FCMacro": {
+      "sha256": "3baebd70592a6bcc45197079b4db7d437e5cc708fdd808de9ab9cf410c6d1853",
+      "bytes": 2929
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Smoke_Test.FCMacro": {
+      "sha256": "fc87af0a0a0dae2036a5c2bb581db61b344705081a1f0c834022c4386af41e19",
+      "bytes": 2404
+    },
+    "3117_BIM_Studio_v0.5.0_FreeCAD/Run_3117_Types_Test.FCMacro": {
+      "sha256": "60278d5999ccd27f33474d4dc45843ebdad73c1e4fe60dc4822bcf60c9deb4ea",
+      "bytes": 3003
+    }
+  },
+  "seven_stage_order_unchanged": true,
+  "stages": [
+    [
+      "install",
+      "packaged-installer-gui-report.json",
+      null
+    ],
+    [
+      "publicsmoke",
+      "public-smoke-macro-report.json",
+      24
+    ],
+    [
+      "publicarchitecture",
+      "public-architecture-macro-report.json",
+      43
+    ],
+    [
+      "publicmacro",
+      "public-exchange-macro-report.json",
+      41
+    ],
+    [
+      "publicbuilding",
+      "public-building-macro-report.json",
+      35
+    ],
+    [
+      "publicdrawings",
+      "public-drawings-macro-report.json",
+      53
+    ],
+    [
+      "publictypes",
+      "public-types-macro-report.json",
+      52
+    ]
+  ],
+  "packaging_assertion_call_expressions_unchanged": true,
+  "packaging_assertion_call_sites": 11,
+  "dialog_response_function_unchanged": true,
+  "suite_definitions_unchanged": true,
+  "expected_public_gui_checks": 248,
+  "expected_packaging_checks": 48,
+  "gui_executed": false,
+  "source_build_patch_status": "not_evaluated_by_static_preparation"
+}

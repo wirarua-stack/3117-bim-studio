@@ -1,0 +1,258 @@
+{
+  "version": "0.2.1",
+  "generated_at_utc": "2026-10-23T03:23:11.063541+00:00",
+  "tested_host": "FreeCAD 1.1.4 Linux, Python 3.11.14, Qt 6.8.3, bundled IfcOpenShell 0.8.4",
+  "source": "/workspace/scratch/9457befac3c8/3117-bim-studio/workbench",
+  "installed_workbench": "/tmp/bim3117-exchange-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117",
+  "all_source_files_match_installed": true,
+  "suites": [
+    {
+      "suite": "headless-gui",
+      "status": "passed",
+      "checks_passed": 14,
+      "report": "/tmp/bim3117-exchange-ui/evidence/headless-gui-report.json",
+      "report_sha256": "8501bc90cb4783d4c128ebbe706580d58877345014c366998b538c15e9fa9bcc",
+      "harness": "tests/freecad_headless_gui.py",
+      "harness_sha256": "5cf1b6479a5c2aa8efc785ffcd40e9838306042e2aac1b839add833561a245d5"
+    },
+    {
+      "suite": "headless-gui-reopen",
+      "status": "passed",
+      "checks_passed": 10,
+      "report": "/tmp/bim3117-exchange-ui/evidence/headless-gui-reopen-report.json",
+      "report_sha256": "f88e72e24a756109aab1a5e038a6c8091e1499926bdcaba7d58a811077b3efae",
+      "harness": "tests/freecad_headless_gui_reopen.py",
+      "harness_sha256": "5b1be4f4a62a5c57e8d18f226964f1c9f1a5f11973fc1d5c8f4c78d787874686"
+    },
+    {
+      "suite": "architecture-gui",
+      "status": "passed",
+      "checks_passed": 43,
+      "report": "/tmp/bim3117-exchange-ui/evidence/architecture-gui-report.json",
+      "report_sha256": "1f134c02c5f0a0d126ba4ca680e64b0281b235ecfb9d7ae42dd58bb7a4628576",
+      "harness": "tests/freecad_architecture_gui.py",
+      "harness_sha256": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d"
+    },
+    {
+      "suite": "architecture-gui-reopen",
+      "status": "passed",
+      "checks_passed": 16,
+      "report": "/tmp/bim3117-exchange-ui/evidence/architecture-gui-reopen-report.json",
+      "report_sha256": "c2764355a4a59da89ee4347feddf929fb13ed8af9e83dfa90214d8742f63c7e6",
+      "harness": "tests/freecad_architecture_gui_reopen.py",
+      "harness_sha256": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b"
+    },
+    {
+      "suite": "exchange-gui",
+      "status": "passed",
+      "checks_passed": 41,
+      "report": "/tmp/bim3117-exchange-ui/evidence/exchange-gui-report.json",
+      "report_sha256": "23358818c8ae8a048d92dfc9bd4d07ede909333a0337f3aa2d0e736ef1070110",
+      "harness": "tests/freecad_exchange_gui.py",
+      "harness_sha256": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5"
+    },
+    {
+      "suite": "exchange-gui-reopen",
+      "status": "passed",
+      "checks_passed": 10,
+      "report": "/tmp/bim3117-exchange-ui/evidence/exchange-gui-reopen-report.json",
+      "report_sha256": "9b164b6766e3ef864fd8c8e0bac67bf2a9cb6126d4f1cc922b497d0f27290c5e",
+      "harness": "tests/freecad_exchange_gui_reopen.py",
+      "harness_sha256": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c"
+    }
+  ],
+  "checks_passed_total": 134,
+  "thai_font_support": "Sarabun Regular/Bold/Italic in isolated XDG data/fonts",
+  "native_example": {
+    "gui_copy": "/tmp/bim3117-exchange-ui/evidence/native-example/Quantity_Exchange_Workbench.FCStd",
+    "gui_copy_sha256": "f7f9395b8bf830f512734d4421698f426d67177c97b2df11cce947c2b5bafae7",
+    "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0",
+    "original_headless_source": "/tmp/bim3117-exchange-qa/native-final/save_ภาษาไทย/Quantity_Exchange_Workbench.FCStd",
+    "original_headless_source_sha256": "eabc3b3cd4d23f3a98217592fa525d388d6b47e73c431af3b514c842c81a430d",
+    "original_source_unmodified": true,
+    "screenshot": "/tmp/bim3117-exchange-ui/evidence/Quantity_Exchange_Fixture_GUI.png",
+    "screenshot_sha256": "80ef28e8dad4b2fcaec1cf0a76a8049cb1b416e852994cddfc4312f18a4a25d3"
+  },
+  "files": [
+    {
+      "path": "Init.py",
+      "source_sha256": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+      "installed_sha256": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+      "matches": true
+    },
+    {
+      "path": "InitGui.py",
+      "source_sha256": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+      "installed_sha256": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/__init__.py",
+      "source_sha256": "0f9766fa8a0b8a123879eecd56b74d9c142a80e2a9911f9d60f9f9c222b40129",
+      "installed_sha256": "0f9766fa8a0b8a123879eecd56b74d9c142a80e2a9911f9d60f9f9c222b40129",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/building.py",
+      "source_sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61",
+      "installed_sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/exchange.py",
+      "source_sha256": "36cf2e6e45b51f64428f5e20644b2c9dfe4f1cd075385f8d9328614995110c61",
+      "installed_sha256": "36cf2e6e45b51f64428f5e20644b2c9dfe4f1cd075385f8d9328614995110c61",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/export_files.py",
+      "source_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+      "installed_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/ifc_native.py",
+      "source_sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0",
+      "installed_sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/model.py",
+      "source_sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce",
+      "installed_sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/services.py",
+      "source_sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582",
+      "installed_sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582",
+      "matches": true
+    },
+    {
+      "path": "bim3117_freecad/snapshot.py",
+      "source_sha256": "ab2a3ef40eafadc19e83c9526d0e116a66a4b51d6ceb937ff6d9e11be49be023",
+      "installed_sha256": "ab2a3ef40eafadc19e83c9526d0e116a66a4b51d6ceb937ff6d9e11be49be023",
+      "matches": true
+    },
+    {
+      "path": "package.xml",
+      "source_sha256": "bd42518004d301b8662f16fe76a7774173d5515eccb38d65fbeb30006426965f",
+      "installed_sha256": "bd42518004d301b8662f16fe76a7774173d5515eccb38d65fbeb30006426965f",
+      "matches": true
+    },
+    {
+      "path": "ui3117/__init__.py",
+      "source_sha256": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+      "installed_sha256": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+      "matches": true
+    },
+    {
+      "path": "ui3117/commands.py",
+      "source_sha256": "9a48e289353de42e438b6d49382f17b60f017b05c4f76d6bb939bf11b00e5ad0",
+      "installed_sha256": "9a48e289353de42e438b6d49382f17b60f017b05c4f76d6bb939bf11b00e5ad0",
+      "matches": true
+    },
+    {
+      "path": "ui3117/dialogs.py",
+      "source_sha256": "44a9450869eee2fc5bf08f0bde4702ff35082e55a5f6c13cb4e083672eade0fd",
+      "installed_sha256": "44a9450869eee2fc5bf08f0bde4702ff35082e55a5f6c13cb4e083672eade0fd",
+      "matches": true
+    },
+    {
+      "path": "ui3117/exchange_dialog.py",
+      "source_sha256": "ea5fbee8b17afedf3b04c1a9345fa49aac5a96aa7bda09f0b57dff01321b7e16",
+      "installed_sha256": "ea5fbee8b17afedf3b04c1a9345fa49aac5a96aa7bda09f0b57dff01321b7e16",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/delete.svg",
+      "source_sha256": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f",
+      "installed_sha256": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/door.svg",
+      "source_sha256": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c",
+      "installed_sha256": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/edit.svg",
+      "source_sha256": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+      "installed_sha256": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/export_ifc.svg",
+      "source_sha256": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456",
+      "installed_sha256": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/grid.svg",
+      "source_sha256": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+      "installed_sha256": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/info.svg",
+      "source_sha256": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+      "installed_sha256": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/level.svg",
+      "source_sha256": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+      "installed_sha256": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/project.svg",
+      "source_sha256": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+      "installed_sha256": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/quantities.svg",
+      "source_sha256": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5",
+      "installed_sha256": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/wall.svg",
+      "source_sha256": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae",
+      "installed_sha256": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/wall_type.svg",
+      "source_sha256": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944",
+      "installed_sha256": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944",
+      "matches": true
+    },
+    {
+      "path": "ui3117/icons/workbench.svg",
+      "source_sha256": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+      "installed_sha256": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+      "matches": true
+    },
+    {
+      "path": "ui3117/qt.py",
+      "source_sha256": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+      "installed_sha256": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+      "matches": true
+    },
+    {
+      "path": "ui3117/viewproviders.py",
+      "source_sha256": "021c9b651bcda127dc60ccef70ed79649f209a1ec7d25fe1378e5e249d3c36ea",
+      "installed_sha256": "021c9b651bcda127dc60ccef70ed79649f209a1ec7d25fe1378e5e249d3c36ea",
+      "matches": true
+    },
+    {
+      "path": "ui3117/workbench.py",
+      "source_sha256": "be2a49eec1679e4795910d1065151e28a62145d9690dc3021a4e697435480448",
+      "installed_sha256": "be2a49eec1679e4795910d1065151e28a62145d9690dc3021a4e697435480448",
+      "matches": true
+    }
+  ]
+}

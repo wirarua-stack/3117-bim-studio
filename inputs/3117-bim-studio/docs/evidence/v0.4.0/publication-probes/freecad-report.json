@@ -1,0 +1,326 @@
+{
+  "mode": "freecad",
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "executable": "/tmp/bim3117-freecad/squashfs-root/usr/bin/freecadcmd",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "pid": 7,
+  "publisher": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/bim3117_freecad/export_files.py",
+  "publisher_sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+  "functions": {
+    "replace": {
+      "repr": "<built-in function replace>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "rename": {
+      "repr": "<built-in function rename>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "unlink": {
+      "repr": "<built-in function unlink>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "remove": {
+      "repr": "<built-in function remove>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    },
+    "rmdir": {
+      "repr": "<built-in function rmdir>",
+      "module": "posix",
+      "builtin": true,
+      "same_posix": true
+    }
+  },
+  "directories": [
+    {
+      "folder": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/filesystem-probe-freecad-rpl0q2fk",
+      "parent_stat": {
+        "device": 27,
+        "mode": 16877
+      },
+      "operations": [
+        {
+          "operation": "os.replace(source,target)",
+          "return": "None",
+          "immediate_state": {
+            "target.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658287,
+              "device": 27,
+              "data": "new payload"
+            }
+          }
+        },
+        {
+          "operation": "os.unlink(target)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "Path(source).unlink(missing_ok=True)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(nonexistent)",
+          "exception": "FileNotFoundError(2, 'No such file or directory')",
+          "errno": 2,
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(relative,dir_fd)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "ctypes libc.unlink(path)",
+          "return": "{'result': 0, 'errno': 0}",
+          "immediate_state": {}
+        },
+        {
+          "operation": "shutil.rmtree(tree)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "installed publish_bundle success",
+          "return": "None",
+          "immediate_state": {
+            "metadata.json": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658719,
+              "device": 27,
+              "data": "{\"complete\":true}"
+            },
+            "payload.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658718,
+              "device": 27,
+              "data": "published payload"
+            }
+          }
+        },
+        {
+          "operation": "installed publish_bundle before_commit rejection",
+          "exception": "RuntimeError('intentional before_commit rejection')",
+          "errno": null,
+          "immediate_state": {}
+        }
+      ],
+      "initial_state": {
+        "source.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658287,
+          "device": 27,
+          "data": "new payload"
+        },
+        "target.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658703,
+          "device": 27,
+          "data": "old payload"
+        }
+      },
+      "final_state": {
+        "aborted": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658703,
+          "device": 27,
+          "children": []
+        },
+        "bundle": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658287,
+          "device": 27,
+          "children": [
+            "payload.txt",
+            "metadata.json"
+          ]
+        }
+      }
+    },
+    {
+      "folder": "/tmp/bim3117-drawing-render/filesystem-probes/filesystem-probe-freecad-tg_qijtr",
+      "parent_stat": {
+        "device": 27,
+        "mode": 16877
+      },
+      "operations": [
+        {
+          "operation": "os.replace(source,target)",
+          "return": "None",
+          "immediate_state": {
+            "target.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658717,
+              "device": 27,
+              "data": "new payload"
+            }
+          }
+        },
+        {
+          "operation": "os.unlink(target)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "Path(source).unlink(missing_ok=True)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(nonexistent)",
+          "exception": "FileNotFoundError(2, 'No such file or directory')",
+          "errno": 2,
+          "immediate_state": {}
+        },
+        {
+          "operation": "os.unlink(relative,dir_fd)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "ctypes libc.unlink(path)",
+          "return": "{'result': 0, 'errno': 0}",
+          "immediate_state": {}
+        },
+        {
+          "operation": "shutil.rmtree(tree)",
+          "return": "None",
+          "immediate_state": {}
+        },
+        {
+          "operation": "installed publish_bundle success",
+          "return": "None",
+          "immediate_state": {
+            "metadata.json": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658734,
+              "device": 27,
+              "data": "{\"complete\":true}"
+            },
+            "payload.txt": {
+              "is_dir": false,
+              "exists": true,
+              "inode": 658733,
+              "device": 27,
+              "data": "published payload"
+            }
+          }
+        },
+        {
+          "operation": "installed publish_bundle before_commit rejection",
+          "exception": "RuntimeError('intentional before_commit rejection')",
+          "errno": null,
+          "immediate_state": {}
+        }
+      ],
+      "initial_state": {
+        "source.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658717,
+          "device": 27,
+          "data": "new payload"
+        },
+        "target.txt": {
+          "is_dir": false,
+          "exists": true,
+          "inode": 658728,
+          "device": 27,
+          "data": "old payload"
+        }
+      },
+      "final_state": {
+        "aborted": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658728,
+          "device": 27,
+          "children": []
+        },
+        "bundle": {
+          "is_dir": true,
+          "exists": true,
+          "inode": 658717,
+          "device": 27,
+          "children": [
+            "payload.txt",
+            "metadata.json"
+          ]
+        }
+      }
+    }
+  ],
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "gui_up": false,
+  "user_data": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/",
+  "pathlib_unlink_source": "    def unlink(self, missing_ok=False):\n        \"\"\"\n        Remove this file or link.\n        If the path is a directory, use rmdir() instead.\n        \"\"\"\n        try:\n            os.unlink(self)\n        except FileNotFoundError:\n            if not missing_ok:\n                raise\n",
+  "pathlib_rename_source": "    def rename(self, target):\n        \"\"\"\n        Rename this path to the target path.\n\n        The target path may be absolute or relative. Relative paths are\n        interpreted relative to the current working directory, *not* the\n        directory of the Path object.\n\n        Returns the new Path instance pointing to the target path.\n        \"\"\"\n        os.rename(self, target)\n        return self.__class__(target)\n",
+  "rmtree_avoids_symlink_attacks": true,
+  "selected_runtime_variables": {
+    "LD_PRELOAD": null,
+    "LD_LIBRARY_PATH": null,
+    "PYTHONHOME": "/tmp/bim3117-freecad/squashfs-root/usr"
+  },
+  "relevant_maps": [
+    "7f07887eb000-7f0788813000 r--p 00000000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f0788813000-7f078899b000 r-xp 00028000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f078899b000-7f07889ea000 r--p 001b0000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f07889ea000-7f07889ee000 r--p 001fe000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f07889ee000-7f07889f0000 rw-p 00202000 00:1b 9223372036855345946        /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "7f078a0e1000-7f078a1d4000 r--p 00000000 00:1b 277789                     /tmp/bim3117-freecad/squashfs-root/usr/lib/libpython3.11.so.1.0",
+    "7f078a1d4000-7f078a414000 r-xp 000f3000 00:1b 277789                     /tmp/bim3117-freecad/squashfs-root/usr/lib/libpython3.11.so.1.0",
+    "7f078a414000-7f078a500000 r--p 00333000 00:1b 277789                     /tmp/bim3117-freecad/squashfs-root/usr/lib/libpython3.11.so.1.0",
+    "7f078a500000-7f078a530000 r--p 0041e000 00:1b 277789                     /tmp/bim3117-freecad/squashfs-root/usr/lib/libpython3.11.so.1.0",
+    "7f078a530000-7f078a662000 rw-p 0044e000 00:1b 277789                     /tmp/bim3117-freecad/squashfs-root/usr/lib/libpython3.11.so.1.0"
+  ],
+  "relevant_mounts": [
+    "93 63 0:27 / / ro,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "94 93 0:30 / /proc ro,nosuid,nodev,noexec,relatime - proc proc rw",
+    "101 93 0:31 / /dev ro,nosuid,nodev - tmpfs tmpfs rw,size=65536k,mode=755",
+    "102 101 0:32 / /dev/pts ro,nosuid,nodev,noexec,relatime - devpts devpts rw,gid=5,mode=620,ptmxmode=666",
+    "103 101 0:26 / /dev/shm ro,nosuid,nodev,relatime - tmpfs shm rw",
+    "104 101 0:25 / /dev/mqueue ro,nosuid,nodev,noexec,relatime - mqueue mqueue rw",
+    "105 93 0:20 / /sys ro,nosuid,nodev,noexec,relatime - sysfs sysfs rw",
+    "106 105 0:24 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime - cgroup2 cgroup2 rw,nsdelegate",
+    "107 101 0:36 / /dev rw,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=755",
+    "114 107 0:37 / /dev/pts rw,nosuid,noexec,relatime - devpts devpts rw,mode=620,ptmxmode=666",
+    "115 93 0:38 / /tmp/codex-daemon-0 ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=000",
+    "116 93 0:27 /tmp /tmp rw,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "117 116 0:39 / /tmp/codex-daemon-0 ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=000",
+    "118 116 0:40 / /tmp/.git ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "119 116 0:41 / /tmp/.agents ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "121 116 0:42 / /tmp/.aws ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "123 93 0:27 /workspace/scratch/9457befac3c8 /workspace/scratch/9457befac3c8 rw,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "124 123 0:43 / /workspace/scratch/9457befac3c8/.git ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "125 123 0:44 / /workspace/scratch/9457befac3c8/.agents ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555",
+    "126 123 0:27 /workspace/scratch/9457befac3c8/.codex /workspace/scratch/9457befac3c8/.codex ro,nosuid,nodev,relatime - overlay overlay rw,lowerdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/lower-0,upperdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/upper,workdir=/run/kata-containers/erofs-multi-layer/c131ac91e89c40c09d081a34ccfaba50/upper/work,index=off,metacopy=off",
+    "127 123 0:45 / /workspace/scratch/9457befac3c8/.aws ro,nosuid,nodev,relatime - tmpfs tmpfs rw,mode=555"
+  ]
+}

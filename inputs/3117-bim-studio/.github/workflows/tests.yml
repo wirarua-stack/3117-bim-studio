@@ -1,0 +1,38 @@
+name: Reference core tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e .
+      - run: python -m unittest discover -s tests -p test_model.py -v
+      - run: python -m compileall -q src workbench
+  ifc:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e ".[ifc,test]"
+      - run: python -m unittest discover -s tests -v
+      - run: python -m bim3117 demo --output out/demo --ifc
+
+# This workflow is not evidence of a passing FreeCAD GUI/installer gate.
+# Host integration and external-application IFC checks remain separate gates.

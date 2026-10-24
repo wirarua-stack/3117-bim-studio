@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "steps": [
+    "baseline target",
+    "created disposable feature",
+    "deleted disposable feature",
+    "Undo deletion",
+    "Undo creation",
+    "Redo creation",
+    "Redo deletion",
+    "all passed"
+  ],
+  "addon_imported": false,
+  "user_data": "/tmp/bim3117-v050-catalog/native-control/data/FreeCAD/v1-1/"
+}

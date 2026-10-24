@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "tested_at_utc": "2026-10-23T03:54:38.368499+00:00",
+  "suites": [
+    "tests/test_native_ifc.py"
+  ],
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.11.14",
+  "ifcopenshell": "0.8.4",
+  "fixture_kind": "synthetic adapter tests plus reproduction from root native CSV metadata snapshot",
+  "canonical_readback": {
+    "status": "passed",
+    "checks_passed": 187,
+    "source_content_revision": "495f5dd2674fdbf68ec62bfdbb1018c7a99c00b4d3d23d4efbce9b15b1449c81"
+  },
+  "source_sha256": {
+    "tests/test_native_ifc.py": "e35c209327f24b9266019ac3aab85a5e7cf048612ff949fd6e47cb13429afc9e",
+    "workbench/bim3117_freecad/ifc_native.py": "18ea51fc422f876dff488e05bbc4e90a46adee309c71796794d0fdfb58265f75",
+    "workbench/bim3117_freecad/snapshot.py": "9906040e571fdb273921c4a90033733d4cf6fd40367afcbd9a7ce2d75c1bdb2d",
+    "workbench/bim3117_freecad/exchange.py": "778516b426aadc9748865da1de6fc832ed515a6febc6ee3cb74628f1fe31c334"
+  }
+}

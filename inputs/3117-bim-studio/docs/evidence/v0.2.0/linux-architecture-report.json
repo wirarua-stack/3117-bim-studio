@@ -1,0 +1,321 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "services loaded from installed addon",
+      "status": "passed"
+    },
+    {
+      "name": "wall and derived solid created in one native undo item",
+      "status": "passed"
+    },
+    {
+      "name": "uncut wall is a valid 6 by 3 by 0.2 metre solid",
+      "status": "passed"
+    },
+    {
+      "name": "type level and body identities are explicit native references",
+      "status": "passed"
+    },
+    {
+      "name": "door creation atomically records host and boolean dependency",
+      "status": "passed"
+    },
+    {
+      "name": "door removes 0.378 cubic metres from actual wall solid",
+      "status": "passed"
+    },
+    {
+      "name": "opening is a void through thickness with jamb and head material retained",
+      "status": "passed"
+    },
+    {
+      "name": "derived diagnostic quantities match independent gross and net fixture",
+      "status": "passed"
+    },
+    {
+      "name": "type thickness propagates to two instances and their cut solids",
+      "status": "passed"
+    },
+    {
+      "name": "native undo restores type and both dependent solids",
+      "status": "passed"
+    },
+    {
+      "name": "native redo restores propagated type geometry",
+      "status": "passed"
+    },
+    {
+      "name": "changing one instance type preserves identities and leaves the other wall unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "editing alternate type affects only its assigned wall instance",
+      "status": "passed"
+    },
+    {
+      "name": "top level updates all linked walls while retaining door dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "level undo restores the cut solid",
+      "status": "passed"
+    },
+    {
+      "name": "level redo restores the cut solid",
+      "status": "passed"
+    },
+    {
+      "name": "lowering top below hosted door rolls back level and every solid",
+      "status": "passed"
+    },
+    {
+      "name": "nonpositive effective wall height rolls back the level command",
+      "status": "passed"
+    },
+    {
+      "name": "shortening host below its opening rolls back wall and door",
+      "status": "passed"
+    },
+    {
+      "name": "diagonal host axis moves its real opening and hosted frame",
+      "status": "passed"
+    },
+    {
+      "name": "reversed host axis moves its real opening and hosted frame",
+      "status": "passed"
+    },
+    {
+      "name": "door edit heals old hole and cuts its new width height and position",
+      "status": "passed"
+    },
+    {
+      "name": "door edit undo restores opening and stable identity",
+      "status": "passed"
+    },
+    {
+      "name": "door edit redo restores new cut geometry",
+      "status": "passed"
+    },
+    {
+      "name": "rehost updates both wall solids and dependency lists in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "rehost undo restores both hosts and original opening",
+      "status": "passed"
+    },
+    {
+      "name": "native property edit preserves valid change and rejects downstream invalid dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "native property undo restores the complete graph",
+      "status": "passed"
+    },
+    {
+      "name": "multiple nonoverlapping openings cut exact volume and retain sill material",
+      "status": "passed"
+    },
+    {
+      "name": "overlapping openings are rejected without partial edits",
+      "status": "passed"
+    },
+    {
+      "name": "opening past host end is rejected without partial edits",
+      "status": "passed"
+    },
+    {
+      "name": "opening above host is rejected without partial edits",
+      "status": "passed"
+    },
+    {
+      "name": "negative sill is rejected without partial edits",
+      "status": "passed"
+    },
+    {
+      "name": "NaN thickness is rejected with unchanged document and history",
+      "status": "passed"
+    },
+    {
+      "name": "infinite door width is rejected with unchanged document and history",
+      "status": "passed"
+    },
+    {
+      "name": "boolean door width is rejected with unchanged document and history",
+      "status": "passed"
+    },
+    {
+      "name": "zero length wall is rejected with unchanged document and history",
+      "status": "passed"
+    },
+    {
+      "name": "referenced wall type deletion is blocked",
+      "status": "passed"
+    },
+    {
+      "name": "referenced level deletion includes wall dependencies",
+      "status": "passed"
+    },
+    {
+      "name": "wall deletion is blocked while it hosts doors",
+      "status": "passed"
+    },
+    {
+      "name": "deleting door heals its host in one undo item",
+      "status": "passed"
+    },
+    {
+      "name": "undo door deletion restores identity host membership and solid cut",
+      "status": "passed"
+    },
+    {
+      "name": "redo door deletion heals the solid again",
+      "status": "passed"
+    },
+    {
+      "name": "post-mutation failure restores object set links geometry and undo count",
+      "status": "passed"
+    },
+    {
+      "name": "unhosted wall deletion removes authored wall and derived body atomically",
+      "status": "passed"
+    },
+    {
+      "name": "undo wall deletion restores both IDs and the type level graph",
+      "status": "passed"
+    },
+    {
+      "name": "basement wall respects signed base top offsets and hosted sill",
+      "status": "passed"
+    },
+    {
+      "name": "base level movement updates host bottom door elevation and net solid",
+      "status": "passed"
+    },
+    {
+      "name": "cross-document wall type assignment is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "cross-document level assignment is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "cross-document door host assignment is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "raw type deletion preserves missing identity and clears dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "abort raw type deletion restores graph and solids",
+      "status": "passed"
+    },
+    {
+      "name": "raw top deletion preserves missing identity and clears dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "abort raw top deletion restores graph and solids",
+      "status": "passed"
+    },
+    {
+      "name": "raw wall deletion preserves missing identity and clears dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "abort raw wall deletion restores graph and solids",
+      "status": "passed"
+    },
+    {
+      "name": "raw door deletion preserves missing identity and clears dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "abort raw door deletion restores graph and solids",
+      "status": "passed"
+    },
+    {
+      "name": "complete authoring graph validates after dependency and transaction probes",
+      "status": "passed"
+    },
+    {
+      "name": "same-process FCStd restore retains every native UUID and valid solid",
+      "status": "passed"
+    },
+    {
+      "name": "v0.1 Foundation sample opens under v0.2 with unchanged persisted UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "v0.1 restored proxies remain editable with native dependency undo",
+      "status": "passed"
+    }
+  ],
+  "scope": "Installed native WallType / Wall / Door / boolean WallBody integration",
+  "deletion_scenario_prior_undo_count": 20,
+  "sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v020-native/save_ภาษาไทย/Architecture_Workbench.FCStd",
+  "element_ids": {
+    "BIM3117_Project": "26f153ab-b81d-46be-ac80-e4d0c94dfb8b",
+    "BIM3117_Level": "6834578e-4d30-4da4-97f2-c656a817349b",
+    "BIM3117_WallBody": "352e20f8-fa96-41d5-ae5f-07bde86807b0",
+    "BIM3117_WallBody001": "322f1801-4c78-45bf-8c35-804f117d5402",
+    "BIM3117_Wall001": "5546acfd-f9fd-470e-a77d-3291481d93d3",
+    "BIM3117_WallType": "93a63407-9b56-4286-b4e1-e78383ca2929",
+    "BIM3117_Level001": "61c59bb3-ba54-43f2-887a-10f190d3a309",
+    "BIM3117_Wall": "e3e5ba1a-602e-4000-bff8-daf01134fd8b",
+    "BIM3117_Door": "4d4e9dec-ef33-4540-8c88-686a382694ce"
+  },
+  "element_names": {
+    "wall": "BIM3117_Wall",
+    "body": "BIM3117_WallBody",
+    "wall_b": "BIM3117_Wall001",
+    "body_b": "BIM3117_WallBody001",
+    "door": "BIM3117_Door",
+    "type": "BIM3117_WallType",
+    "base": "BIM3117_Level",
+    "top": "BIM3117_Level001",
+    "project": "BIM3117_Project"
+  },
+  "elements": 9,
+  "checks_passed": 63,
+  "numeric_fixture": {
+    "length_mm": 6000,
+    "height_mm": 3000,
+    "thickness_mm": 200,
+    "opening_width_mm": 900,
+    "opening_height_mm": 2100,
+    "gross_volume_m3": 3.6,
+    "opening_volume_m3": 0.378,
+    "net_volume_m3": 3.222
+  },
+  "legacy_sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/freecad/Foundation_Workbench.FCStd",
+  "legacy_sample_ids": {
+    "BIM3117_Project": "ce593e28-dc8a-4213-9ca8-6dee18dfb2cb",
+    "BIM3117_Level": "6d355257-8b1a-46d1-b4e5-dd0d0c68ee0d",
+    "BIM3117_Level001": "c8c447b6-f9c9-47ed-bca2-f2a3027a8efc",
+    "BIM3117_Level002": "59acfac7-2795-4e95-9bb0-ca26c1a9678c",
+    "BIM3117_Grid": "2f15c72d-6189-4b97-8dc7-8a0fda2c0554",
+    "BIM3117_Grid001": "29d58a49-50af-4200-b61e-9e6404037b80",
+    "BIM3117_Grid002": "ec6aad19-a04a-4182-bb21-b52f41559f9e",
+    "BIM3117_Grid003": "ccd39d45-5ca4-48ec-9286-e1be1b75add4",
+    "BIM3117_Grid004": "370b773f-299f-4aac-98d8-4595617e6a4f",
+    "BIM3117_Grid005": "0c66160d-ee3e-4e38-8790-cc980251568f",
+    "BIM3117_Grid006": "6e6d96e2-22fc-4663-ba59-73e05689de02"
+  }
+}

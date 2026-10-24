@@ -1,0 +1,8 @@
+{
+  "classification": "failed_native_host",
+  "exit_code": 1,
+  "last_recorded_step": "coexisting Schedules and Quantities settle without a read-refresh loop: True",
+  "raw_status": "running",
+  "crash_frame": "Gui::Document::handleChildren3D+0x3a / Gui::Document::redo+0xa5",
+  "sequence": "Real Catalogue duplicate Material, delete Material, Std_Undo twice, type edit, Std_Undo, Std_Redo. No second document."
+}

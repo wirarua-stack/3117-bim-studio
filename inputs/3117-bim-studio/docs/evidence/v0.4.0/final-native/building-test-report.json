@@ -1,0 +1,3779 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "new native model and exchange code load from the installed add-on",
+      "status": "passed"
+    },
+    {
+      "name": "slab top follows its Level and thickness extends downward",
+      "status": "passed"
+    },
+    {
+      "name": "slab row has independent SI plan area perimeter thickness and volume",
+      "status": "passed"
+    },
+    {
+      "name": "slab thickness edit preserves the top datum and changes native quantity",
+      "status": "passed"
+    },
+    {
+      "name": "slab Undo restores geometry and the original content revision",
+      "status": "passed"
+    },
+    {
+      "name": "Level edit moves the complete slab without changing its thickness or volume",
+      "status": "passed"
+    },
+    {
+      "name": "Level Undo restores slab revision",
+      "status": "passed"
+    },
+    {
+      "name": "self-intersecting slab boundary is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "non-planar slab boundary is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "zero thickness is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "non-finite slab coordinate is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "invalid slab operations preserve the complete prior model",
+      "status": "passed"
+    },
+    {
+      "name": "concave footprint measures actual polygon area rather than its bounding rectangle",
+      "status": "passed"
+    },
+    {
+      "name": "concave footprint notch is genuinely empty",
+      "status": "passed"
+    },
+    {
+      "name": "reversed polygon winding preserves the positive solid",
+      "status": "passed"
+    },
+    {
+      "name": "rotated column uses its centre section and Base/Top Levels",
+      "status": "passed"
+    },
+    {
+      "name": "beam is centred about its XY axis and extends below its top datum",
+      "status": "passed"
+    },
+    {
+      "name": "one slab join creates one native transaction and preserves the beam identity",
+      "status": "passed"
+    },
+    {
+      "name": "beam-slab cut removes actual intersection and preserves authored depth",
+      "status": "passed"
+    },
+    {
+      "name": "join Undo heals the beam and removes the reference",
+      "status": "passed"
+    },
+    {
+      "name": "join Redo restores shape references and revision",
+      "status": "passed"
+    },
+    {
+      "name": "slab priority cuts a rotated column top without splitting it",
+      "status": "passed"
+    },
+    {
+      "name": "structural rows distinguish gross join deduction and actual net volume",
+      "status": "passed"
+    },
+    {
+      "name": "a joined slab cannot be deleted",
+      "status": "passed"
+    },
+    {
+      "name": "a referenced Level cannot be deleted",
+      "status": "passed"
+    },
+    {
+      "name": "slab change that fully cuts a beam rolls back",
+      "status": "passed"
+    },
+    {
+      "name": "invalid shared Level edit rolls back new dependent elements",
+      "status": "passed"
+    },
+    {
+      "name": "all rejected dependency edits preserve solids and authored values",
+      "status": "passed"
+    },
+    {
+      "name": "invalid slab proposal after Undo is rejected before changing history",
+      "status": "passed"
+    },
+    {
+      "name": "rejected slab cut preserves the existing native Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "preserved Slab Redo still applies its valid thickness and member cuts",
+      "status": "passed"
+    },
+    {
+      "name": "join that splits a column into disconnected solids is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "failed split join leaves no half-applied reference or solid",
+      "status": "passed"
+    },
+    {
+      "name": "rejected split join preserves the existing native Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "moving a referenced slab away preserves join intent with zero deduction",
+      "status": "passed"
+    },
+    {
+      "name": "Unjoin heals a member without altering the cutter or other joined members",
+      "status": "passed"
+    },
+    {
+      "name": "Unjoin Undo restores the column cut",
+      "status": "passed"
+    },
+    {
+      "name": "zero-length beam is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "negative column section is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "unsupported member-to-member cutter is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "invalid member operations preserve the entire model",
+      "status": "passed"
+    },
+    {
+      "name": "joined beam section that would be fully removed is rejected before history changes",
+      "status": "passed"
+    },
+    {
+      "name": "rejected joined Beam section preserves the native Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "preserved Beam Redo still applies its valid section",
+      "status": "passed"
+    },
+    {
+      "name": "joined column height that creates a disconnected cap is rejected before history changes",
+      "status": "passed"
+    },
+    {
+      "name": "rejected joined Column proposal preserves the native Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "preserved Column Redo still applies its valid rotation",
+      "status": "passed"
+    },
+    {
+      "name": "Door and Window jointly cut their host wall",
+      "status": "passed"
+    },
+    {
+      "name": "window opening is empty through the native wall and its frame centre",
+      "status": "passed"
+    },
+    {
+      "name": "window has a real lower frame bar in contrast to the existing three-bar door",
+      "status": "passed"
+    },
+    {
+      "name": "window row carries source host and actual cut/frame quantities",
+      "status": "passed"
+    },
+    {
+      "name": "window overlapping an existing door is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "door overlapping an existing window is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "window exceeding host height is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "failed mixed openings preserve host and both frames",
+      "status": "passed"
+    },
+    {
+      "name": "rejected mixed opening proposals preserve the native Redo branch",
+      "status": "passed"
+    },
+    {
+      "name": "preserved Window Redo still applies its valid opening relocation",
+      "status": "passed"
+    },
+    {
+      "name": "window rehost heals the old wall and cuts the rotated destination",
+      "status": "passed"
+    },
+    {
+      "name": "rehost Undo restores original identity host and both wall solids",
+      "status": "passed"
+    },
+    {
+      "name": "deleting a window heals its host while preserving the door",
+      "status": "passed"
+    },
+    {
+      "name": "window deletion Undo restores persistent identity and opening",
+      "status": "passed"
+    },
+    {
+      "name": "expanded snapshot is read-only for authored content and native history",
+      "status": "passed"
+    },
+    {
+      "name": "expanded snapshot rejects a pending native edit",
+      "status": "passed"
+    },
+    {
+      "name": "direct native thickness edit propagates to joined members",
+      "status": "passed"
+    },
+    {
+      "name": "direct-property Undo restores revision and all join quantities",
+      "status": "passed"
+    },
+    {
+      "name": "raw slab probe preserves volume while shifting actual geometry",
+      "status": "passed"
+    },
+    {
+      "name": "same-volume displaced Slab is rejected by spatial export validation",
+      "status": "passed"
+    },
+    {
+      "name": "v0.2.1 sample retains its authored revision with empty new categories",
+      "status": "passed"
+    },
+    {
+      "name": "legacy sample remains byte-identical",
+      "status": "passed"
+    },
+    {
+      "name": "two-storey fixture has every authored category with no derived duplicate rows",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: S00",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: S01",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: S02",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C11",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C12",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C13",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C14",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C21",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C22",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C23",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: C24",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B11",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B12",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B13",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B14",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B21",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B22",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B23",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: B24",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 1-1",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 1-2",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 1-3",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 1-4",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 2-1",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 2-2",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 2-3",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: Wall 2-4",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: D01",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: D02",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: WIN11",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: WIN12",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: WIN21",
+      "status": "passed"
+    },
+    {
+      "name": "independent native fixture volume: WIN22",
+      "status": "passed"
+    },
+    {
+      "name": "category totals follow the declared per-element join rules",
+      "status": "passed"
+    },
+    {
+      "name": "expanded export writes six CSV categories plus one completion metadata file",
+      "status": "passed"
+    },
+    {
+      "name": "CSV and IFC exports preserve native authored state and Undo history",
+      "status": "passed"
+    },
+    {
+      "name": "slabs CSV identities and revision match the model",
+      "status": "passed"
+    },
+    {
+      "name": "columns CSV identities and revision match the model",
+      "status": "passed"
+    },
+    {
+      "name": "beams CSV identities and revision match the model",
+      "status": "passed"
+    },
+    {
+      "name": "windows CSV identities and revision match the model",
+      "status": "passed"
+    },
+    {
+      "name": "native IFC includes exact counts of the new classes and shared hosted openings",
+      "status": "passed"
+    },
+    {
+      "name": "written IFC passes expanded schema placement relationship and solid validation",
+      "status": "passed"
+    }
+  ],
+  "scope": "Native Slab/Column/Beam/Window, directed slab cuts, SI quantities and IFC4",
+  "ifcopenshell": "0.8.4",
+  "checks_passed": 112,
+  "sample": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+  "sample_sha256": "3a64b27ad881c54a8d59e855aa9ee243394d9d140ff82b71af9dd9459df4f456",
+  "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+  "expected_net_volumes_m3": {
+    "Slab": {
+      "9e9d713a-a1b3-45dc-a2f8-8e89892785bd": 4.3875,
+      "afde9f82-c48c-44bd-a143-1d90f91f13f1": 4.3875,
+      "e78967b0-bddf-4afb-b534-3a161f902227": 4.3875
+    },
+    "Column": {
+      "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16": 0.2565,
+      "730fef27-e695-4671-9806-4233c2c1068a": 0.2565,
+      "72e68695-2037-4248-b41b-e8c980aaa998": 0.2565,
+      "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7": 0.2565,
+      "d7ec01ee-785a-4a0a-a617-e856e3b6e965": 0.2565,
+      "d05549cb-80c0-44bf-ac45-7bf1edc99652": 0.2565,
+      "def71377-5ba1-49d3-8c76-be105187ac63": 0.2565,
+      "42f82aab-99cf-438e-bbc0-5d7a3113be9b": 0.2565
+    },
+    "Beam": {
+      "e68f92e9-bd2d-4593-bbd0-a530146b8faa": 0.54,
+      "70829b32-bbd0-437f-b072-a1745c850c61": 0.36,
+      "4f806193-5c43-4136-96ba-7be20d902072": 0.54,
+      "c77aadaa-bf7a-428e-902e-adabd5bca80b": 0.36,
+      "6d37d6f8-53a9-42a2-a1e5-49e061362763": 0.54,
+      "63be3748-3c94-4a65-b245-65218a5cfe46": 0.36,
+      "a9a4eaa0-7498-4822-8371-15acd4c2554d": 0.54,
+      "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad": 0.36
+    },
+    "Wall": {
+      "6149f659-a270-4c6d-827f-0cad4961d22c": 2.241,
+      "b21ef222-e2fb-4eb9-8d6b-8719372057d8": 1.599,
+      "420494ef-e51b-4481-933a-c8ff2cb6c0f3": 2.907,
+      "1a03652c-770c-405c-af28-4953b7322981": 1.887,
+      "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c": 2.241,
+      "649b6875-af76-4ec6-9374-711b3458a49b": 1.599,
+      "f3070bfc-23f6-4dd9-94a7-7c12efadef11": 2.907,
+      "9bae138b-38ce-4c75-885e-bb56c53883bc": 1.887
+    },
+    "Door": {
+      "0a1c0244-4f6a-416d-b311-0612eb4871e3": 0.05,
+      "31317e02-cb50-4953-845b-4cc9b4bf938f": 0.05
+    },
+    "Window": {
+      "60c579b6-0178-4469-b6b6-50578a63fca7": 0.046,
+      "87089dfb-98dc-4ad7-abe2-f24d143d45d1": 0.046,
+      "9a352d3b-0178-4dfc-9e23-76094593deb5": 0.046,
+      "c8d0c8c9-a89a-4b1e-b361-82b571abd400": 0.046
+    }
+  },
+  "category_net_totals_m3": {
+    "slab": 13.162500000000001,
+    "column": 2.052,
+    "beam": 3.6,
+    "wall": 17.268
+  },
+  "element_ids": {
+    "BIM3117_Project": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+    "BIM3117_Level": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+    "BIM3117_Level001": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+    "BIM3117_Level002": "37c23897-9544-461a-b173-3bb52c22f39a",
+    "BIM3117_Slab": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+    "BIM3117_Slab001": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+    "BIM3117_Slab002": "e78967b0-bddf-4afb-b534-3a161f902227",
+    "BIM3117_WallType": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+    "BIM3117_Column": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+    "BIM3117_Beam": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+    "BIM3117_Column001": "730fef27-e695-4671-9806-4233c2c1068a",
+    "BIM3117_Beam001": "70829b32-bbd0-437f-b072-a1745c850c61",
+    "BIM3117_Column002": "72e68695-2037-4248-b41b-e8c980aaa998",
+    "BIM3117_Beam002": "4f806193-5c43-4136-96ba-7be20d902072",
+    "BIM3117_Column003": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+    "BIM3117_Beam003": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+    "BIM3117_Wall": "6149f659-a270-4c6d-827f-0cad4961d22c",
+    "BIM3117_WallBody": "4238434d-fdef-49cb-911e-a9c87ee667fb",
+    "BIM3117_Door": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+    "BIM3117_Window": "60c579b6-0178-4469-b6b6-50578a63fca7",
+    "BIM3117_Wall001": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+    "BIM3117_WallBody001": "f2e9d197-c862-4b36-a447-c9bb283dcd1d",
+    "BIM3117_Window001": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+    "BIM3117_Wall002": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+    "BIM3117_WallBody002": "d3c3da29-eddd-43be-86a5-90fd5920304f",
+    "BIM3117_Wall003": "1a03652c-770c-405c-af28-4953b7322981",
+    "BIM3117_WallBody003": "38563856-c2ea-4f7a-aacd-0f43bd751b21",
+    "BIM3117_Column004": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+    "BIM3117_Beam004": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+    "BIM3117_Column005": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+    "BIM3117_Beam005": "63be3748-3c94-4a65-b245-65218a5cfe46",
+    "BIM3117_Column006": "def71377-5ba1-49d3-8c76-be105187ac63",
+    "BIM3117_Beam006": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+    "BIM3117_Column007": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+    "BIM3117_Beam007": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+    "BIM3117_Wall004": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+    "BIM3117_WallBody004": "f2c56a58-101c-40aa-9e04-bce69fcf6cfe",
+    "BIM3117_Door001": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+    "BIM3117_Window002": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+    "BIM3117_Wall005": "649b6875-af76-4ec6-9374-711b3458a49b",
+    "BIM3117_WallBody005": "9466ed73-bc97-4e4f-bb55-12c2073366ca",
+    "BIM3117_Window003": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+    "BIM3117_Wall006": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+    "BIM3117_WallBody006": "18de5727-20e5-4c94-9fb6-a4e9c7f2bfd4",
+    "BIM3117_Wall007": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+    "BIM3117_WallBody007": "a1c43e24-e17e-4bb8-b523-d0505ecddef6",
+    "BIM3117_Grid": "a7966421-da81-4a14-9871-f0d5933d2f18",
+    "BIM3117_Grid001": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+    "BIM3117_Grid002": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+    "BIM3117_Grid003": "386f2211-6045-4e05-af30-de5dc0186533"
+  },
+  "csv_result": {
+    "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+    "files": [
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_doors.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_slabs.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_columns.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_beams.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_windows.csv",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_csv_metadata.json"
+    ],
+    "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_csv_metadata.json",
+    "format": "csv",
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Wall004",
+          "object_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "label": "Wall 2-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Door",
+          "object_id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "label": "D01",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallBody006",
+          "object_id": "18de5727-20e5-4c94-9fb6-a4e9c7f2bfd4",
+          "label": "Wall 2-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall003",
+          "object_id": "1a03652c-770c-405c-af28-4953b7322981",
+          "label": "Wall 1-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Column003",
+          "object_id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "label": "C14",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Door001",
+          "object_id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "label": "D02",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+          "label": "Block 200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level002",
+          "object_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+          "label": "L02",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody003",
+          "object_id": "38563856-c2ea-4f7a-aacd-0f43bd751b21",
+          "label": "Wall 1-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid003",
+          "object_id": "386f2211-6045-4e05-af30-de5dc0186533",
+          "label": "2",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall002",
+          "object_id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "label": "Wall 1-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "4238434d-fdef-49cb-911e-a9c87ee667fb",
+          "label": "Wall 1-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column007",
+          "object_id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "label": "C24",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam002",
+          "object_id": "4f806193-5c43-4136-96ba-7be20d902072",
+          "label": "B13",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window",
+          "object_id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+          "label": "WIN11",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+          "label": "Wall 1-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam005",
+          "object_id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+          "label": "B22",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Wall005",
+          "object_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+          "label": "Wall 2-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam007",
+          "object_id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "label": "B24",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam004",
+          "object_id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "label": "B21",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam001",
+          "object_id": "70829b32-bbd0-437f-b072-a1745c850c61",
+          "label": "B12",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Column002",
+          "object_id": "72e68695-2037-4248-b41b-e8c980aaa998",
+          "label": "C13",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column001",
+          "object_id": "730fef27-e695-4671-9806-4233c2c1068a",
+          "label": "C12",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column",
+          "object_id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "label": "C11",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Window001",
+          "object_id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "label": "WIN12",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_WallBody005",
+          "object_id": "9466ed73-bc97-4e4f-bb55-12c2073366ca",
+          "label": "Wall 2-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Window002",
+          "object_id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "label": "WIN21",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall007",
+          "object_id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "label": "Wall 2-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Slab",
+          "object_id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "label": "S00",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_WallBody007",
+          "object_id": "a1c43e24-e17e-4bb8-b523-d0505ecddef6",
+          "label": "Wall 2-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid",
+          "object_id": "a7966421-da81-4a14-9871-f0d5933d2f18",
+          "label": "A",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Beam006",
+          "object_id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "label": "B23",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+          "label": "3117 อาคารสองชั้น",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Slab001",
+          "object_id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "label": "S01",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Wall001",
+          "object_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "label": "Wall 1-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam003",
+          "object_id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "label": "B14",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window003",
+          "object_id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "label": "WIN22",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Column005",
+          "object_id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "label": "C22",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_WallBody002",
+          "object_id": "d3c3da29-eddd-43be-86a5-90fd5920304f",
+          "label": "Wall 1-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column004",
+          "object_id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "label": "C21",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column006",
+          "object_id": "def71377-5ba1-49d3-8c76-be105187ac63",
+          "label": "C23",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam",
+          "object_id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "label": "B11",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Slab002",
+          "object_id": "e78967b0-bddf-4afb-b534-3a161f902227",
+          "label": "S02",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Grid001",
+          "object_id": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+          "label": "B",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody004",
+          "object_id": "f2c56a58-101c-40aa-9e04-bce69fcf6cfe",
+          "label": "Wall 2-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody001",
+          "object_id": "f2e9d197-c862-4b36-a447-c9bb283dcd1d",
+          "label": "Wall 1-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall006",
+          "object_id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "label": "Wall 2-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Grid002",
+          "object_id": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+          "label": "1",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 38,
+        "derived": 8,
+        "reference": 4,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+        "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+        "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+        "4 native datum object(s) are listed as reference and omitted from IFC."
+      ],
+      "complete": false,
+      "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+    },
+    "validation": {
+      "status": "passed",
+      "native_geometry": "validated",
+      "units": "m / m2 / m3",
+      "wall_rows": 8,
+      "door_rows": 2,
+      "slab_rows": 3,
+      "column_rows": 8,
+      "beam_rows": 8,
+      "window_rows": 4
+    }
+  },
+  "ifc_result": {
+    "content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+    "files": [
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench.ifc",
+      "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_ifc_metadata.json"
+    ],
+    "metadata_path": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v040-final-native/Building_Authoring_Workbench_ifc_metadata.json",
+    "format": "ifc",
+    "coverage": {
+      "items": [
+        {
+          "object_name": "BIM3117_Wall004",
+          "object_id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "label": "Wall 2-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Door",
+          "object_id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "label": "D01",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallBody006",
+          "object_id": "18de5727-20e5-4c94-9fb6-a4e9c7f2bfd4",
+          "label": "Wall 2-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall003",
+          "object_id": "1a03652c-770c-405c-af28-4953b7322981",
+          "label": "Wall 1-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Column003",
+          "object_id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "label": "C14",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Door001",
+          "object_id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "label": "D02",
+          "kind": "Door",
+          "status": "mapped",
+          "ifc_class": "IfcDoor",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "door"
+        },
+        {
+          "object_name": "BIM3117_WallType",
+          "object_id": "34ec5b9c-a2a8-4d5d-896f-18262656664c",
+          "label": "Block 200",
+          "kind": "WallType",
+          "status": "mapped",
+          "ifc_class": "IfcWallType",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level002",
+          "object_id": "37c23897-9544-461a-b173-3bb52c22f39a",
+          "label": "L02",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody003",
+          "object_id": "38563856-c2ea-4f7a-aacd-0f43bd751b21",
+          "label": "Wall 1-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid003",
+          "object_id": "386f2211-6045-4e05-af30-de5dc0186533",
+          "label": "2",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall002",
+          "object_id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "label": "Wall 1-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_WallBody",
+          "object_id": "4238434d-fdef-49cb-911e-a9c87ee667fb",
+          "label": "Wall 1-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column007",
+          "object_id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "label": "C24",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam002",
+          "object_id": "4f806193-5c43-4136-96ba-7be20d902072",
+          "label": "B13",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window",
+          "object_id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+          "label": "WIN11",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall",
+          "object_id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+          "label": "Wall 1-1",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam005",
+          "object_id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+          "label": "B22",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Wall005",
+          "object_id": "649b6875-af76-4ec6-9374-711b3458a49b",
+          "label": "Wall 2-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam007",
+          "object_id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "label": "B24",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam004",
+          "object_id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "label": "B21",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Beam001",
+          "object_id": "70829b32-bbd0-437f-b072-a1745c850c61",
+          "label": "B12",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Column002",
+          "object_id": "72e68695-2037-4248-b41b-e8c980aaa998",
+          "label": "C13",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column001",
+          "object_id": "730fef27-e695-4671-9806-4233c2c1068a",
+          "label": "C12",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Level001",
+          "object_id": "7674cc37-0003-46f7-9f0c-183955a9f04d",
+          "label": "L01",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column",
+          "object_id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "label": "C11",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Window001",
+          "object_id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "label": "WIN12",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_WallBody005",
+          "object_id": "9466ed73-bc97-4e4f-bb55-12c2073366ca",
+          "label": "Wall 2-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Window002",
+          "object_id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "label": "WIN21",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Wall007",
+          "object_id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "label": "Wall 2-4",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Slab",
+          "object_id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "label": "S00",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_WallBody007",
+          "object_id": "a1c43e24-e17e-4bb8-b523-d0505ecddef6",
+          "label": "Wall 2-4 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Grid",
+          "object_id": "a7966421-da81-4a14-9871-f0d5933d2f18",
+          "label": "A",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Beam006",
+          "object_id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "label": "B23",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Project",
+          "object_id": "aa9e4f96-77c1-410b-9730-dee76d4d12ce",
+          "label": "3117 อาคารสองชั้น",
+          "kind": "Project",
+          "status": "mapped",
+          "ifc_class": "IfcProject",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Level",
+          "object_id": "acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+          "label": "L00",
+          "kind": "Level",
+          "status": "mapped",
+          "ifc_class": "IfcBuildingStorey",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Slab001",
+          "object_id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "label": "S01",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Wall001",
+          "object_id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "label": "Wall 1-2",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Beam003",
+          "object_id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "label": "B14",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Window003",
+          "object_id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "label": "WIN22",
+          "kind": "Window",
+          "status": "mapped",
+          "ifc_class": "IfcWindow",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "window"
+        },
+        {
+          "object_name": "BIM3117_Column005",
+          "object_id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "label": "C22",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_WallBody002",
+          "object_id": "d3c3da29-eddd-43be-86a5-90fd5920304f",
+          "label": "Wall 1-3 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Column004",
+          "object_id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "label": "C21",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Column006",
+          "object_id": "def71377-5ba1-49d3-8c76-be105187ac63",
+          "label": "C23",
+          "kind": "Column",
+          "status": "mapped",
+          "ifc_class": "IfcColumn",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "column"
+        },
+        {
+          "object_name": "BIM3117_Beam",
+          "object_id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "label": "B11",
+          "kind": "Beam",
+          "status": "mapped",
+          "ifc_class": "IfcBeam",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "beam"
+        },
+        {
+          "object_name": "BIM3117_Slab002",
+          "object_id": "e78967b0-bddf-4afb-b534-3a161f902227",
+          "label": "S02",
+          "kind": "Slab",
+          "status": "mapped",
+          "ifc_class": "IfcSlab",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "slab"
+        },
+        {
+          "object_name": "BIM3117_Grid001",
+          "object_id": "f18390a6-a4bf-41b1-82d8-3b0ce35d43b8",
+          "label": "B",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody004",
+          "object_id": "f2c56a58-101c-40aa-9e04-bce69fcf6cfe",
+          "label": "Wall 2-1 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_WallBody001",
+          "object_id": "f2e9d197-c862-4b36-a447-c9bb283dcd1d",
+          "label": "Wall 1-2 · Solid",
+          "kind": "WallBody",
+          "status": "derived",
+          "ifc_class": "",
+          "reason": "Calculated shape of its authored Wall; never a second wall or quantity row.",
+          "quantity_role": "none"
+        },
+        {
+          "object_name": "BIM3117_Wall006",
+          "object_id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "label": "Wall 2-3",
+          "kind": "Wall",
+          "status": "mapped",
+          "ifc_class": "IfcWall",
+          "reason": "Mapped to IFC4; one quantity row per supported authored building element.",
+          "quantity_role": "wall"
+        },
+        {
+          "object_name": "BIM3117_Grid002",
+          "object_id": "ffbe9133-f11b-4e86-8c56-2fff46631fbb",
+          "label": "1",
+          "kind": "Grid",
+          "status": "reference",
+          "ifc_class": "",
+          "reason": "Native datum retained in FCStd; IFC grid export is outside this release.",
+          "quantity_role": "none"
+        }
+      ],
+      "counts": {
+        "mapped": 38,
+        "derived": 8,
+        "reference": 4,
+        "unsupported": 0
+      },
+      "warnings": [
+        "Wall quantities sum individual straight uniform walls; no wall-join overlap or material-layer deductions.",
+        "Door Width/Height describe the overall wall opening, not leaf size or clear passage; geometry is a generic three-bar frame.",
+        "Slabs keep their full volume; explicit Slab priorities deduct intersections only from joined Columns/Beams. Other intersections are not deducted.",
+        "Window Width/Height describe the overall opening; the four-bar frame has no pane, leaf or operation.",
+        "4 native datum object(s) are listed as reference and omitted from IFC."
+      ],
+      "complete": false,
+      "scope": "3117 Project, Levels, Wall Types, Walls, Doors, polygon Slabs, rectangular Columns/Beams and hosted Windows"
+    },
+    "validation": {
+      "status": "passed",
+      "schema": "IFC4",
+      "ifcopenshell_version": "0.8.4",
+      "source_content_revision": "0ddd6bf4cfe6d9ccf2c8b7c9d05c3c8526ddd265d19079a1365aaa9686db0433",
+      "checks_passed": 186,
+      "checks": [
+        {
+          "name": "ifc4-schema",
+          "status": "passed",
+          "details": []
+        },
+        {
+          "name": "unique-global-ids",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "mapped-counts",
+          "status": "passed",
+          "details": {
+            "IfcProject": 1,
+            "IfcSite": 1,
+            "IfcBuilding": 1,
+            "IfcBuildingStorey": 3,
+            "IfcWallType": 1,
+            "IfcWall": 8,
+            "IfcDoor": 2,
+            "IfcWindow": 4,
+            "IfcSlab": 3,
+            "IfcColumn": 8,
+            "IfcBeam": 8,
+            "IfcOpeningElement": 6,
+            "IfcRelVoidsElement": 6,
+            "IfcRelFillsElement": 6
+          }
+        },
+        {
+          "name": "si-units",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "project-hierarchy",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "project-source",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "level:37c23897-9544-461a-b173-3bb52c22f39a",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "level:7674cc37-0003-46f7-9f0c-183955a9f04d",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "level:acb9a52d-79cb-4ab6-ac2e-a4307fb3eff8",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-type:34ec5b9c-a2a8-4d5d-896f-18262656664c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-semantics:0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "status": "passed",
+          "details": {
+            "volume_m3": 2.241,
+            "expected_volume_m3": 2.241
+          }
+        },
+        {
+          "name": "wall-semantics:1a03652c-770c-405c-af28-4953b7322981",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:1a03652c-770c-405c-af28-4953b7322981",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:1a03652c-770c-405c-af28-4953b7322981",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:1a03652c-770c-405c-af28-4953b7322981",
+          "status": "passed",
+          "details": {
+            "volume_m3": 1.8870000000000005,
+            "expected_volume_m3": 1.887
+          }
+        },
+        {
+          "name": "wall-semantics:420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "status": "passed",
+          "details": {
+            "volume_m3": 2.907,
+            "expected_volume_m3": 2.907
+          }
+        },
+        {
+          "name": "wall-semantics:6149f659-a270-4c6d-827f-0cad4961d22c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:6149f659-a270-4c6d-827f-0cad4961d22c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:6149f659-a270-4c6d-827f-0cad4961d22c",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:6149f659-a270-4c6d-827f-0cad4961d22c",
+          "status": "passed",
+          "details": {
+            "volume_m3": 2.241,
+            "expected_volume_m3": 2.241
+          }
+        },
+        {
+          "name": "wall-semantics:649b6875-af76-4ec6-9374-711b3458a49b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:649b6875-af76-4ec6-9374-711b3458a49b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:649b6875-af76-4ec6-9374-711b3458a49b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:649b6875-af76-4ec6-9374-711b3458a49b",
+          "status": "passed",
+          "details": {
+            "volume_m3": 1.5990000000000004,
+            "expected_volume_m3": 1.599
+          }
+        },
+        {
+          "name": "wall-semantics:9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "status": "passed",
+          "details": {
+            "volume_m3": 1.8870000000000005,
+            "expected_volume_m3": 1.887
+          }
+        },
+        {
+          "name": "wall-semantics:b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "status": "passed",
+          "details": {
+            "volume_m3": 1.5990000000000004,
+            "expected_volume_m3": 1.599
+          }
+        },
+        {
+          "name": "wall-semantics:f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-placement:f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "wall-quantities:f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "status": "passed",
+          "details": {
+            "volume_m3": 2.907,
+            "expected_volume_m3": 2.907
+          }
+        },
+        {
+          "name": "door-relations:0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "door-source-size:0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "door-placement:0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.05000000000000001,
+            "expected_volume_m3": 0.05000000000000003
+          }
+        },
+        {
+          "name": "opening-empty:0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "door-relations:31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "door-source-size:31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "door-placement:31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.05000000000000001,
+            "expected_volume_m3": 0.05000000000000003
+          }
+        },
+        {
+          "name": "opening-empty:31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-relations:60c579b6-0178-4469-b6b6-50578a63fca7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-source-size:60c579b6-0178-4469-b6b6-50578a63fca7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-placement:60c579b6-0178-4469-b6b6-50578a63fca7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:60c579b6-0178-4469-b6b6-50578a63fca7",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.04600000000000003,
+            "expected_volume_m3": 0.046
+          }
+        },
+        {
+          "name": "opening-empty:60c579b6-0178-4469-b6b6-50578a63fca7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-relations:87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-source-size:87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-placement:87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.04600000000000003,
+            "expected_volume_m3": 0.045999999999999985
+          }
+        },
+        {
+          "name": "opening-empty:87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-relations:9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-source-size:9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-placement:9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.04600000000000003,
+            "expected_volume_m3": 0.046
+          }
+        },
+        {
+          "name": "opening-empty:9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-relations:c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-source-size:c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "window-placement:c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.04600000000000003,
+            "expected_volume_m3": 0.045999999999999985
+          }
+        },
+        {
+          "name": "opening-empty:c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-semantics:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-placement:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-quantities:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": {
+            "volume_m3": 4.3875,
+            "expected_volume_m3": 4.3875
+          }
+        },
+        {
+          "name": "geometry-bounds:9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                -0.15
+              ],
+              [
+                6.25,
+                4.25,
+                0.0
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                -0.15
+              ],
+              [
+                6.25,
+                4.25,
+                0.0
+              ]
+            ]
+          }
+        },
+        {
+          "name": "slab-semantics:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-placement:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-quantities:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": {
+            "volume_m3": 4.3875,
+            "expected_volume_m3": 4.3875
+          }
+        },
+        {
+          "name": "geometry-bounds:afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                2.85
+              ],
+              [
+                6.25,
+                4.25,
+                3.0
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                2.85
+              ],
+              [
+                6.25,
+                4.25,
+                3.0
+              ]
+            ]
+          }
+        },
+        {
+          "name": "slab-semantics:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-placement:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "slab-quantities:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": {
+            "volume_m3": 4.3875,
+            "expected_volume_m3": 4.3875
+          }
+        },
+        {
+          "name": "geometry-bounds:e78967b0-bddf-4afb-b534-3a161f902227",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                5.85
+              ],
+              [
+                6.25,
+                4.25,
+                6.0
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.25,
+                -0.25,
+                5.85
+              ],
+              [
+                6.25,
+                4.25,
+                6.0
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                3.8499999999999996,
+                0.0
+              ],
+              [
+                0.15000000000000002,
+                4.15,
+                2.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                3.85,
+                0.0
+              ],
+              [
+                0.15,
+                4.15,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                3.8499999999999996,
+                3.0
+              ],
+              [
+                0.15000000000000002,
+                4.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                3.85,
+                3.0
+              ],
+              [
+                0.15,
+                4.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565000000000002,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:72e68695-2037-4248-b41b-e8c980aaa998",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                3.8499999999999996,
+                0.0
+              ],
+              [
+                6.15,
+                4.15,
+                2.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                3.85,
+                0.0
+              ],
+              [
+                6.15,
+                4.15,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565000000000001,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:730fef27-e695-4671-9806-4233c2c1068a",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                -0.15,
+                0.0
+              ],
+              [
+                6.15,
+                0.15,
+                2.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                -0.15,
+                0.0
+              ],
+              [
+                6.15,
+                0.15,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                -0.15,
+                0.0
+              ],
+              [
+                0.15000000000000002,
+                0.15,
+                2.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                -0.15,
+                0.0
+              ],
+              [
+                0.15,
+                0.15,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565000000000001,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                -0.15,
+                3.0
+              ],
+              [
+                6.15,
+                0.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                -0.15,
+                3.0
+              ],
+              [
+                6.15,
+                0.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                -0.15,
+                3.0
+              ],
+              [
+                0.15000000000000002,
+                0.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                -0.15,
+                3.0
+              ],
+              [
+                0.15,
+                0.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "column-semantics:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-placement:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "column-quantities:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.2565000000000002,
+            "expected_volume_m3": 0.2565
+          }
+        },
+        {
+          "name": "geometry-bounds:def71377-5ba1-49d3-8c76-be105187ac63",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                3.8499999999999996,
+                3.0
+              ],
+              [
+                6.15,
+                4.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                3.85,
+                3.0
+              ],
+              [
+                6.15,
+                4.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.54,
+            "expected_volume_m3": 0.54
+          }
+        },
+        {
+          "name": "geometry-bounds:4f806193-5c43-4136-96ba-7be20d902072",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                0.0,
+                3.85,
+                2.55
+              ],
+              [
+                6.0,
+                4.15,
+                2.8499999999999996
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                0.0,
+                3.85,
+                2.55
+              ],
+              [
+                6.0,
+                4.15,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.36,
+            "expected_volume_m3": 0.36
+          }
+        },
+        {
+          "name": "geometry-bounds:63be3748-3c94-4a65-b245-65218a5cfe46",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                0.0,
+                5.55
+              ],
+              [
+                6.15,
+                4.0,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                0.0,
+                5.55
+              ],
+              [
+                6.15,
+                4.0,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.36,
+            "expected_volume_m3": 0.36
+          }
+        },
+        {
+          "name": "geometry-bounds:6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                0.0,
+                5.55
+              ],
+              [
+                0.15,
+                4.0,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                0.0,
+                5.55
+              ],
+              [
+                0.15,
+                4.0,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.54,
+            "expected_volume_m3": 0.54
+          }
+        },
+        {
+          "name": "geometry-bounds:6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                0.0,
+                -0.15,
+                5.55
+              ],
+              [
+                6.0,
+                0.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                0.0,
+                -0.15,
+                5.55
+              ],
+              [
+                6.0,
+                0.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.36,
+            "expected_volume_m3": 0.36
+          }
+        },
+        {
+          "name": "geometry-bounds:70829b32-bbd0-437f-b072-a1745c850c61",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                5.85,
+                0.0,
+                2.55
+              ],
+              [
+                6.15,
+                4.0,
+                2.8499999999999996
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                5.85,
+                0.0,
+                2.55
+              ],
+              [
+                6.15,
+                4.0,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.54,
+            "expected_volume_m3": 0.54
+          }
+        },
+        {
+          "name": "geometry-bounds:a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                0.0,
+                3.85,
+                5.55
+              ],
+              [
+                6.0,
+                4.15,
+                5.85
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                0.0,
+                3.85,
+                5.55
+              ],
+              [
+                6.0,
+                4.15,
+                5.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.36,
+            "expected_volume_m3": 0.36
+          }
+        },
+        {
+          "name": "geometry-bounds:c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                -0.15,
+                0.0,
+                2.55
+              ],
+              [
+                0.15,
+                4.0,
+                2.8499999999999996
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                -0.15,
+                0.0,
+                2.55
+              ],
+              [
+                0.15,
+                4.0,
+                2.85
+              ]
+            ]
+          }
+        },
+        {
+          "name": "beam-semantics:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-placement:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "beam-quantities:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "join-cutters:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": ""
+        },
+        {
+          "name": "geometry:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": {
+            "volume_m3": 0.54,
+            "expected_volume_m3": 0.54
+          }
+        },
+        {
+          "name": "geometry-bounds:e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "status": "passed",
+          "details": {
+            "world_bounds_m": [
+              [
+                0.0,
+                -0.15,
+                2.55
+              ],
+              [
+                6.0,
+                0.15,
+                2.8499999999999996
+              ]
+            ],
+            "native_bounds_m": [
+              [
+                0.0,
+                -0.15,
+                2.55
+              ],
+              [
+                6.0,
+                0.15,
+                2.85
+              ]
+            ]
+          }
+        }
+      ],
+      "geometry": [
+        {
+          "id": "0a15f6f1-6ff2-4bf3-9f3d-82c26eaac49c",
+          "ifc_class": "IfcWall",
+          "volume_m3": 2.241,
+          "expected_volume_m3": 2.241,
+          "world_bounds_m": [
+            [
+              0.15,
+              0.15,
+              3.0
+            ],
+            [
+              5.8500000000000005,
+              0.35,
+              5.55
+            ]
+          ]
+        },
+        {
+          "id": "1a03652c-770c-405c-af28-4953b7322981",
+          "ifc_class": "IfcWall",
+          "volume_m3": 1.8870000000000005,
+          "expected_volume_m3": 1.887,
+          "world_bounds_m": [
+            [
+              0.15,
+              0.1499999999999999,
+              0.0
+            ],
+            [
+              0.35,
+              3.85,
+              2.55
+            ]
+          ]
+        },
+        {
+          "id": "420494ef-e51b-4481-933a-c8ff2cb6c0f3",
+          "ifc_class": "IfcWall",
+          "volume_m3": 2.907,
+          "expected_volume_m3": 2.907,
+          "world_bounds_m": [
+            [
+              0.14999999999999947,
+              3.65,
+              0.0
+            ],
+            [
+              5.85,
+              3.85,
+              2.55
+            ]
+          ]
+        },
+        {
+          "id": "6149f659-a270-4c6d-827f-0cad4961d22c",
+          "ifc_class": "IfcWall",
+          "volume_m3": 2.241,
+          "expected_volume_m3": 2.241,
+          "world_bounds_m": [
+            [
+              0.15,
+              0.15,
+              0.0
+            ],
+            [
+              5.8500000000000005,
+              0.35,
+              2.55
+            ]
+          ]
+        },
+        {
+          "id": "649b6875-af76-4ec6-9374-711b3458a49b",
+          "ifc_class": "IfcWall",
+          "volume_m3": 1.5990000000000004,
+          "expected_volume_m3": 1.599,
+          "world_bounds_m": [
+            [
+              5.6499999999999995,
+              0.15,
+              3.0
+            ],
+            [
+              5.85,
+              3.85,
+              5.55
+            ]
+          ]
+        },
+        {
+          "id": "9bae138b-38ce-4c75-885e-bb56c53883bc",
+          "ifc_class": "IfcWall",
+          "volume_m3": 1.8870000000000005,
+          "expected_volume_m3": 1.887,
+          "world_bounds_m": [
+            [
+              0.15,
+              0.1499999999999999,
+              3.0
+            ],
+            [
+              0.35,
+              3.85,
+              5.55
+            ]
+          ]
+        },
+        {
+          "id": "b21ef222-e2fb-4eb9-8d6b-8719372057d8",
+          "ifc_class": "IfcWall",
+          "volume_m3": 1.5990000000000004,
+          "expected_volume_m3": 1.599,
+          "world_bounds_m": [
+            [
+              5.6499999999999995,
+              0.15,
+              0.0
+            ],
+            [
+              5.85,
+              3.85,
+              2.55
+            ]
+          ]
+        },
+        {
+          "id": "f3070bfc-23f6-4dd9-94a7-7c12efadef11",
+          "ifc_class": "IfcWall",
+          "volume_m3": 2.907,
+          "expected_volume_m3": 2.907,
+          "world_bounds_m": [
+            [
+              0.14999999999999947,
+              3.65,
+              3.0
+            ],
+            [
+              5.85,
+              3.85,
+              5.55
+            ]
+          ]
+        },
+        {
+          "id": "0a1c0244-4f6a-416d-b311-0612eb4871e3",
+          "ifc_class": "IfcDoor",
+          "volume_m3": 0.05000000000000001,
+          "expected_volume_m3": 0.05000000000000003,
+          "world_bounds_m": [
+            [
+              0.9500000000000001,
+              0.15,
+              0.0
+            ],
+            [
+              1.85,
+              0.35,
+              2.0999999999999996
+            ]
+          ]
+        },
+        {
+          "id": "31317e02-cb50-4953-845b-4cc9b4bf938f",
+          "ifc_class": "IfcDoor",
+          "volume_m3": 0.05000000000000001,
+          "expected_volume_m3": 0.05000000000000003,
+          "world_bounds_m": [
+            [
+              0.9500000000000001,
+              0.15,
+              3.0
+            ],
+            [
+              1.85,
+              0.35,
+              5.1
+            ]
+          ]
+        },
+        {
+          "id": "60c579b6-0178-4469-b6b6-50578a63fca7",
+          "ifc_class": "IfcWindow",
+          "volume_m3": 0.04600000000000003,
+          "expected_volume_m3": 0.046,
+          "world_bounds_m": [
+            [
+              3.15,
+              0.15,
+              0.9
+            ],
+            [
+              4.35,
+              0.35,
+              2.1
+            ]
+          ]
+        },
+        {
+          "id": "87089dfb-98dc-4ad7-abe2-f24d143d45d1",
+          "ifc_class": "IfcWindow",
+          "volume_m3": 0.04600000000000003,
+          "expected_volume_m3": 0.045999999999999985,
+          "world_bounds_m": [
+            [
+              5.6499999999999995,
+              1.3499999999999999,
+              0.9
+            ],
+            [
+              5.85,
+              2.55,
+              2.1
+            ]
+          ]
+        },
+        {
+          "id": "9a352d3b-0178-4dfc-9e23-76094593deb5",
+          "ifc_class": "IfcWindow",
+          "volume_m3": 0.04600000000000003,
+          "expected_volume_m3": 0.046,
+          "world_bounds_m": [
+            [
+              3.15,
+              0.15,
+              3.9
+            ],
+            [
+              4.35,
+              0.35,
+              5.1
+            ]
+          ]
+        },
+        {
+          "id": "c8d0c8c9-a89a-4b1e-b361-82b571abd400",
+          "ifc_class": "IfcWindow",
+          "volume_m3": 0.04600000000000003,
+          "expected_volume_m3": 0.045999999999999985,
+          "world_bounds_m": [
+            [
+              5.6499999999999995,
+              1.3499999999999999,
+              3.9
+            ],
+            [
+              5.85,
+              2.55,
+              5.1
+            ]
+          ]
+        },
+        {
+          "id": "9e9d713a-a1b3-45dc-a2f8-8e89892785bd",
+          "ifc_class": "IfcSlab",
+          "volume_m3": 4.3875,
+          "expected_volume_m3": 4.3875,
+          "world_bounds_m": [
+            [
+              -0.25,
+              -0.25,
+              -0.15
+            ],
+            [
+              6.25,
+              4.25,
+              0.0
+            ]
+          ]
+        },
+        {
+          "id": "afde9f82-c48c-44bd-a143-1d90f91f13f1",
+          "ifc_class": "IfcSlab",
+          "volume_m3": 4.3875,
+          "expected_volume_m3": 4.3875,
+          "world_bounds_m": [
+            [
+              -0.25,
+              -0.25,
+              2.85
+            ],
+            [
+              6.25,
+              4.25,
+              3.0
+            ]
+          ]
+        },
+        {
+          "id": "e78967b0-bddf-4afb-b534-3a161f902227",
+          "ifc_class": "IfcSlab",
+          "volume_m3": 4.3875,
+          "expected_volume_m3": 4.3875,
+          "world_bounds_m": [
+            [
+              -0.25,
+              -0.25,
+              5.85
+            ],
+            [
+              6.25,
+              4.25,
+              6.0
+            ]
+          ]
+        },
+        {
+          "id": "2f2d20c3-aab0-473b-a3c7-39a3bcf22de7",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              -0.15,
+              3.8499999999999996,
+              0.0
+            ],
+            [
+              0.15000000000000002,
+              4.15,
+              2.85
+            ]
+          ]
+        },
+        {
+          "id": "42f82aab-99cf-438e-bbc0-5d7a3113be9b",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              -0.15,
+              3.8499999999999996,
+              3.0
+            ],
+            [
+              0.15000000000000002,
+              4.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "72e68695-2037-4248-b41b-e8c980aaa998",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565000000000002,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              5.85,
+              3.8499999999999996,
+              0.0
+            ],
+            [
+              6.15,
+              4.15,
+              2.85
+            ]
+          ]
+        },
+        {
+          "id": "730fef27-e695-4671-9806-4233c2c1068a",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565000000000001,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              5.85,
+              -0.15,
+              0.0
+            ],
+            [
+              6.15,
+              0.15,
+              2.85
+            ]
+          ]
+        },
+        {
+          "id": "797ec5dc-451e-48ba-9d0e-f06b4a9bdf16",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              -0.15,
+              -0.15,
+              0.0
+            ],
+            [
+              0.15000000000000002,
+              0.15,
+              2.85
+            ]
+          ]
+        },
+        {
+          "id": "d05549cb-80c0-44bf-ac45-7bf1edc99652",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565000000000001,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              5.85,
+              -0.15,
+              3.0
+            ],
+            [
+              6.15,
+              0.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "d7ec01ee-785a-4a0a-a617-e856e3b6e965",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              -0.15,
+              -0.15,
+              3.0
+            ],
+            [
+              0.15000000000000002,
+              0.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "def71377-5ba1-49d3-8c76-be105187ac63",
+          "ifc_class": "IfcColumn",
+          "volume_m3": 0.2565000000000002,
+          "expected_volume_m3": 0.2565,
+          "world_bounds_m": [
+            [
+              5.85,
+              3.8499999999999996,
+              3.0
+            ],
+            [
+              6.15,
+              4.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "4f806193-5c43-4136-96ba-7be20d902072",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.54,
+          "expected_volume_m3": 0.54,
+          "world_bounds_m": [
+            [
+              0.0,
+              3.85,
+              2.55
+            ],
+            [
+              6.0,
+              4.15,
+              2.8499999999999996
+            ]
+          ]
+        },
+        {
+          "id": "63be3748-3c94-4a65-b245-65218a5cfe46",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.36,
+          "expected_volume_m3": 0.36,
+          "world_bounds_m": [
+            [
+              5.85,
+              0.0,
+              5.55
+            ],
+            [
+              6.15,
+              4.0,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "6d1eaaa8-ada0-44e4-94fa-a6f2b3283dad",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.36,
+          "expected_volume_m3": 0.36,
+          "world_bounds_m": [
+            [
+              -0.15,
+              0.0,
+              5.55
+            ],
+            [
+              0.15,
+              4.0,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "6d37d6f8-53a9-42a2-a1e5-49e061362763",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.54,
+          "expected_volume_m3": 0.54,
+          "world_bounds_m": [
+            [
+              0.0,
+              -0.15,
+              5.55
+            ],
+            [
+              6.0,
+              0.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "70829b32-bbd0-437f-b072-a1745c850c61",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.36,
+          "expected_volume_m3": 0.36,
+          "world_bounds_m": [
+            [
+              5.85,
+              0.0,
+              2.55
+            ],
+            [
+              6.15,
+              4.0,
+              2.8499999999999996
+            ]
+          ]
+        },
+        {
+          "id": "a9a4eaa0-7498-4822-8371-15acd4c2554d",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.54,
+          "expected_volume_m3": 0.54,
+          "world_bounds_m": [
+            [
+              0.0,
+              3.85,
+              5.55
+            ],
+            [
+              6.0,
+              4.15,
+              5.85
+            ]
+          ]
+        },
+        {
+          "id": "c77aadaa-bf7a-428e-902e-adabd5bca80b",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.36,
+          "expected_volume_m3": 0.36,
+          "world_bounds_m": [
+            [
+              -0.15,
+              0.0,
+              2.55
+            ],
+            [
+              0.15,
+              4.0,
+              2.8499999999999996
+            ]
+          ]
+        },
+        {
+          "id": "e68f92e9-bd2d-4593-bbd0-a530146b8faa",
+          "ifc_class": "IfcBeam",
+          "volume_m3": 0.54,
+          "expected_volume_m3": 0.54,
+          "world_bounds_m": [
+            [
+              0.0,
+              -0.15,
+              2.55
+            ],
+            [
+              6.0,
+              0.15,
+              2.8499999999999996
+            ]
+          ]
+        }
+      ],
+      "express_rules": {
+        "requested": false,
+        "status": "not_requested",
+        "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+      },
+      "external_application_review": "not established by this validator"
+    }
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "status": "passed",
+  "schema": "IFC4",
+  "ifcopenshell_version": "0.9.0.post1",
+  "source_content_revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "checks_passed": 42,
+  "checks": [
+    {
+      "name": "ifc4-schema",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "unique-global-ids",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "mapped-counts",
+      "status": "passed",
+      "details": {
+        "IfcProject": 1,
+        "IfcSite": 1,
+        "IfcBuilding": 1,
+        "IfcBuildingStorey": 2,
+        "IfcWallType": 1,
+        "IfcWall": 1,
+        "IfcDoor": 1,
+        "IfcWindow": 1,
+        "IfcSlab": 1,
+        "IfcColumn": 1,
+        "IfcBeam": 1,
+        "IfcOpeningElement": 2,
+        "IfcRelVoidsElement": 2,
+        "IfcRelFillsElement": 2
+      }
+    },
+    {
+      "name": "si-units",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-hierarchy",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-source",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:9f17f0b4-8da7-506a-83eb-e3e6b0f38b44",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:40f288d7-f0fb-5546-89e8-ec6242cb1050",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-type:c3acd569-027d-590b-aef2-616c00b367ff",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-semantics:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": {
+        "volume_m3": 2.982,
+        "expected_volume_m3": 2.982
+      }
+    },
+    {
+      "name": "door-relations:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-source-size:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-placement:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.04999999999999999,
+        "expected_volume_m3": 0.05
+      }
+    },
+    {
+      "name": "opening-empty:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-relations:1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-source-size:1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "window-placement:1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.042000000000000016,
+        "expected_volume_m3": 0.042
+      }
+    },
+    {
+      "name": "opening-empty:1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-semantics:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-placement:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "slab-quantities:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": {
+        "volume_m3": 4.2,
+        "expected_volume_m3": 4.2
+      }
+    },
+    {
+      "name": "geometry-bounds:32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            -0.5,
+            -0.5,
+            2.85
+          ],
+          [
+            6.5,
+            3.5,
+            3.0
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            -0.5,
+            -0.5,
+            2.85
+          ],
+          [
+            6.5,
+            3.5,
+            3.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "column-semantics:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-placement:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "column-quantities:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.34199999999999997,
+        "expected_volume_m3": 0.342
+      }
+    },
+    {
+      "name": "geometry-bounds:7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.7700961894323342,
+            1.7517949192431121,
+            0.0
+          ],
+          [
+            1.2299038105676658,
+            2.248205080756888,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.7700961894323342,
+            1.7517949192431121,
+            0.0
+          ],
+          [
+            1.2299038105676658,
+            2.248205080756888,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "beam-semantics:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-placement:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "beam-quantities:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "join-cutters:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.5400000000000005,
+        "expected_volume_m3": 0.54
+      }
+    },
+    {
+      "name": "geometry-bounds:35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "status": "passed",
+      "details": {
+        "world_bounds_m": [
+          [
+            0.0,
+            1.85,
+            2.55
+          ],
+          [
+            6.0,
+            2.15,
+            2.85
+          ]
+        ],
+        "native_bounds_m": [
+          [
+            0.0,
+            1.85,
+            2.55
+          ],
+          [
+            6.0,
+            2.15,
+            2.85
+          ]
+        ]
+      }
+    },
+    {
+      "name": "express-rules",
+      "status": "passed",
+      "details": []
+    }
+  ],
+  "geometry": [
+    {
+      "id": "a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "ifc_class": "IfcWall",
+      "volume_m3": 2.982,
+      "expected_volume_m3": 2.982,
+      "world_bounds_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          6.0,
+          0.2,
+          3.0
+        ]
+      ]
+    },
+    {
+      "id": "ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "ifc_class": "IfcDoor",
+      "volume_m3": 0.04999999999999999,
+      "expected_volume_m3": 0.05,
+      "world_bounds_m": [
+        [
+          1.2,
+          0.0,
+          0.0
+        ],
+        [
+          2.1,
+          0.2,
+          2.1
+        ]
+      ]
+    },
+    {
+      "id": "1bfdbf67-5f04-51d6-a7fa-967d7644740f",
+      "ifc_class": "IfcWindow",
+      "volume_m3": 0.042000000000000016,
+      "expected_volume_m3": 0.042,
+      "world_bounds_m": [
+        [
+          3.0,
+          0.0,
+          1.0
+        ],
+        [
+          4.2,
+          0.2,
+          2.0
+        ]
+      ]
+    },
+    {
+      "id": "32537fb0-4a3b-5c60-b2a3-e831929dbcc9",
+      "ifc_class": "IfcSlab",
+      "volume_m3": 4.2,
+      "expected_volume_m3": 4.2,
+      "world_bounds_m": [
+        [
+          -0.5,
+          -0.5,
+          2.85
+        ],
+        [
+          6.5,
+          3.5,
+          3.0
+        ]
+      ]
+    },
+    {
+      "id": "7f51ee6b-2dcf-55a3-bfb9-a362acfbf0f7",
+      "ifc_class": "IfcColumn",
+      "volume_m3": 0.34199999999999997,
+      "expected_volume_m3": 0.342,
+      "world_bounds_m": [
+        [
+          0.7700961894323342,
+          1.7517949192431121,
+          0.0
+        ],
+        [
+          1.2299038105676658,
+          2.248205080756888,
+          2.85
+        ]
+      ]
+    },
+    {
+      "id": "35dd4f12-a3d0-57d0-87f1-6b119d967802",
+      "ifc_class": "IfcBeam",
+      "volume_m3": 0.5400000000000005,
+      "expected_volume_m3": 0.54,
+      "world_bounds_m": [
+        [
+          0.0,
+          1.85,
+          2.55
+        ],
+        [
+          6.0,
+          2.15,
+          2.85
+        ]
+      ]
+    }
+  ],
+  "express_rules": {
+    "requested": true,
+    "status": "passed",
+    "messages": []
+  },
+  "external_application_review": "not established by this validator"
+}

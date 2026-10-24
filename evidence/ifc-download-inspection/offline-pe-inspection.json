@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "status": "offline_windows_wheel_extraction_verified",
+  "host_executed": false,
+  "platform_execution": "not_executed",
+  "wheels_verified": 7,
+  "files_manifest_sha256": "3a210bb36f5a0ca52b4f3d3db4a26b3e8e2075dc6e79747131679bde9f6c4bb2",
+  "native_extension_headers": [
+    {
+      "path": "ifcopenshell/_ifcopenshell_wrapper.cp312-win_amd64.pyd",
+      "machine": "0x8664",
+      "amd64": true,
+      "sha256": "110d1696696f773770ce7d710257e0e61b895369d1b6be82cb2d6ba4191108fb"
+    },
+    {
+      "path": "shapely/lib.cp312-win_amd64.pyd",
+      "machine": "0x8664",
+      "amd64": true,
+      "sha256": "662dab5d5a3c93b8a457118f0d96765c6a7b51538133754d7e2a540ef9ab65e3"
+    },
+    {
+      "path": "shapely/_geometry_helpers.cp312-win_amd64.pyd",
+      "machine": "0x8664",
+      "amd64": true,
+      "sha256": "8e65aeb9230fdcad1ec63ae9bcaa781a084a3fc94c4744e886a35328c8f4cc73"
+    },
+    {
+      "path": "shapely/_geos.cp312-win_amd64.pyd",
+      "machine": "0x8664",
+      "amd64": true,
+      "sha256": "fa81c1de078db6956bb4327b7a2aeabecfef6e42827518ec10eec1f4b991c1ce"
+    }
+  ]
+}

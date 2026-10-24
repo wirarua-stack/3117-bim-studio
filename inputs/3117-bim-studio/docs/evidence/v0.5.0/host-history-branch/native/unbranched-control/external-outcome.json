@@ -1,0 +1,24 @@
+{
+  "case": "unbranched-control",
+  "classification": "passed_control",
+  "exit_code": 0,
+  "object_type": "App::FeaturePython",
+  "main_event_loop_yield_between_operations_ms": null,
+  "addon_installed": false,
+  "addon_imported": false,
+  "custom_python_proxies": false,
+  "modeless_readers": false,
+  "restored_fcstd": false,
+  "second_document": false,
+  "last_recorded_step": "all passed",
+  "raw_report_status": "passed",
+  "raw_report_note": "Control completed normally.",
+  "signal_text_seen": false,
+  "report": "native/unbranched-control/report.json",
+  "log": "native/unbranched-control/gui.log",
+  "no_addon_evidence": {
+    "modules": "No addon modules imported by the preserved standalone test source.",
+    "user_mod_directories": [],
+    "isolated_user_data": "/tmp/bim3117-v050-catalog/native-control/data/FreeCAD/v1-1"
+  }
+}

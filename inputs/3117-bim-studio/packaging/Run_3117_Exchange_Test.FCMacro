@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Execute in FreeCAD after installing 3117 v0.4.0 and restarting FreeCAD.
+import datetime
+from pathlib import Path
+import sys
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtGui
+try:
+    from PySide import QtWidgets
+except ImportError:
+    QtWidgets = QtGui
+
+_bim3117_exchange_root = None
+try:
+    _bim3117_exchange_macro = Path(__file__).resolve()
+    for _bim3117_exchange_candidate in (_bim3117_exchange_macro.parent, _bim3117_exchange_macro.parent.parent):
+        if (_bim3117_exchange_candidate / "tests" / "freecad_exchange_gui.py").is_file():
+            _bim3117_exchange_root = _bim3117_exchange_candidate
+            break
+except (NameError, TypeError, OSError):
+    pass
+if _bim3117_exchange_root is None:
+    _bim3117_exchange_selected = QtWidgets.QFileDialog.getExistingDirectory(
+        Gui.getMainWindow(), "Select the extracted 3117 v0.4.0 package folder")
+    if _bim3117_exchange_selected:
+        _bim3117_exchange_root = Path(_bim3117_exchange_selected)
+def _bim3117_exchange_run_tests(_bim3117_exchange_root=_bim3117_exchange_root):
+    try:
+        if not (_bim3117_exchange_root / "tests" / "freecad_exchange_gui.py").is_file():
+            raise RuntimeError("The selected folder does not contain tests/freecad_exchange_gui.py")
+        _bim3117_exchange_output = (Path(App.getUserAppDataDir()) / "BIM3117_Test_Reports" /
+                               ("Exchange_" + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")))
+        sys.path.insert(0, str(_bim3117_exchange_root / "tests"))
+        from freecad_exchange_gui import run
+        _bim3117_exchange_report = run(_bim3117_exchange_output, keep_sample=True)
+        _bim3117_exchange_message = (
+            "Passed {checks} Quantity / Exchange GUI checks.\n\nReport, example and screenshot:\n{path}\n\n"
+            "Next: close FreeCAD, reopen Quantity_Exchange_Workbench.FCStd from the example subfolder, open Quantities & Exchange, "
+            "export CSV or IFC again, then edit L01 and check Current / Stale export status with Undo / Redo."
+        ).format(checks=_bim3117_exchange_report["checks_passed"], path=str(_bim3117_exchange_output))
+        App.Console.PrintMessage(_bim3117_exchange_message + "\n")
+        QtWidgets.QMessageBox.information(Gui.getMainWindow(), "3117 Quantity / Exchange test", _bim3117_exchange_message)
+    except BaseException as _bim3117_exchange_error:
+        App.Console.PrintError(traceback.format_exc() + "\n")
+        QtWidgets.QMessageBox.warning(
+            Gui.getMainWindow(), "3117 Quantity / Exchange test failed", str(_bim3117_exchange_error))
+
+
+if _bim3117_exchange_root is not None:
+    # Native Undo/Redo actions stay disabled while a FreeCAD macro is running.
+    # Return to the GUI event loop before the harness invokes those actions.
+    QtCore.QTimer.singleShot(0, _bim3117_exchange_run_tests)

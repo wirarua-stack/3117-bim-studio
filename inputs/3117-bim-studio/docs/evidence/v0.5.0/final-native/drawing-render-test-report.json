@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "renderer and exporter load from the installed workbench",
+      "status": "passed"
+    },
+    {
+      "name": "SVG checks run without the FreeCAD GUI",
+      "status": "passed"
+    },
+    {
+      "name": "SVG is a physical A3 landscape page",
+      "status": "passed"
+    },
+    {
+      "name": "Native Thai and XML-sensitive labels survive escaping",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> preserves exact 1:50 geometry size in paper millimetres",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> dimensions reference projected bounds and native UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> tags identify only native first-hit sources",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> scale bar measures the exact labelled model distance",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A preserves exact 1:50 geometry size in paper millimetres",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A dimensions reference projected bounds and native UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A tags identify only native first-hit sources",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A scale bar measures the exact labelled model distance",
+      "status": "passed"
+    },
+    {
+      "name": "Real window hole retains the evenodd section fill rule",
+      "status": "passed"
+    },
+    {
+      "name": "PDF text uses the exact visible SVG labels without duplicate accessibility titles",
+      "status": "passed"
+    },
+    {
+      "name": "Oversize requested scale is rejected rather than silently fitted",
+      "status": "passed"
+    },
+    {
+      "name": "Crowded lower tags stay inside the plot without pushing a top tag out",
+      "status": "passed"
+    },
+    {
+      "name": "Rendering and fit rejection leave native geometry and history unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Published metadata verifies the exact vector payload bytes",
+      "status": "passed"
+    },
+    {
+      "name": "Published metadata preserves both source revisions and complete annotations",
+      "status": "passed"
+    },
+    {
+      "name": "Successful SVG export preserves native identity, BRep and Undo/Redo history",
+      "status": "passed"
+    },
+    {
+      "name": "Existing payload and metadata require explicit overwrite",
+      "status": "passed"
+    },
+    {
+      "name": "Overwrite rejection preserves the complete prior bundle",
+      "status": "passed"
+    },
+    {
+      "name": "Level edit refreshes the associative section height by 300 mm",
+      "status": "passed"
+    },
+    {
+      "name": "Stale model revision is rejected before export staging",
+      "status": "passed"
+    },
+    {
+      "name": "Stale drawing revision is rejected before export staging",
+      "status": "passed"
+    },
+    {
+      "name": "Both stale-preview paths preserve the prior bundle",
+      "status": "passed"
+    },
+    {
+      "name": "A model edit after staging rejects publication at the commit boundary",
+      "status": "passed"
+    },
+    {
+      "name": "Interrupted model export keeps old payload/metadata and cleans locks",
+      "status": "passed"
+    },
+    {
+      "name": "A drawing edit after staging rejects publication at the commit boundary",
+      "status": "passed"
+    },
+    {
+      "name": "Interrupted drawing export keeps old payload/metadata and cleans locks",
+      "status": "passed"
+    },
+    {
+      "name": "Caught failure on final metadata replacement aborts the bundle",
+      "status": "passed"
+    },
+    {
+      "name": "Caught publication failure rolls back the already replaced payload",
+      "status": "passed"
+    },
+    {
+      "name": "Failure probes leave native content at its original revisions",
+      "status": "passed"
+    }
+  ],
+  "case_directory": "/tmp/bim3117-v050-final-native/output/drawing-render-case-n2td8c8p",
+  "artifact_paths": [
+    "/tmp/bim3117-v050-final-native/output/drawing-render-case-n2td8c8p/drawing-render.svg",
+    "/tmp/bim3117-v050-final-native/output/drawing-render-case-n2td8c8p/drawing-render_svg_metadata.json"
+  ],
+  "case_report_path": "/tmp/bim3117-v050-final-native/output/drawing-render-case-n2td8c8p/drawing-render-test-report.json",
+  "scope": "Native SVG exact scale, associative annotations, read-only export, dual-revision freshness and caught-failure rollback",
+  "checks_passed": 33,
+  "renderer": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_render.py",
+  "exporter": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_export.py",
+  "model_revision": "4b21df9b5b84e5df03222c194acd8b42d11a8ee5d19ea8184a67f74fc8139e8a",
+  "drawing_revision": "a73f65e2749a04f45302955fc3aef806857727f960c44afe74afafb1f775beb0"
+}

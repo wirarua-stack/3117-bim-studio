@@ -1,0 +1,111 @@
+{
+  "schema": "bim3117-reference",
+  "schema_version": 1,
+  "units": "m",
+  "document_id": "674411b3-bd13-4fa1-88ee-2c55e66504da",
+  "name": "3117 BIM reference - 6 x 4 m",
+  "levels": [
+    {
+      "id": "1d21f92f-a4eb-4df6-a6df-37d938928c07",
+      "name": "L00",
+      "elevation": 0.0
+    },
+    {
+      "id": "3bec5d31-f5b8-4a78-8bf7-e9180bc3f454",
+      "name": "L01",
+      "elevation": 3.0
+    }
+  ],
+  "wall_types": [
+    {
+      "id": "bbe713b9-de6c-4f01-be4b-8eb58df87cfd",
+      "name": "W200",
+      "thickness": 0.2
+    }
+  ],
+  "walls": [
+    {
+      "id": "504a545a-a37e-434c-8f67-2b317e26e57e",
+      "name": "Wall 1",
+      "type_id": "bbe713b9-de6c-4f01-be4b-8eb58df87cfd",
+      "base_level_id": "1d21f92f-a4eb-4df6-a6df-37d938928c07",
+      "start": [
+        0.0,
+        0.0
+      ],
+      "end": [
+        6.0,
+        0.0
+      ],
+      "height": 3.0,
+      "base_offset": 0.0,
+      "top_level_id": "3bec5d31-f5b8-4a78-8bf7-e9180bc3f454",
+      "top_offset": 0.0
+    },
+    {
+      "id": "7c0169f3-b69b-45ba-82a3-782f2a299e01",
+      "name": "Wall 2",
+      "type_id": "bbe713b9-de6c-4f01-be4b-8eb58df87cfd",
+      "base_level_id": "1d21f92f-a4eb-4df6-a6df-37d938928c07",
+      "start": [
+        6.0,
+        0.0
+      ],
+      "end": [
+        6.0,
+        4.0
+      ],
+      "height": 3.0,
+      "base_offset": 0.0,
+      "top_level_id": "3bec5d31-f5b8-4a78-8bf7-e9180bc3f454",
+      "top_offset": 0.0
+    },
+    {
+      "id": "afacfa45-1254-4a28-b43e-379594513321",
+      "name": "Wall 3",
+      "type_id": "bbe713b9-de6c-4f01-be4b-8eb58df87cfd",
+      "base_level_id": "1d21f92f-a4eb-4df6-a6df-37d938928c07",
+      "start": [
+        6.0,
+        4.0
+      ],
+      "end": [
+        0.0,
+        4.0
+      ],
+      "height": 3.0,
+      "base_offset": 0.0,
+      "top_level_id": "3bec5d31-f5b8-4a78-8bf7-e9180bc3f454",
+      "top_offset": 0.0
+    },
+    {
+      "id": "a8e9aba9-e1a7-48bc-9832-2c837949f3dd",
+      "name": "Wall 4",
+      "type_id": "bbe713b9-de6c-4f01-be4b-8eb58df87cfd",
+      "base_level_id": "1d21f92f-a4eb-4df6-a6df-37d938928c07",
+      "start": [
+        0.0,
+        4.0
+      ],
+      "end": [
+        0.0,
+        0.0
+      ],
+      "height": 3.0,
+      "base_offset": 0.0,
+      "top_level_id": "3bec5d31-f5b8-4a78-8bf7-e9180bc3f454",
+      "top_offset": 0.0
+    }
+  ],
+  "doors": [
+    {
+      "id": "471f6251-7da0-4047-a29d-07d1879c2e01",
+      "name": "D900",
+      "host_id": "504a545a-a37e-434c-8f67-2b317e26e57e",
+      "offset": 1.0,
+      "width": 0.9,
+      "height": 2.1,
+      "sill": 0.0
+    }
+  ]
+}

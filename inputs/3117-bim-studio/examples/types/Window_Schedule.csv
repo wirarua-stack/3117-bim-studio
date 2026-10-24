@@ -1,0 +1,5 @@
+﻿row_id,element_ids,name,type_name,level,host_name,width_m,height_m,sill_m,opening_area_m2,frame_volume_m3,count
+e63bc2ca-050e-4766-9aec-e07042fa5986,e63bc2ca-050e-4766-9aec-e07042fa5986,WIN11,Window 1200 x 1200,L00,Wall 1-1,1.2,1.2,0.9,1.44,0.046,1
+83fb60f1-b5b2-4825-b529-5fd01ccff965,83fb60f1-b5b2-4825-b529-5fd01ccff965,WIN12,Window 1200 x 1200,L00,Wall 1-2,1.2,1.2,0.9,1.44,0.045999999999999985,1
+6448f086-9c0f-48c6-b97b-a62bb7ea2b74,6448f086-9c0f-48c6-b97b-a62bb7ea2b74,WIN21,Window 1200 x 1200,L01,Wall 2-1,1.2,1.2,0.9,1.44,0.046,1
+13dab521-9139-425c-b8e7-c6df71ef7471,13dab521-9139-425c-b8e7-c6df71ef7471,WIN22,Window 1200 x 1200,L01,Wall 2-2,1.2,1.2,0.9,1.44,0.045999999999999985,1

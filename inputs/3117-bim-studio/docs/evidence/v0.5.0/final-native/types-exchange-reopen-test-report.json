@@ -1,0 +1,753 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "prior installed-native suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "native catalogue proxies are not preregistered before restore",
+      "status": "passed"
+    },
+    {
+      "name": "fresh FCStd restores exact authored content revision",
+      "status": "passed"
+    },
+    {
+      "name": "fresh FCStd restores stable material, type and product UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "fresh FCStd restores material partition rows and assignment coverage",
+      "status": "passed"
+    },
+    {
+      "name": "fresh IFC publication validates type, layer and native solids",
+      "status": "passed"
+    },
+    {
+      "name": "fresh IFC publication preserves all rooted GlobalIds",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 7,
+  "content_revision": "a8fbabbea23f5f0932b07d0c0946b26d16ef9960d29638d34d59830ae025083e",
+  "ifc_validation": {
+    "status": "passed",
+    "schema": "IFC4",
+    "ifcopenshell_version": "0.8.4",
+    "source_content_revision": "a8fbabbea23f5f0932b07d0c0946b26d16ef9960d29638d34d59830ae025083e",
+    "checks_passed": 93,
+    "checks": [
+      {
+        "name": "ifc4-schema",
+        "status": "passed",
+        "details": []
+      },
+      {
+        "name": "unique-global-ids",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "mapped-counts",
+        "status": "passed",
+        "details": {
+          "IfcProject": 1,
+          "IfcSite": 1,
+          "IfcBuilding": 1,
+          "IfcBuildingStorey": 2,
+          "IfcWallType": 1,
+          "IfcWall": 1,
+          "IfcDoor": 1,
+          "IfcWindow": 1,
+          "IfcSlab": 1,
+          "IfcColumn": 1,
+          "IfcBeam": 1,
+          "IfcOpeningElement": 2,
+          "IfcRelVoidsElement": 2,
+          "IfcRelFillsElement": 2,
+          "IfcSlabType": 1,
+          "IfcColumnType": 1,
+          "IfcBeamType": 1,
+          "IfcDoorType": 1,
+          "IfcWindowType": 1,
+          "IfcMaterialLayerSet": 2,
+          "IfcMaterialLayerSetUsage": 2
+        }
+      },
+      {
+        "name": "si-units",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "project-hierarchy",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "project-source",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "level:74f077b7-9bcc-4b7a-b23e-68e699751f33",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "level:9ce82287-dfbb-464e-9d24-4bc1e989cfa9",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-type:daecaa47-a3e6-4e5e-a60c-90ecdc1b1983",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source-unique:07de9cf5-5aa5-48d9-b6fc-a155ba25079a",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source-unique:194f5b90-96fc-4bb7-87ee-3c87d062ce34",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source-unique:465d0474-51dd-4845-9e34-e9afa6fdd78f",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source-unique:dca30ccf-79a2-4847-ad52-cded082f0815",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "native-material-count",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source:07de9cf5-5aa5-48d9-b6fc-a155ba25079a",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source:194f5b90-96fc-4bb7-87ee-3c87d062ce34",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source:465d0474-51dd-4845-9e34-e9afa6fdd78f",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-source:dca30ccf-79a2-4847-ad52-cded082f0815",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:daecaa47-a3e6-4e5e-a60c-90ecdc1b1983",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:daecaa47-a3e6-4e5e-a60c-90ecdc1b1983",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material-layers:daecaa47-a3e6-4e5e-a60c-90ecdc1b1983",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:04efc260-f644-4c69-874f-1bc8828c62ca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:04efc260-f644-4c69-874f-1bc8828c62ca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material:04efc260-f644-4c69-874f-1bc8828c62ca",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:39e66ad2-2f0b-4606-9a41-707a23222349",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:39e66ad2-2f0b-4606-9a41-707a23222349",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material:39e66ad2-2f0b-4606-9a41-707a23222349",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:7c65c15b-48ab-4795-820d-d85c63bffceb",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:7c65c15b-48ab-4795-820d-d85c63bffceb",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material:7c65c15b-48ab-4795-820d-d85c63bffceb",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:9a56cec6-0a75-400f-a95a-8f43fb57d62d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:9a56cec6-0a75-400f-a95a-8f43fb57d62d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material-layers:9a56cec6-0a75-400f-a95a-8f43fb57d62d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-instances:d1707747-575f-423b-a24b-583bacb426d3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-source:d1707747-575f-423b-a24b-583bacb426d3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "type-material:d1707747-575f-423b-a24b-583bacb426d3",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-usage:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-usage:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-inheritance:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-inheritance:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-inheritance:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "product-type:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-inheritance:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-count",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantities:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "material-quantity-source:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-semantics:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-placement:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "wall-quantities:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "status": "passed",
+        "details": {
+          "volume_m3": 2.982,
+          "expected_volume_m3": 2.982
+        }
+      },
+      {
+        "name": "door-relations:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-source-size:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "door-placement:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.05000000000000001,
+          "expected_volume_m3": 0.05000000000000003
+        }
+      },
+      {
+        "name": "opening-empty:cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "window-relations:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "window-source-size:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "window-placement:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.042000000000000044,
+          "expected_volume_m3": 0.041999999999999975
+        }
+      },
+      {
+        "name": "opening-empty:a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "slab-semantics:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "slab-placement:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "slab-quantities:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "join-cutters:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": {
+          "volume_m3": 4.2,
+          "expected_volume_m3": 4.199999999999999
+        }
+      },
+      {
+        "name": "geometry-bounds:b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "status": "passed",
+        "details": {
+          "world_bounds_m": [
+            [
+              -0.5,
+              -0.5,
+              2.85
+            ],
+            [
+              6.5,
+              3.5,
+              3.0
+            ]
+          ],
+          "native_bounds_m": [
+            [
+              -0.5,
+              -0.5,
+              2.85
+            ],
+            [
+              6.5,
+              3.5,
+              3.0
+            ]
+          ]
+        }
+      },
+      {
+        "name": "column-semantics:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "column-placement:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "column-quantities:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "join-cutters:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.34199999999999997,
+          "expected_volume_m3": 0.34200000000000014
+        }
+      },
+      {
+        "name": "geometry-bounds:61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "status": "passed",
+        "details": {
+          "world_bounds_m": [
+            [
+              0.7700961894323342,
+              1.7517949192431121,
+              0.0
+            ],
+            [
+              1.2299038105676658,
+              2.248205080756888,
+              2.85
+            ]
+          ],
+          "native_bounds_m": [
+            [
+              0.770096189432334,
+              1.7517949192431121,
+              0.0
+            ],
+            [
+              1.2299038105676658,
+              2.2482050807568874,
+              2.85
+            ]
+          ]
+        }
+      },
+      {
+        "name": "beam-semantics:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "beam-placement:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "beam-quantities:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "join-cutters:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": ""
+      },
+      {
+        "name": "geometry:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": {
+          "volume_m3": 0.54,
+          "expected_volume_m3": 0.54
+        }
+      },
+      {
+        "name": "geometry-bounds:98690de0-2140-403c-a230-cf75341becfd",
+        "status": "passed",
+        "details": {
+          "world_bounds_m": [
+            [
+              0.0,
+              1.85,
+              2.55
+            ],
+            [
+              6.0,
+              2.15,
+              2.8499999999999996
+            ]
+          ],
+          "native_bounds_m": [
+            [
+              0.0,
+              1.85,
+              2.55
+            ],
+            [
+              6.0,
+              2.15,
+              2.85
+            ]
+          ]
+        }
+      }
+    ],
+    "geometry": [
+      {
+        "id": "59632a2d-1145-45f2-8fc2-7dd4fd3103cc",
+        "ifc_class": "IfcWall",
+        "volume_m3": 2.982,
+        "expected_volume_m3": 2.982,
+        "world_bounds_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            6.0,
+            0.2,
+            3.0
+          ]
+        ]
+      },
+      {
+        "id": "cf351b5c-32a9-4362-9ad7-ff4b49b51693",
+        "ifc_class": "IfcDoor",
+        "volume_m3": 0.05000000000000001,
+        "expected_volume_m3": 0.05000000000000003,
+        "world_bounds_m": [
+          [
+            1.2,
+            0.0,
+            0.0
+          ],
+          [
+            2.1,
+            0.2,
+            2.0999999999999996
+          ]
+        ]
+      },
+      {
+        "id": "a6ddee2a-e45c-4ec4-a2da-a7a7b3b8eed7",
+        "ifc_class": "IfcWindow",
+        "volume_m3": 0.042000000000000044,
+        "expected_volume_m3": 0.041999999999999975,
+        "world_bounds_m": [
+          [
+            3.0,
+            0.0,
+            1.0
+          ],
+          [
+            4.2,
+            0.2,
+            2.0
+          ]
+        ]
+      },
+      {
+        "id": "b8264ed0-092e-4b5b-bbf9-b4f6de0d461d",
+        "ifc_class": "IfcSlab",
+        "volume_m3": 4.2,
+        "expected_volume_m3": 4.199999999999999,
+        "world_bounds_m": [
+          [
+            -0.5,
+            -0.5,
+            2.85
+          ],
+          [
+            6.5,
+            3.5,
+            3.0
+          ]
+        ]
+      },
+      {
+        "id": "61cd3d71-8546-4b87-a5dd-3139e0e0b8b4",
+        "ifc_class": "IfcColumn",
+        "volume_m3": 0.34199999999999997,
+        "expected_volume_m3": 0.34200000000000014,
+        "world_bounds_m": [
+          [
+            0.7700961894323342,
+            1.7517949192431121,
+            0.0
+          ],
+          [
+            1.2299038105676658,
+            2.248205080756888,
+            2.85
+          ]
+        ]
+      },
+      {
+        "id": "98690de0-2140-403c-a230-cf75341becfd",
+        "ifc_class": "IfcBeam",
+        "volume_m3": 0.54,
+        "expected_volume_m3": 0.54,
+        "world_bounds_m": [
+          [
+            0.0,
+            1.85,
+            2.55
+          ],
+          [
+            6.0,
+            2.15,
+            2.8499999999999996
+          ]
+        ]
+      }
+    ],
+    "express_rules": {
+      "requested": false,
+      "status": "not_requested",
+      "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+    },
+    "external_application_review": "not established by this validator"
+  }
+}

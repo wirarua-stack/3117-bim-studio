@@ -1,0 +1,7 @@
+{
+  "scope": "PowerShell parser running on Linux only",
+  "native_windows_execution": false,
+  "runtime": "7.6.8",
+  "exit_code": 0,
+  "output": "[\n  {\n    \"path\": \"/workspace/scratch/9457befac3c8/3117-windows-acceptance/Start-WindowsAcceptance.ps1\",\n    \"errors\": []\n  },\n  {\n    \"path\": \"/workspace/scratch/9457befac3c8/3117-windows-acceptance/build/Build-FreeCAD.ps1\",\n    \"errors\": []\n  }\n]\n"
+}

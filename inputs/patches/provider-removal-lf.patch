@@ -1,0 +1,12 @@
+--- a/src/Gui/Document.cpp
++++ b/src/Gui/Document.cpp
+@@ -1179,6 +1179,9 @@
+         = d->_ViewProviderMap.find(&obj);
+     if (it != d->_ViewProviderMap.end()) {
+         ViewProvider* viewProvider = it->second;
++
++        // A detached provider may be destroyed when its transaction is discarded.
++        d->_redoViewProviders.remove(it->second);
+ 
+         auto itC = d->_CoinMap.find(viewProvider->getRoot());
+         if (itC != d->_CoinMap.end()) {

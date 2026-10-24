@@ -1,0 +1,10 @@
+[
+  "/tmp/bim3117-host-fix/bin/micromamba",
+  "--no-rc",
+  "run",
+  "-r",
+  "/tmp/bim3117-host-fix/mamba-root",
+  "-p",
+  "/tmp/bim3117-host-fix/sdk",
+  "/tmp/bim3117-host-fix/build/bin/FreeCAD"
+]

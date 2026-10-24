@@ -1,0 +1,24 @@
+{
+  "case": "timed-non-python",
+  "classification": "failed_native_host",
+  "exit_code": 139,
+  "object_type": "Part::Feature",
+  "main_event_loop_yield_between_operations_ms": 500,
+  "addon_installed": false,
+  "addon_imported": false,
+  "custom_python_proxies": false,
+  "modeless_readers": false,
+  "restored_fcstd": false,
+  "second_document": false,
+  "last_recorded_step": "before Redo label edit",
+  "raw_report_status": "running",
+  "raw_report_note": "The raw report remains running when SIGSEGV terminates Python before finalization.",
+  "signal_text_seen": true,
+  "report": "native/timed-non-python/report.json",
+  "log": "native/timed-non-python/gui.log",
+  "no_addon_evidence": {
+    "modules": [],
+    "user_mod_directories": [],
+    "isolated_user_data": "/tmp/bim3117-v050-catalog/native-feature/data/FreeCAD/v1-1/"
+  }
+}

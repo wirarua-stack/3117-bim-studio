@@ -1,0 +1,500 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "schedule services load from the installed add-on",
+      "status": "passed"
+    },
+    {
+      "name": "first schedule and native set are created in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "schedule definitions are native siblings outside the building Project",
+      "status": "passed"
+    },
+    {
+      "name": "Undo removes the first schedule and its newly created set",
+      "status": "passed"
+    },
+    {
+      "name": "Redo restores stable schedule identity",
+      "status": "passed"
+    },
+    {
+      "name": "schedule-only objects leave the building content revision unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "independent wall schedule gross opening and net quantities agree",
+      "status": "passed"
+    },
+    {
+      "name": "Level and Type filters retain two independently dimensioned native slabs",
+      "status": "passed"
+    },
+    {
+      "name": "material rows count unique source products separately from their layers",
+      "status": "passed"
+    },
+    {
+      "name": "material coverage explicitly exposes the unassigned generic door frame",
+      "status": "passed"
+    },
+    {
+      "name": "read-only capture preserves source BReps object count and Undo history",
+      "status": "passed"
+    },
+    {
+      "name": "grouping edits only the schedule revision in one native history step",
+      "status": "passed"
+    },
+    {
+      "name": "material groups preserve analytic volumes and distinct source identities",
+      "status": "passed"
+    },
+    {
+      "name": "grouped columns never sum thickness or section dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "Undo restores the exact ungrouped schedule identity",
+      "status": "passed"
+    },
+    {
+      "name": "Type grouping retains both explicit editable source UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "name filter is case-insensitive on source names before grouping",
+      "status": "passed"
+    },
+    {
+      "name": "empty schedules have explicit zero totals and stable columns",
+      "status": "passed"
+    },
+    {
+      "name": "fixture retains a real Redo branch for invalid proposal tests",
+      "status": "passed"
+    },
+    {
+      "name": "incompatible Type filter is rejected before native mutation",
+      "status": "passed",
+      "rejection": "Schedule Type filter must match its category"
+    },
+    {
+      "name": "ambiguous whole-product Material grouping is rejected",
+      "status": "passed",
+      "rejection": "Material grouping requires the Material category, which uses actual material partitions"
+    },
+    {
+      "name": "invalid schedule names preserve the Redo branch",
+      "status": "passed",
+      "rejection": "Schedule name must be one line of at most 160 characters"
+    },
+    {
+      "name": "duplicate schedule names are rejected",
+      "status": "passed",
+      "rejection": "A Schedule named 'Walls' already exists"
+    },
+    {
+      "name": "computed quantities cannot be written back as authored inputs",
+      "status": "passed",
+      "rejection": "Unsupported instance edit fields: net_volume_m3"
+    },
+    {
+      "name": "hidden filtered rows cannot be edited through stale row identity",
+      "status": "passed",
+      "rejection": "Choose a source element visible in this schedule"
+    },
+    {
+      "name": "typed dimensions cannot be overridden through a schedule row",
+      "status": "passed",
+      "rejection": "Thickness is controlled by shared type 'Slab 200'; edit or detach the type"
+    },
+    {
+      "name": "caller-supplied JSON cannot become the schedule's authority",
+      "status": "passed",
+      "rejection": "Schedule capture requires the live document, not a caller-supplied snapshot"
+    },
+    {
+      "name": "source label and placement commit together in one native transaction",
+      "status": "passed"
+    },
+    {
+      "name": "stale model revision blocks row edits before mutation",
+      "status": "passed",
+      "rejection": "Model or schedule changed since the preview; refresh the schedule and try again"
+    },
+    {
+      "name": "Undo restores both original source values and original model revision",
+      "status": "passed"
+    },
+    {
+      "name": "Redo restores the edited source solid",
+      "status": "passed"
+    },
+    {
+      "name": "stale definition revision blocks edits with an otherwise current building",
+      "status": "passed",
+      "rejection": "Model or schedule changed since the preview; refresh the schedule and try again"
+    },
+    {
+      "name": "schedule CSV uses UTF-8 BOM and neutralizes formula-like labels",
+      "status": "passed"
+    },
+    {
+      "name": "CSV metadata retains original labels source identities and exact payload hash",
+      "status": "passed"
+    },
+    {
+      "name": "publication creates no source changes or history entries",
+      "status": "passed"
+    },
+    {
+      "name": "schedule publication never silently overwrites existing files",
+      "status": "passed",
+      "rejection": "File already exists; confirm replacement of the complete bundle: Walls.csv"
+    },
+    {
+      "name": "stale preview cannot publish a new schedule bundle",
+      "status": "passed",
+      "rejection": "Model or schedule changed since the preview; refresh the schedule and try again"
+    },
+    {
+      "name": "rejected publication leaves existing bytes intact and no stale new files",
+      "status": "passed"
+    },
+    {
+      "name": "mid-publication definition changes preserve both old destination files",
+      "status": "passed"
+    },
+    {
+      "name": "read/export tests restore the original analytic model",
+      "status": "passed"
+    },
+    {
+      "name": "Type deletion respects schedule filter dependencies",
+      "status": "passed",
+      "rejection": "Type is used by: Spare filter"
+    },
+    {
+      "name": "Level deletion respects schedule filter dependencies",
+      "status": "passed",
+      "rejection": "Level is referenced by: Spare filter. Reassign or detach them first."
+    },
+    {
+      "name": "raw native deletion retains the expected filter UUID and reports a broken reference",
+      "status": "passed"
+    },
+    {
+      "name": "broken schedule cannot be captured as an unfiltered table",
+      "status": "passed",
+      "rejection": "Schedule filter reference is missing or its identity changed; edit the schedule to repair"
+    },
+    {
+      "name": "a broken documentation filter does not prevent valid building quantities",
+      "status": "passed"
+    },
+    {
+      "name": "explicit filter detachment repairs the schedule without inventing a reference",
+      "status": "passed"
+    },
+    {
+      "name": "schedule deletion removes only its native definition",
+      "status": "passed"
+    },
+    {
+      "name": "Undo schedule deletion restores identity and references",
+      "status": "passed"
+    },
+    {
+      "name": "filtered level can be deleted after its last schedule reference is removed",
+      "status": "passed"
+    }
+  ],
+  "scope": "Installed native schedule definitions, analytic quantity fixture, atomic row edits and guarded CSV publication",
+  "checks_passed": 49,
+  "sample": "/tmp/bim3117-v050-final-native/output/Schedules_Lifecycle.FCStd",
+  "sample_sha256": "fc136620c0d36658b4d9c0a7471e9fbc1389a88a637e8c18f89fc4453a85d908",
+  "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+  "schedule_states": {
+    "26828a0a-ddf6-4c9c-985b-2e9cf83607c2": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "3f6469a3be5bc9de6ed987c8a59615be1ce422918ae8272ead3d46467ef4e76d"
+    },
+    "6fb11239-a2a8-4397-aca9-19091681c881": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "79323f2d224ca6633a3dc51f259340dd655965a58db08490abb4f353dd7ab913"
+    },
+    "77b94a1b-f804-4397-840f-408a0b419072": {
+      "model_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+      "schedule_revision": "d8fa4b42ffbafb796c4f9f959bdb90ef8114f507190ffb49bb94117828049170"
+    }
+  },
+  "definitions": {
+    "26828a0a-ddf6-4c9c-985b-2e9cf83607c2": {
+      "id": "26828a0a-ddf6-4c9c-985b-2e9cf83607c2",
+      "name": "Walls",
+      "level_id": "",
+      "type_id": "",
+      "category": "Wall",
+      "group_by": "None",
+      "sort_by": "Name",
+      "descending": false,
+      "name_filter": ""
+    },
+    "6fb11239-a2a8-4397-aca9-19091681c881": {
+      "id": "6fb11239-a2a8-4397-aca9-19091681c881",
+      "name": "Slabs",
+      "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+      "type_id": "6dca8375-0265-4b10-930f-760d236f3117",
+      "category": "Slab",
+      "group_by": "None",
+      "sort_by": "Name",
+      "descending": false,
+      "name_filter": "sLaB a"
+    },
+    "77b94a1b-f804-4397-840f-408a0b419072": {
+      "id": "77b94a1b-f804-4397-840f-408a0b419072",
+      "name": "Materials",
+      "level_id": "",
+      "type_id": "",
+      "category": "Material",
+      "group_by": "Material",
+      "sort_by": "Material",
+      "descending": false,
+      "name_filter": ""
+    }
+  },
+  "element_ids": {
+    "BIM3117_Project": "e0dbebc6-89ad-4f33-b6b2-d3cc987ee310",
+    "BIM3117_Level": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+    "BIM3117_Level001": "b4a716c6-bde7-4be0-b098-76e57e961e57",
+    "BIM3117_Material": "e5602813-ba38-4b95-b017-874905b48b12",
+    "BIM3117_Material001": "bc2e8c27-24ae-43cd-ba68-f2f8c491b506",
+    "BIM3117_WallType": "87486c44-4567-4ac2-9833-4830ac8c3fae",
+    "BIM3117_Wall": "4693c957-6466-4ba9-9f4c-806ec32c3caf",
+    "BIM3117_WallBody": "df0a0110-e32e-4a7a-9387-ef726f91af71",
+    "BIM3117_Wall001": "aed05f69-e958-45cd-b362-cac733fafafd",
+    "BIM3117_WallBody001": "0467a306-d221-4b8e-919b-813e79f8e69a",
+    "BIM3117_Door": "d413dc08-042e-4642-a7b9-eb32ef53b1e1",
+    "BIM3117_ElementType": "6dca8375-0265-4b10-930f-760d236f3117",
+    "BIM3117_Slab": "5ac48622-84be-4ba3-ba75-0e63a072a91b",
+    "BIM3117_Slab001": "a7ffa79b-c20d-4196-aa1f-1842e15af055",
+    "BIM3117_Schedules": "9ea16ede-358a-4e89-b6b8-faffb80ef825",
+    "BIM3117_Schedule": "26828a0a-ddf6-4c9c-985b-2e9cf83607c2",
+    "BIM3117_Schedule001": "6fb11239-a2a8-4397-aca9-19091681c881",
+    "BIM3117_Schedule002": "77b94a1b-f804-4397-840f-408a0b419072"
+  },
+  "schedule_rows": {
+    "26828a0a-ddf6-4c9c-985b-2e9cf83607c2": [
+      {
+        "element_id": "4693c957-6466-4ba9-9f4c-806ec32c3caf",
+        "object_name": "BIM3117_Wall",
+        "name": "Wall A",
+        "type_id": "87486c44-4567-4ac2-9833-4830ac8c3fae",
+        "type_name": "Wall 200",
+        "base_level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "base_level": "L00",
+        "top_level_id": "b4a716c6-bde7-4be0-b098-76e57e961e57",
+        "top_level": "L01",
+        "length_m": 4.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 12.0,
+        "opening_side_area_m2": 1.8900000000000001,
+        "net_side_area_m2": 10.109999999999998,
+        "gross_volume_m3": 2.4000000000000004,
+        "opening_volume_m3": 0.37800000000000056,
+        "net_volume_m3": 2.022,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+        "type_code": "",
+        "material_id": "e5602813-ba38-4b95-b017-874905b48b12",
+        "material_name": "Concrete",
+        "category": "Wall",
+        "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "level": "L00",
+        "count": 1,
+        "element_ids": [
+          "4693c957-6466-4ba9-9f4c-806ec32c3caf"
+        ],
+        "row_id": "4693c957-6466-4ba9-9f4c-806ec32c3caf"
+      },
+      {
+        "element_id": "aed05f69-e958-45cd-b362-cac733fafafd",
+        "object_name": "BIM3117_Wall001",
+        "name": "Wall B",
+        "type_id": "87486c44-4567-4ac2-9833-4830ac8c3fae",
+        "type_name": "Wall 200",
+        "base_level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "base_level": "L00",
+        "top_level_id": "b4a716c6-bde7-4be0-b098-76e57e961e57",
+        "top_level": "L01",
+        "length_m": 2.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "gross_side_area_m2": 6.0,
+        "opening_side_area_m2": 0.0,
+        "net_side_area_m2": 5.999999999999999,
+        "gross_volume_m3": 1.2000000000000002,
+        "opening_volume_m3": 2.220446049250313e-16,
+        "net_volume_m3": 1.2,
+        "quantity_rule": "3117.uniform-wall.one-side.openings.no-joins.v1",
+        "content_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+        "type_code": "",
+        "material_id": "e5602813-ba38-4b95-b017-874905b48b12",
+        "material_name": "Concrete",
+        "category": "Wall",
+        "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "level": "L00",
+        "count": 1,
+        "element_ids": [
+          "aed05f69-e958-45cd-b362-cac733fafafd"
+        ],
+        "row_id": "aed05f69-e958-45cd-b362-cac733fafafd"
+      }
+    ],
+    "6fb11239-a2a8-4397-aca9-19091681c881": [
+      {
+        "element_id": "5ac48622-84be-4ba3-ba75-0e63a072a91b",
+        "object_name": "BIM3117_Slab",
+        "name": "Slab A",
+        "material": "Finish / Concrete",
+        "count": 1,
+        "quantity_rule": "3117.horizontal-polygon-slab.top-level.uniform.v1",
+        "content_revision": "aaf862dca3a0c801805e68261a579f9412b81a9cc45c98a1cc51ae6efd05c5fe",
+        "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "level": "L00",
+        "offset_m": 0.0,
+        "top_z_m": 0.0,
+        "thickness_m": 0.2,
+        "gross_volume_m3": 1.2,
+        "net_volume_m3": 1.2,
+        "join_deduction_m3": 0.0,
+        "gross_area_m2": 6.0,
+        "net_area_m2": 5.999999999999999,
+        "perimeter_m": 10.0,
+        "type_id": "6dca8375-0265-4b10-930f-760d236f3117",
+        "type_name": "Slab 200",
+        "type_code": "SL200",
+        "material_id": "",
+        "material_name": "Finish / Concrete",
+        "category": "Slab",
+        "element_ids": [
+          "5ac48622-84be-4ba3-ba75-0e63a072a91b"
+        ],
+        "row_id": "5ac48622-84be-4ba3-ba75-0e63a072a91b"
+      }
+    ],
+    "77b94a1b-f804-4397-840f-408a0b419072": [
+      {
+        "row_id": "group:81fbb5024a6bd6e68d8f71c3257fd7b14bda2a2d3f08ece573bda9b6c8a82273",
+        "element_ids": [
+          "4693c957-6466-4ba9-9f4c-806ec32c3caf",
+          "5ac48622-84be-4ba3-ba75-0e63a072a91b",
+          "a7ffa79b-c20d-4196-aa1f-1842e15af055",
+          "aed05f69-e958-45cd-b362-cac733fafafd"
+        ],
+        "name": "Concrete",
+        "category": "Material",
+        "count": 4,
+        "source_row_count": 4,
+        "gross_volume_m3": 5.4,
+        "deduction_volume_m3": 0.3780000000000001,
+        "net_volume_m3": 5.022,
+        "type_id": "Multiple",
+        "type_name": "Slab 200; Wall 200",
+        "type_code": "",
+        "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "level": "L00",
+        "material_id": "e5602813-ba38-4b95-b017-874905b48b12",
+        "material_name": "Concrete"
+      },
+      {
+        "row_id": "group:ee7d562b251afbae62f2eceadae13dbd9809b7b6a8c08df48f6b246580031990",
+        "element_ids": [
+          "5ac48622-84be-4ba3-ba75-0e63a072a91b",
+          "a7ffa79b-c20d-4196-aa1f-1842e15af055"
+        ],
+        "name": "Finish",
+        "category": "Material",
+        "count": 2,
+        "source_row_count": 2,
+        "gross_volume_m3": 0.6,
+        "deduction_volume_m3": 0.0,
+        "net_volume_m3": 0.6,
+        "type_id": "6dca8375-0265-4b10-930f-760d236f3117",
+        "type_name": "Slab 200",
+        "type_code": "",
+        "level_id": "fb8dd4ff-5180-4428-9733-1d90b1bf88f6",
+        "level": "L00",
+        "material_id": "bc2e8c27-24ae-43cd-ba68-f2f8c491b506",
+        "material_name": "Finish"
+      }
+    ]
+  },
+  "schedule_totals": {
+    "26828a0a-ddf6-4c9c-985b-2e9cf83607c2": {
+      "source_element_count": 2,
+      "source_row_count": 2,
+      "display_row_count": 2,
+      "length_m": 6.0,
+      "gross_side_area_m2": 18.0,
+      "opening_side_area_m2": 1.8900000000000001,
+      "net_side_area_m2": 16.109999999999996,
+      "gross_volume_m3": 3.6000000000000005,
+      "opening_volume_m3": 0.3780000000000008,
+      "net_volume_m3": 3.2219999999999995
+    },
+    "6fb11239-a2a8-4397-aca9-19091681c881": {
+      "source_element_count": 1,
+      "source_row_count": 1,
+      "display_row_count": 1,
+      "gross_area_m2": 6.0,
+      "net_area_m2": 5.999999999999999,
+      "gross_volume_m3": 1.2,
+      "net_volume_m3": 1.2
+    },
+    "77b94a1b-f804-4397-840f-408a0b419072": {
+      "source_element_count": 4,
+      "source_row_count": 6,
+      "display_row_count": 2,
+      "gross_volume_m3": 6.0,
+      "deduction_volume_m3": 0.3780000000000001,
+      "net_volume_m3": 5.622
+    }
+  },
+  "installed_modules": {
+    "bim3117_freecad.schedules": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/schedules.py",
+      "sha256": "5673594d7478e4e3a198d7be171e7eb162290e4d85757e882ace0a3fc0c20abc"
+    },
+    "bim3117_freecad.catalog": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/catalog.py",
+      "sha256": "4ff39ee337bbbf2a5285fc72f75bb7caea70aaa149adbd27d8aa7c43cd83c0e2"
+    },
+    "bim3117_freecad.services": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+      "sha256": "6fdcc6c21b5e4997003677cd17a07fdf58f8dfaded6e62af58b6a72baa4160b2"
+    },
+    "bim3117_freecad.snapshot": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+      "sha256": "53503cc5c79efe50ed13a560df54a1d54269872178929d43c99281df4090a157"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+name: FreeCAD 1.1.4 host integration
+
+on:
+  push:
+    paths:
+      - "workbench/**"
+      - "packaging/**"
+      - "tests/freecad_*.py"
+      - "tests/run_freecad_tests.py"
+      - ".github/workflows/freecad-host.yml"
+  pull_request:
+    paths:
+      - "workbench/**"
+      - "packaging/**"
+      - "tests/freecad_*.py"
+      - "tests/run_freecad_tests.py"
+      - ".github/workflows/freecad-host.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-document:
+    name: FreeCAD 1.1.4 / ${{ matrix.platform }}
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: linux
+            runner: ubuntu-24.04
+            asset: FreeCAD_1.1.4-Linux-x86_64-py311.AppImage
+            sha256: f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434
+          - platform: windows
+            runner: windows-latest
+            asset: FreeCAD_1.1.4-Windows-x86_64-py311.7z
+            sha256: 4828741fc91ee37fafcdb97a1abacb18b04ba451ac4372d9ff7a7349b36f4d6d
+    env:
+      FREECAD_DOWNLOAD_BASE: https://github.com/FreeCAD/FreeCAD/releases/download/1.1.4
+      FREECAD_ASSET: ${{ matrix.asset }}
+      FREECAD_SHA256: ${{ matrix.sha256 }}
+      BIM3117_QA_OUTPUT: ${{ github.workspace }}/out/freecad-host-${{ matrix.platform }}
+      BIM3117_HOST_PLATFORM: ${{ matrix.platform }}
+      QT_QPA_PLATFORM: offscreen
+
+    steps:
+      - name: Check out tested source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up independent test-orchestration Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Verify installer behavior using standard Python
+        run: python -m unittest discover -s packaging/tests -v
+
+      - name: Prepare one isolated profile for all nineteen host processes
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"]) / "bim3117-freecad-profile"
+          directories = {
+              "FREECAD_USER_HOME": root / "home",
+              "FREECAD_USER_DATA": root / "data",
+              "FREECAD_USER_TEMP": root / "temp",
+              "XDG_CONFIG_HOME": root / "xdg-config",
+              "XDG_DATA_HOME": root / "xdg-data",
+              "XDG_CACHE_HOME": root / "xdg-cache",
+          }
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as environment:
+              for name, path in directories.items():
+                  path.mkdir(parents=True, exist_ok=True)
+                  environment.write(f"{name}={path}\n")
+          Path(os.environ["BIM3117_QA_OUTPUT"]).mkdir(parents=True, exist_ok=True)
+
+      - name: Download, verify, and extract the Linux AppImage without FUSE
+        if: matrix.platform == 'linux'
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/$FREECAD_ASSET"
+          curl --fail --location --retry 3 --output "$archive" "$FREECAD_DOWNLOAD_BASE/$FREECAD_ASSET"
+          printf '%s  %s\n' "$FREECAD_SHA256" "$archive" | sha256sum --check --status
+          chmod +x "$archive"
+          extraction="$RUNNER_TEMP/bim3117-freecad-extracted"
+          mkdir -p "$extraction"
+          cd "$extraction"
+          "$archive" --appimage-extract > "$BIM3117_QA_OUTPUT/extraction.log"
+          test -x "$extraction/squashfs-root/AppRun"
+          printf 'BIM3117_FREECAD_COMMAND=%s\n' "$extraction/squashfs-root/AppRun" >> "$GITHUB_ENV"
+
+      - name: Download, verify, and extract Windows portable FreeCAD
+        if: matrix.platform == 'windows'
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $archive = Join-Path $env:RUNNER_TEMP $env:FREECAD_ASSET
+          Invoke-WebRequest -Uri "$env:FREECAD_DOWNLOAD_BASE/$env:FREECAD_ASSET" -OutFile $archive
+          $actual = (Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -ne $env:FREECAD_SHA256) { throw "FreeCAD archive checksum does not match the pinned release" }
+          $extraction = Join-Path $env:RUNNER_TEMP 'bim3117-freecad-extracted'
+          New-Item -ItemType Directory -Path $extraction -Force | Out-Null
+          & 7z x $archive "-o$extraction" -y | Out-File (Join-Path $env:BIM3117_QA_OUTPUT 'extraction.log')
+          if ($LASTEXITCODE -ne 0) { throw "7-Zip extraction failed with exit code $LASTEXITCODE" }
+          $commands = @(Get-ChildItem -LiteralPath $extraction -Filter 'FreeCADCmd.exe' -File -Recurse |
+              Where-Object { $_.Directory.Name -eq 'bin' })
+          if ($commands.Count -ne 1) { throw "Expected exactly one portable bin/FreeCADCmd.exe" }
+          "BIM3117_FREECAD_COMMAND=$($commands[0].FullName)" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+      - name: Install and test Foundation, Architecture, Exchange, Building, Drawings, Types and Schedules in independent host processes
+        shell: python
+        run: |
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          output = Path(os.environ["BIM3117_QA_OUTPUT"])
+          wrapper = Path(os.environ["GITHUB_WORKSPACE"]) / "tests" / "run_freecad_tests.py"
+          command = [os.environ["BIM3117_FREECAD_COMMAND"]]
+          if os.environ["BIM3117_HOST_PLATFORM"] == "linux":
+              command.append("freecadcmd")
+          command.append(str(wrapper))
+          reports = {"install": "install-report.json", "foundation": "foundation-test-report.json",
+                     "reopen": "reopen-test-report.json", "architecture": "architecture-test-report.json",
+                     "architecture_reopen": "architecture-reopen-test-report.json",
+                     "exchange": "exchange-test-report.json", "exchange_reopen": "exchange-reopen-test-report.json",
+                     "building": "building-test-report.json", "building_reopen": "building-reopen-test-report.json",
+                     "drawing_geometry": "drawing-geometry-test-report.json", "drawings": "drawings-test-report.json",
+                     "drawings_reopen": "drawings-reopen-test-report.json", "drawing_render": "drawing-render-test-report.json",
+                     "types": "types-test-report.json", "types_reopen": "types-reopen-test-report.json",
+                     "types_exchange": "types-exchange-test-report.json", "types_exchange_reopen": "types-exchange-reopen-test-report.json",
+                     "schedules": "schedules-test-report.json", "schedules_reopen": "schedules-reopen-test-report.json"}
+          for stage, report_name in reports.items():
+              report_path = output / report_name
+              # A previous report must never stand in for this invocation.
+              if report_path.exists():
+                  report_path.unlink()
+              environment = os.environ.copy()
+              environment["BIM3117_QA_STAGE"] = stage
+              # Use the embedded FreeCAD Python; do not insert source workbench paths.
+              environment.pop("PYTHONHOME", None)
+              environment.pop("PYTHONPATH", None)
+              try:
+                  result = subprocess.run(command, input=b"", stdout=subprocess.PIPE,
+                      stderr=subprocess.STDOUT, env=environment, timeout=180, check=False)
+                  code, log = result.returncode, result.stdout
+              except subprocess.TimeoutExpired as error:
+                  code, log = 124, (error.stdout or b"") + b"\nHost stage exceeded 180 seconds\n"
+              (output / f"{stage}-host.log").write_bytes(log)
+              (output / f"{stage}-exit-code.txt").write_text(str(code), encoding="utf-8")
+              print(log.decode("utf-8", errors="replace"))
+              try:
+                  stage_passed = json.loads(report_path.read_text(encoding="utf-8")).get("status") == "passed"
+              except (OSError, ValueError):
+                  stage_passed = False
+              if code != 0 or not stage_passed:
+                  print(f"Stopping after unsuccessful {stage} stage; JSON gate below will fail.")
+                  break
+
+      - name: Require complete passing JSON evidence, not only process exit codes
+        if: always()
+        shell: python
+        run: |
+          import json
+          import os
+          from pathlib import Path
+          output = Path(os.environ["BIM3117_QA_OUTPUT"])
+          reports = {"install": "install-report.json", "foundation": "foundation-test-report.json",
+                     "reopen": "reopen-test-report.json", "architecture": "architecture-test-report.json",
+                     "architecture_reopen": "architecture-reopen-test-report.json",
+                     "exchange": "exchange-test-report.json", "exchange_reopen": "exchange-reopen-test-report.json",
+                     "building": "building-test-report.json", "building_reopen": "building-reopen-test-report.json",
+                     "drawing_geometry": "drawing-geometry-test-report.json", "drawings": "drawings-test-report.json",
+                     "drawings_reopen": "drawings-reopen-test-report.json", "drawing_render": "drawing-render-test-report.json",
+                     "types": "types-test-report.json", "types_reopen": "types-reopen-test-report.json",
+                     "types_exchange": "types-exchange-test-report.json", "types_exchange_reopen": "types-exchange-reopen-test-report.json",
+                     "schedules": "schedules-test-report.json", "schedules_reopen": "schedules-reopen-test-report.json"}
+          for stage, filename in reports.items():
+              path = output / filename
+              if not path.is_file():
+                  raise SystemExit(f"Missing {stage} report: {path}")
+              report = json.loads(path.read_text(encoding="utf-8"))
+              checks = report.get("checks")
+              if (report.get("status") != "passed" or not isinstance(checks, list) or not checks
+                  or any(check.get("status") != "passed" for check in checks)
+                  or report.get("checks_passed") != len(checks)):
+                  raise SystemExit(f"{stage} did not provide complete passing evidence: {report}")
+              code = int((output / f"{stage}-exit-code.txt").read_text(encoding="utf-8"))
+              if code != 0:
+                  raise SystemExit(f"{stage} host process exited with code {code}")
+              if stage != "install":
+                  if tuple(map(str, report.get("freecad", [])[:3])) != ("1", "1", "4"):
+                      raise SystemExit(f"Unexpected tested FreeCAD version: {report.get('freecad')}")
+                  if report.get("gui_up") is not False:
+                      raise SystemExit("This job requires a headless native-document test report")
+              print(f"{stage}: {len(checks)} checks passed")
+          print("Headless host integration passed. Windows interactive GUI acceptance remains a separate gate.")
+
+      - name: Preserve native sample, JSON evidence, and process logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: freecad-1.1.4-${{ matrix.platform }}-${{ github.run_attempt }}
+          path: out/freecad-host-${{ matrix.platform }}/
+          if-no-files-found: warn
+          retention-days: 14
+
+# Authoring this workflow is not a Windows verification result. Both runners
+# must execute successfully; interactive install/GUI tests remain separate.

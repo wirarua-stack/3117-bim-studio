@@ -1,0 +1,90 @@
+{
+  "status": "failed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "renderer and exporter load from the installed workbench",
+      "status": "passed"
+    },
+    {
+      "name": "SVG checks run without the FreeCAD GUI",
+      "status": "passed"
+    },
+    {
+      "name": "SVG is a physical A3 landscape page",
+      "status": "passed"
+    },
+    {
+      "name": "Native Thai and XML-sensitive labels survive escaping",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> preserves exact 1:50 geometry size in paper millimetres",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> dimensions reference projected bounds and native UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> tags identify only native first-hit sources",
+      "status": "passed"
+    },
+    {
+      "name": "แปลน & <A> scale bar measures the exact labelled model distance",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A preserves exact 1:50 geometry size in paper millimetres",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A dimensions reference projected bounds and native UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A tags identify only native first-hit sources",
+      "status": "passed"
+    },
+    {
+      "name": "รูปตัด A-A scale bar measures the exact labelled model distance",
+      "status": "passed"
+    },
+    {
+      "name": "Real window hole retains the evenodd section fill rule",
+      "status": "passed"
+    },
+    {
+      "name": "PDF text uses the exact visible SVG labels without duplicate accessibility titles",
+      "status": "passed"
+    },
+    {
+      "name": "Oversize requested scale is rejected rather than silently fitted",
+      "status": "passed"
+    },
+    {
+      "name": "Crowded lower tags stay inside the plot without pushing a top tag out",
+      "status": "passed"
+    },
+    {
+      "name": "Rendering and fit rejection leave native geometry and history unchanged",
+      "status": "passed"
+    }
+  ],
+  "scope": "Native SVG exact scale, associative annotations, read-only export, dual-revision freshness and caught-failure rollback",
+  "error": "File already exists; confirm replacement of the complete bundle: drawing-render.svg",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_export.py\", line 235, in export_sheet\n    publish_bundle(paths, writer, overwrite=overwrite,\n  File \"/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/export_files.py\", line 44, in publish_bundle\n    _check_targets(paths, overwrite)\n  File \"/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/export_files.py\", line 31, in _check_targets\n    raise ExportFileError(f\"File already exists; confirm replacement of the complete bundle: {path.name}\")\nbim3117_freecad.export_files.ExportFileError: File already exists; confirm replacement of the complete bundle: drawing-render.svg\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/scratch/9457befac3c8/3117-bim-studio/tests/freecad_drawing_render.py\", line 134, in main\n    result = drawing_export.export_sheet(sheet, target, format=\"svg\",\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_export.py\", line 238, in export_sheet\n    raise FoundationError(str(error)) from error\nbim3117_freecad.model.FoundationError: File already exists; confirm replacement of the complete bundle: drawing-render.svg\n",
+  "checks_passed": 17
+}

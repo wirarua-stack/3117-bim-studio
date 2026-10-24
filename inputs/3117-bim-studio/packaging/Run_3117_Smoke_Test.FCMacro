@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Execute in FreeCAD after installing 3117 and restarting all FreeCAD windows.
+import datetime
+from pathlib import Path
+import sys
+import traceback
+
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtGui
+try:
+    from PySide import QtWidgets
+except ImportError:
+    QtWidgets = QtGui
+
+_bim3117_root = None
+try:
+    _bim3117_macro = Path(__file__).resolve()
+    for _bim3117_candidate in (_bim3117_macro.parent, _bim3117_macro.parent.parent):
+        if (_bim3117_candidate / "tests" / "freecad_gui_smoke.py").is_file():
+            _bim3117_root = _bim3117_candidate
+            break
+except (NameError, TypeError, OSError):
+    pass
+if _bim3117_root is None:
+    _bim3117_selected = QtWidgets.QFileDialog.getExistingDirectory(
+        Gui.getMainWindow(), "Select the extracted 3117 package folder")
+    if _bim3117_selected:
+        _bim3117_root = Path(_bim3117_selected)
+def _bim3117_run_tests(_bim3117_root=_bim3117_root):
+    try:
+        if not (_bim3117_root / "tests" / "freecad_gui_smoke.py").is_file():
+            raise RuntimeError("The selected folder does not contain tests/freecad_gui_smoke.py")
+        _bim3117_output = (Path(App.getUserAppDataDir()) / "BIM3117_Test_Reports" /
+                          datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+        sys.path.insert(0, str(_bim3117_root / "tests"))
+        from freecad_gui_smoke import run
+        _bim3117_report = run(_bim3117_output, keep_sample=True)
+        _bim3117_message = ("Passed {checks} GUI checks.\n\nReport and example:\n{path}\n\n"
+                            "Next: save, close FreeCAD, reopen the sample, change L01 and use Undo/Redo.").format(
+            checks=_bim3117_report["checks_passed"], path=str(_bim3117_output))
+        App.Console.PrintMessage(_bim3117_message + "\n")
+        QtWidgets.QMessageBox.information(Gui.getMainWindow(), "3117 smoke test", _bim3117_message)
+    except BaseException as _bim3117_error:
+        App.Console.PrintError(traceback.format_exc() + "\n")
+        QtWidgets.QMessageBox.warning(Gui.getMainWindow(), "3117 smoke test failed", str(_bim3117_error))
+
+
+if _bim3117_root is not None:
+    # Native Undo/Redo actions stay disabled while a FreeCAD macro is running.
+    # Return to the GUI event loop before the harness invokes those actions.
+    QtCore.QTimer.singleShot(0, _bim3117_run_tests)

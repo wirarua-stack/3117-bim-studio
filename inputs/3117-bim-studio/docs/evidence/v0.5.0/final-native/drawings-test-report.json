@@ -1,0 +1,621 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "drawing and model modules load from the installed add-on",
+      "status": "passed"
+    },
+    {
+      "name": "the frozen v0.3.0 source has its recorded SHA256",
+      "status": "passed"
+    },
+    {
+      "name": "unchanged v0.3.0 building keeps its exact legacy model revision",
+      "status": "passed"
+    },
+    {
+      "name": "legacy fixture has 33 supported products and no unsupported objects",
+      "status": "passed"
+    },
+    {
+      "name": "first view and drawing set are one native transaction",
+      "status": "passed"
+    },
+    {
+      "name": "drawing definitions stay outside the native building Project group",
+      "status": "passed"
+    },
+    {
+      "name": "Undo removes the first view and its new drawing set",
+      "status": "passed"
+    },
+    {
+      "name": "Redo restores the authored view UUID and Level reference",
+      "status": "passed"
+    },
+    {
+      "name": "one-view sheet creation is one native transaction",
+      "status": "passed"
+    },
+    {
+      "name": "one-view capture contains actual cut and projected native geometry",
+      "status": "passed"
+    },
+    {
+      "name": "capture includes all native Levels and Grids as datum references",
+      "status": "passed"
+    },
+    {
+      "name": "native capture changes no authored definition BRep history or object count",
+      "status": "passed"
+    },
+    {
+      "name": "view edit is one transaction and changes only the drawing revision",
+      "status": "passed"
+    },
+    {
+      "name": "raising the Plan cut above openings updates the actual cut geometry",
+      "status": "passed"
+    },
+    {
+      "name": "view Undo restores the exact definition revision and cut geometry",
+      "status": "passed"
+    },
+    {
+      "name": "invalid Plan range preserves the existing Redo branch",
+      "status": "passed",
+      "rejection": "Plan range must satisfy Bottom < Cut < Top with at least 0.001 mm separation"
+    },
+    {
+      "name": "sub-tolerance Plan range preserves the existing Redo branch",
+      "status": "passed",
+      "rejection": "Plan range must satisfy Bottom < Cut < Top with at least 0.001 mm separation"
+    },
+    {
+      "name": "non-integer drawing scale is rejected before changing history",
+      "status": "passed",
+      "rejection": "Scale denominator must be an integer from 1 to 1000"
+    },
+    {
+      "name": "non-boolean annotation flag is rejected before changing history",
+      "status": "passed",
+      "rejection": "Show tags must be true or false"
+    },
+    {
+      "name": "Plan without a native Level is rejected before changing history",
+      "status": "passed",
+      "rejection": "A Plan requires a Level in the same project"
+    },
+    {
+      "name": "unsupported vertical direction is rejected before changing history",
+      "status": "passed",
+      "rejection": "View direction must be +X, +Y, -X or -Y, looking into the model"
+    },
+    {
+      "name": "deleting a placed view preserves the existing Redo branch",
+      "status": "passed",
+      "rejection": "View is placed on sheets: Single-view QA"
+    },
+    {
+      "name": "deleting a referenced Plan Level preserves the existing Redo branch",
+      "status": "passed",
+      "rejection": "Level is referenced by: S00, C11, C12, C13, C14, Wall 1-1, Wall 1-2, Wall 1-3, Wall 1-4, A, B, 1, 2, Ground Plan. Reassign or detach them first."
+    },
+    {
+      "name": "a caller-supplied snapshot cannot become the drawing master",
+      "status": "passed",
+      "rejection": "Drawing capture requires the live document, not a caller-supplied snapshot"
+    },
+    {
+      "name": "the preserved native Redo still applies its valid drawing edit",
+      "status": "passed"
+    },
+    {
+      "name": "all three native view types author one transaction per command",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate sheet number is rejected before opening a transaction",
+      "status": "passed",
+      "rejection": "Sheet number 'A101' already exists in this project"
+    },
+    {
+      "name": "duplicate view placement is rejected before opening a transaction",
+      "status": "passed",
+      "rejection": "A view can appear only once on the same sheet"
+    },
+    {
+      "name": "three-view A3 sheet is rejected before opening a transaction",
+      "status": "passed",
+      "rejection": "A3 landscape sheets support one or two views"
+    },
+    {
+      "name": "sheet deletion is one transaction and preserves its model views",
+      "status": "passed"
+    },
+    {
+      "name": "sheet deletion Undo restores the original UUID and placed-view order",
+      "status": "passed"
+    },
+    {
+      "name": "unplaced view deletion is one native transaction",
+      "status": "passed"
+    },
+    {
+      "name": "view deletion Undo restores its persistent identity",
+      "status": "passed"
+    },
+    {
+      "name": "all seven drawing definitions are explicit coverage references with no quantity or IFC role",
+      "status": "passed"
+    },
+    {
+      "name": "drawing authoring preserves legacy quantity rows and exact model revision",
+      "status": "passed"
+    },
+    {
+      "name": "sheet edit is one transaction and changes only its own drawing identity",
+      "status": "passed"
+    },
+    {
+      "name": "sheet edit Undo restores both independent revision identities",
+      "status": "passed"
+    },
+    {
+      "name": "native annotation controls are carried into the derived view capture",
+      "status": "passed"
+    },
+    {
+      "name": "model edit changes model identity while preserving drawing definition identity",
+      "status": "passed"
+    },
+    {
+      "name": "model edit changes the solid-derived section including joined members",
+      "status": "passed"
+    },
+    {
+      "name": "model Undo restores both revisions and exact section geometry",
+      "status": "passed"
+    },
+    {
+      "name": "Plan effective cut plane follows its edited native Level without a drawing override",
+      "status": "passed"
+    },
+    {
+      "name": "Level Undo restores the legacy model revision",
+      "status": "passed"
+    },
+    {
+      "name": "native view deletion retains the missing expected UUID on the sheet",
+      "status": "passed"
+    },
+    {
+      "name": "a broken placed-view link blocks only its drawing capture",
+      "status": "passed",
+      "rejection": "A sheet view is missing or its identity/order changed; use Edit Selected to repair"
+    },
+    {
+      "name": "a broken drawing link does not block the valid building snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "explicit sheet repair is one transaction and captures the selected surviving view",
+      "status": "passed"
+    },
+    {
+      "name": "Undo of link repair restores the detectable broken reference",
+      "status": "passed",
+      "rejection": "A sheet view is missing or its identity/order changed; use Edit Selected to repair"
+    },
+    {
+      "name": "Undo of native view deletion restores original UUID links and drawing revision",
+      "status": "passed"
+    },
+    {
+      "name": "native Level deletion retains the broken Plan reference identity",
+      "status": "passed"
+    },
+    {
+      "name": "a Plan with a missing Level cannot silently use project origin",
+      "status": "passed",
+      "rejection": "A Plan requires a Level in the same project"
+    },
+    {
+      "name": "explicit Plan Level repair is one transaction and updates both native link and UUID",
+      "status": "passed"
+    },
+    {
+      "name": "repair and deletion tests leave the canonical building and drawing inventory unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "drawing capture rejects even an empty unfinished native transaction",
+      "status": "passed",
+      "rejection": "Finish or cancel the current edit before reading quantities or exporting"
+    },
+    {
+      "name": "drawing authoring rejects an unfinished native transaction",
+      "status": "passed",
+      "rejection": "Finish or cancel the current transaction before this drawing command"
+    },
+    {
+      "name": "A101 is a two-view vector A3 SVG with both native revisions",
+      "status": "passed"
+    },
+    {
+      "name": "A101 preserves the explicit 1:50 scale in both paper dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "A101 SVG publication metadata verifies payload hash and both source revisions",
+      "status": "passed"
+    },
+    {
+      "name": "A201 is a two-view vector A3 SVG with both native revisions",
+      "status": "passed"
+    },
+    {
+      "name": "A201 preserves the explicit 1:50 scale in both paper dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "A201 SVG publication metadata verifies payload hash and both source revisions",
+      "status": "passed"
+    },
+    {
+      "name": "capture rendering and SVG publication preserve all native definitions BReps and history",
+      "status": "passed"
+    },
+    {
+      "name": "Section has actual cut faces and Elevation has none",
+      "status": "passed"
+    },
+    {
+      "name": "existing SVG bundle is not overwritten without explicit permission",
+      "status": "passed",
+      "rejection": "File already exists; confirm replacement of the complete bundle: A101.svg"
+    },
+    {
+      "name": "stale preview drawing revision blocks publication before files are staged",
+      "status": "passed",
+      "rejection": "The drawing definition changed since the preview; refresh the sheet before export"
+    },
+    {
+      "name": "stale preview rejection publishes no payload or sidecar",
+      "status": "passed"
+    },
+    {
+      "name": "stale-preview exercise restores the canonical P01 definition",
+      "status": "passed"
+    },
+    {
+      "name": "all legacy authored and derived UUIDs survive drawing authoring",
+      "status": "passed"
+    },
+    {
+      "name": "final sample still has the exact frozen building model identity",
+      "status": "passed"
+    },
+    {
+      "name": "all work leaves the frozen v0.3.0 source bytes unchanged",
+      "status": "passed"
+    }
+  ],
+  "scope": "Installed native View/Sheet transactions, source revisions, OCCT capture and SVG publication",
+  "checks_passed": 70,
+  "sample": "/tmp/bim3117-v050-final-native/output/Drawings_Workbench.FCStd",
+  "sample_sha256": "7d396d6cb1b5432277b3decf65025c551dc6084039607cd273353ab39ba2ec71",
+  "source": "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/building/Building_Authoring_Workbench.FCStd",
+  "source_sha256": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+  "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "element_ids": {
+    "BIM3117_Project": "1cf36c90-f065-4bcf-bd10-d57c1d5c1b05",
+    "BIM3117_Level": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+    "BIM3117_Level001": "3087830e-4d1a-4f80-b674-777b13466c13",
+    "BIM3117_Level002": "23a017fd-103e-4f8e-bfd1-538f44a944cd",
+    "BIM3117_Slab": "12aaaac7-9205-4f0b-942f-ac329d10ab85",
+    "BIM3117_Slab001": "54a5fde8-157c-40b7-be56-f69869705b43",
+    "BIM3117_Slab002": "e766c1c9-f102-490f-88fa-979e8089bb06",
+    "BIM3117_WallType": "65e313b7-786b-475f-994c-60b3af109888",
+    "BIM3117_Column": "3bdc20dc-74ff-49c2-89d3-14a7ef12c5ba",
+    "BIM3117_Beam": "7699609f-dcd3-429b-9ef0-9311904eba1e",
+    "BIM3117_Column001": "c6881a57-0739-4382-9db8-b187e4745510",
+    "BIM3117_Beam001": "06e74d45-1fd5-431b-89b8-6fac21c4a78d",
+    "BIM3117_Column002": "16e87910-40d7-4547-b9d9-ff1431a1c066",
+    "BIM3117_Beam002": "8a72afa4-2376-45d5-b54b-95efe545bce8",
+    "BIM3117_Column003": "8af0d977-4367-4d13-8ec3-0f9190dd8d12",
+    "BIM3117_Beam003": "c6ba7cea-aaaf-4add-860f-5ea5c8d3f5b0",
+    "BIM3117_Wall": "4594d0f2-e4b6-4eac-b6c6-f0cf3c4ccb4f",
+    "BIM3117_WallBody": "a5bd56d7-35a0-4055-8fa8-fb80db438448",
+    "BIM3117_Door": "1fa369d5-9536-4c2e-9a15-ad3f3c55335d",
+    "BIM3117_Window": "e63bc2ca-050e-4766-9aec-e07042fa5986",
+    "BIM3117_Wall001": "2dbab9a3-fe47-48df-802e-a98cbe1553d7",
+    "BIM3117_WallBody001": "01fe680b-6a65-40c9-9931-f295b1ce46ae",
+    "BIM3117_Window001": "83fb60f1-b5b2-4825-b529-5fd01ccff965",
+    "BIM3117_Wall002": "e237c333-fb68-41bd-8547-c3d3517ec70f",
+    "BIM3117_WallBody002": "cc89153c-af99-4e81-8b37-02921f67d7c4",
+    "BIM3117_Wall003": "dbf814eb-5b9e-46d8-920e-1708f310fba8",
+    "BIM3117_WallBody003": "d588e465-b0b8-499b-a071-35f7f3214e87",
+    "BIM3117_Column004": "a444a497-4a42-4a02-805f-bdac76a1312e",
+    "BIM3117_Beam004": "0f2f9d10-3b11-4f27-bb93-bc6f454e6b0c",
+    "BIM3117_Column005": "9b08ba70-d0e3-4818-93b4-765960d3b282",
+    "BIM3117_Beam005": "fcf4cda7-9e30-4ccb-a21f-6e7e082487e8",
+    "BIM3117_Column006": "5da805dc-1e32-4533-9fea-d355df30851d",
+    "BIM3117_Beam006": "cfe18d69-5269-46c5-8660-3133d80e9a81",
+    "BIM3117_Column007": "9f427961-e1b5-4ae5-ab86-dfa4fd093a51",
+    "BIM3117_Beam007": "37134a20-b003-48ef-96bd-b1457cc94324",
+    "BIM3117_Wall004": "4748dd71-525a-4434-ba86-b7e616563128",
+    "BIM3117_WallBody004": "47cd2305-1267-42d8-b726-d29790cf2ef6",
+    "BIM3117_Door001": "72e4552c-3f40-4e11-aa22-a893e213a28e",
+    "BIM3117_Window002": "6448f086-9c0f-48c6-b97b-a62bb7ea2b74",
+    "BIM3117_Wall005": "665ad71a-4ce2-454b-a84a-154125035cd7",
+    "BIM3117_WallBody005": "e6a8d22f-785c-4f61-abc7-fe7b1e697bfd",
+    "BIM3117_Window003": "13dab521-9139-425c-b8e7-c6df71ef7471",
+    "BIM3117_Wall006": "ad010079-9d0f-417e-8859-e6e3f9f6b248",
+    "BIM3117_WallBody006": "99eccd65-674f-4546-a3bb-5e087d03b357",
+    "BIM3117_Wall007": "f2cae468-6358-471b-8a67-a9ed151a8112",
+    "BIM3117_WallBody007": "486e972a-1bf0-4a88-be41-4f1e6fb6487e",
+    "BIM3117_Grid": "1e3962f1-fee7-4fc5-b900-92916baa1696",
+    "BIM3117_Grid001": "7b483af6-434a-4504-a036-e560a3599b8a",
+    "BIM3117_Grid002": "fb5db00c-5c30-4442-a1dd-91fb884b9ddf",
+    "BIM3117_Grid003": "58235e7a-ab6e-4121-aa79-62c813dbdfbe",
+    "BIM3117_Drawings": "e85671ce-f709-4583-bda2-c472b909f385",
+    "BIM3117_DrawingView001": "f44c1ac6-1fff-428c-b563-188d998ac25e",
+    "BIM3117_DrawingView002": "6cc3f498-eae1-4dd9-9df3-45d0181c8b51",
+    "BIM3117_DrawingView003": "a1a59cea-63c2-4116-8a89-612c1b99d3e0",
+    "BIM3117_DrawingSheet001": "c398b04d-5593-4d7c-b5d7-7f00a88e4706",
+    "BIM3117_DrawingSheet002": "8b31af78-ffe9-4ab5-8931-0b9b5faa1ac9",
+    "BIM3117_DrawingView": "cebee298-de3d-4562-8198-b3dd8361c332"
+  },
+  "view_definitions": {
+    "cebee298-de3d-4562-8198-b3dd8361c332": {
+      "view_type": "Plan",
+      "bottom_offset_mm": -150.0,
+      "cut_offset_mm": 1200.0,
+      "top_offset_mm": 2800.0,
+      "origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "depth_mm": 10000.0,
+      "scale_denominator": 50,
+      "show_dimensions": true,
+      "show_tags": true,
+      "show_grid": true,
+      "show_levels": true,
+      "id": "cebee298-de3d-4562-8198-b3dd8361c332",
+      "name": "Ground Plan",
+      "level_id": "4bd6b473-7294-4b93-b953-97c20a2378cf",
+      "level_elevation_mm": 0.0,
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "direction_name": "+Y"
+    },
+    "f44c1ac6-1fff-428c-b563-188d998ac25e": {
+      "view_type": "Plan",
+      "bottom_offset_mm": -150.0,
+      "cut_offset_mm": 1200.0,
+      "top_offset_mm": 2800.0,
+      "origin_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "depth_mm": 10000.0,
+      "scale_denominator": 50,
+      "show_dimensions": true,
+      "show_tags": true,
+      "show_grid": true,
+      "show_levels": true,
+      "id": "f44c1ac6-1fff-428c-b563-188d998ac25e",
+      "name": "Upper Plan",
+      "level_id": "3087830e-4d1a-4f80-b674-777b13466c13",
+      "level_elevation_mm": 3000.0,
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "direction_name": "+Y"
+    },
+    "6cc3f498-eae1-4dd9-9df3-45d0181c8b51": {
+      "view_type": "Section",
+      "bottom_offset_mm": -200.0,
+      "cut_offset_mm": 1200.0,
+      "top_offset_mm": 2700.0,
+      "origin_mm": [
+        0.0,
+        2000.0,
+        0.0
+      ],
+      "depth_mm": 3000.0,
+      "scale_denominator": 50,
+      "show_dimensions": true,
+      "show_tags": true,
+      "show_grid": true,
+      "show_levels": true,
+      "id": "6cc3f498-eae1-4dd9-9df3-45d0181c8b51",
+      "name": "Section A-A",
+      "level_id": "",
+      "level_elevation_mm": 0.0,
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "direction_name": "+Y"
+    },
+    "a1a59cea-63c2-4116-8a89-612c1b99d3e0": {
+      "view_type": "Elevation",
+      "bottom_offset_mm": -200.0,
+      "cut_offset_mm": 1200.0,
+      "top_offset_mm": 2700.0,
+      "origin_mm": [
+        0.0,
+        -1000.0,
+        0.0
+      ],
+      "depth_mm": 6000.0,
+      "scale_denominator": 50,
+      "show_dimensions": true,
+      "show_tags": true,
+      "show_grid": true,
+      "show_levels": true,
+      "id": "a1a59cea-63c2-4116-8a89-612c1b99d3e0",
+      "name": "South Elevation",
+      "level_id": "",
+      "level_elevation_mm": 0.0,
+      "direction": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "direction_name": "+Y"
+    }
+  },
+  "sheet_states": {
+    "A101": {
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "e0e049af588a80c4cf169ae99d9acf166e4b2cb3906d49c39efb990b88aed886"
+    },
+    "A201": {
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "0bd4eda468f8c5431ed6cd4ebdf2af9efd886ddefd468990545f0138bed4ea88"
+    }
+  },
+  "geometry_hashes": {
+    "cebee298-de3d-4562-8198-b3dd8361c332": "2e544d655d784d868d5583baad84b5e732ef852f2c2466273196f21fbeddcd40",
+    "f44c1ac6-1fff-428c-b563-188d998ac25e": "5535452681d074ff95f07a0160d9f8ccd5b56822bbf850a7ec59d8af0b6f7f8d",
+    "6cc3f498-eae1-4dd9-9df3-45d0181c8b51": "d8320784e4b958c9c20962a2a9b19e3277a788e83678857147bd3ae9e5ef966c",
+    "a1a59cea-63c2-4116-8a89-612c1b99d3e0": "316932d67d14eee7702f3332bca1e8c26660c0bcd40893ce673bed018522fee5"
+  },
+  "svg_sha256": {
+    "A101": "2bc96e5208a6f9e2cb1df89802287cbf6d601a98defc7c114024cf56897054b5",
+    "A201": "03e7eaa55932d5633fe6bd18aba7208e2594bb9c3e9dd5cbd737dd421742d7e0"
+  },
+  "exports": {
+    "A101": {
+      "format": "svg",
+      "files": [
+        "/tmp/bim3117-v050-final-native/output/A101.svg",
+        "/tmp/bim3117-v050-final-native/output/A101_svg_metadata.json"
+      ],
+      "metadata_path": "/tmp/bim3117-v050-final-native/output/A101_svg_metadata.json",
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "e0e049af588a80c4cf169ae99d9acf166e4b2cb3906d49c39efb990b88aed886",
+      "validation": {
+        "status": "passed",
+        "paper": "A3",
+        "orientation": "Landscape",
+        "units": "mm",
+        "view_count": 2,
+        "explicit_scales_preserved": true,
+        "no_fit_rescaling": true,
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "e0e049af588a80c4cf169ae99d9acf166e4b2cb3906d49c39efb990b88aed886",
+        "visible_path_count": 140,
+        "cut_face_count": 34,
+        "dimension_count": 4,
+        "tag_count": 32,
+        "datum_count": 8,
+        "truncated_tag_count": 0,
+        "full_source_names_retained_in_metadata": true,
+        "svg": {
+          "status": "passed",
+          "page_count": 1,
+          "paper_mm": [
+            420.0,
+            297.0
+          ],
+          "view_count": 2,
+          "vector_geometry": true,
+          "embedded_sarabun_fonts": true,
+          "source_revisions_match": true
+        }
+      }
+    },
+    "A201": {
+      "format": "svg",
+      "files": [
+        "/tmp/bim3117-v050-final-native/output/A201.svg",
+        "/tmp/bim3117-v050-final-native/output/A201_svg_metadata.json"
+      ],
+      "metadata_path": "/tmp/bim3117-v050-final-native/output/A201_svg_metadata.json",
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "0bd4eda468f8c5431ed6cd4ebdf2af9efd886ddefd468990545f0138bed4ea88",
+      "validation": {
+        "status": "passed",
+        "paper": "A3",
+        "orientation": "Landscape",
+        "units": "mm",
+        "view_count": 2,
+        "explicit_scales_preserved": true,
+        "no_fit_rescaling": true,
+        "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+        "drawing_revision": "0bd4eda468f8c5431ed6cd4ebdf2af9efd886ddefd468990545f0138bed4ea88",
+        "visible_path_count": 164,
+        "cut_face_count": 17,
+        "dimension_count": 4,
+        "tag_count": 38,
+        "datum_count": 6,
+        "truncated_tag_count": 0,
+        "full_source_names_retained_in_metadata": true,
+        "svg": {
+          "status": "passed",
+          "page_count": 1,
+          "paper_mm": [
+            420.0,
+            297.0
+          ],
+          "view_count": 2,
+          "vector_geometry": true,
+          "embedded_sarabun_fonts": true,
+          "source_revisions_match": true
+        }
+      }
+    }
+  },
+  "installed_modules": {
+    "bim3117_freecad.drawings": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawings.py",
+      "sha256": "6e82b3c4fc76098e9d4da0b349fd6eebe723c536edc785ecdcf45bb657246885"
+    },
+    "bim3117_freecad.drawing_geometry": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_geometry.py",
+      "sha256": "98c8251d5c4ce1e6529475a97ed5f764ed29e8642a4ea284127bebb2de4c30ec"
+    },
+    "bim3117_freecad.drawing_render": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_render.py",
+      "sha256": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388"
+    },
+    "bim3117_freecad.drawing_export": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/drawing_export.py",
+      "sha256": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75"
+    },
+    "bim3117_freecad.services": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+      "sha256": "6fdcc6c21b5e4997003677cd17a07fdf58f8dfaded6e62af58b6a72baa4160b2"
+    },
+    "bim3117_freecad.snapshot": {
+      "path": "/tmp/bim3117-v050-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+      "sha256": "53503cc5c79efe50ed13a560df54a1d54269872178929d43c99281df4090a157"
+    }
+  }
+}

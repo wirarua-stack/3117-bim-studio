@@ -1,0 +1,42 @@
+{
+  "exit_code": 0,
+  "command": [
+    "/tmp/bang_phra_blender/blender-4.5.14-linux-x64/blender",
+    "--window-geometry",
+    "0",
+    "0",
+    "1600",
+    "1100",
+    "--python",
+    "/workspace/scratch/9457befac3c8/3117-bim-studio/tests/bonsai_types_review.py",
+    "--",
+    "--ifc",
+    "/tmp/bim3117-v050-canonical-final/Types_Quantities_Workbench.ifc",
+    "--snapshot",
+    "/tmp/bim3117-v050-canonical-final/types-snapshot.json",
+    "--native-report",
+    "/tmp/bim3117-v050-canonical-final/types-example.json",
+    "--baseline-snapshot",
+    "/workspace/scratch/9457befac3c8/3117-bim-studio/examples/building/building-snapshot.json",
+    "--baseline-native-report",
+    "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v030-native/building-test-report.json",
+    "--output",
+    "/tmp/bim3117-v050-exchange/bonsai-final-gui-03",
+    "--gui-hold-seconds",
+    "12"
+  ],
+  "environment": {
+    "BLENDER_USER_CONFIG": "/tmp/bim3117-v050-exchange/bonsai-profile/config",
+    "BLENDER_USER_SCRIPTS": "/tmp/bim3117-v050-exchange/bonsai-profile/scripts",
+    "BLENDER_USER_EXTENSIONS": "/tmp/bim3117-exchange-qa/blender-profile/extensions",
+    "XDG_CONFIG_HOME": "/tmp/bim3117-v050-exchange/bonsai-profile/xdg-config",
+    "XDG_CACHE_HOME": "/tmp/bim3117-v050-exchange/bonsai-profile/xdg-cache",
+    "XDG_DATA_HOME": "/tmp/bim3117-v050-exchange/bonsai-profile/xdg-data"
+  },
+  "harness_sha256": "d141ce6b4ae78498ce6db6a4afe4fadeff3b73d77714c7d0db8f434d1be7d6e8",
+  "display": ":96",
+  "resolution": [
+    1600,
+    1100
+  ]
+}

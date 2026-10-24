@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "schema": "IFC4",
+  "ifcopenshell_version": "0.8.4",
+  "source_content_revision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "checks_passed": 19,
+  "checks": [
+    {
+      "name": "ifc4-schema",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "unique-global-ids",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "mapped-counts",
+      "status": "passed",
+      "details": {
+        "IfcProject": 1,
+        "IfcSite": 1,
+        "IfcBuilding": 1,
+        "IfcBuildingStorey": 2,
+        "IfcWallType": 1,
+        "IfcWall": 1,
+        "IfcDoor": 1,
+        "IfcOpeningElement": 1,
+        "IfcRelVoidsElement": 1,
+        "IfcRelFillsElement": 1
+      }
+    },
+    {
+      "name": "si-units",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-hierarchy",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "project-source",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:9f17f0b4-8da7-506a-83eb-e3e6b0f38b44",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "level:40f288d7-f0fb-5546-89e8-ec6242cb1050",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-type:c3acd569-027d-590b-aef2-616c00b367ff",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-semantics:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-placement:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "wall-quantities:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "status": "passed",
+      "details": {
+        "volume_m3": 3.2220000000000004,
+        "expected_volume_m3": 3.222
+      }
+    },
+    {
+      "name": "door-relations:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-source-size:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "door-placement:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "geometry:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": {
+        "volume_m3": 0.05000000000000001,
+        "expected_volume_m3": 0.05
+      }
+    },
+    {
+      "name": "opening-empty:ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "status": "passed",
+      "details": ""
+    },
+    {
+      "name": "express-rules",
+      "status": "passed",
+      "details": []
+    }
+  ],
+  "geometry": [
+    {
+      "id": "a46a40aa-849b-546d-8d90-ba8dc2a6edd1",
+      "ifc_class": "IfcWall",
+      "volume_m3": 3.2220000000000004,
+      "expected_volume_m3": 3.222,
+      "world_bounds_m": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          6.0,
+          0.2,
+          3.0
+        ]
+      ]
+    },
+    {
+      "id": "ad4c6554-a58c-5e21-a0b6-bbca08935974",
+      "ifc_class": "IfcDoor",
+      "volume_m3": 0.05000000000000001,
+      "expected_volume_m3": 0.05,
+      "world_bounds_m": [
+        [
+          1.2,
+          0.0,
+          0.0
+        ],
+        [
+          2.1,
+          0.2,
+          2.0999999999999996
+        ]
+      ]
+    }
+  ],
+  "express_rules": {
+    "requested": true,
+    "status": "passed",
+    "messages": []
+  },
+  "external_application_review": "not established by this validator"
+}

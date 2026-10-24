@@ -1,0 +1,413 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "core modules load from the isolated installed add-on",
+      "status": "passed"
+    },
+    {
+      "name": "materials are persistent native project members with UUID and code",
+      "status": "passed"
+    },
+    {
+      "name": "material duplication is one transaction with new identity and empty code",
+      "status": "passed"
+    },
+    {
+      "name": "unused material deletion removes only the selected entry",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate material codes are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "nonpositive layer thickness is rejected before creation",
+      "status": "passed"
+    },
+    {
+      "name": "layers on frame types are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "material and layers cannot be independent competing authorities",
+      "status": "passed"
+    },
+    {
+      "name": "ordered layers retain repeated material identity and determine total thickness",
+      "status": "passed"
+    },
+    {
+      "name": "typed openings resolve dimensions and native material from their types",
+      "status": "passed"
+    },
+    {
+      "name": "a shared opening edit is one transaction and updates the real wall cut",
+      "status": "passed"
+    },
+    {
+      "name": "Undo restores shared dimensions native solids and original content hash",
+      "status": "passed"
+    },
+    {
+      "name": "typed instance dimensional mismatch is rejected before mutation",
+      "status": "passed"
+    },
+    {
+      "name": "rejected typed instance edit preserves complete native state and Redo",
+      "status": "passed"
+    },
+    {
+      "name": "prior Redo remains executable after the rejected command",
+      "status": "passed"
+    },
+    {
+      "name": "equal legacy dialog echoes are accepted while instance location stays editable",
+      "status": "passed"
+    },
+    {
+      "name": "raw typed dimensional writes are restored without a second authority",
+      "status": "passed"
+    },
+    {
+      "name": "raw layer vector writes cannot bypass atomic layer validation",
+      "status": "passed"
+    },
+    {
+      "name": "native type category is immutable",
+      "status": "passed"
+    },
+    {
+      "name": "assigned type deletion is guarded",
+      "status": "passed"
+    },
+    {
+      "name": "referenced native material deletion is guarded",
+      "status": "passed"
+    },
+    {
+      "name": "wrong-category assignment is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "required instance references cannot silently become missing",
+      "status": "passed"
+    },
+    {
+      "name": "walls cannot detach their required WallType",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate type gets a distinct UUID and independent empty code",
+      "status": "passed"
+    },
+    {
+      "name": "type Label and placement edit together in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "combined row Undo restores all edited fields",
+      "status": "passed"
+    },
+    {
+      "name": "detach preserves effective dimensions and material and restores editable native fields",
+      "status": "passed"
+    },
+    {
+      "name": "detached dimensional editing changes the real opening",
+      "status": "passed"
+    },
+    {
+      "name": "unused duplicate type can be deleted",
+      "status": "passed"
+    },
+    {
+      "name": "legacy WallType duplication preserves its descriptive text",
+      "status": "passed"
+    },
+    {
+      "name": "typed member dimensions drive gross geometry and directed cuts",
+      "status": "passed"
+    },
+    {
+      "name": "layer edit fans out to slab geometry and both joined member kinds in one transaction",
+      "status": "passed"
+    },
+    {
+      "name": "layer edit Undo restores original cutter and member volumes",
+      "status": "passed"
+    },
+    {
+      "name": "Column and Beam shared section changes rebuild their joined native solids",
+      "status": "passed"
+    },
+    {
+      "name": "native material rename propagates through homogeneous and layered types",
+      "status": "passed"
+    },
+    {
+      "name": "raw valid material rename refreshes derived type and instance descriptions",
+      "status": "passed"
+    },
+    {
+      "name": "fixture single-cutter proposals are individually valid",
+      "status": "passed"
+    },
+    {
+      "name": "combined shared-type cutters cannot remove an entire member",
+      "status": "passed"
+    },
+    {
+      "name": "combined cutter rejection leaves prior solids type and Redo intact",
+      "status": "passed"
+    },
+    {
+      "name": "successful shared cutter Redo rebuilds both cutters and one connected member",
+      "status": "passed"
+    },
+    {
+      "name": "diagonal fixture proposals are individually valid",
+      "status": "passed"
+    },
+    {
+      "name": "simultaneous shared opening growth checks proposed rectangles together",
+      "status": "passed"
+    },
+    {
+      "name": "combined opening rejection preserves both frames wall cut and Redo",
+      "status": "passed"
+    },
+    {
+      "name": "touching shared openings remain valid after Redo",
+      "status": "passed"
+    },
+    {
+      "name": "raw shared-type dimension edits validate all dependent opening bounds",
+      "status": "passed"
+    },
+    {
+      "name": "raw type-link clearing retains the expected UUID and invalidates geometry",
+      "status": "passed"
+    },
+    {
+      "name": "capture rejects a missing assigned type",
+      "status": "passed"
+    },
+    {
+      "name": "supported reassignment repairs a broken type link and real opening",
+      "status": "passed"
+    },
+    {
+      "name": "raw material reference clearing preserves its expected ID and invalidates dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "capture rejects a missing type material reference",
+      "status": "passed"
+    },
+    {
+      "name": "explicit material reassignment repairs type instances and upstream wall status",
+      "status": "passed"
+    },
+    {
+      "name": "raw layer material removal retains the ordered expected IDs",
+      "status": "passed"
+    },
+    {
+      "name": "explicit ordered-layer repair rebuilds slab and joined member geometry",
+      "status": "passed"
+    }
+  ],
+  "scope": "Native materials/types, shared dimensions, complete proposal preflight and FCStd",
+  "checks_passed": 54,
+  "sample": "/tmp/bim3117-v050-final-native/output/Types_Quantities_Workbench.FCStd",
+  "sample_sha256": "aef67b2a024ccc9c3459a34ecd774805d177c93117df4875f6c837c27fe28746",
+  "element_ids": {
+    "BIM3117_Project": "59abd24b-06d9-4816-a129-26bbc1225d95",
+    "BIM3117_Level": "bd574542-74d2-4027-a0f6-90b08392faaf",
+    "BIM3117_Level001": "9a4004e9-b835-4852-b270-08d2b1303a44",
+    "BIM3117_Material": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+    "BIM3117_Material001": "373bf605-9da0-4c98-aeb2-6b6263303986",
+    "BIM3117_Material002": "c72968fc-50fa-4e58-ae93-5bebfd635edc",
+    "BIM3117_WallType": "c8c51282-2385-42f5-9697-bfcc40c79ca3",
+    "BIM3117_Wall": "1d20cdb8-d635-4846-ba9e-b4659c2a35c3",
+    "BIM3117_WallBody": "b84ffe76-eebe-4759-9832-de0ebc145290",
+    "BIM3117_Door": "230ac211-d651-48ed-b8fd-4ab19275f58d",
+    "BIM3117_Window": "20d675dc-c54e-4363-8ac9-ed1cc0b07ad5",
+    "BIM3117_ElementType": "736fa462-821f-4c40-b7f5-ac3f35287dea",
+    "BIM3117_ElementType001": "3acab60f-6e2e-46ad-923f-bf32ea54dbd8",
+    "BIM3117_WallType001": "c7daa8cc-221f-4086-a779-0cdc4529eeaf",
+    "BIM3117_ElementType002": "eef28b98-caf5-47ef-9b49-76d0d9c93a3b",
+    "BIM3117_Slab": "0c5472f4-2467-46ba-ab4a-6f4782788336",
+    "BIM3117_Column": "8763d5d6-afeb-4269-965c-1f1ea6a49712",
+    "BIM3117_Beam": "62ea3bfb-06a7-4b37-93f6-4e8bac5b78db",
+    "BIM3117_ElementType003": "be8bdee3-e483-4029-aa2d-3572aea16daf",
+    "BIM3117_ElementType004": "4a0542db-6ffc-4761-a7f2-50de7d6f0619",
+    "BIM3117_ElementType005": "49bae4f1-81a2-442d-abd0-3825b02e25b8",
+    "BIM3117_Slab001": "77c3106a-b4d8-4ccd-806a-5df0fd0ff2dd",
+    "BIM3117_Slab002": "bb2f2bbc-b477-4c4a-ab51-29f96d3127f2",
+    "BIM3117_Beam001": "98be241c-1765-480f-915f-a2b0fd45282e",
+    "BIM3117_Wall001": "afcedbc1-e713-4f84-ab79-e9e1c4aa9c7f",
+    "BIM3117_WallBody001": "d20163c1-a080-49c9-ac71-eab5cca436ec",
+    "BIM3117_Window001": "c3601e96-2933-46a7-8bef-06dfac7e47ea",
+    "BIM3117_Window002": "2d084652-7d5a-4950-9c36-f97c8df3687f",
+    "BIM3117_ElementType006": "a10cc78b-5380-4c5a-bd38-fe487d3ed484"
+  },
+  "content_revision": "a1930b121852c20aaaa210b4b540747f1816f790b21aa43cd3f448bc069dca99",
+  "type_definitions": {
+    "c8c51282-2385-42f5-9697-bfcc40c79ca3": {
+      "id": "c8c51282-2385-42f5-9697-bfcc40c79ca3",
+      "name": "Wall layered",
+      "code": "W200",
+      "category": "Wall",
+      "thickness_mm": 200.0,
+      "material_id": "",
+      "layers": [
+        {
+          "material_id": "373bf605-9da0-4c98-aeb2-6b6263303986",
+          "thickness_mm": 20.0,
+          "role": "Finish"
+        },
+        {
+          "material_id": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+          "thickness_mm": 160.0,
+          "role": "Core"
+        },
+        {
+          "material_id": "373bf605-9da0-4c98-aeb2-6b6263303986",
+          "thickness_mm": 20.0,
+          "role": "Finish"
+        }
+      ]
+    },
+    "736fa462-821f-4c40-b7f5-ac3f35287dea": {
+      "id": "736fa462-821f-4c40-b7f5-ac3f35287dea",
+      "name": "Door 900",
+      "code": "D900",
+      "category": "Door",
+      "width_mm": 1000.0,
+      "height_mm": 2100.0,
+      "material_id": "c72968fc-50fa-4e58-ae93-5bebfd635edc",
+      "layers": []
+    },
+    "3acab60f-6e2e-46ad-923f-bf32ea54dbd8": {
+      "id": "3acab60f-6e2e-46ad-923f-bf32ea54dbd8",
+      "name": "Window 1200",
+      "code": "",
+      "category": "Window",
+      "width_mm": 1200.0,
+      "height_mm": 1200.0,
+      "material_id": "c72968fc-50fa-4e58-ae93-5bebfd635edc",
+      "layers": []
+    },
+    "c7daa8cc-221f-4086-a779-0cdc4529eeaf": {
+      "id": "c7daa8cc-221f-4086-a779-0cdc4529eeaf",
+      "name": "Legacy text",
+      "code": "",
+      "category": "Wall",
+      "thickness_mm": 180.0,
+      "material_id": "",
+      "layers": []
+    },
+    "eef28b98-caf5-47ef-9b49-76d0d9c93a3b": {
+      "id": "eef28b98-caf5-47ef-9b49-76d0d9c93a3b",
+      "name": "Slab 150",
+      "code": "",
+      "category": "Slab",
+      "thickness_mm": 150.0,
+      "material_id": "",
+      "layers": [
+        {
+          "material_id": "373bf605-9da0-4c98-aeb2-6b6263303986",
+          "thickness_mm": 30.0,
+          "role": "Top"
+        },
+        {
+          "material_id": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+          "thickness_mm": 120.0,
+          "role": "Core"
+        }
+      ]
+    },
+    "be8bdee3-e483-4029-aa2d-3572aea16daf": {
+      "id": "be8bdee3-e483-4029-aa2d-3572aea16daf",
+      "name": "Column 300x400",
+      "code": "",
+      "category": "Column",
+      "width_mm": 350.0,
+      "depth_mm": 400.0,
+      "material_id": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+      "layers": []
+    },
+    "4a0542db-6ffc-4761-a7f2-50de7d6f0619": {
+      "id": "4a0542db-6ffc-4761-a7f2-50de7d6f0619",
+      "name": "Beam 300x450",
+      "code": "",
+      "category": "Beam",
+      "width_mm": 300.0,
+      "depth_mm": 500.0,
+      "material_id": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+      "layers": []
+    },
+    "49bae4f1-81a2-442d-abd0-3825b02e25b8": {
+      "id": "49bae4f1-81a2-442d-abd0-3825b02e25b8",
+      "name": "Shared cutter 100",
+      "code": "",
+      "category": "Slab",
+      "thickness_mm": 150.0,
+      "material_id": "bfb658e4-125f-45d9-b4c1-1090e177d23e",
+      "layers": []
+    },
+    "a10cc78b-5380-4c5a-bd38-fe487d3ed484": {
+      "id": "a10cc78b-5380-4c5a-bd38-fe487d3ed484",
+      "name": "Diagonal 900",
+      "code": "",
+      "category": "Window",
+      "width_mm": 1000.0,
+      "height_mm": 1000.0,
+      "material_id": "c72968fc-50fa-4e58-ae93-5bebfd635edc",
+      "layers": []
+    }
+  },
+  "instance_types": {
+    "1d20cdb8-d635-4846-ba9e-b4659c2a35c3": "c8c51282-2385-42f5-9697-bfcc40c79ca3",
+    "230ac211-d651-48ed-b8fd-4ab19275f58d": "736fa462-821f-4c40-b7f5-ac3f35287dea",
+    "20d675dc-c54e-4363-8ac9-ed1cc0b07ad5": "3acab60f-6e2e-46ad-923f-bf32ea54dbd8",
+    "0c5472f4-2467-46ba-ab4a-6f4782788336": "eef28b98-caf5-47ef-9b49-76d0d9c93a3b",
+    "8763d5d6-afeb-4269-965c-1f1ea6a49712": "be8bdee3-e483-4029-aa2d-3572aea16daf",
+    "62ea3bfb-06a7-4b37-93f6-4e8bac5b78db": "4a0542db-6ffc-4761-a7f2-50de7d6f0619",
+    "77c3106a-b4d8-4ccd-806a-5df0fd0ff2dd": "49bae4f1-81a2-442d-abd0-3825b02e25b8",
+    "bb2f2bbc-b477-4c4a-ab51-29f96d3127f2": "49bae4f1-81a2-442d-abd0-3825b02e25b8",
+    "98be241c-1765-480f-915f-a2b0fd45282e": "",
+    "afcedbc1-e713-4f84-ab79-e9e1c4aa9c7f": "c7daa8cc-221f-4086-a779-0cdc4529eeaf",
+    "c3601e96-2933-46a7-8bef-06dfac7e47ea": "a10cc78b-5380-4c5a-bd38-fe487d3ed484",
+    "2d084652-7d5a-4950-9c36-f97c8df3687f": "a10cc78b-5380-4c5a-bd38-fe487d3ed484"
+  },
+  "native_volumes": {
+    "b84ffe76-eebe-4759-9832-de0ebc145290": 2892000000.0,
+    "230ac211-d651-48ed-b8fd-4ab19275f58d": 50999999.999999955,
+    "20d675dc-c54e-4363-8ac9-ed1cc0b07ad5": 46000000.0,
+    "0c5472f4-2467-46ba-ab4a-6f4782788336": 4725000000.0,
+    "8763d5d6-afeb-4269-965c-1f1ea6a49712": 399000000.0,
+    "62ea3bfb-06a7-4b37-93f6-4e8bac5b78db": 630000000.0,
+    "77c3106a-b4d8-4ccd-806a-5df0fd0ff2dd": 450000000.0,
+    "bb2f2bbc-b477-4c4a-ab51-29f96d3127f2": 450000000.0,
+    "98be241c-1765-480f-915f-a2b0fd45282e": 540000000.0,
+    "d20163c1-a080-49c9-ac71-eab5cca436ec": 2880000000.0,
+    "c3601e96-2933-46a7-8bef-06dfac7e47ea": 34200000.0,
+    "2d084652-7d5a-4950-9c36-f97c8df3687f": 34200000.0
+  }
+}

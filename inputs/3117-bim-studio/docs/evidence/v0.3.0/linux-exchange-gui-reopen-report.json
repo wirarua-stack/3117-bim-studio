@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "checks": [
+    {
+      "name": "source GUI suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "native proxies not preregistered before restore",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process restores native identities",
+      "status": "passed"
+    },
+    {
+      "name": "fresh dialog computes saved content revision",
+      "status": "passed"
+    },
+    {
+      "name": "fresh table rows and net quantities match source document",
+      "status": "passed"
+    },
+    {
+      "name": "fresh quantity read does not create native history or objects",
+      "status": "passed"
+    },
+    {
+      "name": "fresh observer updates level-dependent native quantities",
+      "status": "passed"
+    },
+    {
+      "name": "fresh observer follows Undo back to saved revision and volume",
+      "status": "passed"
+    },
+    {
+      "name": "fresh table selection resolves persistent native wall",
+      "status": "passed"
+    },
+    {
+      "name": "fresh dialog closes without leaking its observer",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 10
+}

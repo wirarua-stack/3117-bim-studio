@@ -1,0 +1,13 @@
+{
+  "status": "running",
+  "steps": [
+    "baseline target",
+    "created disposable feature",
+    "deleted disposable feature",
+    "Undo deletion",
+    "Undo creation",
+    "branched label edit",
+    "Undo label edit"
+  ],
+  "addon_imported": false
+}

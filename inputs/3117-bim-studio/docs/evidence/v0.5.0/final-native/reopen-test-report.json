@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "proxy class not preregistered",
+      "status": "passed"
+    },
+    {
+      "name": "FCStd restoration imports proxy module automatically",
+      "status": "passed"
+    },
+    {
+      "name": "proxy module comes from installed addon",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process restores hierarchy",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process UUIDs match saved fixture identities",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process restores native links and executable proxies",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process edit recomputes dependent grid",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process edit retains element UUIDs",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process native undo restores dependent grid",
+      "status": "passed"
+    }
+  ],
+  "sample": "/tmp/bim3117-v050-final-native/output/Foundation_Reopened.FCStd",
+  "checks_passed": 9
+}

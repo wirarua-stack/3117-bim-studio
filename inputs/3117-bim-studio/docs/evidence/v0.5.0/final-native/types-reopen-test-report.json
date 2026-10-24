@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "gui_up": false,
+  "checks": [
+    {
+      "name": "source type/material suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "FCStd file matches recorded source bytes",
+      "status": "passed"
+    },
+    {
+      "name": "catalogue proxies are not preregistered in this fresh process",
+      "status": "passed"
+    },
+    {
+      "name": "all native proxies restore through installed modules",
+      "status": "passed"
+    },
+    {
+      "name": "all authored and derived UUIDs survive save and restore",
+      "status": "passed"
+    },
+    {
+      "name": "ordered material and type definitions survive restore",
+      "status": "passed"
+    },
+    {
+      "name": "all six categories retain their native type links and expected IDs",
+      "status": "passed"
+    },
+    {
+      "name": "all native frame cut and member volumes survive restore",
+      "status": "passed"
+    },
+    {
+      "name": "authored content revision survives fresh process recompute",
+      "status": "passed"
+    },
+    {
+      "name": "typed dimensional properties restore read-only editor modes",
+      "status": "passed"
+    },
+    {
+      "name": "freshly restored shared cutter type updates both slabs and joined beam",
+      "status": "passed"
+    },
+    {
+      "name": "Undo after restore returns the original geometry and hash",
+      "status": "passed"
+    },
+    {
+      "name": "editing restored objects does not overwrite the source FCStd",
+      "status": "passed"
+    },
+    {
+      "name": "legacy exchange/Quantity_Exchange_Workbench.FCStd retains its exact authored hash",
+      "status": "passed"
+    },
+    {
+      "name": "legacy restore does not silently add catalogue properties",
+      "status": "passed"
+    },
+    {
+      "name": "legacy source FCStd remains byte identical",
+      "status": "passed"
+    },
+    {
+      "name": "legacy building/Building_Authoring_Workbench.FCStd retains its exact authored hash",
+      "status": "passed"
+    },
+    {
+      "name": "legacy restore does not silently add catalogue properties",
+      "status": "passed"
+    },
+    {
+      "name": "legacy source FCStd remains byte identical",
+      "status": "passed"
+    },
+    {
+      "name": "legacy untyped slab dimensions remain directly editable",
+      "status": "passed"
+    },
+    {
+      "name": "legacy edit Undo recovers the exact pre-catalogue content revision",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 21,
+  "content_revision": "a1930b121852c20aaaa210b4b540747f1816f790b21aa43cd3f448bc069dca99",
+  "sample": "/tmp/bim3117-v050-final-native/output/Types_Quantities_Workbench.FCStd"
+}

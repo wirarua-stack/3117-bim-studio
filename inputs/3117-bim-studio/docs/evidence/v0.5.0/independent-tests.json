@@ -1,0 +1,248 @@
+{
+  "status": "passed",
+  "scope": "Independent Python 3.12 / IfcOpenShell0.9.0.post1; not the native host",
+  "pytest": "9.1.1",
+  "checks_passed": 59,
+  "checks": [
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_existing_lock_is_not_removed_by_another_exporter",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_metadata_is_published_last_after_source_revision_gate",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_metadata_replace_failure_removes_new_payloads",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_overlapping_sidecar_is_locked_even_with_different_main_file",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_overwrite_requires_explicit_opt_in_for_any_sidecar",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_second_replace_failure_restores_existing_bundle",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_source_changed_before_commit_leaves_existing_files_intact",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_symlink_destination_does_not_replace_unrelated_target",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_export_files.ExportPublicationTests.test_writer_failure_does_not_replace_existing_files",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_ifc.IfcTests.test_opening_boolean_geometry_matches_schedule",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_ifc.IfcTests.test_reexport_keeps_element_global_ids",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_ifc.IfcTests.test_schema_validation",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_ifc.IfcTests.test_semantics_units_and_host_relations",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_bad_numbers_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_derived_overflow_rolls_back",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_door_rejects_missing_host_and_outside_dimensions",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_duplicate_uuid_input_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_failed_save_preserves_old_file",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_failed_transaction_rolls_back_every_edit",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_host_deletion_has_no_orphan",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_immutable_records_and_transaction_requirement",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_json_bad_shape_and_unknown_fields_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_json_roundtrip_preserves_identity_and_rejects_schema",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_json_types_cannot_regenerate_identity_or_accept_boolean_version",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_level_height_constraint_updates_quantities",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_new_edit_clears_redo",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_overlap_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_quantities_deduct_once",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_shared_type_update_undo_redo",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_model.ModelTests.test_wrong_level_causes_atomic_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_all_root_ids_stable_after_rename_and_new_revision",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_building_full_express_validation",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_building_roundtrip_join_quantities_and_four_bar_window",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_concave_slab_rejects_equal_volume_mirrored_profile",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_diagonal_reversed_axis_signed_elevation_and_offsets",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_diagonal_reversed_member_axes_and_signed_level_offsets",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_empty_building_remains_valid_and_readonly",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_full_express_validation",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_invalid_reference_duplicate_id_nonfinite_and_overlap_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_misplaced_join_cutter_rejected_even_when_volume_and_bounds_match",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_missing_join_and_mixed_door_window_overlap_are_rejected",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_multiple_openings_and_shared_type_have_single_wall_row",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_multistorey_square_openings_have_empty_voids_and_solid_material",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_native_type_material_contract_rejects_inconsistency",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_native_types_materials_full_express_validation",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_native_types_materials_roundtrip_preserves_products_and_geometry",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_overlapping_slab_cutters_deduct_union_and_keep_ids_on_rename",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_roundtrip_schema_geometry_relationships_and_quantities",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_serialized_layer_direction_order_material_and_quantities_are_checked",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_validator_rejects_equal_volume_opening_in_wrong_location",
+      "status": "passed"
+    },
+    {
+      "name": "tests.test_native_ifc.NativeIfcTests.test_validator_rejects_stale_native_solid_volume",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_concurrent_install_lock_blocks_changes",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_failed_promotion_restores_previous_installation",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_first_install_in_unicode_path_has_identity_and_licenses",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_linked_payload_is_rejected_without_touching_target",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_restore_rejects_path_traversal",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_uninstall_and_restore_preserve_files",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_unowned_existing_directory_is_not_modified",
+      "status": "passed"
+    },
+    {
+      "name": "packaging.tests.test_install_support.InstallSupportTests.test_upgrade_preserves_old_files_outside_mod",
+      "status": "passed"
+    }
+  ],
+  "reported_test_count": 59,
+  "reported_subtest_count": 51,
+  "skipped": 0,
+  "junit_sha256": "7304bda01e91f0caf4bf9157eaffb3a931fd7d078443b9039b2c0a318f36a59d"
+}

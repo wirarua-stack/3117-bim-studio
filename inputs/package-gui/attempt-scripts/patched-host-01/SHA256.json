@@ -1,0 +1,17 @@
+{
+  "run_package_batch.py": {
+    "sha256": "196a3551e3a2fdf3bef4ca1a7e99be0c804805316599c5efd14851575ff95ec8",
+    "bytes": 9599,
+    "source": "/tmp/bim3117-host-fix/package-gui/run_package_batch.py"
+  },
+  "run_package_check.py": {
+    "sha256": "8529ad2e64caf49dfbc07936d18c4b39de070af4c0c5243c2cf598b0c00f4727",
+    "bytes": 13311,
+    "source": "/tmp/bim3117-host-fix/package-gui/run_package_check.py"
+  },
+  "package_autopilot.FCMacro": {
+    "sha256": "d8411ceca5d676fc9ff28a1f02c423c1f12359c10a2c6d6444b494914fb8e8a9",
+    "bytes": 14692,
+    "source": "/tmp/bim3117-host-fix/package-gui/package_autopilot.FCMacro"
+  }
+}

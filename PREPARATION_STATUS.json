@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "created_at_utc": "2026-10-23T09:25:33.483364+00:00",
+  "status": "prepared_windows_execution_pending",
+  "github_connected": true,
+  "github_account": "wirarua-stack",
+  "bim_repository_target": null,
+  "blocking_requirement": "A BIM repository target or an accessible native Windows runner",
+  "source_commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+  "offline_verification": {
+    "unit_tests": {
+      "schema": 1,
+      "scope": "Offline controller, archive, identity and report-gate unit tests on Linux; synthetic fixtures are not Windows results",
+      "status": "passed",
+      "tests_run": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "windows_execution": false,
+      "created_at": "2026-10-23T09:24:42.555325+00:00"
+    },
+    "powershell_parser": "passed_on_linux_only",
+    "powershell_entrypoint_preflight": "passed_on_linux_only",
+    "python_and_workflow_static_checks": "passed",
+    "frozen_inputs": {
+      "status": "passed",
+      "files_checked": 898,
+      "manifest_sha256": "5de1955c32fe8391b3d43a7e8f2ff394027c5091c575f4cadbac2ba33319f9e9",
+      "errors": [],
+      "public_zip_sha256": "ddfdaed0c10a4d93f4f9e808106f7c31db553d825619cd1ce39cd21ab70b9eb7"
+    },
+    "windows_ifc_wheels_downloaded_and_hash_checked": 7,
+    "windows_ifc_extracted_files": 817,
+    "windows_pe_headers_inspected": 4,
+    "libpack_downloaded_bytes": 948616324,
+    "libpack_sha256": "3565842b2f2c464d891d37f1ce8467f2cd0b3dd758a6dfacc7acfeff290b67d4"
+  },
+  "windows_build": "not_executed",
+  "windows_regression": "not_executed",
+  "windows_native_19_process_651_checks": "not_executed",
+  "windows_public_gui_248_plus_package_48_checks": "not_executed",
+  "windows_desktop_checklist": "pending",
+  "release_ready": false,
+  "installer_built": false,
+  "upstream_submitted": false,
+  "upstream_merged": false,
+  "external_git_writes_performed": false,
+  "previous_linux_handoff_sha256_unchanged": "be90fc92a7babe6233afb091be154168271230f4028ab352b72cccc93f102d2a"
+}

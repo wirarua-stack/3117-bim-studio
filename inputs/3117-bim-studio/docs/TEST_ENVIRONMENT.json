@@ -1,0 +1,326 @@
+{
+  "project": "3117 BIM Studio",
+  "workbench_version": "0.5.0",
+  "recorded_at_utc": "2026-10-23T07:06:59.503693+00:00",
+  "release_status": "development_candidate_blocked",
+  "overall_release_ready": false,
+  "host_history_branch_gate": "failed_native_host",
+  "windows_acceptance": "pending; no Windows runtime executed",
+  "native_model_schema": 1,
+  "drawing_schema": 1,
+  "schedule_schema": 1,
+  "reference_package_version": "0.0.1",
+  "host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+    "qt": "6.8.3",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "ifcopenshell": "0.8.4",
+    "source": "Official Linux x86_64 FreeCAD 1.1.4 AppImage",
+    "appimage_sha256": "f6dc6ba676e5ac96a565ebc8d657232f94c6158e85b4352141bd1a46f6b43434",
+    "profiles": "Isolated /tmp user profiles; GUI via Xvfb/software rendering"
+  },
+  "native_processes": {
+    "install": {
+      "report": "docs/evidence/v0.5.0/final-native/install-report.json",
+      "sha256": "b70ac4633a69ab49f71ea80583a67562f8c1814376a1f9b4076bcc5cbb8cd016",
+      "status": "passed",
+      "checks": 1,
+      "exit_code": 0
+    },
+    "foundation": {
+      "report": "docs/evidence/v0.5.0/final-native/foundation-test-report.json",
+      "sha256": "0b12ff1a033585f9923e723a47e9a43f0e6a9aa40f83bf608410faf0c2952be8",
+      "status": "passed",
+      "checks": 35,
+      "exit_code": 0
+    },
+    "reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/reopen-test-report.json",
+      "sha256": "065d7934b447f43838caebf32f1e587a635ebb7607d0adff4d0bd8cd8e2fb51a",
+      "status": "passed",
+      "checks": 9,
+      "exit_code": 0
+    },
+    "architecture": {
+      "report": "docs/evidence/v0.5.0/final-native/architecture-test-report.json",
+      "sha256": "99317df84920f20c2728f3d607e434a1c60ddd82bac931e30cfd2bb39c45630e",
+      "status": "passed",
+      "checks": 63,
+      "exit_code": 0
+    },
+    "architecture_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/architecture-reopen-test-report.json",
+      "sha256": "1d3bd3d977de95ea449696c9c038138d199589518f5589ea2c822199a5c9990d",
+      "status": "passed",
+      "checks": 12,
+      "exit_code": 0
+    },
+    "exchange": {
+      "report": "docs/evidence/v0.5.0/final-native/exchange-test-report.json",
+      "sha256": "984b949a333b706721176a3ffcfd0e071f52436593af4022dc2ab5530d05ec11",
+      "status": "passed",
+      "checks": 47,
+      "exit_code": 0
+    },
+    "exchange_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/exchange-reopen-test-report.json",
+      "sha256": "3b5868fe6d31f771c1901635bb1f1c724603652383bdb84caaef63f53eea20fa",
+      "status": "passed",
+      "checks": 10,
+      "exit_code": 0
+    },
+    "building": {
+      "report": "docs/evidence/v0.5.0/final-native/building-test-report.json",
+      "sha256": "40d476cb25dc22b57437f125eb3014692d3a5e9e9340255bbc97f2865ef041f8",
+      "status": "passed",
+      "checks": 112,
+      "exit_code": 0
+    },
+    "building_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/building-reopen-test-report.json",
+      "sha256": "75140cf6b1029ea10fdfc73fcf42dc306b4f50a28105c566b3d5e715c096154f",
+      "status": "passed",
+      "checks": 19,
+      "exit_code": 0
+    },
+    "drawing_geometry": {
+      "report": "docs/evidence/v0.5.0/final-native/drawing-geometry-test-report.json",
+      "sha256": "21850dfeba8532d262a9b050a6d9494c5c96e25b5a04db233c76c8a0ad6533e8",
+      "status": "passed",
+      "checks": 31,
+      "exit_code": 0
+    },
+    "drawings": {
+      "report": "docs/evidence/v0.5.0/final-native/drawings-test-report.json",
+      "sha256": "f381ea09c3e36392ae9de90f02d4610a526d4ddc16cc79d563b5e7335db08f23",
+      "status": "passed",
+      "checks": 70,
+      "exit_code": 0
+    },
+    "drawings_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/drawings-reopen-test-report.json",
+      "sha256": "e8e890c137fd07363e5c1419e35ce8a43c4c2c40ab5b60d01ee513c820f0328b",
+      "status": "passed",
+      "checks": 25,
+      "exit_code": 0
+    },
+    "drawing_render": {
+      "report": "docs/evidence/v0.5.0/final-native/drawing-render-test-report.json",
+      "sha256": "290b580aa42db8c149bf7e1f2b28298bd194f9b6e6dbf46ef663e3c92921feb1",
+      "status": "passed",
+      "checks": 33,
+      "exit_code": 0
+    },
+    "types": {
+      "report": "docs/evidence/v0.5.0/final-native/types-test-report.json",
+      "sha256": "ac0ee251c86b8681b1613316032b5b05d2d1cb06d98637ab0469c5af4a6ebd30",
+      "status": "passed",
+      "checks": 54,
+      "exit_code": 0
+    },
+    "types_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/types-reopen-test-report.json",
+      "sha256": "47f641633bc9afecb383d403dcf5113b3aa283f2055d7f041dbe94d5e862415c",
+      "status": "passed",
+      "checks": 21,
+      "exit_code": 0
+    },
+    "types_exchange": {
+      "report": "docs/evidence/v0.5.0/final-native/types-exchange-test-report.json",
+      "sha256": "1762efaef130a56f59215daa4f5860199cf5d2325a5692e5039ad800b7779c9a",
+      "status": "passed",
+      "checks": 37,
+      "exit_code": 0
+    },
+    "types_exchange_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/types-exchange-reopen-test-report.json",
+      "sha256": "1239d7092f310e189d66f96de22b8de2d37b0d1289e169a7d7daa4ddd500116f",
+      "status": "passed",
+      "checks": 7,
+      "exit_code": 0
+    },
+    "schedules": {
+      "report": "docs/evidence/v0.5.0/final-native/schedules-test-report.json",
+      "sha256": "38def868c57f6f6c4085cac5140c6a9b4fe33325c5a9211ab751a72f301b46d2",
+      "status": "passed",
+      "checks": 49,
+      "exit_code": 0
+    },
+    "schedules_reopen": {
+      "report": "docs/evidence/v0.5.0/final-native/schedules-reopen-test-report.json",
+      "sha256": "606b108614e6fd25edc373c4cd8bcfaff70e3e9aed558802fe5f834f6652d5ee",
+      "status": "passed",
+      "checks": 16,
+      "exit_code": 0
+    }
+  },
+  "native_process_count": 19,
+  "native_integration_assertions": 651,
+  "native_process_manifest": {
+    "report": "docs/evidence/v0.5.0/final-native/native-process-manifest.json",
+    "sha256": "ec8f56a3326bec5aaeb21a5794df51b05b522504c8c54086ba7715d4a427ffca",
+    "source_unchanged_during_run": true
+  },
+  "post_native_gate_changes": {
+    "README.md": {
+      "tested_sha256": "19bb860fa01f85d69ff883667684b35a8d7b9ffa70258fa7d1966dde0ae7eef2",
+      "current_sha256": "d8391113c9cdb378ea1a141141c3e2f3bd56272555f24d954c0785298ae6af8a"
+    },
+    "ui3117/model_panels.py": {
+      "tested_sha256": "eef1ee31a6372626df8e2246d7f3c074330fb56644a359d92629f19fc3c2e1f9",
+      "current_sha256": "97f89a12c829d01836c0c6b7daf29275666a5cbc5b8681fbfc71276418659b5e"
+    }
+  },
+  "post_native_gate_scope": "Only the clean-reader observer-loop correction in ui3117/model_panels.py and the Workbench README changed. Every native production Python payload remains byte-identical. The final UI is checked by actual fresh GUI; exact-ZIP public macro results belong to the post-freeze companion. The old full-workbench fingerprint is not relabelled as the final payload.",
+  "gui_feature_suites": {
+    "fresh_installed_gui": {
+      "report": "docs/evidence/v0.5.0/types-gui-reopen-report.json",
+      "sha256": "79fe86f79a0e29bfd351229dd449cafa9d064dd38076d66501f1c0b41efde850",
+      "status": "passed",
+      "checks": 27,
+      "host_history_branch_gate": "failed_native_host",
+      "overall_release_ready": false
+    },
+    "canonical_presentation": {
+      "report": "docs/evidence/v0.5.0/types-presentation-report.json",
+      "sha256": "b454871f35f2c87906d5f2f3d2230712febc6c5e241c02e51f24d04bb48d122b",
+      "status": "passed",
+      "checks": 6,
+      "screenshots": 5
+    },
+    "public_macro": {
+      "expected_checks": 52,
+      "actual_result": "Recorded separately after archive freeze in the Release_Verification companion; not asserted here."
+    }
+  },
+  "host_blocker": {
+    "report": "docs/evidence/v0.5.0/host-history-branch/host-blocker-report.json",
+    "sha256": "506c47c3886a934549b263f9c751fba578c534a6f7a183b87cc6a17fd892d29c",
+    "classification": "failed_native_host",
+    "public_issue_filed": false,
+    "native_workaround_established": false
+  },
+  "original_failed_ui_sequence": {
+    "report": "docs/evidence/v0.5.0/host-history-branch/ui/regression-report.json",
+    "sha256": "6d098ebb576b70becbbbcdb98251ebd70c65dba89333fac18df14a399b0cb14e",
+    "status": "failed_native_host",
+    "completed_checks": null
+  },
+  "host_source_review": {
+    "report": "docs/evidence/v0.5.0/host-history-branch/source-review/source-manifest.json",
+    "sha256": "7355e4cc2d8aabfcbcd4fa8adbd517c89e30f666c2ef2577d701d47dace3e4dc",
+    "optional_patch_applied": false,
+    "optional_patch_tested": false
+  },
+  "independent_unit_tests": {
+    "report": "docs/evidence/v0.5.0/independent-tests.json",
+    "sha256": "5d8294a8eb7d15dbdffd6c80bf83601b232a81ba842654f747973975256c7628",
+    "status": "passed",
+    "tests": 59,
+    "subtests": 51,
+    "skipped": 0,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "ifcopenshell": "0.9.0.post1",
+    "pytest": "9.1.1"
+  },
+  "host_adapter_unit_tests": {
+    "report": "docs/evidence/v0.5.0/host-adapter-unit-report.json",
+    "sha256": "f48e4f5cb935231da18b646735e360ed2751ae8f359fb5c9af70db2c4abb7ca9",
+    "passed": 18,
+    "skipped": 3,
+    "skip_reason": "Host has no optional pytest dependency required for full EXPRESS"
+  },
+  "independent_adapter_tests": {
+    "report": "docs/evidence/v0.5.0/independent-adapter-unit-report.json",
+    "sha256": "4eadc8b0c9306bdb750e8080b1f0df23538cccdda857e5f5f8534c7a010281a2",
+    "passed": 21,
+    "skipped": 0,
+    "qualification": "These adapter tests overlap the 59-test independent gate; do not add them as unique tests."
+  },
+  "canonical_example": {
+    "directory": "examples/types",
+    "native_file": "Types_Quantities_Workbench.FCStd",
+    "native_sha256": "ab308e5e7b20acfa2738e7cb21d24e519fa4b65d8ad8b55f81e6931c75bd6843",
+    "ifc_sha256": "5069ee9e77bf618be30020537b1287b4c7137b5989c69961f35f1b73896aa031",
+    "model_revision": "b1d7558505e38e8eab14517490e580a875eba1bb7b5503b72d140c259384c804",
+    "builder_checks": 41,
+    "builder_report": {
+      "report": "examples/types/types-example.json",
+      "sha256": "d074816f6facb23819e1161a3a5bc8a91e714d9714ff36a4e5f685afad9cd695"
+    },
+    "objects": 79,
+    "products": 33,
+    "types": 6,
+    "materials": 7,
+    "material_rows": 55,
+    "schedules": 9,
+    "views": 4,
+    "sheets": 2,
+    "material_totals": {
+      "row_count": 55,
+      "assigned_product_count": 33,
+      "product_count": 33,
+      "unassigned_product_count": 0,
+      "unassigned_products": [],
+      "gross_volume_m3": 40.1825,
+      "deduction_volume_m3": 3.8160000000000007,
+      "net_volume_m3": 36.3665,
+      "complete": true,
+      "rule": "3117.material.native-solid-partition.v1",
+      "scope": "Only native material assignments are quantified. Layer rows partition products and must not be added again to product quantities. No costs, densities or global overlap deductions are inferred."
+    },
+    "source_file": "examples/drawings/Drawings_Workbench.FCStd",
+    "source_sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c",
+    "unchanged_original_uuids": 57,
+    "solid_symmetric_difference_tolerance_mm3": 0.001,
+    "ifc_serialized_readback_checks": 352,
+    "drawing_note": "Inherited View/Sheet definitions and their revisions are unchanged. Historical PDF/SVGs retain their old building revision; export current typed sheets afresh."
+  },
+  "bonsai": {
+    "report": "docs/evidence/v0.5.0/bonsai/bonsai-types-report.json",
+    "sha256": "e1f0d94936943c0e61cf2747b5b5fdb6c6af9eae1da5d992139a8baae62bba04",
+    "status": "passed",
+    "checks": 216,
+    "express_findings": 0,
+    "blender": "4.5.14 LTS",
+    "bonsai": "0.9.0-post1-py311",
+    "ifcopenshell": "0.9.0.post1",
+    "python": "3.11.15",
+    "ifc_sha256": "5069ee9e77bf618be30020537b1287b4c7137b5989c69961f35f1b73896aa031",
+    "screenshot": "examples/types/Bonsai_Types_Quantities.png",
+    "screenshot_sha256": "c731a5673f97c12e07f56d739d6fe6cb7ec86e289d7ac9f5b28d91e4b5badf40",
+    "qualification": "Actual separate application import and mesh review; not an independent geometry kernel or Windows test."
+  },
+  "exact_distribution_verification": {
+    "companion_report": "3117_BIM_Studio_v0_5_0_Release_Verification.json",
+    "status": "reported separately after archive freeze",
+    "scope": "Exact ZIP manifest, public installer and six public GUI macros, final installed file hashes and safe Unicode paths",
+    "release_gate": "Even passed packaging/feature checks retain the known failed native host gate and pending Windows acceptance."
+  },
+  "historical_records": [
+    "docs/VERIFICATION_v0_4_0.md",
+    "docs/VERIFICATION_v0_3_0.md",
+    "docs/VERIFICATION_v0_2_1.md"
+  ],
+  "notes": [
+    "Counts are assertions within integration suites. Unit tests/subtests and repeats are reported separately, not added as unique tests.",
+    "FCStd is the sole editable model authority. Native geometry uses mm; quantity/IFC uses SI.",
+    "Material rows partition product volumes; never add them again to product totals. Coverage completeness is native assignment coverage, not a complete construction BOQ.",
+    "Schedule definitions are outside Project.Group and excluded from the building hash; edits/exports require fresh model and schedule revisions.",
+    "Door/Window geometry quantifies frames only; no panel, glazing, detailed profile, prices, densities or waste factors are invented.",
+    "Publication is per-file atomic replacement with caught-failure rollback, not crash-atomic multi-file publication.",
+    "Mutable publication tests ran in /tmp due to independently demonstrated managed-workspace synchronization restoring deleted staging files in v0.4.0; production publisher was unchanged.",
+    "Host binaries are not distributed; Sarabun fonts retain their OFL notice. No remote repository or CI run is claimed.",
+    "No host-binary patch, global Undo reset or silent regression skip was used to claim readiness."
+  ]
+}

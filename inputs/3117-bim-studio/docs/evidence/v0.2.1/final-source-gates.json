@@ -1,0 +1,405 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-23T03:23:31.818073+00:00",
+  "scope": "Read-only workflow/runner review, execution of the existing JSON evidence gate, and compile-only source checks; no native or GUI suites rerun.",
+  "repository": "/workspace/scratch/9457befac3c8/3117-bim-studio",
+  "actual_reports_directory": "/workspace/scratch/9457befac3c8/3117-bim-studio/out/v021-native",
+  "local_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "failures": [],
+  "workflow_python": {
+    "status": "passed",
+    "workflow_sha256": "8838f7e5797a125d72fe81530827416dc9fe48586612f73fe8f3b14ca3f8759e",
+    "blocks_compiled": 3,
+    "blocks": [
+      {
+        "name": "Prepare one isolated profile for all seven host processes",
+        "first_line": 65,
+        "sha256": "8e98f9a5fe799fa5e0c3385e2557af9e27e62147cac096915b00a3f0bcced68f"
+      },
+      {
+        "name": "Install and test Foundation, Architecture and Exchange in independent host processes",
+        "first_line": 119,
+        "sha256": "497c87ea8e24198ca82fed241d3626e8670e24ef606449aa06f50d0d29ef0239"
+      },
+      {
+        "name": "Require complete passing JSON evidence, not only process exit codes",
+        "first_line": 164,
+        "sha256": "6f868b6896cd9f2064e0526833aa6c65bf3d71aad20c94c4931cacb44dc2fb47"
+      }
+    ]
+  },
+  "seven_stage_contract": {
+    "status": "passed",
+    "stages": [
+      "install",
+      "foundation",
+      "reopen",
+      "architecture",
+      "architecture_reopen",
+      "exchange",
+      "exchange_reopen"
+    ],
+    "runner_sha256": "fb8856e10164e5cae3d110a32e4db3a429cde83e480f533b111bf0ef730e5de1",
+    "execution_and_gate_maps_identical": true,
+    "runner_dispatch_matches": true
+  },
+  "actual_json_gate": {
+    "exit_code": 0,
+    "stdout": "install: 1 checks passed\nfoundation: 35 checks passed\nreopen: 9 checks passed\narchitecture: 63 checks passed\narchitecture_reopen: 12 checks passed\nexchange: 47 checks passed\nexchange_reopen: 10 checks passed\nHeadless host integration passed. Windows interactive GUI acceptance remains a separate gate.\n",
+    "stderr": "",
+    "status": "passed"
+  },
+  "actual_native_reports": [
+    {
+      "stage": "install",
+      "report": "install-report.json",
+      "report_sha256": "9e8b6659c7b60f3da6736bd59181b45a76c2b37263daa8d64951b37c9d4d9122",
+      "status": "passed",
+      "checks_passed": 1,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": null,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "foundation",
+      "report": "foundation-test-report.json",
+      "report_sha256": "661dbc6e56dc7e3aab3e261696ea73980f42fa2596536020d973e3f7cb0b76b6",
+      "status": "passed",
+      "checks_passed": 35,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "reopen",
+      "report": "reopen-test-report.json",
+      "report_sha256": "e01bfab8e8b9a2c1ad377b6b8fc6da4840dc1d9610f7cf565615e3d4197a360f",
+      "status": "passed",
+      "checks_passed": 9,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "architecture",
+      "report": "architecture-test-report.json",
+      "report_sha256": "7bd1bbbf0b93bc29437cc6edcdf67810e9b90813e37101424c1a951aa3754c5a",
+      "status": "passed",
+      "checks_passed": 63,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "architecture_reopen",
+      "report": "architecture-reopen-test-report.json",
+      "report_sha256": "8390b9d347bfd1cfd716e83460c81dc78ef5e7b8a3ac9d6168519ba236f22af3",
+      "status": "passed",
+      "checks_passed": 12,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "exchange",
+      "report": "exchange-test-report.json",
+      "report_sha256": "e0b7ac39980f9888c36130e7cda98f0b5202c299ed1912582345994e3ca7a996",
+      "status": "passed",
+      "checks_passed": 47,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    },
+    {
+      "stage": "exchange_reopen",
+      "report": "exchange-reopen-test-report.json",
+      "report_sha256": "3e950b98e928a938adee5461b711459c9c78e1f854dfae7ed7b7a8e3ef864334",
+      "status": "passed",
+      "checks_passed": 10,
+      "exit_code": 0,
+      "freecad": [
+        "1",
+        "1",
+        "4"
+      ],
+      "gui_up": false,
+      "nonpassing_check_statuses": []
+    }
+  ],
+  "actual_native_checks_total": 177,
+  "native_dependency_review": {
+    "status": "passed",
+    "ifcopenshell_actual_version": "0.8.4",
+    "native_suite_skips": [],
+    "required_native_dependency_path": "Exchange and exchange_reopen import and use IfcOpenShell unconditionally; errors set failed reports and re-raise. No skipped dependency branch is counted as passed.",
+    "full_express_native_status": {
+      "requested": false,
+      "status": "not_requested",
+      "reason": "Optional full EXPRESS rules require pytest in the validation environment"
+    },
+    "qualification": "Native export explicitly records full EXPRESS as not_requested. Full EXPRESS acceptance belongs to the separate actual Bonsai review and is not claimed by this seven-stage native gate.",
+    "windows_qualification": "Local evidence is Linux native/headless. Workflow text separately identifies Windows interactive GUI acceptance as a pending gate."
+  },
+  "source_syntax": {
+    "status": "passed",
+    "counts": {
+      "python": 47,
+      "fcmacro": 5
+    },
+    "total": 52,
+    "failures": [],
+    "excluded": [
+      "out",
+      "cache directories",
+      "VCS internals"
+    ],
+    "method": "compile(source_bytes, relative_filename, exec); no execution or bytecode files written"
+  },
+  "final_package_source_syntax": {
+    "status": "passed",
+    "checked_at_utc": "2026-10-23T03:30:37.850850+00:00",
+    "scope": "Compile-only final source after the public macro event-loop correction; native/GUI implementation and workflow unchanged",
+    "python_files": 47,
+    "macros": 5,
+    "files": [
+      {
+        "path": "packaging/Install_3117_BIM_Studio.FCMacro",
+        "sha256": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632"
+      },
+      {
+        "path": "packaging/Manage_3117_BIM_Studio.FCMacro",
+        "sha256": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e"
+      },
+      {
+        "path": "packaging/Run_3117_Architecture_Test.FCMacro",
+        "sha256": "e905b47a2cbeb745b184c287d36f5584f0edf1c7d2208665b5d566280c7ece41"
+      },
+      {
+        "path": "packaging/Run_3117_Exchange_Test.FCMacro",
+        "sha256": "f3d5d92b99f098ab25ed0e4af0e4717d3cc17206d1482c5f572ac94ff1de4fd5"
+      },
+      {
+        "path": "packaging/Run_3117_Smoke_Test.FCMacro",
+        "sha256": "fc87af0a0a0dae2036a5c2bb581db61b344705081a1f0c834022c4386af41e19"
+      },
+      {
+        "path": "packaging/freecad_installer_ui.py",
+        "sha256": "61c0d305f0b85c5c5fadc58bcec6d57f1fc16a90d494dc17e21c485606d894a1"
+      },
+      {
+        "path": "packaging/install_support.py",
+        "sha256": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4"
+      },
+      {
+        "path": "packaging/tests/test_install_support.py",
+        "sha256": "90ccadcd36799f8280caba1e132cf1d1a40096a5762953a3610ba8ae473eab29"
+      },
+      {
+        "path": "scripts/build_workbench_package.py",
+        "sha256": "0147f2ed009eec78a490fcd9ffacd3aa382e238674f5b0fc591afdb86647fe6a"
+      },
+      {
+        "path": "src/bim3117/__init__.py",
+        "sha256": "e6ac810819ed7d4f195d0fe7c3b0522a4e6bb9fbee4cd594cd9b518df9cdbec2"
+      },
+      {
+        "path": "src/bim3117/__main__.py",
+        "sha256": "f7400f401db6c885838075d14ed93e4a3608176924f942393224d7b897ce8979"
+      },
+      {
+        "path": "src/bim3117/demo.py",
+        "sha256": "394c894461606feac2d97905944a4877136ba86a91c8163f0d7e16cbd490fdf1"
+      },
+      {
+        "path": "src/bim3117/ifc_export.py",
+        "sha256": "b6fa14ef71631f911ae130a5a0e5782d34aa1e81dbaed2e9aacbaf2a94b324a5"
+      },
+      {
+        "path": "src/bim3117/io.py",
+        "sha256": "c47f17677c362f79de95125c1aed07eae7901e29d84f6157e4ccd472139905f0"
+      },
+      {
+        "path": "src/bim3117/model.py",
+        "sha256": "04c8b3c3edd3420f3cbf9e64ad6f2653883b3f13cc4055f91f106826e779f947"
+      },
+      {
+        "path": "tests/bonsai_exchange_review.py",
+        "sha256": "4f2da9b81dc36efab0bd2b240ea205b6c08647bf2055f71bd830716a9000a5d2"
+      },
+      {
+        "path": "tests/freecad_architecture.py",
+        "sha256": "04172806b21a21a4a9e6fac37012fdecd34afd9d2ec914cba376dcffdeaaaaa9"
+      },
+      {
+        "path": "tests/freecad_architecture_gui.py",
+        "sha256": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d"
+      },
+      {
+        "path": "tests/freecad_architecture_gui_reopen.py",
+        "sha256": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b"
+      },
+      {
+        "path": "tests/freecad_architecture_reopen.py",
+        "sha256": "f9c865ab52b7d7610bd19dd9517cc193cfdef0bf77ebc3886b4809daa7cb4273"
+      },
+      {
+        "path": "tests/freecad_exchange.py",
+        "sha256": "f3ab6720a8d0f615b041c01e1ca9e0ac7a79b048b8fd63edfebe76387aa7e259"
+      },
+      {
+        "path": "tests/freecad_exchange_gui.py",
+        "sha256": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5"
+      },
+      {
+        "path": "tests/freecad_exchange_gui_reopen.py",
+        "sha256": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c"
+      },
+      {
+        "path": "tests/freecad_exchange_reopen.py",
+        "sha256": "92dcccf82fb28901f44005ef097b6ceaef1951b6dd8758afa6bf566f9c634c43"
+      },
+      {
+        "path": "tests/freecad_foundation.py",
+        "sha256": "105b521552c3aa3f41af729ce2736288e909ec918fc3fb5919402c6b8d821c23"
+      },
+      {
+        "path": "tests/freecad_gui_reopen.py",
+        "sha256": "a49b213f7b8547764da16f55793fd27bce1e25f3de9ca3c985e2d69f723150c4"
+      },
+      {
+        "path": "tests/freecad_gui_smoke.py",
+        "sha256": "d5283fe35a4c4d1ffe258da8857b9739f83b3e3bf00aa11bddd96d0f2bec427b"
+      },
+      {
+        "path": "tests/freecad_headless_gui.py",
+        "sha256": "5cf1b6479a5c2aa8efc785ffcd40e9838306042e2aac1b839add833561a245d5"
+      },
+      {
+        "path": "tests/freecad_headless_gui_reopen.py",
+        "sha256": "5b1be4f4a62a5c57e8d18f226964f1c9f1a5f11973fc1d5c8f4c78d787874686"
+      },
+      {
+        "path": "tests/freecad_reopen.py",
+        "sha256": "100dc1d1f899d3af42bde596916d0a00b14db7d2ad0188d4a3ac85c637b953b5"
+      },
+      {
+        "path": "tests/run_freecad_tests.py",
+        "sha256": "fb8856e10164e5cae3d110a32e4db3a429cde83e480f533b111bf0ef730e5de1"
+      },
+      {
+        "path": "tests/test_export_files.py",
+        "sha256": "45385d7ae4c583886b03bb5621df2a4ae4faa5e8ed4e45b0076c5df4c3fe75b8"
+      },
+      {
+        "path": "tests/test_ifc.py",
+        "sha256": "0088f1debcfdb6c339fcbf714edf22c7b76c350ef9d00d723596d95ac1573084"
+      },
+      {
+        "path": "tests/test_model.py",
+        "sha256": "1d9b713fcf610343e1e1869abf7708c236c1121b54dfff0300965333397c72c9"
+      },
+      {
+        "path": "tests/test_native_ifc.py",
+        "sha256": "5590443575fe68ca820bf364e3d3cc28a410947b536575e87fe03c11abc84fd5"
+      },
+      {
+        "path": "workbench/Init.py",
+        "sha256": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af"
+      },
+      {
+        "path": "workbench/InitGui.py",
+        "sha256": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896"
+      },
+      {
+        "path": "workbench/bim3117_freecad/__init__.py",
+        "sha256": "0f9766fa8a0b8a123879eecd56b74d9c142a80e2a9911f9d60f9f9c222b40129"
+      },
+      {
+        "path": "workbench/bim3117_freecad/building.py",
+        "sha256": "d77e8b806a163260135130092aaa6c9918e7aee8d1cb418a77a6dc27a19cfe61"
+      },
+      {
+        "path": "workbench/bim3117_freecad/exchange.py",
+        "sha256": "36cf2e6e45b51f64428f5e20644b2c9dfe4f1cd075385f8d9328614995110c61"
+      },
+      {
+        "path": "workbench/bim3117_freecad/export_files.py",
+        "sha256": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6"
+      },
+      {
+        "path": "workbench/bim3117_freecad/ifc_native.py",
+        "sha256": "098aed8b433215d65c5de896d996287e4e1a2be04aab5a44c9be1ea0cfaa32f0"
+      },
+      {
+        "path": "workbench/bim3117_freecad/model.py",
+        "sha256": "6ec59146d7a0bf69a54ecad39e5f5361d1b8156ac2f93ad1bef813420a7f69ce"
+      },
+      {
+        "path": "workbench/bim3117_freecad/services.py",
+        "sha256": "2224786befd58dc1b147191133ad9b6cac582c4f925f70989ea32fb221743582"
+      },
+      {
+        "path": "workbench/bim3117_freecad/snapshot.py",
+        "sha256": "ab2a3ef40eafadc19e83c9526d0e116a66a4b51d6ceb937ff6d9e11be49be023"
+      },
+      {
+        "path": "workbench/ui3117/__init__.py",
+        "sha256": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b"
+      },
+      {
+        "path": "workbench/ui3117/commands.py",
+        "sha256": "9a48e289353de42e438b6d49382f17b60f017b05c4f76d6bb939bf11b00e5ad0"
+      },
+      {
+        "path": "workbench/ui3117/dialogs.py",
+        "sha256": "44a9450869eee2fc5bf08f0bde4702ff35082e55a5f6c13cb4e083672eade0fd"
+      },
+      {
+        "path": "workbench/ui3117/exchange_dialog.py",
+        "sha256": "ea5fbee8b17afedf3b04c1a9345fa49aac5a96aa7bda09f0b57dff01321b7e16"
+      },
+      {
+        "path": "workbench/ui3117/qt.py",
+        "sha256": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7"
+      },
+      {
+        "path": "workbench/ui3117/viewproviders.py",
+        "sha256": "021c9b651bcda127dc60ccef70ed79649f209a1ec7d25fe1378e5e249d3c36ea"
+      },
+      {
+        "path": "workbench/ui3117/workbench.py",
+        "sha256": "be2a49eec1679e4795910d1065151e28a62145d9690dc3021a4e697435480448"
+      }
+    ]
+  }
+}

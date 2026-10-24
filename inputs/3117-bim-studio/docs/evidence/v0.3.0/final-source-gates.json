@@ -1,0 +1,202 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-23T04:11:50.188548+00:00",
+  "version": "0.3.0",
+  "checks_passed": 21,
+  "checks": [
+    {
+      "name": "All repository Python and macros parse",
+      "status": "passed",
+      "files": 61
+    },
+    {
+      "name": "Workbench XML version 0.3.0",
+      "status": "passed",
+      "version": "0.3.0"
+    },
+    {
+      "name": "Package version and additive schema",
+      "status": "passed",
+      "values": {
+        "__version__": "0.3.0",
+        "SCHEMA_VERSION": 1
+      }
+    },
+    {
+      "name": "All three embedded CI Python blocks compile",
+      "status": "passed",
+      "blocks": 3
+    },
+    {
+      "name": "Actual nine-stage CI evidence gate passes locally",
+      "status": "passed",
+      "output": [
+        "install: 1 checks passed",
+        "foundation: 35 checks passed",
+        "reopen: 9 checks passed",
+        "architecture: 63 checks passed",
+        "architecture_reopen: 12 checks passed",
+        "exchange: 47 checks passed",
+        "exchange_reopen: 10 checks passed",
+        "building: 112 checks passed",
+        "building_reopen: 19 checks passed",
+        "Headless host integration passed. Windows interactive GUI acceptance remains a separate gate."
+      ],
+      "remote_execution": false
+    },
+    {
+      "name": "Repository Markdown relative file links resolve",
+      "status": "passed",
+      "links": 178,
+      "broken": []
+    },
+    {
+      "name": "Both tested installed profiles match all frozen production payloads",
+      "status": "passed",
+      "files": 39,
+      "mismatches": []
+    },
+    {
+      "name": "GUI report hash building-gui-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash building-gui-reopen-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash building-presentation-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash building-presentation-reopen-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash architecture-gui-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash architecture-gui-reopen-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash exchange-gui-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "GUI report hash exchange-gui-reopen-report.json",
+      "status": "passed"
+    },
+    {
+      "name": "Canonical snapshot revision",
+      "status": "passed"
+    },
+    {
+      "name": "Canonical six-category counts",
+      "status": "passed",
+      "counts": {
+        "wall_rows": 8,
+        "door_rows": 2,
+        "slab_rows": 3,
+        "column_rows": 8,
+        "beam_rows": 8,
+        "window_rows": 4
+      }
+    },
+    {
+      "name": "Canonical payload metadata Building_Authoring_Workbench_csv_metadata.json",
+      "status": "passed",
+      "payloads": 6
+    },
+    {
+      "name": "Canonical payload metadata Building_Authoring_Workbench_ifc_metadata.json",
+      "status": "passed",
+      "payloads": 1
+    },
+    {
+      "name": "Canonical delivered artifact hashes",
+      "status": "passed",
+      "sha256": {
+        "Building_Authoring_Workbench.FCStd": "9a0e2efc3613747b2806ead5ecd61b6b74d757a229ca9ebc5e649afe28e68995",
+        "Building_Authoring_Workbench.ifc": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609",
+        "Building_Authoring_Workbench.png": "6f03fa9dc268492aa0efd80eae5f667b87792c267c4e5485e2e96f0dfea70d07",
+        "Bonsai_Building_Authoring.png": "8b66f529df6ecede9f228acbc60d0777091bfc46790f5d0c14e5d6ab3364260b",
+        "building-snapshot.json": "ee8435eb0bf2ba197fe8c67e97187656dd8929ef56069949532794a666a729b0"
+      }
+    },
+    {
+      "name": "Previous v0.2.1 canonical artifacts and archives are byte-identical",
+      "status": "passed",
+      "files": 5
+    }
+  ],
+  "source_sha256": {
+    "packaging/Install_3117_BIM_Studio.FCMacro": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632",
+    "packaging/Manage_3117_BIM_Studio.FCMacro": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e",
+    "packaging/Run_3117_Architecture_Test.FCMacro": "3847f7ee9f09ab0d0cb168f36606744f67a7a0f199dba0fcb65e346ebbe15eeb",
+    "packaging/Run_3117_Building_Test.FCMacro": "a3c27c8a6183ab2e1727a9818d96184cafe44152191997a6f5387630b1a9a6d8",
+    "packaging/Run_3117_Exchange_Test.FCMacro": "fd04df5a2224554e22be25b41b95f2d81d4154ee32314d5ee6052cb04b5996dc",
+    "packaging/Run_3117_Smoke_Test.FCMacro": "fc87af0a0a0dae2036a5c2bb581db61b344705081a1f0c834022c4386af41e19",
+    "packaging/freecad_installer_ui.py": "61c0d305f0b85c5c5fadc58bcec6d57f1fc16a90d494dc17e21c485606d894a1",
+    "packaging/install_support.py": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4",
+    "packaging/tests/test_install_support.py": "90ccadcd36799f8280caba1e132cf1d1a40096a5762953a3610ba8ae473eab29",
+    "scripts/build_workbench_package.py": "53349bf6097453fc23d5924ece1ac2eb0b1e7c3fa442000e67f5a88b942b2c4c",
+    "src/bim3117/__init__.py": "e6ac810819ed7d4f195d0fe7c3b0522a4e6bb9fbee4cd594cd9b518df9cdbec2",
+    "src/bim3117/__main__.py": "f7400f401db6c885838075d14ed93e4a3608176924f942393224d7b897ce8979",
+    "src/bim3117/demo.py": "394c894461606feac2d97905944a4877136ba86a91c8163f0d7e16cbd490fdf1",
+    "src/bim3117/ifc_export.py": "b6fa14ef71631f911ae130a5a0e5782d34aa1e81dbaed2e9aacbaf2a94b324a5",
+    "src/bim3117/io.py": "c47f17677c362f79de95125c1aed07eae7901e29d84f6157e4ccd472139905f0",
+    "src/bim3117/model.py": "04c8b3c3edd3420f3cbf9e64ad6f2653883b3f13cc4055f91f106826e779f947",
+    "tests/bonsai_building_review.py": "a27b018897429128503a48c33c0e850b0a0186cac1e843b9731a38ce286ecad6",
+    "tests/bonsai_exchange_review.py": "4f2da9b81dc36efab0bd2b240ea205b6c08647bf2055f71bd830716a9000a5d2",
+    "tests/freecad_architecture.py": "04172806b21a21a4a9e6fac37012fdecd34afd9d2ec914cba376dcffdeaaaaa9",
+    "tests/freecad_architecture_gui.py": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d",
+    "tests/freecad_architecture_gui_reopen.py": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b",
+    "tests/freecad_architecture_reopen.py": "f9c865ab52b7d7610bd19dd9517cc193cfdef0bf77ebc3886b4809daa7cb4273",
+    "tests/freecad_building.py": "55987e60ea0f7c6f71e6fe9878c2d33d44fbace772ef6aa29859204eff9233a7",
+    "tests/freecad_building_gui.py": "00fdd5a9b87216f96ac52cc78c030bad671979a1ca5d592b49bd7ed7022f8909",
+    "tests/freecad_building_gui_reopen.py": "e2fadb975ca38e1ab417513e26ce5c2ac9668d65fafe13d75cf895cc5ba22aae",
+    "tests/freecad_building_presentation.py": "e6cbe0338883da041e9064f0c4c5b24a876ef60be6b701ba4a3a9197abb134f2",
+    "tests/freecad_building_reopen.py": "8cac94c69f6cf9da584392d92f88f17f98ca4881b90150bde99627089164ecef",
+    "tests/freecad_exchange.py": "f3ab6720a8d0f615b041c01e1ca9e0ac7a79b048b8fd63edfebe76387aa7e259",
+    "tests/freecad_exchange_gui.py": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5",
+    "tests/freecad_exchange_gui_reopen.py": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c",
+    "tests/freecad_exchange_reopen.py": "92dcccf82fb28901f44005ef097b6ceaef1951b6dd8758afa6bf566f9c634c43",
+    "tests/freecad_foundation.py": "105b521552c3aa3f41af729ce2736288e909ec918fc3fb5919402c6b8d821c23",
+    "tests/freecad_gui_reopen.py": "a49b213f7b8547764da16f55793fd27bce1e25f3de9ca3c985e2d69f723150c4",
+    "tests/freecad_gui_smoke.py": "d5283fe35a4c4d1ffe258da8857b9739f83b3e3bf00aa11bddd96d0f2bec427b",
+    "tests/freecad_headless_gui.py": "5cf1b6479a5c2aa8efc785ffcd40e9838306042e2aac1b839add833561a245d5",
+    "tests/freecad_headless_gui_reopen.py": "5b1be4f4a62a5c57e8d18f226964f1c9f1a5f11973fc1d5c8f4c78d787874686",
+    "tests/freecad_reopen.py": "100dc1d1f899d3af42bde596916d0a00b14db7d2ad0188d4a3ac85c637b953b5",
+    "tests/run_freecad_tests.py": "36fe6d2be523e040186ef20644b8e5daca5ec945c07c1f90cc413af881e82db5",
+    "tests/test_export_files.py": "45385d7ae4c583886b03bb5621df2a4ae4faa5e8ed4e45b0076c5df4c3fe75b8",
+    "tests/test_ifc.py": "0088f1debcfdb6c339fcbf714edf22c7b76c350ef9d00d723596d95ac1573084",
+    "tests/test_model.py": "1d9b713fcf610343e1e1869abf7708c236c1121b54dfff0300965333397c72c9",
+    "tests/test_native_ifc.py": "e35c209327f24b9266019ac3aab85a5e7cf048612ff949fd6e47cb13429afc9e",
+    "workbench/Init.py": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+    "workbench/InitGui.py": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+    "workbench/bim3117_freecad/__init__.py": "ca2894c7fd4e59b78d0ba478ba6b619f0f49177fe9ee415c4783ebd98a58f968",
+    "workbench/bim3117_freecad/building.py": "ee643014815dc1f0d782ada92d07e08f2eb565fbbf7eafecc8ebc043c11f7ac5",
+    "workbench/bim3117_freecad/elements.py": "ae57ec1434a7d86258f8fcaf947dd7c04eec34d6c2566b79cc555885f2e9e9d2",
+    "workbench/bim3117_freecad/exchange.py": "778516b426aadc9748865da1de6fc832ed515a6febc6ee3cb74628f1fe31c334",
+    "workbench/bim3117_freecad/export_files.py": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+    "workbench/bim3117_freecad/ifc_native.py": "18ea51fc422f876dff488e05bbc4e90a46adee309c71796794d0fdfb58265f75",
+    "workbench/bim3117_freecad/model.py": "b9fc9d68c793b4cd29d9937b07380123e4e388ee067cab6e417c90f9d83d906f",
+    "workbench/bim3117_freecad/services.py": "f666a8f2911d17a4eb0689897d998996b82d87cf9b7d7d45785cb7c7e91788d8",
+    "workbench/bim3117_freecad/snapshot.py": "9906040e571fdb273921c4a90033733d4cf6fd40367afcbd9a7ce2d75c1bdb2d",
+    "workbench/ui3117/__init__.py": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+    "workbench/ui3117/building_dialogs.py": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461",
+    "workbench/ui3117/commands.py": "2983bfa691d7e50c944c382bac86b57a26608dd4ca68101495fce357526d7e0d",
+    "workbench/ui3117/dialogs.py": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2",
+    "workbench/ui3117/exchange_dialog.py": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c",
+    "workbench/ui3117/qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+    "workbench/ui3117/viewproviders.py": "3c7bf4cbaa656f8625d838d09822959622fcfbcfe3df5242ec91ff031cb1646a",
+    "workbench/ui3117/workbench.py": "7a66cc82b84fe2e63ed1869742b0a8828f04a8014f13a009ba7f38665f2cc9c2"
+  },
+  "workflow_sha256": "4d07c2fa99685db9ba361a268f545419a7022ec711bb8f024e38bdbc9cc1fd09",
+  "gate_script_sha256": "829d3199f9fc5dde722ded5a2e4bd8f19dd24767935162133374df3fb2ae67a2",
+  "scope": "Local syntax, manifests, links, canonical bytes, and actual nine-stage CI report gate. Exact ZIP runtime acceptance is recorded separately after packaging.",
+  "windows_runtime_executed": false,
+  "github_remote_workflow_executed": false
+}

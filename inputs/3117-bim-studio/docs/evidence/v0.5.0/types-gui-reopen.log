@@ -1,0 +1,10 @@
+3117 Edit Schedule: โมเดลหรือตารางเปลี่ยนระหว่างแก้ไข / Source changed; reopen the definition editor
+3117: โครงการยังมีรายการอยู่ภายใน: 3117 Schedules
+
+กรุณาลบรายการภายในก่อนลบโครงการ และเปลี่ยนการอ้างอิง Level, Type และ Host ที่ยังใช้งานอยู่ก่อน
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+3117 project created: Schedule-only deletion guard
+GUI_RESULT passed 27

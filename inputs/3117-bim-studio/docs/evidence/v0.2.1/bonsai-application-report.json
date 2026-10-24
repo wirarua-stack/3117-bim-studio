@@ -1,0 +1,276 @@
+{
+  "status": "passed",
+  "blender": "4.5.14 LTS",
+  "blender_build_hash": "62c1db4208e8",
+  "bonsai": "0.9.0-post1-py311",
+  "ifcopenshell": "0.9.0.post1",
+  "python": "3.11.15 (main, Apr 25 2025, 12:39:20) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "background": false,
+  "source_ifc": "/tmp/bim3117-exchange-qa/native-final/Quantity_Exchange_Workbench.ifc",
+  "source_sha256": "a62ab703c0170ba9134d0c81ae0ba7932ab04d6ff7da6e44fc6fb01a005aac25",
+  "content_revision": "31b79c638cc70358bb6d8fa92005a1922ca7fd248332650582ce19d636da6cf0",
+  "checks": [
+    {
+      "name": "source comes from passing installed-native exchange tests",
+      "status": "passed"
+    },
+    {
+      "name": "public Bonsai Load IFC Project operator finishes",
+      "status": "passed"
+    },
+    {
+      "name": "active Bonsai file is IFC4 with expected product and storey counts",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai scene uses metre scale",
+      "status": "passed"
+    },
+    {
+      "name": "no duplicate IfcRoot GlobalIds",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal basement: Bonsai maps IFC wall to a native Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal basement: UUID type base level and content revision retained",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal basement: independent Blender triangle volume matches native fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal basement: world mesh bounds match authored axis and signed level offsets",
+      "status": "passed"
+    },
+    {
+      "name": "Diagonal basement: imported quantity property matches actual Blender mesh volume",
+      "status": "passed"
+    },
+    {
+      "name": "W201: Bonsai maps IFC wall to a native Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "W201: UUID type base level and content revision retained",
+      "status": "passed"
+    },
+    {
+      "name": "W201: independent Blender triangle volume matches native fixture",
+      "status": "passed"
+    },
+    {
+      "name": "W201: world mesh bounds match authored axis and signed level offsets",
+      "status": "passed"
+    },
+    {
+      "name": "W201: imported quantity property matches actual Blender mesh volume",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed wall: Bonsai maps IFC wall to a native Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed wall: UUID type base level and content revision retained",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed wall: independent Blender triangle volume matches native fixture",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed wall: world mesh bounds match authored axis and signed level offsets",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed wall: imported quantity property matches actual Blender mesh volume",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: Bonsai maps IFC door frame to Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: void fill host and source identity retained",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: frame mesh volume and world placement match native frame",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: ray crosses actual wall opening without hitting wall mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: adjacent jamb and head remain wall material",
+      "status": "passed"
+    },
+    {
+      "name": "Basement door: generic frame has open centre and solid jamb",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: Bonsai maps IFC door frame to Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: void fill host and source identity retained",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: frame mesh volume and world placement match native frame",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: ray crosses actual wall opening without hitting wall mesh",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: adjacent jamb and head remain wall material",
+      "status": "passed"
+    },
+    {
+      "name": "Reversed door: generic frame has open centre and solid jamb",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: Bonsai maps IFC door frame to Blender mesh",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: void fill host and source identity retained",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: frame mesh volume and world placement match native frame",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: ray crosses actual wall opening without hitting wall mesh",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: adjacent jamb and head remain wall material",
+      "status": "passed"
+    },
+    {
+      "name": "ประตู D01: generic frame has open centre and solid jamb",
+      "status": "passed"
+    },
+    {
+      "name": "Bonsai mesh objects contain exactly the six declared authored products",
+      "status": "passed"
+    },
+    {
+      "name": "independent Bonsai runtime full schema and EXPRESS validation has no findings",
+      "status": "passed"
+    },
+    {
+      "name": "opening IFC in Bonsai does not rewrite the source bytes",
+      "status": "passed"
+    },
+    {
+      "name": "actual Bonsai GUI framebuffer captured with visible pixels",
+      "status": "passed"
+    }
+  ],
+  "wall_observations": [
+    {
+      "source_uuid": "51a7eca2-9c6d-44da-ba50-9d6b8ddd1399",
+      "ifc_guid": "1Hf_oYd6r4shfGdMkDtHEP",
+      "name": "Diagonal basement",
+      "blender_object": "IfcWall/Diagonal basement",
+      "mesh_volume_m3": 2.3799996745487713,
+      "expected_net_volume_m3": 2.38,
+      "vertices": 16,
+      "polygons": 32
+    },
+    {
+      "source_uuid": "7410926a-82ea-41e5-bea3-75919c69bfb7",
+      "ifc_guid": "1q499gWkf1vRwZTP6SQR_t",
+      "name": "W201",
+      "blender_object": "IfcWall/W201",
+      "mesh_volume_m3": 3.2220001252591595,
+      "expected_net_volume_m3": 3.222,
+      "vertices": 16,
+      "polygons": 28
+    },
+    {
+      "source_uuid": "8966d9c6-657f-4440-a326-bc937a373f9a",
+      "ifc_guid": "29Pjd6PNz4GACcl9DwDp_Q",
+      "name": "Reversed wall",
+      "blender_object": "IfcWall/Reversed wall",
+      "mesh_volume_m3": 2.0639995403289615,
+      "expected_net_volume_m3": 2.064,
+      "vertices": 16,
+      "polygons": 28
+    }
+  ],
+  "door_observations": [
+    {
+      "source_uuid": "4b1e8b7b-5e0a-494e-b085-b10497472b16",
+      "ifc_guid": "1B7ejxNWf9Jh25iGINHoiM",
+      "name": "Basement door",
+      "blender_object": "IfcDoor/Basement door",
+      "host_uuid": "51a7eca2-9c6d-44da-ba50-9d6b8ddd1399",
+      "mesh_frame_volume_m3": 0.047000048980112535
+    },
+    {
+      "source_uuid": "506cfd92-dd12-4cf7-a52f-4f3ba470dc03",
+      "ifc_guid": "1GRFsItH9CzwKlJpkaSDm3",
+      "name": "Reversed door",
+      "blender_object": "IfcDoor/Reversed door",
+      "host_uuid": "8966d9c6-657f-4440-a326-bc937a373f9a",
+      "mesh_frame_volume_m3": 0.049000161409408306
+    },
+    {
+      "source_uuid": "c33f0a63-aa43-4dcf-8094-15cf41523f46",
+      "ifc_guid": "33FmfZgaDDpu2K5Sz1KZz6",
+      "name": "ประตู D01",
+      "blender_object": "IfcDoor/ประตู D01",
+      "host_uuid": "7410926a-82ea-41e5-bea3-75919c69bfb7",
+      "mesh_frame_volume_m3": 0.04999985292554138
+    }
+  ],
+  "scope": "Actual Bonsai import, Blender meshes/rays, IFC metadata and EXPRESS schema. Bonsai uses IfcOpenShell; not evidence of another IFC geometry kernel.",
+  "volume_diagnostics": [
+    {
+      "name": "Diagonal basement",
+      "mesh_volume_m3": 2.3799996745487713,
+      "expected": 2.38,
+      "absolute_error": 3.254512286332556e-07
+    },
+    {
+      "name": "W201",
+      "mesh_volume_m3": 3.2220001252591595,
+      "expected": 3.222,
+      "absolute_error": 1.252591594891328e-07
+    },
+    {
+      "name": "Reversed wall",
+      "mesh_volume_m3": 2.0639995403289615,
+      "expected": 2.064,
+      "absolute_error": 4.5967103856625613e-07
+    }
+  ],
+  "express_validation": {
+    "statements": [],
+    "count": 0
+  },
+  "screenshot": "/tmp/bim3117-exchange-qa/bonsai-evidence/Bonsai_Native_IFC_Review.png",
+  "checks_passed": 42,
+  "gui_capture": {
+    "method": "X11 root framebuffer via Pillow ImageGrab",
+    "image_size": [
+      1600,
+      1100
+    ],
+    "nonblack": true
+  }
+}

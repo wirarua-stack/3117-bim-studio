@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "tests_run": 21,
+  "skipped": [
+    {
+      "test": "test_building_full_express_validation (test_native_ifc.NativeIfcTests.test_building_full_express_validation)",
+      "reason": "Full EXPRESS requires optional QA dependency pytest"
+    },
+    {
+      "test": "test_full_express_validation (test_native_ifc.NativeIfcTests.test_full_express_validation)",
+      "reason": "Full EXPRESS requires optional QA dependency pytest"
+    },
+    {
+      "test": "test_native_types_materials_full_express_validation (test_native_ifc.NativeIfcTests.test_native_types_materials_full_express_validation)",
+      "reason": "IfcOpenShell EXPRESS executor requires pytest"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:09:32) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "ifcopenshell": "0.8.4"
+}

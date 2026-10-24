@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-10-23T09:52:46.113092+00:00",
+  "kind": "native_windows_runner_readiness_artifact_provenance",
+  "repository": "wirarua-stack/3117-bim-studio",
+  "branch": "acceptance/windows-history-fix",
+  "run_id": "39934642607",
+  "run_attempt": "1",
+  "workflow_conclusion": "success",
+  "commit": "1139434ce9bc2ca4bb2813bea1623e5c249c316c",
+  "job_id": "120351087462",
+  "run_url": "https://github.com/wirarua-stack/3117-bim-studio/actions/runs/39934642607",
+  "job_url": "https://github.com/wirarua-stack/3117-bim-studio/actions/runs/39934642607/job/120351087462",
+  "artifact": {
+    "id": "12492344904",
+    "name": "3117-windows-runner-readiness-39934642607-1",
+    "url": "https://github.com/wirarua-stack/3117-bim-studio/actions/runs/39934642607/artifacts/12492344904",
+    "archive_sha256": "f769f9db79004f2ad3eb160830fb73711b73a0e294cf2ee40df1967a025d09d8",
+    "archive_bytes": 979,
+    "created_at_utc": "2026-10-23T09:49:36Z",
+    "expires_at_utc": "2026-10-30T09:49:36Z",
+    "archive_included_in_repository": false
+  },
+  "raw_report": {
+    "path": "evidence/ci/runner-readiness-39934642607.json",
+    "sha256": "a5d2f0f2f21eb799235fafc2c9842fcb703eb91bc31be781b773242253ada99e",
+    "bytes": 1924,
+    "preserved_byte_for_byte": true,
+    "byte_identity_source": "exact unmodified ZIP member bytes",
+    "archive_member": "3117-runner-preflight-39934642607-1.json",
+    "semantic_content_matches_download_helper_json": true
+  },
+  "scope": "Windows runner storage/write readiness and informational WinAPI desktop observations; not Qt or FreeCAD acceptance",
+  "windows_build_executed": false,
+  "windows_acceptance_executed": false,
+  "release_ready": false,
+  "historical_preparation_snapshot": {
+    "path": "PREPARATION_STATUS.json",
+    "created_at_utc": "2026-10-23T09:25:33.483364+00:00",
+    "sha256": "652a20c403ebd9cfdac3458583f8d12832b0a201d92df34445fac5aa4eb91249",
+    "unchanged": true
+  }
+}

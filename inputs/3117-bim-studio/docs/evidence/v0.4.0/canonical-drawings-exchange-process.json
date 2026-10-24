@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-23T05:02:33.124667+00:00",
+  "command": [
+    "/tmp/bim3117-freecad/squashfs-root/AppRun",
+    "freecadcmd",
+    "/tmp/bim3117-release-v040/invoke_drawings_exchange_probe.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 7.521,
+  "checks_passed": 20,
+  "report": "/tmp/bim3117-release-v040/drawings-exchange-evidence/drawings-exchange-test-report.json",
+  "probe_sha256": "ec50cc4bf509d9eb5f077fce552bd9c29234687151dd7e989a61067c76b4d718",
+  "profile": "/tmp/bim3117-v040-final-native/profile",
+  "windows_runtime_executed": false,
+  "scope": "Supplemental fresh-process CSV/IFC export regression; not added to the 13-stage CI"
+}

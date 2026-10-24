@@ -1,0 +1,14 @@
+FreeCAD 1.1.4, Libs: 1.1.4R20260928 (Git shallow)
+(C) 2001-2026 FreeCAD contributors
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+
+Migrating Start Workbench to Start command... done.
+NATIVE_PROBE baseline target
+NATIVE_PROBE created disposable feature
+NATIVE_PROBE deleted disposable feature
+NATIVE_PROBE Undo deletion
+NATIVE_PROBE Undo creation
+NATIVE_PROBE Redo creation
+NATIVE_PROBE Redo deletion
+NATIVE_PROBE all passed
+passed

@@ -1,0 +1,129 @@
+{
+  "review_date_utc": "2026-10-23",
+  "host_source_commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+  "upstream_main_commit": "dc1ab881ca0bbea9735e92938a660acee339679e",
+  "upstream_main_commit_time": "2026-10-23T04:26:36Z",
+  "retrieval": "Read-only official raw.githubusercontent.com sources and api.github.com/repos/FreeCAD/FreeCAD/commits/main",
+  "sources": [
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/Document.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/Document.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-Document.cpp",
+      "sha256": "8c2efdcd569b4c1a4fe378bb756a6d8b9bc4b0faf0a764e2efff0933350a47b6",
+      "bytes": 111133
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/Document.h",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/Document.h",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-Document.h",
+      "sha256": "a5826b75fec998de5d185b5718d395e773a22724983518cd2c3a8d82fff52bf1",
+      "bytes": 16217
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/DocumentPyImp.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/DocumentPyImp.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-DocumentPyImp.cpp",
+      "sha256": "7c02b6aa0aa3fa38779538a8bbea5e1f5b623bb8571e6f722540ffb88e043c98",
+      "bytes": 18410
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/ApplicationPy.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/ApplicationPy.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-ApplicationPy.cpp",
+      "sha256": "9122e458dafc08a7f127a649c4e48d83775faf29ecc6e6a2e5fca7f669ce615a",
+      "bytes": 61173
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/CommandDoc.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/CommandDoc.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-CommandDoc.cpp",
+      "sha256": "6a187905acb432e847f62c086b467c2bec85488abbe3060a18d1531b6a665255",
+      "bytes": 76570
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/Gui/View3DInventor.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/Gui/View3DInventor.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-Gui-View3DInventor.cpp",
+      "sha256": "10ee334a68a355aed6f190147e9a3a78816aa1eebfbbfc7b7a079bf0ca89b085",
+      "bytes": 30901
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/App/Document.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/App/Document.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-App-Document.cpp",
+      "sha256": "80e9370fe1b53f627327db1537d91913a03e6b5774d3af1e15e642883ee96688",
+      "bytes": 136261
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/App/DocumentPyImp.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/App/DocumentPyImp.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-App-DocumentPyImp.cpp",
+      "sha256": "7207b86538147b0dd16e1b7506a6f336a1ecd4d4e9886cf139a2062f2fc297cc",
+      "bytes": 36179
+    },
+    {
+      "commit": "4fd3bf320d9566a27e60069fc8387448aaa3a094",
+      "path": "src/App/Transactions.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/4fd3bf320d9566a27e60069fc8387448aaa3a094/src/App/Transactions.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/114-src-App-Transactions.cpp",
+      "sha256": "48cf67955299fb00ba9615e0c049dfee428c885d2c9e47d2d5374c0782d7d29d",
+      "bytes": 19797
+    },
+    {
+      "commit": "dc1ab881ca0bbea9735e92938a660acee339679e",
+      "path": "src/Gui/Document.cpp",
+      "url": "https://raw.githubusercontent.com/FreeCAD/FreeCAD/dc1ab881ca0bbea9735e92938a660acee339679e/src/Gui/Document.cpp",
+      "local_file": "/tmp/bim3117-v050-exchange/freecad-lifecycle-source/pinned-main-src-Gui-Document.cpp",
+      "sha256": "f7474963f2ca4d27653c6fe387ccdb49e8727f15bfd1f33581a93dd39563051b",
+      "bytes": 111692
+    }
+  ],
+  "method_comparison": {
+    "slotTransactionRemove": {
+      "identical": true,
+      "host_line": 1176,
+      "upstream_line": 1201
+    },
+    "slotUndoDocument": {
+      "identical": true,
+      "host_line": 1208,
+      "upstream_line": 1233
+    },
+    "slotRedoDocument": {
+      "identical": true,
+      "host_line": 1218,
+      "upstream_line": 1243
+    },
+    "undo": {
+      "identical": true,
+      "host_line": 2955,
+      "upstream_line": 3015
+    },
+    "redo": {
+      "identical": true,
+      "host_line": 2970,
+      "upstream_line": 3030
+    },
+    "onUpdate": {
+      "identical": false,
+      "host_line": 2451,
+      "upstream_line": 2502
+    },
+    "handleChildren3D": {
+      "identical": false,
+      "host_line": 2995,
+      "upstream_line": 3055
+    }
+  },
+  "main_master_bytes_equal_pinned": true,
+  "runtime_or_patch_testing_performed_by_this_review": false,
+  "production_changes": false
+}

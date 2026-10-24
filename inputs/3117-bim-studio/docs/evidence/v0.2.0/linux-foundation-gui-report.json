@@ -1,0 +1,138 @@
+{
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "status": "passed",
+  "checks": [
+    {
+      "name": "installed workbench discovered",
+      "status": "passed"
+    },
+    {
+      "name": "workbench activation does not create documents",
+      "status": "passed"
+    },
+    {
+      "name": "all five commands registered",
+      "status": "passed"
+    },
+    {
+      "name": "create project command creates new native document",
+      "status": "passed"
+    },
+    {
+      "name": "create project dialog commits one undo item and two levels",
+      "status": "passed"
+    },
+    {
+      "name": "invalid form stays open with inline explanation",
+      "status": "passed"
+    },
+    {
+      "name": "cancelled invalid form does not change model or history",
+      "status": "passed"
+    },
+    {
+      "name": "add level dialog commits one undo item",
+      "status": "passed"
+    },
+    {
+      "name": "grid dialogs create X and Y geometry with reference levels",
+      "status": "passed"
+    },
+    {
+      "name": "grid labels have native GUI view providers",
+      "status": "passed"
+    },
+    {
+      "name": "edit selected form commits multiple fields as one native transaction",
+      "status": "passed"
+    },
+    {
+      "name": "linked grid follows level edit",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo command restores form edit and dependent geometry",
+      "status": "passed"
+    },
+    {
+      "name": "native Redo command restores geometry without changing UUID",
+      "status": "passed"
+    },
+    {
+      "name": "label scene nodes track level after native Undo and Redo",
+      "status": "passed"
+    },
+    {
+      "name": "grid edit preserves its preselected reference level",
+      "status": "passed"
+    },
+    {
+      "name": "view label text follows native property",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves referenced level",
+      "status": "passed"
+    },
+    {
+      "name": "native Delete veto preserves nonempty project",
+      "status": "passed"
+    },
+    {
+      "name": "GUI save and reopen preserves all element identities",
+      "status": "passed"
+    },
+    {
+      "name": "GUI reopen restores view provider and dependency",
+      "status": "passed"
+    },
+    {
+      "name": "GUI reopen reconstructs label text and position",
+      "status": "passed"
+    },
+    {
+      "name": "native document remains valid after GUI lifecycle",
+      "status": "passed"
+    },
+    {
+      "name": "actual GUI screenshot saved",
+      "status": "passed"
+    }
+  ],
+  "dialog_errors": [],
+  "checks_passed": 24,
+  "sample": "/tmp/bim3117-freecad/v020-gui-evidence/ตัวอย่าง_3117/Foundation_Workbench.FCStd",
+  "screenshot": "/tmp/bim3117-freecad/v020-gui-evidence/Foundation_Workbench.png",
+  "module_source": "/tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+  "elements": 11,
+  "identifiers": {
+    "BIM3117_Project": "4d25808a-5291-4f91-bed6-dbab64ea899d",
+    "BIM3117_Level": "f15e0b86-ec75-4777-8c3f-1549fac5f1a9",
+    "BIM3117_Level001": "10638a7d-9d79-4742-87ab-20b6fb15f5e1",
+    "BIM3117_Level002": "c4b1f678-d1c2-491d-91bc-0a0dd8b5c4dc",
+    "BIM3117_Grid": "2d205c03-61e8-457e-a430-8d7b20775cea",
+    "BIM3117_Grid001": "a2eabc94-3483-4999-9669-e401fad88b20",
+    "BIM3117_Grid002": "7f1b184d-7373-4e2d-b8ea-92f1b7673100",
+    "BIM3117_Grid003": "3aa600c4-0a0c-46ab-a49f-f49f61a2e967",
+    "BIM3117_Grid004": "5930e638-fcd0-4789-aa9b-1d7d691faed7",
+    "BIM3117_Grid005": "0bcf0b71-f976-4b20-bc33-bf8f043c1b93",
+    "BIM3117_Grid006": "e835f931-e9d4-40bf-bf22-1c63a73cba9f"
+  },
+  "deletion_warnings": [
+    "ระดับนี้ยังถูกอ้างอิงโดย: Grid L01-A\n\nกรุณาใช้ Edit Selected เพื่อเปลี่ยนระดับอ้างอิงของกริดหรือผนัง ก่อนลบระดับ",
+    "โครงการยังมีรายการอยู่ภายใน: L00, L01 First Floor, L02 Roof, Grid A, Grid B, Grid C, Grid 1, Grid 2 … (+2)\n\nกรุณาลบรายการภายในก่อนลบโครงการ และเปลี่ยนการอ้างอิง Level, Type และ Host ที่ยังใช้งานอยู่ก่อน"
+  ]
+}

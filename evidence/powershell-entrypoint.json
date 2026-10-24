@@ -1,0 +1,7 @@
+{
+  "scope": "PowerShell entrypoint preflight only, executed on Linux",
+  "windows_execution": false,
+  "exit_code": 0,
+  "output": "Frozen input verification passed. Windows build/tests were not executed.\n",
+  "entrypoint_sha256": "bf22350391fb067a326ddc453c88e49d7d05e11fcfe105a14bde9f1c93d49f62"
+}

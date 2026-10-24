@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "checks_passed": 266,
+  "geometry_checks": 265,
+  "visual_checks": 1,
+  "source_ifc_sha256": "775b5a63592d05c63c14fb63d258d6a30ae45558d6d6f244cf75f387279ac609",
+  "content_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+  "files": [
+    {
+      "path": "/workspace/scratch/9457befac3c8/3117-bim-studio/tests/bonsai_building_review.py",
+      "bytes": 21770,
+      "sha256": "a27b018897429128503a48c33c0e850b0a0186cac1e843b9731a38ce286ecad6"
+    },
+    {
+      "path": "/tmp/bim3117-building-qa/run_bonsai_building.py",
+      "bytes": 4800,
+      "sha256": "0266338c07e8fcd845402a89d85d4f37885ab32cccfc122eef18ea8a2b453539"
+    },
+    {
+      "path": "/tmp/bim3117-building-qa/evidence-gui/bonsai-building-report.json",
+      "bytes": 61798,
+      "sha256": "1dac664ca7393037587342a159d3c322d3beba9432a487af73a7f43112d27617"
+    },
+    {
+      "path": "/tmp/bim3117-building-qa/evidence-gui/Bonsai_Building_Authoring.png",
+      "bytes": 322788,
+      "sha256": "8b66f529df6ecede9f228acbc60d0777091bfc46790f5d0c14e5d6ab3364260b"
+    },
+    {
+      "path": "/tmp/bim3117-building-qa/evidence-gui/process-report.json",
+      "bytes": 1373,
+      "sha256": "9e0b84aee081cc183bdb57514590cb05f267afdb1c85224e3cf2a9d6e656cffa"
+    }
+  ]
+}

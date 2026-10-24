@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-23T09:07:01.786601+00:00",
+  "github_connected": true,
+  "account": "wirarua-stack",
+  "accessible_repositories": [
+    "wirarua-stack/3117-LiDAR-SCAN"
+  ],
+  "bim_target_repository": null,
+  "direct_windows_executor": null,
+  "github_repository_create_tool_available": false,
+  "external_writes_performed": false,
+  "status": "repository_target_not_available",
+  "note": "GitHub is connected. The available repository belongs to a different project. This observation is not a Windows build result."
+}

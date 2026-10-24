@@ -1,0 +1,48 @@
+# Known FreeCAD 1.1.4 native crash reproduction. Run only in a fresh disposable GUI process.
+# The tested sequence may terminate FreeCAD and lose other unsaved documents in that process.
+# No addon, existing file, custom Proxy, Undo clearing, or host binary patch is needed.
+import json, traceback
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+from PySide import QtCore, QtWidgets
+
+def run(output_dir):
+    output=Path(output_dir);output.mkdir(exist_ok=True)
+    report={'status':'running','steps':[],'addon_imported':False}
+    def step(s):
+        report['steps'].append(s)
+        print('NATIVE_PROBE',s,flush=True)
+        (output/'report.json').write_text(json.dumps(report,indent=2))
+    def drain():
+        QtWidgets.QApplication.processEvents()
+        Gui.updateGui()
+    doc=App.newDocument('NativeUndoBranch')
+    doc.UndoMode=1
+    target=doc.addObject('App::FeaturePython','Target')
+    target.Label='Original'
+    doc.recompute();drain();step('baseline target')
+    doc.openTransaction('Create disposable feature')
+    material=doc.addObject('App::FeaturePython','Disposable')
+    doc.recompute();doc.commitTransaction();drain();step('created disposable feature')
+    doc.openTransaction('Delete disposable feature')
+    doc.removeObject(material.Name)
+    doc.recompute();doc.commitTransaction();drain();step('deleted disposable feature')
+    Gui.runCommand('Std_Undo');doc.recompute();drain();step('Undo deletion')
+    Gui.runCommand('Std_Undo');doc.recompute();drain();step('Undo creation')
+    doc.openTransaction('Branch target label edit')
+    target.Label='Edited'
+    doc.recompute();doc.commitTransaction();drain();step('branched label edit')
+    Gui.runCommand('Std_Undo');doc.recompute();drain();step('Undo label edit')
+    Gui.runCommand('Std_Redo');doc.recompute();drain();step('Redo label edit')
+    assert target.Label=='Edited'
+    report['status']='passed'
+    report['user_data']=App.getUserAppDataDir()
+    step('all passed')
+    App.closeDocument(doc.Name)
+    return report
+
+import tempfile
+_repro_output = Path(tempfile.mkdtemp(prefix='freecad-redo-branch-'))
+print('Reproduction evidence:', str(_repro_output), flush=True)
+QtCore.QTimer.singleShot(1500, lambda: run(str(_repro_output)))

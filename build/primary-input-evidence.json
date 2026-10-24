@@ -1,0 +1,102 @@
+{
+  "recorded_at_utc": "2026-10-23T09:10:15.292645+00:00",
+  "windows_execution": false,
+  "libpack": {
+    "url": "https://github.com/FreeCAD/FreeCAD-LibPack/releases/download/3.1.1.3/LibPack-1.1.0-v3.1.1.3-Release.7z",
+    "sha256": "3565842b2f2c464d891d37f1ce8467f2cd0b3dd758a6dfacc7acfeff290b67d4",
+    "bytes": 948616324,
+    "api_release_id": 214382880,
+    "api_asset_id": 248987223,
+    "api_digest": null,
+    "hash_method": "SHA256 over complete downloaded archive bytes in Linux; no binary executed",
+    "archive_index_method": "libarchive read-only index; no Windows execution",
+    "archive_entries": 83038,
+    "extracted_bytes": 6675823626,
+    "selected_entries": [
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/ifcopenshell-0.8.1.post1.dist-info/METADATA",
+        "bytes": 11336
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/isodate-0.7.2.dist-info/METADATA",
+        "bytes": 11852
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/lark-1.2.2.dist-info/METADATA",
+        "bytes": 1831
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/numpy-1.26.4.dist-info/METADATA",
+        "bytes": 61040
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+        "bytes": 8354
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/setuptools/_vendor/typing_extensions-4.12.2.dist-info/METADATA",
+        "bytes": 3018
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/shapely-2.1.0.dist-info/METADATA",
+        "bytes": 7000
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/six-1.17.0.dist-info/METADATA",
+        "bytes": 1658
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/typing_extensions-4.13.2.dist-info/METADATA",
+        "bytes": 2994
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/FREECAD_LIBPACK_VERSION",
+        "bytes": 7
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/lib/cmake/fmt/fmt-config.cmake",
+        "bytes": 1030
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/PySide6/plugins/imageformats/qsvg.dll",
+        "bytes": 39048
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/PySide6/pyside6.abi3.dll",
+        "bytes": 237568
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/Lib/site-packages/shiboken6/shiboken6.abi3.dll",
+        "bytes": 370688
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/python.exe",
+        "bytes": 91648
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/bin/python312.dll",
+        "bytes": 7469568
+      },
+      {
+        "path": "LibPack-1.1.0-v3.1.1.3-Release/plugins/imageformats/qsvg.dll",
+        "bytes": 39048
+      }
+    ]
+  },
+  "cmake_checksum": {
+    "filename": "cmake-3.31.6-windows-x86_64.zip",
+    "url": "https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-windows-x86_64.zip",
+    "sha256": "d163cd3ab4959b0a53fa8988f2ddbd2e6c501658201e6a154386bad9dbe4f836",
+    "bytes": 46473549,
+    "archive_root": "cmake-3.31.6-windows-x86_64",
+    "checksum_provenance": "https://github.com/Kitware/CMake/releases/download/v3.31.6/cmake-3.31.6-SHA-256.txt"
+  },
+  "source_evidence": {
+    ".github/workflows/sub_buildWindows.yml": "3d6f81313c4d62ced1a6f133d8552f3901d3de292be2ec728b36085d2249f8f7",
+    ".github/workflows/actions/windows/getLibpack/action.yml": "2c16649b8fb426f524101156f92883f65a093bfb68ecf9f155afd53259f21bb2",
+    "cMake/FreeCAD_Helpers/CopyLibpackDirectories.cmake": "4a288d2c7360765a3e0934ff12539120007916ed026451b34b69891395bec1f5",
+    "cMake/FreeCAD_Helpers/SetupShibokenAndPyside.cmake": "27bda54da89d5133ec3a049459200ffb146944b17dc457e083c332c72a421fa6",
+    "cMake/UseLibPack3.cmake": "706b1433564367d7f18e9d50bd51af344eed68061b4d132a1ef232b08a1fa70b",
+    "src/Gui/CMakeLists.txt": "6bc5224747d612e7dda7abad51dfceace3dbd6b4a2408aef11046930be2a31fd"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "source GUI suite passed",
+      "status": "passed"
+    },
+    {
+      "name": "view proxies not preregistered",
+      "status": "passed"
+    },
+    {
+      "name": "all native proxies restore automatically",
+      "status": "passed"
+    },
+    {
+      "name": "all view proxies restore automatically",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI restores stable identities",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI restores wall type, levels, door host and body links",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI restores cut solid and frame geometry",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI restores wall presentation subtree",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI preserves authored wall and subtree visibility",
+      "status": "passed"
+    },
+    {
+      "name": "repeated restored view attach does not duplicate display nodes",
+      "status": "passed"
+    },
+    {
+      "name": "existing grid labels restore alongside architecture",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI level edit recomputes cut body",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI native Undo restores cut body and level",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI type edit propagates both wall instances",
+      "status": "passed"
+    },
+    {
+      "name": "fresh GUI type Undo restores shapes without identity changes",
+      "status": "passed"
+    },
+    {
+      "name": "document validates after fresh GUI edits",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 16,
+  "module_source": "/tmp/bim3117-freecad/gui-profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py"
+}

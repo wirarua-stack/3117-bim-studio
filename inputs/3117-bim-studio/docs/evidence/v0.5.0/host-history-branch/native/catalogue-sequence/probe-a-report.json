@@ -1,0 +1,16 @@
+{
+  "status": "running",
+  "checks": [],
+  "steps": [
+    "before real duplicate material form",
+    "before real delete material button",
+    "material deleted",
+    "Undo deletion",
+    "Undo creation",
+    "before new type branch with two readers",
+    "coexisting Schedules and Quantities settle without a read-refresh loop: True"
+  ],
+  "checks_passed": 0,
+  "deletion_warnings": [],
+  "expected_command_errors": []
+}

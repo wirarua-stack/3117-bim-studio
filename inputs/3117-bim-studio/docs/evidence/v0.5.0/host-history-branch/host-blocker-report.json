@@ -1,0 +1,155 @@
+{
+  "classification": "failed_native_host",
+  "overall_release_ready": false,
+  "scope": "Current v0.5.0 development candidate on the tested Linux FreeCAD 1.1.4 GUI host.",
+  "host": {
+    "freecad": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "display": "Xvfb, software OpenGL",
+    "gui_up": true,
+    "library_sha256": "b32d751a73285181a9569ee4fa80e84da01c6d4c1f10ce238dccdda8ddc33ad4"
+  },
+  "windows_status": "unknown: this sequence was not tested on Windows",
+  "native_sequence": [
+    "Create baseline target object outside a transaction.",
+    "Create a disposable object in one committed transaction.",
+    "Delete that disposable object in one committed transaction.",
+    "Invoke native Std_Undo to restore deletion.",
+    "Invoke native Std_Undo to reverse creation.",
+    "Commit a new Label change on the baseline target, discarding the previous Redo branch.",
+    "Invoke native Std_Undo on the Label change.",
+    "Invoke native Std_Redo; tested host crashes."
+  ],
+  "cases": [
+    {
+      "case": "minimal-native",
+      "classification": "failed_native_host",
+      "exit_code": 1,
+      "object_type": "App::FeaturePython",
+      "main_event_loop_yield_between_operations_ms": null,
+      "addon_installed": false,
+      "addon_imported": false,
+      "custom_python_proxies": false,
+      "modeless_readers": false,
+      "restored_fcstd": false,
+      "second_document": false,
+      "last_recorded_step": "Undo label edit",
+      "raw_report_status": "running",
+      "raw_report_note": "The raw report remains running when SIGSEGV terminates Python before finalization.",
+      "signal_text_seen": true,
+      "report": "native/minimal-native/report.json",
+      "log": "native/minimal-native/gui.log",
+      "no_addon_evidence": {
+        "modules": "No addon modules imported by the preserved standalone test source.",
+        "user_mod_directories": [],
+        "isolated_user_data": "/tmp/bim3117-v050-catalog/native-only/data/FreeCAD/v1-1"
+      }
+    },
+    {
+      "case": "timed-native",
+      "classification": "failed_native_host",
+      "exit_code": 1,
+      "object_type": "App::FeaturePython",
+      "main_event_loop_yield_between_operations_ms": 500,
+      "addon_installed": false,
+      "addon_imported": false,
+      "custom_python_proxies": false,
+      "modeless_readers": false,
+      "restored_fcstd": false,
+      "second_document": false,
+      "last_recorded_step": "before Redo label edit",
+      "raw_report_status": "running",
+      "raw_report_note": "The raw report remains running when SIGSEGV terminates Python before finalization.",
+      "signal_text_seen": true,
+      "report": "native/timed-native/report.json",
+      "log": "native/timed-native/gui.log",
+      "no_addon_evidence": {
+        "modules": [],
+        "user_mod_directories": [],
+        "isolated_user_data": "/tmp/bim3117-v050-catalog/native-yield/data/FreeCAD/v1-1/"
+      }
+    },
+    {
+      "case": "timed-non-python",
+      "classification": "failed_native_host",
+      "exit_code": 139,
+      "object_type": "Part::Feature",
+      "main_event_loop_yield_between_operations_ms": 500,
+      "addon_installed": false,
+      "addon_imported": false,
+      "custom_python_proxies": false,
+      "modeless_readers": false,
+      "restored_fcstd": false,
+      "second_document": false,
+      "last_recorded_step": "before Redo label edit",
+      "raw_report_status": "running",
+      "raw_report_note": "The raw report remains running when SIGSEGV terminates Python before finalization.",
+      "signal_text_seen": true,
+      "report": "native/timed-non-python/report.json",
+      "log": "native/timed-non-python/gui.log",
+      "no_addon_evidence": {
+        "modules": [],
+        "user_mod_directories": [],
+        "isolated_user_data": "/tmp/bim3117-v050-catalog/native-feature/data/FreeCAD/v1-1/"
+      }
+    },
+    {
+      "case": "unbranched-control",
+      "classification": "passed_control",
+      "exit_code": 0,
+      "object_type": "App::FeaturePython",
+      "main_event_loop_yield_between_operations_ms": null,
+      "addon_installed": false,
+      "addon_imported": false,
+      "custom_python_proxies": false,
+      "modeless_readers": false,
+      "restored_fcstd": false,
+      "second_document": false,
+      "last_recorded_step": "all passed",
+      "raw_report_status": "passed",
+      "raw_report_note": "Control completed normally.",
+      "signal_text_seen": false,
+      "report": "native/unbranched-control/report.json",
+      "log": "native/unbranched-control/gui.log",
+      "no_addon_evidence": {
+        "modules": "No addon modules imported by the preserved standalone test source.",
+        "user_mod_directories": [],
+        "isolated_user_data": "/tmp/bim3117-v050-catalog/native-control/data/FreeCAD/v1-1"
+      }
+    }
+  ],
+  "controls": {
+    "ordinary_type_edit_undo_redo": "Passed in separate GUI feature tests owned by UI agent.",
+    "unbranched_native_history": "Passed, preserved here.",
+    "second_document_required": false,
+    "3117_required": false,
+    "python_proxy_required": false,
+    "fcstd_restore_required": false
+  },
+  "observed_matching_frames": [
+    "Gui::Document::handleChildren3D(Gui::ViewProvider*, bool)+0x3a",
+    "Gui::Document::redo(int)+0xa5"
+  ],
+  "mechanism_inference": "A stale non-null ViewProvider pointer retained in the native deferred-child list after Undo/removal and Redo-branch discard. This is inferred from the isolated repro and local disassembly, not a proven memory-debugger diagnosis.",
+  "disassembly_observations": [
+    "handleChildren3D checks ViewProvider for null before the failing first virtual call at +0x3a.",
+    "Gui::Document::redo traverses and clears its deferred ViewProvider-pointer list after applying App redo.",
+    "Gui::Document::undo does not traverse or clear that deferred list."
+  ],
+  "user_impact": "Native process crash may lose unsaved state in the running FreeCAD process.",
+  "safe_api_workaround": "None established. Main-event-loop settling and ordinary Part::Feature do not avoid the crash.",
+  "production_changes": null,
+  "undo_history_cleared": false,
+  "host_binary_patched": false,
+  "public_issue_filed": false,
+  "macro_note": "The standalone FCMacro files inline the exact executed probe definitions and replace only the runner import with a local temporary output-directory selection and invocation. The packaged standalone filenames were not separately rerun.",
+  "source_comparison": "Deferred to parent/exchange agent; this report does not assert an upstream fix or applicability to another host version."
+}

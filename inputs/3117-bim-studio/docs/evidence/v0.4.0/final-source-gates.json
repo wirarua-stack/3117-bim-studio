@@ -1,0 +1,491 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-23T05:04:40.020518+00:00",
+  "version": "0.4.0",
+  "checks_passed": 25,
+  "checks": [
+    {
+      "name": "All repository Python and macros parse",
+      "status": "passed",
+      "files": 79,
+      "failures": []
+    },
+    {
+      "name": "Workbench package version 0.4.0 with additive model/drawing schema 1",
+      "status": "passed",
+      "package_xml": "0.4.0",
+      "python_package": {
+        "__version__": "0.4.0",
+        "SCHEMA_VERSION": 1
+      },
+      "drawing_schema": 1
+    },
+    {
+      "name": "All three embedded CI Python blocks compile",
+      "status": "passed",
+      "blocks": 3
+    },
+    {
+      "name": "CI runner and JSON evidence gate both require the actual thirteen stages",
+      "status": "passed",
+      "stages": [
+        "install",
+        "foundation",
+        "reopen",
+        "architecture",
+        "architecture_reopen",
+        "exchange",
+        "exchange_reopen",
+        "building",
+        "building_reopen",
+        "drawing_geometry",
+        "drawings",
+        "drawings_reopen",
+        "drawing_render"
+      ]
+    },
+    {
+      "name": "Actual thirteen-stage CI JSON gate passes locally",
+      "status": "passed",
+      "output": [
+        "install: 1 checks passed",
+        "foundation: 35 checks passed",
+        "reopen: 9 checks passed",
+        "architecture: 63 checks passed",
+        "architecture_reopen: 12 checks passed",
+        "exchange: 47 checks passed",
+        "exchange_reopen: 10 checks passed",
+        "building: 112 checks passed",
+        "building_reopen: 19 checks passed",
+        "drawing_geometry: 31 checks passed",
+        "drawings: 70 checks passed",
+        "drawings_reopen: 25 checks passed",
+        "drawing_render: 33 checks passed",
+        "Headless host integration passed. Windows interactive GUI acceptance remains a separate gate."
+      ],
+      "error": null,
+      "remote_execution": false
+    },
+    {
+      "name": "Native installed workbench, fonts, notices and receipt exactly match current source",
+      "status": "passed",
+      "files": 57,
+      "installed_root": "/tmp/bim3117-v040-final-native/profile/data/FreeCAD/v1-1/Mod/BIM3117",
+      "mismatches": [],
+      "extra_files": []
+    },
+    {
+      "name": "Final native process manifest is complete, passing and tied to frozen source",
+      "status": "passed",
+      "counts": {
+        "install": 1,
+        "foundation": 35,
+        "reopen": 9,
+        "architecture": 63,
+        "architecture_reopen": 12,
+        "exchange": 47,
+        "exchange_reopen": 10,
+        "building": 112,
+        "building_reopen": 19,
+        "drawing_geometry": 31,
+        "drawings": 70,
+        "drawings_reopen": 25,
+        "drawing_render": 33
+      },
+      "source_unchanged_during_run": true,
+      "retry_disclosed": {
+        "stage": "drawing_render",
+        "prior_attempt": {
+          "stage": "drawing_render",
+          "exit_code": 0,
+          "status": "failed",
+          "checks_passed": 17,
+          "elapsed_seconds": 6.124,
+          "report": "drawing-render-test-report.json",
+          "error": "File already exists; confirm replacement of the complete bundle: drawing-render.svg"
+        },
+        "prior_report_preserved": "/tmp/bim3117-v040-final-native/first-render-attempt/drawing-render-test-report.json",
+        "cause": "The harness reused a fixed export filename. The exporter correctly rejected an existing file without overwrite consent.",
+        "change": "Harness allocates a unique case directory for each invocation and checks only its own publication paths. Production payloads unchanged.",
+        "harness_sha256": "b9785bf6ce583f7d015fb37beafa9e495f3a38fa3705a033708783fb93aa2acf",
+        "unaffected_stages_retained": 12
+      },
+      "environment_retry": {
+        "stage": "drawing_render",
+        "previous_process": {
+          "stage": "drawing_render",
+          "exit_code": 0,
+          "status": "failed",
+          "checks_passed": 27,
+          "elapsed_seconds": 9.239,
+          "report": "drawing-render-test-report.json",
+          "error": "Interrupted model export keeps old payload/metadata and cleans locks"
+        },
+        "previous_report_sha256": "92e12e0c05dec5a5e5e138e5f51614c45c92ea697d998e083342833260bde76a",
+        "previous_report": "/tmp/bim3117-v040-final-native/second-render-attempt/drawing-render-test-report.json",
+        "environment_finding_sha256": "9fe0aaac0d6e6a25f9ffe29c98ae5871cd95a1bfcd8e3a0b4b7d3255c8a0fbb1",
+        "environment_finding": "/tmp/bim3117-drawing-render/filesystem-probes/workspace-synchronization-finding.json",
+        "reason": "In both FreeCADCmd and ordinary Python, publication completed with correct move/delete events and a clean immediate directory. After a yielded tool call and a separate read-only command, the workspace received rsync-style temporary-file CREATE/MOVE events restoring already deleted export locks and the staging directory. The /tmp counterparts stayed clean.",
+        "production_changed": false,
+        "test_assertions_weakened": false,
+        "unaffected_stages_retained": 12,
+        "accepted_renderer_output": "/tmp/bim3117-v040-final-native/final-renderer-5q9926zh",
+        "scope": "Final renderer stage only rerun in local /tmp using the same installed profile and production payload. Prior workspace failures are retained, not counted as passes."
+      },
+      "manifest_sha256": "af03156f128d9377f46bcf59ee177ee313363e05eecda4e0a4cc7b131f6e8c7b"
+    },
+    {
+      "name": "Canonical GUI presentation used the same production payload",
+      "status": "passed",
+      "files": 57
+    },
+    {
+      "name": "Repository Markdown relative file links resolve",
+      "status": "passed",
+      "links": 228,
+      "broken": []
+    },
+    {
+      "name": "New guide Python examples parse and reference live drawing APIs",
+      "status": "passed",
+      "code_blocks": 1,
+      "missing_calls": []
+    },
+    {
+      "name": "All six delivered v0.3.0 and v0.2.1 ZIP archives remain byte-identical",
+      "status": "passed",
+      "sha256": {
+        "3117_BIM_Studio_v0_3_0_Building_Example.zip": "d884cc6f3897a7df433a6bf4f92b554c25d3b8140d572d1cd4126bfcb9c78c1f",
+        "3117_BIM_Studio_v0_3_0_FreeCAD.zip": "c3f658c40423260d2888912f2a0882461f01f7bcf735dc382abb9bb9a673035c",
+        "3117_BIM_Studio_v0_3_0_Source.zip": "e54beb8571efe1dba293097a4b007904c133d21ee3b2b292cda5c0a6723bef30",
+        "3117_BIM_Studio_v0_2_1_FreeCAD.zip": "9570efe016387e3d679a76e68597e014d29f36271b63e78d83edc4c7a5b2a9fa",
+        "3117_BIM_Studio_v0_2_1_Source.zip": "75038937b6427f925c4a885a665b6e11636dd29249ab0acda20bd5204c03bae5",
+        "3117_BIM_Studio_v0_2_1_Exchange_Example.zip": "8d263a82de255ba0e7f45e20468e68d8845dea230d09d248dda962bccb4784ae"
+      },
+      "changes": []
+    },
+    {
+      "name": "Frozen building canonical data match immutable v0.3.0 source archive",
+      "status": "passed",
+      "files": 13,
+      "compared": [
+        "Bonsai_Building_Authoring.png",
+        "Building_Authoring_Workbench.FCStd",
+        "Building_Authoring_Workbench.csv",
+        "Building_Authoring_Workbench.ifc",
+        "Building_Authoring_Workbench.png",
+        "Building_Authoring_Workbench_beams.csv",
+        "Building_Authoring_Workbench_columns.csv",
+        "Building_Authoring_Workbench_csv_metadata.json",
+        "Building_Authoring_Workbench_doors.csv",
+        "Building_Authoring_Workbench_ifc_metadata.json",
+        "Building_Authoring_Workbench_slabs.csv",
+        "Building_Authoring_Workbench_windows.csv",
+        "building-snapshot.json"
+      ],
+      "changes": [],
+      "excludes": "README.md may describe its historical status; no old runtime result is reused as v0.4.0 acceptance"
+    },
+    {
+      "name": "Frozen exchange canonical data match immutable v0.2.1 source archive",
+      "status": "passed",
+      "files": 9,
+      "compared": [
+        "Bonsai_Native_IFC_Review.png",
+        "Quantity_Exchange_Fixture_GUI.png",
+        "Quantity_Exchange_Workbench.FCStd",
+        "Quantity_Exchange_Workbench.csv",
+        "Quantity_Exchange_Workbench.ifc",
+        "Quantity_Exchange_Workbench_csv_metadata.json",
+        "Quantity_Exchange_Workbench_doors.csv",
+        "Quantity_Exchange_Workbench_ifc_metadata.json",
+        "exchange-snapshot.json"
+      ],
+      "changes": [],
+      "excludes": "README.md may describe its historical status; no old runtime result is reused as v0.4.0 acceptance"
+    },
+    {
+      "name": "Sarabun Regular/Bold and OFL notice match recorded upstream hashes",
+      "status": "passed",
+      "sha256": {
+        "Sarabun-Regular.ttf": "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1",
+        "Sarabun-Bold.ttf": "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9",
+        "OFL.txt": "b26cae1321380296ba8311b632a397d5eac11b47197f9d0aa0b9310f1531ad60"
+      },
+      "source_sha256": "51b475510e81d0fbfaa542931636832be85edca72af9767486b597e329db1962"
+    },
+    {
+      "name": "Canonical FCStd bytes and lineage remain frozen with 4 views / 2 sheets / 1 drawing set",
+      "status": "passed",
+      "canonical_sha256": "92b6cd2fc012ce1ae2815ed511bed2c676451c0a2d8c9b2caa1823eeba81882c",
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "ids": 57,
+      "views": 4,
+      "sheets": 2
+    },
+    {
+      "name": "Native XML definitions, linked view order and IDs match canonical captured definitions",
+      "status": "passed",
+      "mismatches": []
+    },
+    {
+      "name": "Read-only native presentation/export reports bind the model revision to canonical FCStd bytes",
+      "status": "passed",
+      "presentation_sha256": "ff4892fb413fc9d40ecfb3c3d72c1c1c08bdf87089efd186df1a4e5e1f39528a",
+      "export_report_sha256": "010ebe0c4d24975ac172c51c0dd1ec87f191d32cf42f39cbea692002d9d35095"
+    },
+    {
+      "name": "Canonical export metadata and payload hash 3117_A101_svg_metadata.json",
+      "status": "passed",
+      "metadata_sha256": "fe8b3f0f75ed5da603713e499baaff20467aeb55b5e6b381a75a0a0136aa6949",
+      "payloads": [
+        {
+          "name": "3117_A101.svg",
+          "bytes": 303729,
+          "sha256": "5a65ff6effbe20034938422b5b2120b9a6eb2d964c71ba83695240262398e627"
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481"
+    },
+    {
+      "name": "Canonical export metadata and payload hash 3117_A101_pdf_metadata.json",
+      "status": "passed",
+      "metadata_sha256": "b701addb1d3a8da72256f2ca9ab042089fd7ec2d8468230cbd235654f8a83799",
+      "payloads": [
+        {
+          "name": "3117_A101.pdf",
+          "bytes": 29950,
+          "sha256": "0434865c4279b1bbabb3954490a4ecb77da4257cc86a2821ea15cf6832e4b02b"
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "909065e2af5789cd0b0e18560cfd641c9bca411843400c58259e460ea4a7f481"
+    },
+    {
+      "name": "SVG page, revisions, embedded fonts and license A101",
+      "status": "passed",
+      "embedded_font_sha256": [
+        "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1",
+        "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9"
+      ]
+    },
+    {
+      "name": "Canonical export metadata and payload hash 3117_A201_svg_metadata.json",
+      "status": "passed",
+      "metadata_sha256": "4144c611fce339f83f82fc7c95e2769c67cd5bd55203957814428cad6eae7884",
+      "payloads": [
+        {
+          "name": "3117_A201.svg",
+          "bytes": 299744,
+          "sha256": "3d89b509c7b0f4b74b0a7830deb951924c8d15d1a2983031db7b9f5ddeb957ac"
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5"
+    },
+    {
+      "name": "Canonical export metadata and payload hash 3117_A201_pdf_metadata.json",
+      "status": "passed",
+      "metadata_sha256": "e6bdbb663d527f97944342c4b99b23e26014bd45d10b66ea904a4e9a49e12d9d",
+      "payloads": [
+        {
+          "name": "3117_A201.pdf",
+          "bytes": 29717,
+          "sha256": "29ea468074b5050555322b0805eadf9589de881ca50771289c8a25b60e5034a9"
+        }
+      ],
+      "model_revision": "6295a7332816a71852554c1bcea332f31b2618da6795231a477f8b59c621954a",
+      "drawing_revision": "20044ae522d2f876a997413109c647d244e2469d86722dae30b0a524a94028f5"
+    },
+    {
+      "name": "SVG page, revisions, embedded fonts and license A201",
+      "status": "passed",
+      "embedded_font_sha256": [
+        "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1",
+        "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9"
+      ]
+    },
+    {
+      "name": "Built workbench ZIP contains all production files, fonts, required guides and drawing harnesses",
+      "status": "passed",
+      "files": 282,
+      "missing": [],
+      "payload_manifest_valid": true
+    },
+    {
+      "name": "Built workbench ZIP Markdown links resolve inside delivered payload",
+      "status": "passed",
+      "links": 210,
+      "broken": []
+    }
+  ],
+  "source_sha256": {
+    "examples/drawings/build_example.py": "c5d9eac8a7bfaff84b5fac086937511eaef12baf5a804ef7f107570c16de4265",
+    "packaging/Install_3117_BIM_Studio.FCMacro": "42ae032d8770afaea4125700088f0e39e4436e4888b428ced8bec77d5aa16632",
+    "packaging/Manage_3117_BIM_Studio.FCMacro": "2494228be633a7c650915a4cd1b67347dc011c5cf934949cdde47c03cbf4c87e",
+    "packaging/Run_3117_Architecture_Test.FCMacro": "636b48bdb0db0a8fa467c51c5f5f103070c03105de0a79be1505c618bb7a23be",
+    "packaging/Run_3117_Building_Test.FCMacro": "cf02a8ef4ec0cd87dd947e42832ad89ae4192748b2d3b057a29f653fa5b69aa5",
+    "packaging/Run_3117_Drawings_Test.FCMacro": "553449ef38da90e79cf53625049f8e0e23a74bf9e9d1dc0c7d48c55aa52e7e53",
+    "packaging/Run_3117_Exchange_Test.FCMacro": "3baebd70592a6bcc45197079b4db7d437e5cc708fdd808de9ab9cf410c6d1853",
+    "packaging/Run_3117_Smoke_Test.FCMacro": "fc87af0a0a0dae2036a5c2bb581db61b344705081a1f0c834022c4386af41e19",
+    "packaging/freecad_installer_ui.py": "61c0d305f0b85c5c5fadc58bcec6d57f1fc16a90d494dc17e21c485606d894a1",
+    "packaging/install_support.py": "3c158f7c5fe11059cc44098d6dfc39577ba53d59eb80d22815896d9cac1489d4",
+    "packaging/tests/test_install_support.py": "90ccadcd36799f8280caba1e132cf1d1a40096a5762953a3610ba8ae473eab29",
+    "scripts/build_workbench_package.py": "155e03a897af1479bb64b28cbcde9f25e348acb2a386707b060e1918bd4aa19f",
+    "src/bim3117/__init__.py": "e6ac810819ed7d4f195d0fe7c3b0522a4e6bb9fbee4cd594cd9b518df9cdbec2",
+    "src/bim3117/__main__.py": "f7400f401db6c885838075d14ed93e4a3608176924f942393224d7b897ce8979",
+    "src/bim3117/demo.py": "394c894461606feac2d97905944a4877136ba86a91c8163f0d7e16cbd490fdf1",
+    "src/bim3117/ifc_export.py": "b6fa14ef71631f911ae130a5a0e5782d34aa1e81dbaed2e9aacbaf2a94b324a5",
+    "src/bim3117/io.py": "c47f17677c362f79de95125c1aed07eae7901e29d84f6157e4ccd472139905f0",
+    "src/bim3117/model.py": "04c8b3c3edd3420f3cbf9e64ad6f2653883b3f13cc4055f91f106826e779f947",
+    "tests/bonsai_building_review.py": "a27b018897429128503a48c33c0e850b0a0186cac1e843b9731a38ce286ecad6",
+    "tests/bonsai_exchange_review.py": "4f2da9b81dc36efab0bd2b240ea205b6c08647bf2055f71bd830716a9000a5d2",
+    "tests/freecad_architecture.py": "04172806b21a21a4a9e6fac37012fdecd34afd9d2ec914cba376dcffdeaaaaa9",
+    "tests/freecad_architecture_gui.py": "5119c77abe86f72bbbb9a19f3e6bd45f0fcee481943ca4126c2b94bc42bdc82d",
+    "tests/freecad_architecture_gui_reopen.py": "d0b6500a7e5caa336ad0eedfeadce424711adfe30b8db7e060b37aafd137285b",
+    "tests/freecad_architecture_reopen.py": "f9c865ab52b7d7610bd19dd9517cc193cfdef0bf77ebc3886b4809daa7cb4273",
+    "tests/freecad_building.py": "55987e60ea0f7c6f71e6fe9878c2d33d44fbace772ef6aa29859204eff9233a7",
+    "tests/freecad_building_gui.py": "00fdd5a9b87216f96ac52cc78c030bad671979a1ca5d592b49bd7ed7022f8909",
+    "tests/freecad_building_gui_reopen.py": "e2fadb975ca38e1ab417513e26ce5c2ac9668d65fafe13d75cf895cc5ba22aae",
+    "tests/freecad_building_presentation.py": "e6cbe0338883da041e9064f0c4c5b24a876ef60be6b701ba4a3a9197abb134f2",
+    "tests/freecad_building_reopen.py": "8cac94c69f6cf9da584392d92f88f17f98ca4881b90150bde99627089164ecef",
+    "tests/freecad_drawing_geometry.py": "6993422af2fa6a1f905e12b49f8a3f713d3a393551e51c878cdff43737994307",
+    "tests/freecad_drawing_render.py": "b9785bf6ce583f7d015fb37beafa9e495f3a38fa3705a033708783fb93aa2acf",
+    "tests/freecad_drawings.py": "9dcef531856f7c7ce193d18cdf9abd2789dd5550d127e09613354b826c9a0f35",
+    "tests/freecad_drawings_exchange.py": "ec50cc4bf509d9eb5f077fce552bd9c29234687151dd7e989a61067c76b4d718",
+    "tests/freecad_drawings_gui.py": "43ca2af46ed65f712850e847fd688e6300590073d31aea7377b1bfd452c76447",
+    "tests/freecad_drawings_gui_reopen.py": "9afbd5e83784d8aa764099ebed23a4b4cc42be621ea039ee5b5a9a4c00058097",
+    "tests/freecad_drawings_presentation.py": "0cc6e3f491d39956a7e9c7e8f85f24a5af0e14973dff2ced564f7c204751a81b",
+    "tests/freecad_drawings_reopen.py": "73d85c87c7bb8e3318af1fbdbb880c3d612af3c53fe978f16ed34ef3b2eee8a4",
+    "tests/freecad_exchange.py": "f3ab6720a8d0f615b041c01e1ca9e0ac7a79b048b8fd63edfebe76387aa7e259",
+    "tests/freecad_exchange_gui.py": "1a20d02d416a17933c2a3a7544ee808b972726e22bda46ce07d4235b881bdec5",
+    "tests/freecad_exchange_gui_reopen.py": "9aa259c3ed429be83cde8634fbc5bac9c03d3f5933ca074d3d1dc05cd342973c",
+    "tests/freecad_exchange_reopen.py": "92dcccf82fb28901f44005ef097b6ceaef1951b6dd8758afa6bf566f9c634c43",
+    "tests/freecad_foundation.py": "105b521552c3aa3f41af729ce2736288e909ec918fc3fb5919402c6b8d821c23",
+    "tests/freecad_gui_reopen.py": "a49b213f7b8547764da16f55793fd27bce1e25f3de9ca3c985e2d69f723150c4",
+    "tests/freecad_gui_smoke.py": "d5283fe35a4c4d1ffe258da8857b9739f83b3e3bf00aa11bddd96d0f2bec427b",
+    "tests/freecad_headless_gui.py": "5cf1b6479a5c2aa8efc785ffcd40e9838306042e2aac1b839add833561a245d5",
+    "tests/freecad_headless_gui_reopen.py": "5b1be4f4a62a5c57e8d18f226964f1c9f1a5f11973fc1d5c8f4c78d787874686",
+    "tests/freecad_reopen.py": "100dc1d1f899d3af42bde596916d0a00b14db7d2ad0188d4a3ac85c637b953b5",
+    "tests/pdf_drawing_review.py": "e6a44e01842b83649f9495421794748454eb06d53efb1087a649cacb01d3b14f",
+    "tests/run_freecad_tests.py": "0ea5c0bb4880a2784ed41de71ada970d7703161630231f22304e4bb9cd41d05c",
+    "tests/test_export_files.py": "45385d7ae4c583886b03bb5621df2a4ae4faa5e8ed4e45b0076c5df4c3fe75b8",
+    "tests/test_ifc.py": "0088f1debcfdb6c339fcbf714edf22c7b76c350ef9d00d723596d95ac1573084",
+    "tests/test_model.py": "1d9b713fcf610343e1e1869abf7708c236c1121b54dfff0300965333397c72c9",
+    "tests/test_native_ifc.py": "e35c209327f24b9266019ac3aab85a5e7cf048612ff949fd6e47cb13429afc9e",
+    "workbench/Init.py": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+    "workbench/InitGui.py": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+    "workbench/bim3117_freecad/__init__.py": "8b61836b5b6c97035bf1fc0d474353624f702283356bc704448c590b9a8925c6",
+    "workbench/bim3117_freecad/building.py": "ee643014815dc1f0d782ada92d07e08f2eb565fbbf7eafecc8ebc043c11f7ac5",
+    "workbench/bim3117_freecad/drawing_export.py": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75",
+    "workbench/bim3117_freecad/drawing_geometry.py": "98c8251d5c4ce1e6529475a97ed5f764ed29e8642a4ea284127bebb2de4c30ec",
+    "workbench/bim3117_freecad/drawing_render.py": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388",
+    "workbench/bim3117_freecad/drawings.py": "8718714f12c01ee07bafd41fd51890e4a1da5cf8e63c1fa3e56879a6db6c3af5",
+    "workbench/bim3117_freecad/elements.py": "ae57ec1434a7d86258f8fcaf947dd7c04eec34d6c2566b79cc555885f2e9e9d2",
+    "workbench/bim3117_freecad/exchange.py": "778516b426aadc9748865da1de6fc832ed515a6febc6ee3cb74628f1fe31c334",
+    "workbench/bim3117_freecad/export_files.py": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+    "workbench/bim3117_freecad/ifc_native.py": "18ea51fc422f876dff488e05bbc4e90a46adee309c71796794d0fdfb58265f75",
+    "workbench/bim3117_freecad/model.py": "7fba87aaf5ff01375ed785aeb45267597854ab0716c04980e2156acaacf2af55",
+    "workbench/bim3117_freecad/services.py": "d06ff6c4c55bcd57280d37130758493cb5d1dd107684682ac4907f8e43da9884",
+    "workbench/bim3117_freecad/snapshot.py": "65b5a96d7501c61bf0f0c779ae261d330124ca3ab65159df9533cbedd60c08b5",
+    "workbench/ui3117/__init__.py": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+    "workbench/ui3117/building_dialogs.py": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461",
+    "workbench/ui3117/commands.py": "3b01cbe52f77a38b01aababa665c77fa48e5c501e322e2197b294b84bf0bb237",
+    "workbench/ui3117/dialogs.py": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2",
+    "workbench/ui3117/drawing_commands.py": "7774894dcc1a9e467aa932f4fd1a966e5071a756dd81ea236f5b9716a82fe52a",
+    "workbench/ui3117/drawing_dialogs.py": "2fa7bdc256fd0ece02328ee9af97be4f211717fc02fe4adc5936316ad7afc673",
+    "workbench/ui3117/drawing_preview.py": "79a8edf6c30bb818c2b30288bd3cf8509fdb96dd583cb77524f4afdcb25b7b0b",
+    "workbench/ui3117/exchange_dialog.py": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c",
+    "workbench/ui3117/qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+    "workbench/ui3117/viewproviders.py": "03cf20329228b9a60418bddacdfb1530c98bacf06909194ee78d17eda3a0b4cc",
+    "workbench/ui3117/workbench.py": "7d1b5af28e07a84795b037c75d5c87f278d10a13adb186cb806d4a676635995f"
+  },
+  "workbench_sha256": {
+    "Init.py": "cad0c4ab0d810f0d339750512ce5a17720817a8a90782aee487b5aa3efdf55af",
+    "InitGui.py": "e5bfcc48c3720728603829481bd4f8cf60c4d6a7b103bc901f78cf14a8d9f896",
+    "README.md": "5d62cdc73980579312f2df8dc0bccc653edfbd6ccc873605df97ca730e4ef78c",
+    "bim3117_freecad/__init__.py": "8b61836b5b6c97035bf1fc0d474353624f702283356bc704448c590b9a8925c6",
+    "bim3117_freecad/building.py": "ee643014815dc1f0d782ada92d07e08f2eb565fbbf7eafecc8ebc043c11f7ac5",
+    "bim3117_freecad/drawing_export.py": "f74f0b7a8d9477289490b4ddb84a0876cb318891ece655d15ae661ef25d16b75",
+    "bim3117_freecad/drawing_geometry.py": "98c8251d5c4ce1e6529475a97ed5f764ed29e8642a4ea284127bebb2de4c30ec",
+    "bim3117_freecad/drawing_render.py": "fcc73e6f16d3ff59977da6a15aad97a75d43a0d2dc23dedd45a5a3a89179e388",
+    "bim3117_freecad/drawings.py": "8718714f12c01ee07bafd41fd51890e4a1da5cf8e63c1fa3e56879a6db6c3af5",
+    "bim3117_freecad/elements.py": "ae57ec1434a7d86258f8fcaf947dd7c04eec34d6c2566b79cc555885f2e9e9d2",
+    "bim3117_freecad/exchange.py": "778516b426aadc9748865da1de6fc832ed515a6febc6ee3cb74628f1fe31c334",
+    "bim3117_freecad/export_files.py": "f5bb90830576734fc664c4f3121844b523a6b4033a0711c3412896349c21c7d6",
+    "bim3117_freecad/fonts/OFL.txt": "b26cae1321380296ba8311b632a397d5eac11b47197f9d0aa0b9310f1531ad60",
+    "bim3117_freecad/fonts/SOURCE.json": "51b475510e81d0fbfaa542931636832be85edca72af9767486b597e329db1962",
+    "bim3117_freecad/fonts/Sarabun-Bold.ttf": "d38308ca27d067b9a1b79006337c1f9a66c29aa016d96a9d88d3801da7fa83b9",
+    "bim3117_freecad/fonts/Sarabun-Regular.ttf": "226d4f368fbc0457990ddef2692679badfd2c1a4e89e5ac4d43c10ba7743b2f1",
+    "bim3117_freecad/ifc_native.py": "18ea51fc422f876dff488e05bbc4e90a46adee309c71796794d0fdfb58265f75",
+    "bim3117_freecad/model.py": "7fba87aaf5ff01375ed785aeb45267597854ab0716c04980e2156acaacf2af55",
+    "bim3117_freecad/services.py": "d06ff6c4c55bcd57280d37130758493cb5d1dd107684682ac4907f8e43da9884",
+    "bim3117_freecad/snapshot.py": "65b5a96d7501c61bf0f0c779ae261d330124ca3ab65159df9533cbedd60c08b5",
+    "package.xml": "1a433f76654434ee2ee346514584a06e764d7b89d6446297c3f9f9d1467601b9",
+    "ui3117/__init__.py": "7695703a067267cdaac1b80dc0ac513ebe8425fa9d796b0df3d85a30bf2b5f7b",
+    "ui3117/building_dialogs.py": "7a5f46ff74c11a80882265af35fc03d6c9299d4cad0f20744524de36d9ce7461",
+    "ui3117/commands.py": "3b01cbe52f77a38b01aababa665c77fa48e5c501e322e2197b294b84bf0bb237",
+    "ui3117/dialogs.py": "70e6a7fc1cfa669d1460671c34faefe158c352bab15c3eacff00220bd92f96a2",
+    "ui3117/drawing_commands.py": "7774894dcc1a9e467aa932f4fd1a966e5071a756dd81ea236f5b9716a82fe52a",
+    "ui3117/drawing_dialogs.py": "2fa7bdc256fd0ece02328ee9af97be4f211717fc02fe4adc5936316ad7afc673",
+    "ui3117/drawing_preview.py": "79a8edf6c30bb818c2b30288bd3cf8509fdb96dd583cb77524f4afdcb25b7b0b",
+    "ui3117/exchange_dialog.py": "b938f98cd611dab1259a56c52902284fc3600018254e05f6d82f5d5a35ad7a4c",
+    "ui3117/icons/beam.svg": "1ebe9b42eed1d290a4290cc8aa3dea47dde442002b4b27bd14045db58bbdf849",
+    "ui3117/icons/column.svg": "74fbe20fb49c5c97f235ca07ece9a409d7d4929b8bbdf455f14a6734d41e3883",
+    "ui3117/icons/delete.svg": "73838920a3062609f1e41c51dc040eb2c8fc5a9e400993c592a87b9c092a389f",
+    "ui3117/icons/door.svg": "c94677b2470dfea21d87dfb9759e381ad8c0b978b264b47be599f8b40d32841c",
+    "ui3117/icons/drawing.svg": "c46870e400472264e74cf3681d8dad14a54951c8c89d811ca5be4eccd7df2a0b",
+    "ui3117/icons/drawing_export.svg": "4d99c9c36c11aa77f362f432316278ea38892d8330e88f7c5f2c7b0aea0e220a",
+    "ui3117/icons/drawing_preview.svg": "2da62039bb6dafbee6e6e54a8282d4d1d925dc981effafb580ad74562b581c97",
+    "ui3117/icons/edit.svg": "7e1db537ed4178831ead5af7065166d147ff4b1f8f517aeca0f6a3200d70a238",
+    "ui3117/icons/elevation.svg": "3765ee23a0df006466b63632ba95609b4a196edd0916fbae9d8007745a398222",
+    "ui3117/icons/export_ifc.svg": "bcefccb8143f666c491494885c77ba14e8fa87a575af2038fb3624f507c54456",
+    "ui3117/icons/grid.svg": "b8c0227ce1e077d5aa29135d74714ed6ca54e8363890678685ef95efafbea60f",
+    "ui3117/icons/info.svg": "6f51a6ff65e77608d69a33c6dc2d378f0aa4c0ee6036d0527fb36f7dc7be897c",
+    "ui3117/icons/join.svg": "fd65af34fe918eec5e52dfc1cb817d7f311a498f665aba4a9340daee77ef4322",
+    "ui3117/icons/level.svg": "81d0131235e8d0a4f2c7b55dbb648d11208969259b0a0f8b681dbca346f8010a",
+    "ui3117/icons/plan.svg": "50aae068543ecd7407d22c2d550b039c4169c31879452cae923daca8e04abf8c",
+    "ui3117/icons/project.svg": "74143ee1543d7b47beb0bbcb465b7e3aaad3576bfd37e9f3067c98ce59a77794",
+    "ui3117/icons/quantities.svg": "c01af2d31ff573c5e5ef4faf5431388facde0cc5e339c1a965fdd8b3af6a71e5",
+    "ui3117/icons/section.svg": "57ead555e969b187db13352df6c26d8bdb3ad60226c7e5a110c319b4297997b2",
+    "ui3117/icons/sheet.svg": "647ee4eb88893f1a98ead1b23aed8b18d9d52899a1026c3f51bb5ad6e54bde0e",
+    "ui3117/icons/slab.svg": "e16f013eaa9330055caa9fb64153eb2ed4289b0f843ee0ebea8a6891ee21fe88",
+    "ui3117/icons/unjoin.svg": "70487b54b545e7b78e1f555babccc0f13697557d8e7571013bd1523fa5e840b8",
+    "ui3117/icons/wall.svg": "c33c35d7a8b5fecea3677c7d0c490f7cb17e81ac64e6f13ce7a202ff79131eae",
+    "ui3117/icons/wall_type.svg": "458c684c6eb6e7a2c43509a4b69823e88d2c78fb76d512777248b84ce9ebb944",
+    "ui3117/icons/window.svg": "1bca8c9fbd7c54b44f3e013c5af642510bc4ba7142bc93772adc9f6ffe105ff2",
+    "ui3117/icons/workbench.svg": "47a62defd41e23e46598003595cf7b107ed90dd9b1ff36c0d4743d77a18dccba",
+    "ui3117/qt.py": "6d2f0eca13c7d582a17fb82a3a2129beec16765c646b5b82978a0cfd76eb83b7",
+    "ui3117/viewproviders.py": "03cf20329228b9a60418bddacdfb1530c98bacf06909194ee78d17eda3a0b4cc",
+    "ui3117/workbench.py": "7d1b5af28e07a84795b037c75d5c87f278d10a13adb186cb806d4a676635995f"
+  },
+  "workflow_sha256": "8f6158402eb739d0c3c247e97fd2fc4db6dce98ae55fa9f502772f31c25a6f58",
+  "package_builder_sha256": "155e03a897af1479bb64b28cbcde9f25e348acb2a386707b060e1918bd4aa19f",
+  "gate_script_sha256": "b91e89a882e219a00edeebaa80a773953d11e897bb8eadfb8a238d96a3743bae",
+  "temporary_package": {
+    "version": "0.4.0",
+    "files": 282,
+    "sha256": "217304965a77d0876d24a3cd4ae43c9eaaf880d6ae51eafd59b70b987e3cf71c",
+    "scope": "Temporary source-integrity ZIP only; final exact-ZIP runtime acceptance is separate"
+  },
+  "native_stage_counts": {
+    "install": 1,
+    "foundation": 35,
+    "reopen": 9,
+    "architecture": 63,
+    "architecture_reopen": 12,
+    "exchange": 47,
+    "exchange_reopen": 10,
+    "building": 112,
+    "building_reopen": 19,
+    "drawing_geometry": 31,
+    "drawings": 70,
+    "drawings_reopen": 25,
+    "drawing_render": 33
+  },
+  "scope": "Local syntax, additive schemas, current 13-stage CI JSON gate, installed source identity, frozen prior release bytes, native definition XML, canonical export hashes/fonts, and repository/package links. No new FreeCAD process is launched. Exact delivered-ZIP runtime acceptance is recorded separately.",
+  "windows_runtime_executed": false,
+  "github_remote_workflow_executed": false,
+  "mode": "final"
+}

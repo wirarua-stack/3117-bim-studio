@@ -1,0 +1,287 @@
+{
+  "status": "passed",
+  "freecad": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:25:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "qt": "6.8.3",
+  "gui_up": true,
+  "checks": [
+    {
+      "name": "installed building authoring commands are registered",
+      "status": "passed"
+    },
+    {
+      "name": "cancelled and malformed polygon forms leave document history unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "self-crossing polygon service rejection rolls back object and transaction",
+      "status": "passed"
+    },
+    {
+      "name": "three rectangle slabs use top datums and downward native thickness",
+      "status": "passed"
+    },
+    {
+      "name": "explicit concave polygon edits actual slab footprint",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores rectangle boundary and slab volume",
+      "status": "passed"
+    },
+    {
+      "name": "explicit column slab join commits one native transaction and one solid",
+      "status": "passed"
+    },
+    {
+      "name": "two-storey frame has eight valid joined columns and eight centered beams",
+      "status": "passed"
+    },
+    {
+      "name": "native building view providers persist on the correct shape objects",
+      "status": "passed"
+    },
+    {
+      "name": "join that splits a column rejects without changing references volume or history",
+      "status": "passed"
+    },
+    {
+      "name": "join that removes a whole beam rejects with complete rollback",
+      "status": "passed"
+    },
+    {
+      "name": "hosted Window is a real cut with a four-sided frame distinct from Door",
+      "status": "passed"
+    },
+    {
+      "name": "Window is claimed by its wall and hidden from duplicate project tree entries",
+      "status": "passed"
+    },
+    {
+      "name": "native wall visibility toggle includes Window Door and derived body",
+      "status": "passed"
+    },
+    {
+      "name": "seven compact modeless tabs read one row per authored UUID",
+      "status": "passed"
+    },
+    {
+      "name": "all new quantity categories select native source UUIDs and remain read-only",
+      "status": "passed"
+    },
+    {
+      "name": "building CSV coverage previews all categories and acknowledges Grid exclusion",
+      "status": "passed"
+    },
+    {
+      "name": "actual CSV export writes all six category payloads and metadata without history pollution",
+      "status": "passed"
+    },
+    {
+      "name": "level edit refreshes linked slabs columns beams walls windows and snapshot status",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo returns prior quantities content revision and current CSV status",
+      "status": "passed"
+    },
+    {
+      "name": "native Redo replays the level dependency update",
+      "status": "passed"
+    },
+    {
+      "name": "column section and rotation edit recomputes joined native solid and quantity",
+      "status": "passed"
+    },
+    {
+      "name": "beam section edit preserves top datum and existing slab cut",
+      "status": "passed"
+    },
+    {
+      "name": "slab thickness edit updates both joined member categories",
+      "status": "passed"
+    },
+    {
+      "name": "explicit clear-all unjoin restores full member volume and live quantity",
+      "status": "passed"
+    },
+    {
+      "name": "Undo restores native slab join references and deducted volume",
+      "status": "passed"
+    },
+    {
+      "name": "specific-slab unjoin uses its native selected cutter",
+      "status": "passed"
+    },
+    {
+      "name": "Window rehost closes old cut and opens new host while preserving identity",
+      "status": "passed"
+    },
+    {
+      "name": "Door and Window overlap rejection preserves the committed native model",
+      "status": "passed"
+    },
+    {
+      "name": "native deletion guards retain a referenced cutter and a hosted Window",
+      "status": "passed"
+    },
+    {
+      "name": "3117 Window delete removes frame and restores actual wall material",
+      "status": "passed"
+    },
+    {
+      "name": "native Undo restores Window UUID frame opening and quantity row",
+      "status": "passed"
+    },
+    {
+      "name": "closing and reopening replaces the document-bound quantity observer",
+      "status": "passed"
+    },
+    {
+      "name": "saved building model restores matching contents and source-bound quantities",
+      "status": "passed"
+    },
+    {
+      "name": "actual building quantity widgets are captured",
+      "status": "passed"
+    }
+  ],
+  "scope": "Actual commands and modeless quantities; synthetic two-storey frame",
+  "deletion_warnings": [
+    "พื้นนี้ใช้ตัดองค์ประกอบอยู่: C00, C01, C02, C03, B00, B01, B02, B03\n\nใช้ Unjoin Slab ก่อนลบพื้น",
+    "กรุณาใช้ 3117 BIM → Delete Selected เพื่อลบหน้าต่างและคืนเนื้อผนัง\n\nUndo จะคืนทั้งหน้าต่างและช่องเปิดพร้อมกัน"
+  ],
+  "expected_command_errors": [
+    {
+      "command": "BIM3117_CreateSlab",
+      "message": "Slab boundary crosses or touches itself"
+    },
+    {
+      "command": "BIM3117_JoinSlab",
+      "message": "Split rejection probe: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "command": "BIM3117_JoinSlab",
+      "message": "Full removal probe: geometry must remain one connected positive-volume solid; split/full-removal joins are unsupported"
+    },
+    {
+      "command": "BIM3117_EditSelected",
+      "message": "WN01: opening overlaps D01"
+    }
+  ],
+  "window_probe": {
+    "host": "BIM3117_Wall",
+    "expected_host": "BIM3117_Wall",
+    "opening_kinds": [
+      "Door",
+      "Window"
+    ],
+    "frame_volume_m3": 0.046,
+    "wall_volume_m3": 2.241,
+    "opening_center_in_wall": false,
+    "opening_center_in_frame": false,
+    "four_frame_points_occupied": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "frame_solids": 4,
+    "base_level_mm": 0.0,
+    "host_top_offset_mm": -450.0,
+    "sill_mm": 900.0,
+    "offset_mm": 2800.0
+  },
+  "overlap_rejection": {
+    "before_history": [
+      19,
+      1,
+      32
+    ],
+    "after_history": [
+      19,
+      1,
+      32
+    ],
+    "refreshed": true,
+    "expected_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+    "actual_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+    "host": "BIM3117_Wall",
+    "expected_host": "BIM3117_Wall",
+    "offset_mm": 2800.0,
+    "last_refresh_error": ""
+  },
+  "checks_passed": 35,
+  "sample": "/tmp/bim3117-building-ui/evidence/ตัวอย่าง_อาคาร/Building_Authoring_Workbench.FCStd",
+  "screenshot": "/tmp/bim3117-building-ui/evidence/Building_Authoring_Workbench.png",
+  "identifiers": {
+    "BIM3117_Project": "43c19f26-a445-44ad-bf41-e1b5e6d201b6",
+    "BIM3117_Level": "9c58b0de-b2ac-4f3c-acaf-85ae7a9d9173",
+    "BIM3117_Level001": "72930bb8-d33c-4474-b7d4-9fcfd063e404",
+    "BIM3117_Level002": "d2e84642-e027-4f0e-a6b3-b510ec3c1a54",
+    "BIM3117_Grid": "c7db8e7c-0819-45e6-9cc0-5c67c5de7e33",
+    "BIM3117_Slab": "ed324acf-0cc1-41e1-9b0b-82795a13311a",
+    "BIM3117_Slab001": "b70d21fa-8937-4d6d-b8e1-8d4df9b804e6",
+    "BIM3117_Slab002": "4a2b6179-1a73-41f4-8b46-dd7bd2f86766",
+    "BIM3117_Column": "4a5ecca5-8abe-494a-969f-b623b660f3d2",
+    "BIM3117_Column001": "de71e4b9-bd25-4ea1-ac67-c28c8ecb500d",
+    "BIM3117_Column002": "318fa27e-90bc-45a5-abbb-788772f55b3e",
+    "BIM3117_Column003": "58ee6940-2970-4f65-a74e-e8f32898f317",
+    "BIM3117_Beam": "ee8d7b84-152c-4195-9f5c-bb573ed106fa",
+    "BIM3117_Beam001": "9f6196e0-9ce9-4389-a60a-5892eeed5edf",
+    "BIM3117_Beam002": "5fde1d9e-9e05-4290-b961-72966df9fdfd",
+    "BIM3117_Beam003": "e05e7292-0d69-45dd-9d5d-22376b91611a",
+    "BIM3117_Column004": "53585d8c-532c-45a2-a433-f44f387d949b",
+    "BIM3117_Column005": "5a1a8462-61ef-46f3-8f4b-525e4ebe65ad",
+    "BIM3117_Column006": "25f050a5-d5e6-4607-a4a2-e2c77a2ba01b",
+    "BIM3117_Column007": "90511161-fadb-48d1-9295-244997d7b7b6",
+    "BIM3117_Beam004": "d7ce2dd0-fde9-40dd-89a5-36013f4d5c41",
+    "BIM3117_Beam005": "be4d1661-bf7b-4e74-8d62-582e399b0060",
+    "BIM3117_Beam006": "cf54fba4-27ca-4353-9ba9-40c11bca6513",
+    "BIM3117_Beam007": "595d4a7d-8850-4f05-856e-2e772fb9864a",
+    "BIM3117_WallType": "d25e9687-5aa3-4d8d-a7d8-3240cb35ea3f",
+    "BIM3117_Wall": "af6879ab-8705-45a6-9548-f368d1ca8831",
+    "BIM3117_WallBody": "cf3dceab-1527-4fd8-89c0-b5c4e744ae29",
+    "BIM3117_Wall001": "6ba693fb-42a7-4acf-ac21-3969a381b8fb",
+    "BIM3117_WallBody001": "4008ccc4-8d3d-4e64-91e3-234264e13f32",
+    "BIM3117_Door": "49f0c017-f8ad-4ec0-9aee-a7b757e0fbd8",
+    "BIM3117_Window001": "62c127f3-9714-4ae2-ba03-49be9512b579",
+    "BIM3117_Window": "04386695-d866-44d0-8f44-f3a26681bfc1"
+  },
+  "content_revision": "10c5ebd3e79746cd00f3d9979a50c2ff373f2052cb47116337f63b21114e9c00",
+  "counts": {
+    "wall_rows": 2,
+    "door_rows": 1,
+    "window_rows": 2,
+    "slab_rows": 3,
+    "column_rows": 8,
+    "beam_rows": 8
+  },
+  "hidden_window": "BIM3117_Window",
+  "lower_level": "BIM3117_Level",
+  "middle_level": "BIM3117_Level001",
+  "upper_level": "BIM3117_Level002",
+  "module_source": "/tmp/bim3117-building-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/services.py",
+  "snapshot_module": "/tmp/bim3117-building-ui/profile/data/FreeCAD/v1-1/Mod/BIM3117/./bim3117_freecad/snapshot.py",
+  "csv_path": "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร.csv",
+  "csv_files": [
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_doors.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_slabs.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_columns.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_beams.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_windows.csv",
+    "/tmp/bim3117-building-ui/evidence/ส่งออก_อาคาร/10c5ebd3e797/อาคาร_csv_metadata.json"
+  ],
+  "native_objects": 32
+}
