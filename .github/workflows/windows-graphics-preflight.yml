@@ -3,23 +3,24 @@ name: Windows graphics capability preflight
 on:
   workflow_dispatch:
     inputs:
+      runner:
+        description: 'Explicitly select the graphical Windows runner'
+        type: choice
+        default: desktop
+        options:
+          - desktop
+          - windows-2022
       require_minimum:
         description: Fail when real WGL context is below OpenGL 2.0
         type: boolean
         default: true
-  push:
-    branches:
-      - acceptance/windows-history-fix
-    paths:
-      - 'diagnostics/probe_windows_opengl.py'
-      - '.github/workflows/windows-graphics-preflight.yml'
 
 permissions:
   contents: read
 
 jobs:
   opengl-preflight:
-    runs-on: windows-2022
+    runs-on: ${{ inputs.runner == 'desktop' && fromJSON('["self-hosted","Windows","X64","3117-desktop"]') || 'windows-2022' }}
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
