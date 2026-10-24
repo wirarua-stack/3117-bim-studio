@@ -1,0 +1,46 @@
+name: Windows graphics capability preflight
+
+on:
+  workflow_dispatch:
+    inputs:
+      require_minimum:
+        description: Fail when real WGL context is below OpenGL 2.0
+        type: boolean
+        default: true
+  push:
+    branches:
+      - acceptance/windows-history-fix
+    paths:
+      - 'diagnostics/probe_windows_opengl.py'
+      - '.github/workflows/windows-graphics-preflight.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  opengl-preflight:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Inspect real WGL context and renderer
+        shell: pwsh
+        run: |
+          $output = Join-Path $env:GITHUB_WORKSPACE 'graphics-evidence/opengl.json'
+          python diagnostics/probe_windows_opengl.py --output "$output" --require-minimum
+          if ($LASTEXITCODE -ne 0) { throw 'This runner is not qualified for GUI acceptance; no FreeCAD build requested.' }
+      - name: Retain probe results even on failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-opengl-preflight-${{ github.run_id }}
+          path: graphics-evidence/opengl.json
+          if-no-files-found: warn
+          retention-days: 7
+
+# Independent graphics diagnostic. Does not run or certify Windows acceptance.
