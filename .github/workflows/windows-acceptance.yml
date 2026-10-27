@@ -53,11 +53,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Verify real OpenGL before compiling FreeCAD
+      - name: Qualify interactive Windows desktop and actual OpenGL before compiling FreeCAD
         run: |
-          $output = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/windows-evidence/opengl.json'
-          python diagnostics/probe_windows_opengl.py --output "$output" --require-minimum
-          if ($LASTEXITCODE -ne 0) { throw 'OpenGL minimum not met; refusing to build on this runner.' }
+          $dir = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/windows-evidence'
+          $gl = Join-Path $dir 'opengl.json'
+          $qualification = Join-Path $dir 'runner-qualification.json'
+          python diagnostics/probe_windows_opengl.py --output "$gl"
+          if ($LASTEXITCODE -ne 0) { throw 'Could not record a Windows OpenGL probe.' }
+          python diagnostics/qualify_windows_runner.py --runner-preflight "$env:BIM3117_RUNNER_PREFLIGHT" --opengl "$gl" --output "$qualification" --expected-run-id "$env:GITHUB_RUN_ID" --expected-run-attempt "$env:GITHUB_RUN_ATTEMPT" --expected-sha "$env:GITHUB_SHA" --expected-repository "$env:GITHUB_REPOSITORY" --require-qualified
+          if ($LASTEXITCODE -ne 0) { throw 'Windows desktop/GPU qualification blocked; refusing to build FreeCAD.' }
 
       - name: Validate acceptance logic before compiling
         run: |

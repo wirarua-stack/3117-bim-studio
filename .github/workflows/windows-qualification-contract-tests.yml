@@ -1,0 +1,35 @@
+name: Windows desktop GPU qualification contract tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - acceptance/windows-history-fix
+    paths:
+      - diagnostics/qualify_windows_runner.py
+      - diagnostics/test_qualify_windows_runner.py
+      - .github/workflows/windows-qualification-contract-tests.yml
+
+permissions:
+  contents: read
+
+jobs:
+  offline-qualification-contract:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - name: Check out qualification code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Verify qualification rejects incomplete or incompatible runner evidence
+        shell: pwsh
+        run: |
+          python -m unittest discover -s diagnostics -p test_qualify_windows_runner.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Runner qualification contract tests failed' }
+
+# Passing these synthetic checks does NOT qualify the Windows-2022 runner.
