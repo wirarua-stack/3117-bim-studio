@@ -103,34 +103,7 @@ jobs:
       - name: Collect evidence within checkout for artifact upload
         if: always()
         run: |
-          $ErrorActionPreference = 'Stop'
-          $destination = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/windows-evidence'
-          New-Item -ItemType Directory -Path $destination -Force | Out-Null
-          if (Test-Path -LiteralPath $env:BIM3117_RUNNER_PREFLIGHT -PathType Leaf) {
-            Copy-Item -LiteralPath $env:BIM3117_RUNNER_PREFLIGHT -Destination (Join-Path $destination 'runner-preflight.json') -Force
-          }
-          $root = $env:BIM3117_ACCEPTANCE_ROOT
-          if (Test-Path -LiteralPath $root -PathType Container) {
-            foreach ($name in @('run.json','preflight.json','WINDOWS_ACCEPTANCE.json','WINDOWS_ACCEPTANCE.md','controller-logs','results','ifc-runtime')) {
-              $source = Join-Path $root $name
-              if (Test-Path -LiteralPath $source) {
-                Copy-Item -LiteralPath $source -Destination (Join-Path $destination $name) -Recurse -Force
-              }
-            }
-            foreach ($variant in @('unpatched','patched')) {
-              $host = Join-Path $root "hosts/$variant"
-              $target = Join-Path $destination "hosts/$variant"
-              if (Test-Path -LiteralPath $host -PathType Container) {
-                New-Item -ItemType Directory -Path $target -Force | Out-Null
-                foreach ($name in @('host-manifest.json','source-integrity.json','build-status.json','logs')) {
-                  $source = Join-Path $host $name
-                  if (Test-Path -LiteralPath $source) {
-                    Copy-Item -LiteralPath $source -Destination (Join-Path $target $name) -Recurse -Force
-                  }
-                }
-              }
-            }
-          }
+          ./scripts/Collect-WindowsEvidence.ps1 -Destination (Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/windows-evidence') -RunRoot $env:BIM3117_ACCEPTANCE_ROOT -RunnerPreflight $env:BIM3117_RUNNER_PREFLIGHT
 
       - name: Preserve original evidence on success or failure
         if: always()
