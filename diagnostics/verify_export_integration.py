@@ -19,9 +19,11 @@ import tempfile
 from unittest import mock
 
 from prepare_export_integration import RELATIVE, sha256, source_inventory
-from run_acceptance import verify_inputs
 
 KIT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(KIT / "scripts"))
+from run_acceptance import verify_inputs  # frozen input gate; not native FreeCAD acceptance
+
 FROZEN_ROOT = KIT / "inputs" / "3117-bim-studio"
 
 
