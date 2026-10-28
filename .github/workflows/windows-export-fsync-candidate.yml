@@ -8,6 +8,8 @@ on:
     paths:
       - 'diagnostics/export_fsync_candidate.py'
       - 'diagnostics/test_export_fsync_candidate.py'
+      - 'diagnostics/prepare_export_integration.py'
+      - 'diagnostics/verify_export_integration.py'
       - '.github/workflows/windows-export-fsync-candidate.yml'
 
 permissions:
@@ -16,27 +18,62 @@ permissions:
 jobs:
   isolated-candidate:
     runs-on: windows-2022
-    timeout-minutes: 15
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUTF8: '1'
     steps:
-      - name: Check out candidate and frozen inputs
+      - name: Check out candidate and immutable frozen inputs
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Install Python
+      - name: Install Python 3.12
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
-      - name: Verify frozen inputs before tests
-        shell: pwsh
+      - name: Verify frozen inputs before candidate installation
         run: |
-          python scripts/run_acceptance.py --work-root "$env:RUNNER_TEMP/3117-fsync-preflight-$env:GITHUB_RUN_ID" --preflight-only
+          python scripts/run_acceptance.py --work-root "$env:RUNNER_TEMP/3117-fsync-preflight-$env:GITHUB_RUN_ID-$env:GITHUB_RUN_ATTEMPT" --preflight-only
           if ($LASTEXITCODE -ne 0) { throw 'Frozen input preflight failed' }
-      - name: Test isolated export candidate on native Windows
-        shell: pwsh
+      - name: Exercise original isolated fsync repair tests
         run: |
           python -m unittest discover -s diagnostics -p test_export_fsync_candidate.py -v
-          if ($LASTEXITCODE -ne 0) { throw 'Candidate tests failed' }
-      - name: Notice
-        shell: pwsh
+          if ($LASTEXITCODE -ne 0) { throw 'Isolated export fix unit tests failed' }
+      - name: Stage an isolated one-file candidate source tree with verified source delta
         run: |
-          Write-Host 'Diagnostic candidate only. No FreeCAD Windows acceptance or release approval is claimed.'
+          $candidateRoot = Join-Path $env:RUNNER_TEMP "3117-export-integration-$env:GITHUB_RUN_ID-$env:GITHUB_RUN_ATTEMPT"
+          $report = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/export-integration/source-provenance.json'
+          python diagnostics/prepare_export_integration.py --output-root "$candidateRoot" --report "$report"
+          if ($LASTEXITCODE -ne 0) { throw 'Isolated candidate source preparation failed' }
+          "BIM3117_EXPORT_CANDIDATE_ROOT=$candidateRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+      - name: Run original frozen export-safety tests against candidate source copy
+        run: |
+          python -m unittest discover -s (Join-Path $env:BIM3117_EXPORT_CANDIDATE_ROOT 'tests') -p test_export_files.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Original export safety suite failed against candidate' }
+      - name: Verify isolated profile install upgrade export rollback and restore on native Windows
+        run: |
+          $report = Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/export-integration/installed-export-integration.json'
+          python diagnostics/verify_export_integration.py --candidate-root "$env:BIM3117_EXPORT_CANDIDATE_ROOT" --preparation-report (Join-Path $env:GITHUB_WORKSPACE 'artifact-staging/export-integration/source-provenance.json') --output "$report"
+          if ($LASTEXITCODE -ne 0) { throw 'Installed export candidate integration failed' }
+      - name: Revalidate frozen input hashes after integration even on failure
+        if: always()
+        run: |
+          python scripts/run_acceptance.py --work-root "$env:RUNNER_TEMP/3117-fsync-postflight-$env:GITHUB_RUN_ID-$env:GITHUB_RUN_ATTEMPT" --preflight-only
+          if ($LASTEXITCODE -ne 0) { throw 'Frozen source changed or postflight failed' }
+      - name: Retain isolated candidate evidence on success or failure
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-export-integration-evidence
+          path: artifact-staging/export-integration/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Candidate is not Windows FreeCAD acceptance
+        if: success()
+        run: |
+          Write-Host 'Native Windows Python candidate tests passed; FreeCADCmd, GUI, frozen public ZIP, and full Windows acceptance remain unexecuted.'
+
+# Does not modify inputs/, produce a release, or assert FreeCAD acceptance.
